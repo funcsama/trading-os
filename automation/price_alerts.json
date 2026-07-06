@@ -4,50 +4,50 @@
   "items": [
     {
       "symbol": "CN:600519",
-      "name": "Kweichow Moutai",
+      "name": "贵州茅台",
       "type": "price_above",
       "price": 1550,
-      "reason": "Approaches reduce zone; check whether multiple outruns growth.",
+      "reason": "接近减仓区间，需要检查估值倍数是否跑赢增长。",
       "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
     },
     {
       "symbol": "CN:600519",
-      "name": "Kweichow Moutai",
+      "name": "贵州茅台",
       "type": "price_below",
       "price": 1150,
-      "reason": "Approaches buy zone; redo channel and valuation check.",
+      "reason": "接近买入区间，需要重做渠道和估值检查。",
       "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
     },
     {
       "symbol": "HK:9660",
-      "name": "Horizon Robotics",
+      "name": "地平线机器人",
       "type": "price_above",
       "price": 8.5,
-      "reason": "Valuation may outrun confirmed operating leverage; review reduce discipline.",
+      "reason": "估值可能跑在经营兑现前面，需要复查减仓纪律。",
       "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
     },
     {
       "symbol": "HK:9660",
-      "name": "Horizon Robotics",
+      "name": "地平线机器人",
       "type": "price_below",
       "price": 4.4,
-      "reason": "Enters buy-zone watch area; redo valuation and thesis check.",
+      "reason": "进入买入观察区，需要重做估值和基本面检查。",
       "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
     },
     {
       "symbol": "US:SPCX",
-      "name": "SpaceX / Space Exploration Technologies",
+      "name": "SpaceX / 太空探索技术公司",
       "type": "price_above",
       "price": 180,
-      "reason": "Valuation may outrun evidence; reassess reduce discipline.",
+      "reason": "估值可能跑在证据前面，需要复查减仓纪律。",
       "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
     },
     {
       "symbol": "US:SPCX",
-      "name": "SpaceX / Space Exploration Technologies",
+      "name": "SpaceX / 太空探索技术公司",
       "type": "price_below",
       "price": 90,
-      "reason": "Potential entry-zone review; reassess valuation and public operating evidence.",
+      "reason": "可能进入买入观察区，需要重估估值和公开经营证据。",
       "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
     }
   ]

@@ -6,11 +6,11 @@
       "symbol": "CN:600519",
       "market": "CN",
       "ticker": "600519",
-      "name": "Kweichow Moutai",
+      "name": "贵州茅台",
       "currency": "CNY",
       "status": "active",
       "current_rating": "hold",
-      "current_thesis": "Exceptional baijiu cash compounder, but current price is only reasonable; new money should wait for a larger margin of safety or stronger growth evidence.",
+      "current_thesis": "极高质量的高端白酒现金流资产，但当前价格只是合理偏便宜，新增资金应等待更大安全边际或增长重新加速证据。",
       "fair_value_range": [
         1250,
         1450
@@ -32,11 +32,11 @@
       "symbol": "HK:9660",
       "market": "HK",
       "ticker": "9660",
-      "name": "Horizon Robotics",
+      "name": "地平线机器人",
       "currency": "HKD",
       "status": "active",
       "current_rating": "watch",
-      "current_thesis": "High-growth Chinese intelligent driving platform with real production revenue, but still loss-making and only attractive with valuation discipline.",
+      "current_thesis": "中国智能驾驶平台型公司，有真实量产收入和高成长潜力，但仍处亏损阶段，只有在估值有安全边际时才适合小仓位参与。",
       "fair_value_range": [
         4.8,
         6.8
@@ -58,11 +58,11 @@
       "symbol": "US:SPCX",
       "market": "US",
       "ticker": "SPCX",
-      "name": "SpaceX / Space Exploration Technologies",
+      "name": "SpaceX / 太空探索技术公司",
       "currency": "USD",
       "status": "active",
       "current_rating": "avoid",
-      "current_thesis": "Exceptional space and satellite platform, but current public-market valuation appears to price in too much success before enough public operating evidence.",
+      "current_thesis": "极优秀的航天和卫星互联网平台，但当前公开市场估值已经计入太多成功，新增资金应等待估值回落或更多公开经营证据。",
       "fair_value_range": [
         80,
         120

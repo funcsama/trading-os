@@ -5,43 +5,43 @@
     {
       "date": "2026-08-15",
       "symbol": "US:SPCX",
-      "name": "SpaceX / Space Exploration Technologies",
-      "reason": "Review first post-listing earnings update or quarterly filing.",
+      "name": "SpaceX / 太空探索技术公司",
+      "reason": "复查上市后首份业绩更新或季度文件。",
       "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
     },
     {
       "date": "2026-08-31",
       "symbol": "CN:600519",
-      "name": "Kweichow Moutai",
-      "reason": "Review semiannual report for growth, cash flow, channel pressure, and dividend signals.",
+      "name": "贵州茅台",
+      "reason": "复查半年报，重点看增长、现金流、渠道压力和分红信号。",
       "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
     },
     {
       "date": "2026-08-31",
       "symbol": "HK:9660",
-      "name": "Horizon Robotics",
-      "reason": "Review 2026 interim results for growth, gross margin, and loss narrowing.",
+      "name": "地平线机器人",
+      "reason": "复查 2026 中期业绩，重点看收入增长、毛利率和亏损收窄。",
       "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
     },
     {
       "date": "2026-10-31",
       "symbol": "CN:600519",
-      "name": "Kweichow Moutai",
-      "reason": "Review Q3 results and premium baijiu demand/channel signals.",
+      "name": "贵州茅台",
+      "reason": "复查三季报，以及高端白酒需求和渠道信号。",
       "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
     },
     {
       "date": "2026-11-15",
       "symbol": "US:SPCX",
-      "name": "SpaceX / Space Exploration Technologies",
-      "reason": "Review Starlink growth, launch cadence, margin, and capex after the next quarterly update.",
+      "name": "SpaceX / 太空探索技术公司",
+      "reason": "复查 Starlink 增长、发射频率、利润率和资本开支。",
       "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
     },
     {
       "date": "2026-11-30",
       "symbol": "HK:9660",
-      "name": "Horizon Robotics",
-      "reason": "Review Q3 or post-interim operating updates and OEM design-win evidence.",
+      "name": "地平线机器人",
+      "reason": "复查三季度或中报后经营更新，以及车企定点和量产证据。",
       "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
     }
   ]
