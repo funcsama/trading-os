@@ -1,5 +1,48 @@
 {
   "schema_version": 1,
-  "item_count": 0,
-  "items": []
+  "item_count": 6,
+  "items": [
+    {
+      "date": "2026-08-15",
+      "symbol": "US:SPCX",
+      "name": "SpaceX / Space Exploration Technologies",
+      "reason": "Review first post-listing earnings update or quarterly filing.",
+      "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:600519",
+      "name": "Kweichow Moutai",
+      "reason": "Review semiannual report for growth, cash flow, channel pressure, and dividend signals.",
+      "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "HK:9660",
+      "name": "Horizon Robotics",
+      "reason": "Review 2026 interim results for growth, gross margin, and loss narrowing.",
+      "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:600519",
+      "name": "Kweichow Moutai",
+      "reason": "Review Q3 results and premium baijiu demand/channel signals.",
+      "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
+    },
+    {
+      "date": "2026-11-15",
+      "symbol": "US:SPCX",
+      "name": "SpaceX / Space Exploration Technologies",
+      "reason": "Review Starlink growth, launch cadence, margin, and capex after the next quarterly update.",
+      "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
+    },
+    {
+      "date": "2026-11-30",
+      "symbol": "HK:9660",
+      "name": "Horizon Robotics",
+      "reason": "Review Q3 or post-interim operating updates and OEM design-win evidence.",
+      "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
+    }
+  ]
 }

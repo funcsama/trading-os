@@ -1,5 +1,84 @@
 {
   "schema_version": 1,
-  "company_count": 0,
-  "companies": []
+  "company_count": 3,
+  "companies": [
+    {
+      "symbol": "CN:600519",
+      "market": "CN",
+      "ticker": "600519",
+      "name": "Kweichow Moutai",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "hold",
+      "current_thesis": "Exceptional baijiu cash compounder, but current price is only reasonable; new money should wait for a larger margin of safety or stronger growth evidence.",
+      "fair_value_range": [
+        1250,
+        1450
+      ],
+      "buy_zone": [
+        1050,
+        1150
+      ],
+      "sell_or_reduce_zone": [
+        1550,
+        1800
+      ],
+      "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-06T00:00:00+08:00"
+    },
+    {
+      "symbol": "HK:9660",
+      "market": "HK",
+      "ticker": "9660",
+      "name": "Horizon Robotics",
+      "currency": "HKD",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "High-growth Chinese intelligent driving platform with real production revenue, but still loss-making and only attractive with valuation discipline.",
+      "fair_value_range": [
+        4.8,
+        6.8
+      ],
+      "buy_zone": [
+        3.6,
+        4.4
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        11.0
+      ],
+      "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-06T00:00:00+08:00"
+    },
+    {
+      "symbol": "US:SPCX",
+      "market": "US",
+      "ticker": "SPCX",
+      "name": "SpaceX / Space Exploration Technologies",
+      "currency": "USD",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "Exceptional space and satellite platform, but current public-market valuation appears to price in too much success before enough public operating evidence.",
+      "fair_value_range": [
+        80,
+        120
+      ],
+      "buy_zone": [
+        60,
+        90
+      ],
+      "sell_or_reduce_zone": [
+        180,
+        230
+      ],
+      "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md",
+      "next_review_date": "2026-08-15",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-06T00:00:00+08:00"
+    }
+  ]
 }

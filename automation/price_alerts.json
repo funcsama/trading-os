@@ -1,5 +1,54 @@
 {
   "schema_version": 1,
-  "item_count": 0,
-  "items": []
+  "item_count": 6,
+  "items": [
+    {
+      "symbol": "CN:600519",
+      "name": "Kweichow Moutai",
+      "type": "price_above",
+      "price": 1550,
+      "reason": "Approaches reduce zone; check whether multiple outruns growth.",
+      "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
+    },
+    {
+      "symbol": "CN:600519",
+      "name": "Kweichow Moutai",
+      "type": "price_below",
+      "price": 1150,
+      "reason": "Approaches buy zone; redo channel and valuation check.",
+      "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
+    },
+    {
+      "symbol": "HK:9660",
+      "name": "Horizon Robotics",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "Valuation may outrun confirmed operating leverage; review reduce discipline.",
+      "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
+    },
+    {
+      "symbol": "HK:9660",
+      "name": "Horizon Robotics",
+      "type": "price_below",
+      "price": 4.4,
+      "reason": "Enters buy-zone watch area; redo valuation and thesis check.",
+      "latest_report": "companies/HK/9660/reports/2026-07-06-initial.md"
+    },
+    {
+      "symbol": "US:SPCX",
+      "name": "SpaceX / Space Exploration Technologies",
+      "type": "price_above",
+      "price": 180,
+      "reason": "Valuation may outrun evidence; reassess reduce discipline.",
+      "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
+    },
+    {
+      "symbol": "US:SPCX",
+      "name": "SpaceX / Space Exploration Technologies",
+      "type": "price_below",
+      "price": 90,
+      "reason": "Potential entry-zone review; reassess valuation and public operating evidence.",
+      "latest_report": "companies/US/SPCX/reports/2026-07-06-initial.md"
+    }
+  ]
 }
