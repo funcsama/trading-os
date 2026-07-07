@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6,
+  "item_count": 9,
   "items": [
     {
       "symbol": "CN:600519",
@@ -17,6 +17,30 @@
       "price": 1150,
       "reason": "接近买入区间，需要重做渠道和估值检查。",
       "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
+    },
+    {
+      "symbol": "CN:601138",
+      "name": "工业富联",
+      "type": "price_above",
+      "price": 70,
+      "reason": "进入泡沫区间，已持仓应减仓",
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md"
+    },
+    {
+      "symbol": "CN:601138",
+      "name": "工业富联",
+      "type": "price_below",
+      "price": 38,
+      "reason": "进入强吸引力买入区间，分批建仓",
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md"
+    },
+    {
+      "symbol": "CN:601138",
+      "name": "工业富联",
+      "type": "price_below",
+      "price": 48,
+      "reason": "进入有安全边际的买入区间（PE 20x以下）",
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md"
     },
     {
       "symbol": "HK:9660",

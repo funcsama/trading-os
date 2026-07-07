@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 3,
+  "company_count": 4,
   "companies": [
     {
       "symbol": "CN:600519",
@@ -27,6 +27,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-06T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:601138",
+      "market": "CN",
+      "ticker": "601138",
+      "name": "工业富联",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "AI服务器全球龙头，FY2025营收9029亿(+48%)净利353亿(+52%)，但毛利率仅7%、FY2025 OCF仅52亿、PE 35.7x已反映乐观预期，安全边际不足，观察待回调",
+      "fair_value_range": [
+        48,
+        55
+      ],
+      "buy_zone": [
+        38,
+        48
+      ],
+      "sell_or_reduce_zone": [
+        70,
+        90
+      ],
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T14:30:00+08:00"
     },
     {
       "symbol": "HK:9660",

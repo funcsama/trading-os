@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6,
+  "item_count": 9,
   "items": [
     {
       "date": "2026-08-15",
@@ -18,6 +18,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:601138",
+      "name": "工业富联",
+      "reason": "FY2026半年报披露，重点跟踪云计算收入增速与毛利率、是否提示AI服务器OCF改善",
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "HK:9660",
       "name": "地平线机器人",
       "reason": "复查 2026 中期业绩，重点看收入增长、毛利率和亏损收窄。",
@@ -29,6 +36,20 @@
       "name": "贵州茅台",
       "reason": "复查三季报，以及高端白酒需求和渠道信号。",
       "latest_report": "companies/CN/600519/reports/2026-07-06-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:601138",
+      "name": "工业富联",
+      "reason": "FY2026三季报，跟踪全年业绩兑现度，关注北美CSP Q3季度capex指引",
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:601138",
+      "name": "工业富联",
+      "reason": "复查关税/出口管制政策是否发生重大变化，可能影响墨西哥/越南产能和NVIDIA产品交付",
+      "latest_report": "companies/CN/601138/reports/2026-07-07-initial.md"
     },
     {
       "date": "2026-11-15",
