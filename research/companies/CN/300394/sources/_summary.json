@@ -1,0 +1,189 @@
+{
+  "snapshot": {
+    "date": "2026-07-08",
+    "price": 245.68,
+    "open": 246.01,
+    "prev_close": 244.09,
+    "high": 253.2,
+    "low": 240.2,
+    "volume_shares": 43255515,
+    "turnover_cny": 10728540526,
+    "turnover_rate_pct": 3.97,
+    "volume_ratio": 0.91,
+    "amplitude_pct": 5.33,
+    "total_market_cap_cny": 268000000000.0,
+    "float_market_cap_cny": 267400000000.0,
+    "total_shares": 1091000000.0,
+    "float_shares": 1088000000.0,
+    "pe_dynamic": 136.12,
+    "pb": 49.02
+  },
+  "earnings": {
+    "2025": {
+      "revenue_cny": 5163000000.0,
+      "rev_yoy_pct": 58.79,
+      "net_profit_cny": 2017000000.0,
+      "np_yoy_pct": 50.15,
+      "np_deducted_cny": 1976000000.0,
+      "npd_yoy_pct": 50.42,
+      "gross_margin_pct": 53.96,
+      "net_margin_pct": 39.08,
+      "roe_weighted_pct": 41.91,
+      "eps_basic_cny": 2.5958,
+      "rd_expense_cny": 266600000.0
+    },
+    "2026Q1": {
+      "revenue_cny": 1330000000.0,
+      "rev_yoy_pct": 40.82,
+      "net_profit_cny": 492200000.0,
+      "np_yoy_pct": 45.79,
+      "np_deducted_cny": 493200000.0,
+      "npd_yoy_pct": 48.44,
+      "gross_margin_pct": 56.6,
+      "net_margin_pct": 37.01,
+      "roe_weighted_pct": 8.57,
+      "eps_basic_cny": 0.6331
+    }
+  },
+  "balance_sheet_2026Q1": {
+    "total_assets_cny": 6982000000.0,
+    "cash_cny": 3027000000.0,
+    "ar_cny": 1242000000.0,
+    "inventory_cny": 538500000.0,
+    "fixed_assets_cny": 1214000000.0,
+    "construction_in_progress_cny": 118500000.0,
+    "total_liabilities_cny": 995200000.0,
+    "total_equity_cny": 5987000000.0,
+    "debt_ratio_pct": 14.25,
+    "current_ratio": 5.447,
+    "quick_ratio": 4.89,
+    "cash_flow_ratio": 0.189
+  },
+  "cash_flow_2025": {
+    "operating_cf_cny": 1868000000.0,
+    "capex_cny": 417500000.0,
+    "fcf_cny": 1450000000.0,
+    "sales_cash_to_rev_ratio": 0.548
+  },
+  "cash_flow_2026Q1": {
+    "operating_cf_cny": 182300000.0,
+    "capex_cny": 123200000.0
+  },
+  "operational_metrics_2026Q1": {
+    "ar_turnover_days": 79.95,
+    "inventory_turnover_days": 77.62,
+    "total_asset_turnover": 0.198
+  },
+  "business_composition_2025": {
+    "by_products": {
+      "有源光器件_大全_2025revenue_1H": "29.98亿(58.06%, 毛利率46.63%)",
+      "无源光器件_大全_2025revenue_1H": "20.84亿(40.37%, 毛利率63.67%)",
+      "其他": "8110万(1.57%, 毛利率75.64%)"
+    },
+    "by_region": {
+      "外销": "38.39亿(74.35%, 毛利率51.59%)",
+      "内销": "13.24亿(25.65%, 毛利率60.84%)"
+    }
+  },
+  "shareholders_2026Q1": {
+    "controlling": "苏州天孚仁和投资管理有限公司 (37.56%)",
+    "actual_controllers": "欧洋,邹支农,邹咏航,邹欣航 (合计持股0.01%)",
+    "no2": "香港中央结算(港股通) 7.13%",
+    "no3": "朱国栋(创始人/高管) 7.00%",
+    "no4": "MORGAN STANLEY 1.04% (新进)",
+    "no6": "UBS AG 0.54% (新进)",
+    "top10_pct": "55.71% (合计)",
+    "institutional_pct": "57.88% (合计)"
+  },
+  "shareholders_count": {
+    "2026-06-18": 255000,
+    "2026-05-29": 141130,
+    "2026-03-31": 129300,
+    "2026-03-20": 116000,
+    "trend": "近两期大幅分散化(由12.93万户->25.50万户)，Q1加仓后散户化加剧"
+  },
+  "announcements": [
+    {
+      "date": "2026-07-07",
+      "type": "公告",
+      "title": "独立董事取得独立董事资格证书"
+    },
+    {
+      "date": "2026-06-30",
+      "type": "并购重组",
+      "title": "新加坡天孚与SuperX、APEX VERVE设立合资公司SUPERX OPTICAL COMMUNICATIONS（天孚认购70万新币35%股权）"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "半年报披露",
+      "title": "2026半年报预约8月19日披露"
+    },
+    {
+      "date": "2026-06-28",
+      "type": "机构调研",
+      "title": "接待15家机构调研"
+    }
+  ],
+  "competitors": {
+    "中际旭创_SZ300308": {
+      "price": 1128.35,
+      "mktcap_billion": 12583.75,
+      "pe_dy": 54.86,
+      "pb": 36.32,
+      "comment": "光模块全球龙头，体量约为天孚5倍"
+    },
+    "新易盛_SZ300502": {
+      "price": 510.84,
+      "mktcap_billion": 7122.42,
+      "pe_dy": 64.05,
+      "pb": 36.69,
+      "comment": "光模块龙头，体量约为天孚2.7倍"
+    },
+    "光迅科技_SH002281": {
+      "price": null,
+      "mktcap_billion": null,
+      "comment": "未取到当日数据；国内光器件龙头"
+    },
+    "太辰光_SZ300570": {
+      "price": 205.36,
+      "mktcap_billion": 466.43,
+      "pe_dy": 177.27,
+      "pb": 30.25,
+      "comment": "光器件精密陶瓷和连接件，规模较小但赛道受益"
+    },
+    "仕佳光子_SH688313": {
+      "price": 141.91,
+      "mktcap_billion": 641.41,
+      "pe_dy": 138.03,
+      "pb": 42.12,
+      "comment": "PLC分路器/AWG/光芯片"
+    },
+    "腾景科技_SH688195": {
+      "price": 155.18,
+      "mktcap_billion": 281.02,
+      "pe_dy": 486.73,
+      "pb": 28.2,
+      "comment": "精密光学元件"
+    }
+  },
+  "industry_avg_communication_eqpt_89peers": {
+    "mktcap_billion": 540.9,
+    "pe_dy": 103.6,
+    "pb": 10.58,
+    "gross_margin_pct": 30.27,
+    "net_margin_pct": -1.84,
+    "roe_pct": 1.12
+  },
+  "research_2025": {
+    "rd_expense_cny": 266600000.0,
+    "rd_growth_pct": 14.79,
+    "researchers_growth_pct": 40.98,
+    "patents_global_HK_count": 194,
+    "headline_achievements": [
+      "1.6T光引擎规模量产",
+      "CPO配套光器件研发完成",
+      "硅光集成路线布局"
+    ],
+    "海外布局": "苏州+新加坡双总部；苏州+日本研发中心；江西+泰国量产基地"
+  }
+}
