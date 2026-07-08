@@ -1,0 +1,2123 @@
+<!DOCTYPE HTML>
+<html>
+<head id="head">
+		    <title>�Ű�ҽ��(002432) ��Ӫ����_F10_ͬ��˳���ڷ�����</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7;IE=9"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+	<meta name="keywords" content="�Ű�ҽ�����¶�̬,�Ű�ҽ�ƹ�˾�ſ�,�Ű�ҽ�Ʋ������,�Ű�ҽ�ƹɶ��о�,�Ű�ҽ�ƹɱ��ṹ,�Ű�ҽ�ƹ�˾����,�Ű�ҽ�Ʒֺ�����"/>
+	<meta name="description" content="����"/>
+	<!-- ȯ��url�������ӣ����ֻ��broker-pcf10.html -->
+	
+	<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783487.js"></script> <script>
+    function getUrlParams(key, url) {
+        var href = url ? url : window.location.href;
+        if (href.indexOf("?") < 0 && href.indexOf("#") < 0) {
+            return false;
+        }
+        var hrefStr = href.replace(/#/g, "&");
+        hrefStr = hrefStr.replace(/\?/g, "&");
+        var paramsObj= {};
+        hrefStr.split("&").forEach(function(i) {
+            if (i.indexOf("=") > -1) {
+                paramsObj[i.split("=")[0]] = i.split("=")[1];
+            }
+        });
+        if (key) {
+            return paramsObj[key] || false;
+        } else {
+            return paramsObj;
+        }
+    }
+
+    function addParam(url, obj) {
+        var str = "",res;
+        for (var key in obj) {
+            str += (key + "=" + obj[key]);
+        }
+        if (url.indexOf("?") > -1) {
+            res = url.split('?').join('?' + str + '&');
+        } else if (url.indexOf("#") > -1) {
+            res = url.replace(/#/g, "?" + str + "#");
+        } else {
+            res = url + "?" + str;
+        }
+        return res;
+    }
+
+    var historyUrl = document.referrer;
+    if (historyUrl) {
+        var broker = getUrlParams('broker', historyUrl);
+        if (broker && window.history) {
+            var url = window.location.href;
+            url = addParam(url, broker ? {broker: broker} : {});
+            window.history.pushState('', '', url);
+        }
+    }
+</script>
+	<!-- f10�����䣬���ߺ����޸ģ����ֻ��utils.html -->
+	
+	<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783487.js"></script> <script type="text/javascript" charset="utf-8" src="//s.thsi.cn/cb?cd/website-thsc-f10-utils/1.4.8/f10-polyfill.js" crossorigin></script>
+<script type="text/javascript" charset="utf-8" src="//s.thsi.cn/cd/kernel-thslc-component-materials-container/F10/static/css-vars-ponyfill.js" ></script>
+<script type="text/javascript" charset="utf-8" src="//s.thsi.cn/cb?cd/website-thsc-f10-utils/1.6.0/thsc-f10-utils.js" crossorigin></script>
+<script>
+    function isIEInClient(){
+        return !!(window.external && 'getUserPath' in window.external && 'createObject' in window.external);
+    }
+
+    function isInTongYiClient(){
+      return !!(window.external && 'createObject' in window.external);
+    }
+
+    function isInYuanHangClient(){
+        return !!(window.HevoCef && 'IsHevoCef' in window.HevoCef);
+    }
+    
+    function isInIEEnv(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        return ua.indexOf('msie') > -1 || ua.indexOf('trident/') > -1;
+    }
+
+    function isChromeOlderThan50(){
+        var userAgent = navigator.userAgent.toLowerCase();
+        var match = userAgent.match(/chrome\/(\d+)./);
+        if (match && parseInt(match[1]) <= 49) {
+           return true;
+        }
+        return false;
+    }
+
+</script>
+<style>
+.kamis-loading {
+	min-height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #437EB7;
+	background-color: rgba(255,255,255,0.8);
+	gap: 4px;
+	font-size: 14px;
+}
+.dark .kamis-loading, .black .kamis-loading {
+	background-color: #171D25;
+	color: #FEB302;
+}
+.kamis-loading svg {
+	width: 20px;
+	height: 20px;
+}
+.arco-icon-spin {
+  animation: spin 1s linear infinite;
+}
+.kamis-nodata {
+  min-height: 300px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #333;
+  padding: 10px 14px;
+}
+.dark .kamis-nodata, .black .kamis-nodata {
+  color: #999;
+  background-color: #0b1016;
+  border-color:#1e2b38;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+		<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783487.js"></script> <script src="//s.thsi.cn/js/m/common/bridge.js" type="text/javascript"  crossorigin></script>
+	<script type="text/javascript"  crossorigin  src="//s.thsi.cn/js/jquery-1.8.3.min.js"></script>
+	<script charset="utf-8" src="//s.thsi.cn/cb?webprivate/lib/axios.min.js;hxapp/m/base/js/vue.2.7.16.min.js" crossorigin="anonymous"></script>
+	<!-- kamis ��Ⱦ�� -->
+	<script charset="utf-8" src="//s.thsi.cn/hxapp/m/pkgs/amis-2c/sdk/v1-3/2c-sdk-register.1.3.6.js"></script>
+	<!-- �°����cdn -->
+	<script crossorigin src="//s.thsi.cn/cb?cd/weblog/0.0.1-alpha.27/weblog.js"></script>
+		<script>
+		var xhrProto = XMLHttpRequest.prototype;
+		var origOpen = xhrProto.open;
+		xhrProto.open = function (method, url) {
+			if (location.host.indexOf('0033.cn') > -1 && arguments[1] !== undefined && arguments[1].indexOf('10jqka.com.cn') > -1) {
+				arguments[1] = arguments[1].replace('10jqka.com.cn', '0033.cn');
+			}
+			return origOpen.apply(this, arguments);
+		};
+	</script>
+	<script>
+		var originCreateElement =  document.createElement;
+		document.createElement = function(tagName){
+			const element = originCreateElement.apply(document,arguments);
+			if(tagName.toLowerCase() === 'script'){
+				element.setAttribute('charset','utf-8');
+			}
+			return element;
+		}
+	</script>
+	<script id="monitor-script" api_key="ths_f10" src="//s.thsi.cn/cb?cd/website-thsc-f10-utils/1.6.40/monitor.js" crossorigin></script>
+	<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/common/cefapi/1.5.5/cefApi.min.js;js/basic/stock/newPcJs/common.js"></script>
+	<script>
+		try{
+			feMonitor.setConfig(
+				{
+				slientDev:false,//��������(localhost)�Ƿ��ͱ�������Ĭ�ϲ�����Ϊtrue
+				sampleRate:0.1, //������,������0-1֮�䣬ԽС�ɼ���Ƶ��Խ��
+				isCollectPerformance:true, //�Ƿ�ɼ�����
+				title:'pc-F10'
+				}
+			);
+		}catch(e){
+
+		}
+	</script>
+	<style>
+        .wencaibs{color:#008BFF!important;cursor:pointer;}
+        .wd-tb .ptxt { word-break: break-word;}
+        .comment-chart-head{color: #89a;}
+        .comment-chart-head span{float: right;}
+        .comment-chart-head span i{vertical-align: middle; display: inline-block; width: 20px; height: 20px;margin: 0 2px 0 6px; border-radius: 20px; overflow: hidden;}
+        .comment-chart-head .imp-news{background: #da2e1f;}
+        .comment-chart-head .yidong-news{background: #e3bf1a;}
+
+        #ckg_table1 tr td{text-align:center}
+        #ckg_table2 tr td{text-align:center}
+        #ckg_table3 tr td{text-align:center}
+        #ckg_table4 tr td{text-align:center}
+        #ckg_table5 tr td{text-align:center}
+		li{list-style-type:none;
+			list-style-position:outside;}
+		#jpjl-input:focus { outline: none; }
+		.black.inClient .clientJump {
+			cursor: pointer;
+			color: #0199fa;
+			text-decoration: underline;
+		}
+		.white.inClient .clientJump {
+			color: #07519a;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.managelist .name a {    color: #0199fa;
+			margin: 0 3px 2px;
+			text-decoration: underline;
+			border-bottom: none !important;
+		}
+	</style>
+	<!--ͳ��ҳ�����ʱ��-->
+	<script type="text/javascript">
+		var loadTimer= new Date().getTime();
+	</script>
+    <style>
+        #search_cyter{
+            display: block !important;
+        }
+		#profile .tickLabels .tickLabel{
+			padding-right:12px;
+			box-sizing:border-box;
+		}
+	  .a_cursor {
+		pointer: cursor;
+	}
+    </style>
+</head>
+<script type="text/javascript">
+
+//cookie����
+function setReviewJumpState(state) {
+	document.cookie = 'reviewJump='
+					+ state
+					+ ';path=/;domain='
+					+ window.location.host;
+}
+//ȡ�ö�Ӧ����cookie
+function getCookie(name) {
+	var cookieValue = "";
+	var search = name + "=";
+	if (document.cookie.length > 0) {
+	    offset = document.cookie.indexOf(search);
+	    if (offset != -1)    {
+	        offset += search.length;
+	        end = document.cookie.indexOf(";", offset);
+	        if (end == -1) end = document.cookie.length;
+	        cookieValue = unescape(document.cookie.substring(offset, end))
+	    }
+	}
+	return cookieValue;
+}
+//��Ŀ��ǰ��ת
+var reviewJumpState = getCookie('reviewJump');
+if (!!reviewJumpState && reviewJumpState != 'nojump') {
+	setReviewJumpState('nojump');
+	window.location.href = unescape(reviewJumpState);
+} else {
+	setReviewJumpState('nojump');
+}
+//��̬����link-ͬ��-������
+function addCssByLink(url){
+    document.write('<link rel="stylesheet" type="text/css"');
+    document.write(' href="' + url + '">');
+}
+function isMac() {
+        return /macintosh|mac os x/i.test(navigator.userAgent);
+};
+ var hash = window.location.hash.substring(1);
+hashArray = hash.split('=');
+if (hashArray[0] == 'stockpage') {
+    var STOCK_SKIN = 'white';
+} else {
+    var STOCK_SKIN = getCookie('skin_color');
+}
+//��ɫ��ͻ���ͬ��
+function syncClientSkin(){
+	try {//ȡ�ÿͻ��˷�ɫ
+		if (isMac()) {
+			return 'white';
+		}
+		return 'black';
+	} catch(e) {}
+}
+if (!STOCK_SKIN) {
+	STOCK_SKIN = syncClientSkin();
+}
+document.documentElement.setAttribute("class",STOCK_SKIN);
+if (STOCK_SKIN == 'white') {
+	// addCssByLink('/f10/css/company-compare.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/company-compare-202006082100.css');
+ 
+    addCssByLink('//s.thsi.cn/cb?css/basic/stock/white/20200604153837/style_v4-2.css;css/basic/stock/white/20200604153837/chart_v2.min.20180110.css;css/basic/stock/white/20200604153837/dupont.css;css/basic/stock/white/20200604153837/black_v2-4.20190711.css;css/basic/stock/white/custom.min.css;css/basic/stock/white/20200604153837/operations.css;css/basic/stock/white/20200604153837/writecsskzd.min.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/20200604153837/survey-w.css;css/basic/stock/20200604153837/wxgcl_mod.css;css/basic/stock/provider-w_v2.css;css/basic/stock/20200604153837/searchbar-w_v2.css;css/basic/stock/20200604153837/wccept.css;css/basic/stock/wtgfx.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/fschool/20200604153837/f_school_w.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/white/wsplpager.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/wchartsdom.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/white/20200604153837/industrydata.css;css/basic/stock/white/20200604153837/main_v1-2.css;css/basic/stock/white/20200604153837/xgcl.css;css/basic/stock/white/20200604153837/courier.css;css/basic/stock/white/20200604153837/recommend.css;css/basic/stock/white/20200604153837/housedata.css;css/basic/stock/white/202005071600/20200604153837/longhu.css;css/basic/stock/white/20200604153837/operate_white.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/white/remind_white.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/index_v1.css');
+	addCssByLink('//s.thsi.cn/js/home/v5/thirdpart/scrollbar/jquery.mCustomScrollbar.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/20200604153837/instition_white_v2.css');
+	if (!!window.ActiveXObject&&!window.XMLHttpRequest) {
+		addCssByLink('//s.thsi.cn/css/basic/stock/white/20200604153837/expression.css');
+	}
+					addCssByLink("//s.thsi.cn/css/basic/common/white/title.css")
+} else {
+	// addCssByLink('/f10/css/company-compare.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/company-compare-202006082100.css');
+ 	addCssByLink('//s.thsi.cn/cb?css/basic/stock/black/20200604153837/style_v3-5.min.20200426.css;css/basic/stock/black/20200604153837/chart_v2.min.20190410.css;css/basic/stock/black/20200604153837/black_v2-4.20190711.css;css/basic/stock/black/custom.min.css;css/basic/stock/black/20200604153837/operations.css;css/basic/stock/black/20200604153837/csskzd.min.20150608.css;/css/basic/stock/20200604153837/survey.20150929.css;/css/basic/stock/provider_v2.css;/css/basic/stock/20200604153837/searchbar_v2.css;/css/basic/stock/20200604153837/ccept.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/fschool/20200604153837/f_school.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/black/splpager.20170504.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/chartsdom.css;css/basic/stock/20200604153837/xgcl_mod.css;/css/basic/stock/tgfx.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/black/20200604153837/industrydata.css;css/basic/stock/black/20200604153837/main_v1-2.css;css/basic/stock/black/20200604153837/xgcl.css;css/basic/stock/black/20200604153837/courier.css;css/basic/stock/black/20200604153837/funcRecommend.css;css/basic/stock/black/20200604153837/dupont.css;css/basic/stock/black/202005071600/20200604153837/longhu.css;css/basic/stock/black/20200604153837/operate.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/black/remind_black.css');
+	addCssByLink('//s.thsi.cn/js/home/v5/thirdpart/scrollbar/jquery.mCustomScrollbar.css');
+
+	addCssByLink('//s.thsi.cn/css/basic/stock/index_v1.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/20200604153837/instition_black_v2.css');
+	if (!!window.ActiveXObject&&!window.XMLHttpRequest) {
+		addCssByLink('//s.thsi.cn/css/basic/stock/black/20200604153837/expression.min.20140801.css');
+	}
+					addCssByLink("//s.thsi.cn/css/basic/common/black/title.css")
+}
+/*calendar*/
+function  minDate(){
+ 	var data = $('#inte_json').text();
+	var datajson =new Object();
+	if (data) {
+		data = eval('('+data+')');
+	}
+	for (var x in data) {
+		datajson = data[x];
+	}
+	var minDate = datajson.year+'-'+datajson.month+'-'+datajson.day;
+	return minDate;
+ }
+ Date.prototype.Format = function(fmt)
+{ //author: meizz
+  var o = {
+    "M+" : this.getMonth()+1,                 //�·�
+    "d+" : this.getDate(),                    //��
+    "h+" : this.getHours(),                   //Сʱ
+    "m+" : this.getMinutes(),                 //��
+    "s+" : this.getSeconds(),                 //��
+    "q+" : Math.floor((this.getMonth()+3)/3), //����
+    "S"  : this.getMilliseconds()             //��
+  };
+  if(/(y+)/.test(fmt))
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+  for(var k in o)
+    if(new RegExp("("+ k +")").test(fmt))
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+  return fmt;
+}
+ function  displayDate(){
+ 	var data = $('#inte_json').text();
+ 	var date =new Array();
+	var datajson =new Object();
+	var i=0;
+	if (data) {
+		data = eval('('+data+')');
+	}
+	for (var x in data) {
+		datajson[x] = data[x];
+		dates = datajson[x].year+'-'+datajson[x].month+'-'+datajson[x].day;
+		if (x==0|| date[i-1] != dates) {
+			date[i] = dates;
+			i++;
+		}
+	}
+	var count =date.length;
+	var date2 = new Date();
+	var month =date2.getMonth()+1;
+	var day =date2.getDate();
+	if ((date2.getMonth()+1)>9) {
+	} else {
+	 	var month ="0"+month;
+	}
+	if (date2.getDate()>9) {
+	} else {
+	 	var day ="0"+day;
+	}
+	year = date2.getFullYear();
+	date2 = year+'-'+month+'-'+day;
+	var result = "['";
+	for (i=0;i<count;i++) {
+		if (date2 == date[i]) {
+			dateArr = date2.split('-');
+			newdate = new Date(new Date(dateArr[0], dateArr[1]-1,  dateArr[2])-24*60*60*1000);
+			date2 = newdate.Format("yyyy-MM-dd");
+		} else {
+			result +=date2+"',";
+			dateArr = date2.split('-');
+			newdate = new Date(new Date(dateArr[0], dateArr[1]-1,  dateArr[2])-24*60*60*1000);
+			date2 = newdate.Format("yyyy-MM-dd");
+			i--;
+		}
+	}
+	result = result.substr(0,result.length-1)+']';
+	return result;
+ }
+    function showDatePicker1(color) {
+        WdatePicker({
+            selfCssUrl:'//s.thsi.cn/css/basic/stock/'+STOCK_SKIN+'/mydatepicker.css',
+            eCont:'WdateDiv1',
+            vel:'elDate1',
+            minDate:minDate(),
+            maxDate:'%y-%M-%d',
+            onpicked:function(dp){
+                $('#elDate1').text(dp.cal.getNewDateStr());
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            },
+            Mchanged:function(dp){
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            }
+        });
+    }
+    function showDatePicker2(color) {
+
+        WdatePicker({
+            selfCssUrl:'//s.thsi.cn/css/basic/stock/'+STOCK_SKIN+'/mydatepicker.css',
+            eCont:'WdateDiv2',
+            vel:'elDate2',
+            maxDate:'%y-%M-%d',
+            onpicked:function(dp){
+                $('#elDate2').text(dp.cal.getNewDateStr());
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            },
+            Mchanged:function(dp){
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            }
+        });
+    }
+  function isIE() {
+	// �ж�IE���������汾
+	if(document.documentMode) {
+		return document.documentMode;
+	}
+	var userAgent = navigator.userAgent.toLowerCase();
+	if (userAgent.indexOf('edge') > -1) {
+		return 'edge';
+	}
+	return false;
+  }
+	 // ��ʼ������
+	 var initFinance = window.localStorage.getItem('initFinance');
+	 if (!initFinance) {
+		 window.localStorage.setItem('initFinance', 'init');
+		 window.localStorage.setItem('memoryPage', 'old');
+	  }
+	  // ��ת��ַ
+    function jumpToUrl(url, name, anchor, conceptName) {
+	  if (!url || !name) {
+			return;
+		}
+		// ���ϵ�ַ�л�
+		var oldPage = {
+			'financen': true
+		}
+		var pageLocation = window.localStorage.getItem('memoryPage');
+      //��IE������
+      if (isInIEEnv() || (pageLocation && pageLocation == 'old' && oldPage[name])) {
+        location.href = url;
+	    return;
+     }
+     var code = $('#stockCode').val();
+	 var codeName = $('#stockName').val();
+	 var marketid = $('#marketId').val();
+	 var pageAnchor = anchor ? '&anchor=' + anchor : '';
+	 var host = window.location.host;
+	 var targetUrl = '//' + host + '/astockpc/astockmain/index.html#/' + name + '?code=' + code + '&marketid=' + marketid + '&code_name=' + codeName + pageAnchor;
+	 if (conceptName) {
+		 targetUrl += "&cname=" + conceptName;
+	 }
+     location.href = targetUrl;
+    }
+	// ��ת�µ�ַ
+	function jumpToNew() {
+       var code = $('#stockCode').val();
+	   var codeName = $('#stockName').val();
+	   var marketid = $('#marketId').val();
+	   var url = window.location.href;
+	   var module = url.match(/\/(\w+).html?/);
+	   var moduleName = '';
+	   var host = window.location.host;
+	   if (module && module[1]) {
+		   moduleName = module[1];
+		   if (module[1] == 'finance') {
+			   moduleName = 'financen';
+		   }
+	   }
+	   window.TA.log('F10hs_cwfx.tyxbb.click');
+	   window.localStorage.setItem('memoryPage', 'new');
+	   setTimeout(function (){
+		  location.href = '//' + host + '/astockpc/astockmain/index.html#/' + moduleName + '?code=' + code + '&marketid=' + marketid + '&code_name=' + codeName;
+	   }, 10)
+	}
+</script>
+    <script type="text/javascript" charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/qdc_ad-510a70.js"></script>
+	<link href="//s.thsi.cn/css/basic/stockph/qdc_ad-6e8683.css" rel="stylesheet" type="text/css">
+ 
+<body>
+<div class="votepopbox votesuccess" style="display: none">
+		<div class="vpopicon"></div>
+		<p class="vpoptxt fz18">лл���ı������</p>
+		<p class="vpoptxt">����֧�����������Ķ���</p>
+	</div>
+	<div class="votepopbox voteinfo" style="display: none">
+		<div class="vpopicon"></div>
+		<p class="vpoptxt fz18">лл����֧��</p>
+		<p class="vpoptxt"></p>
+	</div>
+    <div class="wrapper">
+<!-- F10 Header Start -->
+		<div class="header">
+		    <div class="hd">
+		        <div class="logo fl" id="logo_self"><a title="ͬ��˳F10">ͬ��˳F10</a></div>
+
+															<div onclick="sendTalog('f10_click_quot')" style="width:260px; margin-left:60px; font-size:14px;cursor:pointer;margin-right:10px;display:none;text-align:center" class="fl tip " id="quotedata">
+							<div  class="fl">���¼ۣ� <span style="width:40px" class="upcolor" id="zxj">--</span></div>
+							<div  class="fr">�ǵ����� <span style="width:40px;" class="upcolor" id="zdf">--</span></div>
+						</div>
+											        <span class="fr skin-change"><a href="###">����</a></span>
+		        <div class="search fr" id="search_cyter">
+		            <div id="updownchange" type="once" class="codeChange fl" style="display: none;">
+		                <a href="javascript:void(0)" class="per">��һ����</a>
+		                <a href="javascript:void(0)" class="next">��һ����</a>
+		            </div>
+		            <div class="fl searchbar">
+			            <div class="text fl">
+			                <input type="text" id="jpjl-input" value="�����Ʊ���ƻ����" /><!--�ı����ý����.searchbar����hover��-->
+			             </div>
+		                <input type="button" value="����" class="btn" id="submit"/>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="bd clear">
+		        <div class="code fl">
+					<div><h1 style="margin:3px 0px 0px 0px">
+												�Ű�ҽ��</h1></div>
+					<div>
+						<a href="interactive.html" tid="wdm" posid="r1c1" class="iwen" onclick="TA.log({'id':'F10_review','nj':1})">i�ʶ���</a>
+						<style>
+							.qiyehao {
+								display:none;
+								float:left;
+								cursor:pointer;
+								margin: 4px 0 0 17px;
+								width:50px;
+								text-align:center;
+								font-size:12px;
+								padding: 2px  0 4px 0;
+								line-height:12px;
+							    border-radius:6px;
+								color: white;
+                                background-color:#437eb7;
+							}
+							.black  .qiyehao {
+								background-color: #b60006;
+							}
+						</style>
+						<div class="qiyehao">��ҵ��</div>
+						<h1 style="margin:3px 0px 0px 0px">
+						002432						</h1>
+						<script>
+							 $(document).ready(function(){
+								//��ȡ�г�����
+                                var market = $('#marketId').val();
+								//��ȡ��Ʊ����
+								var code = $('#stockCode').val();
+								//�ж��Ƿ���B��
+								var isBStock = function () {
+									var flag = market == '18' || market == '34' || market == '105';
+									return flag;
+								}
+								
+								//��B�ɺ�Ie������в�չʾ��ҵ�����
+								if(isBStock() || isInIEEnv()){
+									return ;
+								}
+								isThsClient(function(){
+                                   //���ض����ʴ����
+								   $('.iwen').hide();
+                                   //չʾ��ҵ�����
+								   $('.qiyehao').show();
+								   $(document).on ('click','.qiyehao',function(){
+                                      var url = 'https://board.10jqka.com.cn/fe/board/qyh.html#/qyh/homepage?thscode=' + code  + '&marketid=' + market + '&from=f10';
+									    window.API.use({
+										  method: "Util.openURL2",
+										  data:{
+											url: url,
+											mode: 1,
+											useCef: true,
+										  }
+									    })
+								    })
+								})
+							 })
+						</script>
+					</div>
+		        </div>
+		        <div class="nav">
+		            <ul>
+		                <li><a href="./"              target="_self" tid="zxdt" posid="r1c3" >���¶�̬</a></li>
+		                <li><a href="javascript:void(0)" onclick="jumpToUrl('./company.html', 'company', '');return false;"   target="_self" tid="gszl" posid="r1c4" > ��˾����</a></li>
+		                <li><a href="./holder.html"   target="_self" tid="gdyj" posid="r1c5" >�ɶ��о�</a></li>
+						<li><a href="javascript:void(0)" onclick="jumpToUrl('./operate.html', 'operate', '');return false;" target="_self" tid="jyfx" posid="r1c6"  class="cur"> ��Ӫ����</a></li>
+		                <li><a href="./equity.html"   target="_self" tid="gbjg" posid="r1c7" >�ɱ��ṹ</a></li>
+		                <li><a href="./capital.html"  target="_self" tid="zbyz" posid="r1c8" > �ʱ�����</a></li>
+		                <li><a href="./worth.html"    target="_self" tid="ylyc" posid="r1c9"  >ӯ��Ԥ��</a></li>
+		                <li><a href="./news.html"     target="_self" tid="xwgg" posid="r2c3" >���Ź���</a></li>
+						<li><a  href="javascript:void(0)"  onclick="jumpToUrl('./concept.html', 'concept', '');return false;"target="_self" tid="gntc" posid="r2c4" >�������</a></li>
+		                <li><a  href="javascript:void(0)"  onclick="jumpToUrl('./position.html', 'position', '');return false;"target="_self" tid="zlcc" posid="r2c5" >�����ֲ�</a></li>
+		                <li><a href="javascript:void(0)"  onclick="jumpToUrl('./finance.html', 'financen', '');return false;" target="_self" tid="cwgk" posid="r2c6" > �������</a></li>
+						<li><a href="javascript:void(0)"  onclick="jumpToUrl('./bonus.html', 'bonus', '');return false;" target="_self" tid="fhrz" posid="r2c7" >�ֺ�����</a></li>
+						<li><a href="./event.html"    target="_self" tid="gsds" posid="r2c8" >��˾����</a></li>
+		                <li><a href="./field.html"    target="_self" tid="hydb" posid="r2c9" >��ҵ�Ա�</a></li>
+		            </ul>
+		        </div>
+		        <div class="subnav">
+					<ul>
+					   						<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="bjprice" taid="f10_click_bjprice" name="operate.html#bjprice" href="###">�׾Ƽ۸�							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="intro" taid="f10_click_intro" name="operate.html#intro" href="###">��Ӫ����							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="invest" taid="f10_click_invest" name="operate.html#invest" href="###">��Ӫҵ������							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="analysis" taid="f10_click_analysis" name="operate.html#analysis" href="###">��Ӫ���ɷ���							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="provider" taid="f10_click_provider" name="operate.html#provider" href="###">��Ҫ�ͻ�����Ӧ��							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="price" taid="f10_click_price" name="operate.html#price" href="###">��Ʒ�۸�							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="observe" taid="f10_click_observe" name="operate.html#observe" href="###">���»ᾭӪ����							</a>
+						</li>
+								            </ul>
+		        </div>
+		    </div>
+		</div>
+<!-- F10 Header End -->
+<!-- F10 Content Start -->
+		<style>
+		.iwc_searchbar{display: none;}
+	</style>
+		<div class="iwc_searchbar clearfix" style="">
+    <div class="tips-box" style="display: none;">
+        <div class="t-hd"></div>
+        <div class="t-bd">
+            <div class="info">
+                <p>F10 �����Ҳ���������������ֱ����������Ҫ�Ĺ��ܣ��������롰�����񡱣��Ͽ���һ��Ŷ��</p>
+                <div class="btn">
+                    <a href="###" class="a-left close">����</a>
+                    <a href="###" class="a-right next">��һ��</a>
+                </div>
+            </div>
+            <div class="info" style="display: none;">
+                <p>ѡ��ѡ���ã�����ֱ����������Ҫ���ʾ������������롰��һ���Ƿ�����30%�Ĺ�Ʊ���Ͻ��ж��ɣ�</p>
+                <div class="btn">
+                    <a href="###" class="a-left prev">��һ��</a>
+                    <a href="###" class="a-right close">���</a>
+                </div>
+            </div>
+        </div>
+        <div class="t-ft"></div>
+   	 </div>
+     <div class="searchfx">
+        <input id="search_input" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh_CN" class="fillbox" autocomplete="off" type="text" value="�����ʾ䣬����֪���Ķ�������">
+        <input class="action_btn" id="search_submit" type="button" value="����">
+        <span  class="tips-icon"></span>
+     </div>
+	</div>
+	<div class="content page_event_content" >	
+<style type="text/css">
+    .ls-tags-wrap{
+        display: inline-block;
+        width: 100px;
+        font-weight: 400;
+    }
+    .ls-tags{
+        font-size: 12px;
+        color: #fff;
+        border-radius: 3px;
+        background: #f10f10;
+        padding: 0 3px;
+        margin: 0 5px;
+        height: 18px;
+        line-height: 17px;
+        display: inline-block;
+    }
+    .lp-price-chart{
+        height: 250px;
+        width: 866px;
+    }
+    .lcomment-pic{
+        margin-top: 2px;
+        width: 71px;
+        height: 44px;
+        float: left;
+        margin-right: 20px;
+    }
+    .lp-data-list{
+        overflow: hidden;
+        zoom: 1;
+    }
+    .lp-data-list li{
+        padding-left: 20px;
+        background: url(//i.thsi.cn/images/basic/stock/lp-data-icon.png) no-repeat 0 50%;
+    }
+    .lp-data-table td{
+        text-align: center;
+    }
+    .lp-data-table th{
+        font-size: 14px;
+    }
+    .lp-data-table .m_select .text{
+        font-size: 12px;
+    }
+    .lp-desc{
+        padding: 15px;
+        border: 1px solid #1e2b38;
+        border-bottom: none;
+        position: relative;
+        min-height: 35px;
+    }
+    .lp-box .m_tab_content2{
+        padding-top: 0;
+    }
+    .lp-box .m_select{
+        font-size: 12px;
+    }
+    .lp-sale-type, .lp-area-type{
+        display: none;
+        height: 100%;
+    }
+    .lp-city-area li{
+        float: left;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 28px;
+        font-size: 14px;
+        color: #999;
+        margin-right: 1px;
+    }
+    .lp-city-chart{
+        height: 244px;
+        border: 1px solid #344459;
+    }
+    .lp-city-trend-chart, .lp-city-money-chart{
+        height: 244px;
+        float: left;
+        width: 431px;;
+    }
+    .lp-city-trend-chart{
+        border-right: 1px solid #344459;
+    }
+    .lp-box .pager li a{
+        width: auto;
+        padding: 0 5px;
+    }
+    .lp-box .m_select .list{
+        z-index: 9
+    }
+</style>
+
+<!-- ��Ӫ���� -->
+<div class="m_box main_intro i_hover_box" id="intro" stat="operate_intro" itag='0'>
+	<div class="hd">
+		<h2>��Ӫ����</h2>
+	</div>
+	<div class="bd pt5">
+		<div class="mt15">
+			<!--<div class="threecate pd5 clearfix"><p class="fl">����excel��ʽ</p><a class="fr export_excel" href="#"><s></s>����EXCEL</a></div>
+			--><ul class="main_intro_list">
+				<li><span class="hltip f12">��Ӫҵ��</span><p>����ҽ����е���з������������ۡ�</p></li>
+				<li><span class="hltip f12">��Ʒ���ͣ�</span><p>iHealthϵ�в�Ʒ��ODM/OEM��Ʒ��������ҽ�Ʋ�Ʒ�����񡢴�ͳӲ����Ʒ</p></li>
+				<li><span class="hltip f12">��Ʒ���ƣ�</span><p>
+																    					iHealthϵ�в�Ʒ												    ��					ODM/OEM��Ʒ												    ��					������ҽ�Ʋ�Ʒ������												    ��					��ͳӲ����Ʒ																</p></li>
+				<li><span class="hltip f12">��Ӫ��Χ��</span><p>һ����Ŀ����һ��ҽ����е��������һ��ҽ����е���ۣ���һ��ҽ���豸���ޣ��ڶ���ҽ����е���ۣ��ڶ���ҽ���豸���ޣ���е�豸�з�����е�豸���ۣ����Ӳ�Ʒ���ۣ������Ǳ����죻�����Ǳ����ۣ��ɴ��������豸���죻�ɴ��������豸���ۣ����ܳ����豸���죻���ܳ����豸���ۣ���Ϣ������ѯ���񣻼������񡢼���������������ѯ����������������ת�á������ƹ㣻�����������������ۣ�����������񣻻��������ݷ��񣻽�����ѯ���񣨲������Ʒ��񣩣���������ڣ����������ڣ����ðٻ����ۣ����õ������ۣ����ܼ�ͥ�����豸���죻���ܼ�ͥ�����豸���ۣ�ĸӤ��Ʒ���ۣ�����������Ʒ���ۣ�ר�û�ѧ��Ʒ���ۣ�����Σ�ջ�ѧƷ�����������豸���죻�������豸���ۣ����ɵ�·���ۣ��ϳɲ������ۣ���Ϣϵͳ����ά�����񣻻��������ۣ���������Ҫ���ɵ���Ʒ��������Ԫ�������������豸���ۣ�����ʳƷ��Ԥ��װ�����ۣ�������Ʒ���ۣ��������ʽ����Ͷ�ʻ���Ǿ�ס���ز����ޡ����������뾭��׼����Ŀ�⣬ƾӪҵִ������������չ��Ӫ���������Ŀ���ڶ���ҽ����е������������ҽ����е������������ҽ����е��Ӫ��������ҽ���豸���ޣ�ҽ����е��������Ϣ���񣻻�������Ϣ����ʳƷ���ۣ�Ͷ�ʹ������������뾭��׼����Ŀ������ز�����׼�󷽿ɿ�չ��Ӫ������徭Ӫ��Ŀ����ز�����׼�ļ�������֤��Ϊ׼��</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+<!-- ��Ӫҵ������ -->
+<div class="m_box gqtz i_hover_box" id="invest" stat="operate_invest" itag='1'>
+	<div class="hd">
+		<h2>��Ӫҵ������</h2>
+	</div>
+		<div class="bd pt5">
+			<div class="clearfix">
+				<div class="m_tab mt15 clearfix">
+					<ul>
+					    					    						<li class="cur"><a href="javascript:void(0)" class="operateTab" tag="0">��ĩֵ</a></li>
+																		<li ><a href="javascript:void(0)" class="operateTab" tag="1">�ۼ�ֵ</a></li>
+																	</ul>
+					<div class="fr">���¹������ڣ�<span class="tip">2026-04-29��</span></div>
+				</div>
+																<div class="m_tab_content"  >
+					<table class="m_table m_hl" id="operate_table">
+						<thead>
+							<tr>
+								<th width="170px">ҵ������</th>
+																<th>2025-12-31</th>
+																<th>2024-12-31</th>
+																<th>2023-12-31</th>
+																<th>2022-12-31</th>
+																<th>2021-12-31</th>
+															</tr>
+						</thead>
+						<tbody>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">�����:ҽ�ƽ���(̨/�˷�)</td>
+																<td>2069.90��</td>
+																<td>2332.46��</td>
+																<td>5487.59��</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">ҽ�ƽ��������(̨/�˷�)</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>1.11��</td>
+																<td>5130.01��</td>
+															</tr>
+													</tbody>
+					</table>
+					<div class="pager clearfix">
+														</div>
+				</div>
+																<div class="m_tab_content"  style="display:none;">
+					<table class="m_table m_hl" id="operate_table1">
+						<thead>
+							<tr>
+								<th width="170px">ҵ������</th>
+																<th>2025-12-31</th>
+																<th>2025-06-30</th>
+																<th>2024-12-31</th>
+																<th>2024-06-30</th>
+																<th>2023-12-31</th>
+															</tr>
+						</thead>
+						<tbody>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">����:ҽ�ƽ���(̨/�˷�)</td>
+																<td>1400.14��</td>
+																<td>-</td>
+																<td>7459.77��</td>
+																<td>-</td>
+																<td>1.27��</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">����:ҽ�ƽ���(̨/�˷�)</td>
+																<td>2348.17��</td>
+																<td>-</td>
+																<td>8383.48��</td>
+																<td>-</td>
+																<td>1.67��</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">�����ջ�ҵ��Ӫҵ����(Ԫ)</td>
+																<td>-</td>
+																<td>5026.28��</td>
+																<td>-</td>
+																<td>3172.55��</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">iHealthϵ�в�ƷӪҵ����(Ԫ)</td>
+																<td>-</td>
+																<td>-</td>
+																<td>22.50��</td>
+																<td>11.95��</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">ҵ������:�����ջ�ҵ��(Ԫ)</td>
+																<td>-</td>
+																<td>-</td>
+																<td>7616.19��</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">ר������:��Ȩר��(��)</td>
+																<td>-</td>
+																<td>-</td>
+																<td>22.00</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+													</tbody>
+					</table>
+					<div class="pager clearfix">
+														</div>
+				</div>
+															</div>
+	</div>				
+<div class="ft"></div>
+</div>
+
+<!-- ��Ӫ���ɷ��� -->
+<style>
+	.date-show-icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.img/m/atom/79176f26-b101-42db-be07-037d99804f4f.png')
+	}
+	.white .date-show-icon {
+		background-image: url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.img/m/atom/2a7d35c8-c727-4a97-81a8-e5945a54de7a.png')
+	}
+	.date-left-icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/b00ef51b-af88-4bff-8b2c-9d00edf67c3f.svg')
+	}
+	.date-left-icon.off {
+		cursor: no-drop;		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/c139ceb6-3275-403f-9b43-d28384bf6d58.svg');
+	}
+	.white .date-left-icon {
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/e760b470-fb28-4bb3-ad65-7febf598384c.svg')
+	}
+	.white .date-left-icon.off {
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/fb941308-c46b-4144-aa2d-2afdab25e399.svg');
+		cursor: no-drop;
+	}
+	.date-right-icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/b00ef51b-af88-4bff-8b2c-9d00edf67c3f.svg');
+		transform: rotate(180deg);
+	}
+	.date-right-icon.off {
+		cursor: no-drop;		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/c139ceb6-3275-403f-9b43-d28384bf6d58.svg');
+	}
+	.white .date-right-icon {
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/e760b470-fb28-4bb3-ad65-7febf598384c.svg')
+	}
+	.white .date-right-icon.off {
+		cursor: no-drop;		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/fb941308-c46b-4144-aa2d-2afdab25e399.svg');
+	}
+	.date-ul {
+		display: flex;
+		gap: 1px;
+		cursor: pointer;
+		position: relative;
+	}
+	.date-list {
+		display: flex;
+		gap: 1px;
+		max-width: 873px;
+		overflow-y:clip;
+	}
+	.date-show-select {
+		background-color: #324054;
+		display: flex;
+		width: 27px;
+		height: 27px;
+		justify-content: center;
+		align-items: center;
+	}
+	.white .date-show-select {
+		background-color: #ebebeb;
+	}
+	.swiper-wrapper {
+		height: 27px;
+		font-size: 12px;
+	}
+	.date-li {
+		background-color: #324054;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		font-weight: 700;
+		max-width: 91px;
+	}
+	.white .date-li{
+		background-color: #ebebeb;
+		color: #666;
+		
+	}
+	.date-li.selected {
+		color: #ffb400;
+		background-position: 100% -316px;
+		background:#314156 url(//i.thsi.cn/images/basic/stock/nav_tab_bg.png) no-repeat 0 0;
+	}
+	.white .date-li.selected {
+		color: #333;
+		background: #ddd url(//i.thsi.cn/images/stockpage/new/nav_tab_bg.png) no-repeat 100% 0;
+	}
+	.swiper-container-dates {
+		width: 100%;
+		overflow: hidden;
+		z-index: 1;
+	}
+	#zyjg-dates-container {
+		height: 27px;
+	}
+	.charttit-nodata {
+	    color: #8294a6;
+		font-weight: 700;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.chartit-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.m_select .list li {
+		border-right: none;
+	}
+</style>
+<div class="m_box i_hover_box" id="analysis" stat="operate_analysis" itag='2'>
+	<div class="hd">
+		<h2>��Ӫ���ɷ���</h2>
+	</div>
+	<div class="bd pt5">
+		<div class="chart_nav clearfix mt15">
+			<ul id="chartNav" class="nav_tab fl">
+				<li class="current"><a href="javascript:void(0)" data-type="YYSR">Ӫҵ����</a></li>
+				<li><a href="javascript:void(0)" data-type="YYCB">Ӫҵ�ɱ�</a></li>
+				<li><a href="javascript:void(0)" data-type="LRBL">�������</a></li>
+				<!--<li><a href="javascript:void(0)" data-type="MLL">ë����</a></li>-->
+			</ul>
+			<div id="periodSelect" class="field_date">
+				<div class="m_select">
+					<div class="text"><s></s><span>������</span></div>
+					<ul class="list none" style="border:1px solid #292e34; height: 132px;overflow-y:auto;">
+					</ul>
+				</div>
+				������
+			</div>
+		</div>
+		<div class="clearfix" style="padding-bottom: 24px;">
+			<table class="m_table m_hl">
+				<tbody>
+					<tr id="chartWrapContains" style="padding:0px;height:255px;width:100%;boder:1px solid #344459;">
+						<td class="tc" id="chartWrapkey+" style="padding:0px;height:255px;width:296px;">
+						   <div style="width: 295px;margin: 0 auto;overflow: hidden;height: 255px;position:relative;">
+						       <p class="charttit"></p>
+							   <p class="charttit-nodata chartit-center">������...</p>
+						       <div class="chartmain fl" style="width: 165px;height:170px;margin-top: 22px"></div>
+						       <div class="chartinfo fl" style="width: 130px;"></div>
+					        </div>
+				        </td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="rp_tipBox none">
+				<p class="rp_tipTitle_box">
+					<strong class="rp_tipTitle">Ӫҵ����</strong>
+					<span class="close">X</span>
+				</p>
+				<div class="rp-select">
+					<div class="rp-select-item">
+						<input class="rp-input" type="checkbox" checked="checked" name="SRBL" id="rp_srbl" >
+						<label>�������</label>
+					</div>
+					<div class="rp-select-item">
+						<input class="rp-input" type="checkbox" name="YYSR" id="rp_yysr" >
+						<label>Ӫҵ����</label>
+					</div>
+				</div>
+				<div class="rp-unit">
+					<span class="rp-unit-left">��λ��%��</span>
+					<span class="rp-unit-right">��λ����Ԫ��</span>
+				</div>
+				<div id="rp_hightChart" style="width: 540px;height: 260px;"></div>
+			</div>
+		</div>
+		
+		<div class="date-ul" id="table-date-list" style="display:none;">
+			<div id="periodSelect_v2" class="date-show-select">
+				<div class="m_select" style="position:absolute;z-index: 100;width: 100px;top:28px;left:0px;">
+					<ul class="list none" style="border:1px solid #292e34;height: 132px;overflow-y:auto;">
+					</ul>
+				</div>
+				<div class="date-show-icon" src=""></div>
+			</div>
+			
+			<div id="zyjg-dates-pre" class="date-show-select"><div class="date-left-icon off" src=""></div></div>
+			<div class="swiper-container-dates" id="zyjg-dates-container">
+				<div class="swiper-wrapper" id="swiper-date-line">
+				</div>
+			</div>
+			<div id="zyjg-dates-next" class="date-show-select"><div class="date-right-icon" src=""></div></div>	
+		</div>
+		<div class="m_tab_content">
+			<table class="m_table m_hl">
+				<thead>
+					<tr>
+						<th colspan="2">ҵ������</th>
+						<th>Ӫҵ����(Ԫ)</th>
+						<th>�������</th>
+						<th>Ӫҵ�ɱ�(Ԫ)</th>
+						<th>�ɱ�����</th>
+						<th>��Ӫ����(Ԫ)</th>
+						<th>�������</th>
+						<th>ë����</th>
+					</tr>
+				</thead>
+				<tbody id="table_zygc">
+				    <tr>
+						<th rowspan="1" colspan="9" style="position:relative;height:150px;">
+					        <div class="charttit-nodata">������...</div>
+					    </th>
+				    </tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="fr">ע��<span class="tip">ͨ�����б����걨ʱ��¶��</span></div>
+	</div>
+	
+	<div class="ft"></div>
+</div>
+<!-- ��Ҫ�ͻ�����Ӧ�� -->
+<div class="m_box" id="provider" stat="operate_provider" >
+<div class="hd">
+    <h2>��Ҫ�ͻ�����Ӧ��</h2>
+    <div class="opinion_opts_wraper fr evaluate" tag="provider">
+	    <b class="oow_left fl"></b>
+	    <div class="oow_cont fl"><span>���Դ���Ŀ�����ۣ�</span><a class="opinion_up" tag="support" href="javascript:void(0)"> ���� <span class="opi_up">
+	    </span></a><a class="opinion_down" tag="opposition" href="javascript:void(0)"> û�� <span class="opi_down"></span></a>
+	    <span class="btn_idea" onclick="sendTalog('f10_stock_advice')"><a onclick="$('.f10_append_advice').click();" title="��Ҫ�Ὠ��" href="javascript:void(0)">�Ὠ��</a></span></div><b class="oow_right fl"></b>
+	</div>
+</div>
+<div class="bd pt5" >
+<div class="m_tab mt15">
+    <ul>
+                        <li class="cur"><a href="javascript:void(0);" class="operateTab" tag="0">2025-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="1">2024-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="2">2023-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="3">2022-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="4">2021-12-31</a></li>
+                    </ul>
+</div>
+  	<!--��һҳ-->
+  	 	 		<div class="m_tab_content clearfix ">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--���� ��� �ͻ�-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5��ͻ�����������<i>9.16��</i>Ԫ,ռӪҵ�����<i>67.10%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-0"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>�ͻ�һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>�ͻ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i>�ͻ���</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i>�ͻ���</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i>�ͻ���</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>�ͻ�����</th>
+                        <th>���۶Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ͻ�һ</div></td>
+		                <td class="tc">5.83��</td>
+		                <td class="tc">42.68%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ͻ���</div></td>
+		                <td class="tc">1.14��</td>
+		                <td class="tc">8.33%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ͻ���</div></td>
+		                <td class="tc">1.02��</td>
+		                <td class="tc">7.46%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ͻ���</div></td>
+		                <td class="tc">6169.53��</td>
+		                <td class="tc">4.52%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ͻ���</div></td>
+		                <td class="tc">5611.73��</td>
+		                <td class="tc">4.11%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!--���� �ұ� ������-->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5��Ӧ�̣����ɹ���<i>1.46��</i>Ԫ,ռ�ܲɹ����<i>49.92%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-1"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>��Ӧ��һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>��Ӧ�̶�</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i>��Ӧ����</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i>��Ӧ����</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i>��Ӧ����</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>��Ӧ������</th>
+                        <th>�ɹ��Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��Ӧ��һ</div></td>
+		                <td class="tc">5933.58��</td>
+		                <td class="tc">20.23%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��Ӧ�̶�</div></td>
+		                <td class="tc">3083.35��</td>
+		                <td class="tc">10.51%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��Ӧ����</div></td>
+		                <td class="tc">2771.99��</td>
+		                <td class="tc">9.45%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��Ӧ����</div></td>
+		                <td class="tc">1663.64��</td>
+		                <td class="tc">5.67%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��Ӧ����</div></td>
+		                <td class="tc">1191.30��</td>
+		                <td class="tc">4.06%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--���� ��� �ͻ�-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5��ͻ�����������<i>21.00��</i>Ԫ,ռӪҵ�����<i>81.01%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-2"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>�ͻ�����</th>
+                        <th>���۶Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">10.87��</td>
+		                <td class="tc">41.95%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">8.73��</td>
+		                <td class="tc">33.68%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">7392.02��</td>
+		                <td class="tc">2.85%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">3343.38��</td>
+		                <td class="tc">1.29%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">3201.63��</td>
+		                <td class="tc">1.24%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!--���� �ұ� ������-->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5��Ӧ�̣����ɹ���<i>1.98��</i>Ԫ,ռ�ܲɹ����<i>43.57%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-3"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>��Ӧ������</th>
+                        <th>�ɹ��Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">1.33��</td>
+		                <td class="tc">29.21%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">1825.28��</td>
+		                <td class="tc">4.01%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1753.69��</td>
+		                <td class="tc">3.85%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1684.29��</td>
+		                <td class="tc">3.70%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1274.45��</td>
+		                <td class="tc">2.80%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--���� ��� �ͻ�-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5��ͻ�����������<i>24.60��</i>Ԫ,ռӪҵ�����<i>76.14%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-4"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>�ͻ�����</th>
+                        <th>���۶Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">13.45��</td>
+		                <td class="tc">41.61%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">8.43��</td>
+		                <td class="tc">26.08%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1.25��</td>
+		                <td class="tc">3.88%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">7575.20��</td>
+		                <td class="tc">2.34%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">7190.68��</td>
+		                <td class="tc">2.23%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!--���� �ұ� ������-->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5��Ӧ�̣����ɹ���<i>2.47��</i>Ԫ,ռ�ܲɹ����<i>41.83%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-5"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>��Ӧ������</th>
+                        <th>�ɹ��Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">1.77��</td>
+		                <td class="tc">29.85%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">2163.64��</td>
+		                <td class="tc">3.66%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">2081.03��</td>
+		                <td class="tc">3.52%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1557.58��</td>
+		                <td class="tc">2.63%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1280.75��</td>
+		                <td class="tc">2.17%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--���� ��� �ͻ�-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5��ͻ�����������<i>178.33��</i>Ԫ,ռӪҵ�����<i>67.77%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-6"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>�ͻ�����</th>
+                        <th>���۶Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">119.38��</td>
+		                <td class="tc">45.37%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">28.91��</td>
+		                <td class="tc">10.98%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">11.48��</td>
+		                <td class="tc">4.36%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">10.25��</td>
+		                <td class="tc">3.90%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">8.30��</td>
+		                <td class="tc">3.16%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!--���� �ұ� ������-->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5��Ӧ�̣����ɹ���<i>33.48��</i>Ԫ,ռ�ܲɹ����<i>57.93%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-7"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>��Ӧ������</th>
+                        <th>�ɹ��Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">20.98��</td>
+		                <td class="tc">36.30%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">4.96��</td>
+		                <td class="tc">8.58%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">2.99��</td>
+		                <td class="tc">5.17%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">2.94��</td>
+		                <td class="tc">5.08%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1.62��</td>
+		                <td class="tc">2.80%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--���� ��� �ͻ�-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5��ͻ�����������<i>12.73��</i>Ԫ,ռӪҵ�����<i>53.09%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-8"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>�ͻ�����</th>
+                        <th>���۶Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">4.65��</td>
+		                <td class="tc">19.39%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">2.95��</td>
+		                <td class="tc">12.31%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">2.61��</td>
+		                <td class="tc">10.87%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1.39��</td>
+		                <td class="tc">5.82%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">1.13��</td>
+		                <td class="tc">4.71%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!--���� �ұ� ������-->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5��Ӧ�̣����ɹ���<i>3.95��</i>Ԫ,ռ�ܲɹ����<i>35.99%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-9"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>��һ��</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>�ڶ���</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i>������</li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i>������</li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i>����</li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>��Ӧ������</th>
+                        <th>�ɹ��Ԫ��</th>
+                        <th>ռ��</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">��һ��</div></td>
+		                <td class="tc">2.03��</td>
+		                <td class="tc">18.48%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">�ڶ���</div></td>
+		                <td class="tc">7782.84��</td>
+		                <td class="tc">7.09%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">4913.38��</td>
+		                <td class="tc">4.47%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">3374.01��</td>
+		                <td class="tc">3.07%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">������</div></td>
+		                <td class="tc">3161.39��</td>
+		                <td class="tc">2.88%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+		   	<div style="display:none" id = "providerflash">{"2025-12-31":{"customer":[{"name":"\u5ba2\u6237\u4e00","y":58286.27},{"name":"\u5ba2\u6237\u4e8c","y":11375.31},{"name":"\u5ba2\u6237\u4e09","y":10183.33},{"name":"\u5ba2\u6237\u56db","y":6169.53},{"name":"\u5ba2\u6237\u4e94","y":5611.73},{"name":"\u5176\u4ed6","y":44925.5}],"supplier":[{"name":"\u4f9b\u5e94\u5546\u4e00","y":5933.58},{"name":"\u4f9b\u5e94\u5546\u4e8c","y":3083.35},{"name":"\u4f9b\u5e94\u5546\u4e09","y":2771.99},{"name":"\u4f9b\u5e94\u5546\u56db","y":1663.64},{"name":"\u4f9b\u5e94\u5546\u4e94","y":1191.3},{"name":"\u5176\u4ed6","y":14690.8}]},"2024-12-31":{"customer":[{"name":"\u7b2c\u4e00\u540d","y":108743.68},{"name":"\u7b2c\u4e8c\u540d","y":87311.23},{"name":"\u7b2c\u4e09\u540d","y":7392.02},{"name":"\u7b2c\u56db\u540d","y":3343.38},{"name":"\u7b2c\u4e94\u540d","y":3201.63},{"name":"\u5176\u4ed6","y":49225.36}],"supplier":[{"name":"\u7b2c\u4e00\u540d","y":13290.23},{"name":"\u7b2c\u4e8c\u540d","y":1825.28},{"name":"\u7b2c\u4e09\u540d","y":1753.69},{"name":"\u7b2c\u56db\u540d","y":1684.29},{"name":"\u7b2c\u4e94\u540d","y":1274.45},{"name":"\u5176\u4ed6","y":25680.28}]},"2023-12-31":{"customer":[{"name":"\u7b2c\u4e00\u540d","y":134451.04},{"name":"\u7b2c\u4e8c\u540d","y":84270.7},{"name":"\u7b2c\u4e09\u540d","y":12536.37},{"name":"\u7b2c\u56db\u540d","y":7575.2},{"name":"\u7b2c\u4e94\u540d","y":7190.68},{"name":"\u5176\u4ed6","y":77096.56}],"supplier":[{"name":"\u7b2c\u4e00\u540d","y":17650.4},{"name":"\u7b2c\u4e8c\u540d","y":2163.64},{"name":"\u7b2c\u4e09\u540d","y":2081.03},{"name":"\u7b2c\u56db\u540d","y":1557.58},{"name":"\u7b2c\u4e94\u540d","y":1280.75},{"name":"\u5176\u4ed6","y":34394.99}]},"2022-12-31":{"customer":[{"name":"\u7b2c\u4e00\u540d","y":1193808.86},{"name":"\u7b2c\u4e8c\u540d","y":289073.7},{"name":"\u7b2c\u4e09\u540d","y":114775.92},{"name":"\u7b2c\u56db\u540d","y":102544.1},{"name":"\u7b2c\u4e94\u540d","y":83047.96},{"name":"\u5176\u4ed6","y":848076.81}],"supplier":[{"name":"\u7b2c\u4e00\u540d","y":209799.56},{"name":"\u7b2c\u4e8c\u540d","y":49610.82},{"name":"\u7b2c\u4e09\u540d","y":29874.52},{"name":"\u7b2c\u56db\u540d","y":29364.85},{"name":"\u7b2c\u4e94\u540d","y":16164.91},{"name":"\u5176\u4ed6","y":243149.54}]},"2021-12-31":{"customer":[{"name":"\u7b2c\u4e00\u540d","y":46470.06},{"name":"\u7b2c\u4e8c\u540d","y":29509.65},{"name":"\u7b2c\u4e09\u540d","y":26062.2},{"name":"\u7b2c\u56db\u540d","y":13940.92},{"name":"\u7b2c\u4e94\u540d","y":11282.85},{"name":"\u5176\u4ed6","y":112451.17}],"supplier":[{"name":"\u7b2c\u4e00\u540d","y":20296.58},{"name":"\u7b2c\u4e8c\u540d","y":7782.84},{"name":"\u7b2c\u4e09\u540d","y":4913.38},{"name":"\u7b2c\u56db\u540d","y":3374.01},{"name":"\u7b2c\u4e94\u540d","y":3161.39},{"name":"\u5176\u4ed6","y":70302.86}]}}</div>
+	</div>
+  <div class="ft"></div>
+</div>
+
+<!-- ���»ᾭӪ���� -->
+<div class="m_box" id="observe" stat="operate_observe">
+	<div class="hd">
+		<h2>���»ᾭӪ����</h2>
+	</div>
+	<div class="bd">
+		<div class="m_tab">
+			<ul>
+												<li class="cur"><a href="javascript:void(0);" tag="0" class="operateTab">2025-12-31</a></li>
+												<li ><a onclick="TA.log({'id':'f10_jyfx_jyps','nj':1})"href="javascript:void(0);" tag="1" class="operateTab">2025-06-30</a></li>
+												<li ><a onclick="TA.log({'id':'f10_jyfx_jyps','nj':1})"href="javascript:void(0);" tag="2" class="operateTab">2024-12-31</a></li>
+											</ul>
+		</div>
+						<div class="m_tab_content m_tab_content2" >
+			<p class="f14 pr">
+				����һ���������ڹ�˾���µ���Ҫҵ�񡡡���һ����˾����ս�ԡ���������iHealth�Լ��еĹ㷺ʹ�ã�iHealthƷ��������������������˾���������iHealth��������Ʒ��Ӱ����������������г��������ļ����Ͳ�Ʒ���������г����ر��Ǽ���ҽ�Ƶ��Ӳ�Ʒ��IVD��Ʒ�������Ʒ�ܿ��پۼ�������Ŀ���û��������Ʒ�����û��Ѻ��Դ���Ʒ��ЧӦ����һ����ǿ��˾���û������ӣ��Բ������������������º��г���Ӧ��������˾���������򲡹�����Ϊ�������ʵʩ��������+ҽ�ơ���ս�ԣ����������AIӲ�������ô�����ģ�͡����������ģ̬���ݷ���������������ȫ�����ۺ��ջ������������AI����������������ģʽ������ҽ��Ϊ���ģ���...								<span style="display: inline-block;width: 70px;"></span>
+				<a class="more fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">�鿴ȫ����</a>
+							</p>
+			<p class="f14 none clearfix pr">
+				����һ���������ڹ�˾���µ���Ҫҵ��<br />������һ����˾����ս��<br />����������iHealth�Լ��еĹ㷺ʹ�ã�iHealthƷ��������������������˾���������iHealth��������Ʒ��Ӱ����������������г��������ļ����Ͳ�Ʒ���������г����ر��Ǽ���ҽ�Ƶ��Ӳ�Ʒ��IVD��Ʒ�������Ʒ�ܿ��پۼ�������Ŀ���û��������Ʒ�����û��Ѻ��Դ���Ʒ��ЧӦ����һ����ǿ��˾���û������ӣ��Բ������������������º��г���Ӧ��������˾���������򲡹�����Ϊ�������ʵʩ��������+ҽ�ơ���ս�ԣ����������AIӲ�������ô�����ģ�͡����������ģ̬���ݷ���������������ȫ�����ۺ��ջ������������AI����������������ģʽ������ҽ��Ϊ���ģ���ҽ�������򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ����ɵ��ջ��Ŷӣ��ۺ������ƶ���������AI�����������ơ���ģ̬���ݷ������¼����ֶΣ��������򲡻��ߵĹ����ͷ����Ժ��������Ժ�⣬��������չ�����ϣ��γ�Ժ��Ժ��һ�廯����������һ�廯������Ӳ������һ�廯��ȫ���̹淶�������ջ���<br />�������⣬��˾������չ�����ʲ�����ҵ��������ʵ���ʲ��ı�ֵ��ֵ����˾���ڿ�չ�ƴ�Ͷ�ʣ��ر�����AI���򣬻��������й�����ʦ������ץסAI������<br />����������������ҵ�񼰲�Ʒ�������<br />������˾ȷ����˫��ҵ�ķ�չģʽ��ҽ�ƽ�����Ӫ����ҵ+�����ʲ�����Ͷ����ҵ��<br />����1��ҽ�ƽ�����Ӫ����ҵ��<br />����1��IVD������ҽ�ƽ������Ӳ�Ʒ����<br />������˾���ڶ���������������Ͷ�ά������������Ϣ�Ĳ���̽�����Ѿ����з��ɹ�Ӧ����Ѫѹ��⡢Ѫ�Ǽ�⡢IVD�Լ��С����²���������Ѫ������Լ�������֬�����ȶ��ҽ����е����Ϊ��ǿ�����з�����˾ר�������˶������������Ŀ�з��ң�ͨ����ѧ�ƺ����ͼ������£�������һ�׽�Ϊȫ��ĸ��˽���������Ʒ�ߡ�<br />�����������ڣ���˾��iHealthϵ�в�Ʒ�����ɫ���г����ֺ�ӯ��������Ϊ��˾�����������������Ҫ���ס���ϵ�в�Ʒ��Ӫҵ����Լ10.03��Ԫ����ң�չʾ�����г���������ӯ����������˾���Լ��в�Ʒ����������ã��ر���������ѷƽ̨�ϣ����ۼ۽��г�ͬ���Ʒ��ǰ�е�ͬʱ����������λ�Ӹ�Ʒ���Best Seller����ʾ��iHealth��Ʒ���г��ϿɶȺ�Ʒ�Ƽ�ֵ��2024�꣬��˾��Covid�ͼ�������������ƷOTC��POC�棬�����������FDAӦ��ʹ����Ȩ<br />������EUA����2025�꣬��˾�ļ������С��������м�COVID-19���������������Լ��У��������С��������м�COVID-19�����������רҵ���Լ����յ�����FDA 510(K)����ǰ֪ͨ����˾�ļ������С��������С�COVID-19��RSV�������ϰ����������������Լ��У��������С��������С�COVID-19��RSV�������ϰ������������רҵ���Լ����յ�����FDA510(K)����ǰ֪ͨ��510(k)���ڳ����������ɣ�����EUA��ֹ��ʧЧ����˸ò�Ʒ����EUA��ֹ������������г����ۡ�<br />������˾���Լ������Ʒ���ɸ������вɼ�ǰ��ǻ�����������в�����15���ӳ�����������߹������账����ͨ�������ĵ��̡�ҩ�ꡢ�̳��������������ۣ�Ŀǰ�ѹ㷺��������ѷ��CVS���ֶ������������������Ϊ����ļ����Ϻ���������ɸ��ҽ�Ʋ�Ʒ���߱���ǿ������Ʒ���ԡ�Ϊ���õ���������Ϻ���������ɸ����Ҫ����˾ͨ�������Լ��в�Ʒ�γ��˽�ǿ��Ʒ��֪���ȣ���ִ��г������Ƴ��������졢�������Ʒ�Ļ����ϣ�������������չ������ϸ������Լ��в�Ʒ���С���˾Ҳ������������չ�з�������������չ��˾��Ʒ��IVD�����Ӧ�÷�Χ�������Ӷ�Ԫ����OTC/POC������ϲ�Ʒ�����г���<br />�����ڼ���ҽ�ƽ������Ӳ�Ʒ���棬��˾��ҽ����е��ҵ�����30�꣬�Ѿ��ɹ������ˡ��Ű����͡�iHealth������Ʒ�ƣ������ڹ������г������нϸߵ�֪���Ⱥ����õĿڱ���������������iHealth���¼ƺ��Լ��е����ۣ���˾��Ʒ�����Ʋ���������iHealthƷ�Ƶ�������Ѫѹ�ƺͶ��¼ƵȲ�Ʒ�ܵ��������ߵĹ㷺��ӭ������������ѷ����ƽ̨�϶�β�����Ʒ���Best Seller����˾��iHealthϵ�в�Ʒ��2025������ڣ���Ѫѹ�Ƽ����¼Ƶȴ�ͳ��Ʒ�������˲�Ʒ�ͺŵ�����δ������˾����������iHealth�������γɵ�Ʒ�����ƣ������г����󣬲��Ͻ����о������ļ����Ͳ�Ʒ��������г���<br />����������Ѫ�Ǽ�����򣬹�˾����ɶ�������������Ŀǰ���ڹ��ڻ�����չ�ͼ���ٴ���ع�����ͬʱҲ�ڻ����ƽ�����CGM��Ʒ���з��������봫ͳѪ�Ǽ�ⷽ����ȣ�����Ѫ�Ǽ���Ʒ��CGM�������ṩ����ȫ��׼ȷ��ȫ���Ѫ�Ǳ仯���ٽ���ȷ����ʹ�������ľ�����󡱣���ҹ1��3ʱ��Ѫ�ǣ����ǰ��Ѫ�ǣ������������󡱣�ҹ���޵�Ѫ�ǣ��峿3��9ʱ��Ѫ�ǣ�������ҽ�����Ѫ��ͼ�׶�ҩ����ȵ��ؼ������и�׼ȷ�ĵ��������ƻ��ƶ����Ʒ��������ƣ�ʹ���ߵ�Ѫ���ܹ������õ����ÿ��ƣ���Ч���ӻ��ͷ�ֹ����֢�ķ������ò�Ʒδ�����г����۵�ͬʱ������������Ӧ�������������ջ���O+O����ģʽ�У��ɼ����ƶ���˾�ú���ս�Ե�ʵʩ�ͷ�չ��<br />������˾�������������������Ƴ������¿�AI��������������������Ŀ���������Բ�Ʒ�㷨����˶�汾�ĵ������ò�Ʒ�ȫ�µ��ƶ���������ܹ����ӳ�AI�����������㷨��ͨ��ȫ��λ�����δ�����ȷ���û��������κλ����¶������ܵ���������Ȼ���������顣Ŀǰ����Ŀ���ڳ����Ȳ��ƽ��У����������ƽ���Ʒע�ἰ���е�������̡�<br />����2��������ҽ������<br />����2025��ȫ�꣬�����ջ�ҵ���������ﵽԼ1.22��Ԫ��������������¶�գ����������ջ���O+O����ģʽ�����й�����Լ50�������е�577��ҽԺ�����ƹ㣻��������ҽ���Ѿ���ȷ�ˡ�������+ҽ�ơ�����ĸ��ѷ�ʽ����������77�ң�����ҽ��435�����������ؽ����ջ��Ĳ��˹�ģ�ϼ�Լ47.98���ˡ���˾���ţ�ҽ�Ƶĺ�����ҽ����������Դ��ҽ����ʱ�䡣ͨ����O+O����ģʽ����˾���������ҽ���Ŀ�������������Ч������ҽ�������޵�ʱ���ڷ������ļ�ֵ��ͨ����ҽ�ƻ����Ľ��ܺ�������˾��ҽ�Ʒ������쵽��������֮������ҽԺ��ҽ��Ϊ���ģ�Ϊ�����ṩ����������ҽ�Ʒ��񡣹�˾�����򲡹���Ϊ���ģ��������ṩ���򲡵�ȫ���̹����������ƽ���������+ҽ�ơ������ս�Բ��𣬼����ƶ����������ջ���O+O����ģʽ���й�����������ء���ģʽּ���������Ч�����������Ƴɱ���Ϊ���򲡻����ṩ������ҽ�Ʒ���������Ԥ����Ч��������ճ��������⡣��Ժ�ڣ����߽����ȫ���ҽ����ϡ�Ӫ����ѯ�͸��Ի��ջ�����������һ��һ�Ļ��߽������񡣶���Ժ�⣬��˾ͨ��ʵʱ��ҽ��ָ���������𡢽�����Ԥ��֪ʶ���ͣ�ʵ�ֶԻ�����ʳ���˶���ҩ���������ȫ���̱ջ�ʽ�������ٽ�������Ϊ�Ļ����ı䡣��������淶������Ժ������Ľ�ϣ��������������鲡�����ǻ�Ѫ�쵰�׵Ĵ���ʣ��ӻ��ߵ�30%����������60%���ң������ʽ���5%���£��淶�����������70%��<br />�������ڷ��棬��˾�����ġ����ǡ��͡���ͬ�ջ���ϵͳ��ʵ����Ժ�����ݵ�ʵʱ�ϴ���ҽ���ļ�ʱ���ʡ�ϵͳ����������ȫ�ȼ��������Ƚ����ܼ��������ڽ��а�ȫ������ȷ���������ݵİ�ȫ����˾���������¼����������ͨ�����¡��������ϵķ�ʽ��������������Ⱥ����ǿ�˻��ߵĹ����У���������ý���ṩ�ḻ�Ľ����������ݡ������ڹ�����Ի�����ҽ�����ߵ�֧�֣���˾�������ջ�ҵ���Ѿ���ʼ������Ӫҵ���룬���ѻ��ߵ�����������������ѹ����Ļ��ߡ���˾���������ջ�ʹ�������з��Ĺ���ϵͳ��ϵͳ�������߶�App��ҽ����App��Web���ջ�ϵͳ��CMS��̨����ϵͳ�����ݷ���ϵͳ��QuickBI����ƽ̨����Ӫƽ̨�Ϳ���ϵͳ��ϵͳ�����ջ��ƻ�������Ժ���Բ�Ѫ�ǲ�������Ѫ�Ǽ��ϰ�߱仯�����ջ�ʦ���͹�������ʵ�����򲡽�����֧�ֵıջ����������������������ҹ����������Ӷ���������Ч����<br />�������⣬��˾һֱ�߶ȹ�עAI�����ķ�չ��̽�����ԭ��ҵ�����Ƶķ�չ���ܡ���˾����2024������ר���Ŷӻ�����չ��AIoT���򲡼�ͥҽ������Ŀ���з����������Ե㳢���˶��߼����AIӦ�á�����Ŀǰ����˾�Ѿ����30���˹�ģAI�Ŷӵ��齨������Ŀּ�ڽ������ǰ��AI������������ֱģ�ͣ����ȴ���һ�����ܻ������Ի����������Բ��������ߡ�ͨ����ģ�͵���������Ŀ������ʵ��ҽ����Դ���Ż����ã���������ҽ�Ʒ���ˮƽ��ͨ�����ϴ�����ģ�͡����������ģ̬���ݷ���������ͨ��������á��ջ�ʦCopilot���������Ͻ���������һ��ȫ�������򲡼�ͥҽ���������û��ڼ�ͥ�����и�Ч�������򲡡�������������֢״�ļ�ʱ��Ӧ�������������������ԣ������ճ�ҽ��������������ͬʱּ�ڸ��ܡ����������ջ�O+O��ģʽ���ļ�����ء���˾�ġ�AIoT���򲡼�ͥҽ�������ͨ��AI���֣��߱���ǿ�Ĵ�ֱ������������������֪�û�״̬�����и��Ի���ͨ�����������������ԡ��ջ�ʦCopilot������̬����2025�����ߣ�δ������������������̬���ڵ�����Ԥ��2026��ڶ����Ƚ�����������AIģ�飬������С��Χ�ҶȲ��ԡ�<br />������˾ƾ��ʮ���������������������ڵ������ۣ����а���Լ47.98���û���˽�򽡿����ݺ��γɵľ��鷽�������˽��ҽ�������Ǻ����ʲ����Ѿ����ڹ�˾�ڸ������AI Agent��ѵ������˾�𲽹��������ںϡ�ģ�ͽ����ԡ����ɫЭͬ����ȫ�Եȼ������⣬�������򲡹�������AI��ֱ��ģ�͡�����AI�������������IoT�豸����Ѫ���ǡ�Ѫѹ�ƣ���ʵʱ������ݣ������û����ʡ�����������Ϣ���ṩ���ɽ�󡢸��Ի���Ԥ�����������������ƶ�AI���ܡ����������ջ�O+O��ģʽ�����������ܱ�ݵ����Բ���ͥҽ�����顣δ������˾����������Բ����������򡰶ಡ�ּ�ͥҽ��������������Ϊ��AI��ͥҽ����������ȫ��ҽ�ƣ���ÿ����ͥӵ��ר��������ҽ����������ȫ�񽡿�ˮƽ������<br />��������2024���ʵ���ɹ���2025�깫˾��һ��������AI������з��Ŷ��������������ջ�ʦCopilot����������˸��๦�ܣ�����ʳ�������Ƽ���AI�Զ��������ܽᡢ�ջ������Զ��ľ��ȣ�ͬʱҲ��֮ǰ��֪ʶ�ʴ������˳�β֪ʶ���ǡ����������Ͻ��������£�����������豸�ȿͷ���������Զ��ظ��������ջ�ʦ��רע�ڽ����ջ�������<br />����2�������ʲ�����Ͷ������ҵ��<br />����1���ʲ�����ҵ��<br />������˾Ŀǰӵ�нϺõ��ֽ𴢱���Ϊ��˾�ṩ�˼�ʵ���ʽ��ϣ���˾�������ʲ��ı�ֵ��ֵ��Ϊ��˾�����δ����ȷ����ʱ�ṩ�˳���ķ��յ�����������˾ӵ��һ֧רҵ���ʲ������Ŷӣ�Ƹ�������ʲ���������ӵ�зḻ��ҵ�����רҵ��Ա����˾��ȫ���ӹ�˾�Ű���۹�˾Ϊ�����������ʽ�����ʲ�����ҵ�񡣹�˾ѧϰ����Ү³��ѧ�������ʲ�����ģʽ����ȫ�򻯴����ʲ������ӽǣ����ؿ��ʲ����õ���𣬽��ж�Ԫ����ɢ�ʲ��������Է�ɢ���ղ�Ѱ���г��ڵ��������棬����ʵ�ֳ����껯6%-10%�ĸ������������ʣ��˴������������ŵ�����Ӷ�ʵ���ʲ���ֵ��ֵ������Ŀ�ꡣ�����ʲ����õĺ��ģ���ͨ��������Ե��ʲ���ϣ���ɢ���ղ���߷��յ�����������ʣ����������ʲ������ʣ��Ż���ϵķ��������������Ӷ�����Ͷ����ϵĿ����ճ���������Ӷ����õ�ʵ���ʲ���ֵ��ֵ��������ʵ���껯6%-10%������Ŀ�꣨�˴������������ŵ��������2025��ĩ����˾��Ԫ�����õ��ʲ�����У��漰���ʲ������Ҫ�����ֽ𼰹̶��������ʲ��������г�Ȩ�桢�Գ����˽ļ�����Ʒ���������ʲ��ȡ�<br />������˾����ȫ��Χ����������У��������ᡢ��Ӫ����������ᡢ��Ȩ�Ƹ��������Ͻ𡢱����ʽ𡢼���칫�ҵ������ʲ����û���������ϵͳ�ԡ���̬���Ĺ�ͨ���ơ�ͨ����������Ϣ�����������γɺ����ʲ��������ͨ���ʲ��������̽�֡�������ͬҵ�ȶ����Ƽ����ڵ����Ի���ѭ������������ȷ��Ͷ���Ŷ��ں�۾������С��ʲ��������Լ�������ɸѡ���棬ʼ���ܹ���ȡ����ǰհ�Ժʹ����Ե�һ����Ѷ���Ӷ����г�����İ��ռ�����ʶ����߱��������ơ����ͬʱ����˾����ȫ���ڶา�Ǹ����ʲ�����Ͷ�ʹ������������㷺��ϵ��ͨ��ϵͳ�ԡ�����ľ�ְ���飬ȫ���˽��������������������������ƣ���˾���Ϸḻ�������ʲ�����֪ʶ��ϵ��Ϊ�ڲ�ͬ�ʲ�������ʵ�ָ����������ṩ����֧�֡�<br />�����ع�2025�꣬���ʽ����г������˾��ҵĲ�������̵Ľṹ�Ա仯�����ʻ�����ϵ������༫�������ݽ���ȫ���ʲ������߼����ڷ������ת�䡣չ��2026�꣬ȫ���ۻ��������ٶ��ز�ȷ���ԵĽ�֯����������Ϣ�ռ���խ�����������������ծ������ѹ�������Ӵ󣬵�Ե������ó�����ߵĲ�ȷ������������һ���棬�˹����ܼ����ļ���������ڴ����µĲ�ҵͶ�ʻ����������г���ȫ���ʱ���ƽ�������������ø��������ʽ𡣶Դˣ���˾����һ��ǿ��������������Ϳ��ʲ�������������ַ�ɢ������̬�������ò��ԣ��ڿ�����ϲ�����ǰ���£��������սṹ�Ի��ᣬ����ΪͶ���ߴ����Ƚ����ɳ����ĳ��ڻر���<br />����2���ƴ���Ͷ��<br />�����ƴ���Ͷ���ǹ�˾�����ʲ�Ͷ�ʳص���Ҫ��ɲ��֡���˾�����ʶ���Ƽ��������ƶ�δ����չ�ĺ��Ķ�������ϣ����Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ���²��ϵ�ǰ�ؼ����������ս����Ͷ�ʲ��֣����ڻ�ȡ����Ͷ�ʻر���������������Ͷ���˼÷��ʱ���Ԫ����Ͷ�������ʱ��������ʱ���ҫ;�ʱ����漨��̳����˼Ͷ�ʡ��źϴ�Ͷ��Ӣŵ���λ���ȹ������ʵĴ�Ͷ�����ر��ע���ڴ�ģ�͵���һ���˹����ܼ�������Ӧ�ã��ԿƼ������������ǰհ�Բ��֡���˾������ڴ��¿Ƽ��ж���һ�ĵ���ҵ����ֱ��Ͷ�ʡ�<br />����Ϊ�˳�����ø�У�ķḻ��Դ����˾������ѧ��֪����Уչ��������������Ѱ�Ҳ�������Ǳ���Ĵ�ҵ�ŶӺ���Ŀ����˾��ȡ�ġ�Ͷ�硢ͶС��Ͷ���ڡ�ͶӲ�Ƽ������ԣ�ּ�ڹ���һ���л����ĿƼ�����ҵ��ҵ��̬ϵͳ��ͨ���˲š��ʽ�Ͳ�ҵ����Ч�ۼ������ٿƼ��ɹ���ת��Ӧ�á���˾������50������ҵ��쿪�Ű����Ӻ��Ŀƴ�ĸ��������쿪�Ű����Ӻ��Ĺ�ȨͶ�ʻ���ϻ���ҵ�����޺ϻ����Ͷ�ʣ���ĸ�����ɾŰ�ҽ�ơ����Ӳ�ҵ�����쿪��������ѧ�����������ἰ�����Ļ���ͬ���������й�˾���ʲ�����35.6��Ԫ����һ��ֵ��Ԫ����<br />������ĸ����ּ��ͨ���г������ƣ�������ɸѡȫ�����ʵĴ�Ͷ��������ͬ����һ��������ʹͶ�ʡ��Ƽ����¡��ɳ�����ҵ�Ȳ�ͬ��չ�׶εĶ�Ԫ����Ͷ����Ⱥ���������γ�150-200��Ԫ����ȺΪĿ�꣬��ַ���ĸ�����ڿƼ����·�����������ü��ܸ��˶����á�����Ⱥ�����ܽ�ϸ���У������ѧ�ƣ�ͨ��������Ŀ��������Ŀ��������Ŀ�ķ�ʽ������Ͷ���ڰ���������������У��ʦ��У�Ѻ�ѧ���ĿƼ�������Ŀ���ٽ���Щ������Ŀ�ͿƼ��ɹ�������쿪�ƴ�԰ʵ��ת������ء�ͨ�������Ļ���Ⱥ�������ã���˾�����ܹ��ٽ��������ҵ������ںϣ�Ϊ����������չ�������������˹���������ͨ��ĸ�������ӻ�����ʡ��ӻ��𸲸�ϸ�������ķ�ʽ����Чʵ���˶�AI��һ�����е��㷨��������Ӧ�á����ݵ�����Ĳ�ҵ��ȫ���ǡ�������������¶�գ�����21���ӻ�����ɹ��ᣬ�ƴ�ĸ�����Ͻɳ��ʺϼ�24.8�ڣ����ʺ��ӻ���Ԥ���γ��ܹ�ģ��137�ڵĻ���أ�ĸ����ֱͶ��Ŀ6����Ͷ�ʽ��3.3�ڡ�<br />��������Ŀǰ����˾����Ͷ�ʵĺ�����Ŀ������֮���桢���عɷݣ�688802.SH���ȡ���˾���ţ������й�����ʦ������ȫ��AI�˳������ƽ�����˾�ڶ���ƴ�Ͷ������Ĳ��ֳɹ���½�����֡�<br />������������Ӫģʽ<br />�����ɹ�ģʽ������ԭ���ϲɹ�����Ӧ�̺����ϵ����ɹ�˾��Դ����ȷ���������ŶӸ���ȷ����������ƻ�����������ϸ�Ӧ����¼�ĳ��Ҵ��ɹ�������ɹ��µ�����Ʒ�֣�������Դ����Ѱ�������ϵ��������ң�����ѡ�����ۺ󣬽�ͨ�����յĳ��Ҽ���ϸ�Ӧ����¼����󽫲�Ʒ�ļ۸��󶨵�����ص�����ת�������Ŷӡ������Ŷ�������������ƻ��ͼ۸��󶨵��ɹ������ϡ�Ŀǰ��˾һ������Ҫ��Ӧ��ǩ�����Э�飬Э��Լ���ɹ�ԭ���ϵ�Ʒ�֡��۸�ȷ���������ڡ����㸶���ڵ��������ȷ���ɹ���������˾����ʵ��������Ӧ���¶��������������ڡ�ʵ�ʲɹ���������<br />��������ģʽ����˾�����ŶӸ������۲��ŵĶ�������ȷ�������嵥����Ͽ��������������ƻ�����˾���ھ�����������ͬʱȷ���Կͻ��Ŀ�����Ӧ����ȡ����������+��ȫ��桱������ģʽ��Ϊ����Ʒ�ʺͷ��񣬹�˾��������������������������Ϊ�������ַǺ��ļӹ����������Э�ӹ�ģʽ��iHealth�Լ��в�Ʒ����ͨ����˾�ӹ�˾�¶ٵ��ӡ����������Լ���Э����������<br />��������ģʽ������ģʽ��<br />����1��iHealth���Ű�������Ʒ������<br />����iHealthƷ�Ʋ�Ʒ��ͨ��ֱ��ģʽ�������ۡ��ӹ�˾iHealth Labs Inc�������޵����Ĳ�Ʒ�������ƹ㣬iHealth Labs Europe����ŷ���г��Լ��ڽ��ķ��ޡ��ж��г����������ƹ㡣�ӹ�˾iHealth��Singapore��labsPte.Ltd.����ŷ�����������������iHealthϵ�в�Ʒ�������ƹ㡣�Ű�Ʒ�ƵĹ������۹����ɹ���ҵ����ҵ������Ŀǰ���ڵ�����ģʽ��Ҫ��Ϊ�������ۺ��������ۡ��������۵���Ҫ����ƽ̨����С����Ʒ��С���̳ǡ���������è���������۵�����ģʽ��ֱӪ�ͷ������֣����������Ѿ����ǽ��ٸ����С�<br />����2��ODM/OEM��������<br />������˾�Ĺ���ó���ۺϲ�����Խӹ���ͻ�������ODM/OEM��Ʒ���ͻ���Ϊ֪����ҵ��¹�Beurer����ʿB.Well Swiss���ͻ��¶�����ʼ������<br />����3�������������ջ���O+O����ģʽ���ƹ����Ӫģʽ<br />�������ڶ���Ի�����ҽ��̽���Ļ��ۣ���˾�������ƶ����������ջ���O+O����ģʽ����ء����й�������������е�������רҵҽ�ƻ������������á���Ϣ����·����������·����ͬʱ������ҽ���ŶӵĹ���Ч�ʺ��ջ����������⣬��˾רע�ƶ�AI���ܡ����������ջ�O+O��ģʽ��������������Ч���������ܱ�ݵ����Բ���ͥҽ�����顣��˾�������ڸ����������ҽ�ƻ������������ջ����ǩԼ����ҽ����������߷������򲡻����������γ�רҵ�������ջ�������ϵ����������������רҵ�˲ţ��������Ч����������������Ч�ʡ�<br />����4��������ҵ������<br />������˾��������ҵ����Ҫ�漰С��ר���ꡢС���˳����ںϵ꼰С�������ꡣ�������������ȡ������ģʽ������ģʽΪС�ס�С�����������˾���������С�ס�С����˾����Լ���Ľ������ڰ�����������蹫˾һ���ķ��������곤���Ա���ɹ�˾ȷ����ѡ��֧����н�ꡣ<br />���������������ڹ�˾������ҵ���<br />����ҽ�ƽ�����Ӫ����ҵ���棬��˾����ҽ����е��ҵ����Ҫ����������ϣ�IVD�����򡢼���ҽ�ƽ������Ӳ�Ʒ���򡢻�����ҽ������<br />��������Mordor Intelligence�������о����棬2025��ȫ��ҽ����е��ҵ�г���ģ��6,800����Ԫ��Ԥ��2026-2031��ȫ��ҽ����е�г��ĸ�����������Ϊ6.99%����һ�������Ʒ�ӳ��ҽ����е��ҵ�ľ޴�Ǳ�������У�2025�걱��ҽ����е�г���ģΪ2,182.6����Ԫ��Ԥ�Ƶ�2032�����ģ��������3,428.5����Ԫ���껯����������Ϊ6.7%����������ȫ���г���ģ��������̬�ƣ����б����г�������ҽ��֧����չ��Ϊ���죬��̫����Ǳ���ռ�޴󡣹����г����棬���Ź������������������߶���е����������̼��٣��������ҽ����е��������߸ߣ��г���������<br />��������ҽ����е��ҵ�����������ۡ���ƷС�ͻ��Լ����ܻ�����ǰ����ҽ����е��ҵ�������������ı���������ƾ۽����������ۡ���ƷС�ͻ��Լ����ܻ������򡣻����������ķ��ٷ�չ���������������ѳ�Ϊ������е�г����������ơ�������Խ��Խ������ͨ������ƽ̨��Ʒ�ƹ������в�Ʒ������ȽϺ͹����������۲���Ϊ�����ṩ�˸��������г����ǣ�������������˽���Ч�������������顣���ͬʱ����ƷС�ͻ������������ԣ�ּ����Ӧ�ִ���ͥ�ռ����޵��ص㡣С����㡢���ڴ����Я���ļ�����е�����Яʽ������������Ѫ���ǵȣ�����������о���Ķ������������ܻ����Ǽ�����е��ҵδ����չ�Ĺؼ�������������������������ݡ��˹����ܵ��Ƚ�������������е�ܹ�ʵ�ָ��Ӹ��Ի�����׼�ķ���������Ѫ���ǡ��������εȣ�������ʵʱ����û��������ݣ�ҽ������ͨ������ƽ̨Ϊ�����ṩ<br />���������Ǹ���ȵķ�չ״����һЩ�ؼ����ݣ�<br />����1��������ϣ�IVD������<br />����1)ȫ���г���ģ���ݶ�ֲ����<br />����ȫ����������г���ģ�Ȳ�����������Kalorama Information�ġ���18��ȫ��IVD�г����桷������2025��ĩ��ȫ����������г���ģԼ1130����Ԫ��Ԥ�Ƶ�2030�꽫�ﵽ1429����Ԫ���긴�������ʣ�CAGR��ԼΪ5%�����У���������ŷ���ձ���Ȼռ��������λ��2025��ֱ�ռȫ���г���44%��27%��5%���ϼƴ�76%�ķݶ������������г���ȫ����������Ӱ�������г�֮һ�����֮�£������г������Եͣ�Լ5%�����������ṹ���Ƚ�����������Լ����ִ�ҽ���в��ɻ�ȱ��һ���֣��㷺Ӧ���ڼ����ļ�⡢��Ϻ����Ƽ�⡣<br />�������������ϸ�������棬����QYResearch������ʾ��2025��ȫ����������г���ģ��ԼΪ27.86����Ԫ��Ԥ�Ƶ�2031��ȫ����������г���ģ���ﵽ40.2����Ԫ��������������Ϊ6.3%����������г�ͨ��ʵ�����в����Ŀ��١�׼ȷ�����ȫ��Ⱦ�������з����Źؼ����ã��ɰ���ҽ�Ʊ����ṩ��ʶ�����ж��겢ָ����ʱ���ơ����ż��������б��������з����ƻ���ҽԺ��Ⱦ�����������Ӽ��������������г���ģ��������ҽ�Ʊ���ϵͳ����������������ٴ����������ٴ�������Ż�������ҩ���ʹ�á������г����棬�й���������г���ģ�������󣬼������³�Ϊ�ƶ���ҵ�����ĺ��Ķ������������ھ�׼ҽ�ơ��ǻۼ��顢Զ����ϵ������Ӧ��ȡ����������չ����ҵ��ģԼ1500-1700������ң�δ�������й�IVD�г�Ԥ���긴��������Ϊ5-8%��<br />����2���������в�������������<br />������������������Ԥ�����ģ�CDC��2026��3��28�շ����ġ�Weekly US Influenza Surveillance Report����ʾ������CDC�ļ�������ƶϣ�2025-2026�����м��У�ͳ������Ϊ2025���40����2026���12�ܣ����Ʋ�����3000���˸�Ⱦ���У�����37����������סԺ��2.3�����������С����ݹ�������ʵ������CDC������������Լ��������ʾ�������м��е����������Ե�50�ܿ�ʼͻ�Ƶ���3000�˴Σ����ڵ�52�ܴﵽ��ֵ�����в�����Covid�����ͺ������ϰ������ȶ��ֺ�������ԭ�������֢״���ٴ��������ƣ�Ϊ��ȷ���ֲ�ͬ��������ĺ�������Ⱦ����������������ƣ����١���ݡ����Լ������ֲ�ԭ�����͵Ķ��������ⷽ����������ȷ���г�����<br />����2������ҽ�ƽ������Ӳ�Ʒ����<br />����3��������ҽ������<br />����������ҽ����ָͨ�����������������ҽ����Դ��ҽ�Ʒ���Ϊ�����ṩԶ��ҽ����ѯ����ϡ����ơ����������ȷ������ҵ��ҽ�����ֻ�ת������Ϊ�ƶ�ҽ����Դ�Ż����ú�����ҽ�Ʒ���Ч�ʵ���Ҫ������2025��ȫ������ҽ���г���ģ�ﵽԼ4,200.80����Ԫ���й��ǻ�����ҽ�Ƶ���Ҫ�г�֮һ��CNNIC��55�ε��鱨����ʾ���й�������ҽ���û���ģ�ﵽ4.18���ˣ�����������������������ơ����Ż�����ҽ���û���ģ����������ͳ��ҽ�Ʒ���ģʽ����������ת�ƣ����γ���������һ�廯�ķ�����ϵ����������Ҫ����ҽ����ҵ������ںϣ�Ԥ�ƻ�����µĲ�ҵģʽ��ҵ̬�����ҽ�Ʒ����������Ч�ʡ��⽫�����ڽ��ҽ����Դ�ֲ��������������������Ľ�������֮���ì�ܡ�ҽ����Ϣ���׶Ρ�������ҽ�ƽ׶κ�����ҽ�ƽ׶εķ�չ�߼��������Ϣ������ҽ�������Ӧ�ã�������Ļ�����Ϣϵͳ���裬�����û����������Ż�ҽ�Ʒ������̣�����ͨ���������Ϻ����ܻ�����ʵ��ҽ�Ʒ����ȫ��������ģʽ���£������ҽ�Ʒ���Ч�ʡ������Ϳɼ��ԡ����ֻ�����ҽ�Ʒ���ͨ�����ܻ����ߺ�ƽ̨�Ż��������̣������������飬ͬʱ���ҽ�Ʒ���Ч�ʺ�����������ת�ʹ������µ�ҽ�Ʒ���ģʽ����ҵģʽ���ƶ�ҽ����ҵ�����ܻ�����׼���͸�Ч��ת�͡����ֻ�����ҽ�Ʒ������ǰ�����Ķ�����ڣ������������ҽ�Ʒ���Ч�ʣ�ʹ��ҽ�ƾ��߸��ӿ�ѧ����ͬʱ�ٽ��˲�ͬ�����ĺ����������ù�������ܵ�����ݡ�����׼��ҽ�Ʒ���ʵ����ҽ�Ʒ���������ȫ��������<br />���������������豸������ҽ���豸�ȵ����ռ���������ҽ��������ֳ��µķ�չ���ơ�����ҽ���豸����ЧΪ������ҽ�ƽ��и��ܣ���ɼ��Ĵ���ҽ�����ݿ���Ϊ�˹����ܺʹ����ݷ����ṩ֧�֣�����ҽ�����и���׼����Ϻ����ơ��������豸�ܹ��������Բ����߸��õع����Լ��Ĳ��飬ͨ��ʵʱ��⽡�����ݣ����߿��Լ�ʱ�����쳣����ȡ��ʩ��<br />����4��AI������ҽ�Ƶĸ���<br />����������������AI����ģ�͵��������ɻ�����ҽ������AIҽ�Ƶ��˳���Ϊδ�����ơ�ҽ���˹�������������ģ�͵��������ٷ�չ������ҽ�����ݼ������ͬר�Ƶ�AI֪ʶ�⣬ͬʱ��SFT(�ල΢��)��RL(ǿ��ѧϰ)��ѵ����ʽ�Ի�����ģ�ͽ���ѵ�����Ρ�<br />������Ժ�ڶˣ����ڴ�����ģ�͵����ܷ��������������⻼����Ȼ�����������Զ��ֶԻ��������߾�׼�������飬��֧��֪ʶͼ�׶�̬����׷���߼�����ϵ��Ӳ�����ʵ�־�׼����ƥ�䣬��������ҽԺ�ڵķ���׼ȷ�ʺ�����Ч�ʡ���ҽ���ˣ���ģ��֧�ֵ��ٴ�����ϵͳ��ʵʱ������������ָ�ϡ����߸������ݣ�Ϊ�������Ʒ����ṩѭ֤���顣�������������ͨ����������������������׷�٣����ѻ��߸������������ݼ���Լ��쳣���ѯ����Ӧ�ȡ����⽡���ܼ�ͨ�����ϵ��Ӳ�����IoT�豸����������ϰ����Ϣ��������ά��������δ�����Ŷ�ģ̬���������ĳ��죬AI�������ε����⻼������ʵ�ִӼ��������������ٽ��ķ�ʽ������<br />������Ժ��������棬�����������ճ������г������١�û�˹ܡ�����ܡ����˹ܡ������⣬��������Ч������������Ҫҽ����Ա����ͨ������������ʵʱ���ٹ����������Ԥ���˹����ܼ�������������ն��豸����ʵʱ������Բ����ߵĽ�������(��Ѫ�ǡ�Ѫѹ�����ʵ�)�������ݼ���������һЩ��Ƶ�Ρ����������⼰ʱ��Ӧ���Ӷ�����ҽ����Ա�Ĺ���Ч�ʡ�������������ȫ���ڣ����ݻ��߲�����������ʳ���˶�ϰ�����ɸ��Ի��������飬��һ���������������ԡ��������򲡻��߿���ͨ���Ի�ʽ����ʵʱ�ϴ���ʳ���ݣ�ϵͳ��ʱ����Ѫ�ǲ�������������ҩ�����������������ֽ�ϼ�����Ӿ�������ͨ��ҩ��ͼ��ʶ��������������ʹ���껼����ҩ�����ʴ�󽵵͡��ڿ������Ƴ���������������Ҳ���Խ����м��㼼�������ݻ�������״̬������ͨ���ԡ�<br />�������ϣ�2026��ȫ��IVD������ҽ�ƽ������Ӳ�Ʒ���򡢻�����ҽ�ơ�AIҽ���������г���ģ���������¡�����֧�ֵȷ�����������������ر������й������������������£��г�����Ѹ�٣��»�������ӿ�֣�չ�ֳ��޴�ķ�չǱ�������ž��񽡿���ʶ�������͸����˿ڵ��������ӣ�Ԥ��δ����������򽫼������ֽ�ǿ����������ͷ��<br />����<br />�����������ľ���������<br />����1��ȫ��ҵ�񲼾�����<br />������˾��iHealth��Ʒ�ƵĲ�Ʒ����ȫ��Χ�ڻ���˰������ޡ�ŷ�ˡ����ޡ��Ĵ����ǵ��ڶ���Һ͵�����ע��֤�顣��˾����ͨ��ֱ�ӳ��ڣ�����������ŷ�ޡ��й���ۡ��¼��µȺ����ӹ�˾���뵱�ؾ����̺������̺��������õ���ƽ̨�ȶ��ַ�ʽ���������Ԫ����������������ҵ���縲�ǹ㷺����Ʒ������ŷ���ǡ��Ǽ������޵ȶ�����Һ͵����������г��������ۣ��γ������õ�Ʒ��ЧӦ����˾�ڰ����й���������ŷ�޵�ȫ�����ؼ��г��Ĳ��֣�Ϊ�����ṩ��һ����Ԫ�ҷḻ����Ϣ���磬��һ����ʹ�����ܹ�ʵʱ��׽�������г��ı仯����Ѹ��������Ӧ����˾�ڹ��ڵĿ¶ٹ�����<br />�������������Լ���Э�������в��ܲ��֣�Ϊ��˾Ӧ�Ե�Ե���ؼ��г��仯�ṩ�˳�ֵ�Ӧ�����ϴ�ʩ������ȫ�򻯲�����Ϊ��˾�ڽ������Լ��ж��������������ṩ������֧�š��ڲ�Ʒ�����Է��棬��˾����ȫ���Ԫ��Ŀ���г����ص�����󣬶Բ�Ʒ���б��ػ������������㲻ͬ�г�������Ҫ�󡣴��⣬��˾���˲���ϵ������Ϊ��˾��ȫ��ҵ�񲼾ֵ���Ҫһ������˾������Ƹ���������в�ͬ�Ļ�������רҵ���ܵ��˲ţ��齨���Ļ��Ŷӣ���������ŶӵĶ����ԣ�������ҵ��ȫ��������<br />����2��Ʒ����������<br />������˾��2010����������ȳ����ӹ�˾iHealth Labs Inc.��������˾��iHealthƷ�Ƴɹ��Ƴ���һ��������Ѫѹ�ƣ���������չ��Ʒ�ߡ��������������Լ��в�Ʒ���������㷺ʹ�ã�iHealthƷ���ڼ���ҽ�ƽ�����Ʒ�г���֪���Ⱥ�Ӱ����������ǿ����˾��2022�����ȫ��ҽ����е��ǿ��ȫ��TOP30��2023��5�£��Ű�ҽ���ٻ�2023�й�Ʒ�Ƽ�ֵ������Ϣ�����ӵ�����TOP16������176��Ԫ����ҵ�Ʒ�Ƽ�ֵλ�С��й����й�˾Ʒ�Ƽ�ֵ�񡱺����TOP29��ͬ��6�£���˾�ٵǸ���˹��Global 2000���񵥣�7���ֳɹ���ѡ���Ƹ����й�500ǿ���а񣬳�������˹�˾����ҵ��λ��Ʒ��ʵ����������ͻ��Թ�˾Ʒ�Ƶ��Ͽɶȼ������ʳ�����������ӳ�˹�˾��Ʒ�ƽ��跽��Ļ������ڹ����г����棬��˾��������������ƽ̨�͵���������ͨ��С���̳ǡ���è�������콢�������ƽ̨���в�Ʒ���ۣ���Ч�ؿ����г������档�ڹ����г�����˾ͨ�������ӹ�˾���á������ۡ�ģʽ��������չB2C���г�����˾��ȫ��ҽ����е�����̼������̾��������ȹ̵ĺ�����ϵ��B2B�˵����������ۡ�ODM/OEM�������������Ҳ��Ϊ���죬Ϊ��˾�ĳ�Զ��չ�춨�˼�ʵ�Ļ�����<br />����3��˽������ݵĹ㷺���ۼ��ڴ�ֱģ���е�Ӧ������<br />������˾����������ʵ�����������ջ���O+O����ģʽ��Ϊ���򲡻����ṩ��������һ�廯��Ժ��Ժ��һ�廯������Ӳ������һ�廯��ȫ���̹淶���������񡣾�������ʮ����������������ĳ������ۣ���˾�ѹ����𸲸ǵ��Ӳ�����ʵʱ��⡢���ʽ����ȶ�ά�ȵ�ҽ�ƴ����ݣ��γ���һ�׻����ջ���׼����ϵͳ����SOAPȫ���̹�����ϵ��һ��������Ϊ����Ĳ�����¼����������˾���չ��"AIoT���򲡼�ͥҽ��"��Ŀ����������һ������ҽ�����ݿ�͹�����ϵ��ͨ����ֱ��ģ��ѵ����������ܹ���ƣ�����ǿ�����ֽ��������Ի���Ԥ�����������Ⱥ���AI�����������𸲸�"����-�㷨-����"�����������ջ�����������ʵ�ٴ����������������з��������ѳ�Ϊ��˾�������������򹹽����ļ������ݵĹؼ�֧�㡣ͨ��AI�����ڴ�ֱ����������أ��ܸ���Ч����������Ч�ԡ��ɼ��ԡ����������ԣ�Ϊÿһ���û��ṩ��ʱ�ɻ�ȡ�ĸ߶ȸ��Ի��ķ��������û����顣ͬʱ����Ч�����ջ�ʦ��Ч�ʣ��ͷŸ��ྫ�������ڻ��ߡ�<br />����4��AI�����ҵ��ȫ����Ͷ�ʲ�������<br />������˾���˹���������ͨ����רҵͶ�ʻ�����ͬͶ�ʵķ�ʽ������չ�����֡���˾��������������Ĺ����˲���ͬ�У�ͨ��ĸ�������ӻ�����ʡ��ӻ��𸲸�ϸ�������ķ�ʽ����Чʵ���˶�AI��һ�����е��㷨��������Ӧ�á����ݵ�����Ĳ�ҵ��ȫ���ǡ���˾ͨ��������רҵ���򶥼�����˵ĺ����������չ�˹�˾��AI�������Ŀ��������Ϣ������������<br />����˾�ڿƴ�Ͷ������������Զ������Ŀǰ����˾����Ͷ�ʵĺ�����Ŀ������֮���桢���عɷݣ�688802.SH���ȡ���˾���ţ������й�����ʦ������ȫ��AI�˳������ƽ�����˾�ڶ���ƴ�Ͷ������Ĳ��ֳɹ���½�����֡�<br />����5����֤׼������<br />��������ʳƷҩƷ�ල�����֣�FDA������֤�����ϸ񡢸��ӣ������˴��ļ����ơ��ٴ����鵽�����Ȼ��ڡ���ҵ���ύһϵ�м����ĵ��������꾡�Ĳ�Ʒ�������桢�ٴ��������ݡ��������պ����������ļ��ȣ���֤ʵ��Ʒ����Ч���밲ȫ�ԡ�FDA��ҽ�Ʋ�Ʒ�ĸ߱�׼Ҫ����ҵ����Ͷ�������Դ��ȷ���Ϲ��ԡ���˾ƾ���䳤�ڻ��۵��з�ʵ�����ϸ���������ƣ��ѳɹ���ð���Ѫѹ�ơ�Ѫ���ǡ����¼ƺ�Ѫ�������ڵĶ���FDA��֤��<br />������������ϣ�IVD����Ʒ���򣬹�˾�����ӹ�˾iHealth LabsInc.������������֯���ٴ����顢�����������������о��������˷ḻ�ľ����������ơ�iHealth�Լ��е��Ƴ���־�Ź�˾��IVD�����ҵ����չ�����⣬��˾�����۽��Ϻ���������ɸ�����򣬹�˾���������Լ��С��������Լ��в�Ʒ�ѻ������FDA 510��K����֤����һ�������˹�˾��IVD����ľ������ơ�δ������˾������������֤׼�����ƣ��Լ��������г����۵���ؾ��飬�����ƽ���˾��Ʒ����֤��׼����ȡ�<br />����6��������������������γɵ��ۺ�����<br />�����Թ�˾�Ƴ��׿��������ֻ������ĵ���Ѫѹ�������������Ѿ��ɹ��з����Ƴ���һϵ�д��µļ���ҽ�ƽ������Ӳ�Ʒ��ȫ�渲����Ѫѹ��Ѫ�ǡ����¡�Ѫ�����ĵ硢��֬�ȶ���ؼ����������ļ�⡣��Щ��Ʒ���䴴������Ż����٣����������ĵ¹������ƽ���iF��ƴ󽱣��ⲻ��֤���˹�˾�ڲ�Ʒ��ƺ��з������������Ҳչʾ��������ҽ�ƽ�������̽���Ľ׶��Գɹ�����˾ƾ�賤�ڻ��۵���ҵ������г���������Ѹ�ٲ�׽�г���̬����Ч���Ͳ�Ʒ�����ķ��պͳɱ������з��������ǲ�������Ͷ�룬���������������з����������û�������ơ�Ӧ�ó��򿪷����û�������Ƶȷ��棬���ǵļ������º��з�ʵ��Ҳ���ϵõ���ǿ�������˲�Ʒ�ĳ����ȶ��ԡ�������Ӧ�ԣ��Լ������ļ����������������⣬��˾������רҵͶ�ʻ�����������ͬͶ���ڰ���Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ�²��ϵ������ǰ�ؼ�������Ӧ�á�δ������˾������Χ��ҽ�ƽ�����ҵ���Ƽ��������ս���Բ��֣��ԿƼ�����Ϊ����������������̽������չ�µ�ҵ������Ϊ��˾�ķ�չע��ԴԴ���ϵĶ�����<br />����7�����������ջ���O+O����ģʽ����<br />������˾�����������򲡻����ṩ�ջ�ʽ��ȫ�����ջ�������һ����ģʽ��ҽ��Ϊ���ģ�Эͬ���򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ��רҵ�Ŷӳ�Ա����ͬΪ�����ṩ�������ƺ͹�������ͨ�����ֶ�ѧ���ŶӺ�������˾��Ч�����˻��ߵ���Ч�����������������Ч�ʣ�ͬʱ��Լ������ҽ����Դ����˾���е�Ժ��Ժ��һ�廯������ԣ��Ż���Ժ�ھ������̣�ͨ��Ӫ��ʦ������ʦ��ҽ����Э����Ϊ�����ṩ�˸���ȫ��͸�������ҽ�Ʒ�����Ժ�⣬��˾ͨ�������Ĳ������ʵʱ��רҵ��ѯ��ȷ�����ջ�����ļ�ʱ�Ժͳ����ԡ���ʵ����������һ�廯���棬��˾ͨ����������Ի��߲����ʵʱ��¼�����������ƽ̨�Ը��˽������ݺ�ҽԺ�����¼���������ϣ�ʵ���˸��Ի�����ָ�����������ͣ����������˻��ߵ�Ӫ���ͽ����������顣��˾����Ӳ������һ�廯ģʽ��ͨ��iHealth����Ѫ���ǵ�ʹ�ã�ʵ����Ѫ�����ݵ��Զ�ͬ�����ƶˣ�ʹ�û��ߺ�ҽ����Ա�ܹ���ݵ�ͨ���ƶ��豸�����꾡����ʷ��¼���������ƺ���ʳ�˶���־���Ӷ����������������Ч�ʺͱ���ԡ���˾��רҵҽ�ƻ����Ľ��ܺ������Թ�ͬ�ջ�����ģʽ����Ч�Խ����˳����֤����ģʽ�������α������ɹ�ҵ����Ϣ��������������������������ίԱ�����Ϸ����ġ��ǻ۽������ϲ�Ʒ�������ƹ�Ŀ¼����������л�ҽѧ������ѧ�ֻᷢ���ġ��й�2�����򲡷���ָ�ϣ�2020��棩�����Ͽɣ�����ȷ��Ϊ�������ҹ���������֧�ֵ���Ҫʵʩ���ݡ�<br />����8����ϢԴ��������Ч���ߵ�����<br />������˾�����������ʲ��������רע���ڸ��Ӷ���ȫ���г��ж��첢����Ͷ���Ȼ������ǵ��ʲ������Ŷ����зḻ��ҵ�������ҵרҵ��Ա��ɣ�����רע�ڶ�ȫ����Ҫ���������ȷ������г������о���ȷ����˾�ܹ����õķ��ֺ�����Ͷ�ʻ��ᡣ��˾ͨ������������ʵĴ�Ͷ����͹�ģ50������ҵ��쿪�Ű����Ӻ��Ŀƴ�ĸ���𣬶�Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ���²��ϵ�ǰ�ؼ����������ս����Ͷ�ʲ��֣��ص��ע���ڴ�ģ�͵���һ���˹����ܼ������ԿƼ������������ǰհ�Բ��֣������˹�˾�ڿƼ������������Ȳ���ͳ��ڹ�ע���١���˾�ڰ����й���������ŷ�޵�ȫ�����ؼ��г��Ĳ��֣�Ϊ�����ṩ��һ����Ԫ�ҷḻ����Ϣ���硣��һ����ʹ�����ܹ�ʵʱ��׽�������г��ı仯����Ѹ��������Ӧ����˾��Ŀ����ȷ���������̸�Ч��������ǿ����Ϣ�Ѽ���ִ������ʹ�ù�˾���г���̬�����жȺ�ǰ����Ϣ�����������治����������˾ͨ������ɸѡ�����ùؼ���ϢԴ���Ժ���ս�Ե��ƽ����г�ֵ��о�����Ч�ľ��ߡ����ֻ�����Ϣ���Ƶľ���ģʽ�������ӿ��˹�˾����ս�Ե��ƽ��ٶȣ�Ҳ��֤��ս��ִ�е�������Ϊʵ�ֹ�˾�ĳ���ս��Ŀ���ṩ��������֧�֡�<br />����9����ֵ��һ�µ��Ŷ�����������<br />������˾�ᶨ�������ˡ��ý������򵥡���������ǻۡ���ʹ�����ԡ���ȫ������ҽ�Ƽ��ǻ�����Ŀ����ߡ�Ϊ��ΰԸ���������С��������������˼����רע���¡�����ֱǰ���ĺ��ļ�ֵ�ۡ�����֯�ڲ������������ڴ��ƴ�ͳְ�ܲ��ŵı��ݣ�����С�ŶӺ����ƶȣ�רע�ڷ������ս���۹⡢רҵʵ�������������������˲ţ���������һ��Ŀ��һ�¡���ֵ����ͬ�ĸ�Ч�Ŷӡ��������ھ����ź������������棬���빪����֣�ͦ�߸������г���֮�ɼ������Ǽ�֡������ȴ򡢼�ʵ�ƽ����Ĺ���̬�ȣ�һ��ȷ��Ŀ�꣬��Ҫ�ó��ᶨ���Ƶľ��ĺͲ������ӵ�������ȫ���Ը��Ĵ��Ŀ�ꡣ��˾�ڲ��Ļ����������������սʱ���Ž�Э������ȥ�ƽϸ��˵�ʧ�����������Σ����ڵ�������ͬ�˷����ѣ����żȶ�Ŀ��ᶨǰ������ҵ��ֵ�۵ĳɹ�ʵʩ���������ģ��������ǿ�˹�˾����������ս���������Ǽ��ţ���δ������µ���սʱ����֧�����ϸ�ѵ����Эͬһ�µ��Ŷӽ��������������������ơ�ͨ����ʵս�в���ĥ�������������ǵ��Ŷ��Ѿ�Ϊδ���Ƴ����ഴ�º����ʵĲ�Ʒ�����˼�ʵ�Ļ�����<br />����<br />�����ġ���˾δ����չ��չ��<br />������һ����˾δ����չս��<br />����������iHealth�Լ��еĹ㷺ʹ�ã�iHealthƷ��������������������˾���������iHealth��֪���Ⱥ��û��ڱ�������������г��������ļ����Ͳ�Ʒ��������г����ر��Ǽ���ҽ�Ƶ��Ӳ�Ʒ��IVD��Ʒ�������Ʒ�ܿ��پۼ�������Ŀ���û��������Ʒ�����û��Ѻ��Դ���Ʒ��ЧӦ����һ����ǿ��˾���û������ӣ��Բ������������������º��г���Ӧ��������˾���������򲡹�����Ϊ�������ʵʩ��������+ҽ�ơ���ս�ԣ����������ô�����ģ�͡����������ģ̬���ݷ���������������ȫ�����ۺ��ջ�����ģʽ������ҽ��Ϊ���ģ���ҽ�������򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ����ɵ��ջ��Ŷӣ��ۺ������ƶ���������AI�����������ơ���ģ̬���ݷ������¼����ֶΣ��������򲡻��ߵĹ����ͷ����Ժ��������Ժ�⣬��������չ�����ϣ��γ�Ժ��Ժ��һ�廯����������һ�廯������Ӳ������һ�廯��ȫ���̹淶�������ջ������⣬������չ�����ʲ�����ҵ��������ʵ���ʲ��ı�ֵ��ֵ����˾���ڿ�չ�ƴ�Ͷ�ʣ��ر�����AI���򣬻��������й�����ʦ������ץסAI������<br />������������˾2026�꾭Ӫ�ƻ�<br />����2026�꣬��˾��������о�������Դ������չ����ս�����ҵ�����������ľ������ƣ�����ҵ���ģ��������˾���ۺ��г�����������˾��Ҫ��Ӫ�ƻ����£�<br />����1����չ��ͥ�Բ���ͼ���ҽ�ƽ������Ӳ�Ʒ�����Ʒ���У�<br />������ͥ�Բ����Ʒ���棬����������˾�ڱ����Ʒս�Է���ȡ�������۵ĳɼ���iHealth���¼ơ��Լ����ǹ�˾��ҽ�ƽ������Ӳ�Ʒ��IVD��Ʒ������ش�ͻ�ơ����ڵ����ʽ��ϰ�߷����˺ܶ�仯�������ܺ�ϰ��ʹ��IVD�Բ��Ʒ��������֮һ��������2021��������˾�Լ������Ʒ���㷺ʹ��������������ЧӦ���Լ���֮���г��ռ�����ͥ�Բ����Լ��в�Ʒ���𽥳�Ϊ��������Ϻ���������ɸ�鹤�ߣ�����������Ϊ����������Ⱥ�����γ��˼����Բ����Ʒ��ʹ�ü�����ϰ�ߣ������Ʒ�Ѿ߱���ǿ���ճ���������Ʒ���ԡ�Ϊ���õ���������Ϻ���������ɸ����Ҫ����˾������������չ�ɼ�ⲡ�����С����⣬��˾Ҳ������������չ�з���������չ��˾��Ʒ��IVD�����Ӧ�÷�Χ�������Ӷ�Ԫ����OTC/POC������ϲ�Ʒ�����г���<br />��������ҽ�ƽ������Ӳ�Ʒ���棬Ϊ����ȫ���г����󣬹�˾����ǰ���Ѿ��Ƴ���iHealth�Լ��С����¼ơ�Ѫ���ǵȲ�Ʒ��δ����˾��������ý�����iHealth���¼ơ��Լ��������������γɵ�Ʒ�����ƣ������г����󣬽����о������ļ����Ͳ�Ʒ�����г���2026�꣬��˾��½���Ƴ����õ���ҽ����е��Ʒ�µ�Ʒ�����������в�Ʒ���е����������ƽ�����Ѫ�Ǽ���ǣ�CGM����AI��������������Ŀ���ȡ�ͬʱ����Ѫѹ���¶ȵȴ�ͳ�����Ʒ���棬Ҳ�������������������߲�Ʒ�Լ۱ȡ��������Լ��Ż��㷨�ͼ������֣���������û�ʹ�㡣<br />��������Ѫ�Ǽ���ǣ�CGMS����Ŀ��Ŀǰ���ڹ��ڻ�����չ�ٴ���������˾�ƻ���2026������Ӵ�Ͷ�룬����������Ŀ���ȡ�����Ŀ�����ڷḻ��˾��Ʒ�ߣ��ٽ���˾��Ѫ�Ǽ������Ĳ�Ʒ�ͼ�����������һ��������˾���г���������<br />����AI������������Ŀ����˾���¿�AI���������������з������У�ּ�ڴ���ȫ�µ��ƶ���������ܹ����ӳ�AI�����������㷨���Ա����û���������Ȼ���������顣<br />����2�����������������ƹ����������ջ���O+O����ģʽ���ӿ쿪����AIoT���򲡼�ͥҽ������ֱģ�ͣ�<br />�����ڵ�ǰ���򲡻������������ٿ�ı����£�������������ģʽ�л������ձ����⣬���综�߿�����Чʱ��̡�����Ժ��û�˹ܡ��������ҹ�����ҽ����ҽԺûʱ�仼�̡�û��Ժ�����ݡ�û��Ժ������������Բ����Ч�������ҽ��֧���󡢿����ʵ͡�����֢���մ󡢲���֢�����صȡ��޴�����򲡻��߹�ģ�Լ����Ե���ҵʹ�㽫��Ϊ�������Ʋ�ҵ�ṩ�������г��ռ䡣<br />�����ڹ��ڣ���ģʽ����Ŀǰ����ȫ����չ50�����У���577��ҽԺ�������ջ�������������ܹ������򲡻��ߺϼ�47.98��������������Ϊ�����ṩ��������ȫ���̱ջ�ʽ�淶���������񡣹�˾�ڲ��ֵ����Ѿ���ʼ�����շѣ����ƻ�ͨ���ṩ��ֵ�����������롣����ҽ����ҵ�漰������ں����ߣ�����˾��Ϊǰ��Խ��Խ���������⣬��˾Ϊ����ҽԺ�ṩ�������������ҽԺÿ�°�������ģ���ѡ���˾�������������ջ���O+O����ģʽ�����һ����������������Ⱥ�����Ϊ�ܱ��������򲡻����ṩ��������һ�廯��Ժ��Ժ��һ�廯������Ӳ������һ�廯��ȫ���̹淶������������һ����һ��������ƾ�ҽ���飬��������Ч������ǿ������������������������Ŀڱ���Ӱ��������һ������ǿ�˻���ճ�ԣ����������������ջ���O+O����ģʽ�Ŀ����ƹ㣬����������򲡻��ߣ�ͬʱ�������˻�������ҽԺ��ɼ�ͥҽ��ǩԼ�������ڹ������������Ŀ�չ�����ƶ��˻������������ı�׼���ͼ�ֵҽ�Ƶ���ķ�չ���̡����Ÿ������������������֮��Ŀڱ���������һ���ͺ�����ʽ����Ϣ�������빲��������ļ�Ч���ֵ�ȷ��濪�����µ�˼·��̽������<br />��������������˾�����������û���Ϊ�����񸶷�ģʽ�Ͱ�Ч������ģʽ�����У������񸶷�ģʽ��������������ջ�������Զ�̻��߼�������Ա�������Ч������ģʽ����Ҫ������Ѫ�ǻ�/��Ѫѹ�Ĺ���ҽ�Ƽ��ţ��ȸ���������������·ѣ�ҽ��Ч���õ�ÿ���ж��⽱������ģʽ��Ҫ���������Ӳ�̫�ùܵ��������ߡ�Ŀǰ����˾����������Լ77������������ҽ��435�ˣ�iHealth�����ٻ�ܳ��������񽱣�������������ҽʦ���估������������Ӱ������ҽʦ���������õĹ�ϵ����<br />������˾һֱ�߶ȹ�עAI�����ķ�չ��̽�����ԭ��ҵ�����Ƶķ�չ���ܡ�����2024��ĩ����������AI�з��Ŷӣ�������չAI�����Ŀ���з��������Ե㳢���˶��߼����AIӦ�á���˾���𲽴��조AIoT���򲡼�ͥҽ������Ϊ�ص��з���Ŀ��ͨ�����ϴ�����ģ�͡����������ģ̬���ݷ���������ͨ��������á��ջ�ʦCopilot���������Ͻ���������һ��ȫ�������򲡼�ͥҽ���������û��ڼ�ͥ�����и�Ч����������������������֢״�ļ�ʱ��Ӧ�������������������ԣ������ճ�ҽ������<br />����ƾ�蹫˾ʮ�������ڡ����������ջ�O+O��ģʽ���������ۣ����а���30�����û��Ľ������ݺ��γɵľ��鷽�����𲽹��������ںϡ�ģ�ͽ����ԡ����ɫЭͬ����ȫ�Եȼ������⣬�������򲡹�������AI��ֱ��ģ�͡�����AI�������������IoT�豸����Ѫ���ǡ�Ѫѹ�ƣ���ʵʱ������ݣ������û����ʡ�����������Ϣ���ṩ���ɽ�󡢸��Ի���Ԥ�����������������ƶ�AI���ܡ����������ջ�O+O��ģʽ�����������ܱ�ݵ����򲡼�ͥҽ�����顣<br />������˾δ���������򲡹��������򡰶ಡ�ּ�ͥҽ��������������Ϊ��AI��ͥҽ����������ȫ��ҽ�ƣ���ÿ����ͥӵ��ר��������ҽ����������ȫ�񽡿�ˮƽ������<br />����3��������չ�����ʲ������Լ��ƴ�Ͷ�ʣ�<br />������˾��ȫ�򻯴����ʲ������ӽǣ����ؿ��ʲ����õ����ģ�´�ѧ����������ģʽ�����ж�Ԫ����ɢ�ʲ����ã��Է�ɢ���ղ�Ѱ���г��ڵ��������档�����ʲ�������ʵ���ʲ��ı�ֵ��ֵΪ���ԣ�Ϊ��˾�����δ����ȷ����ʱ�ṩ�˳���ķ��յ��������������ʲ����õĺ��ģ���ͨ��������Ե��ʲ���ϣ���ɢ���ղ���߷��յ�����������ʣ��Ż���ϵķ���������������˾����������Է��սϵ͡������ȶ��Ĺ̶��������ʲ�Ϊ������˾Ŀǰ���о�������Դ�ƽ�����ս�Եķ�չ�����Ƿֽ׶�ʵʩ�ģ������ȶ����ʽ𴢱�����Ϊ����ս�Եķ�չ�ṩ��Ҫ���ϡ�Ϊ�ﵽ��һĿ�꣬��˾ͨ���Ӵ����ʲ������л���Ƚ���Ͷ�����棬�Ӷ�����ʽ��ʹ��Ч�ʣ�ʵ���ʲ��ı�ֵ��ֵ����������ʵ�ֹ�˾�͹ɶ�������󻯡�<br />�����Ƽ������Ƿ�չ���ƣ���˾ͨ����רҵͶ�ʻ�����ͬͶ�ʣ��Դ�ģ�͡�Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ�²��ϵ��¼�������Ӧ�õ����ʳ�����Ľ���Ͷ�ʣ���֧�ָ߿Ƽ���ҵ��չ��ͬʱ��Ҳϣ�����Ը���˾����Ͷ�ʻر����ڿƴ�Ͷ�ʷ��棬��˾ϣ��ץס�ƴ��й��Ļ����Դ�Ͷ����Ⱥ�ķ�ʽ�ƶ��ͼӿ�Ƽ��ɹ���ת����ץס��ģ���˹�������һ�ֲ�ҵ�����Ļ��������Ƽ����ķ�չ����˾ͨ��ĸ�������ӻ�����ʡ��ӻ��𸲸�ϸ�������ķ�ʽ����Чʵ���˶�AI��һ�����е��㷨��������Ӧ�á����ݵ�����Ĳ�ҵ��ȫ���ǡ�<br />������˾�ʲ���ֵĿǰ��Ҫ�������������ף��ٹ�˾������չ�����ʲ����ã��Ӷ�ʵ���ʲ����ڱ�ֵ��ֵ��Ŀ�꣬�⹹���˹�˾��ֵ��beta���ڹ�˾������չ�ƴ�Ͷ�ʣ��ر�����AI���򣬻��������й�����ʦ������ץסAI�������⹹���˹�˾��ֵ��alpha��<br />���������ƻ�����������˾��2026��ȵ�ӯ��Ԥ�⣬�����ɹ�˾��Ͷ���ߵ�ʵ�ʳ�ŵ����Ͷ����ע��Ͷ�ʷ��ա�<br />������������˾���ٵĸ������<br />����1���Լ��в�Ʒ�г������½����µ�ҵ����������<br />������˾����������Ҫ��iHealth�Լ��в�Ʒ���۴����������������������������������������˾�Ŀ�ԭ�����Բ��Լ��в�Ʒ����������������г��������ֱ����أ�ͬʱ�ܵ��������ߺ��г��������������Ӱ�죬��������ı仯�����ܻ�����Լ��в�Ʒ�г�������٣���ɹ�˾ҵ�������ķ��ա�ΪӦ����һ���գ���˾�ѻ�����չ�������Ʒ���������Ʒ��C�˵�����������Ŀǰ�ѹ㷺��������ѷ��CVS���ֶ�������ϼ�������������������ó��没��ɸ�鹤������Ʒת�䣬�𲽽��Ͷ����������������̶ȣ����Ѿ߱���ǿ�Ŀɸ�������Ʒ���ԡ����⣬��˾���Ƴ��������졢�������Ʒ�Ļ����ϣ�δ���������г����������������չ������ϸ������Լ��в�Ʒ���У��Ը��õ������г�����<br />����2���г����������仯�ķ���<br />������ҽ�ƽ��������������ѵ��Ӳ�Ʒ���棬��˾�������ҵ�ھ�����ͬ�������繫˾��Ʒ���������ܡ��۸��û���������ӱ�������߲�Ʒ���������г����󣬹�˾�������޷��ջ�ǰ���ڲ�Ʒ�з�Ͷ��ķ��ա�ΪӦ���������գ���˾�����²�Ʒ�Ĳ�Ʒ���塢ʹ�ó�������ƷĿ����Ⱥ���г���λ�����в��Ժͼƻ��ȷ����ϸ�ѹأ�������Ϊ��������Ӧ�õ���Ʒ�з��У���׼ʱ������������׼�����Ʒ��׷����Ƶ����Ž⣬�������������Լ۱ȡ��۸����ĺò�Ʒ���ڻ�����ҽ�Ʒ��棬��˾�ᶨ�Ĵӡ�0��1���������������ջ���O+O����ģʽ���ⳡ�������˳��µ�ҽ����ҵ�ĸ�ǻ���Ҳ����ս�����˹�˾�������ڶ໥������ͷ��ҵ��Ҳ�ڴӲ�ͬ�Ƕȡ���ͬ�����Խ��뻥����ҽ�����������������Բ����߻����㹻���г��㹻��Ŀǰ��δ�γ���ҵ�����ĸ�֣������Ż�����ҽ����ҵϸ������ķ�չ����˾���������г������ķ��ա���������ƾ����ҽ����ҵ��չ30�������Դ�;��飬��˾�ܹ��Ƚ�׼ȷ�ذ����г���̬���������в��ϻ��۱����顣��˾�Ѿ��Ƴ������ֻ�������Ѫѹ�ơ�Ѫ���ǡ�Ѫ���ǡ����سӵ�ȫϵ�еĽ���������Ӳ������ĥ���û����鼫�ѵ�App��������ҽ��ʹ����ϵͳ������Ҫ���ǹ�ͬ�ջ�ҽ�Ʒ���ģʽ����ʵ����֤�����������ҽ�������ߵ����⣬��˾�����������ջ�������Ҳ�ڲ��Ϸḻ���ۣ�������ЧӦ�Ծ������ա�<br />����3���˲ŷ���<br />������˾�ڻ�����ҽ�ƺͱ����Ʒ�з�����ܴ�̶���������רҵ�˲ţ���Ҫרҵ����ͻ��������ḻ�ĺ��ĹǸɡ��ھ������ҵĻ�����ʱ���������������Դ���Գ�Ϊ��ҵ��һ�־������ƣ���ҵҪ��ռ�Ȼ���Ҫ������רҵ�˲ţ�������ҵ�ڶ��˲ŵ�����Ҳ�Ƚϼ��ң��ܷ�ʱ�����ʺϹ�˾ս�Է�չ�����Ⲣ���Ϲ�˾��ҵ�Ļ����˲ţ���ͨ�����Ƚ������ƵĹ������ơ�����������������ҵ���ٷ�չ���������һ������ս��ΪӦ���˲Ź�������ս���Ӷ�����������˾�����˽�Ϊȫ����ڲ���ѵ����Ч���˻��ƣ������Ż���Ա���á������ƶȽ��衣�ӳ�������������Ҫͨ��������ҵ���󣬴���õ���ҵ�Ļ��͹�����Χ������������ʩ�������˷�չ�����������빫˾�ķ�չ��������ܽ����һ�𣬹�����˾��չ�ɹ���2020�ꡢ2021�깫˾½���Ƴ��˹�Ʊ��Ȩ�����ƻ���2022�ꡢ2024�깫˾�Ƴ�Ա���ֹɼƻ��������ļ�����ʩ�����ڽ�һ����������ȫ��˾��Ч�������ƣ���ֵ���Ա���Ļ����ԣ���������ס�����˲š�<br />����4����������<br />�������Ź�˾��Ӫ��ģ�Ľ�һ������һ�����������ӹ�˾�����ڶ࣬�Թ�˾�Ĺ���������������Դ����Ϣ�������Ƶ�����˸���Ҫ�������˹�˾��������Ӫ�Ѷȡ��ڶԺ��⹫˾�Ĺ������棬���ܴ������������Ļ���������أ����º�����ҵ����ʵ��Ԥ�ڵ�ҵ����չ������Ŀ�꣬�������������ʧ�ķ��ա�ͬʱ����˾��������������ơ��ڲ���ͨ��˳����Υ����˾���ڵط��ɵ�ԭ������¾�Ӫʧ�ܵķ��ա���˾�Ѿ��ڸ��ӹ�˾��������ȫ������OKR������ϵ��ǿ��Ŀ����ؼ��ɹ�������ͨ���Թ�˾ս�ԡ�Ը���Ĳ��ż���͸���ƶ�����ġ��ɺ�����Ŀ�꣬ʵ���ڲ�����ҵЭͬ����һ���棬��˾�������ƶ�������+ҽ�ƹ�ͬ�ջ�ģʽ��ȫ����ƹ㣬�ڹ���Ŀǰ�Ѿ���չ��50�����е�577��ҽԺ��������ҽԺ����������Ӳ���������һ���ơ��������ŵ�ҵ����Ŷӹ�ģ����˾�Ĺ����������µ���ս����˾����ǿ��ͬ�ջ���Ŀ��Ա����ѵ���໥������������ѧϰ�ɹ����飬���ջ�ģʽͳһ��׼��ͳһҪ�󡢼�ǿ���ˣ��Ӷ���߹���ˮƽ��<br />����5���ʲ�������ƴ�Ͷ�ʷ���<br />����Ϊʵ���ʲ��ı�ֵ��ֵ���������������ʽ���д����ʲ����ã���˾��Ͷ������������ȶ��Ĺ̶��������ʲ���Ϊ���Ĳ��ԣ�ͬʱҲ�Ὣ�������г�������Ǳ���ĸ������ʲ���ΪͶ����ϵ���Ҫ���䡣Ͷ�ʹ����У����������г������÷��գ���������Ľ׶��Բ�������˾�����й�עȫ�򾭼����ڡ����������ߡ������ԡ���Ե���εȺ�۷��գ��Լ����ʡ����ʵ��г��ı仯���ϸ�����ѡ��Ͷ��Ʒ�֣����ݾ��������Լ��г������ı仯����ǿ�г������͵��й�������ʱ����Ͷ�ʲ��Լ���ģ�����ֻ��ж��в������أ���ʱ��ȡ��Ӧ�Ĵ�ʩ�������ܹ�ܷ��յķ��������⣬��˾�ƶ���Ͷ������ƶȣ��Թ�˾ί��������֤ȯͶ�ʵ�ԭ�򡢷�Χ������Ȩ�ޡ��ʽ�ʹ�õĹ����ල����Ϣ��¶�ȷ����������ϸ�涨������Ч����Ͷ�ʷ��ա�ͬʱ��˾����ʵִ���йع����ƶȣ��䱸ר�˸���ί��������֤ȯͶ�ʵ�Ͷ�򡢽�չ���������Ͷ�ʷ��ա�����������Ȩ�Թ�˾��Ͷ��Ʒ������мල���顣<br />�����ڿƴ�Ͷ�ʷ��棬һ���г���ȨͶ�ʴ���Ͷ�ʻ����ڳ��������Ե͵��ص㣬Ͷ�ʹ��̿������ٺ�۾��á���ҵ���ڡ��г����������߻�������Ͷ����Ŀ��Ӫ�����ȶ�������Ӱ�죬���ܴ���Ͷ�ʺ���Ŀ�˳����ڳ����Ѷȴ�ķ��ա����ڿ��ܴ��ڵ���ط��գ���˾��Ϊ�����˽����й�ע��ĿͶ���չ��������ϸ�ʵʩ�ල�������Ȩ�����������ա�<br />����6�����ʷ���<br />�����������ڣ���˾��������ռ�Ƚϸߣ�Ӫҵ������Ҫ����Ԫ���㣬��Ԫ���ʵĲ�������һ����ȷ���ԡ�ͬʱ��������ҽ���Ԫ������ֵ���ڣ���ô��˾�������������ֵ�����Ļ��������գ���˾��ʵʱ��ע���ʵ�Ǳ�ڲ�������ȡ��Ӧ��ʩ�������ʴ���������ա�				<span style="display: inline-block;width: 42px;"></span>
+				<a class="less fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">�����</a>
+			</p>
+		</div>
+						<div class="m_tab_content m_tab_content2" style="display:none;">
+			<p class="f14 pr">
+				����һ���������ڹ�˾���µ���Ҫҵ�񡡡���һ����˾����ս�ԡ���������iHealth�Լ��еĹ㷺ʹ�ã�iHealthƷ��������������������˾���������iHealth��֪���Ⱥ��û��ڱ�������������г��������ļ����Ͳ�Ʒ��������г����ر��Ǽ���ҽ�Ƶ��Ӳ�Ʒ��IVD��Ʒ�������Ʒ�ܿ��پۼ�������Ŀ���û��������Ʒ�����û��Ѻ��Դ���Ʒ��ЧӦ����һ����ǿ��˾���û������ӣ��Բ������������������º��г���Ӧ��������˾���������򲡹�����Ϊ�������ʵʩ��������+ҽ�ơ���ս�ԣ����������ô�����ģ�͡����������ģ̬���ݷ���������������ȫ�����ۺ��ջ�����ģʽ������ҽ��Ϊ���ģ���ҽ�������򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ����...								<span style="display: inline-block;width: 70px;"></span>
+				<a class="more fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">�鿴ȫ����</a>
+							</p>
+			<p class="f14 none clearfix pr">
+				����һ���������ڹ�˾���µ���Ҫҵ��<br />������һ����˾����ս��<br />����������iHealth�Լ��еĹ㷺ʹ�ã�iHealthƷ��������������������˾���������iHealth��֪���Ⱥ��û��ڱ�������������г��������ļ����Ͳ�Ʒ��������г����ر��Ǽ���ҽ�Ƶ��Ӳ�Ʒ��IVD��Ʒ�������Ʒ�ܿ��پۼ�������Ŀ���û��������Ʒ�����û��Ѻ��Դ���Ʒ��ЧӦ����һ����ǿ��˾���û������ӣ��Բ������������������º��г���Ӧ��������˾���������򲡹�����Ϊ�������ʵʩ��������+ҽ�ơ���ս�ԣ����������ô�����ģ�͡����������ģ̬���ݷ���������������ȫ�����ۺ��ջ�����ģʽ������ҽ��Ϊ���ģ���ҽ�������򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ����ɵ��ջ��Ŷӣ��ۺ������ƶ���������AI�����������ơ���ģ̬���ݷ������¼����ֶΣ��������򲡻��ߵĹ����ͷ����Ժ��������Ժ�⣬��������չ�����ϣ��γ�Ժ��Ժ��һ�廯����������һ�廯������Ӳ������һ�廯��ȫ���̹淶�������ջ���<br />����������������ҵ�񼰲�Ʒ�������<br />����1��IVD������ҽ�ƽ������Ӳ�Ʒ����<br />����1����ҵ�������<br />����ȫ����������г���ģ�Ȳ�����������2024��ĩ��ȫ����������г���ģ�Ѵﵽ810����Ԫ���ֵ��������������г�ռ��Լ36%����̫�г�ռ��Լ33%��ŷ�ޡ��ж��������г�ռ��Լ27%��������������г���ȫ����������Ӱ�������г�֮һ����������Լ����ִ�ҽ���в��ɻ�ȱ��һ���֣��㷺Ӧ���ڼ����ļ�⡢��Ϻ����Ƽ�⡣���������ϸ�������棬����QYResearch������ʾ��2024��ȫ����������г���ģ��ԼΪ26.37����Ԫ��Ԥ�Ƶ�2031��ȫ����������г���ģ���ﵽ40.2����Ԫ��������������Ϊ6.3%�������г����棬�й���������г���ģ�������󣬼������³�Ϊ�ƶ���ҵ�����ĺ��Ķ������������ھ�׼ҽ�ơ��ǻۼ��顢Զ����ϵ������Ӧ��ȡ����������չ����ҵ��ģԼ1500-1700������ң�δ�������й�IVD�г�Ԥ���긴��������Ϊ5-8%��<br />����ȫ��Ѫѹ���г���ģ�������󣬼��������ܻ�����Я������׼����չ����������������г�����������������ռ�����ߡ����У�ռ����Խϴ���г��ֱ�Ϊ�й���������ŷ�ޣ�ռ�ȷֱ�Ϊ25%��20%��20%���ҡ����й���Ѫѹ����ָ�ϣ�2024���޶��棩��������ʾ���ҹ���Ѫѹ�����ʳ�������������������������������������Ϊδ���ҹ���Ѫѹ����Ѫ�ܲ���������Ҫ��Դ���ҹ����˸�Ѫѹ��֪���ʡ������ʼ������ʣ������ʡ����ֱ�Ϊ51.6%��45.8%��16.8%���������Ѫѹ��Ⱥ�����ʡ�����������Ϊͻ�������������й�2030���滮��Ҫ���������2030��Ҫʵ�ֽ����ش����Բ����������ʡ�����Ѫ���¼������ʵ�Ŀ�ꡣΪ˳��ʵ����һ����Ŀ�꣬����������Ⱥ��Ѫѹ����������Ϊ��Ҫ��<br />�������й���Ѫѹ����ָ�ϣ�2024���޶��棩��<br />����ȫ��Ѫ�����г��ɷ�Ϊ������ŷ�ޡ���̫�������������ޡ��ж��ͷ��ޡ�����Ŀǰӵ�������г��ݶ����������򲡵ĸ߻����ʺ����Ƶ�ҽ�Ʊ���������ʩ��ŷ��Ҳ��һ����Ҫ���г����������ǵ���ʶ������ߣ�����Ҳ��ȡ�˴ٽ����򲡹����ľٴ롣��̫�������������˿ڵ����Ӻ�ҽ�Ʊ���������ʩ�ĸ��ƣ����ھ����������������ݡ��й����򲡣���һ���֣������в�ѧ��Σ�����ء��о����棬������Ϊһ��ȫ���Խ�����ս��ȫ�򻼲�������2021���Ѵﵽ5.29�ڣ�Ԥ�Ƶ�2050�꽫Ӱ��13.1���ˡ�ȫ�����򲡻��������������ӣ�����1�ͺ�2�����򲡣���Ϊһ�����Լ�����Ŀǰ���򲡻�û�и��εķ���������ֻ�ܽ���Ѫ�Ǽ�⡢ҩ�����ơ���ʳ���ơ��˶��Ʒ�����ɵ����Ʒ��������Ʋ��鷢չ���ݵ�ʮ��IDF���򲡵�ͼ��ʾ,�й��������򲡻��������ߴ�1.4��,���������֮�ס�����2�����򲡻���ռ�����,Ȼ���й��������򲡻�����Ѫ�ǿ��ƴ��Ļ��߽�ռ16.5%�����Ƕ����򲡹��������ӳ̶�Ҳ������ߣ�����Ѫ�Ǽ������󲻶��������ƶ���Ѫ�Ǽ�����г��ķ�չ����������Ѫ�Ǽ��ϵͳ��CGM��������������ӡ������ֻ����ɺ�����Ѫ�Ǽ�⹦�ܵ��ص�ҲԽ��Խ�ܻ�ӭ��<br />����2����Ӫ����Ʒ�������<br />������˾���ڶ���������������Ͷ�ά������������Ϣ�Ĳ���̽�����Ѿ����з��ɹ�Ӧ����Ѫѹ��⡢Ѫ�Ǽ�⡢IVD�Լ��С����²���������Ѫ������Լ�������֬�����ȶ��ҽ����е����Ϊ��ǿ�����з�����˾ר�������˶������������Ŀ�з��ң�ͨ����ѧ�ƺ����ͼ������£�������һ�׽�Ϊȫ��ĸ��˽���������Ʒ�ߡ�<br />�����������ڣ���˾��iHealthϵ�в�Ʒ�����ɫ���г����ֺ�ӯ��������Ϊ��˾�����������������Ҫ���ס���ϵ�в�Ʒ��Ӫҵ����Լ6.01��Ԫ����ң�չʾ�����г���������ӯ����������˾���Լ��в�Ʒ����������ã��ر���������ѷƽ̨�ϣ����ۼ۽��г�ͬ���Ʒ��ǰ�е�ͬʱ����������λ�Ӹ�Ʒ���BestSeller����ʾ��iHealth��Ʒ���г��ϿɶȺ�Ʒ�Ƽ�ֵ��2024�꣬��˾��Covid�ͼ�������������ƷOTC��POC�棬�����������FDAӦ��ʹ����Ȩ<br />������EUA������˾��������OTC�Լ��в�Ʒ���ɸ������вɼ�ǰ��ǻ�����������в�����15���ӳ�����������߹������账����ͨ�������ĵ��̡�ҩ�ꡢ�̳��������������ۣ�Ŀǰ�ѹ㷺��������ѷ��CVS���ֶ������������������Ϊ����ļ����Ϻ���������ɸ��ҽ�Ʋ�Ʒ���߱���ǿ������Ʒ���ԡ�Ϊ���õ���������Ϻ���������ɸ����Ҫ����˾ͨ�������Լ��в�Ʒ�γ��˽�ǿ��Ʒ��֪���ȣ���ִ��г������Ƴ����������Ʒ�Ļ����ϣ�������������չ�ɼ�ⲡ�����С���˾Ҳ������������չ�з�������������չ��˾��Ʒ��IVD�����Ӧ�÷�Χ�������Ӷ�Ԫ����OTC/POC������ϲ�Ʒ�����г���<br />�����ڼ���ҽ�ƽ������Ӳ�Ʒ���棬��˾��ҽ����е��ҵ�����30�꣬�Ѿ��ɹ������ˡ��Ű����͡�iHealth������Ʒ�ƣ������ڹ������г������нϸߵ�֪���Ⱥ����õĿڱ���������������iHealth���¼ƺ��Լ��е����ۣ���˾��Ʒ�����Ʋ���������iHealthƷ�Ƶ�������Ѫѹ�ƺͶ��¼ƵȲ�Ʒ�ܵ��������ߵĹ㷺��ӭ������������ѷ����ƽ̨�϶�β�����Ʒ���BestSeller��δ������˾�ƻ�����iHealth�������γɵ�Ʒ�����ƣ������г����󣬳����ؽ����о������ļ����Ͳ�Ʒ��������г���<br />�����ڳ���Ѫ�Ǽ�����򣬹�˾����ɶ�������������Ŀǰ���ڹ��ڻ�����չ�ͼ���ٴ���ع�����ͬʱҲ�ڻ����ƽ�����CGM��Ʒ���з��������봫ͳѪ�Ǽ�ⷽ����ȣ�����Ѫ�Ǽ���Ʒ��CGM�������ṩ����ȫ��׼ȷ��ȫ���Ѫ�Ǳ仯���ٽ���ȷ����ʹ�������ľ�����󡱣���ҹ1��3ʱ��Ѫ�ǣ����ǰ��Ѫ�ǣ������������󡱣�ҹ���޵�Ѫ�ǣ��峿3��9ʱ��Ѫ�ǣ�������ҽ�����Ѫ��ͼ�׶�ҩ����ȵ��ؼ������и�׼ȷ�ĵ��������ƻ��ƶ����Ʒ��������ƣ�ʹ���ߵ�Ѫ���ܹ������õ����ÿ��ƣ���Ч���ӻ��ͷ�ֹ����֢�ķ������ò�Ʒδ�����г����۵�ͬʱ������������Ӧ�������������ջ���O+O����ģʽ�У��ɼ����ƶ���˾�ú���ս�Ե�ʵʩ�ͷ�չ����˾�������������������Ƴ������¿�AI���������������з������У��ò�Ʒ�ȫ�µ��ƶ���������ܹ����ӳ�AI�����������㷨��ͨ��ȫ��λ�����δ�����ȷ���û��������κλ����¶������ܵ���������Ȼ���������顣Ŀǰ����Ŀ���ڳ����Ȳ��ƽ��У����ƻ�����������������������û��������ռ���<br />����2��������ҽ������<br />����2025���ϰ��꣬�����ջ�ҵ���������ﵽ5,026.28��Ԫ������Ŀǰ�����������ջ���O+O����ģʽ����ȫ��Լ50�����С�424��ҽԺ�����ƹ㣬�ջ��Ĳ��˹�ģԼ36.6���ˡ���������ҽ���Ѿ���ȷ�ˡ�������+ҽ�ơ�����ĸ��ѷ�ʽ����˾�������ӹ�˾��ͨ����ģʽ��Լ74��������394��ҽ���������γ������õĿڱ����ջ�������Լ2.1���ˡ���˾���ţ�ҽ�Ƶĺ�����ҽ����������Դ��ҽ����ʱ�䡣ͨ����O+O����ģʽ����˾���������ҽ���Ŀ�������������Ч������ҽ�������޵�ʱ���ڷ������ļ�ֵ��ͨ����ҽ�ƻ����Ľ��ܺ�������˾��ҽ�Ʒ������쵽��������֮������ҽԺ��ҽ��Ϊ���ģ�Ϊ�����ṩ����������ҽ�Ʒ��񡣹�˾�����򲡹���Ϊ���ģ��������ṩ���򲡵�ȫ���̹����������ƽ���������+ҽ�ơ������ս�Բ��𣬼����ƶ����������ջ���O+O����ģʽ���й�����������ء���ģʽּ���������Ч�����������Ƴɱ���Ϊ���򲡻����ṩ������ҽ�Ʒ���������Ԥ����Ч��������ճ��������⡣��Ժ�ڣ����߽����ȫ���ҽ����ϡ�Ӫ����ѯ�͸��Ի��ջ�����������һ��һ�Ļ��߽������񡣶���Ժ�⣬��˾ͨ��ʵʱ��ҽ��ָ���������𡢽�����Ԥ��֪ʶ���ͣ�ʵ�ֶԻ�����ʳ���˶���ҩ���������ȫ���̱ջ�ʽ�������ٽ�������Ϊ�Ļ����ı䡣��������淶������Ժ������Ľ�ϣ��������������鲡�����ǻ�Ѫ�쵰�׵Ĵ���ʣ��ӻ��ߵ�30%����������60%���ң������ʽ���5%���£��淶�����������70%��<br />�������ڷ��棬��˾�����ġ����ǡ��͡���ͬ�ջ���ϵͳ��ʵ����Ժ�����ݵ�ʵʱ�ϴ���ҽ���ļ�ʱ���ʡ�ϵͳ����������ȫ�ȼ��������Ƚ����ܼ��������ڽ��а�ȫ������ȷ���������ݵİ�ȫ����˾���������¼����������ͨ�����¡��������ϵķ�ʽ��������������Ⱥ����ǿ�˻��ߵĹ����У���������ý���ṩ�ḻ�Ľ����������ݡ������ڹ�����Ի�����ҽ�����ߵ�֧�֣���˾�������ջ�ҵ���Ѿ���ʼ������Ӫҵ���룬���ѻ��ߵ�����������������ѹ����Ļ��ߡ���˾���������ջ�ʹ�������з��Ĺ���ϵͳ��ϵͳ�������߶�App��ҽ����App��Web���ջ�ϵͳ��CMS��̨����ϵͳ�����ݷ���ϵͳ��QuickBI����ƽ̨����Ӫƽ̨�Ϳ���ϵͳ��ϵͳ�����ջ��ƻ�������Ժ���Բ�Ѫ�ǲ�������Ѫ�Ǽ��ϰ�߱仯�����ջ�ʦ���͹�������ʵ�����򲡽�����֧�ֵıջ����������������������ҹ����������Ӷ���������Ч�������⣬��˾һֱ�߶ȹ�עAI�����ķ�չ��̽�����ԭ��ҵ�����Ƶķ�չ���ܡ���˾����2024������ר���Ŷӻ�����չ��AIoT���򲡼�ͥҽ������Ŀ���з����������Ե㳢���˶��߼����AIӦ�á�����Ŀּ�ڽ������ǰ��AI������������ֱģ�ͣ����ȴ���һ�����ܻ������Ի����������Բ��������ߡ�ͨ����ģ�͵���������Ŀ������ʵ��ҽ����Դ���Ż����ã���������ҽ�Ʒ���ˮƽ��ͨ�����ϴ�����ģ�͡����������ģ̬���ݷ���������ͨ��������á��ջ�ʦCopilot���������Ͻ���������һ��ȫ�������򲡼�ͥҽ���������û��ڼ�ͥ�����и�Ч�������򲡡�������������֢״�ļ�ʱ��Ӧ�������������������ԣ������ճ�ҽ��������������ͬʱּ�ڸ��ܡ����������ջ�O+O��ģʽ���ļ�����ء���˾ƾ��ʮ���������������������ڵ������ۣ����а���Լ36.6���û���˽�򽡿����ݺ��γɵľ��鷽�����𲽹��������ںϡ�ģ�ͽ����ԡ����ɫЭͬ����ȫ�Եȼ������⣬�������򲡹�������AI��ֱ��ģ�͡�����AI�������������IoT�豸����Ѫ���ǡ�Ѫѹ�ƣ���ʵʱ������ݣ������û����ʡ�����������Ϣ���ṩ���ɽ�󡢸��Ի���Ԥ�����������������ƶ�AI���ܡ����������ջ�O+O��ģʽ�����������ܱ�ݵ����Բ���ͥҽ�����顣δ������˾����������Բ����������򡰶ಡ�ּ�ͥҽ��������������Ϊ��AI��ͥҽ����������ȫ��ҽ�ƣ���ÿ����ͥӵ��ר��������ҽ����������ȫ�񽡿�ˮƽ������<br />��������2024���ʵ���ɹ���2025�깫˾��һ��������AI������з��Ŷ������������ϰ��������ջ�ʦCopilot����������˸��๦�ܣ�����ʳ�������Ƽ���AI�Զ��������ܽᡢ�ջ������Զ��ľ��ȣ�ͬʱҲ��֮ǰ��֪ʶ�ʴ������˳�β֪ʶ���ǡ����������Ͻ��������£�����������豸�ȿͷ���������Զ��ظ��������ջ�ʦ��רע�ڽ����ջ�������<br />����3���ʲ�����ҵ��<br />������˾Ŀǰӵ�нϺõ��ֽ𴢱���Ϊ��˾�ṩ�˼�ʵ���ʽ��ϣ���˾�������ʲ��ı�ֵ��ֵ��Ϊ��˾�����δ����ȷ����ʱ�ṩ�˳���ķ��յ�����������˾ӵ��һ֧רҵ���ʲ������Ŷӣ�Ƹ�������ʲ���������ӵ�зḻ��ҵ�����רҵ��Ա����˾��ȫ���ӹ�˾�Ű���۹�˾Ϊ�����������ʽ�����ʲ�����ҵ�񡣹�˾ѧϰ����Ү³��ѧ�������ʲ�����ģʽ����ȫ�򻯴����ʲ������ӽǣ����ؿ��ʲ����õ���𣬽��ж�Ԫ����ɢ�ʲ��������Է�ɢ���ղ�Ѱ���г��ڵ��������档�����ʲ����õĺ��ģ���ͨ��������Ե��ʲ���ϣ���ɢ���ղ���߷��յ�����������ʣ����������ʲ������ʣ��Ż���ϵķ��������������Ӷ�����Ͷ����ϵĿ����ճ�����������õ�ʵ���ʲ���ֵ��ֵ������Ŀ�ꡣ����2025�����ĩ����˾��Ԫ�����õ��ʲ�����У��̶��������ʲ�ռ��59.2%�������г�Ȩ��ռ��26.2%��˽ļ��Ȩռ��12.6%���Գ����ռ��2.0%��<br />������˾����ȫ��Χ����������У��������ᡢ��Ӫ����������ᡢ��Ȩ�Ƹ��������Ͻ𡢱����ʽ𡢼���칫�ҵ������ʲ����û���������ϵͳ�ԡ���̬���Ĺ�ͨ���ơ�ͨ����������Ϣ�����������γɺ����ʲ��������ͨ���ʲ��������̽�֡�������ͬҵ�ȶ����Ƽ����ڵ����Ի���ѭ������������ȷ��Ͷ���Ŷ��ں�۾������С��ʲ��������Լ�������ɸѡ���棬ʼ���ܹ���ȡ����ǰհ�Ժʹ����Ե�һ����Ѷ���Ӷ����г�����İ��ռ�����ʶ����߱��������ơ����ͬʱ����˾����ȫ����300�Ҹ��Ǹ����ʲ�����Ͷ�ʹ������������㷺��ϵ��ͨ��ϵͳ�ԡ�����ľ�ְ���飬ȫ���˽��������������������������ƣ���˾���Ϸḻ�������ʲ�����֪ʶ��ϵ��Ϊ�ڲ�ͬ�ʲ�������ʵ�ָ����������ṩ����֧�֡�<br />�����ع�2025���ϰ��꣬��˾����Ƚ�Ϊ�ȵĲ��ԣ��Թ̶�����Ϊ���ģ��ص㲼��˽ļ�Ŵ�����ȡ�Ƚ�ƱϢ�ͽϸ߷��յ��������棻ͬʱ��ͨ����ѡ��ȨͶ�ʼ��Գ������ж�Ԫ�����ã���Ч�Գ�Ȩ���г������������������ƽ�ȣ��������������Դ��Ԥ�ڡ�չ��2025���°��꣬��۲�ȷ�������ڸ�λ����Ԫ�������пռ����ޣ���˾���ڼ�����ע�г�����������£�����˽ļ�Ŵ������ã�����̬������ȨͶ�ʺͶԳ����ĳ��ڣ�ǿ��������ʲ����������о����Ը�Ϊ������רҵ����̬ӭ��Ǳ����ս�������<br />����4����רҵͶ���ߺ�����ͬͶ�ʼ�ֱͶ<br />������˾�����ʶ���Ƽ��������ƶ�δ����չ�ĺ��Ķ�������ϣ����Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ���²��ϵ�ǰ�ؼ����������ս����Ͷ�ʲ��֣����ڻ�ȡ����Ͷ�ʻر�������������˾����Ͷ���˼÷��ʱ���Ԫ����Ͷ�������ʱ��������ʱ���ҫ;�ʱ����漨��̳����˼Ͷ�ʡ��źϴ�Ͷ��Ӣŵ���λ���ȹ������ʵĴ�Ͷ�����ر��ע���ڴ�ģ�͵���һ���˹����ܼ�������Ӧ�ã��ԿƼ������������ǰհ�Բ��֡�����֮�⣬��˾������ڴ��¿Ƽ��ж���һ�ĵ���ҵ����ֱ��Ͷ�ʡ�<br />����Ϊ�˳�����ø�У�ķḻ��Դ����˾������ѧ��֪����Уչ��������������Ѱ�Ҳ�������Ǳ���Ĵ�ҵ�ŶӺ���Ŀ����˾��ȡ�ġ�Ͷ�硢ͶС��Ͷ���ڡ�ͶӲ�Ƽ������ԣ�ּ�ڹ���һ���л����ĿƼ�����ҵ��ҵ��̬ϵͳ��ͨ���˲š��ʽ�Ͳ�ҵ����Ч�ۼ������ٿƼ��ɹ���ת��Ӧ�á���˾������50������ҵ��쿪�Ű����Ӻ��Ŀƴ�ĸ�����Ͷ�ʣ���ĸ�����ɾŰ�ҽ�ơ����Ӳ�ҵ�����쿪��������ѧ�����������ἰ�����Ļ���ͬ���������й�˾���ʲ�����35.6��Ԫ����һ��ֵ��Ԫ����<br />������ĸ����ּ��ͨ���г������ƣ�������ɸѡȫ�����ʵĴ�Ͷ��������ͬ����һ��������ʹͶ�ʡ��Ƽ����¡��ɳ�����ҵ�Ȳ�ͬ��չ�׶εĶ�Ԫ����Ͷ����Ⱥ���������γ�150��Ԫ����ȺΪĿ�꣬��ַ���ĸ�����ڿƼ����·�����������ü��ܸ��˶����á�����Ⱥ�����ܽ�ϸ���У������ѧ�ƣ�ͨ��������Ŀ��������Ŀ��������Ŀ�ķ�ʽ������Ͷ���ڰ���������������У��ʦ��У�Ѻ�ѧ���ĿƼ�������Ŀ���ٽ���Щ������Ŀ�ͿƼ��ɹ�������쿪�ƴ�԰ʵ��ת������ء�ͨ�������Ļ���Ⱥ�������ã���˾�����ܹ��ٽ��������ҵ������ںϣ�Ϊ����������չ�������������˹���������ĸ����ͨ�����ӻ�����ʵķ�ʽ����ʵ�ֶ��㷨��������Ӧ�á����ݵ�����Ĳ�ҵ��ȫ���ǡ�Ŀǰ������16���ӻ�����ɹ��ᣬ�ƴ�ĸ�������16.9�ڣ�Ԥ�ƽ������γ�72�ڵĻ���ء�<br />������������Ӫģʽ<br />�����ɹ�ģʽ������ԭ���ϲɹ�����Ӧ�̺����ϵ����ɹ�˾��Դ����ȷ���������ŶӸ���ȷ����������ƻ�����������ϸ�Ӧ����¼�ĳ��Ҵ��ɹ�������ɹ��µ�����Ʒ�֣�������Դ����Ѱ�������ϵ��������ң�����ѡ�����ۺ󣬽�ͨ�����յĳ��Ҽ���ϸ�Ӧ����¼����󽫲�Ʒ�ļ۸��󶨵�����ص�����ת�������Ŷӡ������Ŷ�������������ƻ��ͼ۸��󶨵��ɹ������ϡ�Ŀǰ��˾һ������Ҫ��Ӧ��ǩ�����Э�飬Э��Լ���ɹ�ԭ���ϵ�Ʒ�֡��۸�ȷ���������ڡ����㸶���ڵ��������ȷ���ɹ���������˾����ʵ��������Ӧ���¶��������������ڡ�ʵ�ʲɹ�������������ģʽ����˾�����ŶӸ������۲��ŵĶ�������ȷ�������嵥����Ͽ��������������ƻ�����˾���ھ�����������ͬʱȷ���Կͻ��Ŀ�����Ӧ����ȡ����������+��ȫ��桱������ģʽ��Ϊ����Ʒ�ʺͷ��񣬹�˾��������������������������Ϊ�������ַǺ��ļӹ����������Э�ӹ�ģʽ��iHealth�Լ��в�Ʒ����ͨ����˾�ӹ�˾�¶ٵ��ӡ����������Լ���Э����������<br />��������ģʽ������ģʽ��<br />����1��iHealth���Ű�������Ʒ������<br />����iHealthƷ�Ʋ�Ʒ��ͨ��ֱ��ģʽ�������ۡ��ӹ�˾iHealthLabsInc�������޵����Ĳ�Ʒ�������ƹ㣬iHealthLabsEurope����ŷ���г��Լ��ڽ��ķ��ޡ��ж��г����������ƹ㡣�ӹ�˾iHealth��Singapore��labsPte.Ltd.����ŷ�����������������iHealthϵ�в�Ʒ�������ƹ㡣�Ű�Ʒ�ƵĹ������۹����ɹ���ҵ����ҵ������Ŀǰ���ڵ�����ģʽ��Ҫ��Ϊ�������ۺ��������ۡ��������۵���Ҫ����ƽ̨����С����Ʒ��С���̳ǡ���������è���������۵�����ģʽ��ֱӪ�ͷ������֣����������Ѿ����ǽ��ٸ����С�<br />����2��ODM/OEM��������<br />������˾�Ĺ���ó���ۺϲ�����Խӹ���ͻ�������ODM/OEM��Ʒ���ͻ���Ϊ֪����ҵ��¹�Beurer����ʿB.WellSwiss���ͻ��¶�����ʼ������<br />����3��������ҵ������<br />������˾��������ҵ����Ҫ�漰С��ר���ꡢС���˳����ںϵ꼰С�������ꡣ�������������ȡ������ģʽ������ģʽΪС�ס�С�����������˾���������С�ס�С����˾����Լ���Ľ������ڰ�����������蹫˾һ���ķ��������곤���Ա���ɹ�˾ȷ����ѡ��֧����н�ꡣ<br />����4�������������ջ���O+O����ģʽ���ƹ����Ӫģʽ<br />�������ڶ���Ի�����ҽ��̽���Ļ��ۣ���˾�������ƶ����������ջ���O+O����ģʽ����ء����й�������������е�������רҵҽ�ƻ������������á���Ϣ����·����������·����ͬʱ������ҽ���ŶӵĹ���Ч�ʺ��ջ����������⣬��˾רע�ƶ�AI���ܡ����������ջ�O+O��ģʽ��������������Ч���������ܱ�ݵ����Բ���ͥҽ�����顣��˾�������ڸ����������ҽ�ƻ������������ջ����ǩԼ����ҽ����������߷������򲡻����������γ�רҵ�������ջ�������ϵ����������������רҵ�˲ţ��������Ч����������������Ч�ʡ�<br /><br />�����������ľ���������<br />����1��ȫ��ҵ�񲼾�����<br />������˾��iHealth��Ʒ�ƵĲ�Ʒ����ȫ��Χ�ڻ���˰������ޡ�ŷ�ˡ����ޡ��Ĵ����ǵ��ڶ���Һ͵�����ע��֤�顣��˾����ͨ��ֱ�ӳ��ڣ�����������ŷ�ޡ���ۡ��¼��µȺ����ӹ�˾���뵱�ؾ����̺������̺��������õ���ƽ̨�ȶ��ַ�ʽ���������Ԫ����������������ҵ���縲�ǹ㷺����Ʒ������ŷ���ǡ��Ǽ������޵ȶ�����Һ͵����������г��������ۣ��γ������õ�Ʒ��ЧӦ����˾�ڰ����й���������ŷ�޵�ȫ�����ؼ��г��Ĳ��֣�Ϊ�����ṩ��һ����Ԫ�ҷḻ����Ϣ���磬��һ����ʹ�����ܹ�ʵʱ��׽�������г��ı仯����Ѹ��������Ӧ����˾�ڹ��ڵĿ¶ٹ��������������Լ���Э�������в��ܲ��֣�Ϊ��˾Ӧ�Ե�Ե���ؼ��г��仯�ṩ�˳�ֵ�Ӧ�����ϴ�ʩ������ȫ�򻯲�����Ϊ��˾�ڽ������Լ��ж��������������ṩ������֧�š��ڲ�Ʒ�����Է��棬��˾����ȫ���Ԫ��Ŀ���г����ص�����󣬶Բ�Ʒ���б��ػ������������㲻ͬ�г�������Ҫ�󡣴��⣬��˾���˲���ϵ������Ϊ��˾��ȫ��ҵ�񲼾ֵ���Ҫһ������˾������Ƹ���������в�ͬ�Ļ�������רҵ���ܵ��˲ţ��齨���Ļ��Ŷӣ���������ŶӵĶ����ԣ�������ҵ��ȫ��������<br />����2��Ʒ����������<br />������˾��2010����������ȳ����ӹ�˾iHealthLabsInc.��������˾��iHealthƷ�Ƴɹ��Ƴ���һ��������Ѫѹ�ƣ���������չ��Ʒ�ߡ��������������Լ��в�Ʒ���������㷺ʹ�ã�iHealthƷ���ڼ���ҽ�ƽ�����Ʒ�г���֪���Ⱥ�Ӱ����������ǿ����˾��2022�����ȫ��ҽ����е��ǿ��ȫ��TOP30��2023��5�£��Ű�ҽ���ٻ�2023�й�Ʒ�Ƽ�ֵ������Ϣ�����ӵ�����TOP16������176��Ԫ����ҵ�Ʒ�Ƽ�ֵλ�С��й����й�˾Ʒ�Ƽ�ֵ�񡱺����TOP29��ͬ��6�£���˾�ٵǸ���˹��Global2000���񵥣�7���ֳɹ���ѡ���Ƹ����й�500ǿ���а񣬳�������˹�˾����ҵ��λ��Ʒ��ʵ����������ͻ��Թ�˾Ʒ�Ƶ��Ͽɶȼ������ʳ�����������ӳ�˹�˾��Ʒ�ƽ��跽��Ļ������ڹ����г����棬��˾��������������ƽ̨�͵���������ͨ��С���̳ǡ���è�������콢�������ƽ̨���в�Ʒ���ۣ���Ч�ؿ����г������档�ڹ����г�����˾ͨ�������ӹ�˾���á������ۡ�ģʽ��������չB2C���г�����˾��ȫ��ҽ����е�����̼������̾��������ȹ̵ĺ�����ϵ��B2B�˵����������ۡ�ODM/OEM�������������Ҳ��Ϊ���죬Ϊ��˾�ĳ�Զ��չ�춨�˼�ʵ�Ļ�����<br />����3��˽������ݵĹ㷺���ۼ��ڴ�ֱģ���е�Ӧ������<br />������˾����������ʵ�����������ջ���O+O����ģʽ��Ϊ���򲡻����ṩ��������һ�廯��Ժ��Ժ��һ�廯������Ӳ������һ�廯��ȫ���̹淶���������񡣾�������ʮ����������������ĳ������ۣ���˾�ѹ����𸲸ǵ��Ӳ�����ʵʱ��⡢���ʽ����ȶ�ά�ȵ�ҽ�ƴ����ݣ��γ���һ�׻����ջ���׼����ϵͳ����SOAPȫ���̹�����ϵ��һ��������Ϊ����Ĳ�����¼����������˾���չ��"AIoT���򲡼�ͥҽ��"��Ŀ����������һ������ҽ�����ݿ�͹�����ϵ��ͨ����ֱ��ģ��ѵ����������ܹ���ƣ�����ǿ�����ֽ��������Ի���Ԥ�����������Ⱥ���AI�����������𸲸�"����-�㷨-����"�����������ջ�����������ʵ�ٴ����������������з��������ѳ�Ϊ��˾�������������򹹽����ļ������ݵĹؼ�֧�㡣ͨ��AI�����ڴ�ֱ����������أ��ܸ���Ч����������Ч�ԡ��ɼ��ԡ����������ԣ�Ϊÿһ���û��ṩ��ʱ�ɻ�ȡ�ĸ߶ȸ��Ի��ķ��������û����顣ͬʱ����Ч�����ջ�ʦ��Ч�ʣ��ͷŸ��ྫ�������ڻ��ߡ�<br />����4����֤׼������<br />��������ʳƷҩƷ�ල�����֣�FDA������֤�����ϸ񡢸��ӣ������˴��ļ����ơ��ٴ����鵽�����Ȼ��ڡ���ҵ���ύһϵ�м����ĵ��������꾡�Ĳ�Ʒ�������桢�ٴ��������ݡ��������պ����������ļ��ȣ���֤ʵ��Ʒ����Ч���밲ȫ�ԡ�FDA��ҽ�Ʋ�Ʒ�ĸ߱�׼Ҫ����ҵ����Ͷ�������Դ��ȷ���Ϲ��ԡ���˾ƾ���䳤�ڻ��۵��з�ʵ�����ϸ���������ƣ��ѳɹ���ð���Ѫѹ�ơ�Ѫ���ǡ����¼ƺ�Ѫ�������ڵĶ���FDA��֤����������ϣ�IVD����Ʒ���򣬹�˾�����ӹ�˾iHealthLabsInc.������������֯���ٴ����顢�����������������о��������˷ḻ�ľ����������ơ�<br />����iHealth�Լ��е��Ƴ���־�Ź�˾��IVD�����ҵ����չ�����⣬��˾��Covid�ͼ�������������ƷOTC��POC�棬�����������FDAӦ��ʹ����Ȩ��EUA������һ�������˹�˾��IVD����ľ������ơ�δ������˾������������֤׼�����ƣ��Լ��������г����۵���ؾ��飬�����ƽ���˾��Ʒ����֤��׼����ȡ�<br />����5��������������������γɵ��ۺ�����<br />�����Թ�˾�Ƴ��׿��������ֻ������ĵ���Ѫѹ�������������Ѿ��ɹ��з����Ƴ���һϵ�д��µļ���ҽ�ƽ������Ӳ�Ʒ��ȫ�渲����Ѫѹ��Ѫ�ǡ����¡�Ѫ�����ĵ硢��֬�ȶ���ؼ����������ļ�⡣��Щ��Ʒ���䴴������Ż����٣����������ĵ¹������ƽ���iF��ƴ󽱣��ⲻ��֤���˹�˾�ڲ�Ʒ��ƺ��з������������Ҳչʾ��������ҽ�ƽ�������̽���Ľ׶��Գɹ�����˾ƾ�賤�ڻ��۵���ҵ������г���������Ѹ�ٲ�׽�г���̬����Ч���Ͳ�Ʒ�����ķ��պͳɱ������з��������ǲ�������Ͷ�룬���������������з����������û�������ơ�Ӧ�ó��򿪷����û�������Ƶȷ��棬���ǵļ������º��з�ʵ��Ҳ���ϵõ���ǿ�������˲�Ʒ�ĳ����ȶ��ԡ�������Ӧ�ԣ��Լ������ļ����������������⣬��˾������רҵͶ�ʻ�����������ͬͶ���ڰ���Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ�²��ϵ������ǰ�ؼ�������Ӧ�á�δ������˾������Χ��ҽ�ƽ�����ҵ���Ƽ��������ս���Բ��֣��ԿƼ�����Ϊ����������������̽������չ�µ�ҵ������Ϊ��˾�ķ�չע��ԴԴ���ϵĶ�����<br />����6�����������ջ���O+O����ģʽ����<br />������˾�����������򲡻����ṩ�ջ�ʽ��ȫ�����ջ�������һ����ģʽ��ҽ��Ϊ���ģ�Эͬ���򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ��רҵ�Ŷӳ�Ա����ͬΪ�����ṩ�������ƺ͹�������ͨ�����ֶ�ѧ���ŶӺ�������˾��Ч�����˻��ߵ���Ч�����������������Ч�ʣ�ͬʱ��Լ������ҽ����Դ����˾���е�Ժ��Ժ��һ�廯������ԣ��Ż���Ժ�ھ������̣�ͨ��Ӫ��ʦ������ʦ��ҽ����Э����Ϊ�����ṩ�˸���ȫ��͸�������ҽ�Ʒ�����Ժ�⣬��˾ͨ�������Ĳ������ʵʱ��רҵ��ѯ��ȷ�����ջ�����ļ�ʱ�Ժͳ����ԡ���ʵ����������һ�廯���棬��˾ͨ����������Ի��߲����ʵʱ��¼�����������ƽ̨�Ը��˽������ݺ�ҽԺ�����¼���������ϣ�ʵ���˸��Ի�����ָ�����������ͣ����������˻��ߵ�Ӫ���ͽ����������顣��˾����Ӳ������һ�廯ģʽ��ͨ��iHealth����Ѫ���ǵ�ʹ�ã�ʵ����Ѫ�����ݵ��Զ�ͬ�����ƶˣ�ʹ�û��ߺ�ҽ����Ա�ܹ���ݵ�ͨ���ƶ��豸�����꾡����ʷ��¼���������ƺ���ʳ�˶���־���Ӷ����������������Ч�ʺͱ���ԡ���˾��רҵҽ�ƻ����Ľ��ܺ������Թ�ͬ�ջ�����ģʽ����Ч�Խ����˳����֤����ģʽ�������α������ɹ�ҵ����Ϣ��������������������������ίԱ�����Ϸ����ġ��ǻ۽������ϲ�Ʒ�������ƹ�Ŀ¼����������л�ҽѧ������ѧ�ֻᷢ���ġ��й�2�����򲡷���ָ�ϣ�2020��棩�����Ͽɣ�����ȷ��Ϊ�������ҹ���������֧�ֵ���Ҫʵʩ���ݡ�<br />����7����ϢԴ��������Ч���ߵ�����<br />������˾�����������ʲ��������רע���ڸ��Ӷ���ȫ���г��ж��첢����Ͷ���Ȼ������ǵ��ʲ������Ŷ����зḻ��ҵ�������ҵרҵ��Ա��ɣ�����רע�ڶ�ȫ����Ҫ���������ȷ������г������о���ȷ����˾�ܹ����õķ��ֺ�����Ͷ�ʻ��ᡣ��˾ͨ������������ʵĴ�Ͷ����͹�ģ50������ҵ��쿪�Ű����Ӻ��Ŀƴ�ĸ���𣬶�Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ���²��ϵ�ǰ�ؼ����������ս����Ͷ�ʲ��֣��ص��ע���ڴ�ģ�͵���һ���˹����ܼ������ԿƼ������������ǰհ�Բ��֣������˹�˾�ڿƼ������������Ȳ���ͳ��ڹ�ע���١���˾�ڰ����й���������ŷ�޵�ȫ�����ؼ��г��Ĳ��֣�Ϊ�����ṩ��һ����Ԫ�ҷḻ����Ϣ���硣��һ����ʹ�����ܹ�ʵʱ��׽�������г��ı仯����Ѹ��������Ӧ����˾��Ŀ����ȷ���������̸�Ч��������ǿ����Ϣ�Ѽ���ִ������ʹ�ù�˾���г���̬�����жȺ�ǰ����Ϣ�����������治����������˾ͨ������ɸѡ�����ùؼ���ϢԴ���Ժ���ս�Ե��ƽ����г�ֵ��о�����Ч�ľ��ߡ����ֻ�����Ϣ���Ƶľ���ģʽ�������ӿ��˹�˾����ս�Ե��ƽ��ٶȣ�Ҳ��֤��ս��ִ�е�������Ϊʵ�ֹ�˾�ĳ���ս��Ŀ���ṩ��������֧�֡�<br />����8����ֵ��һ�µ��Ŷ�����������<br />������˾�ᶨ�������ˡ��ý������򵥡���������ǻۡ���ʹ�����ԡ���ȫ������ҽ�Ƽ��ǻ�����Ŀ����ߡ�Ϊ��ΰԸ���������С��������������˼����רע���¡�����ֱǰ���ĺ��ļ�ֵ�ۡ�����֯�ڲ������������ڴ��ƴ�ͳְ�ܲ��ŵı��ݣ�����С�ŶӺ����ƶȣ�רע�ڷ������ս���۹⡢רҵʵ�������������������˲ţ���������һ��Ŀ��һ�¡���ֵ����ͬ�ĸ�Ч�Ŷӡ��������ھ����ź������������棬���빪����֣�ͦ�߸������г���֮�ɼ������Ǽ�֡������ȴ򡢼�ʵ�ƽ����Ĺ���̬�ȣ�һ��ȷ��Ŀ�꣬��Ҫ�ó��ᶨ���Ƶľ��ĺͲ������ӵ�������ȫ���Ը��Ĵ��Ŀ�ꡣ��˾�ڲ��Ļ����������������սʱ���Ž�Э������ȥ�ƽϸ��˵�ʧ�����������Σ����ڵ�������ͬ�˷����ѣ����żȶ�Ŀ��ᶨǰ������ҵ��ֵ�۵ĳɹ�ʵʩ���������ģ��������ǿ�˹�˾����������ս���������Ǽ��ţ���δ������µ���սʱ����֧�����ϸ�ѵ����Эͬһ�µ��Ŷӽ��������������������ơ�ͨ����ʵս�в���ĥ�������������ǵ��Ŷ��Ѿ�Ϊδ���Ƴ����ഴ�º����ʵĲ�Ʒ�����˼�ʵ�Ļ�����<br /><br />����������˾���ٵķ��պ�Ӧ�Դ�ʩ<br />����1���Լ��в�Ʒ�г������½����µ�ҵ����������<br />������˾����ҵ��������Ҫ��iHealth�Լ��в�Ʒ���۴��������������������������������ط��Ĳɹ����������������湫������ͻ���¼����ص����������Լ���˾Covid�ͼ������������Լ��е��Ƴ�����̬�����ۣ���˾��Ӫҵ���������ȶ�����˾�Ŀ�ԭ�����Բ��Լ��в�Ʒ����������������г��������ֱ����أ�ͬʱ�ܵ��������ߺ��г��������������Ӱ�죬��������ı仯�����ܻ�����Լ��в�Ʒ�г�������٣����ҵ�������ķ��ա�ΪӦ����һ���գ���˾�ѻ�����չ�������Ʒ��C�˵�����������Ŀǰ�ѹ㷺��������ѷ��CVS���ֶ�������ϼ�������������������ó��没��ɸ�鹤������Ʒת�䣬�𲽽��Ͷ����������������̶ȡ����⣬��˾���������Ʒ�Ļ����ϣ�½����չ�ɼ�ⲡ�����У��Ը��õ������г�����<br />����2���г����������仯�ķ���<br />������ҽ�ƽ��������������ѵ��Ӳ�Ʒ���棬��˾�������ҵ�ھ�����ͬ�������繫˾��Ʒ���������ܡ��۸��û���������ӱ�������߲�Ʒ���������г����󣬹�˾�������޷��ջ�ǰ���ڲ�Ʒ�з�Ͷ��ķ��ա�ΪӦ���������գ���˾�����²�Ʒ�Ĳ�Ʒ���塢ʹ�ó�������ƷĿ����Ⱥ���г���λ�����в��Ժͼƻ��ȷ����ϸ�ѹأ�������Ϊ��������Ӧ�õ���Ʒ�з��У���׼ʱ������������׼�����Ʒ��׷����Ƶ����Ž⣬�������������Լ۱ȡ��۸����ĺò�Ʒ���ڻ�����ҽ�Ʒ��棬��˾�ᶨ�Ĵӡ�0��1���������������ջ���O+O����ģʽ���ⳡ�������˳��µ�ҽ����ҵ�ĸ�ǻ���Ҳ����ս�����˹�˾�������ڶ໥������ͷ��ҵ��Ҳ�ڴӲ�ͬ�Ƕȡ���ͬ�����Խ��뻥����ҽ�����������������Բ����߻����㹻���г��㹻��Ŀǰ��δ�γ���ҵ�����ĸ�֣������Ż�����ҽ����ҵϸ������ķ�չ����˾���������г������ķ��ա���������ƾ����ҽ����ҵ��չ30�������Դ�;��飬��˾�ܹ��Ƚ�׼ȷ�ذ����г���̬���������в��ϻ��۱����顣��˾�Ѿ��Ƴ������ֻ�������Ѫѹ�ơ�Ѫ���ǡ�Ѫ���ǡ����سӵ�ȫϵ�еĽ���������Ӳ������ĥ���û����鼫�ѵ�App��������ҽ��ʹ����ϵͳ������Ҫ���ǹ�ͬ�ջ�ҽ�Ʒ���ģʽ����ʵ����֤�����������ҽ�������ߵ����⣬��˾�����������ջ�������Ҳ�ڲ��Ϸḻ���ۣ�������ЧӦ�Ծ������ա�<br />����3���˲ŷ���<br />������˾�ڻ�����ҽ�ƺͱ����Ʒ�з�����ܴ�̶���������רҵ�˲ţ���Ҫרҵ����ͻ��������ḻ�ĺ��ĹǸɡ��ھ������ҵĻ�����ʱ���������������Դ���Գ�Ϊ��ҵ��һ�־������ƣ���ҵҪ��ռ�Ȼ���Ҫ������רҵ�˲ţ�������ҵ�ڶ��˲ŵ�����Ҳ�Ƚϼ��ң��ܷ�ʱ�����ʺϹ�˾ս�Է�չ�����Ⲣ���Ϲ�˾��ҵ�Ļ����˲ţ���ͨ�����Ƚ������ƵĹ������ơ�����������������ҵ���ٷ�չ���������һ������ս��ΪӦ���˲Ź�������ս���Ӷ�����������˾�����˽�Ϊȫ����ڲ���ѵ����Ч���˻��ƣ������Ż���Ա���á������ƶȽ��衣�ӳ�������������Ҫͨ��������ҵ���󣬴���õ���ҵ�Ļ��͹�����Χ������������ʩ�������˷�չ�����������빫˾�ķ�չ��������ܽ����һ�𣬹�����˾��չ�ɹ���2020�ꡢ2021�깫˾½���Ƴ��˹�Ʊ��Ȩ�����ƻ���2022�ꡢ2024�깫˾�Ƴ�Ա���ֹɼƻ��������ļ�����ʩ�����ڽ�һ����������ȫ��˾��Ч�������ƣ���ֵ���Ա���Ļ����ԣ���������ס�����˲š�<br />����4����������<br />�������Ź�˾��Ӫ��ģ�Ľ�һ������һ�����������ӹ�˾�����ڶ࣬�Թ�˾�Ĺ���������������Դ����Ϣ�������Ƶ�����˸���Ҫ�������˹�˾��������Ӫ�Ѷȡ��ڶԺ��⹫˾�Ĺ������棬���ܴ������������Ļ���������أ����º�����ҵ����ʵ��Ԥ�ڵ�ҵ����չ������Ŀ�꣬�������������ʧ�ķ��ա�ͬʱ����˾��������������ơ��ڲ���ͨ��˳����Υ����˾���ڵط��ɵ�ԭ������¾�Ӫʧ�ܵķ��ա���˾�Ѿ��ڸ��ӹ�˾��������ȫ������OKR������ϵ��ǿ��Ŀ����ؼ��ɹ�������ͨ���Թ�˾ս�ԡ�Ը���Ĳ��ż���͸���ƶ�����ġ��ɺ�����Ŀ�꣬ʵ���ڲ�����ҵЭͬ����һ���棬��˾�������ƶ�������+ҽ�ƹ�ͬ�ջ�ģʽ��ȫ����ƹ㣬�ڹ���Ŀǰ�Ѿ���չ��Լ50�����е�424��ҽԺ��������ҽԺ����������Ӳ���������һ���ơ��������ŵ�ҵ����Ŷӹ�ģ����˾�Ĺ����������µ���ս����˾����ǿ��ͬ�ջ���Ŀ��Ա����ѵ���໥������������ѧϰ�ɹ����飬���ջ�ģʽͳһ��׼��ͳһҪ�󡢼�ǿ���ˣ��Ӷ���߹���ˮƽ��<br />����5���ʲ����÷���<br />����Ϊʵ���ʲ��ı�ֵ��ֵ���������������ʽ���д����ʲ����ã���˾��Ͷ������������ȶ��Ĺ̶��������ʲ���Ϊ���Ĳ��ԣ�ͬʱҲ�Ὣ�������г�������Ǳ���ĸ������ʲ���ΪͶ����ϵ���Ҫ���䡣Ͷ�ʹ����У����������г������÷��գ���������Ľ׶��Բ�������˾�����й�עȫ�򾭼����ڡ����������ߡ������ԡ���Ե���εȺ�۷��գ��Լ����ʡ����ʵ��г��ı仯���ϸ�����ѡ��Ͷ��Ʒ�֣����ݾ��������Լ��г������ı仯����ǿ�г������͵��й�������ʱ����Ͷ�ʲ��Լ���ģ�����ֻ��ж��в������أ���ʱ��ȡ��Ӧ�Ĵ�ʩ�������ܹ�ܷ��յķ��������⣬��˾�ƶ���Ͷ������ƶȣ��Թ�˾ί��������֤ȯͶ�ʵ�ԭ�򡢷�Χ������Ȩ�ޡ��ʽ�ʹ�õĹ����ල����Ϣ��¶�ȷ����������ϸ�涨������Ч����Ͷ�ʷ��ա�ͬʱ��˾����ʵִ���йع����ƶȣ��䱸ר�˸���ί��������֤ȯͶ�ʵ�Ͷ�򡢽�չ���������Ͷ�ʷ��ա�����������Ȩ�Թ�˾��Ͷ��Ʒ������мල���顣<br />����6�����ʷ���<br />�����������ڣ���˾��������ռ�Ƚϸߣ�Ӫҵ������Ҫ����Ԫ���㣬��Ԫ�������Ǹ���˾��������Ӱ�졣�����ų�δ����Ԫ���ʲ����Ĳ�ȷ���ԡ���˾��ʵʱ��ע���ʵ�Ǳ�ڲ�������ȡ��Ӧ��ʩ�������ʴ���������ա�<br />����7����Ե����ó�׷���<br />����2025����������������ʵʩ���Եȹ�˰�����߲���ȫ��ó�׻�������˰����˾�����й�ע���߶������������ԣ�����δ��������˰���߽�һ�����ϻ�������Ҫó�׻��������ƴ�ʩ����Ӫҵ��������ó��Ħ����ȫ��Ӧ�����������ķ��ա���˾���й��ʻ���Ӫ˼ά+��������Ӫ����ں����������ӹ�˾����˾ͨ��ǰ�ڵ�ҵ��Ͳ��ܲ��֣������˽������Ĺ�Ӧ����ϵ�Ͷ�����ϵ���ڰ��������ӹ�˾���ڵ�ȫ���ӹ�˾���ڵؾ���һ�����Ĳ�Ʒ��ȫ��棬�Զ����Գ��Ӱ����һ����ƽ�����á�ͬʱ��ע�����������������Ʒ��֤���г��ƹ㡢�������罨�衢��������������ȫ�澭Ӫ������������Ϊ����������˾��ʹ��Ʒ�ơ���Ʒ�ܹ����뵱�������г������⣬��˾���Ӵ�����г��������ȣ���Ӧ�Թ���ó�����߼���˰���ա�				<span style="display: inline-block;width: 42px;"></span>
+				<a class="less fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">�����</a>
+			</p>
+		</div>
+						<div class="m_tab_content m_tab_content2" style="display:none;">
+			<p class="f14 pr">
+				����һ���������ڹ�˾������ҵ���������˾������ҵΪȫ��������ϣ�IVD��������ҽ�ƽ������Ӳ�Ʒ���򡢻�����ҽ������2024��ȫ��ҽ����е��ҵ�г���ģ��6176����Ԫ��Mordor IntelligenceԤ��2025-2030��ȫ��ҽ����е�г��ĸ�����������Ϊ6.99%����һ�������Ʒ�ӳ��ҽ����е��ҵ�ľ޴�Ǳ�������У�2024������ҽ����е�г���ģ��ֵΪ1886.8����Ԫ���г��ݶ�ռ��Լ30.7%����������ȫ���г���ģ��������̬�ƣ����б����г�������ҽ��֧����չ��Ϊ���죬��̫����Ǳ���ռ�޴󡣹����г����棬���Ź������������������߶���е����������̼��٣��������ҽ����е��������߸ߣ��г�����...								<span style="display: inline-block;width: 70px;"></span>
+				<a class="more fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">�鿴ȫ����</a>
+							</p>
+			<p class="f14 none clearfix pr">
+				����һ���������ڹ�˾������ҵ���<br />������˾������ҵΪȫ��������ϣ�IVD��������ҽ�ƽ������Ӳ�Ʒ���򡢻�����ҽ������2024��ȫ��ҽ����е��ҵ�г���ģ��6176����Ԫ��Mordor IntelligenceԤ��2025-2030��ȫ��ҽ����е�г��ĸ�����������Ϊ6.99%����һ�������Ʒ�ӳ��ҽ����е��ҵ�ľ޴�Ǳ�������У�2024������ҽ����е�г���ģ��ֵΪ1886.8����Ԫ���г��ݶ�ռ��Լ30.7%����������ȫ���г���ģ��������̬�ƣ����б����г�������ҽ��֧����չ��Ϊ���죬��̫����Ǳ���ռ�޴󡣹����г����棬���Ź������������������߶���е����������̼��٣��������ҽ����е��������߸ߣ��г��������󡣼���ҽ����е��ҵ�����������ۡ���ƷС�ͻ��Լ����ܻ�����ǰ����ҽ����е��ҵ�������������ı���������ƾ۽����������ۡ���ƷС�ͻ��Լ����ܻ������򡣻����������ķ��ٷ�չ���������������ѳ�Ϊ������е�г����������ơ�������Խ��Խ������ͨ������ƽ̨��Ʒ�ƹ������в�Ʒ������ȽϺ͹����������۲���Ϊ�����ṩ�˸��������г����ǣ�������������˽���Ч�������������顣���ͬʱ����ƷС�ͻ������������ԣ�ּ����Ӧ�ִ���ͥ�ռ����޵��ص㡣С����㡢���ڴ����Я���ļ�����е�����Яʽ������������Ѫ���ǵȣ�����������о���Ķ������������ܻ����Ǽ�����е��ҵδ����չ�Ĺؼ�������������������������ݡ��˹����ܵ��Ƚ�������������е�ܹ�ʵ�ָ��Ӹ��Ի�����׼�ķ���������Ѫ���ǡ��������εȣ�������ʵʱ����û��������ݣ�ҽ������ͨ������ƽ̨Ϊ�����ṩ���ƻ����������������������Ʒ�û����顣�����Ǹ���ȵķ�չ״����һЩ�ؼ����ݣ�<br />������һ��IVD��Ʒ����<br />����1��ȫ���г���ģ���ݶ�ֲ����<br />����2024�꣬ȫ����������г���ģΪ810����Ԫ���ֵ��������������г�ռ��Լ36%����̫�г�ռ��Լ33%��ŷ�ޡ��ж��������г�ռ��Լ27%��������������г���ȫ����������Ӱ�������г�֮һ����������Լ����ִ�ҽ���в��ɻ�ȱ��һ���֣��㷺Ӧ���ڼ����ļ�⡢��Ϻ����Ƽ�⡣���������ϸ�������棬����QYResearch������ʾ��2024��ȫ����������г���ģ��ԼΪ26.37����Ԫ��Ԥ�Ƶ�2031��ȫ����������г���ģ���ﵽ40.2����Ԫ��������������Ϊ6.3%�������г����棬2024�����й����������ҵ���ٷ�չ��һ�꣬�й���������г���ģ�������󣬼������³�Ϊ�ƶ���ҵ�����ĺ��Ķ������������ھ�׼ҽ�ơ��ǻۼ��顢Զ����ϵ������Ӧ��ȡ����������չ����ҵ��ģԼ1500-1700������ң�δ�������й�IVD�г�Ԥ���긴��������Ϊ5-8%��<br />����2���������в�������������<br />������������������Ԥ�����ģ�CDC��2025��3��29�շ����ġ�Weekly US Influenza Surveillance Report����ʾ������2024-2025������м������˽�Ϊ���ص����б���������CDC�ļ�������ƶϣ�2024-2025�����м��У�ͳ������Ϊ2024���40����2025���ʮ���ܣ����Ʋ�����4500���˸�Ⱦ���У�����58����������סԺ��2.5�����������С����в�����Covid�����ͺ������ϰ������ȶ��ֺ�������ԭ�������֢״���ٴ��������ƣ�Ϊ��ȷ���ֲ�ͬ��������ĺ�������Ⱦ����������������ƣ����١���ݡ����Լ������ֲ�ԭ�����͵Ķ��������ⷽ����������ȷ���г�����<br />��������������ҽ�ƽ������Ӳ�Ʒ����<br />����Ѫѹ�Ƽ�Ѫ�Ǽ����ϵ����ҽ����е�н�Ϊ��Ҫ����ɲ��֡�����QYResearch���������ݣ�2024��ȫ��Ѫѹ���г����۶�ﵽ��19.82����Ԫ��Ԥ��2031�꽫�ﵽ29.79����Ԫ���긴��������<br />������CAGR��Ϊ6.1%��2025-2031����ȫ��Ѫѹ���г�δ����ģ�������󣬼��������ܻ�����Я������׼����չ����������������г�����������������ռ�����ߡ����У�ռ����Խϴ���г��ֱ�Ϊ�й���������ŷ�ޣ�ռ�ȷֱ�Ϊ25%��20%��20%���ҡ����й���Ѫѹ����ָ�ϣ�2024���޶��棩��������ʾ���ҹ���Ѫѹ�����ʳ�������������������������������������Ϊδ���ҹ���Ѫѹ����Ѫ�ܲ���������Ҫ��Դ���ҹ����˸�Ѫѹ��֪���ʡ������ʼ������ʣ������ʡ����ֱ�Ϊ51.6%��45.8%��16.8%���������Ѫѹ��Ⱥ�����ʡ�����������Ϊͻ�������������й�2030���滮��Ҫ���������2030��Ҫʵ�ֽ����ش����Բ����������ʡ�����Ѫ���¼������ʵ�Ŀ�ꡣΪ˳��ʵ����һ����Ŀ�꣬����������Ⱥ��Ѫѹ����������Ϊ��Ҫ��������ȫ�򻼲�����ߵ����Բ�֮һ���һ����������������ӡ�����FORTUNE��������ݣ�2024��ȫ��Ѫ�Ǽ���г���ģΪ172.0����Ԫ��Ԥ�Ƶ�2032�꽫������277.3����Ԫ��Ԥ�����ڸ�����������Ϊ6.2%��ȫ��Ѫ�����г��ɷ�Ϊ������ŷ�ޡ���̫�������������ޡ��ж��ͷ��ޡ�����Ŀǰӵ�������г��ݶ����������򲡵ĸ߻����ʺ����Ƶ�ҽ�Ʊ���������ʩ��ŷ��Ҳ��һ����Ҫ���г����������ǵ���ʶ������ߣ�����Ҳ��ȡ�˴ٽ����򲡹����ľٴ롣���������˿ڵ����Ӻ�ҽ�Ʊ���������ʩ�ĸ��ƣ���̫�������ھ����������������ݡ��й����򲡣���һ���֣������в�ѧ��Σ�����ء��о����棬������Ϊһ��ȫ���Խ�����ս��ȫ�򻼲�������2021���Ѵﵽ5.29�ڣ�Ԥ�Ƶ�2050�꽫Ӱ��13.1���ˡ�ȫ�����򲡻��������������ӣ�����1�ͺ�2�����򲡣���Ϊһ�����Լ�����Ŀǰ���򲡻�û�и��εķ���������ֻ�ܽ���Ѫ�Ǽ�⡢ҩ�����ơ���ʳ���ơ��˶��Ʒ�����ɵ����Ʒ��������Ʋ��鷢չ���ݵ�ʮ��IDF���򲡵�ͼ��ʾ,�й��������򲡻��������ߴ�1.4��,���������֮�ס�����2�����򲡻���ռ�����,Ȼ���й��������򲡻�����Ѫ�ǿ��ƴ��Ļ��߽�ռ16.5%�����Ƕ����򲡹��������ӳ̶�Ҳ������ߣ�����Ѫ�Ǽ������󲻶��������ƶ���Ѫ�Ǽ�����г��ķ�չ����������Ѫ�Ǽ��ϵͳ��CGM��������������ӡ������ֻ����ɺ�����Ѫ�Ǽ�⹦�ܵ��ص�ҲԽ��Խ�ܻ�ӭ��<br />����������������ҽ������<br />����������ҽ����ָͨ�����������������ҽ����Դ��ҽ�Ʒ���Ϊ�����ṩԶ��ҽ����ѯ����ϡ����ơ����������ȷ������ҵ��ҽ�����ֻ�ת������Ϊ�ƶ�ҽ����Դ�Ż����ú�����ҽ�Ʒ���Ч�ʵ���Ҫ������2024��ȫ������ҽ���г���ģ�ﵽԼ3656.7����Ԫ���й��ǻ�����ҽ�Ƶ���Ҫ�г�֮һ��CNNIC��55�ε��鱨����ʾ���й�������ҽ���û���ģ�ﵽ4.18���ˣ�����������������������ơ����Ż�����ҽ���û���ģ����������ͳ��ҽ�Ʒ���ģʽ����������ת�ƣ����γ���������һ�廯�ķ�����ϵ����������Ҫ����ҽ����ҵ������ںϣ�Ԥ�ƻ�����µĲ�ҵģʽ��ҵ̬�����ҽ�Ʒ����������Ч�ʡ��⽫�����ڽ��ҽ����Դ�ֲ��������������������Ľ�������֮���ì�ܡ�ҽ����Ϣ���׶Ρ�������ҽ�ƽ׶κ�����ҽ�ƽ׶εķ�չ�߼��������Ϣ������ҽ�������Ӧ�ã�������Ļ�����Ϣϵͳ���裬�����û����������Ż�ҽ�Ʒ������̣�����ͨ���������Ϻ����ܻ�����ʵ��ҽ�Ʒ����ȫ��������ģʽ���£������ҽ�Ʒ���Ч�ʡ������Ϳɼ��ԡ����ֻ�����ҽ�Ʒ���ͨ�����ܻ����ߺ�ƽ̨�Ż��������̣������������飬ͬʱ���ҽ�Ʒ���Ч�ʺ�����������ת�ʹ������µ�ҽ�Ʒ���ģʽ����ҵģʽ���ƶ�ҽ����ҵ�����ܻ�����׼���͸�Ч��ת�͡����ֻ�����ҽ�Ʒ������ǰ�����Ķ�����ڣ������������ҽ�Ʒ���Ч�ʣ�ʹ��ҽ�ƾ��߸��ӿ�ѧ����ͬʱ�ٽ��˲�ͬ�����ĺ����������ù�������ܵ�����ݡ�����׼��ҽ�Ʒ���ʵ����ҽ�Ʒ���������ȫ��������<br />���������������豸������ҽ���豸�ȵ����ռ���������ҽ��������ֳ��µķ�չ���ơ�����ҽ���豸����ЧΪ������ҽ�ƽ��и��ܣ���ɼ��Ĵ���ҽ�����ݿ���Ϊ�˹����ܺʹ����ݷ����ṩ֧�֣�����ҽ�����и���׼����Ϻ����ơ��������豸�ܹ��������Բ����߸��õع����Լ��Ĳ��飬ͨ��ʵʱ��⽡�����ݣ����߿��Լ�ʱ�����쳣����ȡ��ʩ��<br />����(��)AI������ҽ�Ƶĸ���<br />����������������AI����ģ�͵��������ɻ�����ҽ������AIҽ�Ƶ��˳���Ϊδ�����ơ�ҽ���˹�������������ģ�͵��������ٷ�չ������ҽ�����ݼ������ͬר�Ƶ� AI֪ʶ�⣬ͬʱ�� SFT(�ල΢��)��RL(ǿ��ѧϰ)��ѵ����ʽ�Ի�����ģ�ͽ���ѵ�����Ρ�<br />������Ժ�ڶˣ����ڴ�����ģ�͵����ܷ��������������⻼����Ȼ�����������Զ��ֶԻ��������߾�׼�������飬��֧��֪ʶͼ�׶�̬����׷���߼�����ϵ��Ӳ�����ʵ�־�׼����ƥ�䣬��������ҽԺ�ڵķ���׼ȷ�ʺ�����Ч�ʡ���ҽ���ˣ���ģ��֧�ֵ��ٴ�����ϵͳ��ʵʱ������������ָ�ϡ����߸������ݣ�Ϊ�������Ʒ����ṩѭ֤���顣�������������ͨ����������������������׷�٣����ѻ��߸������������ݼ���Լ��쳣���ѯ����Ӧ�ȡ����⽡���ܼ�ͨ�����ϵ��Ӳ�����IoT�豸����������ϰ����Ϣ��������ά��������δ�����Ŷ�ģ̬���������ĳ��죬AI�������ε����⻼������ʵ�ִӼ��������������ٽ��ķ�ʽ������<br />������Ժ��������棬�����������ճ������г������١�û�˹ܡ�����ܡ����˹ܡ������⣬��������Ч������������Ҫҽ����Ա����ͨ������������ʵʱ���ٹ����������Ԥ���˹����ܼ�������������ն��豸����ʵʱ������Բ����ߵĽ�������(��Ѫ�ǡ�Ѫѹ�����ʵ�)�������ݼ���������һЩ��Ƶ�Ρ����������⼰ʱ��Ӧ���Ӷ�����ҽ����Ա�Ĺ���Ч�ʡ�������������ȫ���ڣ����ݻ��߲�����������ʳ���˶�ϰ�����ɸ��Ի��������飬��һ���������������ԡ��������򲡻��߿���ͨ���Ի�ʽ����ʵʱ�ϴ���ʳ���ݣ�ϵͳ��ʱ����Ѫ�ǲ�������������ҩ�����������������ֽ�ϼ�����Ӿ�������ͨ��ҩ��ͼ��ʶ��������������ʹ���껼����ҩ�����ʴ�󽵵͡��ڿ������Ƴ���������������Ҳ���Խ����м��㼼�������ݻ�������״̬������ͨ���ԡ�<br />����δ�������� AI�����Ĳ��Ϸ�չ�������Ż������ڽ����ͷ����ϵ��������ڸ���ҽ�Ƴ����е���Ӧ�����������������Ӷ�������չ��Ԫ����Ӧ�ó������Ӷ����õ���������ҽ��Ч�ʼ�Ч��������ҽ�Ƴɱ�������������ҽ�����顣<br />�������ϣ�2024��ȫ��IVD������ҽ�ƽ������Ӳ�Ʒ���򡢻�����ҽ�ơ�AIҽ���������г���ģ���������¡�����֧�ֵȷ�����������������ر������й������������������£��г�����Ѹ�٣��»�������ӿ�֣�չ�ֳ��޴�ķ�չǱ�������ž��񽡿���ʶ�������͸����˿ڵ��������ӣ�Ԥ��δ����������򽫼������ֽ�ǿ����������ͷ��<br />����<br />���������������ڹ�˾���µ���Ҫҵ��<br />����1��IVD������ҽ�ƽ������Ӳ�Ʒ����<br />������˾���ڶ���������������Ͷ�ά������������Ϣ�Ĳ���̽�����Ѿ����з��ɹ�Ӧ����Ѫѹ��⡢Ѫ�Ǽ�⡢IVD�Լ��С����²���������Ѫ������Լ�������֬�����ȶ��ҽ����е����Ϊ��ǿ�����з�����˾ר�������˶������������Ŀ�з��ң�ͨ����ѧ�ƺ����ͼ������£�������һ�׽�Ϊȫ��ĸ��˽���������Ʒ�ߡ�<br />�����������ڣ���˾��iHealthϵ�в�Ʒ�����ɫ���г����ֺ�ӯ��������Ϊ��˾�����������������Ҫ���ס���ϵ�в�Ʒ��Ӫҵ����Լ22.50��Ԫ����ң�չʾ�����г���������ӯ����������˾���Լ��в�Ʒ����������ã��ر���������ѷƽ̨�ϣ����ۼ۽��г�ͬ���Ʒ��ǰ�е�ͬʱ����������λ�Ӹ�Ʒ���Best Seller����ʾ��iHealth��Ʒ���г��ϿɶȺ�Ʒ�Ƽ�ֵ��2024��5�¡�6�£���˾��Covid�ͼ�������������ƷOTC��POC�棬�����������FDAӦ��ʹ����Ȩ��EUA������˾��������OTC�Լ��в�Ʒ���ɸ������вɼ�ǰ��ǻ�����������в�����15���ӳ�����������߹������账����ͨ�������ĵ��̡�ҩ�ꡢ�̳��������������ۣ�Ŀǰ�ѹ㷺��������ѷ��CVS���ֶ������������������Ϊ����ļ����Ϻ���������ɸ��ҽ�Ʋ�Ʒ���߱���ǿ������Ʒ���ԡ�Ϊ���õ���������Ϻ���������ɸ����Ҫ����˾ͨ�������Լ��в�Ʒ�γ��˽�ǿ��Ʒ��֪���ȣ���ִ��г������Ƴ����������Ʒ�Ļ����ϣ�������������չ�ɼ�ⲡ�����С���˾Ҳ������������չ�з���������չ��˾��Ʒ��IVD�����Ӧ�÷�Χ�������Ӷ�Ԫ����OTC/POC������ϲ�Ʒ�����г���<br />�����ڼ���ҽ�ƽ������Ӳ�Ʒ���棬��˾��2024���Ƴ��˴����嶯���Ժ���������ܵ��¿�Ѫѹ�Ʋ�Ʒ�����⻹�����˵�Ƶ�����ǣ��¿�Ѫ���ǣ�ˮ���ߵȲ�Ʒ����һ���ḻ�˹�˾��Ʒ���С�2024��ȫ�꣬��˾�»�ר��22��������̹�˾�ڲ�Ʒ���·���ľ������ݡ��ڳ���Ѫ�Ǽ�����򣬹�˾����ɶ�������������Ŀǰ���ڹ��ڻ�����չ�ٴ���ع������봫ͳѪ�Ǽ�ⷽ����ȣ�����Ѫ�Ǽ���Ʒ��CGM�������ṩ����ȫ��׼ȷ��ȫ���Ѫ�Ǳ仯���ٽ���ȷ����ʹ�������ľ�����󡱣���ҹ1��3ʱ��Ѫ�ǣ����ǰ��Ѫ�ǣ������������󡱣�ҹ���޵�Ѫ�ǣ��峿3��9ʱ��Ѫ�ǣ�������ҽ�����Ѫ��ͼ�׶�ҩ����ȵ��ؼ������и�׼ȷ�ĵ��������ƻ��ƶ����Ʒ��������ƣ�ʹ���ߵ�Ѫ���ܹ������õ����ÿ��ƣ���Ч���ӻ��ͷ�ֹ����֢�ķ������ò�Ʒδ�����г����۵�ͬʱ������������Ӧ�������������ջ���O+O����ģʽ�У��ɼ����ƶ���˾�ú���ս�Ե�ʵʩ�ͷ�չ����˾�������������������Ƴ������¿�AI���������������з������У��ò�Ʒ�ȫ�µ��ƶ���������ܹ����ӳ�AI�����������㷨��ͨ��ȫ��λ�����δ�����ȷ���û��������κλ����¶������ܵ���������Ȼ���������顣<br />������˾��ҽ����е��ҵ�����30�꣬�Ѿ��ɹ������ˡ��Ű����͡�iHealth������Ʒ�ƣ������ڹ������г������нϸߵ�֪���Ⱥ����õĿڱ���������������iHealth���¼ƺ��Լ��е����ۣ���˾��Ʒ�����Ʋ����������ڱ������ڣ�iHealthƷ�Ƶ�������Ѫѹ�ƺͶ��¼ƵȲ�Ʒ�ܵ��������ߵĹ㷺��ӭ������������ѷ����ƽ̨�϶�β�����Ʒ���Best Seller��δ������˾�ƻ�����iHealth�������γɵ�Ʒ�����ƣ������г����󣬳����ؽ����о������ļ����Ͳ�Ʒ��������г���<br />����2��������ҽ������<br />����2024��ȫ�꣬�����ջ�ҵ���������ﵽ7,616.19��Ԫ������Ŀǰ�����������ջ���O+O����ģʽ����ȫ��50�����С�394��ҽԺ�����ƹ㣬�ջ��Ĳ��˹�ģԼ32.9���ˡ���������ҽ���Ѿ���ȷ�ˡ�������+ҽ�ơ�����ĸ��ѷ�ʽ����˾�������ӹ�˾��ͨ����ģʽ��Լ74��������388��ҽ���������γ������õĿڱ����ջ�������Լ2���ˡ���˾���ţ�ҽ�Ƶĺ�����ҽ����������Դ��ҽ����ʱ�䡣ͨ����O+O����ģʽ����˾���������ҽ���Ŀ�������������Ч������ҽ�������޵�ʱ���ڷ������ļ�ֵ��ͨ����ҽ�ƻ����Ľ��ܺ�������˾��ҽ�Ʒ������쵽��������֮������ҽԺ��ҽ��Ϊ���ģ�Ϊ�����ṩ����������ҽ�Ʒ���<br />������˾�����򲡹���Ϊ���ģ��������ṩ���򲡵�ȫ���̹����������ƽ���������+ҽ�ơ������ս�Բ��𣬼����ƶ����������ջ���O+O����ģʽ���й�����������ء���ģʽּ���������Ч�����������Ƴɱ���Ϊ���򲡻����ṩ������ҽ�Ʒ���������Ԥ����Ч��������ճ��������⡣��Ժ�ڣ����߽����ȫ���ҽ����ϡ�Ӫ����ѯ�͸��Ի��ջ�����������һ��һ�Ļ��߽������񡣶���Ժ�⣬��˾ͨ��ʵʱ��ҽ��ָ���������𡢽�����Ԥ��֪ʶ���ͣ�ʵ�ֶԻ�����ʳ���˶���ҩ���������ȫ���̱ջ�ʽ�������ٽ�������Ϊ�Ļ����ı䡣��������淶������Ժ������Ľ�ϣ��������������鲡�����ǻ�Ѫ�쵰�׵Ĵ���ʣ��ӻ��ߵ�30%����������60%���ң������ʽ���5%���£��淶�����������70%��<br />�������ڷ��棬��˾�����ġ����ǡ��͡���ͬ�ջ���ϵͳ��ʵ����Ժ�����ݵ�ʵʱ�ϴ���ҽ���ļ�ʱ���ʡ�����Ŀǰ��ϵͳ���ۻ�Լ770����������������ü�¼���ݣ�Ӫ���ϴ��͵�������1000���������ջ��ŶӵĹ�ͨ��Ϣ����1.3������ϵͳ����������ȫ�ȼ��������Ƚ����ܼ��������ڽ��а�ȫ������ȷ���������ݵİ�ȫ����˾���������¼����������ͨ�����¡��������ϵķ�ʽ��������������Ⱥ����ǿ�˻��ߵĹ����У���������ý���ṩ�ḻ�Ľ����������ݡ������ڹ�����Ի�����ҽ�����ߵ�֧�֣���˾�������ջ�ҵ���Ѿ���ʼ������Ӫҵ���룬���ѻ��ߵ�����������������ѹ����Ļ��ߡ���˾���������ջ�ʹ�������з��Ĺ���ϵͳ��ϵͳ�������߶�App��ҽ����App��Web���ջ�ϵͳ��CMS��̨����ϵͳ�����ݷ���ϵͳ��QuickBI����ƽ̨����Ӫƽ̨�Ϳ���ϵͳ��ϵͳ�����ջ��ƻ�������Ժ���Բ�Ѫ�ǲ�������Ѫ�Ǽ��ϰ�߱仯�����ջ�ʦ���͹�������ʵ�����򲡽�����֧�ֵıջ����������������������ҹ����������Ӷ���������Ч����<br />�������⣬��˾һֱ�߶ȹ�עAI�����ķ�չ��̽�����ԭ��ҵ�����Ƶķ�չ���ܡ���˾����2024������ר���Ŷӻ�����չ��AIoT���򲡼�ͥҽ������Ŀ���з����������Ե㳢���˶��߼����AIӦ�á�����Ŀּ�ڽ������ǰ��AI������������ֱģ�ͣ����ȴ���һ�����ܻ������Ի����������Բ��������ߡ�ͨ����ģ�͵���������Ŀ������ʵ��ҽ����Դ���Ż����ã���������ҽ�Ʒ���ˮƽ��ͨ�����ϴ�����ģ�͡����������ģ̬���ݷ���������ͨ��������á��ջ�ʦCopilot���������Ͻ���������һ��ȫ�������򲡼�ͥҽ���������û��ڼ�ͥ�����и�Ч�������򲡡�������������֢״�ļ�ʱ��Ӧ�������������������ԣ������ճ�ҽ��������������ͬʱּ�ڸ��ܡ����������ջ�O+O��ģʽ���ļ�����ء���˾ƾ��ʮ���������������������ڵ������ۣ����а���31���û���˽�򽡿����ݺ��γɵľ��鷽�����𲽹��������ںϡ�ģ�ͽ����ԡ����ɫЭͬ����ȫ�Եȼ������⣬�������򲡹�������AI��ֱ��ģ�͡�����AI�������������IoT�豸����Ѫ���ǡ�Ѫѹ�ƣ���ʵʱ������ݣ������û����ʡ�����������Ϣ���ṩ���ɽ�󡢸��Ի���Ԥ�����������������ƶ�AI���ܡ����������ջ�O+O��ģʽ�����������ܱ�ݵ����Բ���ͥҽ�����顣δ������˾����������Բ����������򡰶ಡ�ּ�ͥҽ��������������Ϊ��AI��ͥҽ����������ȫ��ҽ�ƣ���ÿ����ͥӵ��ר��������ҽ����������ȫ�񽡿�ˮƽ������2024�꣬��˾��ͨ����AI������̽����ʵ���˶��߼����Ӧ���������ջ�ʦ�Ĺ���Ч�ʺͻ������飬���ջ�ʦ֪ʶ�ʴ𡢻�����йػ�С���ֵȡ�<br />����3���ʲ�����ҵ��<br />������˾Ŀǰӵ�нϺõ��ֽ𴢱���Ϊ��˾�ṩ�˼�ʵ���ʽ��ϣ���˾�������ʲ��ı�ֵ��ֵ��Ϊ��˾�����δ����ȷ����ʱ�ṩ�˳���ķ��յ���������<br />������˾ӵ��һ֧רҵ���ʲ������Ŷӣ�Ƹ�������ʲ���������ӵ�зḻ��ҵ�����רҵ��Ա����˾ȫ���ӹ�˾�Ű�������޹�˾��Ϊר��Ͷ���ӹ�˾���������ʽ�����ʲ�����ҵ�񡣹�˾��ȫ�򻯴����ʲ������ӽǣ����ؿ��ʲ����õ���𣬽��ж�Ԫ����ɢ�ʲ��������Է�ɢ���ղ�Ѱ���г��ڵ��������档�����ʲ����õĺ��ģ���ͨ��������Ե��ʲ���ϣ���ɢ���ղ���߷��յ�����������ʣ����������ʲ������ʣ��Ż���ϵķ��������������Ӷ�����Ͷ����ϵĿ����ճ�����������õ�ʵ���ʲ���ֵ��ֵ������Ŀ�ꡣ����2024��ĩ����˾��Ԫ�����õ��ʲ�����У��ֽ����ʲ�ռ��2.2%���̶��������ʲ�ռ��65.2%�������г�Ȩ��ռ��19.3%��˽ļ��Ȩռ��11.7%���Գ����ռ��1.6%��<br />������˾����ȫ��Χ����������У��������ᡢ��Ӫ����������ᡢ��Ȩ�Ƹ��������Ͻ𡢱����ʽ𡢼���칫�ҵ������ʲ����û���������ϵͳ�ԡ���̬���Ĺ�ͨ���ơ�ͨ����������Ϣ�����������γɺ����ʲ��������ͨ���ʲ��������̽�֡�������ͬҵ�ȶ����Ƽ����ڵ����Ի���ѭ������������ȷ��Ͷ���Ŷ��ں�۾������С��ʲ��������Լ�������ɸѡ���棬ʼ���ܹ���ȡ����ǰհ�Ժʹ����Ե�һ����Ѷ���Ӷ����г�����İ��ռ�����ʶ����߱��������ơ����ͬʱ����˾����ȫ����300�Ҹ��Ǹ����ʲ�����Ͷ�ʹ������������㷺��ϵ��ͨ��ϵͳ�ԡ�����ľ�ְ���飬ȫ���˽��������������������������ƣ���˾���Ϸḻ�������ʲ�����֪ʶ��ϵ��Ϊ�ڲ�ͬ�ʲ�������ʵ�ָ����������ṩ����֧�֡�<br />�����ع�2024�꣬���ʽ����г���������ƽ�ȣ���������������Ϣ���ڡ��ڴ˱����£���˾���ʲ���ϱ����Ƚ�������ʵ����Ԥ�������Ŀ�ꡣչ��2025�꣬�����������߱仯��ͨ�����ơ���������ǰ���Լ�ó�����ߵĲ�ȷ���ԼӾ磬ȫ���г����������������Դˣ���˾����һ��ǿ����۲�����ʲ�������о���ȣ��Ը�Ϊ������רҵ��̬�ȣ�Ӧ��δ���������ٵ���ս�ͻ�����<br />����4����רҵͶ���ߺ�����ͬͶ�ʼ�ֱͶ<br />������˾�����ʶ���Ƽ��������ƶ�δ����չ�ĺ��Ķ�������ϣ����Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ���²��ϵ�ǰ�ؼ����������ս����Ͷ�ʲ��֣����ڻ�ȡ����Ͷ�ʻر�������������˾����Ͷ���˼÷��ʱ���Ԫ����Ͷ�������ʱ��������ʱ���ҫ;�ʱ����漨��̳����˼Ͷ�ʡ��źϴ�Ͷ��Ӣŵ���λ���ȹ������ʵĴ�Ͷ�����ر��ע���ڴ�ģ�͵���һ���˹����ܼ�������Ӧ�ã��ԿƼ������������ǰհ�Բ��֡�����֮�⣬��˾������ڴ��¿Ƽ��ж���һ�ĵ���ҵ����ֱ��Ͷ�ʡ�<br />����Ϊ�˳�����ø�У�ķḻ��Դ����˾������ѧ��֪����Уչ��������������Ѱ�Ҳ�������Ǳ���Ĵ�ҵ�ŶӺ���Ŀ����˾��ȡ�ġ�Ͷ�硢ͶС��Ͷ���ڡ�ͶӲ�Ƽ������ԣ�ּ�ڹ���һ���л����ĿƼ�����ҵ��ҵ��̬ϵͳ��ͨ���˲š��ʽ�Ͳ�ҵ����Ч�ۼ������ٿƼ��ɹ���ת��Ӧ�á���˾������50������ҵ��쿪�Ű����Ӻ��Ŀƴ�ĸ�����Ͷ�ʣ���ĸ�����ɾŰ�ҽ�ơ����Ӳ�ҵ�����쿪��������ѧ�����������ἰ�����Ļ���ͬ���������й�˾���ʲ�����35.6��Ԫ����һ��ֵ��Ԫ������ĸ����ּ��ͨ���г������ƣ�������ɸѡȫ�����ʵĴ�Ͷ��������ͬ����һ��������ʹͶ�ʡ��Ƽ����¡��ɳ�����ҵ�Ȳ�ͬ��չ�׶εĶ�Ԫ����Ͷ����Ⱥ���������γ�150��Ԫ����ȺΪĿ�꣬��ַ���ĸ�����ڿƼ����·�����������ü��ܸ��˶����á�����Ⱥ�����ܽ�ϸ���У������ѧ�ƣ�ͨ��������Ŀ��������Ŀ��������Ŀ�ķ�ʽ������Ͷ���ڰ���������������У��ʦ��У�Ѻ�ѧ���ĿƼ�������Ŀ���ٽ���Щ������Ŀ�ͿƼ��ɹ�������쿪�ƴ�԰ʵ��ת������ء�ͨ�������Ļ���Ⱥ�������ã���˾�����ܹ��ٽ��������ҵ������ںϣ�Ϊ����������չ�������������˹���������ĸ����ͨ�����ӻ�����ʵķ�ʽ����ʵ�ֶ��㷨��������Ӧ�á����ݵ�����Ĳ�ҵ��ȫ���ǡ�Ŀǰ��������˼�ʱ������ʱ���ˮľ��Ͷ����о�ʱ�����ԶͶ�ʡ������ʱ��������ʱ���Ԫ���ʱ������޻��𡢱������12�һ�����ɹ��ᣬ�ƴ�ĸ�������13.8�ڣ�Ԥ�ƽ������γ�53�ڵĻ���ء�<br />������������Ӫģʽ<br />�����ɹ�ģʽ������ԭ���ϲɹ�����Ӧ�̺����ϵ����ɹ�˾��Դ����ȷ���������ŶӸ���ȷ����������ƻ�����������ϸ�Ӧ����¼�ĳ��Ҵ��ɹ�������ɹ��µ�����Ʒ�֣�������Դ����Ѱ�������ϵ��������ң�����ѡ�����ۺ󣬽�ͨ�����յĳ��Ҽ���ϸ�Ӧ����¼����󽫲�Ʒ�ļ۸��󶨵�����Ӧ��ص�����ת���������������Ŷ�������������ƻ��ͼ۸��󶨵��ɹ������ϡ�<br />����Ŀǰ��˾һ������Ҫ��Ӧ��ǩ�����Э�飬Э��Լ���ɹ�ԭ���ϵ�Ʒ�֡��۸�ȷ���������ڡ����㸶���ڵ��������ȷ���ɹ���������˾����ʵ��������Ӧ���¶��������������ڡ�ʵ�ʲɹ���������<br />��������ģʽ����˾�����ŶӸ������۲��ŵĶ�������ȷ�������嵥����Ͽ��������������ƻ�����˾���ھ�����������ͬʱȷ���Կͻ��Ŀ�����Ӧ����ȡ����������+��ȫ��桱������ģʽ��Ϊ����Ʒ�ʺͷ��񣬹�˾��������������������������Ϊ�������ַǺ��ļӹ����������Э�ӹ�ģʽ��iHealth�Լ��в�Ʒ����ͨ����˾�ӹ�˾�¶ٵ��ӡ����������Լ���Э����������<br />��������ģʽ������ģʽ��<br />����1��iHealth���Ű�������Ʒ������iHealthƷ�Ʋ�Ʒ��ͨ��ֱ��ģʽ�������ۡ�iHealth�����������޵����Ĳ�Ʒ�������ƹ㣬iHealthŷ�޸���ŷ���г��Լ��ڽ��ķ��ޡ��ж��г����������ƹ㡣iHealth����ӹ�˾����ŷ�����������������iHealth ϵ�в�Ʒ�������ƹ㡣�Ű�Ʒ�ƵĹ������۹����ɹ���ҵ����ҵ������Ŀǰ���ڵ�����ģʽ��Ҫ��Ϊ�������ۺ��������ۡ��������۵���Ҫ����ƽ̨����С����Ʒ��С���̳ǡ���������è���������۵�����ģʽ��ֱӪ�ͷ������֣����������Ѿ����ǽ��ٸ����С�<br />����2��ODM/OEM �������� ��˾�Ĺ���ó���ۺϲ�����Խӹ���ͻ�������ODM/OEM��Ʒ���ͻ���Ϊ֪����ҵ��Ӣ��Lloyds Pharmacy���¹�Beurer����ʿ B.Well Swiss���ͻ��¶�����ʼ������<br />����3��������ҵ������<br />����Ŀǰ��˾������ҵ����Ҫ��С��ר�����С����Ȩ���Լ�С�������ꡣС��ר���ꡢС��������Ϊ����ģʽ������ģʽΪС�ס�С�����������˾���������С�ס�С����˾����Լ���Ľ������ڰ�����������蹫˾һ���ķ�����ר������곤���Ա���ɹ�˾ȷ����ѡ��֧����н�ꡣС����Ȩ��Ϊ���ģʽ����С��ר������������ڹ�����ʽ����˾һ�������С��ͨѶָ������Ʒ�������ۣ���������鹫˾���У���˾֧��������á��ճ�ά�����ü�Ա��н�ꡣ<br />����4�������������ջ���O+O����ģʽ���ƹ����Ӫģʽ<br />�������ڶ���Ի�����ҽ��̽���Ļ��ۣ���˾�������ƶ����������ջ���O+O����ģʽ����ء����й�������������е�������רҵҽ�ƻ������������á���Ϣ����·����������·����ͬʱ������ҽ���ŶӵĹ���Ч�ʺ��ջ���������˾�������ڸ����������ҽ�ƻ������������ջ����ǩԼ����ҽ����������߷������򲡻����������γ�רҵ�������ջ�������ϵ����������������רҵ�˲ţ��������Ч����������������Ч�ʡ�<br />����<br />�����������ľ���������<br />����1��ȫ��ҵ�񲼾�����<br />������˾��iHealth��Ʒ�ƵĲ�Ʒ����ȫ��Χ�ڻ���˰������ޡ�ŷ�ˡ����ޡ��Ĵ����ǵ��ڶ���Һ͵�����ע��֤�顣��˾����ͨ��ֱ�ӳ��ڣ�����������ŷ�ޡ���ۡ��¼��µȺ����ӹ�˾���뵱�ؾ����̺������̺��������õ���ƽ̨�ȶ��ַ�ʽ���������Ԫ����������������ҵ���縲�ǹ㷺����Ʒ������ŷ���ǡ��Ǽ������޵ȶ�����Һ͵����������г��������ۣ��γ������õ�Ʒ��ЧӦ����˾�ڰ����й���������ŷ�޵�ȫ�����ؼ��г��Ĳ��֣�Ϊ�����ṩ��һ����Ԫ�ҷḻ����Ϣ���磬��һ����ʹ�����ܹ�ʵʱ��׽�������г��ı仯����Ѹ��������Ӧ��<br />������˾�ڹ��ڵĿ¶ٹ��������������Լ���Э�������в��ܲ��֣�Ϊ��˾Ӧ�Ե�Ե���ؼ��г��仯�ṩ�˳�ֵ�Ӧ�����ϴ�ʩ������ȫ�򻯲�����Ϊ��˾�ڽ������Լ��ж��������������ṩ������֧�š��ڲ�Ʒ�����Է��棬��˾����ȫ���Ԫ��Ŀ���г����ص�����󣬶Բ�Ʒ���б��ػ������������㲻ͬ�г�������Ҫ�󡣴��⣬��˾���˲���ϵ������Ϊ��˾��ȫ��ҵ�񲼾ֵ���Ҫһ������˾������Ƹ���������в�ͬ�Ļ�������רҵ���ܵ��˲ţ��齨���Ļ��Ŷӣ���������ŶӵĶ����ԣ�������ҵ��ȫ��������<br />����2��Ʒ����������<br />������˾��2010����������ȳ����ӹ�˾iHealth Labs Inc.��������˾��iHealthƷ�Ƴɹ��Ƴ���һ��������Ѫѹ�ƣ���������չ��Ʒ�ߡ��������������Լ��в�Ʒ���������㷺ʹ�ã�iHealthƷ���ڼ���ҽ�ƽ�����Ʒ�г���֪���Ⱥ�Ӱ����������ǿ����˾��2022�����ȫ��ҽ����е��ǿ��ȫ��TOP30��2023��5�£��Ű�ҽ���ٻ�2023�й�Ʒ�Ƽ�ֵ������Ϣ�����ӵ�����TOP16������176��Ԫ����ҵ�Ʒ�Ƽ�ֵλ�С��й����й�˾Ʒ�Ƽ�ֵ�񡱺����TOP29��ͬ��6�£���˾�ٵǸ���˹��Global2000���񵥣�7���ֳɹ���ѡ���Ƹ����й�500ǿ���а񣬳�������˹�˾����ҵ��λ��Ʒ��ʵ����������ͻ��Թ�˾Ʒ�Ƶ��Ͽɶȼ������ʳ�����������ӳ�˹�˾��Ʒ�ƽ��跽��Ļ�����<br />�����ڹ����г����棬��˾��������������ƽ̨�͵���������ͨ��С���̳ǡ���è�������콢�������ƽ̨���в�Ʒ���ۣ���Ч�ؿ����г������档�ڹ����г�����˾ͨ�������ӹ�˾���á������ۡ�ģʽ��������չB2C���г�����˾��ȫ��ҽ����е�����̼������̾��������ȹ̵ĺ�����ϵ��B2B�˵����������ۡ�ODM/OEM �������������Ҳ��Ϊ���죬Ϊ��˾�ĳ�Զ��չ�춨�˼�ʵ�Ļ�����<br />����3��˽������ݵĹ㷺���ۼ��ڴ�ֱģ���е�Ӧ������<br />������˾����������ʵ�����������ջ���O+O����ģʽ��Ϊ���򲡻����ṩ��������һ�廯��Ժ��Ժ��һ�廯������Ӳ������һ�廯��ȫ���̹淶���������񡣾�������ʮ����������������ĳ������ۣ���˾�ѹ����𸲸ǵ��Ӳ�����ʵʱ��⡢���ʽ����ȶ�ά�ȵ�ҽ�ƴ����ݣ��γ���һ�׻����ջ���׼����ϵͳ����SOAPȫ���̹�����ϵ��һ��������Ϊ����Ĳ�����¼��������<br />������˾���չ��"AIoT���򲡼�ͥҽ��"��Ŀ����������һ������ҽ�����ݿ�͹�����ϵ��ͨ����ֱ��ģ��ѵ����������ܹ���ƣ�����ǿ�����ֽ��������Ի���Ԥ�����������Ⱥ���AI�����������𸲸�"����-�㷨-����"�����������ջ�����������ʵ�ٴ����������������з��������ѳ�Ϊ��˾�������������򹹽����ļ������ݵĹؼ�֧�㡣ͨ��AI�����ڴ�ֱ����������أ��ܸ���Ч����������Ч�ԡ��ɼ��ԡ����������ԣ�Ϊÿһ���û��ṩ��ʱ�ɻ�ȡ�ĸ߶ȸ��Ի��ķ��������û����顣ͬʱ����Ч�����ջ�ʦ��Ч�ʣ��ͷŸ��ྫ�������ڻ��ߡ�<br />����4����֤׼������<br />��������ʳƷҩƷ�ල�����֣�FDA������֤�����ϸ񡢸��ӣ������˴��ļ����ơ��ٴ����鵽�����Ȼ��ڡ���ҵ���ύһϵ�м����ĵ��������꾡�Ĳ�Ʒ�������桢�ٴ��������ݡ��������պ����������ļ��ȣ���֤ʵ��Ʒ����Ч���밲ȫ�ԡ�FDA��ҽ�Ʋ�Ʒ�ĸ߱�׼Ҫ����ҵ����Ͷ�������Դ��ȷ���Ϲ��ԡ���˾ƾ���䳤�ڻ��۵��з�ʵ�����ϸ���������ƣ��ѳɹ���ð���Ѫѹ�ơ�Ѫ���ǡ����¼ƺ�Ѫ�������ڵĶ���FDA��֤����������ϣ�IVD����Ʒ���򣬹�˾�����ӹ�˾iHealth Labs Inc.������������֯���ٴ����顢�����������������о��������˷ḻ�ľ����������ơ�iHealth�Լ��е��Ƴ���־�Ź�˾��IVD�����ҵ����չ�����⣬��˾��Covid�ͼ�������������ƷOTC��POC�棬�����������FDAӦ��ʹ����Ȩ��EUA������һ�������˹�˾��IVD����ľ������ơ�δ������˾������������֤׼�����ƣ��Լ��������г����۵���ؾ��飬�����ƽ���˾��Ʒ����֤��׼����ȡ�<br />����5��������������������γɵ��ۺ�����<br />�����Թ�˾�Ƴ��׿��������ֻ������ĵ���Ѫѹ�������������Ѿ��ɹ��з����Ƴ���һϵ�д��µļ���ҽ�ƽ������Ӳ�Ʒ��ȫ�渲����Ѫѹ��Ѫ�ǡ����¡�Ѫ�����ĵ硢��֬�ȶ���ؼ����������ļ�⡣��Щ��Ʒ���䴴������Ż����٣����������ĵ¹������ƽ���iF��ƴ󽱣��ⲻ��֤���˹�˾�ڲ�Ʒ��ƺ��з������������Ҳչʾ��������ҽ�ƽ�������̽���Ľ׶��Գɹ�����˾ƾ�賤�ڻ��۵���ҵ������г���������Ѹ�ٲ�׽�г���̬����Ч���Ͳ�Ʒ�����ķ��պͳɱ������з��������ǲ�������Ͷ�룬���������������з����������û�������ơ�Ӧ�ó��򿪷����û�������Ƶȷ��棬���ǵļ������º��з�ʵ��Ҳ���ϵõ���ǿ�������˲�Ʒ�ĳ����ȶ��ԡ�������Ӧ�ԣ��Լ������ļ����������������⣬��˾������רҵͶ�ʻ�����������ͬͶ���ڰ���Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ�²��ϵ������ǰ�ؼ�������Ӧ�á�δ������˾������Χ��ҽ�ƽ�����ҵ���Ƽ��������ս���Բ��֣��ԿƼ�����Ϊ����������������̽������չ�µ�ҵ������Ϊ��˾�ķ�չע��ԴԴ���ϵĶ�����<br />����6�����������ջ���O+O����ģʽ����<br />������˾�����������򲡻����ṩ�ջ�ʽ��ȫ�����ջ�������һ����ģʽ��ҽ��Ϊ���ģ�Эͬ���򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ��רҵ�Ŷӳ�Ա����ͬΪ�����ṩ�������ƺ͹�������ͨ�����ֶ�ѧ���ŶӺ�������˾��Ч�����˻��ߵ���Ч�����������������Ч�ʣ�ͬʱ��Լ������ҽ����Դ����˾���е�Ժ��Ժ��һ�廯������ԣ��Ż���Ժ�ھ������̣�ͨ��Ӫ��ʦ������ʦ��ҽ����Э����Ϊ�����ṩ�˸���ȫ��͸�������ҽ�Ʒ�����Ժ�⣬��˾ͨ�������Ĳ������ʵʱ��רҵ��ѯ��ȷ�����ջ�����ļ�ʱ�Ժͳ����ԡ���ʵ����������һ�廯���棬��˾ͨ����������Ի��߲����ʵʱ��¼�����������ƽ̨�Ը��˽������ݺ�ҽԺ�����¼���������ϣ�ʵ���˸��Ի�����ָ�����������ͣ����������˻��ߵ�Ӫ���ͽ����������顣��˾����Ӳ������һ�廯ģʽ��ͨ�� iHealth ����Ѫ���ǵ�ʹ�ã�ʵ����Ѫ�����ݵ��Զ�ͬ�����ƶˣ�ʹ�û��ߺ�ҽ����Ա�ܹ���ݵ�ͨ���ƶ��豸�����꾡����ʷ��¼���������ƺ���ʳ�˶���־���Ӷ����������������Ч�ʺͱ���ԡ���˾��רҵҽ�ƻ����Ľ��ܺ������Թ�ͬ�ջ�����ģʽ����Ч�Խ����˳����֤����ģʽ�������α������ɹ�ҵ����Ϣ��������������������������ίԱ�����Ϸ����ġ��ǻ۽������ϲ�Ʒ�������ƹ�Ŀ¼����������л�ҽѧ������ѧ�ֻᷢ���ġ��й�2�����򲡷���ָ�ϣ�2020��棩�����Ͽɣ�����ȷ��Ϊ�������ҹ���������֧�ֵ���Ҫʵʩ���ݡ�<br />����7����ϢԴ��������Ч���ߵ�����<br />������˾�����������ʲ��������רע���ڸ��Ӷ���ȫ���г��ж��첢����Ͷ���Ȼ������ǵ��ʲ������Ŷ����зḻ��ҵ�������ҵרҵ��Ա��ɣ�����רע�ڶ�ȫ����Ҫ���������ȷ������г������о���ȷ����˾�ܹ����õķ��ֺ�����Ͷ�ʻ��ᡣ��˾ͨ������������ʵĴ�Ͷ����͹�ģ50������ҵ��쿪�Ű����Ӻ��Ŀƴ�ĸ���𣬶�Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ���²��ϵ�ǰ�ؼ����������ս����Ͷ�ʲ��֣��ص��ע���ڴ�ģ�͵���һ���˹����ܼ������ԿƼ������������ǰհ�Բ��֣������˹�˾�ڿƼ������������Ȳ���ͳ��ڹ�ע���١���˾�ڰ����й���������ŷ�޵�ȫ�����ؼ��г��Ĳ��֣�Ϊ�����ṩ��һ����Ԫ�ҷḻ����Ϣ���硣��һ����ʹ�����ܹ�ʵʱ��׽�������г��ı仯����Ѹ��������Ӧ����˾��Ŀ����ȷ���������̸�Ч��������ǿ����Ϣ�Ѽ���ִ������ʹ�ù�˾���г���̬�����жȺ�ǰ����Ϣ�����������治����������˾ͨ������ɸѡ�����ùؼ���ϢԴ���Ժ���ս�Ե��ƽ����г�ֵ��о�����Ч�ľ��ߡ����ֻ�����Ϣ���Ƶľ���ģʽ�������ӿ��˹�˾����ս�Ե��ƽ��ٶȣ�Ҳ��֤��ս��ִ�е�������Ϊʵ�ֹ�˾�ĳ���ս��Ŀ���ṩ��������֧�֡�<br />����8����ֵ��һ�µ��Ŷ�����������<br />������˾�ᶨ�������ˡ��ý������򵥡���������ǻۡ���ʹ�����ԡ���ȫ������ҽ�Ƽ��ǻ�����Ŀ����ߡ�Ϊ��ΰԸ���������С��������������˼����רע���¡�����ֱǰ���ĺ��ļ�ֵ�ۡ�����֯�ڲ������������ڴ��ƴ�ͳְ�ܲ��ŵı��ݣ�����С�ŶӺ����ƶȣ�רע�ڷ������ս���۹⡢רҵʵ�������������������˲ţ���������һ��Ŀ��һ�¡���ֵ����ͬ�ĸ�Ч�Ŷӡ��������ھ����ź������������棬���빪����֣�ͦ�߸������г���֮�ɼ������Ǽ�֡������ȴ򡢼�ʵ�ƽ����Ĺ���̬�ȣ�һ��ȷ��Ŀ�꣬��Ҫ�ó��ᶨ���Ƶľ��ĺͲ������ӵ�������ȫ���Ը��Ĵ��Ŀ�ꡣ��˾�ڲ��Ļ����������������սʱ���Ž�Э������ȥ�ƽϸ��˵�ʧ�����������Σ����ڵ�������ͬ�˷����ѣ����żȶ�Ŀ��ᶨǰ������ҵ��ֵ�۵ĳɹ�ʵʩ���������ģ��������ǿ�˹�˾����������ս���������Ǽ��ţ���δ������µ���սʱ����֧�����ϸ�ѵ����Эͬһ�µ��Ŷӽ��������������������ơ�ͨ����ʵս�в���ĥ�������������ǵ��Ŷ��Ѿ�Ϊδ���Ƴ����ഴ�º����ʵĲ�Ʒ�����˼�ʵ�Ļ�����<br />����<br />�����ġ���˾δ����չ��չ��<br />������һ����˾δ����չս��<br />����������iHealth�Լ��еĹ㷺ʹ�ã�iHealthƷ��������������������˾���������iHealth��֪���Ⱥ��û��ڱ�������������г��������ļ����Ͳ�Ʒ��������г����ر��Ǽ���ҽ�Ƶ��Ӳ�Ʒ��IVD��Ʒ�������Ʒ�ܿ��پۼ�������Ŀ���û��������Ʒ�����û��Ѻ��Դ���Ʒ��ЧӦ����һ����ǿ��˾���û������ӣ��Բ������������������º��г���Ӧ��������˾���������򲡹�����Ϊ�������ʵʩ��������+ҽ�ơ���ս�ԣ����������ô�����ģ�͡����������ģ̬���ݷ���������������ȫ�����ۺ��ջ�����ģʽ������ҽ��Ϊ���ģ���ҽ�������򲡽����ߡ�Ӫ��ʦ���˶�ָ��ʦ����ɵ��ջ��Ŷӣ��ۺ������ƶ���������AI�����������ơ���ģ̬���ݷ������¼����ֶΣ��������򲡻��ߵĹ����ͷ����Ժ��������Ժ�⣬��������չ�����ϣ��γ�Ժ��Ժ��һ�廯����������һ�廯������Ӳ������һ�廯��ȫ���̹淶�������ջ���<br />������������˾2025�꾭Ӫ�ƻ�<br />����2025�꣬��˾��������о�������Դ������չ����ս�����ҵ�����������ľ������ƣ�����ҵ���ģ��������˾���ۺ��г�����������˾��Ҫ��Ӫ�ƻ����£�<br />����1����չ��ͥ�Բ���ͼ���ҽ�ƽ������Ӳ�Ʒ�����Ʒ���У�<br />������ͥ�Բ����Ʒ���棬����������˾�ڱ����Ʒս�Է���ȡ�������۵ĳɼ���iHealth���¼ơ��Լ����ǹ�˾��ҽ�ƽ������Ӳ�Ʒ�� IVD��Ʒ������ش�ͻ�ơ����ڵ����ʽ��ϰ�߷����˺ܶ�仯�������ܺ�ϰ��ʹ��IVD�Բ��Ʒ��������֮һ��������2021��������˾�Լ������Ʒ���㷺ʹ��������������ЧӦ���Լ���֮���г��ռ�����ͥ�Բ����Լ��в�Ʒ���𽥳�Ϊ��������Ϻ���������ɸ�鹤�ߣ�����������Ϊ����������Ⱥ�����γ��˼����Բ����Ʒ��ʹ�ü�����ϰ�ߣ������Ʒ�Ѿ߱���ǿ���ճ���������Ʒ���ԡ�Ϊ���õ���������Ϻ���������ɸ����Ҫ����˾������������չ�ɼ�ⲡ�����С����⣬��˾Ҳ������������չ�з���������չ��˾��Ʒ��IVD�����Ӧ�÷�Χ�������Ӷ�Ԫ����OTC/POC������ϲ�Ʒ�����г���<br />��������ҽ�ƽ������Ӳ�Ʒ���棬Ϊ����ȫ���г����󣬹�˾����ǰ���Ѿ��Ƴ���iHealth�Լ��С����¼ơ�Ѫ���ǵȲ�Ʒ��δ����˾��������ý����� iHealth���¼ơ��Լ��������������γɵ�Ʒ�����ƣ������г����󣬽����о������ļ����Ͳ�Ʒ�����г���2025�꣬��˾��½���Ƴ�iHealth���а���ϴ�������¿���¼Ƶȼ���ҽ����е��Ʒ�������ƽ�����Ѫ�Ǽ���ǣ�CGM����AI��������������Ŀ���ȡ�ͬʱ����Ѫѹ���¶ȵȴ�ͳ�����Ʒ���棬Ҳ�������������������߲�Ʒ�Լ۱ȡ��������Լ��Ż��㷨�ͼ������֣���������û�ʹ�㡣<br />��������Ѫ�Ǽ���ǣ�CGMS����Ŀ��Ŀǰ���ڹ��ڻ�����չ��ʽ�ٴ���������˾�ƻ���2025������Ӵ�Ͷ�룬��ȡ������Ŀ���ȡ�����Ŀ�����ڷḻ��˾��Ʒ�ߣ��ٽ���˾��Ѫ�Ǽ������Ĳ�Ʒ�ͼ�����������һ��������˾���г���������<br />����AI������������Ŀ����˾���¿�AI���������������з������У�ּ�ڴ���ȫ�µ��ƶ���������ܹ����ӳ�AI�����������㷨���Ա����û���������Ȼ���������顣<br />����2�����������������ƹ����������ջ���O+O����ģʽ���ӿ쿪����AIoT���򲡼�ͥҽ������ֱģ�ͣ�<br />�����ڵ�ǰ���򲡻������������ٿ�ı����£�������������ģʽ�л������ձ����⣬���综�߿�����Чʱ��̡�����Ժ��û�˹ܡ��������ҹ�����ҽ����ҽԺûʱ�仼�̡�û��Ժ�����ݡ�û��Ժ������������Բ����Ч�������ҽ��֧���󡢿����ʵ͡�����֢���մ󡢲���֢�����صȡ��޴�����򲡻��߹�ģ�Լ����Ե���ҵʹ�㽫��Ϊ�������Ʋ�ҵ�ṩ�������г��ռ䡣<br />�����ڹ��ڣ���ģʽ����Ŀǰ����ȫ����չ50�����У���394��ҽԺ�������ջ�����ܹ������򲡻���32.9��������������Ϊ�����ṩ��������ȫ���̱ջ�ʽ�淶���������񡣹�˾�ڲ��ֵ����Ѿ���ʼ�����շѣ����ƻ�ͨ���ṩ��ֵ�����������롣����ҽ����ҵ�漰������ں����ߣ�����˾��Ϊǰ��Խ��Խ���������⣬��˾Ϊ����ҽԺ�ṩ�������������ҽԺÿ�°�������ģ���ѡ���˾�������������ջ���O+O����ģʽ�����һ����������������Ⱥ�����Ϊ�ܱ��������򲡻����ṩ��������һ�廯��Ժ��Ժ��һ�廯������Ӳ������һ�廯��ȫ���̹淶������������һ����һ��������ƾ�ҽ���飬��������Ч������ǿ������������������������Ŀڱ���Ӱ��������һ������ǿ�˻���ճ�ԣ����������������ջ���O+O����ģʽ�Ŀ����ƹ㣬����������򲡻��ߣ�ͬʱ�������˻�������ҽԺ��ɼ�ͥҽ��ǩԼ�������ڹ������������Ŀ�չ�����ƶ��˻������������ı�׼���ͼ�ֵҽ�Ƶ���ķ�չ���̡����Ÿ������������������֮��Ŀڱ���������һ���ͺ�����ʽ����Ϣ�������빲��������ļ�Ч���ֵ�ȷ��濪�����µ�˼·��̽������<br />��������������˾�����������û���Ϊ�����񸶷�ģʽ�Ͱ�Ч������ģʽ�����У������񸶷�ģʽ��������������ջ�������Զ�̻��߼�������Ա�������Ч������ģʽ����Ҫ������Ѫ�ǻ�/��Ѫѹ�Ĺ���ҽ�Ƽ��ţ��ȸ���������������·ѣ�ҽ��Ч���õ�ÿ���ж��⽱������ģʽ��Ҫ���������Ӳ�̫�ùܵ��������ߡ�Ŀǰ����˾������������Լ74���������������������ѳ���2���ˣ�iHealth�����ٻ�ܳ��������񽱣�������������ҽʦ���估������������Ӱ������ҽʦ���������õĹ�ϵ����<br />������˾һֱ�߶ȹ�עAI�����ķ�չ��̽�����ԭ��ҵ�����Ƶķ�չ���ܡ�����2024��ĩ����������AI�з��Ŷӣ�������չAI�����Ŀ���з��������Ե㳢���˶��߼����AIӦ�á���˾���𲽴��조AIoT���򲡼�ͥҽ������Ϊ�ص��з���Ŀ��ͨ�����ϴ�����ģ�͡����������ģ̬���ݷ���������ͨ��������á��ջ�ʦCopilot���������Ͻ���������һ��ȫ�������򲡼�ͥҽ���������û��ڼ�ͥ�����и�Ч����������������������֢״�ļ�ʱ��Ӧ�������������������ԣ������ճ�ҽ������<br />����ƾ�蹫˾ʮ�������ڡ����������ջ�O+O��ģʽ���������ۣ����а���30�����û��Ľ������ݺ��γɵľ��鷽�����𲽹��������ںϡ�ģ�ͽ����ԡ����ɫЭͬ����ȫ�Եȼ������⣬�������򲡹�������AI��ֱ��ģ�͡�����AI�������������IoT�豸����Ѫ���ǡ�Ѫѹ�ƣ���ʵʱ������ݣ������û����ʡ�����������Ϣ���ṩ���ɽ�󡢸��Ի���Ԥ�����������������ƶ�AI���ܡ����������ջ�O+O��ģʽ�����������ܱ�ݵ����򲡼�ͥҽ�����顣<br />������˾δ���������򲡹��������򡰶ಡ�ּ�ͥҽ��������������Ϊ��AI��ͥҽ����������ȫ��ҽ�ƣ���ÿ����ͥӵ��ר��������ҽ����������ȫ�񽡿�ˮƽ������<br />����3��������չ�����ʲ������Լ�Ͷ�ʲ���ǰ��Ӳ�Ƽ�����<br />������˾��ȫ�򻯴����ʲ������ӽǣ����ؿ��ʲ����õ����ģ�´�ѧ����������ģʽ�����ж�Ԫ����ɢ�ʲ����ã��Է�ɢ���ղ�Ѱ���г��ڵ��������档�����ʲ�������ʵ���ʲ��ı�ֵ��ֵΪ���ԣ�Ϊ��˾�����δ����ȷ����ʱ�ṩ�˳���ķ��յ��������������ʲ����õĺ��ģ���ͨ��������Ե��ʲ���ϣ���ɢ���ղ���߷��յ�����������ʣ��Ż���ϵķ���������������˾����������Է��սϵ͡������ȶ��Ĺ̶��������ʲ�Ϊ������˾Ŀǰ���о�������Դ�ƽ�����ս�Եķ�չ�����Ƿֽ׶�ʵʩ�ģ������ȶ����ʽ𴢱�����Ϊ����ս�Եķ�չ�ṩ��Ҫ���ϡ�Ϊ�ﵽ��һĿ�꣬��˾ͨ���Ӵ����ʲ������л���Ƚ���Ͷ�����棬�Ӷ�����ʽ��ʹ��Ч�ʣ�ʵ���ʲ��ı�ֵ��ֵ����������ʵ�ֹ�˾�͹ɶ�������󻯡��Ƽ������Ƿ�չ���ƣ���˾ͨ����רҵͶ�ʻ�����ͬͶ�ʣ��Դ�ģ�͡�Ӳ�Ƽ���ҽ�ƴ󽡿����˹����ܡ��������졢����Դ�²��ϵ��¼�������Ӧ�õ����ʳ�����Ľ���Ͷ�ʣ���֧�ָ߿Ƽ���ҵ��չ��ͬʱ��Ҳϣ�����Ը���˾����Ͷ�ʻر���<br />���������ƻ�����������˾��2025��ȵ�ӯ��Ԥ�⣬�����ɹ�˾��Ͷ���ߵ�ʵ�ʳ�ŵ����Ͷ����ע��Ͷ�ʷ��ա�<br />������������˾���ٵĸ������<br />����1���Լ��в�Ʒ�г������½����µ�ҵ����������<br />������˾����������Ҫ��iHealth�Լ��в�Ʒ���۴����������������������������������������˾�Ŀ�ԭ�����Բ��Լ��в�Ʒ����������������г��������ֱ����أ�ͬʱ�ܵ��������ߺ��г��������������Ӱ�죬��������ı仯�����ܻ�����Լ��в�Ʒ�г�������٣���ɹ�˾ҵ�������ķ��ա�ΪӦ����һ���գ���˾�ѻ�����չ�������Ʒ��C�˵�����������Ŀǰ�ѹ㷺��������ѷ��CVS���ֶ�������ϼ�������������������ó��没��ɸ�鹤������Ʒת�䣬�𲽽��Ͷ����������������̶ȡ����⣬��˾���������Ʒ�Ļ����ϣ�½����չ�ɼ�ⲡ�����У��Ը��õ������г�����<br />����2���г����������仯�ķ���<br />������ҽ�ƽ��������������ѵ��Ӳ�Ʒ���棬��˾�������ҵ�ھ�����ͬ�������繫˾��Ʒ���������ܡ��۸��û���������ӱ�������߲�Ʒ���������г����󣬹�˾�������޷��ջ�ǰ���ڲ�Ʒ�з�Ͷ��ķ��ա�ΪӦ���������գ���˾�����²�Ʒ�Ĳ�Ʒ���塢ʹ�ó�������ƷĿ����Ⱥ���г���λ�����в��Ժͼƻ��ȷ����ϸ�ѹأ�������Ϊ��������Ӧ�õ���Ʒ�з��У���׼ʱ������������׼�����Ʒ��׷����Ƶ����Ž⣬�������������Լ۱ȡ��۸����ĺò�Ʒ���ڻ�����ҽ�Ʒ��棬��˾�ᶨ�Ĵӡ�0��1���������������ջ���O+O����ģʽ���ⳡ�������˳��µ�ҽ����ҵ�ĸ�ǻ���Ҳ����ս�����˹�˾�������ڶ໥������ͷ��ҵ��Ҳ�ڴӲ�ͬ�Ƕȡ���ͬ�����Խ��뻥����ҽ�����������������Բ����߻����㹻���г��㹻��Ŀǰ��δ�γ���ҵ�����ĸ�֣������Ż�����ҽ����ҵϸ������ķ�չ����˾���������г������ķ��ա���������ƾ����ҽ����ҵ��չ30�������Դ�;��飬��˾�ܹ��Ƚ�׼ȷ�ذ����г���̬���������в��ϻ��۱����顣��˾�Ѿ��Ƴ������ֻ�������Ѫѹ�ơ�Ѫ���ǡ�Ѫ���ǡ����سӵ�ȫϵ�еĽ���������Ӳ������ĥ���û����鼫�ѵ�App��������ҽ��ʹ����ϵͳ������Ҫ���ǹ�ͬ�ջ�ҽ�Ʒ���ģʽ����ʵ����֤�����������ҽ�������ߵ����⣬��˾�����������ջ�������Ҳ�ڲ��Ϸḻ���ۣ�������ЧӦ�Ծ������ա�<br />����3���˲ŷ���<br />������˾�ڻ�����ҽ�ƺͱ����Ʒ�з�����ܴ�̶���������רҵ�˲ţ���Ҫרҵ����ͻ��������ḻ�ĺ��ĹǸɡ��ھ������ҵĻ�����ʱ���������������Դ���Գ�Ϊ��ҵ��һ�־������ƣ���ҵҪ��ռ�Ȼ���Ҫ������רҵ�˲ţ�������ҵ�ڶ��˲ŵ�����Ҳ�Ƚϼ��ң��ܷ�ʱ�����ʺϹ�˾ս�Է�չ�����Ⲣ���Ϲ�˾��ҵ�Ļ����˲ţ���ͨ�����Ƚ������ƵĹ������ơ�����������������ҵ���ٷ�չ���������һ������ս��ΪӦ���˲Ź�������ս���Ӷ�����������˾�����˽�Ϊȫ����ڲ���ѵ����Ч���˻��ƣ������Ż���Ա���á������ƶȽ��衣�ӳ�������������Ҫͨ��������ҵ���󣬴���õ���ҵ�Ļ��͹�����Χ������������ʩ�������˷�չ�����������빫˾�ķ�չ��������ܽ����һ�𣬹�����˾��չ�ɹ���2020�ꡢ2021�깫˾½���Ƴ��˹�Ʊ��Ȩ�����ƻ���2022�ꡢ2024�깫˾�Ƴ�Ա���ֹɼƻ��������ļ�����ʩ�����ڽ�һ����������ȫ��˾��Ч�������ƣ���ֵ���Ա���Ļ����ԣ���������ס�����˲š�<br />����4����������<br />�������Ź�˾��Ӫ��ģ�Ľ�һ������һ�����������ӹ�˾�����ڶ࣬�Թ�˾�Ĺ���������������Դ����Ϣ�������Ƶ�����˸���Ҫ�������˹�˾��������Ӫ�Ѷȡ��ڶԺ��⹫˾�Ĺ������棬���ܴ������������Ļ���������أ����º�����ҵ����ʵ��Ԥ�ڵ�ҵ����չ������Ŀ�꣬�������������ʧ�ķ��ա�ͬʱ����˾��������������ơ��ڲ���ͨ��˳����Υ����˾���ڵط��ɵ�ԭ������¾�Ӫʧ�ܵķ��ա���˾�Ѿ��ڸ��ӹ�˾��������ȫ������OKR������ϵ��ǿ��Ŀ����ؼ��ɹ�������ͨ���Թ�˾ս�ԡ�Ը���Ĳ��ż���͸���ƶ�����ġ��ɺ�����Ŀ�꣬ʵ���ڲ�����ҵЭͬ����һ���棬��˾�������ƶ�������+ҽ�ƹ�ͬ�ջ�ģʽ��ȫ����ƹ㣬�ڹ���Ŀǰ�Ѿ���չ��50�����е�394��ҽԺ��������ҽԺ����������Ӳ���������һ���ơ��������ŵ�ҵ����Ŷӹ�ģ����˾�Ĺ����������µ���ս����˾����ǿ��ͬ�ջ���Ŀ��Ա����ѵ���໥������������ѧϰ�ɹ����飬���ջ�ģʽͳһ��׼��ͳһҪ�󡢼�ǿ���ˣ��Ӷ���߹���ˮƽ��<br />����5���ʲ����÷���<br />����Ϊʵ���ʲ��ı�ֵ��ֵ���������������ʽ���д����ʲ����ã���˾��Ͷ������������ȶ��Ĺ̶��������ʲ���Ϊ���Ĳ��ԣ�ͬʱҲ�Ὣ�������г�������Ǳ���ĸ������ʲ���ΪͶ����ϵ���Ҫ���䡣Ͷ�ʹ����У����������г������÷��գ���������Ľ׶��Բ�������˾�����й�עȫ�򾭼����ڡ����������ߡ������ԡ���Ե���εȺ�۷��գ��Լ����ʡ����ʵ��г��ı仯���ϸ�����ѡ��Ͷ��Ʒ�֣����ݾ��������Լ��г������ı仯����ǿ�г������͵��й�������ʱ����Ͷ�ʲ��Լ���ģ�����ֻ��ж��в������أ���ʱ��ȡ��Ӧ�Ĵ�ʩ�������ܹ�ܷ��յķ��������⣬��˾�ƶ���Ͷ������ƶȣ��Թ�˾ί��������֤ȯͶ�ʵ�ԭ�򡢷�Χ������Ȩ�ޡ��ʽ�ʹ�õĹ����ල����Ϣ��¶�ȷ����������ϸ�涨������Ч����Ͷ�ʷ��ա�ͬʱ��˾����ʵִ���йع����ƶȣ��䱸ר�˸���ί��������֤ȯͶ�ʵ�Ͷ�򡢽�չ���������Ͷ�ʷ��ա�����������Ȩ�Թ�˾��Ͷ��Ʒ������мල���顣<br />����6�����ʷ���<br />�����������ڣ���˾��������ռ�Ƚϸߣ�Ӫҵ������Ҫ����Ԫ���㣬��Ԫ�������Ǹ���˾��������Ӱ�졣�����ų�δ����Ԫ���ʲ����Ĳ�ȷ���ԡ���˾��ʵʱ��ע���ʵ�Ǳ�ڲ�������ȡ��Ӧ��ʩ�������ʴ���������ա�<br />����7����Ե����ó�׷���<br />����2025����������������ʵʩ���Եȹ�˰�����߲���ȫ��ó�׻�������˰����˾�����й�ע���߶������������ԣ�����δ��������˰���߽�һ�����ϻ�������Ҫó�׻��������ƴ�ʩ����Ӫҵ��������ó��Ħ����ȫ��Ӧ�����������ķ��ա�<br />������˾���й��ʻ���Ӫ˼ά+��������Ӫ����ں����������ӹ�˾����˾ͨ��ǰ�ڵ�ҵ��Ͳ��ܲ��֣������˽������Ĺ�Ӧ����ϵ�Ͷ�����ϵ���ڰ��������ӹ�˾���ڵ�ȫ���ӹ�˾���ڵؾ���һ�����Ĳ�Ʒ��ȫ��棬�Զ����Գ��Ӱ����һ����ƽ�����á�ͬʱ��ע�����������������Ʒ��֤���г��ƹ㡢�������罨�衢��������������ȫ�澭Ӫ������������Ϊ����������˾��ʹ��Ʒ�ơ���Ʒ�ܹ����뵱�������г������⣬��˾���Ӵ�����г��������ȣ���Ӧ�Թ���ó�����߼���˰���ա�				<span style="display: inline-block;width: 42px;"></span>
+				<a class="less fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">�����</a>
+			</p>
+		</div>
+					</div>
+	<div class="ft"></div>
+</div>
+
+<!-- ��Ʒ�۸� -->
+	
+
+</div>
+		<!-- F10 Content End -->
+<!-- F10 Footer Start -->
+		<div class="footer">
+		<div class="links">
+		    <a href="http://stockpage.10jqka.com.cn" target="_blank" onclick="clickTalogStat('jptostock');">ͬ��˳����ҳ��</a> |
+		    <a href="http://moni.10jqka.com.cn/" target="_blank">ģ�⳴��</a> |
+		    <a href="http://www.10jqka.com.cn/school/" target="_blank">����ѧУ</a> |
+		    <a href="http://mobile.10jqka.com.cn/?req=pcf10" target="_blank">�ֻ�����</a>|
+		    <a target="_blank" href=" http://wpa.qq.com/msgrd?v=3&amp;uin=2270716061&amp;site=qq&amp;menu=yes">��ϵ����</a>
+		</div>
+		<p>��������:����Ϣ��ͬ��˳�����о������ṩ�������ο���ͬ��˳�����о��������󵫲���֤���ݵ���ȫ׼ȷ�����д�©�����й�֤���ָ�����й�˾��Ϣ��¶ý��Ϊ׼��ͬ��˳�����о����Ĳ����������ȫ���򲿷����ݶ����µ�ӯ���е��κ����Ρ��û����˶Է����ʹ�óе����ա�ͬ��˳�Դ˲����κ����͵ĵ�����ͬ��˳����������һ���������û���Ҫ��Ҳ���������񲻻����жϣ��Է���ļ�ʱ�ԣ���ȫ�ԣ���������������������ͬ��˳����ͬ��˳�ϵõ����κ���Ϣ������׽��̲���������ͬ��˳�ṩ�İ���ͬ��˳���Ƶ��������£����ݣ��������κε�Ͷ�ʽ��飬�û��鿴��������Щ���������е��κ���Ϊ��ɵķ��պͽ�������и�����ͬ��˳�޹ء� </p>
+		</div>
+<!-- F10 Footer End -->
+    </div>
+    <div class="r-go-top" id="r-go-top"></div>
+</body>
+<input id="stockCode" type="hidden" value="002432">
+<input id="F001" type="hidden" value="A">
+<input id="F002" type="hidden" value="����֤ȯ������">
+<input id="F004" type="hidden" value="1">
+<input id="stockName" type="hidden" value="�Ű�ҽ��">
+<input id="marketId" type="hidden" value="33">
+<input id="cateName"  type="hidden" value="��Ӫ����">
+<input id="catecode"  type="hidden" value="operate">
+<input id="fcatecode"  type="hidden" value="operate">
+<input id="sid" type="hidden" value="F10new_jyfx">
+<input id="fid" type="hidden" value="F10,F10master,F10main,F10new">
+<input id="qid" type="hidden" value="14585179">
+<div style="display:none" id="wordraddom">
+</div>
+<!-- title ���� -->
+	<div class="titleBox" id="altlayer" style="display:none; width: 260px;">
+		<div class="tipbox_bd p0_5"><span style="line-height:24px;" class="tip f14">
+		<span id="altlayer_content"></span>
+		</div>
+	</div>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/common/cefapi/1.5.5/cefApi.min.js;js/basic/stock/newPcJs/common.js"></script>
+<script>
+try {
+    external.createObject('Util');
+    //document.getElementById("updownchange").style.display = "block";
+} catch (e) {}
+</script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/jquery-1.8.3.min.js;js/basic/common/inheritance.js;js/basic/stock/popWin.js;js/basic/common/Model_v2.js;js/basic/stock/20200604153837/index.js;js/basic/stock/20200604153837/po_v2.js;js/basic/stock/scrollBind.js"></script>
+<script type="text/javascript" crossorigin charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/common_v3-2-a58b25.js"></script>
+<!--[if IE ]><script type="text/javascript"  crossorigin src="//s.thsi.cn/js/excanvas.min.js"></script><![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.company_logo,.btn-gnjx-left, .btn-gnjx-right, .concept_hot_icons,.iwc_searchbar,.iwc_searchbar .tips-icon,#autocomplete_search_input dd .icona,#autocomplete_search_input dd .iconb');</script>
+<![endif]-->
+<script type="text/javascript" crossorigin src="//s.thsi.cn/js/basic/jquery.pos-fixed.js"></script>
+<script type="text/javascript" crossorigin src="//s.thsi.cn/cb?js/ta.min.js;js/pa.min.js;js/basic/stock/StatLoad.js;js/basic/stock/20200605135220/xgcl_mod.js"></script>
+<script type="text/javascript" crossorigin src="//s.thsi.cn/js/basic/stock/tongji.min.js"></script>
+<!-- ͳ�� -->
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/home/ths_core.min.js;js/home/ths_quote.min.js;js/home/tongji.min.js" charset="utf-8"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/commonLog_v3.js" charset="utf-8"></script>
+<!--F10��Ӫλ�ű�-->
+<script type="text/javascript" crossorigin charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/append-960857.js"></script>
+<script type="text/javascript" crossorigin charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/f10widget_v3-5ec039.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?/js/navigation/jquery.bgiframe.min.js;/js/navigation/jquery.ui.position.min.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/basic/stock/json2.js"></script>
+<script type="text/javascript" charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/search_v3-fec53c.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/basic/stock/jquery.flot3.min.js;js/basic/stock/jquery.flot.time.min.js;js/basic/stock/jquery.flot.tooltip.min.js;js/basic/stock/tableSorter_v3.js;js/basic/stock/pagescroll.js;js/basic/stock/operatetablepage.20150910.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/operate-5537c0.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/website/datacenter/rzrq/thscharts.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/providerchart-c86241.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/userevaluate.20140318.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/basic/stock/tableSorter_v3-2.20160725.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/xgcl-8719c5.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/jquery.flotcp.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/jquery.flot.tooltipcp.20151209.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/operatecp-2c0e89.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/opevaluate.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/20200604153837/click.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/cd/website-thsc-f10-utils/1.6.4/swiper.min.js"></script>
+<link href="//s.thsi.cn/cd/website-thsc-f10-utils/1.6.4/swiper.min.css" rel="stylesheet" type="text/css">
+<script>
+	if ($(".i_sideBar .i_list li").length>0) {
+		sendTalog('f10_stock_fdckf_operate_count#f10_stock_fdckf_total_count');
+	}
+</script>
+<script>
+//---------------�Զ���title���� start----------
+var tempalt='';//��ʱ�洢title
+document.body.onmousemove = function(event) {
+	if(altlayer.style.display==''){
+		$("#altlayer").css({
+			left: event.pageX,
+			top: event.pageY+10
+		});
+	}
+};
+document.body.onmouseover = function(event) {
+	if (event.srcElement.className !== 'titleIcon') {
+		return false;
+	}
+	if(event.srcElement.title && (event.srcElement.title!='' || (event.srcElement.title=='' && tempalt!=''))){
+		$("#altlayer").css({
+			left: event.pageX,
+			top: event.pageY+20,
+			display: ''
+		});
+		$("#altlayer_content").html(event.srcElement.title)
+		tempalt = event.srcElement.title;
+		event.srcElement.title='';
+	}
+};
+document.body.onmouseout = function(event) {
+	if (tempalt != '') {
+		event.srcElement.title = tempalt;	
+	}
+	tempalt = '';
+	$("#altlayer").hide();
+};
+//---------------�Զ���title���� end----------
+//F10�ͻ��˽������
+function setClientCacheData() {
+    try { //�ж��Ƿ��ڿͻ��ˣ�������
+        external.createObject('Util');
+        window.API.use({
+            method: 'Util.getHxVer',
+            success: function(data) {
+                var hexinVer = getVersionStr(data);
+                var pathname = window.location.pathname
+                pathname = pathname.replace(/\/\d{2,3}\//, '/%4/');
+                pathname = pathname.replace(/\/[\d|A]\d{5}\//, '/%6/');
+                //dalert(hexinVer);//����ע�⣬���԰�汾86080  ��ʽ�� 86090 ��ע��
+                if (hexinVer >= 86080) {
+                    window.API.use({
+                        method: 'Info.cacheInfoData',
+                        data: ['f10_client_node', 'http://basic.10jqka.com.cn' + pathname],
+                        success: function() {
+                        }
+                    })
+                } else {
+                    window.API.use({
+                        method: 'Info.cacheInfoData',
+                        data: ['', 'http://basic.10jqka.com.cn/' + pathname],
+                        success: function() {
+                        }
+                    })
+                }
+            }
+        })
+        document.getElementById("updownchange").style.display = "block";
+    } catch (e) {
+        //Զ��������header
+        $("#quotedata").empty()
+        $("#updownchange").empty()
+    }
+	try {
+		callNativeHandler('getMacVer', {}, function(data){
+			if (data.plaform == 'mac' && data.version>='1.3.0' ) {
+				var pathname = window.location.pathname
+                pathname = pathname.replace(/\/\d{2,3}\//, '/%4/');
+                pathname = pathname.replace(/\/[\d|A]\d{5}\//, '/%6/');
+				callNativeHandler('cache_info_Data', {
+					'f10_client_node': 'http://basic.10jqka.com.cn' + pathname
+				}, function(data){
+				});
+			}
+		});
+	} catch (e) {
+    }
+}
+setClientCacheData();
+</script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/20200604153837/stockpage_v3.20190506.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin id="ths-parser-script" app_key="f10_astockpc_config" src="//s.thsi.cn/cd/website-thsc-f10-utils/1.4.39/parser.js"></script>
+<script type="text/javascript">
+var sid = 'F10new_jyfx';
+var fid = 'F10,F10master,F10main,F10new';
+var stockcode = '002432';
+if (window.location.href.indexOf('interactive')<0
+		&&window.location.href.indexOf('dupont')<0) {
+    $(".subnav .skipto").each(function(){
+    	sonnav = $(this).attr('nav');
+    	if ($("#"+sonnav).length>0 || $("[idchange='"+sonnav+"']").length>0) {
+    	} else {
+    		$(this).hide();
+    	}
+    })
+}
+if (stockcode.substr(0,2) == '43' || stockcode.substr(0,2) == '83') {
+	var third_sid = sid+'_thirdboard';
+	var third_fid = fid+'_thirdboard';
+    PA.setStartTime(loadTimer);
+	PA.init({'id':third_sid, 'fid':third_fid, 'stockcode':stockcode});
+}
+$(document).ready(function(){
+var hash = window.location.hash.substring(1);
+var hashArray = hash.split('-');
+if(hashArray[0]  == 'position'){
+	$("#sortNav li").eq(hashArray[1]).find("a").click();
+}
+});
+try {
+    external.createObject('Util');
+    window.API.use({
+        method: 'Passport.get',
+        data: ['m_qs'],
+        success: function(data) {
+            var qsid = data
+            if (qsid == '114') {
+                $("#f10_top_ad").hide();
+                $("#r-go-top").hide();
+            }
+        }
+    })
+} catch (e) {}
+if (!isIE6()) {
+    $(".m_box").statload();
+}
+try {
+    external.createObject('Util');
+    window.API.use({
+        method: 'Passport.get',
+        data: 'm_qs',
+        success: function(data) {
+            var qsid = data
+            if (qsid < 800) {
+                fid += ',f10new_qs';
+            } else {
+                fid += ',f10new_fqs';
+            }
+            PA.setStartTime(loadTimer);
+            setTimeout(function(){
+                PA.init({
+                    'id': sid,
+                    'fid': fid,
+                    'stockcode': stockcode,
+                    'qsid': qsid
+                });
+            },100)
+        }
+    })
+} catch (e) {
+    PA.setStartTime(loadTimer);
+    PA.init({
+        'id': sid,
+        'fid': fid,
+        'stockcode': stockcode
+    });
+}
+try {
+    external.createObject('Util');
+    var externalSessionId = window.API.createSessionId('external');
+    window.API.use({
+        method: 'external.registerEvent',
+        data: 'onshow',
+        sessionId: externalSessionId,
+        persistent: true,
+        callbackName: 'onshow',
+        success: function(data) {
+            if (!data) {
+                 PA.setStartTime(loadTimer);
+                 PA.init({
+                    'id': sid,
+                    'fid': fid,
+                    'stockcode': stockcode,
+                    'hide': 1,
+                    'nj': 1,
+                    _sid: "__ths_onshow"
+                });
+            }
+        }
+    })
+} catch (e) {}
+</script>
+<div style="display:none"><script type="text/javascript">
+// �ڿͻ����ڣ�html�������֣�������ڵ�һЩ����
+if ((window.external && 'createObject' in window.external) || (window.HevoCef && "IsHevoCef" in window.HevoCef)) {
+	$('html').addClass("inClient");
+}
+(function(){
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F78c58f01938e4d85eaf619eae71b4ed1' type='text/javascript'%3E%3C/script%3E"));
+});
+</script>
+
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/f10hq_v4-5-576b58.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/onlyBAuthorize-4a6ce9.js"></script>
+</div>
+<!--F10ͷ�����-->
+
+<!--<div id="f10_top_ad" class="f10_ad_top none"><script type="text/javascript">CNZZ_SLOT_RENDER('297563');</script></div>-->
+</html>
+	
