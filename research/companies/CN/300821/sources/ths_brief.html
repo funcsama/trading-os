@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+
+<title>F10_ͬ˳ڷ</title>
+
+
+<style type="text/css" rel="stylesheet">
+
+
+body {background-color:#000000;}
+
+
+.sub_page{position:absolute;left:12%;bottom:0;z-index:999;height:100%;}
+
+
+.operation_btn{position:absolute;left:50%;top:260px;margin-left:-143px;z-index:1000;}
+
+
+.big_f10_btn{background:url(//i.thsi.cn/images/basic/stock/big_f10_btn.png) no-repeat scroll 0 0 transparent;width:115px;height:34px;display:block;text-indent:-9999px;float:left;margin-left:130px;}
+
+
+</style>
+
+
+</head>
+
+
+<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783539.js"></script> <script type="text/javascript">
+
+
+
+
+	var isExistsState = false;
+
+
+	//ͻ
+
+
+	var reviewThsQuote = null;
+
+
+	//жǷͻ
+
+
+	try {
+
+
+		reviewThsQuote = external.createObject("Quote");
+
+
+	    isExistsState = true;
+
+
+	} catch(e) {}
+
+
+
+
+
+	function action()
+
+
+	{
+
+
+		if (isExistsState) {
+
+
+			reviewThsQuote.switchPage({code:'1A0001'});
+
+
+		} else {
+
+
+			window.location.href = '/1A0001/index.html';
+
+
+		}
+
+
+	}
+
+    
+
+
+//-->
+	if (checkType() == 'phone'){
+		var themeInfo   = [];
+		themeInfo = navigator.userAgent.match(/(hxtheme|pastheme)\/(\S*)/)
+		var colortype = themeInfo[2] == 1 ? "night" : "day";
+		window.location.href = '/404'+colortype+'.html';
+	}
+	function checkType(){
+		var userAgentInfo = navigator.userAgent;
+		var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+		for (var v = 0; v < Agents.length; v++) {
+			if (userAgentInfo.indexOf(Agents[v]) > 0) { 
+				return 'phone'; 
+			}
+		}
+		return 'pc';
+	}
+</script>
+
+
+<body>
+
+
+	<div class="sub_page">
+
+
+		<img src="//i.thsi.cn/images/basic/stock/sub_page_bg.png" alt="ʾ" />
+
+
+	</div>
+
+
+</body>
+
+
+<script type="text/javascript" src="//s.thsi.cn/js/ta.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+var sid = 'f10404';
+
+
+var fid = 'F10main';
+
+
+TA.log({'id':sid,'fid':fid});
+
+
+</script>
+
+
+</html>
+
+

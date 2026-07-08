@@ -1,0 +1,2245 @@
+<!DOCTYPE HTML>
+<html>
+<head id="head">
+		    <title>(300821) Ӫ_F10_ͬ˳ڷ</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7;IE=9"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+	<meta name="keywords" content="¶̬,Ĺ˾ſ,Ĳ,Ĺɶо,Ĺɱṹ,Ĺ˾,ķֺ"/>
+	<meta name="description" content=""/>
+	<!-- ȯurlӣֻbroker-pcf10.html -->
+	
+	<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783539.js"></script> <script>
+    function getUrlParams(key, url) {
+        var href = url ? url : window.location.href;
+        if (href.indexOf("?") < 0 && href.indexOf("#") < 0) {
+            return false;
+        }
+        var hrefStr = href.replace(/#/g, "&");
+        hrefStr = hrefStr.replace(/\?/g, "&");
+        var paramsObj= {};
+        hrefStr.split("&").forEach(function(i) {
+            if (i.indexOf("=") > -1) {
+                paramsObj[i.split("=")[0]] = i.split("=")[1];
+            }
+        });
+        if (key) {
+            return paramsObj[key] || false;
+        } else {
+            return paramsObj;
+        }
+    }
+
+    function addParam(url, obj) {
+        var str = "",res;
+        for (var key in obj) {
+            str += (key + "=" + obj[key]);
+        }
+        if (url.indexOf("?") > -1) {
+            res = url.split('?').join('?' + str + '&');
+        } else if (url.indexOf("#") > -1) {
+            res = url.replace(/#/g, "?" + str + "#");
+        } else {
+            res = url + "?" + str;
+        }
+        return res;
+    }
+
+    var historyUrl = document.referrer;
+    if (historyUrl) {
+        var broker = getUrlParams('broker', historyUrl);
+        if (broker && window.history) {
+            var url = window.location.href;
+            url = addParam(url, broker ? {broker: broker} : {});
+            window.history.pushState('', '', url);
+        }
+    }
+</script>
+	<!-- f10䣬ߺ޸ģֻutils.html -->
+	
+	<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783539.js"></script> <script type="text/javascript" charset="utf-8" src="//s.thsi.cn/cb?cd/website-thsc-f10-utils/1.4.8/f10-polyfill.js" crossorigin></script>
+<script type="text/javascript" charset="utf-8" src="//s.thsi.cn/cd/kernel-thslc-component-materials-container/F10/static/css-vars-ponyfill.js" ></script>
+<script type="text/javascript" charset="utf-8" src="//s.thsi.cn/cb?cd/website-thsc-f10-utils/1.6.0/thsc-f10-utils.js" crossorigin></script>
+<script>
+    function isIEInClient(){
+        return !!(window.external && 'getUserPath' in window.external && 'createObject' in window.external);
+    }
+
+    function isInTongYiClient(){
+      return !!(window.external && 'createObject' in window.external);
+    }
+
+    function isInYuanHangClient(){
+        return !!(window.HevoCef && 'IsHevoCef' in window.HevoCef);
+    }
+    
+    function isInIEEnv(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        return ua.indexOf('msie') > -1 || ua.indexOf('trident/') > -1;
+    }
+
+    function isChromeOlderThan50(){
+        var userAgent = navigator.userAgent.toLowerCase();
+        var match = userAgent.match(/chrome\/(\d+)./);
+        if (match && parseInt(match[1]) <= 49) {
+           return true;
+        }
+        return false;
+    }
+
+</script>
+<style>
+.kamis-loading {
+	min-height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #437EB7;
+	background-color: rgba(255,255,255,0.8);
+	gap: 4px;
+	font-size: 14px;
+}
+.dark .kamis-loading, .black .kamis-loading {
+	background-color: #171D25;
+	color: #FEB302;
+}
+.kamis-loading svg {
+	width: 20px;
+	height: 20px;
+}
+.arco-icon-spin {
+  animation: spin 1s linear infinite;
+}
+.kamis-nodata {
+  min-height: 300px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #333;
+  padding: 10px 14px;
+}
+.dark .kamis-nodata, .black .kamis-nodata {
+  color: #999;
+  background-color: #0b1016;
+  border-color:#1e2b38;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+		<script type="text/javascript" src="//s.thsi.cn/js/chameleon/chameleon.min.1783539.js"></script> <script src="//s.thsi.cn/js/m/common/bridge.js" type="text/javascript"  crossorigin></script>
+	<script type="text/javascript"  crossorigin  src="//s.thsi.cn/js/jquery-1.8.3.min.js"></script>
+	<script charset="utf-8" src="//s.thsi.cn/cb?webprivate/lib/axios.min.js;hxapp/m/base/js/vue.2.7.16.min.js" crossorigin="anonymous"></script>
+	<!-- kamis Ⱦ -->
+	<script charset="utf-8" src="//s.thsi.cn/hxapp/m/pkgs/amis-2c/sdk/v1-3/2c-sdk-register.1.3.6.js"></script>
+	<!-- °cdn -->
+	<script crossorigin src="//s.thsi.cn/cb?cd/weblog/0.0.1-alpha.27/weblog.js"></script>
+		<script>
+		var xhrProto = XMLHttpRequest.prototype;
+		var origOpen = xhrProto.open;
+		xhrProto.open = function (method, url) {
+			if (location.host.indexOf('0033.cn') > -1 && arguments[1] !== undefined && arguments[1].indexOf('10jqka.com.cn') > -1) {
+				arguments[1] = arguments[1].replace('10jqka.com.cn', '0033.cn');
+			}
+			return origOpen.apply(this, arguments);
+		};
+	</script>
+	<script>
+		var originCreateElement =  document.createElement;
+		document.createElement = function(tagName){
+			const element = originCreateElement.apply(document,arguments);
+			if(tagName.toLowerCase() === 'script'){
+				element.setAttribute('charset','utf-8');
+			}
+			return element;
+		}
+	</script>
+	<script id="monitor-script" api_key="ths_f10" src="//s.thsi.cn/cb?cd/website-thsc-f10-utils/1.6.40/monitor.js" crossorigin></script>
+	<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/common/cefapi/1.5.5/cefApi.min.js;js/basic/stock/newPcJs/common.js"></script>
+	<script>
+		try{
+			feMonitor.setConfig(
+				{
+				slientDev:false,//(localhost)ǷͱĬϲΪtrue
+				sampleRate:0.1, //,0-1֮䣬ԽСɼƵԽ
+				isCollectPerformance:true, //Ƿɼ
+				title:'pc-F10'
+				}
+			);
+		}catch(e){
+
+		}
+	</script>
+	<style>
+        .wencaibs{color:#008BFF!important;cursor:pointer;}
+        .wd-tb .ptxt { word-break: break-word;}
+        .comment-chart-head{color: #89a;}
+        .comment-chart-head span{float: right;}
+        .comment-chart-head span i{vertical-align: middle; display: inline-block; width: 20px; height: 20px;margin: 0 2px 0 6px; border-radius: 20px; overflow: hidden;}
+        .comment-chart-head .imp-news{background: #da2e1f;}
+        .comment-chart-head .yidong-news{background: #e3bf1a;}
+
+        #ckg_table1 tr td{text-align:center}
+        #ckg_table2 tr td{text-align:center}
+        #ckg_table3 tr td{text-align:center}
+        #ckg_table4 tr td{text-align:center}
+        #ckg_table5 tr td{text-align:center}
+		li{list-style-type:none;
+			list-style-position:outside;}
+		#jpjl-input:focus { outline: none; }
+		.black.inClient .clientJump {
+			cursor: pointer;
+			color: #0199fa;
+			text-decoration: underline;
+		}
+		.white.inClient .clientJump {
+			color: #07519a;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.managelist .name a {    color: #0199fa;
+			margin: 0 3px 2px;
+			text-decoration: underline;
+			border-bottom: none !important;
+		}
+	</style>
+	<!--ͳҳʱ-->
+	<script type="text/javascript">
+		var loadTimer= new Date().getTime();
+	</script>
+    <style>
+        #search_cyter{
+            display: block !important;
+        }
+		#profile .tickLabels .tickLabel{
+			padding-right:12px;
+			box-sizing:border-box;
+		}
+	  .a_cursor {
+		pointer: cursor;
+	}
+    </style>
+</head>
+<script type="text/javascript">
+
+//cookie
+function setReviewJumpState(state) {
+	document.cookie = 'reviewJump='
+					+ state
+					+ ';path=/;domain='
+					+ window.location.host;
+}
+//ȡöӦcookie
+function getCookie(name) {
+	var cookieValue = "";
+	var search = name + "=";
+	if (document.cookie.length > 0) {
+	    offset = document.cookie.indexOf(search);
+	    if (offset != -1)    {
+	        offset += search.length;
+	        end = document.cookie.indexOf(";", offset);
+	        if (end == -1) end = document.cookie.length;
+	        cookieValue = unescape(document.cookie.substring(offset, end))
+	    }
+	}
+	return cookieValue;
+}
+//Ŀǰת
+var reviewJumpState = getCookie('reviewJump');
+if (!!reviewJumpState && reviewJumpState != 'nojump') {
+	setReviewJumpState('nojump');
+	window.location.href = unescape(reviewJumpState);
+} else {
+	setReviewJumpState('nojump');
+}
+//̬link-ͬ-
+function addCssByLink(url){
+    document.write('<link rel="stylesheet" type="text/css"');
+    document.write(' href="' + url + '">');
+}
+function isMac() {
+        return /macintosh|mac os x/i.test(navigator.userAgent);
+};
+ var hash = window.location.hash.substring(1);
+hashArray = hash.split('=');
+if (hashArray[0] == 'stockpage') {
+    var STOCK_SKIN = 'white';
+} else {
+    var STOCK_SKIN = getCookie('skin_color');
+}
+//ɫͻͬ
+function syncClientSkin(){
+	try {//ȡÿͻ˷ɫ
+		if (isMac()) {
+			return 'white';
+		}
+		return 'black';
+	} catch(e) {}
+}
+if (!STOCK_SKIN) {
+	STOCK_SKIN = syncClientSkin();
+}
+document.documentElement.setAttribute("class",STOCK_SKIN);
+if (STOCK_SKIN == 'white') {
+	// addCssByLink('/f10/css/company-compare.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/company-compare-202006082100.css');
+ 
+    addCssByLink('//s.thsi.cn/cb?css/basic/stock/white/20200604153837/style_v4-2.css;css/basic/stock/white/20200604153837/chart_v2.min.20180110.css;css/basic/stock/white/20200604153837/dupont.css;css/basic/stock/white/20200604153837/black_v2-4.20190711.css;css/basic/stock/white/custom.min.css;css/basic/stock/white/20200604153837/operations.css;css/basic/stock/white/20200604153837/writecsskzd.min.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/20200604153837/survey-w.css;css/basic/stock/20200604153837/wxgcl_mod.css;css/basic/stock/provider-w_v2.css;css/basic/stock/20200604153837/searchbar-w_v2.css;css/basic/stock/20200604153837/wccept.css;css/basic/stock/wtgfx.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/fschool/20200604153837/f_school_w.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/white/wsplpager.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/wchartsdom.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/white/20200604153837/industrydata.css;css/basic/stock/white/20200604153837/main_v1-2.css;css/basic/stock/white/20200604153837/xgcl.css;css/basic/stock/white/20200604153837/courier.css;css/basic/stock/white/20200604153837/recommend.css;css/basic/stock/white/20200604153837/housedata.css;css/basic/stock/white/202005071600/20200604153837/longhu.css;css/basic/stock/white/20200604153837/operate_white.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/white/remind_white.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/index_v1.css');
+	addCssByLink('//s.thsi.cn/js/home/v5/thirdpart/scrollbar/jquery.mCustomScrollbar.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/20200604153837/instition_white_v2.css');
+	if (!!window.ActiveXObject&&!window.XMLHttpRequest) {
+		addCssByLink('//s.thsi.cn/css/basic/stock/white/20200604153837/expression.css');
+	}
+					addCssByLink("//s.thsi.cn/css/basic/common/white/title.css")
+} else {
+	// addCssByLink('/f10/css/company-compare.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/company-compare-202006082100.css');
+ 	addCssByLink('//s.thsi.cn/cb?css/basic/stock/black/20200604153837/style_v3-5.min.20200426.css;css/basic/stock/black/20200604153837/chart_v2.min.20190410.css;css/basic/stock/black/20200604153837/black_v2-4.20190711.css;css/basic/stock/black/custom.min.css;css/basic/stock/black/20200604153837/operations.css;css/basic/stock/black/20200604153837/csskzd.min.20150608.css;/css/basic/stock/20200604153837/survey.20150929.css;/css/basic/stock/provider_v2.css;/css/basic/stock/20200604153837/searchbar_v2.css;/css/basic/stock/20200604153837/ccept.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/fschool/20200604153837/f_school.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/black/splpager.20170504.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/chartsdom.css;css/basic/stock/20200604153837/xgcl_mod.css;/css/basic/stock/tgfx.css');
+	addCssByLink('//s.thsi.cn/cb?css/basic/stock/black/20200604153837/industrydata.css;css/basic/stock/black/20200604153837/main_v1-2.css;css/basic/stock/black/20200604153837/xgcl.css;css/basic/stock/black/20200604153837/courier.css;css/basic/stock/black/20200604153837/funcRecommend.css;css/basic/stock/black/20200604153837/dupont.css;css/basic/stock/black/202005071600/20200604153837/longhu.css;css/basic/stock/black/20200604153837/operate.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/black/remind_black.css');
+	addCssByLink('//s.thsi.cn/js/home/v5/thirdpart/scrollbar/jquery.mCustomScrollbar.css');
+
+	addCssByLink('//s.thsi.cn/css/basic/stock/index_v1.css');
+	addCssByLink('//s.thsi.cn/css/basic/stock/20200604153837/instition_black_v2.css');
+	if (!!window.ActiveXObject&&!window.XMLHttpRequest) {
+		addCssByLink('//s.thsi.cn/css/basic/stock/black/20200604153837/expression.min.20140801.css');
+	}
+					addCssByLink("//s.thsi.cn/css/basic/common/black/title.css")
+}
+/*calendar*/
+function  minDate(){
+ 	var data = $('#inte_json').text();
+	var datajson =new Object();
+	if (data) {
+		data = eval('('+data+')');
+	}
+	for (var x in data) {
+		datajson = data[x];
+	}
+	var minDate = datajson.year+'-'+datajson.month+'-'+datajson.day;
+	return minDate;
+ }
+ Date.prototype.Format = function(fmt)
+{ //author: meizz
+  var o = {
+    "M+" : this.getMonth()+1,                 //·
+    "d+" : this.getDate(),                    //
+    "h+" : this.getHours(),                   //Сʱ
+    "m+" : this.getMinutes(),                 //
+    "s+" : this.getSeconds(),                 //
+    "q+" : Math.floor((this.getMonth()+3)/3), //
+    "S"  : this.getMilliseconds()             //
+  };
+  if(/(y+)/.test(fmt))
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+  for(var k in o)
+    if(new RegExp("("+ k +")").test(fmt))
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+  return fmt;
+}
+ function  displayDate(){
+ 	var data = $('#inte_json').text();
+ 	var date =new Array();
+	var datajson =new Object();
+	var i=0;
+	if (data) {
+		data = eval('('+data+')');
+	}
+	for (var x in data) {
+		datajson[x] = data[x];
+		dates = datajson[x].year+'-'+datajson[x].month+'-'+datajson[x].day;
+		if (x==0|| date[i-1] != dates) {
+			date[i] = dates;
+			i++;
+		}
+	}
+	var count =date.length;
+	var date2 = new Date();
+	var month =date2.getMonth()+1;
+	var day =date2.getDate();
+	if ((date2.getMonth()+1)>9) {
+	} else {
+	 	var month ="0"+month;
+	}
+	if (date2.getDate()>9) {
+	} else {
+	 	var day ="0"+day;
+	}
+	year = date2.getFullYear();
+	date2 = year+'-'+month+'-'+day;
+	var result = "['";
+	for (i=0;i<count;i++) {
+		if (date2 == date[i]) {
+			dateArr = date2.split('-');
+			newdate = new Date(new Date(dateArr[0], dateArr[1]-1,  dateArr[2])-24*60*60*1000);
+			date2 = newdate.Format("yyyy-MM-dd");
+		} else {
+			result +=date2+"',";
+			dateArr = date2.split('-');
+			newdate = new Date(new Date(dateArr[0], dateArr[1]-1,  dateArr[2])-24*60*60*1000);
+			date2 = newdate.Format("yyyy-MM-dd");
+			i--;
+		}
+	}
+	result = result.substr(0,result.length-1)+']';
+	return result;
+ }
+    function showDatePicker1(color) {
+        WdatePicker({
+            selfCssUrl:'//s.thsi.cn/css/basic/stock/'+STOCK_SKIN+'/mydatepicker.css',
+            eCont:'WdateDiv1',
+            vel:'elDate1',
+            minDate:minDate(),
+            maxDate:'%y-%M-%d',
+            onpicked:function(dp){
+                $('#elDate1').text(dp.cal.getNewDateStr());
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            },
+            Mchanged:function(dp){
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            }
+        });
+    }
+    function showDatePicker2(color) {
+
+        WdatePicker({
+            selfCssUrl:'//s.thsi.cn/css/basic/stock/'+STOCK_SKIN+'/mydatepicker.css',
+            eCont:'WdateDiv2',
+            vel:'elDate2',
+            maxDate:'%y-%M-%d',
+            onpicked:function(dp){
+                $('#elDate2').text(dp.cal.getNewDateStr());
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            },
+            Mchanged:function(dp){
+                var invalider = $(".J_calendar").find("iframe").contents().find(".WinvalidDay");
+            }
+        });
+    }
+  function isIE() {
+	// жIE汾
+	if(document.documentMode) {
+		return document.documentMode;
+	}
+	var userAgent = navigator.userAgent.toLowerCase();
+	if (userAgent.indexOf('edge') > -1) {
+		return 'edge';
+	}
+	return false;
+  }
+	 // ʼ
+	 var initFinance = window.localStorage.getItem('initFinance');
+	 if (!initFinance) {
+		 window.localStorage.setItem('initFinance', 'init');
+		 window.localStorage.setItem('memoryPage', 'old');
+	  }
+	  // תַ
+    function jumpToUrl(url, name, anchor, conceptName) {
+	  if (!url || !name) {
+			return;
+		}
+		// ϵַл
+		var oldPage = {
+			'financen': true
+		}
+		var pageLocation = window.localStorage.getItem('memoryPage');
+      //IE
+      if (isInIEEnv() || (pageLocation && pageLocation == 'old' && oldPage[name])) {
+        location.href = url;
+	    return;
+     }
+     var code = $('#stockCode').val();
+	 var codeName = $('#stockName').val();
+	 var marketid = $('#marketId').val();
+	 var pageAnchor = anchor ? '&anchor=' + anchor : '';
+	 var host = window.location.host;
+	 var targetUrl = '//' + host + '/astockpc/astockmain/index.html#/' + name + '?code=' + code + '&marketid=' + marketid + '&code_name=' + codeName + pageAnchor;
+	 if (conceptName) {
+		 targetUrl += "&cname=" + conceptName;
+	 }
+     location.href = targetUrl;
+    }
+	// תµַ
+	function jumpToNew() {
+       var code = $('#stockCode').val();
+	   var codeName = $('#stockName').val();
+	   var marketid = $('#marketId').val();
+	   var url = window.location.href;
+	   var module = url.match(/\/(\w+).html?/);
+	   var moduleName = '';
+	   var host = window.location.host;
+	   if (module && module[1]) {
+		   moduleName = module[1];
+		   if (module[1] == 'finance') {
+			   moduleName = 'financen';
+		   }
+	   }
+	   window.TA.log('F10hs_cwfx.tyxbb.click');
+	   window.localStorage.setItem('memoryPage', 'new');
+	   setTimeout(function (){
+		  location.href = '//' + host + '/astockpc/astockmain/index.html#/' + moduleName + '?code=' + code + '&marketid=' + marketid + '&code_name=' + codeName;
+	   }, 10)
+	}
+</script>
+    <script type="text/javascript" charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/qdc_ad-510a70.js"></script>
+	<link href="//s.thsi.cn/css/basic/stockph/qdc_ad-6e8683.css" rel="stylesheet" type="text/css">
+ 
+<body>
+<div class="votepopbox votesuccess" style="display: none">
+		<div class="vpopicon"></div>
+		<p class="vpoptxt fz18">ллı</p>
+		<p class="vpoptxt">֧Ķ</p>
+	</div>
+	<div class="votepopbox voteinfo" style="display: none">
+		<div class="vpopicon"></div>
+		<p class="vpoptxt fz18">лл֧</p>
+		<p class="vpoptxt"></p>
+	</div>
+    <div class="wrapper">
+<!-- F10 Header Start -->
+		<div class="header">
+		    <div class="hd">
+		        <div class="logo fl" id="logo_self"><a title="ͬ˳F10">ͬ˳F10</a></div>
+
+															<div onclick="sendTalog('f10_click_quot')" style="width:260px; margin-left:60px; font-size:14px;cursor:pointer;margin-right:10px;display:none;text-align:center" class="fl tip " id="quotedata">
+							<div  class="fl">¼ۣ <span style="width:40px" class="upcolor" id="zxj">--</span></div>
+							<div  class="fr">ǵ <span style="width:40px;" class="upcolor" id="zdf">--</span></div>
+						</div>
+											        <span class="fr skin-change"><a href="###"></a></span>
+		        <div class="search fr" id="search_cyter">
+		            <div id="updownchange" type="once" class="codeChange fl" style="display: none;">
+		                <a href="javascript:void(0)" class="per">һ</a>
+		                <a href="javascript:void(0)" class="next">һ</a>
+		            </div>
+		            <div class="fl searchbar">
+			            <div class="text fl">
+			                <input type="text" id="jpjl-input" value="Ʊƻ" /><!--ıý.searchbarhover-->
+			             </div>
+		                <input type="button" value="" class="btn" id="submit"/>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="bd clear">
+		        <div class="code fl">
+					<div><h1 style="margin:3px 0px 0px 0px">
+												</h1></div>
+					<div>
+						<a href="interactive.html" tid="wdm" posid="r1c1" class="iwen" onclick="TA.log({'id':'F10_review','nj':1})">iʶ</a>
+						<style>
+							.qiyehao {
+								display:none;
+								float:left;
+								cursor:pointer;
+								margin: 4px 0 0 17px;
+								width:50px;
+								text-align:center;
+								font-size:12px;
+								padding: 2px  0 4px 0;
+								line-height:12px;
+							    border-radius:6px;
+								color: white;
+                                background-color:#437eb7;
+							}
+							.black  .qiyehao {
+								background-color: #b60006;
+							}
+						</style>
+						<div class="qiyehao">ҵ</div>
+						<h1 style="margin:3px 0px 0px 0px">
+						300821						</h1>
+						<script>
+							 $(document).ready(function(){
+								//ȡг
+                                var market = $('#marketId').val();
+								//ȡƱ
+								var code = $('#stockCode').val();
+								//жǷB
+								var isBStock = function () {
+									var flag = market == '18' || market == '34' || market == '105';
+									return flag;
+								}
+								
+								//BɺIeвչʾҵ
+								if(isBStock() || isInIEEnv()){
+									return ;
+								}
+								isThsClient(function(){
+                                   //ضʴ
+								   $('.iwen').hide();
+                                   //չʾҵ
+								   $('.qiyehao').show();
+								   $(document).on ('click','.qiyehao',function(){
+                                      var url = 'https://board.10jqka.com.cn/fe/board/qyh.html#/qyh/homepage?thscode=' + code  + '&marketid=' + market + '&from=f10';
+									    window.API.use({
+										  method: "Util.openURL2",
+										  data:{
+											url: url,
+											mode: 1,
+											useCef: true,
+										  }
+									    })
+								    })
+								})
+							 })
+						</script>
+					</div>
+		        </div>
+		        <div class="nav">
+		            <ul>
+		                <li><a href="./"              target="_self" tid="zxdt" posid="r1c3" >¶̬</a></li>
+		                <li><a href="javascript:void(0)" onclick="jumpToUrl('./company.html', 'company', '');return false;"   target="_self" tid="gszl" posid="r1c4" > ˾</a></li>
+		                <li><a href="./holder.html"   target="_self" tid="gdyj" posid="r1c5" >ɶо</a></li>
+						<li><a href="javascript:void(0)" onclick="jumpToUrl('./operate.html', 'operate', '');return false;" target="_self" tid="jyfx" posid="r1c6"  class="cur"> Ӫ</a></li>
+		                <li><a href="./equity.html"   target="_self" tid="gbjg" posid="r1c7" >ɱṹ</a></li>
+		                <li><a href="./capital.html"  target="_self" tid="zbyz" posid="r1c8" > ʱ</a></li>
+		                <li><a href="./worth.html"    target="_self" tid="ylyc" posid="r1c9"  >ӯԤ</a></li>
+		                <li><a href="./news.html"     target="_self" tid="xwgg" posid="r2c3" >Ź</a></li>
+						<li><a  href="javascript:void(0)"  onclick="jumpToUrl('./concept.html', 'concept', '');return false;"target="_self" tid="gntc" posid="r2c4" ></a></li>
+		                <li><a  href="javascript:void(0)"  onclick="jumpToUrl('./position.html', 'position', '');return false;"target="_self" tid="zlcc" posid="r2c5" >ֲ</a></li>
+		                <li><a href="javascript:void(0)"  onclick="jumpToUrl('./finance.html', 'financen', '');return false;" target="_self" tid="cwgk" posid="r2c6" > </a></li>
+						<li><a href="javascript:void(0)"  onclick="jumpToUrl('./bonus.html', 'bonus', '');return false;" target="_self" tid="fhrz" posid="r2c7" >ֺ</a></li>
+						<li><a href="./event.html"    target="_self" tid="gsds" posid="r2c8" >˾</a></li>
+		                <li><a href="./field.html"    target="_self" tid="hydb" posid="r2c9" >ҵԱ</a></li>
+		            </ul>
+		        </div>
+		        <div class="subnav">
+					<ul>
+					   						<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="bjprice" taid="f10_click_bjprice" name="operate.html#bjprice" href="###">׾Ƽ۸							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="intro" taid="f10_click_intro" name="operate.html#intro" href="###">Ӫ							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="invest" taid="f10_click_invest" name="operate.html#invest" href="###">Ӫҵ							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="analysis" taid="f10_click_analysis" name="operate.html#analysis" href="###">Ӫɷ							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="provider" taid="f10_click_provider" name="operate.html#provider" href="###">ҪͻӦ							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="price" taid="f10_click_price" name="operate.html#price" href="###">Ʒ۸							</a>
+						</li>
+												<li>
+							<a style="position:relative;height:25px;" class="skipto" type="" nav="observe" taid="f10_click_observe" name="operate.html#observe" href="###">»ᾭӪ							</a>
+						</li>
+								            </ul>
+		        </div>
+		    </div>
+		</div>
+<!-- F10 Header End -->
+<!-- F10 Content Start -->
+		<style>
+		.iwc_searchbar{display: none;}
+	</style>
+		<div class="iwc_searchbar clearfix" style="">
+    <div class="tips-box" style="display: none;">
+        <div class="t-hd"></div>
+        <div class="t-bd">
+            <div class="info">
+                <p>F10 ҲֱҪĹܣ롰񡱣ϿһŶ</p>
+                <div class="btn">
+                    <a href="###" class="a-left close"></a>
+                    <a href="###" class="a-right next">һ</a>
+                </div>
+            </div>
+            <div class="info" style="display: none;">
+                <p>ѡѡãֱҪʾ롰һǷ30%ĹƱϽжɣ</p>
+                <div class="btn">
+                    <a href="###" class="a-left prev">һ</a>
+                    <a href="###" class="a-right close"></a>
+                </div>
+            </div>
+        </div>
+        <div class="t-ft"></div>
+   	 </div>
+     <div class="searchfx">
+        <input id="search_input" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh_CN" class="fillbox" autocomplete="off" type="text" value="ʾ䣬֪Ķ">
+        <input class="action_btn" id="search_submit" type="button" value="">
+        <span  class="tips-icon"></span>
+     </div>
+	</div>
+	<div class="content page_event_content" >	
+<style type="text/css">
+    .ls-tags-wrap{
+        display: inline-block;
+        width: 100px;
+        font-weight: 400;
+    }
+    .ls-tags{
+        font-size: 12px;
+        color: #fff;
+        border-radius: 3px;
+        background: #f10f10;
+        padding: 0 3px;
+        margin: 0 5px;
+        height: 18px;
+        line-height: 17px;
+        display: inline-block;
+    }
+    .lp-price-chart{
+        height: 250px;
+        width: 866px;
+    }
+    .lcomment-pic{
+        margin-top: 2px;
+        width: 71px;
+        height: 44px;
+        float: left;
+        margin-right: 20px;
+    }
+    .lp-data-list{
+        overflow: hidden;
+        zoom: 1;
+    }
+    .lp-data-list li{
+        padding-left: 20px;
+        background: url(//i.thsi.cn/images/basic/stock/lp-data-icon.png) no-repeat 0 50%;
+    }
+    .lp-data-table td{
+        text-align: center;
+    }
+    .lp-data-table th{
+        font-size: 14px;
+    }
+    .lp-data-table .m_select .text{
+        font-size: 12px;
+    }
+    .lp-desc{
+        padding: 15px;
+        border: 1px solid #1e2b38;
+        border-bottom: none;
+        position: relative;
+        min-height: 35px;
+    }
+    .lp-box .m_tab_content2{
+        padding-top: 0;
+    }
+    .lp-box .m_select{
+        font-size: 12px;
+    }
+    .lp-sale-type, .lp-area-type{
+        display: none;
+        height: 100%;
+    }
+    .lp-city-area li{
+        float: left;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 28px;
+        font-size: 14px;
+        color: #999;
+        margin-right: 1px;
+    }
+    .lp-city-chart{
+        height: 244px;
+        border: 1px solid #344459;
+    }
+    .lp-city-trend-chart, .lp-city-money-chart{
+        height: 244px;
+        float: left;
+        width: 431px;;
+    }
+    .lp-city-trend-chart{
+        border-right: 1px solid #344459;
+    }
+    .lp-box .pager li a{
+        width: auto;
+        padding: 0 5px;
+    }
+    .lp-box .m_select .list{
+        z-index: 9
+    }
+</style>
+
+<!-- Ӫ -->
+<div class="m_box main_intro i_hover_box" id="intro" stat="operate_intro" itag='0'>
+	<div class="hd">
+		<h2>Ӫ</h2>
+	</div>
+	<div class="bd pt5">
+		<div class="mt15">
+			<!--<div class="threecate pd5 clearfix"><p class="fl">excelʽ</p><a class="fr export_excel" href="#"><s></s>EXCEL</a></div>
+			--><ul class="main_intro_list">
+				<li><span class="hltip f12">Ӫҵ</span><p>лϵзۡ</p></li>
+				<li><span class="hltip f12">Ʒͣ</span><p>м塢107110Һ彺ͪ̿͡</p></li>
+				<li><span class="hltip f12">Ʒƣ</span><p>
+																    																	    																	    					֬												    					̿																</p></li>
+				<li><span class="hltip f12">ӪΧ</span><p>ۼ׻ȹ飨MeH׻ȹ飨Me3׻ȹ飨Melᡢᡢ׻ȹ飨Me2ۡǾεġмƷ׻ȹϵ壨׻ȹ82%׻ȹ7%׻ȹ5%׻ȹ3%мƷЧ֤Ϊ׼ۼ״дʩľӪЧ֤Ϊ׼л赥塢лм塢輰ࡢࡢ֬ࡢϵеӹƷԲƷΣջѧƷڡ(뾭׼Ŀز׼󷽿ɿչӪ)</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="ft"></div>
+</div>
+
+<!-- Ӫҵ -->
+<div class="m_box gqtz i_hover_box" id="invest" stat="operate_invest" itag='1'>
+	<div class="hd">
+		<h2>Ӫҵ</h2>
+	</div>
+		<div class="bd pt5">
+			<div class="clearfix">
+				<div class="m_tab mt15 clearfix">
+					<ul>
+					    					    						<li class="cur"><a href="javascript:void(0)" class="operateTab" tag="0">ĩֵ</a></li>
+																		<li ><a href="javascript:void(0)" class="operateTab" tag="1">ۼֵ</a></li>
+																	</ul>
+					<div class="fr">¹ڣ<span class="tip">2026-03-26</span></div>
+				</div>
+																<div class="m_tab_content"  >
+					<table class="m_table m_hl" id="operate_table">
+						<thead>
+							<tr>
+								<th width="170px">ҵ</th>
+																<th>2025-12-31</th>
+																<th>2024-12-31</th>
+																<th>2023-12-31</th>
+																<th>2022-12-31</th>
+																<th>2021-12-31</th>
+															</tr>
+						</thead>
+						<tbody>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:Ʋ:м(/)</td>
+																<td>30.10</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:ʵ()</td>
+																<td>1.19</td>
+																<td>1.08</td>
+																<td>1.93</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">ʵۿ()</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>1.16</td>
+																<td>3655.95</td>
+															</tr>
+													</tbody>
+					</table>
+					<div class="pager clearfix">
+														</div>
+				</div>
+																<div class="m_tab_content"  style="display:none;">
+					<table class="m_table m_hl" id="operate_table1">
+						<thead>
+							<tr>
+								<th width="170px">ҵ</th>
+																<th>2025-12-31</th>
+																<th>2025-06-30</th>
+																<th>2024-12-31</th>
+																<th>2024-06-30</th>
+																<th>2023-12-31</th>
+															</tr>
+						</thead>
+						<tbody>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:м(%)</td>
+																<td>87.83</td>
+																<td>-</td>
+																<td>107.77</td>
+																<td>-</td>
+																<td>98.05</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:ʵ()</td>
+																<td>37.26</td>
+																<td>-</td>
+																<td>42.17</td>
+																<td>-</td>
+																<td>37.99</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:ʵ()</td>
+																<td>37.16</td>
+																<td>-</td>
+																<td>43.01</td>
+																<td>-</td>
+																<td>37.22</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">ר:Ȩר()</td>
+																<td>14.00</td>
+																<td>12.00</td>
+																<td>16.00</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:107(Ԫ)</td>
+																<td>15.13</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:110(Ԫ)</td>
+																<td>4.14</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:(Ԫ)</td>
+																<td>5.32</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:107(Ԫ)</td>
+																<td>15.07</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:110(Ԫ)</td>
+																<td>4.11</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:(Ԫ)</td>
+																<td>5.21</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:ʵʲ:м()</td>
+																<td>-</td>
+																<td>-</td>
+																<td>30.10</td>
+																<td>-</td>
+																<td>30.10</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">:ʵʲ:л赥()</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>60.00</td>
+																<td>-</td>
+															</tr>
+														<tr>
+								<td style="text-align:left;font-size:12px" class="tl f12">ר:Ȩר:ר()</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>-</td>
+																<td>14.00</td>
+															</tr>
+													</tbody>
+					</table>
+					<div class="pager clearfix">
+															<div class="fr pagernav">
+						<ul class="clearfix fr pagescroll" tag='invest'>
+													<li class="cur" id="operate_table_1fy1">
+								<a href="javascript:void(0)" onclick="hy3_sorter_21.move(1,'operate_table_1fy1')">1</a>
+								<s class="lb"></s><s class="rb"></s>
+							</li>
+													<li  id="operate_table_1fy2">
+								<a href="javascript:void(0)" onclick="hy3_sorter_21.move(2,'operate_table_1fy2')">2</a>
+								<s class="lb"></s><s class="rb"></s>
+							</li>
+												</ul>
+					</div>
+									</div>
+				</div>
+															</div>
+	</div>				
+<div class="ft"></div>
+</div>
+
+<!-- Ӫɷ -->
+<style>
+	.date-show-icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.img/m/atom/79176f26-b101-42db-be07-037d99804f4f.png')
+	}
+	.white .date-show-icon {
+		background-image: url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.img/m/atom/2a7d35c8-c727-4a97-81a8-e5945a54de7a.png')
+	}
+	.date-left-icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/b00ef51b-af88-4bff-8b2c-9d00edf67c3f.svg')
+	}
+	.date-left-icon.off {
+		cursor: no-drop;		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/c139ceb6-3275-403f-9b43-d28384bf6d58.svg');
+	}
+	.white .date-left-icon {
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/e760b470-fb28-4bb3-ad65-7febf598384c.svg')
+	}
+	.white .date-left-icon.off {
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/fb941308-c46b-4144-aa2d-2afdab25e399.svg');
+		cursor: no-drop;
+	}
+	.date-right-icon {
+		width: 20px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/b00ef51b-af88-4bff-8b2c-9d00edf67c3f.svg');
+		transform: rotate(180deg);
+	}
+	.date-right-icon.off {
+		cursor: no-drop;		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/c139ceb6-3275-403f-9b43-d28384bf6d58.svg');
+	}
+	.white .date-right-icon {
+		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/e760b470-fb28-4bb3-ad65-7febf598384c.svg')
+	}
+	.white .date-right-icon.off {
+		cursor: no-drop;		background-image:url('//i.thsi.cn/staticS3/mobileweb-upload-static-server.file/m/atom/fb941308-c46b-4144-aa2d-2afdab25e399.svg');
+	}
+	.date-ul {
+		display: flex;
+		gap: 1px;
+		cursor: pointer;
+		position: relative;
+	}
+	.date-list {
+		display: flex;
+		gap: 1px;
+		max-width: 873px;
+		overflow-y:clip;
+	}
+	.date-show-select {
+		background-color: #324054;
+		display: flex;
+		width: 27px;
+		height: 27px;
+		justify-content: center;
+		align-items: center;
+	}
+	.white .date-show-select {
+		background-color: #ebebeb;
+	}
+	.swiper-wrapper {
+		height: 27px;
+		font-size: 12px;
+	}
+	.date-li {
+		background-color: #324054;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		font-weight: 700;
+		max-width: 91px;
+	}
+	.white .date-li{
+		background-color: #ebebeb;
+		color: #666;
+		
+	}
+	.date-li.selected {
+		color: #ffb400;
+		background-position: 100% -316px;
+		background:#314156 url(//i.thsi.cn/images/basic/stock/nav_tab_bg.png) no-repeat 0 0;
+	}
+	.white .date-li.selected {
+		color: #333;
+		background: #ddd url(//i.thsi.cn/images/stockpage/new/nav_tab_bg.png) no-repeat 100% 0;
+	}
+	.swiper-container-dates {
+		width: 100%;
+		overflow: hidden;
+		z-index: 1;
+	}
+	#zyjg-dates-container {
+		height: 27px;
+	}
+	.charttit-nodata {
+	    color: #8294a6;
+		font-weight: 700;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.chartit-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.m_select .list li {
+		border-right: none;
+	}
+</style>
+<div class="m_box i_hover_box" id="analysis" stat="operate_analysis" itag='2'>
+	<div class="hd">
+		<h2>Ӫɷ</h2>
+	</div>
+	<div class="bd pt5">
+		<div class="chart_nav clearfix mt15">
+			<ul id="chartNav" class="nav_tab fl">
+				<li class="current"><a href="javascript:void(0)" data-type="YYSR">Ӫҵ</a></li>
+				<li><a href="javascript:void(0)" data-type="YYCB">Ӫҵɱ</a></li>
+				<li><a href="javascript:void(0)" data-type="LRBL"></a></li>
+				<!--<li><a href="javascript:void(0)" data-type="MLL">ë</a></li>-->
+			</ul>
+			<div id="periodSelect" class="field_date">
+				<div class="m_select">
+					<div class="text"><s></s><span></span></div>
+					<ul class="list none" style="border:1px solid #292e34; height: 132px;overflow-y:auto;">
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div class="clearfix" style="padding-bottom: 24px;">
+			<table class="m_table m_hl">
+				<tbody>
+					<tr id="chartWrapContains" style="padding:0px;height:255px;width:100%;boder:1px solid #344459;">
+						<td class="tc" id="chartWrapkey+" style="padding:0px;height:255px;width:296px;">
+						   <div style="width: 295px;margin: 0 auto;overflow: hidden;height: 255px;position:relative;">
+						       <p class="charttit"></p>
+							   <p class="charttit-nodata chartit-center">...</p>
+						       <div class="chartmain fl" style="width: 165px;height:170px;margin-top: 22px"></div>
+						       <div class="chartinfo fl" style="width: 130px;"></div>
+					        </div>
+				        </td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="rp_tipBox none">
+				<p class="rp_tipTitle_box">
+					<strong class="rp_tipTitle">Ӫҵ</strong>
+					<span class="close">X</span>
+				</p>
+				<div class="rp-select">
+					<div class="rp-select-item">
+						<input class="rp-input" type="checkbox" checked="checked" name="SRBL" id="rp_srbl" >
+						<label></label>
+					</div>
+					<div class="rp-select-item">
+						<input class="rp-input" type="checkbox" name="YYSR" id="rp_yysr" >
+						<label>Ӫҵ</label>
+					</div>
+				</div>
+				<div class="rp-unit">
+					<span class="rp-unit-left">λ%</span>
+					<span class="rp-unit-right">λԪ</span>
+				</div>
+				<div id="rp_hightChart" style="width: 540px;height: 260px;"></div>
+			</div>
+		</div>
+		
+		<div class="date-ul" id="table-date-list" style="display:none;">
+			<div id="periodSelect_v2" class="date-show-select">
+				<div class="m_select" style="position:absolute;z-index: 100;width: 100px;top:28px;left:0px;">
+					<ul class="list none" style="border:1px solid #292e34;height: 132px;overflow-y:auto;">
+					</ul>
+				</div>
+				<div class="date-show-icon" src=""></div>
+			</div>
+			
+			<div id="zyjg-dates-pre" class="date-show-select"><div class="date-left-icon off" src=""></div></div>
+			<div class="swiper-container-dates" id="zyjg-dates-container">
+				<div class="swiper-wrapper" id="swiper-date-line">
+				</div>
+			</div>
+			<div id="zyjg-dates-next" class="date-show-select"><div class="date-right-icon" src=""></div></div>	
+		</div>
+		<div class="m_tab_content">
+			<table class="m_table m_hl">
+				<thead>
+					<tr>
+						<th colspan="2">ҵ</th>
+						<th>Ӫҵ(Ԫ)</th>
+						<th></th>
+						<th>Ӫҵɱ(Ԫ)</th>
+						<th>ɱ</th>
+						<th>Ӫ(Ԫ)</th>
+						<th></th>
+						<th>ë</th>
+					</tr>
+				</thead>
+				<tbody id="table_zygc">
+				    <tr>
+						<th rowspan="1" colspan="9" style="position:relative;height:150px;">
+					        <div class="charttit-nodata">...</div>
+					    </th>
+				    </tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="fr">ע<span class="tip">ͨб걨ʱ¶</span></div>
+	</div>
+	
+	<div class="ft"></div>
+</div>
+<!-- ҪͻӦ -->
+<div class="m_box" id="provider" stat="operate_provider" >
+<div class="hd">
+    <h2>ҪͻӦ</h2>
+    <div class="opinion_opts_wraper fr evaluate" tag="provider">
+	    <b class="oow_left fl"></b>
+	    <div class="oow_cont fl"><span>ԴĿۣ</span><a class="opinion_up" tag="support" href="javascript:void(0)">  <span class="opi_up">
+	    </span></a><a class="opinion_down" tag="opposition" href="javascript:void(0)"> û <span class="opi_down"></span></a>
+	    <span class="btn_idea" onclick="sendTalog('f10_stock_advice')"><a onclick="$('.f10_append_advice').click();" title="ҪὨ" href="javascript:void(0)">Ὠ</a></span></div><b class="oow_right fl"></b>
+	</div>
+</div>
+<div class="bd pt5" >
+<div class="m_tab mt15">
+    <ul>
+                        <li class="cur"><a href="javascript:void(0);" class="operateTab" tag="0">2025-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="1">2024-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="2">2023-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="3">2022-12-31</a></li>
+                        <li class=""><a href="javascript:void(0);" class="operateTab" tag="4">2021-12-31</a></li>
+                    </ul>
+</div>
+  	<!--һҳ-->
+  	 	 		<div class="m_tab_content clearfix ">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--  ͻ-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5ͻ<i>4.27</i>Ԫ,ռӪҵ<i>11.32%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-0"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>ͻ</th>
+                        <th>۶Ԫ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">1.37</td>
+		                <td class="tc">3.63%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">8931.57</td>
+		                <td class="tc">2.37%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">7542.76</td>
+		                <td class="tc">2.00%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">7048.40</td>
+		                <td class="tc">1.87%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">5478.18</td>
+		                <td class="tc">1.45%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!-- ұ -->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5Ӧ̣ɹ<i>14.53</i>Ԫ,ռܲɹ<i>48.89%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-1"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>Ӧ</th>
+                        <th>ɹԪ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">7.30</td>
+		                <td class="tc">24.57%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">2.33</td>
+		                <td class="tc">7.85%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.11</td>
+		                <td class="tc">7.11%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.40</td>
+		                <td class="tc">4.72%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.38</td>
+		                <td class="tc">4.64%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--  ͻ-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5ͻ<i>7.28</i>Ԫ,ռӪҵ<i>14.13%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-2"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>ͻ</th>
+                        <th>۶Ԫ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">1.84</td>
+		                <td class="tc">3.56%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">1.70</td>
+		                <td class="tc">3.30%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.50</td>
+		                <td class="tc">2.91%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.28</td>
+		                <td class="tc">2.49%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">9655.01</td>
+		                <td class="tc">1.87%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!-- ұ -->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5Ӧ̣ɹ<i>24.24</i>Ԫ,ռܲɹ<i>58.91%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-3"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>Ӧ</th>
+                        <th>ɹԪ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">10.69</td>
+		                <td class="tc">25.97%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">5.96</td>
+		                <td class="tc">14.49%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.76</td>
+		                <td class="tc">6.70%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.61</td>
+		                <td class="tc">6.35%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.22</td>
+		                <td class="tc">5.40%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--  ͻ-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5ͻ<i>7.14</i>Ԫ,ռӪҵ<i>14.88%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-4"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>ͻ</th>
+                        <th>۶Ԫ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">2.03</td>
+		                <td class="tc">4.24%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">1.70</td>
+		                <td class="tc">3.53%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.23</td>
+		                <td class="tc">2.57%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.18</td>
+		                <td class="tc">2.47%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">9940.64</td>
+		                <td class="tc">2.07%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!-- ұ -->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5Ӧ̣ɹ<i>23.77</i>Ԫ,ռܲɹ<i>56.29%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-5"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>Ӧ</th>
+                        <th>ɹԪ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">14.25</td>
+		                <td class="tc">33.76%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">2.67</td>
+		                <td class="tc">6.32%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.62</td>
+		                <td class="tc">6.21%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.47</td>
+		                <td class="tc">5.86%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.75</td>
+		                <td class="tc">4.14%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--  ͻ-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5ͻ<i>8.01</i>Ԫ,ռӪҵ<i>11.88%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-6"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>ͻ</th>
+                        <th>۶Ԫ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">2.64</td>
+		                <td class="tc">3.92%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">1.67</td>
+		                <td class="tc">2.48%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.63</td>
+		                <td class="tc">2.41%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.14</td>
+		                <td class="tc">1.69%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">9301.65</td>
+		                <td class="tc">1.38%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!-- ұ -->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5Ӧ̣ɹ<i>32.44</i>Ԫ,ռܲɹ<i>60.02%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-7"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>Ӧ</th>
+                        <th>ɹԪ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">16.27</td>
+		                <td class="tc">30.10%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">7.15</td>
+		                <td class="tc">13.23%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">3.78</td>
+		                <td class="tc">7.00%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.62</td>
+		                <td class="tc">4.85%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.62</td>
+		                <td class="tc">4.84%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+			<div class="m_tab_content clearfix none">
+			      <div class="m_tab_content clearfix ">
+	      	  <!--  ͻ-->
+            <div class="m_charts_box">
+            	                <div class="m_charts_tit">              
+                	 ǰ5ͻ<i>4.93</i>Ԫ,ռӪҵ<i>11.38%</i>
+                 </div>    
+                            
+                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-8"></div>
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon" ></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon" ></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon" ></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon" ></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>ͻ</th>
+                        <th>۶Ԫ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">1.21</td>
+		                <td class="tc">2.79%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">1.04</td>
+		                <td class="tc">2.40%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">9962.77</td>
+		                <td class="tc">2.30%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">8831.89</td>
+		                <td class="tc">2.04%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">7993.00</td>
+		                <td class="tc">1.84%</td>
+		           	 </tr>
+   					               
+                    </tbody>
+                </table>
+                            </div>
+            
+            <!-- ұ -->
+            <div class="m_charts_box">
+                                <div class="m_charts_tit">
+                	ǰ5Ӧ̣ɹ<i>12.10</i>Ԫ,ռܲɹ<i>25.77%</i>
+                </div>
+                                <div class="m_charts_cont">
+                    <div class="m_charts_pie" id="charts-9"></div>                    
+                    <ul class="m_charts_info">
+                                                                    	                        <li><i class="charts_icon1 charts_icon"></i>һ</li>
+                                                                                            	                        <li><i class="charts_icon2 charts_icon"></i>ڶ</li>
+                                                                                            	                        <li><i class="charts_icon3 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon4 charts_icon"></i></li>
+                                                                                            	                        <li><i class="charts_icon5 charts_icon"></i></li>
+                                                                                                <li><i class="charts_icon6 charts_icon"></i></li>   
+                    </ul>
+                </div>
+                <table class="m_table m_hl ">
+                    <thead>
+                    <tr>
+                        <th>Ӧ</th>
+                        <th>ɹԪ</th>
+                        <th>ռ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+   					                    	                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">һ</div></td>
+		                <td class="tc">3.98</td>
+		                <td class="tc">8.46%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname">ڶ</div></td>
+		                <td class="tc">2.80</td>
+		                <td class="tc">5.96%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">2.71</td>
+		                <td class="tc">5.78%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.40</td>
+		                <td class="tc">2.98%</td>
+		           	 </tr>
+   						                 <tr class="">
+      
+	                	<td class="tc"> <div class="clientname"></div></td>
+		                <td class="tc">1.21</td>
+		                <td class="tc">2.58%</td>
+		           	 </tr>
+   					                   
+                    </tbody>
+                </table>
+                            </div>
+            <div class="clearfix"></div>
+        </div>
+	   	</div>
+		   	<div style="display:none" id = "providerflash">{"2025-12-31":{"supplier":[{"name":"\u7b2c\u4e00\u540d","y":73004.27},{"name":"\u7b2c\u4e8c\u540d","y":23341.12},{"name":"\u7b2c\u4e09\u540d","y":21114.13},{"name":"\u7b2c\u56db\u540d","y":14013.54},{"name":"\u7b2c\u4e94\u540d","y":13801.06},{"name":"\u5176\u4ed6","y":151870.73}],"customer":[{"name":"\u7b2c\u4e00\u540d","y":13682.66},{"name":"\u7b2c\u4e8c\u540d","y":8931.57},{"name":"\u7b2c\u4e09\u540d","y":7542.76},{"name":"\u7b2c\u56db\u540d","y":7048.4},{"name":"\u7b2c\u4e94\u540d","y":5478.18},{"name":"\u5176\u4ed6","y":334379.8}]},"2024-12-31":{"supplier":[{"name":"\u7b2c\u4e00\u540d","y":106854.25},{"name":"\u7b2c\u4e8c\u540d","y":59644.64},{"name":"\u7b2c\u4e09\u540d","y":27557.21},{"name":"\u7b2c\u56db\u540d","y":26134.77},{"name":"\u7b2c\u4e94\u540d","y":22209.91},{"name":"\u5176\u4ed6","y":169075.68}],"customer":[{"name":"\u7b2c\u4e00\u540d","y":18361.1},{"name":"\u7b2c\u4e8c\u540d","y":17016.8},{"name":"\u7b2c\u4e09\u540d","y":14970.37},{"name":"\u7b2c\u56db\u540d","y":12808.97},{"name":"\u7b2c\u4e94\u540d","y":9655.01},{"name":"\u5176\u4ed6","y":442490.34}]},"2023-12-31":{"supplier":[{"name":"\u7b2c\u4e00\u540d","y":142538.21},{"name":"\u7b2c\u4e8c\u540d","y":26703.23},{"name":"\u7b2c\u4e09\u540d","y":26225.28},{"name":"\u7b2c\u56db\u540d","y":24733.59},{"name":"\u7b2c\u4e94\u540d","y":17461.49},{"name":"\u5176\u4ed6","y":184547.83}],"customer":[{"name":"\u7b2c\u4e00\u540d","y":20348.63},{"name":"\u7b2c\u4e8c\u540d","y":16954.98},{"name":"\u7b2c\u4e09\u540d","y":12321.55},{"name":"\u7b2c\u56db\u540d","y":11847.82},{"name":"\u7b2c\u4e94\u540d","y":9940.64},{"name":"\u5176\u4ed6","y":408516.63}]},"2022-12-31":{"supplier":[{"name":"\u7b2c\u4e00\u540d","y":162688.32},{"name":"\u7b2c\u4e8c\u540d","y":71522.6},{"name":"\u7b2c\u4e09\u540d","y":37818.98},{"name":"\u7b2c\u56db\u540d","y":26203.15},{"name":"\u7b2c\u4e94\u540d","y":26171.19},{"name":"\u5176\u4ed6","y":216089.33}],"customer":[{"name":"\u7b2c\u4e00\u540d","y":26418.45},{"name":"\u7b2c\u4e8c\u540d","y":16703.82},{"name":"\u7b2c\u4e09\u540d","y":16258.25},{"name":"\u7b2c\u56db\u540d","y":11371},{"name":"\u7b2c\u4e94\u540d","y":9301.65},{"name":"\u5176\u4ed6","y":593795.02}]},"2021-12-31":{"supplier":[{"name":"\u7b2c\u4e00\u540d","y":39761.77},{"name":"\u7b2c\u4e8c\u540d","y":28008.27},{"name":"\u7b2c\u4e09\u540d","y":27127.88},{"name":"\u7b2c\u56db\u540d","y":14000.92},{"name":"\u7b2c\u4e94\u540d","y":12131.32},{"name":"\u5176\u4ed6","y":348625.09}],"customer":[{"name":"\u7b2c\u4e00\u540d","y":12104.04},{"name":"\u7b2c\u4e8c\u540d","y":10411.99},{"name":"\u7b2c\u4e09\u540d","y":9962.77},{"name":"\u7b2c\u56db\u540d","y":8831.89},{"name":"\u7b2c\u4e94\u540d","y":7993},{"name":"\u5176\u4ed6","y":383945}]}}</div>
+	</div>
+  <div class="ft"></div>
+</div>
+
+<!-- »ᾭӪ -->
+<div class="m_box" id="observe" stat="operate_observe">
+	<div class="hd">
+		<h2>»ᾭӪ</h2>
+	</div>
+	<div class="bd">
+		<div class="m_tab">
+			<ul>
+												<li class="cur"><a href="javascript:void(0);" tag="0" class="operateTab">2025-12-31</a></li>
+												<li ><a onclick="TA.log({'id':'f10_jyfx_jyps','nj':1})"href="javascript:void(0);" tag="1" class="operateTab">2025-06-30</a></li>
+												<li ><a onclick="TA.log({'id':'f10_jyfx_jyps','nj':1})"href="javascript:void(0);" tag="2" class="operateTab">2024-12-31</a></li>
+											</ul>
+		</div>
+						<div class="m_tab_content m_tab_content2" >
+			<p class="f14 pr">
+				һڹ˾µҪҵ񡡡˾ء֤ȯй˾ɼָ3šҵϢ¶еġҵҵ񡱵¶ҪҪԭϵĲɹģʽԭϼ۸һڷش仯ԭ򡡡۸µҪ¡ȡõĻڣ˾ȡáɽлϹɷ޹˾׻ȹҵ켼Ŀһй˾ַͣΡ20257¹˾ϳɳB ¹ʣ²װֱͣ202511µ½ָͣӪҵռ2025ȾӪҵ...								<span style="display: inline-block;width: 70px;"></span>
+				<a class="more fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">鿴ȫ</a>
+							</p>
+			<p class="f14 none clearfix pr">
+				һڹ˾µҪҵ<br />˾ء֤ȯй˾ɼָ3šҵϢ¶еġҵҵ񡱵¶ҪҪԭϵĲɹģʽ<br />ԭϼ۸һڷش仯ԭ<br />۸µҪ¡<br />ȡõĻ<br />ڣ˾ȡáɽлϹɷ޹˾׻ȹҵ켼Ŀһ<br />й˾ַͣ<br />20257¹˾ϳɳB ¹ʣ²װֱͣ202511µ½ָͣӪҵռ2025ȾӪҵıΪ5.55%<br />ڹ˾ҵ<br />˾ء֤ȯй˾ɼָ3šҵϢ¶еġҵҵ񡱵¶Ҫ˾ҪлϵзۣҪƷ𽺡֬̿͡ڵлӹƷԼлмȡлһ졢̬;㷺ĸ²ϣصĽṹ汸޻лϵƣ͸ߵ¡͸ʴԵԺáõԡʹܣնӦ㷺Ϊҵάءйй˾Эᡶй˾ҵͳƷָ˾ҵΪC26ѧԭϺͻѧƷҵ<br />һҵչ״<br />2025лҵȵһ꣬ھ 2024ŴĹʧҵھɵأӡģš򡰸չתͣͷţлгӹʧƽɣƷ۸֡֡ײ𵴡ĩǿƷƣ2025лDMCг۽2024ͬµԼ10.95%<br />Ӧˣ2025лҵͷţȻܸλܻӰ죬2025DMCСҵҵäĿͼ۾תɵءܼţΪȫ깩˵ߣΪҵֵĳƵ춨˻ˣ2025лͳĸ֣лм201֣ͬ10.68%УܵزҵջӰ죬ռȳ»֯ƷάֵλлƾƣԱȶ󡣹ԴAIظѹΪAIҺ󣬳Ϊлµг⣬λ˷ƤлƤȫӦʵͻơ<br />ڷ棬ҹΪȫлͳڹ2025ۼƳڳ̬ľ۹55.89֣ͬٷŻھߵͣгӾ硣ӳڽṹгӶԪгΪںΪһгӡȡԽϡж޵˾лڷ棬2025ҹ̬ľ۹ۼƽ9.25֣ͬȴ½14.96%»<br />ҵϣȫܽһйУͷжȳԴɱ󡢲ϻӰ죬лܳ˳ϻѧȹʻͷлܣΪйҵȱ˻ĿǰȫԼ70%ϵлDMCܼййȫлҵеĵλһ̡ͬʱҵܼ߱ģɱһ廯ƵͷҵУҵܼжȳ<br />βҵ<br />лԭΪۺһȼ飬йɽĥƵãιҵҵҹҵԴḻطֲ㷺ӴгжȽϵͣҹл蹤ҵķչΪлҵҪԭϣ۸ĲԱҵӰϴ2025ϰ꣬۸вڵλǻлDMCɱʧȥؼ֧ţΪ۸ʷ͵Ҫԭ°꣬۸ڴ׺𵴻ȥΪDMCɱṩЧ֧š<br />һȼҪ;һɼ״ҪϵúƻȻƣȻƵãݸ좵Ȼյĸһȼļ۸ܲݸģӰϴ󣬶ʯ͡Ȼú̿ҵļ۸񲨶Ӱ״г۸񣬲һȼ顣2025һȼ۸岨ºͣлҵĳɱӰСڣʵԵͻľȺϿӰ죬ҹ״ȶԺͲɹɱٽϴȷԡ<br />лӦҵʮֹ㷺ӵҽơƷԴ֯ջеӹϲϡ2025꣬лӦдͳռȳռȿлƷܡҪߣƶҵֵ߶ӹƷ졣ѽṹӵԴռȽһΪĵ򣬽ռ½֯ҵռȻȶ<br />ҵص㼰չ<br />лҵܺ۾áι״Ӱ죬һԣڲҵɵӰǿϵͲҵ2025ҵ䴦ڵײ޸׶Σĩ۸ǿƷԤʾҵڴף𲽸ơҵԲķȽխ<br />ڣлҵһ廯ƽһ͹ԣ߱-л赥-м-ӹƷȫҵֵҵܹЧԳԭϼ۸񲨶գɱͬʱӦοͻ2025꣬ͷҵ׷׼һ廯֣ҵЭͬǿΪҵҵڲľĹؼ<br />ģ˾ҵλ<br />2025꣬ҵȵı£˾ƾģƵһ廯ҵ͹㷺г֣ҵͷλһ̡ͬʱ˾ҵɵأŻƽ⡢ܼšƶҵչ棬ͷҵʾá<br />˾߱60л赥ǹлҵģҵ֮һӵдӹۼӹл赥塢м壬ٵι𽺡֬̿͡ڵϵӹƷȫҵһ廯ʵָۺãҵƣɱͿҵˮƽ<br />˾ǿ߶˲Ʒз2025꿪߶˹𽺡֬͡ƺŲƷ802025ף˾ӵиβƷƺ560Ʒи߶ȫƷܹ࣬βͬĶƻ󡣹˾ΪҸ¼ҵɽʡлϼģӴзͶ룬2025ȡȨר14ĩ˾ЧȨר103<br />˾ΪлҵļߣҺҵ׼ݺƶҵö׻ȹ顷׻ȹ顷׻ȹˮǻ˾۶׻塷ʮ׻顷׻ͺ͡˺׻͡ϩ͡߷й͡ȣҵ淶Ʒ׼ȷ淢Ҫáгϣ˾ƵĹڹӪۺϵڹгӵй㷺г֪ȺȣƷԶʱ30Һ͵2025꣬˾ץгӴ˾г֡ͬʱ˾Ӧгݶͷҵ˳ȶĺϵƷӰһǿ<br />壩ҵչ<br />лΪս˲ҵ²ҵҪɲ֣ǹ߹չҪҵ2025꣬ҹлҵܵҲҵߵص֧֣Ҽط½̨߳۽߶˻ɫܻչͬʱͨߵƲҵƶӡ󡱵ǿת͡<br />20261£˰ܾ41ȡȲƷֵ˰˰а״۹ȲƷһߵΪҵҵҪڽӳлƷĳڳɱҵͼĳģʽڽҵٵ͸ֵƷͳڣӴ߸ֵӹƷзȣƶҵڽṹŻ<br /><br />ľ<br />һģͲҵ<br />˾߱60л赥߱ӹۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵסģ󣬹˾ԭϲɹԴġۺáгȷĹģƽһ͹ԡ˾չлҵǿǿл踱ۺãƽϸѧƷз²ƷƺšӦãĿǰ˾ӵй𽺡֬̿͡ڵȸβƷ560ƺš<br />зͼ<br />л赥ϳɷӦӡӦ࣬Ӧܵṹԭϴȡ߻ϵӦ¶ȵȶصĸӰ죬нϸߵļݡ˾лҵʮ꣬ͨʵͼ£˶ļ͹ؼգˡҵö׻ȹ顷׻ȹ顷ʮһҵ׼˾ǹҸ¼ҵɽʡʿʵءɽʡлϼģɽѧɽʡȽл뼼صʵңȺеҹŲҵǿ̡ɽʡƼƻĿɽʡ¼ɹתרԼͲд·չصĿƻһϵشĿ˾ǣͷɵġڲҵԼµĸߴ/лƱҵĿٻɽʡѧһȽĩ˾ЧȨר103<br />ҵ͹<br />˾лҵʮ꣬ҹлҵСǿķչ̣ڲҵչСгƷ¡Żɱϸܿصȷʵרҵƾʵҵ׿ԽĹЧܣ˾Ⱥٻйҵҵйҵ㴴ҵѡȫлҵTOP10ȫ²500ǿʯͺͻҵ500ǿѧԭҵǿȡ<br />ģӪͿͻ<br />лӵʮֹ㷺ĿͻȺ壬漰񾭼øиҵΪ˹˾ϼǿӪ罨裬𲽽˸ȫҪлҵ۵صӪ硣˾ƹӪۺϵĿǰڹ㶫ɽա㻦ϡĴҪгʮ۷ΪͻṩǰСۺȫλʵ˿ͻĿٻԻػ˾ͻ2000ң㷺ֲȫ󲿷ʡУʱ30Һ͵<br />壩ȫͻ<br />Ż̬ƽȫͻˮƽѳΪҵҪľ֡Գ˾ʼո߶Ӱȫ裬Ƚİȫ͹Ϊ֧ţǿȫ衣ڻ棬˾ѭõƣ˸ۺװã䱸Ƶϴʩ߼⡢豸˾ͨЧļֶκ͹ֶȷȾŷŷϹҺ͵ط׼˾Ӧߣߵ崿ȣܺģЧʣʵˮŷţáɽʡȽλƺšڰȫ棬˾Ӱȫʩȫȷҵȫһ棬˾䱸˼ֳźŲɼ̬ʾȹһİȫǱϵͳSISй©ⱨϵͳలȫʩͷ𡢷ʩһ棬˾ϸİȫ֯硢ƶȺͲ̣ͨȫĻǿԱİȫʶ<br />Ʒ<br />˾ԳרעлϵзۣĻۺͷչ˾ѽƵϵԲƷҪᴩڲɹ۵ȫ̡˾ԽԭʵзϸƷʼ飬ԴͷƲƷУ˾ISO9001ISO14001ISO50001ISO45001ISO10012ȹϵҪϸعҡҵ׼ڱ׼ͻضҪ֯˾ƶһϵҵڿر׼ǿƷƣϿ̺͹ա˾жʵҺʼģ䱸רҵļԱ걸ļ豸˾Ʒڲϸ󷽿ɷȷƷĸ߱׼ȶԡ<br /><br />ġӪҵ<br />1<br />2025꣬лҵȵҵʧìͻƷ۸ߵͣгӾ磬ҵӯձѹгͻ¹ʵ˫ؿ飬˾ʼռȫḴӪǿ£ŻƷṹϿؾӪգҵסӪ̣θջڣʵӪҵ37.70Ԫй˾ɶľ-1,930.92Ԫ۳Ǿľ-265.95ԪȻȫܶӰֿ𣬵202512лҵҵǿЭͬгͼ۾𲽸ƣƷ۸ع䣬˾Ӫҵת<br />һЧϵع<br />20257£˾ϳɳB¹ʣ²װͣ¹ʳ˾Դƽϳڸʱĸ¹ᣬںϳװ11µ½ָװ12ѮУϵٻع졣ڲڼ䣬˾׼гͳһƽ⣬ȱϩ͡Һ彺ȸ߸ֵƷͬʱͣ۵͸ֵƷȫϰ̿ڡ͵ӯƷʵ޲µЧ󻯡<br />гṹԷֻ۲ֵŻ<br />2025꣬лҵṹֻͳռԴAIظѹ˾ܸг仯Ż۲ԣƫҵӾĻ£ָëȡЧԭص㱣107ȴͳƲƷҺ彺ͪȸ߸ֵƷۣĿͻսԺȫȹ̺гݶͬʱ˾ƽϵĸŻ򲼾ܹ֯ԱãӪЧܣͨϵͳڲѵȫǿŶרҵۺΪгչṩ֧š<br />¸ʣֲ֤<br />˾згͬƵȫзͶ1.33Ԫƶ³ɹгЧת²Ʒз棬ȫ꿪²Ʒƺ8040ɹʵгӦûڲҵأԴù֬ϡũҩʪȹؼĿȡͻƣͻ˳ɣΪģ˱飬͡͵ȲƷ¹ʵȶϴͳմΪ˾и߶ľ춨˼ʵδزƷչӦó֤棬˾߶ӺϹ澭ӪƷƽ裬Խӹʱ׼˳֤ͨEcoVadis²Ʒͨ¹ˮЭKTW֤Ϊŷ߶гƷֵṩ֧š棬ʵƽ¼Ŀأӿ츱ƷתܼţĲƷ<br />ģƽϸܿأڲǱЧ<br />ھӪʱڣ˾ǱͨҪЧ档豸棬ʵԤ֪Ԥƽؼ豸ƻѲ죬ʵʱ⣬ʵ豸ƽУװ쳣١Ч棬۽ֳɹάޡȹؼڣֳˮƽ̻ʲԼά޷ãɱͨԴ׼ƺͲٿأƽԴӦʵֽЧǧԪͨ޾ϣԼɱԪܿط棬BIPSRMϵͳʵҵʵʱȡֺ֧˰ŻݣӻҡϢ룬ЧԳ岿־Ӫա<br />壩ȫεߣɫչǿ<br />˾̼ȡȫ¹ʽѵȫǿȫʵ̷շأEHSϵʵƽȫշּܿŲʰȫˮƽͨϢֶǿֳѲҵȫ̹ܿأϸа̰ȫԱȫӦѵȫϵƣϵͳȫˮƽΪ˾ȽӪΰȫߡ棬˾ƽܼԴãΣϲͬ½ΣɸѴתΪۣʵֻЧ뾭ЧЭͬȾŷָȶ꣬ȾЧҵ<br /><br />塢˾δչչ<br />һ˾չս<br />ǰȫ򾭼øع˳ӿлҵǰδеıԵγͻӾ硢óױ̧ͷԭϼ۸ҲҪгήңҵչ಻ȷԣ˫̼ĿƽԴ뵼˲ҵչΪлҵȫµڡʮ塱滮ʵʩĹؼ׶Σлҵӹģתͣ˾Ҳⳡ˳֮Сڻս֯ĸӻ£˾ҵ仯ھչǱʵֵм幤ռȡԪظЧѭϵƶϸֵתͨԭ뵥ϳϸѧƷȫҵؼƷʹ߻ǿѧЭͬ£γȽɫȫҵλһĺľƣΪлҵչıˡʮ塱ڼ滮Ŀ£<br />1ռ<br />мΪлҵĺ͹ռ״ֱӾлЧ棬ΪӦԼҵг󣬹˾װýйռ滮֣ܺģʵֲȲͬмƷʣͬʱ̽ɫý豸ЧչƶЧɫɳչ<br />2βҵ<br />չг²ƷзչвƷ࣬Ӹ߸ֵĲƷƺţ㲻ͬͻȺĶڲƷṹŻϣͨӴзͶ룬˺ļ⣬߸߶˲ƷƷṹеռȡͬʱַӲҵЭͬƣβƷĸʹ߻չзͶⲿӦʵֹؼʹ߻ɿأǿҵӦȶԡеҵϵ˾ͨ豸£ʵֹؼڵԶܻܺͲƷ<br />3ӿ²Ʒ<br />Ϊг˾ԼлƷѧкھвƷ˹ܡϢҽҩӦǱչлܷ⽺ȲϵȲƷ;ӹ֬ϵСлͿϵȲƷлϲϵβƷؿӦñ߽硣<br />һȵľӪƻ<br />2026꣬лҵӶг̱ս˾۽ЧǱĺķƶĻҵͻƣӪЧʺЧи߶˲Ʒзƹ㣬ȫƶ˾ɳչ½׶Ρ<br />1ΰȫߣסչ<br />ȫʵϸλΪ˾ƽṩʵıϡһȫרѵȫλԱȫְԴͷͻⰲȫաƶȫϢȫԱȫ嵥Ϣƽ̨ʵʩλοˣʵҵƱȫϻǿȫݻǹȫ̰ȫϵӡա豸Աĸά֣ѧϽİȫϵʵְȫϵͳ׼еľϸܿأȷָȶŷţǿڵʵʱ붯̬ϸʵʩйƶȣǿ̼ල׷ݣȷȾŷź˫شꡣ<br />2۽ЧӪ<br />һȫɹۡʹȺֻ̣໷ڣӪЧʡоһϸɱܿشʩصǿɹġԴɱĹܿأɱܿعᴩӪȫ̡ץü͹տƣмҪƷһμżƷʡȶԣ豸Ԥ֪άϵ豸ʣݶڷƣұڲʱĽ<br />3ȹгݶ<br />һȹƷгݶг̬ʱ۲ԣȷ107½Һ彺ͪ͵Ʒгݶȹ̣Ŀͻĺϵչ򡣶µЧ㣬ҵƷǰְ̿гչи߶˹𽺡ӽԴԭϲƷƺšǽĹں͹ػƣ߸ֵƷأǿӯˮƽעӦòƷгƹ㣬ƷƷӰ<br />4۽з<br />˾ӴͶ룬£Լһƽ͹յĸĽϲƷȶɿأзżйصƷȶԣмԭƷƶ²ƷзܶԽгͿͻ󣬹гǣзз֧ƷʡƷӮгıջϵMESAPCϵͳŻʵܻܿأƽ豸Ԥ֪άϵ裬ʵ豸Ͼ׼Ԥкͼʱá<br />5ӿصĿأƽз븱Ʒת<br />һȫƽ̿ڡˮѻȼȹؼĿ̣¹ȶأŻղǾ۽з븱ƷתгΪصΧƹࡢҺ彺ȺĲƷ²Ʒƺţӿ첼и߶ˡƻƷзԣͬʱϵͳƽ븱ƷתãΣ븱ɣһΣϲʵֻЧ뾭ЧЭͬ<br />˾Եķ<br />1۾û<br />˾רҵлϵзۣлһ졢̬;㷺ĸ²ϣ㷺ӦڽӵҽơƷԴ֯ջеӹϲϡг۾ûҵľ̶Ƚأ۾ó־Ҳҵ̶»ӰԹ˾ƷͬʱǰȫΡûӶ䣬óױ̧ͷֹͨ˰顢ݵֶζҹϰܶԹ˾ҵɲӰ졣<br />ӦԴʩ˾йע۾Ƽҵչ̬̬۲ԣӴзͶ룬Ʒļ븽ֵǿƷڹʹгľڹ̹гͬʱغгͶԵһгԳͷɢա<br />2гӾ<br />лʽ𡢼ܼͲҵȫҵŹҵͻţгַ̱仯йҵȫгݶǰҵɵһģתģʱҵЭͬȫλδҪҵһ½ӿ룬ܵ²ܽṹԹʣгһӾ硣<br />ӦԴʩгĲȷԣ˾йעҵֱ仯ƣԿͻΪģաӦЧִСԭȹ̺Ŀͻ̣ȷͻݶȶؼͻսԺЭͬӦгͬʱŻƷṹӿи߶˲ƷչӦԲ컯ӯ<br />3ԭϡԴ۸񲨶<br />˾ƷɱҪֱӲϳɱԴóɱⲿɹԭҪн衢һȼͼ״ȣĵҪԴΪȡԭУ״ΪʯƷ۸ʯ͡ú̿Ȼԭϼ۸гϵӰ죬̶ֲͬȵĲڣʵԵͻľȺϿӰ죬ҹ״ȶԺͲɹɱٽϴȷԡҪɱΪҵԴȣгԴ۸񲨶Ӱ졣г仯˾ҪԭϼԴɹ۸һգִǣܶԾӪҵӰ졣<br />ӦԴʩ˾иٽ衢һȼ顢״ԭϼศϡԴ۸䶯ƣʱŻɹƻͨǱЧӦԭϡԴ۸񲨶աͬʱǿɱϸܿأ߸תʣɱҪЧ棻ƽϸ̳ɱ׼ʶ𲢹ܿؼأڲҪЧ档<br />4ȫ<br />˾лƷڻԭϡƷƷΪȼױʴԻжʣлһȾŷţΣƷпй©ײ»ȾŹҶ԰ȫͻҪϸغϹɱӪѹ<br />˾ʼսȫλưȫϵӲ棬䱸ȫǱϵͳSISй©ϵͳʩʰȫˮƽ棬ȫȫƶ̣ǿȫԱȫѵӦʶ봦ȷӪȫȶϹС				<span style="display: inline-block;width: 42px;"></span>
+				<a class="less fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;"></a>
+			</p>
+		</div>
+						<div class="m_tab_content m_tab_content2" style="display:none;">
+			<p class="f14 pr">
+				һڹ˾µҪҵ񡡡˾ҪлϵзۣҪƷ𽺡֬̿͡ڵлӹƷԼлмȡлһ졢̬;㷺ĸ²ϣصĽṹ汸޻лϵƣ͸ߵ¡͸ʴԵԺáõԡʹܣնӦ㷺ҵάءйй˾Эᡶй˾ҵͳƷָ˾ҵΪC26ѧԭϺͻѧƷҵһҵ2025ϰܼ꣬ͷšնٷŻȶӰ죬...								<span style="display: inline-block;width: 70px;"></span>
+				<a class="more fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">鿴ȫ</a>
+							</p>
+			<p class="f14 none clearfix pr">
+				һڹ˾µҪҵ<br />˾ҪлϵзۣҪƷ𽺡֬̿͡ڵлӹƷԼлмȡлһ졢̬;㷺ĸ²ϣصĽṹ汸޻лϵƣ͸ߵ¡͸ʴԵԺáõԡʹܣնӦ㷺ҵάءйй˾Эᡶй˾ҵͳƷָ˾ҵΪC26ѧԭϺͻѧƷҵ<br />һҵ<br />2025ϰܼ꣬ͷšնٷŻȶӰ죬лҵֹϵ۸ӡ۸Сҵӯ»̬ƣУΪĲƷлDMC۸ơ֡߻䡱ƽ۸Լ1.27Ԫ/֣ͬ½12%ҡ<br />ˣ2025ϰлDMCܣ2024ܻӰ죬Գ̬ơŹлҵܺ͹ģţɱ۸񼰲ҵƸԣҵ½رղֹעβƷ뿪ĿǰлDMCԼΪ344/꣬ռȫ70%ϣϰлDMC122ңԼ20%<br />ˣϰлг̬ƣַֻͬлĴͳϰ귿زͶʺʩ»ƣ´ͳܷ⽺ĻǽβƷ٣ӡԴչΪлΪгҪ㡣20251-6ҹлDMCԼ100֣ͬԼ24%2024ټӿ졣<br />ڷ棬ݹҺͳƣ2025ϰ꣬ڳ״ľ۹ۼƳΪ27.87֣ͬ3.55%Ϊ4.84֣ͬ½11.97%ϰ꣬йл̬ƣܺг估ó׻Ӱ죬ٷŻŹл輼лһ٣ָ߶˲Ʒڡ<br />ҪƷ;<br />˾רҵлϵзۣ߱ӹۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵףҪƷ𽺡֬̿͡ڵлӹƷԼлмȣƷҪ;£ΪճϼܷģڽӡΪģҽơƷӵԴ򡣹͹㷺Ӧڷ֯ջеӹӵҵҪ֯ӡȾջ߼͡͡Ե͡ɢ͡ģݼ׹͸ȡ֬һи߶Ƚ״ṹȹԾ۹飬ԡԵԼõķˮЧҪΪԵHѹȦԼڽղ˿ʯ޲Ƴɵ׹ܡԵȡ̿ҪΪ𽺵ĲǿϣҲīͿϹҵϲϡϼѧе׹<br />Ӫģʽ<br />1зģʽ<br />˾огΪԼΪзµзԣͬʱߵԺУԺչѧкǿз˾۽лҵϽм¡²ƷзŬʵз³ɹгת<br />2ɹģʽ<br />˾ԭҪԼһȼ顢״ȻԭϣнҪӹҵɹԭҪֱӲɹͨó̲ɹ˾ӵжĹӦϵʲɹԲɹ̵ĿԼԹӦ̵ѡ񡢿ƺ۹<br />3ģʽ<br />˾ȫ渺˾й为𰴼ƻ֯ʼĸԲƷмල͹<br />4ģʽ<br />˾ù۲͹۲ֱлƷĹҵ񣬲ڹҪг۷ʵ˿ͻĿٻԻػлƷڹҵƷ˾ֱģʽҪƷֱ۸лƷӹҵ˾ͨͨҵ顢ͻݷü绰ȷʽвƷƹͿͻлβҵϳƷӦ˹˾οͻṹΪɢҾۼ˴СģҵΪгȶ۲ɢգ˾ȡ˴ͻСͻϵĿͻزԡ˾ڿͻάи߶ӿͻ񣬹˾ۺͼַͨʽռҵгϢܸټгչƣʱ˽ͻ¶ΪͻṩʵķӮÿͻ˾۹вȡϸùƶȣƻգгжһƱΪ<br />ģ˾ҵλ<br />˾߱ӹۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵסĩ˾ӵй𽺡֬̿͡ڵȸβƷƺ520ϰ꿪ƺŲƷ40<br />˾ǹҸ¼ҵɽʡʿʵءɽʡлϼģɽѧɽʡȽл뼼صʵңȺеҹŲҵǿ̡ɽʡƼƻĿɽʡ¼ɹתרԼͲд·չصĿƻһϵشĿ<br />˾ˡҵö׻ȹ顷׻ȹ顷׻ȹˮǻ˾۶׻塷ʮ׻顷׻ͺ͡˺׻͡ϩ͡߷й͡ʮһҵ׼2025ϰ꣬˾ȡȨר12ĩ˾ЧȨר102зר97ʵר5˾ǣͷɵġڲҵԼµĸߴ/лƱҵĿٻɽʡѧһȽ<br />˾ƵӪۺϵڹгӵй㷺г֪Ⱥȣ˾ͻ2000ң㷺ֲȫ󲿷ʡУںʱ۵ӡȡ̨30Һ͵<br />壩Ҫҵ<br />2025ϰ꣬лҵٿǰгѹܼͷšնó׻ȶӰ죬гʧ⣬۸ʽµʷµ͡Ͼƺս˾ȫЧȶУƾװùģϸĹֶԼŻӪϵʵĿꡣͬʱ˾Ʒ²ƷӦãƺżи߶ӦòƷռȽһ⣬ͨڲЧǱƽƷתšǿɱùܿصȴʩЧӪɱʵӯڣ˾ʵӪҵ23.27Ԫȥͬ½14.98%й˾ɶľ4,219.41Ԫȥͬ½35.30%<br /><br />ľ<br />һģͲҵ<br />˾߱ӹۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵסģ󣬹˾ԭϲɹԴġۺáгȷĹģƽһ͹ԡ˾չлҵǿǿл踱ۺãƽϸѧƷз²ƷƺšӦãĿǰ˾ӵй𽺡֬̿͡ڵȸβƷ520ƺš<br />зͼ<br />л赥ϳɷӦӡӦ࣬Ӧܵṹԭϴȡ߻ϵӦ¶ȵȶصĸӰ죬нϸߵļݡ˾лҵʮ꣬ͨʵͼ£˶ļ͹ؼգˡҵö׻ȹ顷׻ȹ顷ʮһҵ׼˾ǹҸ¼ҵɽʡʿʵءɽʡлϼģɽѧɽʡȽл뼼صʵңȺеҹŲҵǿ̡ɽʡƼƻĿɽʡ¼ɹתרԼͲд·չصĿƻһϵشĿ˾ǣͷɵġڲҵԼµĸߴ/лƱҵĿٻɽʡѧһȽĩ˾ЧȨר102зר97ʵר5<br />ҵ͹<br />˾лҵʮ꣬ҹлҵСǿķչ̣ҵĲҵߡҵ仯ƷչԼҵеģʽչɱƵȶʮ̵⣬ҵḻΪйҵҵйҵ㴴ҵѡȫлҵTOP10ȫ²500ǿʯͺͻҵ500ǿѧԭҵǿȡ<br />ģӪͿͻ<br />лӵʮֹ㷺ĿͻȺ壬漰񾭼øиҵΪ˹˾ϼǿӪ罨裬𲽽˸ȫҪлҵ۵صӪ硣˾ƹӪۺϵĿǰڹ㶫ɽա㻦ӱĴҪгʮ۷ΪͻṩǰСۺȫλʵ˿ͻĿٻԻػ˾ͻ2000ң㷺ֲȫ󲿷ʡУںʱ۵ӡȡ̨30Һ͵<br />壩ȫͻ<br />Ż̬ƽȫͻˮƽѳΪҵҪľ֡Գ˾ʼո߶Ӱȫ裬Ƚİȫ͹Ϊ֧ţǿȫ衣ڻ棬˾ѭõƣ˸ۺװã䱸Ƶϴʩ߼⡢豸˾ͨЧļֶκ͹ֶȷȾŷŷϹҺ͵ط׼˾Ӧߣߵ崿ȣܺģЧʣʵˮŷţáɽʡȽλƺšڰȫ棬˾Ӱȫ̽輰ȫȷҵȫһ棬˾䱸˼ֳźŲɼ̬ʾȹһİȫǱϵͳSISй©ⱨϵͳలȫʩͷ𡢷ʩһ棬˾ϸİȫ֯硢ƶȺͲ̣ͨȫĻǿԱİȫʶ<br />Ʒ<br />˾ԳרעлϵзۣĻۺͷչ˾ѽƵϵԲƷҪᴩڲɹ۵ȫ̡˾ԽԭʵзϸƷʼ飬ԴͷƲƷУ˾ISO9001ISO14001ISO50001ISO45001ISO10012ȹϵҪϸعҡҵ׼ڱ׼ͻضҪ֯˾ƶһϵҵڿر׼ǿƷƣϿ̺͹ա˾жʵҺʼģ䱸רҵļԱ걸ļ豸˾Ʒڲϸ󷽿ɷȷƷĸ߱׼ȶԡ<br /><br />˾ٵķպӦԴʩ<br />1۾û<br />˾רҵлϵзۣлһ졢̬;㷺ĸ²ϣ㷺ӦڽӵҽơƷԴ֯ջеӹϲϡг۾ûҵľ̶Ƚأ۾ó־Ҳҵ̶»ӰԹ˾Ʒ󡣴⣬ȫΡûӶ䣬óױ̧ͷһЩ÷ݡ˰ֶζҹƷϰܶԹ˾ҵɲӰ졣<br />ӦԴʩ˾йע۾Ƽҵչ̬ʱ۲ԣӴзͶ룬Ʒļ븽ֵǿƷڹʹгľڹ̹гͬʱغгͶԵһгɢóױݴķա<br />2гӾ<br />лǵ͵ʽ𡢼ܼҵΪ˾йҵĲϷչг𽥷ı䣬йҵгеռѸҵռ»Ŀǰлҵѳֳڹģʽʵȶȫλ̬ơлܴţгڹʧ⣬Ʒ۸δҵһģµľ߽гܵлعʣһӾг<br />ӦԴʩгĲȷԣ˾׷ٹͬҵͻг̬Ӧг仯աӦЧִСԭ򣬼סĿͻأȷͻݶʧĿͻĺŦͬгաչӦβƷĿŻƷṹ֣и߶˲ƷҪЧ档<br />3ԭϡԴ۸񲨶<br />˾ƷɱҪֱӲϳɱԴóɱⲿɹԭҪн衢һȼͼ״ȣĵҪԴΪȡԭУ״ΪʯƷ۸ʯ͡ú̿Ȼԭϼ۸гϵӰ죬̶ֲͬȵĲҪɱΪҵԴȣгԴ۸񲨶Ӱ졣гı仯˾ԭϺԴɹ۸һĲȷԣ˾ԭϡԴ۸ִܻԹ˾ľӪҵӰ졣<br />ӦԴʩ˾иԭϽ衢һȼ顢״ศϡԴ۸ı䶯ƣʱɹƻǱЧԭϡԴ۸䶯ķաͬʱǿɱϸܿأ߸תʣɱҪЧ棻ʵʩϸ̳ɱ׼ʶ𲢹ܿеļأڲҪЧ档<br />4ȫ<br />˾лƷڻԭϡƷƷΪȼױʴԻжʣлһȾŷţΣƷпй©ײ»ȾһİȫպͻաӦԴʩΪȷȫ˾Ӱȫʩȫ֣һ棬˾䱸˼ֳźŲɼ̬ʾȹһİȫǱϵͳSISй©ⱨϵͳలȫʩͷ𡢷ʩһ棬˾ϸİȫ֯硢ƶȺͲ̣ͨȫѵǿԱİȫʶ				<span style="display: inline-block;width: 42px;"></span>
+				<a class="less fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;"></a>
+			</p>
+		</div>
+						<div class="m_tab_content m_tab_content2" style="display:none;">
+			<p class="f14 pr">
+				һڹ˾ҵ˾ء֤ȯй˾ɼָ3šҵϢ¶еġҵҵ񡱵¶Ҫ˾ҪлϵзۣҪƷ𽺡֬̿͡ڵлӹƷԼлмȡлһ졢̬;㷺ĸ²ϣصĽṹ汸޻лϵƣ͸ߵ¡͸ʴԵԺáõԡʹܣնӦ㷺ҵζйй˾Эᡶй˾ҵͳƷָ˾ҵΪC26ѧԭϺͻѧƷҵһҵ...								<span style="display: inline-block;width: 70px;"></span>
+				<a class="more fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;">鿴ȫ</a>
+							</p>
+			<p class="f14 none clearfix pr">
+				һڹ˾ҵ<br />˾ء֤ȯй˾ɼָ3šҵϢ¶еġҵҵ񡱵¶Ҫ˾ҪлϵзۣҪƷ𽺡֬̿͡ڵлӹƷԼлмȡлһ졢̬;㷺ĸ²ϣصĽṹ汸޻лϵƣ͸ߵ¡͸ʴԵԺáõԡʹܣնӦ㷺ҵζйй˾Эᡶй˾ҵͳƷָ˾ҵΪC26ѧԭϺͻѧƷҵ<br />һҵչ״<br />2024꣬ȫ򾭼ܵԵͻóױ弰ҵعӰ죬֡ա߷ֻص㣬Żں۾ԡͶʡѡΪлڶؼ֧֣Դѵӡȡ<br />ڣιԴӦ޸лȲӣڹӦ˲ܿţгȫӦ˴Ʒ۸ѹУǺƣ2024лDMCгƽ۸1.39Ԫ/֣2023½6%ҡ<br />棬ſƼչ뾭ýṹתлڶ¾͸ʲԴܷȹװճӡѵԪԵȣлȲ2024ҹлм181.6֣ͬ20.9%2019-2024꣬ҹл긴ٴ11.3%<br />Ӧ棬2019-2024꣬ҹлмܴ151.5ֿ344.0֣Ϊ17.8%202472֣ڹγ˽ϴѹǣҹл豾ٽβδޣԴܵҵֽ𲽺ת<br />ڷ棬ݹҺͳƣ2024̬꣬ľ۹54.6֣ͬ34.2%йлڴơӳڽṹϿ2024꣬ҹг۹Ϊ21.8֣ͬ30.9%ռҹܳıﵽ39.9%˾ѳΪйлгҪͳƣ˾л˾GDPˮƽȹϵϷҺ͵˾˿ڻ˾лͣδھ÷չˮƽ˿ںĳЧӦҹлڽһ١<br />ҵַ棬йѳΪлѹȫԼ70%лDMCܼйԭϡɱгӰ죬ȥ꺣лܲڷ棬ҵܲйģɱͲƷƵͷҵУܼжȲߣҵ<br />ٴӯڡ°֤ȯ)<br />βҵ<br />лԭΪۺһȼ飬йɽĥƵãιҵҵҹԴḻطֲ㷺ӴгжȽϵͣҹл蹤ҵķչΪлҵҪԭϣ۸ĲԱҵӰϴһȼҪ;һɼ״ҪϵúƻȻƣȻƵãݸ좵Ȼյĸһȼļ۸ܲݸģӰϴ󣬶ʯ͡Ȼú̿ҵļ۸񲨶Ӱ״г۸񣬲һȼ顣<br />лӦҵʮֹ㷺ӵҽơƷԴ֯ջеӹϲϡ򡣸ݡйҵչƤ顷й۹ѽṹУӡ/Դ֯ռȷֱΪ21.3%19.1%14.1%8.9%У֯ȴͳռ꽵ͣӡ/Դռ<br />2023й۹ѽṹ<br />ҵص㼰չ<br />лҵܺ۾мι״Ӱ죬Ʒ۸徭״ҵı仯һĲֳһԡҵƷ¼ĳӣҹлҵģʼձ̬ƣгģ<br />ҵܿŵȶӰ죬лгڹʧ⣬Ʒ۸һȵƳɱߣĿǰʷλҵһѣԴΣӾı£ӹ֧ԼлΪͳʯͻϵͬʱΪս˲ҵо޴ķչǱҵ̬ƣδԱ仯<br />Уӡ֯ȴͳҵȻŻлƣԼ۱ȵڽ൱һʱԽлϵҪӦ򡣶Դѹظѹ衢ܴϡ3Dӡ5G˲ҵķչΪлṩ˳űٽβԼԴܵҵֽ𲽺תҵ׻<br />ģ˾ҵλ<br />˾߱60л赥ҹлҵģҵ֮һ߱ӹۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵס2024ף˾ӵй𽺡֬̿͡ڵȸβƷ490ƺţбڿƺŲƷ30<br />˾ǹҸ¼ҵɽʡͲлϹ̼оġɽʡʿʵءɽʡлϼģȺеҹŲҵǿ̡ɽʡƼƻĿɽʡ¼ɹתרԼͲд·չصĿƻһϵشĿ<br />˾ˡҵö׻ȹ顷׻ȹ顷׻ȹˮǻ˾۶׻塷ʮ׻顷׻ͺ͡˺׻͡ϩ͡߷й͡ʮһҵ׼2024꣬˾ȡȨר16ĩ˾ЧȨר90Уר85ʵר520247£˾ǣͷɵġڲҵԼµĸߴ/лƱҵĿٻɽʡѧһȽ<br />˾ƵӪۺϵڹгӵй㷺г֪ȺȣԶʱӡȵȶҺ͵<br />壩ҵչ<br />ҹлҵܵĸ߶Ӻ͹Ҳҵߵص֧֣½̨˶ߣлҵչ봴£ҷίҵṹָĿ¼2024걾л赥ͶĿݹҷίս˲ҵصƷͷָĿ¼2016棩ͳƾ֡ս˲ҵࣨ2018ļлǹս˲ҵ²ҵҪɲ֡<br /><br />ڹ˾µҪҵ<br />˾ء֤ȯй˾ɼָ3šҵϢ¶еġҵҵ񡱵¶ҪҪԭϵĲɹģʽ<br />ԭϼ۸һڷش仯ԭ<br />۸µҪӣҵ¡һȼɹ۽һڽ۷ȽϴҪ۸λС<br />ȡõĻ<br />ڣ˾ȡáɽлϹɷ޹˾2000tMQ֬Ŀһ<br /><br />ľ<br />һģ<br />˾߱60л赥ҹлҵģҵ֮һ߱ӽۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵסģ󣬹˾ԭϲɹԴġۺáгȷĹģƽһ͹ԡ<br />зͼ<br />л赥ϳɷӦӡӦ࣬Ӧܵṹԭϴȡ߻ϵӦ¶ȵȶصĸӰ죬нϸߵļݡ˾лҵʮ꣬ͨʵͼ£˶ļ͹ؼգˡҵö׻ȹ顷׻ȹ顷ʮһҵ׼˾ǹҸ¼ҵɽʡͲлϹ̼оġɽʡʿʵءɽʡлϼģȺеҹŲҵǿ̡ɽʡƼƻĿɽʡ¼ɹתרԼͲд·չصĿƻһϵشĿ2024 7£˾ǣͷɵġڲҵԼµĸߴ/лƱҵĿٻɽʡѧһȽĩ˾ЧȨר90Уר85ʵר5<br />ҵ<br />˾չлҵǿǿл踱ۺãƽϸѧƷз²ƷƺšӦã2024ף˾ӵй𽺡֬̿͡ڵȸβƷ490ƺš<br />ģҵ͹<br />˾лҵʮ꣬ҹлҵСǿķչ̣ҵĲҵߡҵ仯ƷչԼҵеģʽչɱƵȶʮ̵⣬ҵḻΪйҵҵйҵ㴴ҵѡȫ²500ǿʯͺͻҵ500ǿѧԭҵǿ<br />壩ӪͿͻ<br />лӵʮֹ㷺ĿͻȺ壬漰񾭼øиҵΪ˹˾ϼǿӪ罨裬𲽽˸ȫҪлҵ۵صӪ硣˾ƹӪۺϵĿǰڹ㶫ɽա㻦ӱĴҪгʮ۷ΪͻṩǰСۺȫλʵ˿ͻĿٻԻػ˾ͻ2000ң㷺ֲȫ󲿷ʡУںʱӡȵ30Һ͵<br />ȫͻ<br />Ż̬ƽȫͻˮƽѳΪҵҪľ֡Գ˾ʼո߶Ӱȫ裬ƾȽİȫ͹Ϊ֧ţǿȫ衣ڻ棬˾ѭõơ˹Ҫװú͸ۺװã䱸Ƶϴʩ߼⡢豸˾ͨЧļֶκ͹ֶȷȾŷŷϹҺ͵ط׼˾Ӧߣߵ崿ȡܺġЧʣʵˮŷţáɽʡȽλƺšڰȫ棬˾Ӱȫ̽輰ȫȷҵȫһ棬˾䱸˼ֳźŲɼ̬ʾȹһİȫǱϵͳSISй©ⱨϵͳలȫʩͷ𡢷ʩһ棬˾ϸİȫ֯硢ƶȺͲ̣ͨȫĻǿԱİȫʶ<br />ߣƷ<br />˾ԳרעлϵзۣĻۺͷչ˾ѽƵϵԲƷҪᴩڲɹ۵ȫ̡˾ԽԭʵзϸƷʼ飬ԴͷƲƷУ˾ISO9001ISO14001ISO50001ISO45001ISO10012ȹϵҪϸعҡҵ׼ڱ׼ͻضҪ֯˾ƶһϵҵڿر׼ǿƷƣͶţϿ̺͹ա˾жʵҺʼģ䱸רҵļԱ걸ļ豸˾Ʒڲϸ󷽿ɷȷƷĸ߱׼ȶԡ<br /><br />ġӪҵ<br />1<br />һҪƷ;<br />˾רҵлϵзۣ߱ӽۼӹл赥塢мԼι𽺡֬̿͡ڵϵӹƷһ廯ظۺãγ˽ΪƵĲҵףҪƷ𽺡֬̿͡ڵлӹƷԼлмȣƷҪ;£ΪճϼܷģڽӡΪģҽơƷӵԴ򡣹͹㷺Ӧڷ֯ջеӹӵҵҪ֯ӡȾջ߼͡͡Ե͡ɢ͡ģݼ׹͸ȡ֬һи߶Ƚ״ṹȹԾ۹飬ԡԵԼõķˮЧҪΪԵ HѹȦԼڽղ˿ʯ޲Ƴɵ׹ܡԵȡ̿ҪΪ𽺵ĲǿϣҲīͿϹҵϲϡϼѧе׹<br />Ʒ<br />лƷҪ̰⹺ļ״Ȼȼ鷴ӦһȼϳװãڷӦһȼ壬ƺϳɹΣԹۼӹװõĹһȼ壨⹺ƣڴ߻Ӧϳװãڽ߻Ӧɼ׻ȹϵ壨ֵ壩ֵڵ빤ξֱõһ׵塢׵塢׵塢һ׺ⵥ塢߷͵ͷȡ<br />߷ڸ߷ѽ⹤ѽΪ׻ֵ󷵻빤μԻþ塣ͷһ׺ڵͷ绯Ӧ绯ӦתΪԶΪĴֵΪԭͻص빤μԻþ塣һ׺ⵥں͹ƳɺͲƷһ׵徭̿װͨˮⷴӦ̿ڣɽһƳۣƻ⹺İ̿110һΪԭϡ<br />׵ڶˮ⹤Ļ·ϵͳڽˮⷴӦˮﲢųȻ壬Ȼ⾭ȴͺֱһȼϳɡˮﾭ߻ɻ壬ѽ⼰󹤶νһɻû壨 DMCD4ȣͻҪӹƷУͨ107װƳ107ƷһƳɹͪƷͻɷֱͨװú͹װƳ110͹ͲƷ110ɽһƳɻƷϩͺͰ̿ͨҺװƳҺ𽺲Ʒ<br />2024꾭Ӫ<br />2024꣬лг۸Сҵھѹ˾ȱܣгǿɱùܿأȻۼ۸½ܲӪҵȲܺġ½ͬʱҪԭϲɹ۸ȥͬ½λɱ½Ʒëʻȫ꾭ӪҵŤΪӯ˾2024ʵֹй˾ɶľ5,676.16Ԫ۳ǾĹй˾ɶľ7,435.70Ԫֱͬ120.94%127.29%<br />1з棺ʵƽ⣬ͷװò<br />һץԭʵεװõƽ⼰Уָ꣨ϳѡԡʡȻʵȣһǼǿβƷͷװòܡ豸ͨԤǰԤСС޾ϣ豸ۺϹʣάãƽС<br />2棺ʵʩͼۺЧ<br />ȫɸ༼Ŀ20ۺЧУҺ𽺡ܷͪ⽺ȲβܽһͷţʵʩȻաܽļģĺ½ƽ¹ӦãЧʺתʣԭϵģʵʩᡢţԼͷӺ͸תãЧȾŷţƽԶ̵ľ׼ƺ͹ˮƽ<br />3ȫ棺һѹʵ㼶ʵȫ<br />ȫ棬һȷϵǿȫԱʶǩȫĿ飬ʹΡ򵽱ߡ򵽵סǿշּܿأشΣԴʵйҰƣʵջȷΣҵܿأֶֻƶʵðȫϢOSϵͳʵװѲŲ飬ͨƵԶԤΥΪӪðȫĻΧǿȫѵϸ񿼺뽱ͻƣʵСһƱƶȣ𡢲㸺𡱵İȫϵο׷ݡ˶񡢼ǿ֧šĻ㣬ȫ갲ȫͨа̰ȫϷϹ棬շּܿˮƽһ<br />棬ﶬȾҵ޴ͨĿ˳ƽΣϲͷþ½ˮŷţŷţл赥װõ족ĿΪɽʡȽĿ<br />4Ƽз棺ԷгΪģƽ²ƷзͲҵ<br />2024꣬˾չзĿ20УʵҲƷ棬ɹƹMQ֬ҺƷּʪȲƷгƹ׶ΣԻʵֹؼ߻Բ½Һ彺ϵеȶ²Ʒȡгչ߱Ӧƽзɹҵ͡ջõճȼ׻͡ͺ͵ȳɹʵֲҵзԱг˽Э⣬ȶŻղг<br />5г۷棺նʿͻгݶʵ<br />Լѵг棬ӪԱȫгݶʵͲƽ⣬ȫͻ 500ңͻṹһŻȲʱգǿֲƷרҵۣӴ²ƷƹȣëƷռȣǿƷΣϲƷۡ<br /><br />塢˾δչչ<br />һ˾ķչս<br />˾巢չսΪгΪԼ¡Ʒ¡ӦôΪץסҹҵתʷԻй˾л۵ĹģƷͻƣ۽лҵԱһҵǿҵ˾ɾйʾ缶лҵ<br />һȾӪƻ<br />2025꣬Źһϵ衢أΪҵҵչµĻ˾ΧơӪЧ桢ռڹǱǿչ淶ЧʡĹҪľѣǱ̰壬ƽ¹չŬʵµķչͿԽ<br />1ץðȫȷȶСȫǸе֮أ˾ԹܿطΪģϸʵøȫƣΰȫߣʵʵðȫѧƶȶзϸԭ׼Դƽ⣬ʸ߲ɱ͡<br />2ץòʱƷṹʵЧ󻯡г仯ʱԤıǿЧΪġгΪӪƣͨƷνṹʵֹ˾Ч󻯣ȫץϲƷĲ컯ۣ߲ƷëβƷϼó߲֣Ѱչռ䣻Żͻṹն˿ͻΪͻ<br />3ץüʵԡʡЧǿм幤ռƷʵͨ䷽ԭȴʩһҺ彺͵βƷѻҺ彺ɹ˾ȭͷƷ<br />4ץòҵβƷз͸ƷתáΧвƷ͡Һ彺лʹ߻зأӴβƷзȣƲҵ߲ƷȫźתĲ߸ƷתʣΣϺ͸ĲۺЧ档<br />5ץüĿĽ衣Եװú͹ۼӹмһ߶ѡԺʣۺܺģǿˮ﹤ռŻͲƷȺƷɰ̿ںͰ͵ļ<br />6ץҵЭʵֲҵĹͬչ202412£춭»ھŴλ飬˾ĴҵƼ޹˾Ĵɽ¯ι˾ĴɽκӵۺϿ޹˾ιҵҵǩίоӪЭ顷2025꣬˾ͨҵֱӹ֤ԭӦȶԣַЭͬЧӦʵβҵĹͬչ߹˾ۺϾ<br />˾Եķ<br />1۾û<br />˾רҵлϵзۣҪƷ𽺡֬̿͡ڵлӹƷԼлмȡлһ졢̬;㷺ĸ²ϣ㷺ӦڽӵҽơƷԴ֯ջеӹϲϡгܺ۾ûҵ̶Ӱϴ󡣽ȫ򾭼ûӶ䣬óױһЩ÷ݡ˰ֶζҹƷϰܶԹ˾ҵɲӰ졣<br />2гӾ<br />лǵ͵ʽ𡢼ܼҵΪ˾¢ϡйҵг𲽷仯йҵгռıߣҵռ»Ųҵϵƽҵĵλһͻлҵֹģʽʵȫλ̬ơҵŵȶӰ죬лгڹʧ⣬Ʒ۸ҵһŲܣµľ߽гܵлܹʣһӾг<br />3ԭϡԴ۸񲨶<br />˾ƷɱҪֱӲϳɱԴóɱⲿɹԭҪн衢һȼͼ״ȣĵҪԴΪȡԭУ״ΪʯƷ۸ʯ͡ú̿Ȼԭϼ۸гϵӰ죬̶ֲͬȵĲҪɱΪҵԴȣгԴ۸񲨶Ӱ졣гı仯˾ԭϺԴɹ۸һĲȷԣ˾ԭϡԴ۸ִܻԹ˾ľӪҵӰ졣<br />4ȫ<br />˾лƷڻԭϡƷƷΪȼױʴԻжʣлһȾŷţΣƷпй¶ײ»Ⱦһİȫպͻա				<span style="display: inline-block;width: 42px;"></span>
+				<a class="less fr" href="javascript:void(0)" style="position:absolute;right:0;bottom:0;"></a>
+			</p>
+		</div>
+					</div>
+	<div class="ft"></div>
+</div>
+
+<!-- Ʒ۸ -->
+<div class="m_box i_hover_box" id="price" stat="operate_price" itag='3'>
+<div class="hd">
+    <h2>Ʒ۸</h2>
+</div>
+<div class="bd pt5">
+
+	<div class="m_tab mt15 m_tab_specail">
+	 <a href="###" class="tab_btn prev" style="display: none;"></a>
+            <ul>
+                                              <li class="tab_flag cur"><a href="javascript:void(0);" tag="0" class="operateTab" item=""></a></li>
+                                          </ul>
+      <a href="###" class="tab_btn next"></a>
+    </div>
+        
+    <div class="priceTable-wrapper">
+      <div class="priceTable-option clearfix xgzsgn">
+            <div class="option clearfix">
+            	<div class="item fl" style="height:21px"><input type="checkbox" checked="checked" name="COMEX" id="line-2"  class="xgsc" ><label></label><span style='color:#999'>ݽ(20260708)</span></div>
+            	<div class="item fl"  style="height:21px"><input type="checkbox"   name="COMEX" id="line-1" class="xggn" value=""><label style="color:#a2c7ee"></label>
+            	</div>
+               
+               
+                <input type="hidden" value="Ԫ/"  class="xgsc_unit">
+    			<input type="hidden" value="ƽ"  class="xgsc_mean">
+    			<input type="hidden" value="Ԫ/"  class="xgsc_units">
+    			<input type="hidden" value="20260708,26.44,1925.00,13.476394849785,0,20260708"  class="lastdata">
+            </div>
+            <div class="description zhishu">
+             
+            </div>
+        </div>
+        <div id="units" class="none">["\u7f8e\u5143\/\u5428"]</div>
+                         
+        <div id="lastData0" class="none">20260708,26.44,1925.00,13.476394849785,0,20260708</div>
+        
+        <div id="yjycData0" class="none">[[20250709,10.16,2700,"SJ"],[20250710,10.66,2700,"SJ"],[20250711,10.28,2700,"SJ"],[20250712,10.28,2700,"SJ"],[20250713,10.28,2700,"SJ"],[20250714,10.35,2700,"SJ"],[20250715,9.79,2700,"SJ"],[20250716,10.03,2700,"SJ"],[20250717,10.06,2700,"SJ"],[20250718,9.76,2700,"SJ"],[20250719,9.76,2700,"SJ"],[20250720,9.76,2700,"SJ"],[20250721,9.54,2700,"SJ"],[20250722,10.28,2700,"SJ"],[20250723,10.18,2700,"SJ"],[20250724,10.37,2700,"SJ"],[20250725,9.95,2700,"SJ"],[20250726,9.95,2700,"SJ"],[20250727,9.95,2700,"SJ"],[20250728,9.86,2700,"SJ"],[20250729,10.29,2700,"SJ"],[20250730,10.37,2700,"SJ"],[20250731,9.76,2700,"SJ"],[20250801,10.45,2700,"SJ"],[20250802,10.45,2700,"SJ"],[20250803,10.45,2700,"SJ"],[20250804,10.3,2700,"SJ"],[20250805,10.21,2700,"SJ"],[20250806,11.01,2700,"SJ"],[20250807,10.88,2700,"SJ"],[20250808,11.05,2700,"SJ"],[20250809,11.05,2700,"SJ"],[20250810,11.05,2700,"SJ"],[20250811,11.38,2700,"SJ"],[20250812,10.82,2700,"SJ"],[20250813,10.84,2700,"SJ"],[20250814,10.29,2700,"SJ"],[20250815,10.53,2700,"SJ"],[20250816,10.53,2700,"SJ"],[20250817,10.53,2700,"SJ"],[20250818,10.71,2700,"SJ"],[20250819,10.53,2700,"SJ"],[20250820,10.43,2700,"SJ"],[20250821,10.35,2700,"SJ"],[20250822,10.39,2700,"SJ"],[20250823,10.39,2700,"SJ"],[20250824,10.39,2700,"SJ"],[20250825,10.67,2700,"SJ"],[20250826,10.39,2700,"SJ"],[20250827,9.81,2700,"SJ"],[20250828,9.83,2700,"SJ"],[20250829,9.86,2700,"SJ"],[20250830,9.86,2700,"SJ"],[20250831,9.86,2700,"SJ"],[20250901,9.99,2025,"SJ"],[20250902,9.74,2025,"SJ"],[20250903,9.57,2025,"SJ"],[20250904,9.57,2025,"SJ"],[20250905,10.36,2025,"SJ"],[20250906,10.36,2025,"SJ"],[20250907,10.36,2025,"SJ"],[20250908,10.35,2025,"SJ"],[20250909,10.17,2025,"SJ"],[20250910,10.02,2025,"SJ"],[20250911,10.09,2025,"SJ"],[20250912,9.87,2025,"SJ"],[20250913,9.87,2025,"SJ"],[20250914,9.87,2025,"SJ"],[20250915,9.71,2025,"SJ"],[20250916,9.95,2025,"SJ"],[20250917,9.89,2025,"SJ"],[20250918,9.69,2025,"SJ"],[20250919,9.57,2025,"SJ"],[20250920,9.57,2025,"SJ"],[20250921,9.57,2025,"SJ"],[20250922,9.48,2025,"SJ"],[20250923,9.24,2025,"SJ"],[20250924,9.44,2025,"SJ"],[20250925,9.23,2025,"SJ"],[20250926,9.11,2025,"SJ"],[20250927,9.11,2025,"SJ"],[20250928,9.11,2025,"SJ"],[20250929,9.23,2025,"SJ"],[20250930,9.16,2025,"SJ"],[20251001,9.16,2025,"SJ"],[20251002,9.16,2025,"SJ"],[20251003,9.16,2025,"SJ"],[20251004,9.16,2025,"SJ"],[20251005,9.16,2025,"SJ"],[20251006,9.16,2025,"SJ"],[20251007,9.16,2025,"SJ"],[20251008,9.16,2025,"SJ"],[20251009,9.32,2025,"SJ"],[20251010,9.26,2025,"SJ"],[20251011,9.26,2025,"SJ"],[20251012,9.26,2025,"SJ"],[20251013,9.24,2025,"SJ"],[20251014,9.11,2025,"SJ"],[20251015,9.17,2025,"SJ"],[20251016,8.99,2025,"SJ"],[20251017,8.67,2025,"SJ"],[20251018,8.67,2025,"SJ"],[20251019,8.67,2025,"SJ"],[20251020,8.75,2025,"SJ"],[20251021,8.81,2025,"SJ"],[20251022,8.77,2025,"SJ"],[20251023,8.78,2025,"SJ"],[20251024,8.85,2025,"SJ"],[20251025,8.85,2025,"SJ"],[20251026,8.85,2025,"SJ"],[20251027,8.83,2025,"SJ"],[20251028,8.86,2025,"SJ"],[20251029,9,2025,"SJ"],[20251030,9.03,2025,"SJ"],[20251031,9.29,2025,"SJ"],[20251101,9.29,2025,"SJ"],[20251102,9.29,2025,"SJ"],[20251103,9.32,2110,"SJ"],[20251104,9.23,2110,"SJ"],[20251105,9.4,2110,"SJ"],[20251106,9.48,2110,"SJ"],[20251107,11.38,2110,"SJ"],[20251108,11.38,2110,"SJ"],[20251109,11.38,2110,"SJ"],[20251110,13.08,2110,"SJ"],[20251111,12.73,2110,"SJ"],[20251112,12.47,2110,"SJ"],[20251113,13.98,2110,"SJ"],[20251114,13.12,2110,"SJ"],[20251115,13.12,2110,"SJ"],[20251116,13.12,2110,"SJ"],[20251117,14.42,2110,"SJ"],[20251118,14.54,2110,"SJ"],[20251119,16.13,2110,"SJ"],[20251120,14.59,2110,"SJ"],[20251121,12.86,2110,"SJ"],[20251122,12.86,2110,"SJ"],[20251123,12.86,2110,"SJ"],[20251124,12.96,2110,"SJ"],[20251125,13.45,2110,"SJ"],[20251126,12.73,2110,"SJ"],[20251127,13.75,2110,"SJ"],[20251128,13.68,2110,"SJ"],[20251129,13.68,2110,"SJ"],[20251130,13.68,2110,"SJ"],[20251201,13.38,2110,"SJ"],[20251202,13.4,2110,"SJ"],[20251203,12.85,2110,"SJ"],[20251204,12.2,2110,"SJ"],[20251205,12.76,2110,"SJ"],[20251206,12.76,2110,"SJ"],[20251207,12.76,2110,"SJ"],[20251208,12.75,2110,"SJ"],[20251209,13.3,2110,"SJ"],[20251210,12.37,2110,"SJ"],[20251211,11.88,2110,"SJ"],[20251212,11.86,2110,"SJ"],[20251213,11.86,2110,"SJ"],[20251214,11.86,2110,"SJ"],[20251215,12.05,2110,"SJ"],[20251216,11.4,2110,"SJ"],[20251217,11.77,2110,"SJ"],[20251218,11.69,2110,"SJ"],[20251219,11.75,2110,"SJ"],[20251220,11.75,2110,"SJ"],[20251221,11.75,2110,"SJ"],[20251222,11.81,2110,"SJ"],[20251223,12.14,2110,"SJ"],[20251224,12.25,2110,"SJ"],[20251225,12.63,2110,"SJ"],[20251226,12.79,2110,"SJ"],[20251227,12.79,2110,"SJ"],[20251228,12.79,2110,"SJ"],[20251229,12.26,2110,"SJ"],[20251230,11.99,2110,"SJ"],[20251231,11.66,2110,"SJ"],[20260101,11.66,2110,"SJ"],[20260102,11.66,2110,"SJ"],[20260103,11.66,2110,"SJ"],[20260104,11.66,2110,"SJ"],[20260105,12.05,2110,"SJ"],[20260106,13.18,2110,"SJ"],[20260107,13.38,2110,"SJ"],[20260108,13.05,2110,"SJ"],[20260109,12.71,2110,"SJ"],[20260110,12.71,2110,"SJ"],[20260111,12.71,2110,"SJ"],[20260112,13.27,2110,"SJ"],[20260113,12.78,2110,"SJ"],[20260114,12.93,2110,"SJ"],[20260115,12.9,2110,"SJ"],[20260116,13.15,2110,"SJ"],[20260117,13.15,2110,"SJ"],[20260118,13.15,2110,"SJ"],[20260119,13.43,2110,"SJ"],[20260120,13.69,2110,"SJ"],[20260121,13.31,2110,"SJ"],[20260122,13.34,2110,"SJ"],[20260123,13.86,2110,"SJ"],[20260124,13.86,2110,"SJ"],[20260125,13.86,2110,"SJ"],[20260126,13.36,2110,"SJ"],[20260127,12.81,2110,"SJ"],[20260128,13.36,2110,"SJ"],[20260129,13.11,2110,"SJ"],[20260130,12.23,2110,"SJ"],[20260131,12.23,2110,"SJ"],[20260201,12.23,2110,"SJ"],[20260202,11.46,2067.5,"SJ"],[20260203,11.93,2067.5,"SJ"],[20260204,12.33,2067.5,"SJ"],[20260205,11.88,2067.5,"SJ"],[20260206,12.21,2067.5,"SJ"],[20260207,12.21,2067.5,"SJ"],[20260208,12.21,2067.5,"SJ"],[20260209,12.42,2067.5,"SJ"],[20260210,12.13,2067.5,"SJ"],[20260211,12.18,2067.5,"SJ"],[20260212,12.11,2067.5,"SJ"],[20260213,11.76,2067.5,"SJ"],[20260214,11.76,2067.5,"SJ"],[20260215,11.76,2067.5,"SJ"],[20260216,11.76,2067.5,"SJ"],[20260217,11.76,2067.5,"SJ"],[20260218,11.76,2067.5,"SJ"],[20260219,11.76,2067.5,"SJ"],[20260220,11.76,2067.5,"SJ"],[20260221,11.76,2067.5,"SJ"],[20260222,11.76,2067.5,"SJ"],[20260223,11.76,2067.5,"SJ"],[20260224,12.41,2067.5,"SJ"],[20260225,14.89,2067.5,"SJ"],[20260226,14.29,2067.5,"SJ"],[20260227,14.47,2067.5,"SJ"],[20260228,14.47,2067.5,"SJ"],[20260301,14.47,2067.5,"SJ"],[20260302,14.13,1947.5,"SJ"],[20260303,13.41,1947.5,"SJ"],[20260304,13.49,1947.5,"SJ"],[20260305,13.61,1947.5,"SJ"],[20260306,13.82,1947.5,"SJ"],[20260307,13.82,1947.5,"SJ"],[20260308,13.82,1947.5,"SJ"],[20260309,13.6,1947.5,"SJ"],[20260310,13.57,1947.5,"SJ"],[20260311,13.92,1947.5,"SJ"],[20260312,13.56,1947.5,"SJ"],[20260313,13.12,1947.5,"SJ"],[20260314,13.12,1947.5,"SJ"],[20260315,13.12,1947.5,"SJ"],[20260316,13.02,1947.5,"SJ"],[20260317,12.61,1947.5,"SJ"],[20260318,12.57,1947.5,"SJ"],[20260319,12.01,1947.5,"SJ"],[20260320,11.72,1947.5,"SJ"],[20260321,11.72,1947.5,"SJ"],[20260322,11.72,1947.5,"SJ"],[20260323,11.14,1947.5,"SJ"],[20260324,11.38,1947.5,"SJ"],[20260325,11.56,1947.5,"SJ"],[20260326,11.16,1947.5,"SJ"],[20260327,11.43,1947.5,"SJ"],[20260328,11.43,1947.5,"SJ"],[20260329,11.43,1947.5,"SJ"],[20260330,11.45,1947.5,"SJ"],[20260331,11.15,1947.5,"SJ"],[20260401,11.29,1947.5,"SJ"],[20260402,11,1947.5,"SJ"],[20260403,11.16,1947.5,"SJ"],[20260404,11.16,1947.5,"SJ"],[20260405,11.16,1947.5,"SJ"],[20260406,11.16,1947.5,"SJ"],[20260407,13.39,1947.5,"SJ"],[20260408,14.07,1947.5,"SJ"],[20260409,13.43,1947.5,"SJ"],[20260410,13.47,1947.5,"SJ"],[20260411,13.47,1947.5,"SJ"],[20260412,13.47,1947.5,"SJ"],[20260413,14.05,1947.5,"SJ"],[20260414,13.92,1947.5,"SJ"],[20260415,13.5,1947.5,"SJ"],[20260416,13.86,1947.5,"SJ"],[20260417,13.93,1947.5,"SJ"],[20260418,13.93,1947.5,"SJ"],[20260419,13.93,1947.5,"SJ"],[20260420,14.65,1947.5,"SJ"],[20260421,14.32,1947.5,"SJ"],[20260422,14.44,1947.5,"SJ"],[20260423,14.29,1947.5,"SJ"],[20260424,15.05,1947.5,"SJ"],[20260425,15.05,1947.5,"SJ"],[20260426,15.05,1947.5,"SJ"],[20260427,14.85,1947.5,"SJ"],[20260428,14.85,1947.5,"SJ"],[20260429,15.64,1947.5,"SJ"],[20260430,15.18,1947.5,"SJ"],[20260501,15.18,1947.5,"SJ"],[20260502,15.18,1947.5,"SJ"],[20260503,15.18,1947.5,"SJ"],[20260504,15.18,1950,"SJ"],[20260505,15.18,1950,"SJ"],[20260506,15.78,1950,"SJ"],[20260507,15.43,1950,"SJ"],[20260508,14.78,1950,"SJ"],[20260509,14.78,1950,"SJ"],[20260510,14.78,1950,"SJ"],[20260511,15.25,1950,"SJ"],[20260512,15.04,1950,"SJ"],[20260513,15.15,1950,"SJ"],[20260514,15.42,1950,"SJ"],[20260515,15.86,1950,"SJ"],[20260516,15.86,1950,"SJ"],[20260517,15.86,1950,"SJ"],[20260518,15.17,1950,"SJ"],[20260519,15.18,1950,"SJ"],[20260520,15.35,1950,"SJ"],[20260521,14.32,1950,"SJ"],[20260522,15.21,1950,"SJ"],[20260523,15.21,1950,"SJ"],[20260524,15.21,1950,"SJ"],[20260525,14.98,1950,"SJ"],[20260526,15.94,1950,"SJ"],[20260527,16.27,1950,"SJ"],[20260528,17.49,1950,"SJ"],[20260529,15.74,1950,"SJ"],[20260530,15.74,1950,"SJ"],[20260531,15.74,1950,"SJ"],[20260601,15.67,1950,"SJ"],[20260602,14.88,1950,"SJ"],[20260603,16.43,1950,"SJ"],[20260604,16.82,1950,"SJ"],[20260605,16.75,1925,"SJ"],[20260606,16.75,1925,"SJ"],[20260607,16.75,1925,"SJ"],[20260608,16.14,1925,"SJ"],[20260609,17.65,1925,"SJ"],[20260610,17.99,1925,"SJ"],[20260611,17.87,1925,"SJ"],[20260612,16.52,1925,"SJ"],[20260613,16.52,1925,"SJ"],[20260614,16.52,1925,"SJ"],[20260615,17.56,1925,"SJ"],[20260616,18.84,1925,"SJ"],[20260617,20.45,1925,"SJ"],[20260618,19.82,1925,"SJ"],[20260619,19.82,1925,"SJ"],[20260620,19.82,1925,"SJ"],[20260621,19.82,1925,"SJ"],[20260622,20.9,1925,"SJ"],[20260623,18.97,1925,"SJ"],[20260624,19.4,1925,"SJ"],[20260625,18.58,1925,"SJ"],[20260626,20.15,1925,"SJ"],[20260627,20.15,1925,"SJ"],[20260628,20.15,1925,"SJ"],[20260629,19.71,1925,"SJ"],[20260630,20.56,1925,"SJ"],[20260701,22.13,1925,"SJ"],[20260702,21.43,1925,"SJ"],[20260703,19.5,1925,"SJ"],[20260704,19.5,1925,"SJ"],[20260705,19.5,1925,"SJ"],[20260706,22.02,1925,"SJ"],[20260707,23.3,1925,"SJ"],[20260708,26.44,1925,"SJ"]]</div>
+         <div id="stockinfo0" class="none">[[{"ZGB":"1140013863","LTGB":"926826080","MGSY":"-0.2400","JLR":"-266810931.6400","code":"300118","name":"\u4e1c\u65b9\u65e5\u5347","zycp":"\u592a\u9633\u80fd\u7535\u6c60\u53ca\u7ec4\u4ef6","zybl":0.52206792778624}],[{"ZGB":"762365449","LTGB":"667606138","MGSY":"0.0644","JLR":"43733567.8400","code":"300409","name":"\u9053\u6c0f\u6280\u672f","zycp":"\u6218\u7565\u8d44\u6e90","zybl":0.45493507227735}],[{"ZGB":"261600000","LTGB":"261600000","MGSY":"0.1800","JLR":"47866169.9500","code":"605376","name":"\u535a\u8fc1\u65b0\u6750","zycp":"\u954d\u57fa\u4ea7\u54c1","zybl":0.74816182405019}],[{"ZGB":"231154000","LTGB":"206737026","MGSY":"0.0700","JLR":"15426335.5100","code":"301059","name":"\u91d1\u4e09\u6c5f","zycp":"\u4e8c\u6c27\u5316\u7845","zybl":0.99713691307221}],[{"ZGB":"393116700","LTGB":"345292811","MGSY":"0.1804","JLR":"70906006.5500","code":"300019","name":"\u7845\u5b9d\u79d1\u6280","zycp":"\u5efa\u7b51\u7c7b\u7528\u80f6","zybl":0.41296650751614}],[{"ZGB":"3070692107","LTGB":"3068636387","MGSY":"0.0050","JLR":"15869985.0000","code":"000012","name":"\u5357\u73bbA","zycp":"\u73bb\u7483\u4ea7\u54c1","zybl":0.8641880667253}],[{"ZGB":"1914344077","LTGB":"1384904481","MGSY":"0.0800","JLR":"149618189.5100","code":"002709","name":"\u5929\u8d50\u6750\u6599","zycp":"\u9502\u79bb\u5b50\u7535\u6c60\u6750\u6599","zybl":0.9039421127071}],[{"ZGB":"846455998","LTGB":"778560800","MGSY":"0.2500","JLR":"206712436.9600","code":"605589","name":"\u5723\u6cc9\u96c6\u56e2","zycp":"\u5408\u6210\u6811\u8102\u7c7b","zybl":0.52493994024061}],[{"ZGB":"1910172451","LTGB":"1904160547","MGSY":"0.2170","JLR":"412911727.9000","code":"000830","name":"\u9c81\u897f\u5316\u5de5","zycp":"\u5316\u5de5\u65b0\u6750\u6599\u4ea7\u54c1","zybl":0.64773967717484}],[{"ZGB":"430973206","LTGB":"423263062","MGSY":"0.0900","JLR":"38619778.9500","code":"300200","name":"\u9ad8\u76df\u65b0\u6750","zycp":"\u80f6\u7c98\u5242\u53ca\u6811\u8102","zybl":0.74847068728229}],[{"ZGB":"1160145046","LTGB":"1160145046","MGSY":"0.0100","JLR":"10385842.9800","code":"600293","name":"\u4e09\u5ce1\u65b0\u6750","zycp":"\u73bb\u7483\u5236\u54c1","zybl":0.98241754063062}],[{"ZGB":"676833360","LTGB":"676833360","MGSY":"-0.0300","JLR":"-20770353.7700","code":"603980","name":"\u5409\u534e\u96c6\u56e2","zycp":"\u67d3\u6599\u53ca\u4e2d\u95f4\u4f53","zybl":0.89045275005703}],[{"ZGB":"690423600","LTGB":"686367975","MGSY":"-0.0088","JLR":"-6100968.1400","code":"300328","name":"\u5b9c\u5b89\u79d1\u6280","zycp":"\u94dd\u5236\u54c1","zybl":0.45408604687936}],[{"ZGB":"946639012","LTGB":"946263012","MGSY":"0.1300","JLR":"127469433.5800","code":"002083","name":"\u5b5a\u65e5\u80a1\u4efd","zycp":"\u6bdb\u5dfe\u7cfb\u5217","zybl":0.61993921504223}],[{"ZGB":"130231497","LTGB":"96811525","MGSY":"0.0500","JLR":"7068533.0100","code":"003026","name":"\u4e2d\u6676\u79d1\u6280","zycp":"\u534a\u5bfc\u4f53\u5355\u6676\u7845\u7247","zybl":0.52470145011077}],[{"ZGB":"315786800","LTGB":"315786800","MGSY":"0.0900","JLR":"30846730.5800","code":"603155","name":"\u65b0\u4e9a\u5f3a","zycp":"\u529f\u80fd\u6027\u52a9\u5242","zybl":0.86615444907967}],[{"ZGB":"1183715018","LTGB":"1183715018","MGSY":"-0.0400","JLR":"-53142725.2200","code":"600537","name":"*ST\u4ebf\u6676","zycp":"\u5149\u4f0f\u7535\u6c60\u7ec4\u4ef6","zybl":0.86310866754467}],[{"ZGB":"3507401812","LTGB":"3507401812","MGSY":"-0.0200","JLR":"-55427538.0400","code":"600935","name":"\u534e\u5851\u80a1\u4efd","zycp":"PVC","zybl":0.55606119202748}],[{"ZGB":"559434027","LTGB":"544427228","MGSY":"0.1457","JLR":"81535577.9000","code":"300041","name":"\u56de\u5929\u65b0\u6750","zycp":"\u6709\u673a\u7845\u80f6","zybl":0.46715058493556}],[{"ZGB":"1142246700","LTGB":"1142246700","MGSY":"-0.0370","JLR":"-42477987.3000","code":"601700","name":"\u98ce\u8303\u80a1\u4efd","zycp":"\u89d2\u94a2\u5854","zybl":0.43878523120709}],[{"ZGB":"671365928","LTGB":"671365928","MGSY":"-0.1200","JLR":"-81035822.3900","code":"605358","name":"\u7acb\u6602\u5fae","zycp":"\u534a\u5bfc\u4f53\u7845\u7247","zybl":0.75029628200326}],[{"ZGB":"1103255126","LTGB":"1103255126","MGSY":"0.2800","JLR":"310585558.0600","code":"600141","name":"\u5174\u53d1\u96c6\u56e2","zycp":"\u5176\u4ed6\u4e1a\u52a1","zybl":0.25720286764194}],[{"ZGB":"4043115773","LTGB":"4040013796","MGSY":"-0.4774","JLR":"-1906347694.2900","code":"002129","name":"TCL\u4e2d\u73af","zycp":"\u5176\u4ed6\u4e1a\u52a1","zybl":0.78012235025857}],[{"ZGB":"679022202","LTGB":"679022202","MGSY":"-0.0910","JLR":"-61875827.2000","code":"603185","name":"\u5f18\u5143\u7eff\u80fd","zycp":"\u592a\u9633\u80fd\u7ec4\u4ef6\u53ca\u7535\u6c60","zybl":0.60887998047675}],[{"ZGB":"192407260","LTGB":"83900717","MGSY":"-0.0191","JLR":"-3666344.2600","code":"001269","name":"\u6b27\u6676\u79d1\u6280","zycp":"\u5149\u4f0f\u914d\u5957\u52a0\u5de5\u670d\u52a1","zybl":0.62507611153913}],[{"ZGB":"273923271","LTGB":"209866256","MGSY":"0.1763","JLR":"48283708.6100","code":"300092","name":"\u79d1\u65b0\u673a\u7535","zycp":"\u5929\u7136\u6c14\u5316\u5de5\u8bbe\u5907","zybl":0.39614162711464}],[{"ZGB":"64540000","LTGB":"30577542","MGSY":"0.2719","JLR":"17025586.9900","code":"301300","name":"\u8fdc\u7fd4\u65b0\u6750","zycp":"\u4e8c\u6c27\u5316\u7845","zybl":0.49784008816363}],[{"ZGB":"142240000","LTGB":"88817622","MGSY":"0.1900","JLR":"27143221.6900","code":"688035","name":"\u5fb7\u90a6\u79d1\u6280","zycp":"\u65b0\u80fd\u6e90\u5e94\u7528\u6750\u6599","zybl":0.52277039215073}],[{"ZGB":"1200000000","LTGB":"1199782000","MGSY":"0.0300","JLR":"36819360.4100","code":"300821","name":"\u4e1c\u5cb3\u7845\u6750","zycp":"\u6df1\u52a0\u5de5\u4ea7\u54c1","zybl":0.46991693097489}],[{"ZGB":"275258621","LTGB":"245836203","MGSY":"-0.0600","JLR":"-17228373.3400","code":"300472","name":"*ST\u65b0\u5143","zycp":"\u667a\u80fd\u8f93\u9001\u914d\u6599\u88c5\u5907","zybl":0.50471919815175}],[{"ZGB":"448717046","LTGB":"432527207","MGSY":"0.1400","JLR":"62580970.5800","code":"300121","name":"\u9633\u8c37\u534e\u6cf0","zycp":"\u9ad8\u6027\u80fd\u6a61\u80f6\u52a9\u5242","zybl":0.5576098759479}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u9526\u534e\u65b0\u6750","zycp":"\u7845\u70f7\u4ea4\u8054\u5242","zybl":0.55764192221256}],[{"ZGB":"955965729","LTGB":"942406491","MGSY":"0.1369","JLR":"129026633.3000","code":"600475","name":"\u534e\u5149\u73af\u80fd","zycp":"\u5730\u65b9\u70ed\u7535\u53ca\u5149\u4f0f\u8fd0\u8425\u670d\u52a1","zybl":0.45446484269697}],[{"ZGB":"519375000","LTGB":"254977224","MGSY":"0.0600","JLR":"30629054.2900","code":"688602","name":"\u5eb7\u9e4f\u79d1\u6280","zycp":"\u533b\u836f\u519c\u836f\u5b9a\u5236\u5316\u5b66\u54c1","zybl":0.52881352722459}],[{"ZGB":"4501985691","LTGB":"4501985691","MGSY":"-0.5759","JLR":"-2592750476.3900","code":"600438","name":"\u901a\u5a01\u80a1\u4efd","zycp":"\u5149\u4f0f\u76f8\u5173\u4ea7\u54c1","zybl":0.38206530923845}],[{"ZGB":"432475779","LTGB":"432475779","MGSY":"-0.0076","JLR":"-3279351.3500","code":"002211","name":"ST\u5b8f\u8fbe","zycp":"\u6df7\u70bc\u80f6","zybl":0.91901963608785}],[{"ZGB":"2145205724","LTGB":"552705724","MGSY":"-0.2600","JLR":"-558015371.8500","code":"688303","name":"\u5927\u5168\u80fd\u6e90","zycp":"\u9ad8\u7eaf\u591a\u6676\u7845","zybl":0.98745059988413}],[{"ZGB":"787999301","LTGB":"500668201","MGSY":"0.0300","JLR":"27969678.0100","code":"002666","name":"\u5fb7\u8054\u96c6\u56e2","zycp":"\u6c7d\u8f66\u7cbe\u7ec6\u5316\u5b66\u54c1","zybl":0.53165865358568}],[{"ZGB":"2798776254","LTGB":"2798776254","MGSY":"0.1600","JLR":"459012443.6000","code":"600295","name":"\u9102\u5c14\u591a\u65af","zycp":"\u7845\u94c1","zybl":0.34581291622657}],[{"ZGB":"1207723762","LTGB":"883140060","MGSY":"0.2100","JLR":"253760995.8100","code":"002539","name":"\u4e91\u56fe\u63a7\u80a1","zycp":"\u65b0\u578b\u590d\u5408\u80a5\u53ca\u78f7\u80a5","zybl":0.38186665630066}],[{"ZGB":"1182206941","LTGB":"1182206941","MGSY":"0.2200","JLR":"259660948.8000","code":"603260","name":"\u5408\u76db\u7845\u4e1a","zycp":"\u6709\u673a\u7845","zybl":0.46708862580533}],[{"ZGB":"604272777","LTGB":"602054868","MGSY":"-0.0730","JLR":"-54542375.8800","code":"000561","name":"\u70fd\u706b\u7535\u5b50","zycp":"\u901a\u4fe1\u4ea7\u54c1\u53ca\u914d\u5957","zybl":0.41284155861848}],[{"ZGB":"1349597049","LTGB":"1292971908","MGSY":"0.0245","JLR":"33130542.3400","code":"600596","name":"\u65b0\u5b89\u80a1\u4efd","zycp":"\u519c\u5316\u81ea\u4ea7\u54c1","zybl":0.47011010175344}],[{"ZGB":"122142242","LTGB":"103009086","MGSY":"-0.0300","JLR":"-4133427.9700","code":"001212","name":"\u4e2d\u65d7\u65b0\u6750","zycp":"\u677f\u6750","zybl":0.78578237269685}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u521b\u8fbe\u65b0\u6750","zycp":"\u7535\u5b50\u5c01\u88c5\u6750\u6599","zybl":0.973595160086}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u79d1\u521b\u65b0\u6750","zycp":"\u529f\u80fd\u8010\u706b\u6750\u6599","zybl":0.66135201863987}],[{"ZGB":"656642120","LTGB":"642857142","MGSY":"-0.0600","JLR":"-41933692.6200","code":"603778","name":"\u56fd\u665f\u79d1\u6280","zycp":"\u5149\u4f0f\u7ec4\u4ef6\u53ca\u7535\u6c60","zybl":0.97816714194888}],[{"ZGB":"7578049736","LTGB":"7578042190","MGSY":"-0.1900","JLR":"-1436171302.6800","code":"601012","name":"\u9686\u57fa\u7eff\u80fd","zycp":"\u7ec4\u4ef6\u53ca\u7535\u6c60","zybl":0.85178235609029}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u8fde\u57ce\u6570\u63a7","zycp":"\u6676\u4f53\u751f\u957f\u53ca\u52a0\u5de5\u8bbe\u5907","zybl":0.81183394421275}],[{"ZGB":"390000000","LTGB":"381003758","MGSY":"-0.0138","JLR":"-5303618.3300","code":"002909","name":"\u96c6\u6cf0\u80a1\u4efd","zycp":"\u5efa\u7b51\u7c7b\u7528\u80f6","zybl":0.53968379247658}],[{"ZGB":"159500000","LTGB":"62514393","MGSY":"-0.2700","JLR":"-43082807.8800","code":"688353","name":"\u534e\u76db\u9502\u7535","zycp":"VC","zybl":0.66809286889125}],[{"ZGB":"215007980","LTGB":"161237572","MGSY":"0.1300","JLR":"27020921.0500","code":"300610","name":"\u6668\u5316\u80a1\u4efd","zycp":"\u8868\u9762\u6d3b\u6027\u5242","zybl":0.81629161365848}],[{"ZGB":"2683517087","LTGB":"2683517087","MGSY":"0.1752","JLR":"470087221.5400","code":"601636","name":"\u65d7\u6ee8\u96c6\u56e2","zycp":"\u8d85\u767d\u5149\u4f0f\u73bb\u7483","zybl":0.3218395568013}],[{"ZGB":"944606894","LTGB":"944606894","MGSY":"0.0252","JLR":"23847546.4200","code":"600552","name":"\u51ef\u76db\u79d1\u6280","zycp":"\u663e\u793a\u6750\u6599","zybl":0.78667991742723}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u534e\u5bc6\u65b0\u6750","zycp":"\u6a61\u5851\u6750\u6599","zybl":0.70781785565305}],[{"ZGB":"347715136","LTGB":"287148629","MGSY":"2.0400","JLR":"708043630.6900","code":"300724","name":"\u6377\u4f73\u4f1f\u521b","zycp":"\u5de5\u827a\u8bbe\u5907","zybl":0.81846298728007}],[{"ZGB":"373333334","LTGB":"251693916","MGSY":"0.2600","JLR":"96598207.3100","code":"603281","name":"\u6c5f\u701a\u65b0\u6750","zycp":"\u529f\u80fd\u6027\u7845\u70f7","zybl":0.96730517660612}],[{"ZGB":"1401544698","LTGB":"1399482156","MGSY":"0.0043","JLR":"5669972.2600","code":"002132","name":"\u6052\u661f\u79d1\u6280","zycp":"\u5316\u5b66\u4ea7\u54c1","zybl":0.29401995572075}],[{"ZGB":"510697600","LTGB":"506528553","MGSY":"0.0264","JLR":"13411806.3200","code":"002388","name":"\u65b0\u4e9a\u5236\u7a0b","zycp":"\u7535\u5b50\u8bbe\u5907","zybl":0.23039497379875}],[{"ZGB":"1627625993","LTGB":"1595424747","MGSY":"0.1500","JLR":"242440247.9900","code":"002091","name":"\u6c5f\u82cf\u56fd\u6cf0","zycp":"\u7eba\u7ec7\u670d\u88c5\u3001\u73a9\u5177\u7b49\u51fa\u53e3\u8d38\u6613","zybl":0.82662569177629}],[{"ZGB":"482115452","LTGB":"384375669","MGSY":"0.0672","JLR":"31716458.9400","code":"002054","name":"\u5fb7\u7f8e\u5316\u5de5","zycp":"\u7eba\u7ec7\u5316\u5b66\u54c1","zybl":0.54937309296698}],[{"ZGB":"208000000","LTGB":"162220740","MGSY":"0.1200","JLR":"25197127.4700","code":"002971","name":"\u548c\u8fdc\u6c14\u4f53","zycp":"\u5927\u5b97\u6c14\u4f53","zybl":0.46214196440124}],[{"ZGB":"5052792571","LTGB":"5052792571","MGSY":"0.3187","JLR":"1600181657.2000","code":"600089","name":"\u7279\u53d8\u7535\u5de5","zycp":"\u7535\u6c14\u8bbe\u5907\u4ea7\u54c1","zybl":0.27497099252716}],[{"ZGB":"313357360","LTGB":"312217360","MGSY":"-0.0200","JLR":"-4730216.6300","code":"605399","name":"\u6668\u5149\u65b0\u6750","zycp":"\u4e3b\u8981\u4ea7\u54c1","zybl":0.70489957020039}],[{"ZGB":"1413020549","LTGB":"1392398249","MGSY":"-0.0289","JLR":"-40814435.9400","code":"002218","name":"\u62d3\u65e5\u65b0\u80fd","zycp":"\u5149\u4f0f\u73bb\u7483","zybl":0.39150064606046}],[{"ZGB":"80000000","LTGB":"20000000","MGSY":"0.0366","JLR":"2876757.6000","code":"001255","name":"\u535a\u83f2\u7535\u6c14","zycp":"\u7edd\u7f18\u6811\u8102","zybl":0.46816704398266}],[{"ZGB":"134852794","LTGB":"121056664","MGSY":"0.1800","JLR":"24109883.8300","code":"300727","name":"\u6da6\u79be\u6750\u6599","zycp":"\u6709\u673a\u7845\u6df1\u52a0\u5de5\u4ea7\u54c1","zybl":0.61607552466206}],[{"ZGB":"733333300","LTGB":"213333300","MGSY":"0.0400","JLR":"26275253.7200","code":"301238","name":"\u745e\u6cf0\u65b0\u6750","zycp":"\u7535\u5b50\u5316\u5b66\u54c1","zybl":0.94963903215509}],[{"ZGB":"18779080767","LTGB":"18099621696","MGSY":"0.0545","JLR":"1012576836.0000","code":"000100","name":"TCL\u79d1\u6280","zycp":"\u5176\u4ed6\u4e1a\u52a1","zybl":0.96687966510211}],[{"ZGB":"237321380","LTGB":"206161244","MGSY":"-0.0080","JLR":"-1889690.2200","code":"002213","name":"\u5927\u4e3a\u80a1\u4efd","zycp":"\u534a\u5bfc\u4f53\u5b58\u50a8\u5668","zybl":0.89811659503166}],[{"ZGB":"104801463","LTGB":"76445046","MGSY":"0.0534","JLR":"5591852.0200","code":"300535","name":"\u8fbe\u5a01\u80a1\u4efd","zycp":"\u5316\u5b66\u54c1","zybl":0.960819897164}],[{"ZGB":"433641524","LTGB":"433641524","MGSY":"-0.2300","JLR":"-99486106.8100","code":"603398","name":"*ST\u6c90\u90a6","zycp":"\u5149\u4f0f\u7845\u7247\u548c\u7845\u68d2","zybl":0.76235040879237}],[{"ZGB":"634995811","LTGB":"632310656","MGSY":"-0.0100","JLR":"-5619211.2100","code":"605366","name":"\u5b8f\u67cf\u65b0\u6750","zycp":"\u7845\u70f7\u5076\u8054\u5242","zybl":0.83347048624446}],[{"ZGB":"1873767825","LTGB":"1873767825","MGSY":"-0.0861","JLR":"-161271551.8300","code":"600481","name":"\u53cc\u826f\u8282\u80fd","zycp":"\u5149\u4f0f\u4ea7\u54c1","zybl":0.5842528216579}],[{"ZGB":"189433145","LTGB":"140189402","MGSY":"-0.0806","JLR":"-15269730.9300","code":"300665","name":"\u98de\u9e7f\u80a1\u4efd","zycp":"\u6d82\u6599\u6d82\u88c5\u4e00\u4f53\u5316","zybl":0.25850678905226}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u5764\u535a\u7cbe\u5de5","zycp":"\u7cbe\u5bc6\u6210\u578b\u96f6\u90e8\u4ef6","zybl":0.91805516128889}],[{"ZGB":"577945612","LTGB":"443350612","MGSY":"-0.0572","JLR":"-33058911.5500","code":"300345","name":"\u534e\u6c11\u80a1\u4efd","zycp":"\u5149\u4f0f\u4ea7\u54c1","zybl":0.88206742685657}],[{"ZGB":"246790497","LTGB":"243618497","MGSY":"0.0774","JLR":"18863797.2100","code":"300402","name":"\u5b9d\u8272\u80a1\u4efd","zycp":"\u538b\u529b\u5bb9\u5668","zybl":0.95902969376183}],[{"ZGB":"588700000","LTGB":"588700000","MGSY":"0.1800","JLR":"101769625.0300","code":"603181","name":"\u7687\u9a6c\u79d1\u6280","zycp":"\u7279\u79cd\u529f\u80fd\u6027\u53ca\u9ad8\u5206\u5b50\u6750\u6599\u8868\u9762\u6d3b\u6027\u5242","zybl":0.99987272614891}],[{"ZGB":"138356888","LTGB":"98341448","MGSY":"0.0500","JLR":"7187233.1700","code":"300980","name":"\u7965\u6e90\u65b0\u6750","zycp":"IXPE","zybl":0.78545574057465}],[{"ZGB":"133845891","LTGB":"109979828","MGSY":"-0.4938","JLR":"-66090642.7400","code":"300619","name":"\u91d1\u94f6\u6cb3","zycp":"\u9502\u7535\u6c60\u751f\u4ea7\u8bbe\u5907","zybl":0.56910525993272}],[{"ZGB":"382624497","LTGB":"382624497","MGSY":"0.0700","JLR":"27002805.0400","code":"603938","name":"\u4e09\u5b5a\u80a1\u4efd","zycp":"\u94be\u7cfb\u5217\u4ea7\u54c1","zybl":0.56185141795999}],[{"ZGB":"109878593","LTGB":"43365093","MGSY":"0.3100","JLR":"33635021.7500","code":"301266","name":"\u5b87\u90a6\u65b0\u6750","zycp":"\u4e92\u8fde\u710a\u5e26","zybl":0.7944850597948}],[{"ZGB":"2579213965","LTGB":"2551430324","MGSY":"0.0654","JLR":"168578339.8500","code":"000009","name":"\u4e2d\u56fd\u5b9d\u5b89","zycp":"\u9ad8\u65b0\u6280\u672f\u884c\u4e1a","zybl":0.81169240829394}],[{"ZGB":"119032116","LTGB":"108593231","MGSY":"-0.0685","JLR":"-8150934.0900","code":"300890","name":"\u7fd4\u4e30\u534e","zycp":"\u77f3\u58a8\u8d1f\u6781\u6750\u6599","zybl":0.99563652401133}],[{"ZGB":"109951598","LTGB":"88301928","MGSY":"0.2999","JLR":"30527733.4100","code":"300644","name":"\u5357\u4eac\u805a\u9686","zycp":"\u6539\u6027\u5de5\u7a0b\u5851\u6599","zybl":0.4430293564248}],[{"ZGB":"1190432569","LTGB":"1080550826","MGSY":"0.0600","JLR":"64730606.5200","code":"002407","name":"\u591a\u6c1f\u591a","zycp":"\u65b0\u80fd\u6e90\u6750\u6599","zybl":0.33214197500206}],[{"ZGB":"550004834","LTGB":"450565266","MGSY":"0.0040","JLR":"2238811.9900","code":"300497","name":"\u5bcc\u7965\u80a1\u4efd","zycp":"\u4e2d\u95f4\u4f53","zybl":0.4440455137129}],[{"ZGB":"183147692","LTGB":"183147692","MGSY":"0.0700","JLR":"12102063.1200","code":"603041","name":"\u7f8e\u601d\u5fb7","zycp":"\u786c\u6ce1\u52a9\u5242","zybl":0.75658641489463}],[{"ZGB":"8831250228","LTGB":"8831250228","MGSY":"0.0016","JLR":"12517312.9500","code":"603077","name":"\u548c\u90a6\u751f\u7269","zycp":"\u86cb\u6c28\u9178\u53ca\u526f\u4ea7\u54c1","zybl":0.34695239669316}],[{"ZGB":"1247621058","LTGB":"507565658","MGSY":"0.0390","JLR":"49079915.6300","code":"688432","name":"\u6709\u7814\u7845","zycp":"\u534a\u5bfc\u4f53\u7845\u629b\u5149\u7247","zybl":0.59866221185611}],[{"ZGB":"3309679284","LTGB":"3305420145","MGSY":"-0.5000","JLR":"-1638489294.1500","code":"002459","name":"\u6676\u6fb3\u79d1\u6280","zycp":"\u5149\u4f0f\u7ec4\u4ef6","zybl":0.91659329572603}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u7845\u70f7\u79d1\u6280","zycp":"\u6c14\u4f53\u53ca\u5371\u5316\u54c1\u6536\u5165","zybl":0.99458589625486}],[{"ZGB":"824448152","LTGB":"802798152","MGSY":"0.1800","JLR":"151535656.3600","code":"600458","name":"\u65f6\u4ee3\u65b0\u6750","zycp":"\u98ce\u7535\u53f6\u7247","zybl":0.40907143046415}],[{"ZGB":"685426671","LTGB":"583253363","MGSY":"0.1962","JLR":"134475970.2700","code":"300035","name":"\u4e2d\u79d1\u7535\u6c14","zycp":"\u77f3\u58a8\u7c7b\u8d1f\u6781\u6750\u6599","zybl":0.91840929115715}],[{"ZGB":null,"LTGB":null,"MGSY":null,"JLR":null,"code":null,"name":"\u51ef\u534e\u6750\u6599","zycp":"\u73af\u6c27\u7c89\u672b\u5305\u5c01\u6599","zybl":0.95119418660518}],[{"ZGB":"51470000","LTGB":"18668550","MGSY":"0.4899","JLR":"24856700.2700","code":"301233","name":"\u76db\u5e2e\u80a1\u4efd","zycp":"\u6c7d\u8f66\u4ea7\u54c1","zybl":0.51429536704834}],[{"ZGB":"2414602861","LTGB":"2414602861","MGSY":"-0.0400","JLR":"-91413983.6600","code":"601908","name":"\u4eac\u8fd0\u901a","zycp":"\u7535\u529b","zybl":0.33126437779637}],[{"ZGB":"2064349448","LTGB":"2064349448","MGSY":"-0.0092","JLR":"-19016333.7200","code":"600409","name":"\u4e09\u53cb\u5316\u5de5","zycp":"\u7c98\u80f6\u77ed\u7ea4\u7ef4","zybl":0.4620507259938}]]</div>
+    					<div id="yjycChart" style="width:100%;height:220px;"></div>
+    </div>
+    <div class="m_tab_content mt15" id="price_tab_contnt">
+       
+    </div>
+   
+</div>
+<div class="ft"></div>
+</div>
+	
+
+</div>
+		<!-- F10 Content End -->
+<!-- F10 Footer Start -->
+		<div class="footer">
+		<div class="links">
+		    <a href="http://stockpage.10jqka.com.cn" target="_blank" onclick="clickTalogStat('jptostock');">ͬ˳ҳ</a> |
+		    <a href="http://moni.10jqka.com.cn/" target="_blank">ģ⳴</a> |
+		    <a href="http://www.10jqka.com.cn/school/" target="_blank">ѧУ</a> |
+		    <a href="http://mobile.10jqka.com.cn/?req=pcf10" target="_blank">ֻ</a>|
+		    <a target="_blank" href=" http://wpa.qq.com/msgrd?v=3&amp;uin=2270716061&amp;site=qq&amp;menu=yes">ϵ</a>
+		</div>
+		<p>:Ϣͬ˳оṩοͬ˳о󵫲֤ݵȫ׼ȷд©йָ֤й˾Ϣ¶ýΪ׼ͬ˳оĲȫ򲿷ݶµӯеκΡû˶Էʹóеաͬ˳Դ˲κ͵ĵͬ˳һûҪҲ񲻻жϣԷļʱԣȫԣͬ˳ͬ˳ϵõκϢ׽̲ͬ˳ṩİͬ˳Ƶ£ݣκεͶʽ飬û鿴ЩеκΪɵķպͽиͬ˳޹ء </p>
+		</div>
+<!-- F10 Footer End -->
+    </div>
+    <div class="r-go-top" id="r-go-top"></div>
+</body>
+<input id="stockCode" type="hidden" value="300821">
+<input id="F001" type="hidden" value="A">
+<input id="F002" type="hidden" value="֤ȯ">
+<input id="F004" type="hidden" value="1">
+<input id="stockName" type="hidden" value="">
+<input id="marketId" type="hidden" value="33">
+<input id="cateName"  type="hidden" value="Ӫ">
+<input id="catecode"  type="hidden" value="operate">
+<input id="fcatecode"  type="hidden" value="operate">
+<input id="sid" type="hidden" value="F10new_jyfx">
+<input id="fid" type="hidden" value="F10,F10master,F10main,F10new">
+<input id="qid" type="hidden" value="14585179">
+<div style="display:none" id="wordraddom">
+</div>
+<!-- title  -->
+	<div class="titleBox" id="altlayer" style="display:none; width: 260px;">
+		<div class="tipbox_bd p0_5"><span style="line-height:24px;" class="tip f14">
+		<span id="altlayer_content"></span>
+		</div>
+	</div>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/common/cefapi/1.5.5/cefApi.min.js;js/basic/stock/newPcJs/common.js"></script>
+<script>
+try {
+    external.createObject('Util');
+    //document.getElementById("updownchange").style.display = "block";
+} catch (e) {}
+</script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/jquery-1.8.3.min.js;js/basic/common/inheritance.js;js/basic/stock/popWin.js;js/basic/common/Model_v2.js;js/basic/stock/20200604153837/index.js;js/basic/stock/20200604153837/po_v2.js;js/basic/stock/scrollBind.js"></script>
+<script type="text/javascript" crossorigin charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/common_v3-2-a58b25.js"></script>
+<!--[if IE ]><script type="text/javascript"  crossorigin src="//s.thsi.cn/js/excanvas.min.js"></script><![endif]-->
+<!--[if IE 6]>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.company_logo,.btn-gnjx-left, .btn-gnjx-right, .concept_hot_icons,.iwc_searchbar,.iwc_searchbar .tips-icon,#autocomplete_search_input dd .icona,#autocomplete_search_input dd .iconb');</script>
+<![endif]-->
+<script type="text/javascript" crossorigin src="//s.thsi.cn/js/basic/jquery.pos-fixed.js"></script>
+<script type="text/javascript" crossorigin src="//s.thsi.cn/cb?js/ta.min.js;js/pa.min.js;js/basic/stock/StatLoad.js;js/basic/stock/20200605135220/xgcl_mod.js"></script>
+<script type="text/javascript" crossorigin src="//s.thsi.cn/js/basic/stock/tongji.min.js"></script>
+<!-- ͳ -->
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/home/ths_core.min.js;js/home/ths_quote.min.js;js/home/tongji.min.js" charset="utf-8"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/commonLog_v3.js" charset="utf-8"></script>
+<!--F10Ӫλű-->
+<script type="text/javascript" crossorigin charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/append-960857.js"></script>
+<script type="text/javascript" crossorigin charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/f10widget_v3-5ec039.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?/js/navigation/jquery.bgiframe.min.js;/js/navigation/jquery.ui.position.min.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/basic/stock/json2.js"></script>
+<script type="text/javascript" charset="utf-8" src="//s.thsi.cn/js/basic/stockph_v2/stock/search_v3-fec53c.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/basic/stock/jquery.flot3.min.js;js/basic/stock/jquery.flot.time.min.js;js/basic/stock/jquery.flot.tooltip.min.js;js/basic/stock/tableSorter_v3.js;js/basic/stock/pagescroll.js;js/basic/stock/operatetablepage.20150910.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/operate-5537c0.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/website/datacenter/rzrq/thscharts.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/providerchart-c86241.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/userevaluate.20140318.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/cb?js/basic/stock/tableSorter_v3-2.20160725.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/xgcl-8719c5.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/jquery.flotcp.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/jquery.flot.tooltipcp.20151209.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/operatecp-2c0e89.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/opevaluate.js"></script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/20200604153837/click.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/cd/website-thsc-f10-utils/1.6.4/swiper.min.js"></script>
+<link href="//s.thsi.cn/cd/website-thsc-f10-utils/1.6.4/swiper.min.css" rel="stylesheet" type="text/css">
+<script>
+	if ($(".i_sideBar .i_list li").length>0) {
+		sendTalog('f10_stock_fdckf_operate_count#f10_stock_fdckf_total_count');
+	}
+</script>
+<script>
+//---------------Զtitle start----------
+var tempalt='';//ʱ洢title
+document.body.onmousemove = function(event) {
+	if(altlayer.style.display==''){
+		$("#altlayer").css({
+			left: event.pageX,
+			top: event.pageY+10
+		});
+	}
+};
+document.body.onmouseover = function(event) {
+	if (event.srcElement.className !== 'titleIcon') {
+		return false;
+	}
+	if(event.srcElement.title && (event.srcElement.title!='' || (event.srcElement.title=='' && tempalt!=''))){
+		$("#altlayer").css({
+			left: event.pageX,
+			top: event.pageY+20,
+			display: ''
+		});
+		$("#altlayer_content").html(event.srcElement.title)
+		tempalt = event.srcElement.title;
+		event.srcElement.title='';
+	}
+};
+document.body.onmouseout = function(event) {
+	if (tempalt != '') {
+		event.srcElement.title = tempalt;	
+	}
+	tempalt = '';
+	$("#altlayer").hide();
+};
+//---------------Զtitle end----------
+//F10ͻ˽
+function setClientCacheData() {
+    try { //жǷڿͻˣ
+        external.createObject('Util');
+        window.API.use({
+            method: 'Util.getHxVer',
+            success: function(data) {
+                var hexinVer = getVersionStr(data);
+                var pathname = window.location.pathname
+                pathname = pathname.replace(/\/\d{2,3}\//, '/%4/');
+                pathname = pathname.replace(/\/[\d|A]\d{5}\//, '/%6/');
+                //dalert(hexinVer);//ע⣬԰汾86080  ʽ 86090 ע
+                if (hexinVer >= 86080) {
+                    window.API.use({
+                        method: 'Info.cacheInfoData',
+                        data: ['f10_client_node', 'http://basic.10jqka.com.cn' + pathname],
+                        success: function() {
+                        }
+                    })
+                } else {
+                    window.API.use({
+                        method: 'Info.cacheInfoData',
+                        data: ['', 'http://basic.10jqka.com.cn/' + pathname],
+                        success: function() {
+                        }
+                    })
+                }
+            }
+        })
+        document.getElementById("updownchange").style.display = "block";
+    } catch (e) {
+        //Զheader
+        $("#quotedata").empty()
+        $("#updownchange").empty()
+    }
+	try {
+		callNativeHandler('getMacVer', {}, function(data){
+			if (data.plaform == 'mac' && data.version>='1.3.0' ) {
+				var pathname = window.location.pathname
+                pathname = pathname.replace(/\/\d{2,3}\//, '/%4/');
+                pathname = pathname.replace(/\/[\d|A]\d{5}\//, '/%6/');
+				callNativeHandler('cache_info_Data', {
+					'f10_client_node': 'http://basic.10jqka.com.cn' + pathname
+				}, function(data){
+				});
+			}
+		});
+	} catch (e) {
+    }
+}
+setClientCacheData();
+</script>
+<script type="text/javascript"  crossorigin src="//s.thsi.cn/js/basic/stock/20200604153837/stockpage_v3.20190506.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin id="ths-parser-script" app_key="f10_astockpc_config" src="//s.thsi.cn/cd/website-thsc-f10-utils/1.4.39/parser.js"></script>
+<script type="text/javascript">
+var sid = 'F10new_jyfx';
+var fid = 'F10,F10master,F10main,F10new';
+var stockcode = '300821';
+if (window.location.href.indexOf('interactive')<0
+		&&window.location.href.indexOf('dupont')<0) {
+    $(".subnav .skipto").each(function(){
+    	sonnav = $(this).attr('nav');
+    	if ($("#"+sonnav).length>0 || $("[idchange='"+sonnav+"']").length>0) {
+    	} else {
+    		$(this).hide();
+    	}
+    })
+}
+if (stockcode.substr(0,2) == '43' || stockcode.substr(0,2) == '83') {
+	var third_sid = sid+'_thirdboard';
+	var third_fid = fid+'_thirdboard';
+    PA.setStartTime(loadTimer);
+	PA.init({'id':third_sid, 'fid':third_fid, 'stockcode':stockcode});
+}
+$(document).ready(function(){
+var hash = window.location.hash.substring(1);
+var hashArray = hash.split('-');
+if(hashArray[0]  == 'position'){
+	$("#sortNav li").eq(hashArray[1]).find("a").click();
+}
+});
+try {
+    external.createObject('Util');
+    window.API.use({
+        method: 'Passport.get',
+        data: ['m_qs'],
+        success: function(data) {
+            var qsid = data
+            if (qsid == '114') {
+                $("#f10_top_ad").hide();
+                $("#r-go-top").hide();
+            }
+        }
+    })
+} catch (e) {}
+if (!isIE6()) {
+    $(".m_box").statload();
+}
+try {
+    external.createObject('Util');
+    window.API.use({
+        method: 'Passport.get',
+        data: 'm_qs',
+        success: function(data) {
+            var qsid = data
+            if (qsid < 800) {
+                fid += ',f10new_qs';
+            } else {
+                fid += ',f10new_fqs';
+            }
+            PA.setStartTime(loadTimer);
+            setTimeout(function(){
+                PA.init({
+                    'id': sid,
+                    'fid': fid,
+                    'stockcode': stockcode,
+                    'qsid': qsid
+                });
+            },100)
+        }
+    })
+} catch (e) {
+    PA.setStartTime(loadTimer);
+    PA.init({
+        'id': sid,
+        'fid': fid,
+        'stockcode': stockcode
+    });
+}
+try {
+    external.createObject('Util');
+    var externalSessionId = window.API.createSessionId('external');
+    window.API.use({
+        method: 'external.registerEvent',
+        data: 'onshow',
+        sessionId: externalSessionId,
+        persistent: true,
+        callbackName: 'onshow',
+        success: function(data) {
+            if (!data) {
+                 PA.setStartTime(loadTimer);
+                 PA.init({
+                    'id': sid,
+                    'fid': fid,
+                    'stockcode': stockcode,
+                    'hide': 1,
+                    'nj': 1,
+                    _sid: "__ths_onshow"
+                });
+            }
+        }
+    })
+} catch (e) {}
+</script>
+<div style="display:none"><script type="text/javascript">
+// ڿͻڣhtml֣ڵһЩ
+if ((window.external && 'createObject' in window.external) || (window.HevoCef && "IsHevoCef" in window.HevoCef)) {
+	$('html').addClass("inClient");
+}
+(function(){
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F78c58f01938e4d85eaf619eae71b4ed1' type='text/javascript'%3E%3C/script%3E"));
+});
+</script>
+
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/f10hq_v4-5-576b58.js"></script>
+<script type="text/javascript" charset="utf-8" crossorigin src="//s.thsi.cn/js/basic/stockph_v2/stock/onlyBAuthorize-4a6ce9.js"></script>
+</div>
+<!--F10ͷ-->
+
+<!--<div id="f10_top_ad" class="f10_ad_top none"><script type="text/javascript">CNZZ_SLOT_RENDER('297563');</script></div>-->
+</html>
+	

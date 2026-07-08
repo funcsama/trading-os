@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 278,
+  "company_count": 286,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -4111,6 +4111,58 @@
       "updated_at": "2026-07-08T20:00:00+08:00"
     },
     {
+      "symbol": "CN:300054",
+      "market": "CN",
+      "ticker": "300054",
+      "name": "鼎龙股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "国内CMP抛光垫龙头+半导体平台型材料公司，业绩处于爆发期；但当前PE ~118x对乐观预期定价充分，安全边际不足，需等待回落至55-72元合理区间",
+      "fair_value_range": [
+        50,
+        72
+      ],
+      "buy_zone": [
+        45,
+        55
+      ],
+      "sell_or_reduce_zone": [
+        90,
+        120
+      ],
+      "latest_report": "companies/CN/300054/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 5,
+      "updated_at": "2026-07-09T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:300058",
+      "market": "CN",
+      "ticker": "300058",
+      "name": "蓝色光标",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国最大数字营销集团，出海业务占营收82%但毛利率仅2.6%/净利率0.3%——本质是媒介代理倒手而非高价值服务；2025年净利2.25亿对应447亿市值PE~175x严重偏贵，17.6亿商誉和136.7亿应收账款构成资产负债表脆弱性；公司质量普通，当前不在买入区间，需等待估值大幅回归或净利率实质改善信号",
+      "fair_value_range": [
+        6,
+        9
+      ],
+      "buy_zone": [
+        4.5,
+        6
+      ],
+      "sell_or_reduce_zone": [
+        12,
+        18
+      ],
+      "latest_report": "companies/CN/300058/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09T18:00:00+08:00"
+    },
+    {
       "symbol": "CN:300059",
       "market": "CN",
       "ticker": "300059",
@@ -4135,6 +4187,32 @@
       "next_review_date": "2026-08-25",
       "active_price_triggers": 3,
       "updated_at": "2026-07-07T15:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300083",
+      "market": "CN",
+      "ticker": "300083",
+      "name": "创世纪",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "国内CNC钻攻机龙头但商业模式有重大瑕疵：1654M高商誉悬顶（占净资产31%）、经营性现金流弱于名义利润、2025Q4非经常性损失吞噬利润、正常化PE约50倍，明显偏贵；等待商誉清理+OCF改善后再评估",
+      "fair_value_range": [
+        6.5,
+        11
+      ],
+      "buy_zone": [
+        5,
+        6.5
+      ],
+      "sell_or_reduce_zone": [
+        14,
+        99
+      ],
+      "latest_report": "companies/CN/300083/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09T03:25:00+08:00"
     },
     {
       "symbol": "CN:300085",
@@ -6139,6 +6217,32 @@
       "updated_at": "2026-07-08T18:00:00+08:00"
     },
     {
+      "symbol": "CN:300806",
+      "market": "CN",
+      "ticker": "300806",
+      "name": "斯迪克",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "功能性涂层复合材料国产替代龙头，PET基膜→离型膜→胶水→功能涂层全产业链一体化，279件专利+7.53%研发投入率构筑技术壁垒，OCA光学胶+MLCC离型膜为未来增长曲线；但2025年毛利率从2022年29.7%下滑至22.0%、归母净利率仅2.0%、ROE仅2.67%、有息负债30.1亿（净负债率119%），固定资产折旧压力大；当前股价84.29元对应PE 633x/PS 12.7x/PB 16.6x极度过贵，0.60亿归母净利无法支撑382亿市值，估值透支未来数年乐观预期，不买入观察等待盈利拐点或估值大幅回归",
+      "fair_value_range": [
+        30,
+        50
+      ],
+      "buy_zone": [
+        20,
+        30
+      ],
+      "sell_or_reduce_zone": [
+        80,
+        150
+      ],
+      "latest_report": "companies/CN/300806/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-09T19:30:00+08:00"
+    },
+    {
       "symbol": "CN:300811",
       "market": "CN",
       "ticker": "300811",
@@ -6163,6 +6267,110 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-08T16:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300814",
+      "market": "CN",
+      "ticker": "300814",
+      "name": "中富电路",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "深圳小批量+中批量高可靠性PCB头部厂商之一，覆盖通信/数据中心/汽车电子/工控/半导体封装多领域，2026Q1出现结构性拐点（营收YoY+37.8%、毛利率从15%回升到27%、净利YoY+89%）但当前PE_TTM约810x、PB约18.8x、PS约16.4x远超PCB头部合理区间（PE 40-80x、PS 5-15x），估值已极其透支，建议减仓至清仓，等待估值回归。",
+      "fair_value_range": [
+        50,
+        75
+      ],
+      "buy_zone": [
+        50,
+        70
+      ],
+      "sell_or_reduce_zone": [
+        110,
+        9999
+      ],
+      "latest_report": "companies/CN/300814/reports/2026-07-08-initial.md",
+      "next_review_date": "2026-08-14",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-08T16:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300821",
+      "market": "CN",
+      "ticker": "300821",
+      "name": "东岳硅材",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "2026一季度已出现量价齐升的周期反转信号，但当前股价26.44元对应PE 230倍、PB 6.22倍，远高于同行业可比值，安全边际不足。应等待价格回落至6.5-8.5元买入区间，并用半年报确认盈利不只是季节性反弹后再做仓位决策。",
+      "fair_value_range": [
+        8.5,
+        12.0
+      ],
+      "buy_zone": [
+        6.5,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        17.0
+      ],
+      "latest_report": "companies/CN/300821/reports/2026-07-08-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-08T23:00:00+08:00"
+    },
+    {
+      "symbol": "CN:300843",
+      "market": "CN",
+      "ticker": "300843",
+      "name": "胜蓝股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "消费电子/新能车连接器小厂，2025营收+35%但净利仅+9%，ROE仅7%，当前PE(TTM) 221x严重透支AI/新能车预期，无安全边际。",
+      "fair_value_range": [
+        40,
+        70
+      ],
+      "buy_zone": [
+        30,
+        40
+      ],
+      "sell_or_reduce_zone": [
+        80,
+        9999
+      ],
+      "latest_report": "companies/CN/300843/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-09T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:300857",
+      "market": "CN",
+      "ticker": "300857",
+      "name": "协创数据",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "协创数据正从代工制造向AI算力基础设施提供商快速转型，2025-2026年营收和利润实现翻倍级增长，但当前PE约83倍已远超可比公司，市场已充分定价乐观预期。高杠杆扩张叠加现金流质量待验证，安全边际不足。继续观察但不买入。",
+      "fair_value_range": [
+        100,
+        180
+      ],
+      "buy_zone": [
+        80,
+        120
+      ],
+      "sell_or_reduce_zone": [
+        280,
+        350
+      ],
+      "latest_report": "companies/CN/300857/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-09T12:00:00+08:00"
     },
     {
       "symbol": "CN:300953",
