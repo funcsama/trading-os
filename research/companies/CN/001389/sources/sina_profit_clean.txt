@@ -1,0 +1,86 @@
+广合科技(001389)利润表_新浪财经_新浪网
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#000;}
+td,p,li,select,input,textarea,div{font-size:12px;}
+select,input{vertical-align:middle; padding:0; margin:0;}
+.f14 {font-size:14px;}
+.lh20 {line-height:20px;}
+.lh23{line-height:23px;}
+.b1{border:1px #fcc solid;}
+a{text-decoration: none;color:#009}
+a:visited{color:#333333;}
+a:hover{color:#f00;}
+.f14links{line-height:23px;}
+.f14links,.f14links a{font-size:14px;color:#009;}
+.f14links a:hover{color:#F00;}
+.f14links li{padding-left:13px;background:url(http://image2.sina.com.cn/dy/legal/2006index/news_law_hz_012.gif) no-repeat 3px 45%;}
+.clearit{clear:both;font-size:0;line-height:0;height:0;}
+.STYLE2 {font-size: 14px; font-weight: bold; }
+.bottom_line {border-bottom:1px solid #999999}
+.f14 {font-size:14px}
+.f12 {font-size:12px}
+.l15{line-height:150%}
+.l13{line-height:130%}
+.lh19{line-height:19px;}
+var fullcode="sz001389";
+var chart_img_alt = "广合科技 001389 行情图";
+var cmnt_newsid		= "sz-001389";
+var cmnt_group		= 1;
+.secondaryHeader{height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+.sHLinks{float:right;line-height:31px;}
+#level2headerborder{background:#fff; height:5px; overflow:hidden; clear:both; width:950px;}
+.bloglist .blog_list{ display:none; position:absolute; left:-10px; padding:3px 0 0; top:26px; width:70px;}
+.bloglist .blog_list ul{border:solid 1px #a0c3ec; background:#e1eeff; height:auto; }
+.bloglist .blog_list li{text-align:center; font-size:12px; float:none; height:auto; padding:0;}
+.bloglist .blog_list li a, .bloglist .blog_list li a:visited{ display:block; line-height:22px; color:#007;}
+.bloglist .blog_list li a:hover{color:#fff; background:#4e7fd1;}
+var nav_list=document.getElementById("nav11");
+上证指数: 0000.00　0.00　00.00亿元　|　深圳成指: 0000.00　0.00　00.00亿元　|　沪深300: 0000.00　0.00　00.00亿元
+with (document.getElementsByTagName("marquee")[0]) {
+scrollDelay = 50;
+scrollAmount = 2;
+this.scrollDelay = 50;
+if (data["my"].length == 0) {
+if ("my" in data && data["my"].length < 16) {
+"tab": "m01-1",
+var __objectExclude = {"sh000001": 1, "sz399001": 1, "sh000300": 1, fullcode: 1};
+if (!(window[__stringKey][i][0] in __objectExclude)) {
+__arrayHot.push(window[__stringKey][i][0]);
+"check": 10 * 1000,
+"load": 3 * 60 * 1000,
+"quote": 5 * 1000,
+"max": 11,
+var __arrayArrow = ["\u2191", "\u2193", "\u3000"];
+var __numberLastChangeIndex = 2;
+var __numberLastChange = __arrayLast[3] * 1 - __arrayData[3] * 1;
+if (__numberLastChange > 0) {
+__numberLastChangeIndex = 1;
+else if (__numberLastChange < 0) {
+__numberLastChangeIndex = 0;
+var __stringPrice = __arrayData[3] * 1 == 0 ? "--" : __arrayData[3];
+var __stringChange = __keep(__arrayData[3] * 1 - __arrayData[2] * 1, 2);
+var __stringRate = __keep((__arrayData[3] * 1 - __arrayData[2] * 1) / __arrayData[2] * 100, 2);
+__numberLastChangeIndex = 2;
+if (__stringRate * 1 > 0) {
+else if (__stringRate * 1 < 0) {
+__numberLastChangeIndex = 2;
+"name": __arrayData[0],
+- 001389
+&nbsp;2026&nbsp;&nbsp;2025&nbsp;&nbsp;2024&nbsp;&nbsp;2023&nbsp;&nbsp;2022&nbsp;&nbsp;2021&nbsp;&nbsp;2020&nbsp;&nbsp;2019&nbsp;&nbsp;2018&nbsp;&nbsp;2017&nbsp;
+广合科技(001389)  利润表单位：万元
+报表日期2026-03-312025-12-312025-09-302025-06-302025-03-31一、营业总收入191,397.28548,537.14383,512.90242,475.34111,698.47营业收入191,397.28548,537.14383,512.90242,475.34111,698.47二、营业总成本143,855.00427,101.41295,613.91182,711.5385,671.72营业成本120,708.96359,667.53249,859.10154,179.4272,389.97营业税金及附加950.862,519.072,125.761,460.53624.29销售费用4,367.2312,874.289,151.605,938.912,990.02管理费用4,677.1221,156.0915,126.539,987.405,064.62财务费用3,680.952,905.14-41.10-556.72-693.39研发费用9,469.8727,979.3019,392.0111,701.995,296.21资产减值损失----------公允价值变动收益-213.53351.28662.69490.38206.32投资收益186.831,085.65324.70228.36144.04其中:对联营企业和合营企业的投资收益----------汇兑收益----------三、营业利润44,894.72113,853.3382,432.8656,465.1727,832.71加:营业外收入3.7848.6337.5314.374.60减：营业外支出293.31212.04123.90114.27110.44其中：非流动资产处置损失----------四、利润总额44,605.20113,689.9282,346.4956,365.2727,726.87减：所得税费用5,349.8512,111.019,964.547,206.943,689.67五、净利润39,255.35101,578.9072,381.9649,158.3424,037.20归属于母公司所有者的净利润39,255.35101,578.9072,381.9649,158.3424,037.20少数股东损益----------六、每股收益基本每股收益(元/股)0.93002.40001.70001.16100.5642稀释每股收益(元/股)0.93002.39001.70001.16050.5464七、其他综合收益-589.61-564.55-450.23-125.44164.68八、综合收益总额38,665.74101,014.3571,931.7349,032.8924,201.87归属于母公司所有者的综合收益总额38,665.74101,014.3571,931.7349,032.8924,201.87归属于少数股东的综合收益总额----------
+romanceTables(['ProfitStatementNewTable0']);
+'z-index': 9999
+opacity: 0.5,
+background: '#000'
+//2017/7/5 下载报表按钮修改
+btn_download_excel.href='https://money.finance.sina.com.cn/corp/go.php/vDOWN_ProfitStatement/displaytype/4/stockid/001389/ctrl/all.phtml';
+客户服务热线：4001102288
+.footer{margin:0 auto;text-align:center; padding:20px 0; margin-top:30px; color: #333;border-top: solid 1px #e1e1e1;}
+.footer a:link,.footer a:visited{color: #333;}
+.footer a:hover, .footer a:active, .footer a:focus { color: #3b67cb; text-decoration: none;  }

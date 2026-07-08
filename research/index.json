@@ -1,7 +1,319 @@
 {
   "schema_version": 1,
-  "company_count": 4,
+  "company_count": 18,
   "companies": [
+    {
+      "symbol": "CN:002371",
+      "market": "CN",
+      "ticker": "002371",
+      "name": "北方华创",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国半导体设备平台型龙头，品类最全、营收规模最大，深度受益于国产替代加速。但当前PE~105x已充分反映高增长预期，缺乏安全边际。等待市场回调至450元以下再考虑介入。",
+      "fair_value_range": [
+        2500,
+        4500
+      ],
+      "buy_zone": [
+        300,
+        450
+      ],
+      "sell_or_reduce_zone": [
+        800,
+        1200
+      ],
+      "latest_report": "companies/CN/002371/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-07T22:30:00+08:00"
+    },
+    {
+      "symbol": "CN:002384",
+      "market": "CN",
+      "ticker": "002384",
+      "name": "东山精密",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "营收体量大但盈利能力极弱（净利率3.5%），ROE持续下降至6.9%，当前PE~284x/PB~19.2x泡沫估值，价格完全不反映基本面风险。需等待股价大幅回调至合理区间并确认盈利改善趋势后再考虑买入。",
+      "fair_value_range": [
+        15,
+        60
+      ],
+      "buy_zone": [
+        0,
+        30
+      ],
+      "sell_or_reduce_zone": [
+        60,
+        100
+      ],
+      "latest_report": "companies/CN/002384/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T18:20:00+08:00"
+    },
+    {
+      "symbol": "CN:002415",
+      "market": "CN",
+      "ticker": "002415",
+      "name": "海康威视",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "全球安防龙头，2025年营收持平但利润强劲修复（+18.5%），2026Q1营收增长11.8%和利润增长36.4%确认拐点向上。创新业务打开第二曲线。当前PE 22倍处于历史中低位，估值合理偏低但缺乏短期催化剂，建议等待回调或中报确认增长趋势后介入。",
+      "fair_value_range": [
+        28,
+        48
+      ],
+      "buy_zone": [
+        25,
+        35
+      ],
+      "sell_or_reduce_zone": [
+        45,
+        55
+      ],
+      "latest_report": "companies/CN/002415/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-20",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-07T17:00:00+08:00"
+    },
+    {
+      "symbol": "CN:002475",
+      "market": "CN",
+      "ticker": "002475",
+      "name": "立讯精密",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "立讯精密是A股EMS龙头，深度绑定苹果供应链并积极向汽车电子和通讯互联领域拓展。2025年营收3323亿、净利166亿，年增速15-20%。当前PE 27.5x、PB 5.2x，估值合理偏低。主要风险为苹果客户集中度过高（收入占比70%+）和毛利率偏低（~12%）。建议在股价回调至55-58元区间开始建仓，当前价63.28元处于观察区间。",
+      "fair_value_range": [
+        60,
+        75
+      ],
+      "buy_zone": [
+        55,
+        58
+      ],
+      "sell_or_reduce_zone": [
+        75,
+        85
+      ],
+      "latest_report": "companies/CN/002475/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-07T20:00:00+08:00"
+    },
+    {
+      "symbol": "CN:002594",
+      "market": "CN",
+      "ticker": "002594",
+      "name": "比亚迪",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "全球新能源车龙头，垂直整合护城河深厚。但2025年净利润已下滑19%，利润拐点尚未到来。当前PE 29x估值偏贵，等待价格回调至55元以下的安全边际区间。不满足买入条件，维持观察。",
+      "fair_value_range": [
+        33,
+        49
+      ],
+      "buy_zone": [
+        42,
+        55
+      ],
+      "sell_or_reduce_zone": [
+        80,
+        116
+      ],
+      "latest_report": "companies/CN/002594/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-07T15:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300059",
+      "market": "CN",
+      "ticker": "300059",
+      "name": "东方财富",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国最大互联网财富管理平台，三重护城河(流量+牌照+成本优势)构建强大壁垒。2025年因A股活跃业绩强劲增长，当前PE(TTM)24.5x，PEG<1，估值处于合理偏低位置。但缺乏足够安全边际，建议观察等待回调后分批建仓。",
+      "fair_value_range": [
+        18.0,
+        27.0
+      ],
+      "buy_zone": [
+        15.0,
+        18.0
+      ],
+      "sell_or_reduce_zone": [
+        28.0,
+        35.0
+      ],
+      "latest_report": "companies/CN/300059/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-25",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T15:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300308",
+      "market": "CN",
+      "ticker": "300308",
+      "name": "中际旭创",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "全球光模块绝对龙头，AI算力基建核心受益者，2024-2026年处于业绩爆发期，但当前约115x PE已充分反映乐观预期，安全边际不足，建议等待回调至800元以下再考虑建仓",
+      "fair_value_range": [
+        600,
+        800
+      ],
+      "buy_zone": [
+        500,
+        650
+      ],
+      "sell_or_reduce_zone": [
+        1000,
+        1300
+      ],
+      "latest_report": "companies/CN/300308/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-20",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T19:10:00+08:00"
+    },
+    {
+      "symbol": "CN:300502",
+      "market": "CN",
+      "ticker": "300502",
+      "name": "新易盛",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "AI光模块赛道核心标的，2024-2025年业绩爆发（营收+187%，净利+236%）。当前PE 53倍、市值7000亿，已充分定价乐观预期，安全边际不足。建议等待回调至合理区间（350元以下）再建仓。",
+      "fair_value_range": [
+        280,
+        420
+      ],
+      "buy_zone": [
+        0,
+        280
+      ],
+      "sell_or_reduce_zone": [
+        500,
+        100000
+      ],
+      "latest_report": "companies/CN/300502/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-07T23:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300750",
+      "market": "CN",
+      "ticker": "300750",
+      "name": "宁德时代",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "全球动力电池与储能电池绝对龙头，竞争壁垒极高、盈利能力远超同行。但当前近1.73万亿市值已反映大量乐观预期，未来增速将显著放缓（从+42%降至~20-25%），当前估值PE 21.8x（TTM）缺乏明显安全边际，建议等待280-320元区间再考虑分批建仓。",
+      "fair_value_range": [
+        290,
+        370
+      ],
+      "buy_zone": [
+        240,
+        280
+      ],
+      "sell_or_reduce_zone": [
+        420,
+        500
+      ],
+      "latest_report": "companies/CN/300750/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-07T16:30:00+08:00"
+    },
+    {
+      "symbol": "CN:600028",
+      "market": "CN",
+      "ticker": "600028",
+      "name": "中国石化",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "周期底部石油央企，上游盈利、下游炼化恶化，当前股息率约4.2%，PB 0.69x，估值便宜但盈利能力下滑未见拐点。",
+      "fair_value_range": [
+        4.0,
+        7.0
+      ],
+      "buy_zone": [
+        3.5,
+        4.5
+      ],
+      "sell_or_reduce_zone": [
+        6.0,
+        7.5
+      ],
+      "latest_report": "companies/CN/600028/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 1,
+      "updated_at": "2026-07-07T15:00:00+08:00"
+    },
+    {
+      "symbol": "CN:600030",
+      "market": "CN",
+      "ticker": "600030",
+      "name": "中信证券",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国综合实力最强的证券公司，2025年净利润301亿元创历史新高，ROE恢复至10.6%。估值处于历史低位（PE 14.5x,PB 1.50x）。券商强周期属性下，当前价格28.45元处于合理区间下限，有一定安全边际但不够极端便宜。建议观察等待更好的买点（<27元）或明确的业绩催化剂。",
+      "fair_value_range": [
+        32,
+        40
+      ],
+      "buy_zone": [
+        24,
+        28
+      ],
+      "sell_or_reduce_zone": [
+        38,
+        50
+      ],
+      "latest_report": "companies/CN/600030/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-25",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-07T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:600183",
+      "market": "CN",
+      "ticker": "600183",
+      "name": "生益科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "覆铜板全球第二龙头，2024-2026年受益AI服务器需求进入强劲上行周期，基本面优秀。但当前PE~106x已严重透支预期，安全边际为零。好公司+坏价格——等待估值回归至70-100元安全区间后再考虑建仓。",
+      "fair_value_range": [
+        70,
+        100
+      ],
+      "buy_zone": [
+        55,
+        70
+      ],
+      "sell_or_reduce_zone": [
+        130,
+        999
+      ],
+      "latest_report": "companies/CN/600183/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-07-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T13:30:00+08:00"
+    },
     {
       "symbol": "CN:600519",
       "market": "CN",
@@ -29,6 +341,32 @@
       "updated_at": "2026-07-06T00:00:00+08:00"
     },
     {
+      "symbol": "CN:601088",
+      "market": "CN",
+      "ticker": "601088",
+      "name": "中国神华",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "煤电运化一体化龙头，质量优秀但2025分红骤降至39%是重大信号；当前估值合理偏低，安全边际尚不充分，宜在35元以下分批建仓至多5%仓位",
+      "fair_value_range": [
+        34,
+        42
+      ],
+      "buy_zone": [
+        30,
+        35
+      ],
+      "sell_or_reduce_zone": [
+        50,
+        60
+      ],
+      "latest_report": "companies/CN/601088/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T13:30:00+08:00"
+    },
+    {
       "symbol": "CN:601138",
       "market": "CN",
       "ticker": "601138",
@@ -53,6 +391,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-07T14:30:00+08:00"
+    },
+    {
+      "symbol": "CN:601288",
+      "market": "CN",
+      "ticker": "601288",
+      "name": "农业银行",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "ROE稳定10%、不良与拨备改善、股息率4%的国有大行；当前PB 0.76x/PE 7.7x已部分计入红利修复溢价，估值合理偏低，缺乏显著安全边际，观察为主。",
+      "fair_value_range": [
+        5.2,
+        6.8
+      ],
+      "buy_zone": [
+        4.6,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        7.2,
+        8.5
+      ],
+      "latest_report": "companies/CN/601288/reports/2026-07-07-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-07T13:30:00+08:00"
     },
     {
       "symbol": "HK:9660",

@@ -1,0 +1,81 @@
+深南电路(002916)利润表_新浪财经_新浪网
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#000;}
+td,p,li,select,input,textarea,div{font-size:12px;}
+select,input{vertical-align:middle; padding:0; margin:0;}
+.f14 {font-size:14px;}
+.lh20 {line-height:20px;}
+.lh23{line-height:23px;}
+.b1{border:1px #fcc solid;}
+a{text-decoration: none;color:#009}
+a:visited{color:#333333;}
+a:hover{color:#f00;}
+.f14links{line-height:23px;}
+.f14links,.f14links a{font-size:14px;color:#009;}
+.f14links a:hover{color:#F00;}
+.f14links li{padding-left:13px;background:url(http://image2.sina.com.cn/dy/legal/2006index/news_law_hz_012.gif) no-repeat 3px 45%;}
+.clearit{clear:both;font-size:0;line-height:0;height:0;}
+.STYLE2 {font-size: 14px; font-weight: bold; }
+.bottom_line {border-bottom:1px solid #999999}
+.f14 {font-size:14px}
+.f12 {font-size:12px}
+.l15{line-height:150%}
+.l13{line-height:130%}
+.lh19{line-height:19px;}
+var fullcode="sz002916";
+var chart_img_alt = "深南电路 002916 行情图";
+var cmnt_newsid		= "sz-002916";
+var cmnt_group		= 1;
+.secondaryHeader{height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+.sHLinks{float:right;line-height:31px;}
+#level2headerborder{background:#fff; height:5px; overflow:hidden; clear:both; width:950px;}
+.bloglist .blog_list{ display:none; position:absolute; left:-10px; padding:3px 0 0; top:26px; width:70px;}
+.bloglist .blog_list ul{border:solid 1px #a0c3ec; background:#e1eeff; height:auto; }
+.bloglist .blog_list li{text-align:center; font-size:12px; float:none; height:auto; padding:0;}
+.bloglist .blog_list li a, .bloglist .blog_list li a:visited{ display:block; line-height:22px; color:#007;}
+.bloglist .blog_list li a:hover{color:#fff; background:#4e7fd1;}
+var nav_list=document.getElementById("nav11");
+上证指数: 0000.00　0.00　00.00亿元　|　深圳成指: 0000.00　0.00　00.00亿元　|　沪深300: 0000.00　0.00　00.00亿元
+with (document.getElementsByTagName("marquee")[0]) {
+scrollDelay = 50;
+scrollAmount = 2;
+this.scrollDelay = 50;
+if (data["my"].length == 0) {
+if ("my" in data && data["my"].length < 16) {
+var __objectExclude = {"sh000001": 1, "sz399001": 1, "sh000300": 1, fullcode: 1};
+if (!(window[__stringKey][i][0] in __objectExclude)) {
+__arrayHot.push(window[__stringKey][i][0]);
+"check": 10 * 1000,
+"load": 3 * 60 * 1000,
+"quote": 5 * 1000,
+var __arrayArrow = ["\u2191", "\u2193", "\u3000"];
+var __numberLastChangeIndex = 2;
+var __numberLastChange = __arrayLast[3] * 1 - __arrayData[3] * 1;
+if (__numberLastChange > 0) {
+__numberLastChangeIndex = 1;
+else if (__numberLastChange < 0) {
+__numberLastChangeIndex = 0;
+var __stringPrice = __arrayData[3] * 1 == 0 ? "--" : __arrayData[3];
+var __stringChange = __keep(__arrayData[3] * 1 - __arrayData[2] * 1, 2);
+var __stringRate = __keep((__arrayData[3] * 1 - __arrayData[2] * 1) / __arrayData[2] * 100, 2);
+__numberLastChangeIndex = 2;
+if (__stringRate * 1 > 0) {
+else if (__stringRate * 1 < 0) {
+__numberLastChangeIndex = 2;
+"name": __arrayData[0],
+&nbsp;2026&nbsp;&nbsp;2025&nbsp;&nbsp;2024&nbsp;&nbsp;2023&nbsp;&nbsp;2022&nbsp;&nbsp;2021&nbsp;&nbsp;2020&nbsp;&nbsp;2019&nbsp;&nbsp;2018&nbsp;&nbsp;2017&nbsp;&nbsp;2016&nbsp;
+深南电路(002916)  利润表单位：万元
+报表日期2026-03-312025-12-312025-09-302025-06-302025-03-31一、营业总收入659,558.792,364,697.711,675,401.531,045,345.47478,289.65营业收入659,558.792,364,697.711,675,401.531,045,345.47478,289.65二、营业总成本557,891.792,016,242.381,431,213.95907,665.19425,325.40营业成本467,172.011,695,101.791,202,862.24770,582.87359,959.45营业税金及附加3,457.7512,507.0010,016.035,938.112,163.88销售费用10,335.4738,128.8325,700.2617,152.838,370.38管理费用30,109.53106,490.6175,709.9344,674.9120,878.79财务费用6,880.304,873.193,317.482,140.041,047.71研发费用39,936.71159,140.95113,608.0167,176.4232,905.18资产减值损失----------公允价值变动收益-404.74500.40220.90220.90217.92投资收益179.68344.79323.59328.97301.59其中:对联营企业和合营企业的投资收益-5.63-21.90-16.21-10.84-5.52汇兑收益----------三、营业利润94,300.71363,507.27257,107.03150,855.4352,735.83加:营业外收入163.52628.89414.47290.28134.53减：营业外支出406.931,755.231,594.751,248.33526.05其中：非流动资产处置损失----------四、利润总额94,057.31362,380.92255,926.75149,897.3852,344.32减：所得税费用8,928.1234,529.4323,092.8713,785.343,138.69五、净利润85,129.19327,851.49232,833.87136,112.0349,205.64归属于母公司所有者的净利润85,023.08327,573.82232,582.56136,001.7849,144.82少数股东损益106.11277.68251.32110.2660.82六、每股收益基本每股收益(元/股)1.28004.91003.49002.04000.9600稀释每股收益(元/股)1.27004.91003.49002.04000.9600七、其他综合收益-2,365.982,304.791,088.841,020.73-5.52八、综合收益总额82,763.21330,156.29233,922.72137,132.7749,200.12归属于母公司所有者的综合收益总额82,663.95329,855.91233,644.19136,993.1749,128.19归属于少数股东的综合收益总额99.26300.37278.52139.5971.93
+romanceTables(['ProfitStatementNewTable0']);
+background: '#000'
+//2017/7/5 下载报表按钮修改
+btn_download_excel.href='https://money.finance.sina.com.cn/corp/go.php/vDOWN_ProfitStatement/displaytype/4/stockid/002916/ctrl/all.phtml';
+客户服务热线：4001102288
+.footer{margin:0 auto;text-align:center; padding:20px 0; margin-top:30px; color: #333;border-top: solid 1px #e1e1e1;}
+.footer a:link,.footer a:visited{color: #333;}
+.footer a:hover, .footer a:active, .footer a:focus { color: #3b67cb; text-decoration: none;  }

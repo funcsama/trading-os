@@ -1,0 +1,81 @@
+广合科技(001389)资产负债表_新浪财经_新浪网
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#000;}
+td,p,li,select,input,textarea,div{font-size:12px;}
+select,input{vertical-align:middle; padding:0; margin:0;}
+.f14 {font-size:14px;}
+.lh20 {line-height:20px;}
+.lh23{line-height:23px;}
+.b1{border:1px #fcc solid;}
+a{text-decoration: none;color:#009}
+a:visited{color:#333333;}
+a:hover{color:#f00;}
+.f14links{line-height:23px;}
+.f14links,.f14links a{font-size:14px;color:#009;}
+.f14links a:hover{color:#F00;}
+.f14links li{padding-left:13px;background:url(http://image2.sina.com.cn/dy/legal/2006index/news_law_hz_012.gif) no-repeat 3px 45%;}
+.clearit{clear:both;font-size:0;line-height:0;height:0;}
+.STYLE2 {font-size: 14px; font-weight: bold; }
+.bottom_line {border-bottom:1px solid #999999}
+.f14 {font-size:14px}
+.f12 {font-size:12px}
+.l15{line-height:150%}
+.l13{line-height:130%}
+.lh19{line-height:19px;}
+var fullcode="sz001389";
+var chart_img_alt = "广合科技 001389 行情图";
+var cmnt_newsid		= "sz-001389";
+var cmnt_group		= 1;
+.secondaryHeader{height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+.sHLinks{float:right;line-height:31px;}
+#level2headerborder{background:#fff; height:5px; overflow:hidden; clear:both; width:950px;}
+.bloglist .blog_list{ display:none; position:absolute; left:-10px; padding:3px 0 0; top:26px; width:70px;}
+.bloglist .blog_list ul{border:solid 1px #a0c3ec; background:#e1eeff; height:auto; }
+.bloglist .blog_list li{text-align:center; font-size:12px; float:none; height:auto; padding:0;}
+.bloglist .blog_list li a, .bloglist .blog_list li a:visited{ display:block; line-height:22px; color:#007;}
+.bloglist .blog_list li a:hover{color:#fff; background:#4e7fd1;}
+var nav_list=document.getElementById("nav11");
+上证指数: 0000.00　0.00　00.00亿元　|　深圳成指: 0000.00　0.00　00.00亿元　|　沪深300: 0000.00　0.00　00.00亿元
+with (document.getElementsByTagName("marquee")[0]) {
+scrollDelay = 50;
+scrollAmount = 2;
+this.scrollDelay = 50;
+if (data["my"].length == 0) {
+if ("my" in data && data["my"].length < 16) {
+var __objectExclude = {"sh000001": 1, "sz399001": 1, "sh000300": 1, fullcode: 1};
+if (!(window[__stringKey][i][0] in __objectExclude)) {
+__arrayHot.push(window[__stringKey][i][0]);
+"check": 10 * 1000,
+"load": 3 * 60 * 1000,
+"quote": 5 * 1000,
+var __arrayArrow = ["\u2191", "\u2193", "\u3000"];
+var __numberLastChangeIndex = 2;
+var __numberLastChange = __arrayLast[3] * 1 - __arrayData[3] * 1;
+if (__numberLastChange > 0) {
+__numberLastChangeIndex = 1;
+else if (__numberLastChange < 0) {
+__numberLastChangeIndex = 0;
+var __stringPrice = __arrayData[3] * 1 == 0 ? "--" : __arrayData[3];
+var __stringChange = __keep(__arrayData[3] * 1 - __arrayData[2] * 1, 2);
+var __stringRate = __keep((__arrayData[3] * 1 - __arrayData[2] * 1) / __arrayData[2] * 100, 2);
+__numberLastChangeIndex = 2;
+if (__stringRate * 1 > 0) {
+else if (__stringRate * 1 < 0) {
+__numberLastChangeIndex = 2;
+"name": __arrayData[0],
+&nbsp;2026&nbsp;&nbsp;2025&nbsp;&nbsp;2024&nbsp;&nbsp;2023&nbsp;&nbsp;2022&nbsp;&nbsp;2021&nbsp;&nbsp;2020&nbsp;&nbsp;2019&nbsp;&nbsp;2018&nbsp;&nbsp;2017&nbsp;
+广合科技(001389) 资产负债表 单位：万元
+报表日期2026-03-312025-12-312025-09-302025-06-302025-03-31流动资产货币资金333,116.8851,978.9479,547.6664,651.5774,673.98交易性金融资产--19,046.8319,150.8819,150.8829,066.14衍生金融资产--304.4561.3939.70--应收票据及应收账款230,369.94205,011.71173,136.67158,964.66107,023.47应收票据12,889.9111,348.7911,051.657,777.7510,491.57应收账款217,480.03193,662.93162,085.02151,186.9196,531.90应收款项融资590.431,186.55142.66160.30140.21预付款项3,140.361,296.20638.16499.52923.48其他应收款(合计)389.77552.951,866.88958.411,027.60应收利息----------应收股利----------其他应收款------958.41--买入返售金融资产----------存货95,788.6176,444.5762,124.3253,491.5549,309.42划分为持有待售的资产----------一年内到期的非流动资产----------待摊费用----------待处理流动资产损益----------其他流动资产15,321.4613,560.178,656.816,502.764,068.19流动资产合计678,717.45369,382.37345,325.42304,419.34266,232.48非流动资产发放贷款及垫款----------可供出售金融资产----------持有至到期投资----------长期应收款----------长期股权投资1,180.351,180.351,200.00----投资性房地产----------在建工程(合计)56,237.0225,459.5012,744.4111,580.6786,949.43在建工程------11,580.64--工程物资------0.03--固定资产及清理(合计)335,942.99302,931.58292,310.51286,146.64187,676.98固定资产净额--302,887.93--286,108.03--固定资产清理------38.60--生产性生物资产----------公益性生物资产----------油气资产----------使用权资产270.56291.33311.18330.3015.70无形资产20,377.6120,459.2416,134.7616,472.6616,703.31开发支出----------商誉----------长期待摊费用1,107.641,293.93670.63953.79557.38递延所得税资产5,426.575,494.533,520.843,184.567,662.84其他非流动资产48,409.7727,714.504,953.724,319.624,593.68非流动资产合计468,952.52384,824.96331,846.04322,988.23304,159.31资产总计1,147,669.96754,207.32677,171.46627,407.57570,391.79流动负债短期借款26,400.3926,796.2116,966.6116,399.7110,492.33交易性金融负债----------应付票据及应付账款300,769.38237,998.68207,579.39195,422.45144,306.29应付票据85,635.9266,248.6654,879.3546,512.5150,928.21应付账款215,133.47171,750.02152,700.05148,909.9493,378.08预收款项----------应付手续费及佣金----------应付职工薪酬7,482.5912,350.919,950.887,532.536,903.26应交税费8,280.804,627.293,974.793,741.212,861.96其他应付款(合计)7,761.606,420.3310,537.647,762.368,284.51应付利息----------应付股利----------其他应付款------7,762.36--预提费用----------一年内的递延收益----------应付短期债券----------一年内到期的非流动负债10,517.869,519.396,329.0511,981.2812,609.95其他流动负债3,256.462,979.982,275.001,770.114,868.29流动负债合计365,546.81301,298.07258,882.35245,225.62191,976.23非流动负债长期借款38,109.1431,800.0733,384.8123,493.0522,015.06应付债券----------租赁负债212.58231.44250.03267.94--长期应付职工薪酬----------长期应付款(合计)225.32225.32260.93220.25254.61长期应付款------220.25--专项应付款----------预计非流动负债----------递延所得税负债2,040.912,040.913,633.433,096.196,960.83长期递延收益20,664.9620,803.0217,364.8215,763.6416,216.32其他非流动负债----------非流动负债合计61,252.9155,100.7654,894.0242,841.0745,446.82负债合计426,799.72356,398.82313,776.37288,066.69237,423.05所有者权益实收资本(或股本)46,686.4142,566.4342,523.5042,523.5042,526.50资本公积421,100.89140,973.22136,720.32135,385.89134,041.18减：库存股4,257.944,257.945,179.325,116.555,298.46其他综合收益-589.61-148.34-159.47290.76164.68专项储备----------盈余公积21,321.3921,283.2116,359.3316,359.3316,359.33一般风险准备----------未分配利润236,609.09197,391.92173,130.73149,897.94145,175.50归属于母公司股东权益合计720,870.24397,808.50363,395.09339,340.88332,968.74少数股东权益----------所有者权益(或股东权益)合计720,870.24397,808.50363,395.09339,340.88332,968.74负债和所有者权益(或股东权益)总计1,147,669.96754,207.32677,171.46627,407.57570,391.79
+romanceTables(['BalanceSheetNewTable0']);
+background: '#000'
+//2017/7/5 下载报表按钮修改
+btn_download_excel.href='https://money.finance.sina.com.cn/corp/go.php/vDOWN_BalanceSheet/displaytype/4/stockid/001389/ctrl/all.phtml';
+客户服务热线：4001102288
+.footer{margin:0 auto;text-align:center; padding:20px 0; margin-top:30px; color: #333;border-top: solid 1px #e1e1e1;}
+.footer a:link,.footer a:visited{color: #333;}
+.footer a:hover, .footer a:active, .footer a:focus { color: #3b67cb; text-decoration: none;  }
