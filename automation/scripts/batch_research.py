@@ -320,6 +320,7 @@ def validate_company_dir(target_company_dir: str) -> tuple[bool, str]:
         "company",
         "validate",
         str(WORKER_CWD / target_company_dir),
+        "--strict",
     ]
     try:
         vproc = subprocess.run(
@@ -539,7 +540,10 @@ def main() -> int:
     ap.add_argument(
         "--no-clean-claude-env",
         action="store_true",
-        help="默认清理外层 ANTHROPIC_* 覆盖变量，并注入 ~/.claude/settings.json 的 env；该选项关闭清理",
+        help=(
+            "默认清理外层 ANTHROPIC_* 覆盖变量，并注入 "
+            "~/.claude/settings.json 的 env；该选项关闭清理"
+        ),
     )
     ap.add_argument("--skip-claude-probe", action="store_true",
                     help="跳过 Claude 文件写入探针；只建议在已知 worker 可用时使用")
