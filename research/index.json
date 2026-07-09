@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 286,
+  "company_count": 298,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -6373,6 +6373,58 @@
       "updated_at": "2026-07-09T12:00:00+08:00"
     },
     {
+      "symbol": "CN:300870",
+      "market": "CN",
+      "ticker": "300870",
+      "name": "欧陆通",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "开关电源转型期公司，数据中心电源已成第一大业务（45%，2025年+38%，高功率服务器电源+66.5%），客户含Google/浪潮/富士康/AMD等头部。但适配器毛利率仅15.7%、负债率55%、2026Q1已亏损，当前PE-ttm极高（>150x）、PB超11x、PS超9x严重脱离基本面。长期AI服务器电源国产替代+海外突破逻辑清晰，但短期价格缺乏安全边际，需等待更好价格或2026H1业绩兑现验证。",
+      "fair_value_range": [
+        120,
+        180
+      ],
+      "buy_zone": [
+        60,
+        100
+      ],
+      "sell_or_reduce_zone": [
+        220,
+        400
+      ],
+      "latest_report": "companies/CN/300870/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-26",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-09T04:20:00+08:00"
+    },
+    {
+      "symbol": "CN:300903",
+      "market": "CN",
+      "ticker": "300903",
+      "name": "科翔股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "科翔股份处于A股PCB行业尾部，主业PCB制造连续2年亏损毛利率为负，资产负债率超74%应收账款高企，当前股价因主题炒作暴涨至84元/PB 20倍与基本面严重背离。等待主业毛利率转正、现金流持续为正等反转信号出现后再考虑。",
+      "fair_value_range": [
+        4.0,
+        12.0
+      ],
+      "buy_zone": [
+        4.0,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        50,
+        100
+      ],
+      "latest_report": "companies/CN/300903/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-05",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09T20:00:00+08:00"
+    },
+    {
       "symbol": "CN:300953",
       "market": "CN",
       "ticker": "300953",
@@ -6397,6 +6449,266 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-08T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:300975",
+      "market": "CN",
+      "ticker": "300975",
+      "name": "商络电子",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "国内领先电子元器件分销商（A股2025归母净利同比+328%为全行业最快），代理130+原厂品牌，2025年12月并表立功科技大幅补强汽车电子+IC代理矩阵（NXP/MPS/Rockchip等），AI硬件链+机器人+汽车电子三大新兴赛道客户群直接受益。毛利率结构性从11.8%(2024)→16.5%(26Q1)持续提升，2026Q1营收+106%/归母+600%。但TTM PE 45x、PB 9.84x全行业最高已price in高增长，资产负债率73%、经营现金流连续3年为负(-11亿/2025)；Q2大涨后股东户数从3.6万→11.3万筹码散户化；当前34.73元处于合理偏高到偏贵过渡区间，今日决策为观察，等待Q2业绩验证立功科技口径贡献与现金流转正信号。",
+      "fair_value_range": [
+        25.5,
+        31.5
+      ],
+      "buy_zone": [
+        22.5,
+        27
+      ],
+      "sell_or_reduce_zone": [
+        38,
+        100
+      ],
+      "latest_report": "companies/CN/300975/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-09T16:30:00+08:00"
+    },
+    {
+      "symbol": "CN:300999",
+      "market": "CN",
+      "ticker": "300999",
+      "name": "金龙鱼",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国粮油龙头，品牌渠道护城河深，但低利润率决定低ROE。当前36x PE偏贵，安全边际不足，等待更便宜的价格或利润修复路径更清晰时介入。",
+      "fair_value_range": [
+        550,
+        700
+      ],
+      "buy_zone": [
+        15,
+        17
+      ],
+      "sell_or_reduce_zone": [
+        28,
+        99
+      ],
+      "latest_report": "companies/CN/300999/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-09T07:00:00+08:00"
+    },
+    {
+      "symbol": "CN:301005",
+      "market": "CN",
+      "ticker": "301005",
+      "name": "超捷股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "严重泡沫：汽车紧固件主业盈利极弱（净利率1.2%、ROE 2.15%、经营现金流连续两年为负），但市场因商业航天/人形机器人/低空经济等多重概念给予PB 16.8x的极端高估值（汽车零部件行业均值为2-4x）。当前96元/129亿市值对应PS 14.7x，任何合理假设下的目标市值均低于50亿。坚决不碰。",
+      "fair_value_range": [
+        15,
+        20
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        30,
+        9999
+      ],
+      "latest_report": "companies/CN/301005/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-09T06:00:00+08:00"
+    },
+    {
+      "symbol": "CN:301018",
+      "market": "CN",
+      "ticker": "301018",
+      "name": "申菱环境",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "国内液冷CDU市场排名第一，受益于AI算力基建和液冷渗透率提升，2025年收入和净利润分别+40%/+88%，数据服务板块新增订单+72%。但PE(TTM)~231x，PS~10.5x，估值极高，安全边际不足。等待回调至60元以下（对应~2025 70x PE）才考虑建立观察仓。",
+      "fair_value_range": [
+        40,
+        70
+      ],
+      "buy_zone": [
+        25,
+        50
+      ],
+      "sell_or_reduce_zone": [
+        90,
+        120
+      ],
+      "latest_report": "companies/CN/301018/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-29",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09T06:55:00+08:00"
+    },
+    {
+      "symbol": "CN:301071",
+      "market": "CN",
+      "ticker": "301071",
+      "name": "力量钻石",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "A股培育钻石HPHT龙头，2025年完成出清式周期低谷后2026Q1毛利率V型反弹至41.1%，但股价已从30元涨至78-87元，提前透支反转预期。当前估值PE_TTM>150x，需等待H1/2026报表确认毛利率持续性后才能确定反转质量。建议观察、等待回调至38-50元合理区间下方。",
+      "fair_value_range": [
+        38,
+        50
+      ],
+      "buy_zone": [
+        25,
+        38
+      ],
+      "sell_or_reduce_zone": [
+        70,
+        90
+      ],
+      "latest_report": "companies/CN/301071/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 5,
+      "updated_at": "2026-07-09T15:30:00+08:00"
+    },
+    {
+      "symbol": "CN:301095",
+      "market": "CN",
+      "ticker": "301095",
+      "name": "广立微",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "广立微是国内稀缺的EDA软件+晶圆级WAT电性测试设备供应商，聚焦芯片成品率提升细分赛道，软硬一体协同模式独特，研发投入率41%、毛利率58%、客户锁定强（晶圆厂产线替换成本极高），受益于晶圆厂扩产+EDA国产替代双重红利，2025年营收+34%;但当前PE 240x/扣非PE 489x已高度透支未来增长，扣非净利同比下滑25%，经营现金流持续为负(-1.22亿)，应收账款周转247天，估值与基本面严重背离，安全边际极薄，不追高。",
+      "fair_value_range": [
+        60,
+        80
+      ],
+      "buy_zone": [
+        45,
+        60
+      ],
+      "sell_or_reduce_zone": [
+        80,
+        9999
+      ],
+      "latest_report": "companies/CN/301095/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-09T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:301165",
+      "market": "CN",
+      "ticker": "301165",
+      "name": "锐捷网络",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "research_only",
+      "current_thesis": "AI/数据中心驱动2025年营收+22.37%高增长，毛利率35.48%尚可；但PE 120x/PB 16.8x为同行5-7倍，严重高估，无安全边际。合理估值中枢约30-35元，当前105.50元不可参与。",
+      "fair_value_range": [
+        25,
+        55
+      ],
+      "buy_zone": [
+        20,
+        25
+      ],
+      "sell_or_reduce_zone": [
+        60,
+        105
+      ],
+      "latest_report": "companies/CN/301165/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-22",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09T07:30:00+08:00"
+    },
+    {
+      "symbol": "CN:301200",
+      "market": "CN",
+      "ticker": "301200",
+      "name": "大族数控",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "AI驱动的PCB专用设备龙头，2026Q1营收+103.7%/净利润+176.5%高速增长真实，但估值PE-TTM 184x严重透支未来2-3年增长，安全边际缺位，等待估值回归或业绩持续超预期验证。",
+      "fair_value_range": [
+        120,
+        180
+      ],
+      "buy_zone": [
+        100,
+        120
+      ],
+      "sell_or_reduce_zone": [
+        280,
+        350
+      ],
+      "latest_report": "companies/CN/301200/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-25",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09T09:30:00+08:00"
+    },
+    {
+      "symbol": "CN:301205",
+      "market": "CN",
+      "ticker": "301205",
+      "name": "联特科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "极度高估（PE 332x、PS 27x、PEG 30.5），基本面质量差——净利率仅8.2%、经营现金流连续3年巨额为负、2026Q1净利暴跌84%且扣非转亏。公司在光模块行业处于三线地位，与龙头中际旭创/新易盛差距巨大。市场给予的AI概念泡沫溢价与基本面严重脱钩。当前价格没有安全边际，风险远大于潜在收益。",
+      "fair_value_range": [
+        38,
+        80
+      ],
+      "buy_zone": [
+        30,
+        50
+      ],
+      "sell_or_reduce_zone": [
+        100,
+        100
+      ],
+      "latest_report": "companies/CN/301205/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-30",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-09T08:00:00+08:00"
+    },
+    {
+      "symbol": "CN:301217",
+      "market": "CN",
+      "ticker": "301217",
+      "name": "铜冠铜箔",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "铜箔加工费触底回升但产能过剩格局未改变，公司2025年净利润仅0.63亿，而股价3个月内从37元暴涨至200元（最高5.4x），当前134元对应静态PE 1675x、PB 20.6x，估值处于极度泡沫水平，不具备任何安全边际",
+      "fair_value_range": [
+        30,
+        60
+      ],
+      "buy_zone": [
+        15,
+        30
+      ],
+      "sell_or_reduce_zone": [
+        60,
+        100
+      ],
+      "latest_report": "companies/CN/301217/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-10-30",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-09T18:00:00+08:00"
     },
     {
       "symbol": "CN:600028",
