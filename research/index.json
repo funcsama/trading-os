@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 443,
+  "company_count": 461,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -9396,7 +9396,7 @@
       "currency": "CNY",
       "status": "active",
       "current_rating": "watch",
-      "current_thesis": "公司基本面改善真实存在，资管表现亮眼、安徽区域根基扎实，但当前股价已经明显跑在可验证ROE和同业估值前面，更像景气与主题驱动下的高弹性交易标的，而不是具备足够安全边际的买点。",
+      "current_thesis": "区域根基扎实、华安资管改善明显，但盈利弹性和竞争壁垒不足以支撑当前约1.9倍PB估值；当前价格已透支2026-2027高景气弹性与区域科创想象力，对新买入者不友好，观察不买。",
       "fair_value_range": [
         6.3,
         7.4
@@ -9412,7 +9412,7 @@
       "latest_report": "companies/CN/600909/reports/2026-07-09-initial.md",
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
-      "updated_at": "2026-07-09"
+      "updated_at": "2026-07-09T21:30:00+08:00"
     },
     {
       "symbol": "CN:600919",
@@ -10345,10 +10345,10 @@
         5.4,
         6.2
       ],
-      "latest_report": "companies/CN/601390/reports/2026-07-09-initial.md",
+      "latest_report": "companies/CN/601390/reports/2026-07-08-initial.md",
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
-      "updated_at": "2026-07-09"
+      "updated_at": "2026-07-08T23:59:00+08:00"
     },
     {
       "symbol": "CN:601398",
@@ -10384,7 +10384,7 @@
       "currency": "CNY",
       "status": "active",
       "current_rating": "watch",
-      "current_thesis": "中国铝业是具备资源、氧化铝、原铝和能源配套的一体化央企平台，质量较高，但2026-07-09股价已基本反映中高景气与资源扩张预期，更适合观察，等待6.4至7.2元区间再提高仓位。",
+      "current_thesis": "中国铝业是具备铝土矿、氧化铝、原铝和能源配套的一体化央企平台，公司质量较高，但2026-07-06股价8.48元已基本反映中高景气与资源扩张预期，更适合观察，等待6.4至7.2元区间再提高仓位。",
       "fair_value_range": [
         7.4,
         9.2
@@ -10397,10 +10397,10 @@
         9.8,
         12.0
       ],
-      "latest_report": "companies/CN/601600/reports/2026-07-09-initial.md",
+      "latest_report": "companies/CN/601600/reports/2026-07-08-initial.md",
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
-      "updated_at": "2026-07-09"
+      "updated_at": "2026-07-08T23:59:00+08:00"
     },
     {
       "symbol": "CN:601601",
@@ -10462,7 +10462,7 @@
       "currency": "CNY",
       "status": "active",
       "current_rating": "watch",
-      "current_thesis": "长城汽车具备坦克越野品牌与出口能力两项核心资产，但2026Q1利润显著承压，说明新能源转型、主流SUV竞争和价格战仍在侵蚀盈利；15元附近已不贵但安全边际一般，更适合观察或小仓位试仓，14元以下才进入更有吸引力的买点区间。",
+      "current_thesis": "长城汽车具备坦克越野品牌与出口能力两项核心资产,但2026Q1利润显著承压,说明新能源转型、主流SUV竞争和价格战仍在侵蚀盈利;15元附近已不贵但安全边际一般,更适合观察或小仓位试仓,14元以下才进入更有吸引力的买点区间。",
       "fair_value_range": [
         15.5,
         19.5
@@ -10472,13 +10472,13 @@
         14.5
       ],
       "sell_or_reduce_zone": [
-        18.5,
-        22.0
+        22.0,
+        999.0
       ],
-      "latest_report": "companies/CN/601633/reports/2026-07-09-initial.md",
+      "latest_report": "companies/CN/601633/reports/2026-07-08-initial.md",
       "next_review_date": "2026-08-31",
-      "active_price_triggers": 4,
-      "updated_at": "2026-07-09"
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-08T16:00:00+08:00"
     },
     {
       "symbol": "CN:601636",
@@ -10767,6 +10767,32 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:601818",
+      "market": "CN",
+      "ticker": "601818",
+      "name": "光大银行",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "buy",
+      "current_thesis": "低估值、可收息、等待息差与资产质量企稳的全国性股份行；以0.36倍左右PB交易，当前更适合分批买入而非追高重仓。",
+      "fair_value_range": [
+        3.8,
+        4.6
+      ],
+      "buy_zone": [
+        2.9,
+        3.2
+      ],
+      "sell_or_reduce_zone": [
+        4.8,
+        5.4
+      ],
+      "latest_report": "companies/CN/601818/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-09"
+    },
+    {
       "symbol": "CN:601857",
       "market": "CN",
       "ticker": "601857",
@@ -10791,6 +10817,32 @@
       "next_review_date": "2026-10-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-07T23:00:00+08:00"
+    },
+    {
+      "symbol": "CN:601868",
+      "market": "CN",
+      "ticker": "601868",
+      "name": "中国能建",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国能建是央企能源电力工程平台龙头，订单与设计壁垒强，但现金流、应收与ROE约束明显；当前价位未给足安全边际，先观察，等待1.9元以下或现金流显著改善后再考虑加仓。",
+      "fair_value_range": [
+        1.9,
+        2.4
+      ],
+      "buy_zone": [
+        1.55,
+        1.9
+      ],
+      "sell_or_reduce_zone": [
+        2.5,
+        3.0
+      ],
+      "latest_report": "companies/CN/601868/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
     },
     {
       "symbol": "CN:601869",
@@ -10819,6 +10871,110 @@
       "updated_at": "2026-07-07T23:30:00+08:00"
     },
     {
+      "symbol": "CN:601872",
+      "market": "CN",
+      "ticker": "601872",
+      "name": "招商轮船",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "招商轮船是兼具VLCC、干散货与长约LNG储备的高质量综合航运平台，但2026-07-09股价已较充分反映高景气和扩张预期，现阶段更适合观察而非追高买入。",
+      "fair_value_range": [
+        11.5,
+        14.5
+      ],
+      "buy_zone": [
+        10.0,
+        12.5
+      ],
+      "sell_or_reduce_zone": [
+        15.5,
+        18.0
+      ],
+      "latest_report": "companies/CN/601872/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-28",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:601881",
+      "market": "CN",
+      "ticker": "601881",
+      "name": "中国银河",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国银河是大型央企券商中的高beta资产，渠道、客户和资本实力扎实，但投行与资管并非头部，当前价格接近合理价值中枢，适合观察而非重仓追高。",
+      "fair_value_range": [
+        12.5,
+        14.5
+      ],
+      "buy_zone": [
+        10.8,
+        12.0
+      ],
+      "sell_or_reduce_zone": [
+        15.5,
+        17.0
+      ],
+      "latest_report": "companies/CN/601881/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:601888",
+      "market": "CN",
+      "ticker": "601888",
+      "name": "中国中免",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "buy",
+      "current_thesis": "中国中免仍是中国免税与旅游零售最稀缺的龙头资产，当前价格已接近可买区，但需要持续验证海南恢复、机场盈利修复、折扣率收敛和DFS整合质量，因此适合小仓位起步、下跌再加。",
+      "fair_value_range": [
+        56,
+        72
+      ],
+      "buy_zone": [
+        46,
+        54
+      ],
+      "sell_or_reduce_zone": [
+        68,
+        82
+      ],
+      "latest_report": "companies/CN/601888/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:601898",
+      "market": "CN",
+      "ticker": "601898",
+      "name": "中煤能源",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中煤能源是具备低成本资源、长协稳定性和央企分红纪律的高质量周期股，但在2026年煤价回落周期中，当前价格尚未提供足够安全边际，适合等待回落到10元附近再逐步建仓。",
+      "fair_value_range": [
+        10.8,
+        12.4
+      ],
+      "buy_zone": [
+        9.8,
+        10.8
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        16.0
+      ],
+      "latest_report": "companies/CN/601898/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
       "symbol": "CN:601899",
       "market": "CN",
       "ticker": "601899",
@@ -10843,6 +10999,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-08T11:35:00+08:00"
+    },
+    {
+      "symbol": "CN:601919",
+      "market": "CN",
+      "ticker": "601919",
+      "name": "中远海控",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中远海控是高质量周期股而非稳定成长股；资产负债表、分红与回购能力优秀，但盈利仍受运价周期、红海扰动和新船供给主导。现价接近买入区上沿，适合观察或极小试仓，真正有吸引力的建仓区在11.5元以下并在10.0至11.5元区间最强。",
+      "fair_value_range": [
+        14.5,
+        18.0
+      ],
+      "buy_zone": [
+        11.5,
+        13.5
+      ],
+      "sell_or_reduce_zone": [
+        18.0,
+        22.0
+      ],
+      "latest_report": "companies/CN/601919/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
     },
     {
       "symbol": "CN:601939",
@@ -10871,6 +11053,58 @@
       "updated_at": "2026-07-07T23:30:00+08:00"
     },
     {
+      "symbol": "CN:601958",
+      "market": "CN",
+      "ticker": "601958",
+      "name": "金钼股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "金钼股份是中国稀缺的高质量纯钼龙头，资源寿命长、全产业链完整、资产负债表强，但2026-07-09股价已明显透支高钼价与主题预期，当前更适合观察等待回撤到15元以下再考虑建仓。",
+      "fair_value_range": [
+        15.5,
+        19.5
+      ],
+      "buy_zone": [
+        12.8,
+        15.0
+      ],
+      "sell_or_reduce_zone": [
+        20.5,
+        24.0
+      ],
+      "latest_report": "companies/CN/601958/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:601985",
+      "market": "CN",
+      "ticker": "601985",
+      "name": "中国核电",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中国核电是A股稀缺的高质量核电核心资产，长期价值来自核准常态化下的装机扩张与稳定基荷现金流，但2026-07-09附近股价已处合理区间中上部，安全边际一般，当前更适合观察或极小跟踪仓。",
+      "fair_value_range": [
+        8.0,
+        9.2
+      ],
+      "buy_zone": [
+        7.2,
+        7.9
+      ],
+      "sell_or_reduce_zone": [
+        9.5,
+        11.0
+      ],
+      "latest_report": "companies/CN/601985/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
       "symbol": "CN:601988",
       "market": "CN",
       "ticker": "601988",
@@ -10897,6 +11131,58 @@
       "updated_at": "2026-07-07T00:00:00+08:00"
     },
     {
+      "symbol": "CN:601991",
+      "market": "CN",
+      "ticker": "601991",
+      "name": "大唐发电",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "大唐发电属于煤电修复加容量电价托底逻辑下的央企电力平台，2025年和2026年一季度盈利改善真实，但当前价格已较充分反映煤价下行和容量电价预期，适合观察等待更低买点，不适合在6.3元以上追高。",
+      "fair_value_range": [
+        4.8,
+        5.8
+      ],
+      "buy_zone": [
+        4.2,
+        5.0
+      ],
+      "sell_or_reduce_zone": [
+        6.3,
+        7.5
+      ],
+      "latest_report": "companies/CN/601991/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-29",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:601995",
+      "market": "CN",
+      "ticker": "601995",
+      "name": "中金公司",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中金公司具备头部券商中稀缺的高端投行、机构业务、跨境资本市场和高净值财富管理 franchise，长期值得跟踪；但截至2026-07-09，A股价格已基本反映景气修复与ROE改善预期，且A/H溢价偏高，当前以观察为主，等待31元以下更有安全边际的买点。",
+      "fair_value_range": [
+        31,
+        36
+      ],
+      "buy_zone": [
+        29,
+        31
+      ],
+      "sell_or_reduce_zone": [
+        39,
+        45
+      ],
+      "latest_report": "companies/CN/601995/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
       "symbol": "CN:601998",
       "market": "CN",
       "ticker": "601998",
@@ -10921,6 +11207,188 @@
       "next_review_date": "2026-08-30",
       "active_price_triggers": 2,
       "updated_at": "2026-07-07T22:30:00+08:00"
+    },
+    {
+      "symbol": "CN:603002",
+      "market": "CN",
+      "ticker": "603002",
+      "name": "宏昌电子",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司具备电子级环氧树脂与覆铜板产业位置，处在周期底部修复和高端材料升级的交叉点，但2025年与2026Q1利润表现远弱于当前股价所隐含预期；在高频高速材料放量、珠海项目爬坡和毛利率修复被财务数据验证前，当前更适合观察而非买入。",
+      "fair_value_range": [
+        4.5,
+        7.5
+      ],
+      "buy_zone": [
+        5.0,
+        6.0
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        12.0
+      ],
+      "latest_report": "companies/CN/603002/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603005",
+      "market": "CN",
+      "ticker": "603005",
+      "name": "晶方科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "晶方科技在CIS影像传感器封装、晶圆级封装和车规视觉封装上具备真实工艺壁垒，但2026-07-09的市场价格已明显提前透支景气修复与先进封装预期，当前更适合观察，等待22-28元安全边际区再考虑建仓。",
+      "fair_value_range": [
+        28,
+        36
+      ],
+      "buy_zone": [
+        22,
+        28
+      ],
+      "sell_or_reduce_zone": [
+        40,
+        48
+      ],
+      "latest_report": "companies/CN/603005/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603019",
+      "market": "CN",
+      "ticker": "603019",
+      "name": "中科曙光",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "中科曙光是国产算力基础设施核心资产，受益于AI服务器、液冷、存储与国产CPU生态协同，但2026-07-09股价已接近合理价值上沿，更适合观察或小仓跟踪，而非追高重仓。",
+      "fair_value_range": [
+        88,
+        108
+      ],
+      "buy_zone": [
+        72,
+        85
+      ],
+      "sell_or_reduce_zone": [
+        115,
+        130
+      ],
+      "latest_report": "companies/CN/603019/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-26",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603061",
+      "market": "CN",
+      "ticker": "603061",
+      "name": "金海通",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "金海通在半导体测试分选机赛道具备真实产品力与国产替代逻辑，2025年和2026Q1业绩弹性较强，但客户集中、应收与存货抬升、半导体资本开支周期波动都在放大风险；以2026-07-09股价计算，市场定价已显著透支未来2-3年乐观预期，当前更适合观察而非买入。",
+      "fair_value_range": [
+        140,
+        210
+      ],
+      "buy_zone": [
+        100,
+        140
+      ],
+      "sell_or_reduce_zone": [
+        220,
+        9999
+      ],
+      "latest_report": "companies/CN/603061/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603063",
+      "market": "CN",
+      "ticker": "603063",
+      "name": "禾望电气",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "公司具备风电变流器、SVG、储能PCS和工控传动的多产品矩阵，基本面质量优于单一新能源设备公司，但在2026-07-09的股价附近估值已较多反映景气修复与利润改善预期，更适合等待更有安全边际的价格。",
+      "fair_value_range": [
+        28,
+        36
+      ],
+      "buy_zone": [
+        24,
+        28
+      ],
+      "sell_or_reduce_zone": [
+        40,
+        56
+      ],
+      "latest_report": "companies/CN/603063/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603078",
+      "market": "CN",
+      "ticker": "603078",
+      "name": "江化微",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "湿电子化学品国产替代与半导体收入占比提升带来中期成长性，但2026-07-09股价已显著透支2026-2027年盈利兑现，当前以观察为主，需等待更有安全边际的价格或更强利润释放。",
+      "fair_value_range": [
+        28,
+        38
+      ],
+      "buy_zone": [
+        22,
+        28
+      ],
+      "sell_or_reduce_zone": [
+        42,
+        100
+      ],
+      "latest_report": "companies/CN/603078/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 4,
+      "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603083",
+      "market": "CN",
+      "ticker": "603083",
+      "name": "剑桥科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "公司已切入AI光通信景气主线并受益于800G放量与1.6T预期，但制造与代工属性较重、现金流和库存风险较高，在2026-07-09的市场价格下估值明显透支，当前只适合观察不适合买入。",
+      "fair_value_range": [
+        65,
+        95
+      ],
+      "buy_zone": [
+        50,
+        70
+      ],
+      "sell_or_reduce_zone": [
+        110,
+        9999
+      ],
+      "latest_report": "companies/CN/603083/reports/2026-07-09-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-09"
     },
     {
       "symbol": "CN:603259",
