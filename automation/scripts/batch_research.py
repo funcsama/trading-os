@@ -1,19 +1,24 @@
 """A 股批量深度研究调度器。
 
 读取 coverage/cn-a/research_queue.jsonl 中 status=pending 的条目，为每家公司启动一个
-非交互 `claude -p` 子进程做深度研究，全局并发上限默认 10。每个 worker 收到一份自包含
+非交互 `claude -p` 子进程做深度研究。每个 worker 收到一份自包含
 单公司研究提示词（见 _worker_prompt.md），不需要阅读仓库内其他说明文件，只写各自公司目录。
 主调度器负责状态更新、公司目录校验、全局索引重建和最终提交。
 
+核心稳健原则：
+- 低并发（默认 2）以避免 429 rate limit。
+- 以磁盘 artifact（meta.json + 报告）存在性为准，而非 claude 退出码。
+- 429 等 transient 失败会记录为 failed，后续可用 --include-failed 重试。
+- 支持 --include-failed 在重跑时清理并重试失败项。
+
 用法:
-    python automation/scripts/batch_research.py --concurrency 10 --max 30
+    python automation/scripts/batch_research.py --concurrency 2 --max 30
     python automation/scripts/batch_research.py --tickers CN:600519,CN:300750
-    python automation/scripts/batch_research.py --concurrency 10 --dry-run
+    python automation/scripts/batch_research.py --concurrency 2 --dry-run
     python automation/scripts/batch_research.py --probe-only
 
 约束:
     - 只调度 status=pending（或 --tickers 指定）的 initial_research。
-    - 跳过已存在但 status != pending 的项（避免重复）。
     - 进程中断会通过 runs.jsonl 与队列 status 可恢复（下次运行复用 pending/failed 项）。
 """
 from __future__ import annotations
@@ -63,6 +68,8 @@ CLAUDE_ENV_KEYS_TO_CLEAN = {
     "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME",
     "ANTHROPIC_MODEL",
     "ANTHROPIC_REASONING_MODEL",
+    "CLAUDE_MODEL_OPUS",
+    "CLAUDE_MODEL",
 }
 
 RESULT_RE = re.compile(r"__RESULT__(\{.*\})")
@@ -147,10 +154,112 @@ def append_run(record: dict[str, Any]) -> None:
 
 def claude_env(*, clean: bool) -> dict[str, str]:
     env = dict(os.environ)
+    settings_env = _load_claude_settings_env()
     if clean:
         for key in CLAUDE_ENV_KEYS_TO_CLEAN:
             env.pop(key, None)
+        env.update(settings_env)
+    else:
+        for key, value in settings_env.items():
+            env.setdefault(key, value)
     return env
+
+
+def _first_env_value(env: dict[str, str], keys: list[str]) -> str | None:
+    for key in keys:
+        value = env.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return None
+
+
+def _load_claude_settings_env() -> dict[str, str]:
+    settings_path = Path.home() / ".claude" / "settings.json"
+    if not settings_path.exists():
+        return {}
+    try:
+        payload = json.loads(settings_path.read_text(encoding="utf-8-sig"))
+    except json.JSONDecodeError:
+        return {}
+    env = payload.get("env")
+    if not isinstance(env, dict):
+        return {}
+    return {str(key): str(value) for key, value in env.items() if value is not None}
+
+
+def detect_claude_tool_label() -> str:
+    try:
+        proc = subprocess.run(
+            [CLAUDE_BIN, "--version"],
+            cwd=str(WORKER_CWD),
+            capture_output=True,
+            text=True,
+            timeout=20,
+            encoding="utf-8",
+            errors="replace",
+        )
+    except Exception:  # noqa: BLE001
+        return "Claude Code"
+    version = (proc.stdout or proc.stderr or "").strip()
+    if not version:
+        return "Claude Code"
+    return f"Claude Code {version}"
+
+
+def detect_claude_model_label(*, clean_env: bool, explicit_model: str | None) -> str:
+    if explicit_model and explicit_model.strip():
+        return explicit_model.strip()
+    effective_env = claude_env(clean=clean_env)
+    model = _first_env_value(
+        effective_env,
+        [
+            "CLAUDE_MODEL",
+            "CLAUDE_MODEL_OPUS",
+            "ANTHROPIC_MODEL",
+            "ANTHROPIC_DEFAULT_SONNET_MODEL",
+            "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME",
+            "ANTHROPIC_DEFAULT_OPUS_MODEL",
+            "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME",
+            "ANTHROPIC_DEFAULT_HAIKU_MODEL",
+            "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME",
+            "ANTHROPIC_DEFAULT_FABLE_MODEL",
+            "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME",
+        ],
+    )
+    if model:
+        return model
+    settings_env = _load_claude_settings_env()
+    model = _first_env_value(
+        settings_env,
+        [
+            "CLAUDE_MODEL",
+            "CLAUDE_MODEL_OPUS",
+            "ANTHROPIC_MODEL",
+            "ANTHROPIC_DEFAULT_SONNET_MODEL",
+            "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME",
+            "ANTHROPIC_DEFAULT_OPUS_MODEL",
+            "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME",
+            "ANTHROPIC_DEFAULT_HAIKU_MODEL",
+            "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME",
+            "ANTHROPIC_DEFAULT_FABLE_MODEL",
+            "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME",
+        ],
+    )
+    return model or "model unknown"
+
+
+def build_analyst_id(
+    *,
+    clean_env: bool,
+    explicit_analyst_id: str | None,
+    explicit_model: str | None,
+) -> str:
+    if explicit_analyst_id and explicit_analyst_id.strip():
+        return explicit_analyst_id.strip()
+    return (
+        f"{detect_claude_tool_label()} + "
+        f"{detect_claude_model_label(clean_env=clean_env, explicit_model=explicit_model)}"
+    )
 
 
 def claude_base_cmd(*, safe_mode: bool) -> list[str]:
@@ -261,30 +370,35 @@ def build_prompt(
     priority: int,
     target_company_dir: str,
     company_snapshot: dict[str, Any] | None,
+    analyst_id: str,
     market: str = "CN",
 ) -> str:
     ticker = _ticker(symbol)
     tmpl = PROMPT_FILE.read_text(encoding="utf-8")
-    return (tmpl
-            .replace("{{COMPANY_NAME}}", name)
-            .replace("{{SYMBOL}}", symbol)
-            .replace("{{MARKET}}", market)
-            .replace("{{TICKER}}", ticker)
-            .replace("{{COMPANY_DIR}}", target_company_dir)
-            .replace("{{DATE}}", _dt.date.today().isoformat())
-            .replace("{{SLUG}}", "initial")
-            .replace("{{RESEARCH_REASON}}", reason)
-            .replace("{{PRIORITY}}", str(priority))
-            .replace(
-                "{{COMPANY_SNAPSHOT_JSON}}",
-                json.dumps(company_snapshot or {}, ensure_ascii=False, indent=2, sort_keys=True),
-            ))
+    return (
+        tmpl
+        .replace("{{COMPANY_NAME}}", name)
+        .replace("{{SYMBOL}}", symbol)
+        .replace("{{MARKET}}", market)
+        .replace("{{TICKER}}", ticker)
+        .replace("{{COMPANY_DIR}}", target_company_dir)
+        .replace("{{DATE}}", _dt.date.today().isoformat())
+        .replace("{{SLUG}}", "initial")
+        .replace("{{RESEARCH_REASON}}", reason)
+        .replace("{{PRIORITY}}", str(priority))
+        .replace("{{ANALYST_ID}}", analyst_id)
+        .replace(
+            "{{COMPANY_SNAPSHOT_JSON}}",
+            json.dumps(company_snapshot or {}, ensure_ascii=False, indent=2, sort_keys=True),
+        )
+    )
 
 
 def run_claude_worker(symbol: str, name: str, reason: str, priority: int,
                       target_company_dir: str, timeout_s: int,
                       company_snapshot: dict[str, Any] | None,
-                      *, clean_env: bool, safe_mode: bool) -> dict[str, Any]:
+                      *, clean_env: bool, safe_mode: bool,
+                      analyst_id: str, claude_model: str | None) -> dict[str, Any]:
     """启动一个 claude -p 子进程，写一个公司的研究产物。返回 run 记录。"""
     started = _now_iso()
     mark_queue(symbol, name, reason, priority, "running",
@@ -297,10 +411,13 @@ def run_claude_worker(symbol: str, name: str, reason: str, priority: int,
         priority=priority,
         target_company_dir=target_company_dir,
         company_snapshot=company_snapshot,
+        analyst_id=analyst_id,
     )
     # 关键 flags: 非交互、跳过权限确认（worker 在仓库内只写自己目录，已在 prompt 中强约束）、
     # 限定目录、流式 JSON 之外用纯文本输出便于正则解析。
     cmd = [CLAUDE_BIN, "-p", prompt, *claude_base_cmd(safe_mode=safe_mode)[1:]]
+    if claude_model:
+        cmd.extend(["--model", claude_model])
     env = claude_env(clean=clean_env)
     proc_started = time.time()
     try:
@@ -335,18 +452,18 @@ def run_claude_worker(symbol: str, name: str, reason: str, priority: int,
                 errors = list(rj.get("errors") or [])
             except json.JSONDecodeError as e:
                 errors.append(f"result json parse: {e}")
-        if ok and not result_path:
-            # 兜底：在公司目录 reports/ 找今日最新 .md
-            rdir = WORKER_CWD / target_company_dir / "reports"
-            if rdir.exists():
-                mds = sorted(rdir.glob("*.md"))
-                if mds:
-                    result_path = f"reports/{mds[-1].name}"
-        if ok:
-            valid, detail = validate_company_dir(target_company_dir)
-            if not valid:
-                ok = False
-                errors.append(f"validate failed: {detail}")
+    if ok and not result_path:
+        # 兜底：在公司目录 reports/ 找今日最新 .md
+        rdir = WORKER_CWD / target_company_dir / "reports"
+        if rdir.exists():
+            mds = sorted(rdir.glob("*.md"))
+            if mds:
+                result_path = f"reports/{mds[-1].name}"
+    if ok:
+        valid, detail = validate_company_dir(target_company_dir)
+        if not valid:
+            ok = False
+            errors.append(f"validate failed: {detail}")
     if not ok:
         salvaged = salvage_company_result(target_company_dir)
         if salvaged is not None:
@@ -402,18 +519,27 @@ def select_targets(queue: list[dict[str, Any]], tickers: list[str] | None,
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="A 股批量深度研究调度器")
-    ap.add_argument("--concurrency", type=int, default=10)
+    ap.add_argument("--concurrency", type=int, default=2,
+                    help="并发数（默认2，避免429限流）")
     ap.add_argument("--max", type=int, default=None, help="本轮最多处理多少家")
     ap.add_argument("--tickers", help="只处理指定 symbol，逗号分隔，覆盖 pending 选择")
-    ap.add_argument("--timeout", type=int, default=1800, help="单家 claude 超时秒数")
+    ap.add_argument("--timeout", type=int, default=3600, help="单家 claude 超时秒数（默认3600=1h）")
     ap.add_argument("--include-failed", action="store_true",
                     help="同时重试 status=failed 的队列项")
     ap.add_argument("--claude-safe-mode", action="store_true",
                     help="用 Claude safe-mode 运行 worker，排除插件、状态栏和项目自定义干扰")
     ap.add_argument(
+        "--claude-model",
+        help="显式指定 Claude worker 使用的模型，并传给 claude --model",
+    )
+    ap.add_argument(
+        "--analyst-id",
+        help="显式写入报告的分析师标识，如 'Claude Code 2.1.195 + glm-5.2'",
+    )
+    ap.add_argument(
         "--no-clean-claude-env",
         action="store_true",
-        help="默认清理外层 ANTHROPIC_* 覆盖变量，让 Claude 读取自身 settings；该选项关闭清理",
+        help="默认清理外层 ANTHROPIC_* 覆盖变量，并注入 ~/.claude/settings.json 的 env；该选项关闭清理",
     )
     ap.add_argument("--skip-claude-probe", action="store_true",
                     help="跳过 Claude 文件写入探针；只建议在已知 worker 可用时使用")
@@ -426,6 +552,11 @@ def main() -> int:
 
     tickers = [t.strip() for t in args.tickers.split(",")] if args.tickers else None
     clean_env = not args.no_clean_claude_env
+    analyst_id = build_analyst_id(
+        clean_env=clean_env,
+        explicit_analyst_id=args.analyst_id,
+        explicit_model=args.claude_model,
+    )
 
     if args.probe_only:
         ok, detail = probe_claude(
@@ -450,6 +581,7 @@ def main() -> int:
     targets = select_targets(queue, tickers, args.max, args.include_failed)
     print(f"[batch] 待研究 {len(targets)} 家 / 并发 {args.concurrency} / 超时 {args.timeout}s"
           f" / dry_run={args.dry_run}")
+    print(f"[batch] analyst_id={analyst_id}")
 
     if args.dry_run:
         for t in targets[:50]:
@@ -485,7 +617,10 @@ def main() -> int:
                               item.get("target_company_dir")
                               or f"research/companies/CN/{_ticker(item['symbol'])}",
                               args.timeout, companies.get(item["symbol"]),
-                              clean_env=clean_env, safe_mode=args.claude_safe_mode)
+                              clean_env=clean_env,
+                              safe_mode=args.claude_safe_mode,
+                              analyst_id=analyst_id,
+                              claude_model=args.claude_model)
             futures[fut] = (item, time.time())
 
         while futures:
@@ -535,6 +670,8 @@ def main() -> int:
                             companies.get(item2["symbol"]),
                             clean_env=clean_env,
                             safe_mode=args.claude_safe_mode,
+                            analyst_id=analyst_id,
+                            claude_model=args.claude_model,
                         )
                         futures[fut2] = (item2, time.time())
             # 定期重建索引（每 10 家一次）

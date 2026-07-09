@@ -10,6 +10,7 @@
 - 市场：{{MARKET}}
 - 代码：{{TICKER}}
 - 研究日期：{{DATE}}
+- 分析师标识：{{ANALYST_ID}}
 - 队列优先级：P{{PRIORITY}}
 - 入队理由：{{RESEARCH_REASON}}
 - 允许写入目录：`{{COMPANY_DIR}}`
@@ -105,7 +106,7 @@ Claude Code 的 WebSearch/WebFetch 有时会被域名安全策略限制。遇到
 
 日期：{{DATE}}
 研究类型：initial
-分析师：agent
+分析师：{{ANALYST_ID}}
 
 ## 结论版
 
