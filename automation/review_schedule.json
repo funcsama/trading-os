@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5441,
+  "item_count": 5446,
   "items": [
     {
       "date": "2026-06-30",
@@ -14228,10 +14228,31 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920931",
+      "name": "无锡鼎邦",
+      "reason": "复核2026年中报的毛利率、经营现金流、新厂产能利用率和关联采购",
+      "latest_report": "companies/CN/920931/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920932",
       "name": "科达自控",
       "reason": "复核2026年半年报中的扣非利润、自由现金流、净债务和海图科技并表贡献",
       "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920942",
+      "name": "XD恒立钻",
+      "reason": "复查2026年半年报的毛利率、应收回款、订单兑现和自由现金流",
+      "latest_report": "companies/CN/920942/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920943",
+      "name": "优机股份",
+      "reason": "2026年半年报披露窗口后复核季度亏损、订单转化和自由现金流",
+      "latest_report": "companies/CN/920943/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29446,6 +29467,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920942",
+      "name": "XD恒立钻",
+      "reason": "复查2026年三季报及硬质合金成本传导效果",
+      "latest_report": "companies/CN/920942/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920946",
       "name": "森萱医药",
       "reason": "复核2026年三季报并判断一季度高增长是否可持续",
@@ -36961,6 +36989,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920943",
+      "name": "优机股份",
+      "reason": "2026年年报披露窗口后完整重估新产线回报和资本结构",
+      "latest_report": "companies/CN/920943/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

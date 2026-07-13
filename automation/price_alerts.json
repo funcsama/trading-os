@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6570,
+  "item_count": 6576,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52275,6 +52275,22 @@
       "latest_report": "companies/CN/920895/reports/2026-07-14-initial.md"
     },
     {
+      "symbol": "CN:920931",
+      "name": "无锡鼎邦",
+      "type": "price_above",
+      "price": 7.5,
+      "reason": "进入减仓或不应追高区间，估值已透支基准情景",
+      "latest_report": "companies/CN/920931/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920931",
+      "name": "无锡鼎邦",
+      "type": "price_below",
+      "price": 4.5,
+      "reason": "进入估值观察区，须先验证现金流和核心假设后才可小仓位试买",
+      "latest_report": "companies/CN/920931/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920932",
       "name": "科达自控",
       "type": "price_above",
@@ -52289,6 +52305,38 @@
       "price": 7.5,
       "reason": "进入可复核基本面后小仓试买的区间",
       "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920942",
+      "name": "XD恒立钻",
+      "type": "price_above",
+      "price": 15.0,
+      "reason": "进入减仓或不应追高区间，估值要求乐观情景兑现",
+      "latest_report": "companies/CN/920942/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920942",
+      "name": "XD恒立钻",
+      "type": "price_below",
+      "price": 10.0,
+      "reason": "进入有一定安全边际的买入区间，但需先确认基本面未恶化",
+      "latest_report": "companies/CN/920942/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920943",
+      "name": "优机股份",
+      "type": "price_above",
+      "price": 14.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920943/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920943",
+      "name": "优机股份",
+      "type": "price_below",
+      "price": 7.5,
+      "reason": "进入初步买入区，但必须先验证基本面和现金流未恶化",
+      "latest_report": "companies/CN/920943/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920946",

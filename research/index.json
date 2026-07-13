@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1962,
+  "company_count": 1965,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50547,6 +50547,32 @@
       "updated_at": "2026-07-14T23:30:00+08:00"
     },
     {
+      "symbol": "CN:920931",
+      "market": "CN",
+      "ticker": "920931",
+      "name": "无锡鼎邦",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "新厂转固后盈利和自由现金流显著恶化，当前估值已提前计入高确定性的产能消化与利润恢复，缺乏安全边际。",
+      "fair_value_range": [
+        4.5,
+        6.0
+      ],
+      "buy_zone": [
+        3.8,
+        4.5
+      ],
+      "sell_or_reduce_zone": [
+        7.5,
+        9.5
+      ],
+      "latest_report": "companies/CN/920931/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T22:30:00+08:00"
+    },
+    {
       "symbol": "CN:920932",
       "market": "CN",
       "ticker": "920932",
@@ -50571,6 +50597,58 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T03:48:34+08:00"
+    },
+    {
+      "symbol": "CN:920942",
+      "market": "CN",
+      "ticker": "920942",
+      "name": "XD恒立钻",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "技术和央企客户卡位尚可，但应收占用、毛利下滑和自由现金流弱使当前高估值缺乏安全边际。",
+      "fair_value_range": [
+        10.0,
+        13.0
+      ],
+      "buy_zone": [
+        8.0,
+        10.0
+      ],
+      "sell_or_reduce_zone": [
+        15.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920942/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T07:15:00+08:00"
+    },
+    {
+      "symbol": "CN:920943",
+      "market": "CN",
+      "ticker": "920943",
+      "name": "优机股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "定制化与海外客户能力尚不足以抵消自由现金流脆弱、扩产回报待证和2026年一季度转亏，当前价格显著高于多因素公允价值。",
+      "fair_value_range": [
+        8.0,
+        11.5
+      ],
+      "buy_zone": [
+        6.5,
+        7.5
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        18.5
+      ],
+      "latest_report": "companies/CN/920943/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T12:00:00+08:00"
     },
     {
       "symbol": "CN:920946",
