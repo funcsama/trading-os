@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5436,
+  "item_count": 5441,
   "items": [
     {
       "date": "2026-06-30",
@@ -14232,6 +14232,27 @@
       "name": "科达自控",
       "reason": "复核2026年半年报中的扣非利润、自由现金流、净债务和海图科技并表贡献",
       "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920946",
+      "name": "森萱医药",
+      "reason": "复核2026年中报的收入、出口、毛利率和经营现金流",
+      "latest_report": "companies/CN/920946/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920950",
+      "name": "迅安科技",
+      "reason": "半年报披露后复查海外订单、产品毛利率、存货、自由现金流和泰国子公司经营情况",
+      "latest_report": "companies/CN/920950/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920953",
+      "name": "国子软件",
+      "reason": "预计中报披露窗口，复核应收账款、现金转化率和硬件毛利率",
+      "latest_report": "companies/CN/920953/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29425,6 +29446,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920946",
+      "name": "森萱医药",
+      "reason": "复核2026年三季报并判断一季度高增长是否可持续",
+      "latest_report": "companies/CN/920946/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920961",
       "name": "创远信科",
       "reason": "复核三季报及重大资产重组注册交割进展",
@@ -36933,6 +36961,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920953",
+      "name": "国子软件",
+      "reason": "复核2026年全年自由现金流、应收账龄和区域订单持续性",
+      "latest_report": "companies/CN/920953/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

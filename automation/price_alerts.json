@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6564,
+  "item_count": 6570,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52289,6 +52289,54 @@
       "price": 7.5,
       "reason": "进入可复核基本面后小仓试买的区间",
       "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920946",
+      "name": "森萱医药",
+      "type": "price_above",
+      "price": 11.5,
+      "reason": "进入减仓或不应追高区间，除非盈利预测同步上修",
+      "latest_report": "companies/CN/920946/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920946",
+      "name": "森萱医药",
+      "type": "price_below",
+      "price": 7.6,
+      "reason": "进入有安全边际的买入区间，但需先复核基本面",
+      "latest_report": "companies/CN/920946/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920950",
+      "name": "迅安科技",
+      "type": "price_above",
+      "price": 11.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920950/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920950",
+      "name": "迅安科技",
+      "type": "price_below",
+      "price": 8.0,
+      "reason": "进入可能具备安全边际的买入区间，需先复核核心假设",
+      "latest_report": "companies/CN/920950/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920953",
+      "name": "国子软件",
+      "type": "price_above",
+      "price": 21,
+      "reason": "进入减仓或不应追高区间，估值已明显高于多因素合理价值",
+      "latest_report": "companies/CN/920953/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920953",
+      "name": "国子软件",
+      "type": "price_below",
+      "price": 12,
+      "reason": "进入有一定安全边际的观察买入区间，但必须先验证现金流和应收假设",
+      "latest_report": "companies/CN/920953/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920957",
