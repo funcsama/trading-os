@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1944,
+  "company_count": 1947,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920873",
+      "market": "CN",
+      "ticker": "920873",
+      "name": "中设咨询",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "资质和订单尚未转化为正毛利与自由现金流，巨额长账龄应收叠加4倍以上市净率使当前价格缺乏安全边际。",
+      "fair_value_range": [
+        1.5,
+        2.3
+      ],
+      "buy_zone": [
+        1.1,
+        1.5
+      ],
+      "sell_or_reduce_zone": [
+        2.8,
+        3.5
+      ],
+      "latest_report": "companies/CN/920873/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-15",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T03:47:45.4837111+08:00"
+    },
+    {
+      "symbol": "CN:920895",
+      "market": "CN",
+      "ticker": "920895",
+      "name": "花溪科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司净现金充足但打捆机主业仍在周期下行、盈利和自由现金流未修复，当前价格已隐含接近历史峰值的持续复苏，缺乏安全边际。",
+      "fair_value_range": [
+        4.0,
+        6.0
+      ],
+      "buy_zone": [
+        3.0,
+        4.0
+      ],
+      "sell_or_reduce_zone": [
+        8.0,
+        10.0
+      ],
+      "latest_report": "companies/CN/920895/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920932",
+      "market": "CN",
+      "ticker": "920932",
+      "name": "科达自控",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "矿山智能化长期需求仍在，但公司自由现金流、杠杆、并购与信披风险尚未改善，当前价格缺乏安全边际。",
+      "fair_value_range": [
+        7.5,
+        10.0
+      ],
+      "buy_zone": [
+        6.0,
+        7.5
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        15.0
+      ],
+      "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T03:48:34+08:00"
     },
     {
       "symbol": "CN:920964",

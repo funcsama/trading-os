@@ -52195,6 +52195,54 @@
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
     },
     {
+      "symbol": "CN:920873",
+      "name": "中设咨询",
+      "type": "price_above",
+      "price": 2.8,
+      "reason": "进入减仓或不应追高区间，估值开始预付较多反转成果",
+      "latest_report": "companies/CN/920873/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920873",
+      "name": "中设咨询",
+      "type": "price_below",
+      "price": 1.5,
+      "reason": "进入候选买入区间，但仅在毛利率、现金流和应收风险同步验证后试仓",
+      "latest_report": "companies/CN/920873/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920895",
+      "name": "花溪科技",
+      "type": "price_above",
+      "price": 8.0,
+      "reason": "进入减仓或不应追高区间，估值已预支较强复苏",
+      "latest_report": "companies/CN/920895/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920895",
+      "name": "花溪科技",
+      "type": "price_below",
+      "price": 4.0,
+      "reason": "进入潜在买入区间，但必须重新验证行业企稳、现金流和存货风险",
+      "latest_report": "companies/CN/920895/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920932",
+      "name": "科达自控",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920932",
+      "name": "科达自控",
+      "type": "price_below",
+      "price": 7.5,
+      "reason": "进入可复核基本面后小仓试买的区间",
+      "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920964",
       "name": "润农节水",
       "type": "price_above",
