@@ -14200,6 +14200,20 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920964",
+      "name": "润农节水",
+      "reason": "复查2026年半年报的工程毛利率、应收账款、经营现金流和短期借款",
+      "latest_report": "companies/CN/920964/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920985",
+      "name": "海泰新能",
+      "reason": "复查2026年半年报的毛利率、现金流、应收存货和负债变化",
+      "latest_report": "companies/CN/920985/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "HK:9660",
       "name": "地平线机器人",
       "reason": "复查 2026 中期业绩，重点看收入增长、毛利率和亏损收窄。",
@@ -29296,6 +29310,13 @@
       "name": "DR蘅东光",
       "reason": "复核2026年三季报及AI数据中心订单持续性",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920970",
+      "name": "大禹生物",
+      "reason": "复查2026年中报和三季报中的生猪减值、现金流、净负债及核心添加剂毛利率",
+      "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-11-01",

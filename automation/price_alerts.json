@@ -52195,6 +52195,54 @@
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
     },
     {
+      "symbol": "CN:920964",
+      "name": "润农节水",
+      "type": "price_above",
+      "price": 4.2,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920964/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920964",
+      "name": "润农节水",
+      "type": "price_below",
+      "price": 2.7,
+      "reason": "进入有安全边际的研究性买入区间，需先复核现金流与应收质量",
+      "latest_report": "companies/CN/920964/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920970",
+      "name": "大禹生物",
+      "type": "price_above",
+      "price": 4.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920970",
+      "name": "大禹生物",
+      "type": "price_below",
+      "price": 1.8,
+      "reason": "进入有条件的观察性买入区间，仍需验证现金流与基本面",
+      "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920985",
+      "name": "海泰新能",
+      "type": "price_above",
+      "price": 3.5,
+      "reason": "进入减仓或不应追高区间，复苏预期已被较充分计价",
+      "latest_report": "companies/CN/920985/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920985",
+      "name": "海泰新能",
+      "type": "price_below",
+      "price": 1.6,
+      "reason": "进入潜在买入区上沿，需重新验证现金流、资产质量和去杠杆条件",
+      "latest_report": "companies/CN/920985/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "HK:9660",
       "name": "地平线机器人",
       "type": "price_above",
