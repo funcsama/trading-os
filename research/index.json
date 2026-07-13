@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1953,
+  "company_count": 1956,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50623,6 +50623,84 @@
       "next_review_date": "2026-10-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T03:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920974",
+      "market": "CN",
+      "ticker": "920974",
+      "name": "凯大催化",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "有真实贵金属催化技术，但低ROE、弱自由现金流、极高客户集中和未结监管调查不足以支撑现价成长溢价。",
+      "fair_value_range": [
+        3.8,
+        4.8
+      ],
+      "buy_zone": [
+        2.8,
+        3.5
+      ],
+      "sell_or_reduce_zone": [
+        5.3,
+        6.5
+      ],
+      "latest_report": "companies/CN/920974/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-30",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T05:05:04+08:00"
+    },
+    {
+      "symbol": "CN:920976",
+      "market": "CN",
+      "ticker": "920976",
+      "name": "视声智能",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "KNX细分技术、海外增长和高资本回报具备质量，但当前价格已计入产业园投产后现金流恢复，需等待更大安全边际。",
+      "fair_value_range": [
+        12.0,
+        16.5
+      ],
+      "buy_zone": [
+        9.5,
+        11.5
+      ],
+      "sell_or_reduce_zone": [
+        19.0,
+        22.0
+      ],
+      "latest_report": "companies/CN/920976/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T05:04:12+08:00"
+    },
+    {
+      "symbol": "CN:920978",
+      "market": "CN",
+      "ticker": "920978",
+      "name": "开特股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分汽车热管理电子部件具备高ROIC和客户认证壁垒，但自由现金流、客户年降与大规模扩产风险尚未被当前价格充分补偿。",
+      "fair_value_range": [
+        13,
+        18
+      ],
+      "buy_zone": [
+        11,
+        14
+      ],
+      "sell_or_reduce_zone": [
+        21,
+        25
+      ],
+      "latest_report": "companies/CN/920978/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T05:34:33+08:00"
     },
     {
       "symbol": "CN:920981",

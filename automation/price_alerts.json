@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6552,
+  "item_count": 6558,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52321,6 +52321,54 @@
       "price": 1.8,
       "reason": "进入有条件的观察性买入区间，仍需验证现金流与基本面",
       "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920974",
+      "name": "凯大催化",
+      "type": "price_above",
+      "price": 5.3,
+      "reason": "进入减仓或不应追高区间，除非ROE与自由现金流显著上修",
+      "latest_report": "companies/CN/920974/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920974",
+      "name": "凯大催化",
+      "type": "price_below",
+      "price": 3.5,
+      "reason": "进入需重新核验监管、现金流和客户假设的研究性买入区间",
+      "latest_report": "companies/CN/920974/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920976",
+      "name": "视声智能",
+      "type": "price_above",
+      "price": 19.0,
+      "reason": "进入减仓或不应追高区间，需验证自由现金流是否达到乐观情景",
+      "latest_report": "companies/CN/920976/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920976",
+      "name": "视声智能",
+      "type": "price_below",
+      "price": 11.5,
+      "reason": "进入有安全边际的初始买入区间，须先复核基本面未恶化",
+      "latest_report": "companies/CN/920976/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920978",
+      "name": "开特股份",
+      "type": "price_above",
+      "price": 21,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920978/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920978",
+      "name": "开特股份",
+      "type": "price_below",
+      "price": 14,
+      "reason": "进入可小仓试买区间，但须先复核基本面和扩产假设",
+      "latest_report": "companies/CN/920978/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920981",
