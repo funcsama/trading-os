@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5432,
+  "item_count": 5436,
   "items": [
     {
       "date": "2026-06-30",
@@ -14235,10 +14235,31 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920957",
+      "name": "汉维科技",
+      "reason": "复核2026年中报的毛利率、自由现金流、产能利用率和海外子公司盈亏",
+      "latest_report": "companies/CN/920957/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920961",
+      "name": "创远信科",
+      "reason": "复核2026年半年报、自由现金流与研发资本化",
+      "latest_report": "companies/CN/920961/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920964",
       "name": "润农节水",
       "reason": "复查2026年半年报的工程毛利率、应收账款、经营现金流和短期借款",
       "latest_report": "companies/CN/920964/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920971",
+      "name": "天马新材",
+      "reason": "复核2026年中报的毛利率、产能利用率、库存与自由现金流",
+      "latest_report": "companies/CN/920971/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29401,6 +29422,13 @@
       "name": "齐鲁华信",
       "reason": "复查新产线完工与三季报经营修复情况",
       "latest_report": "companies/CN/920832/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920961",
+      "name": "创远信科",
+      "reason": "复核三季报及重大资产重组注册交割进展",
+      "latest_report": "companies/CN/920961/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",

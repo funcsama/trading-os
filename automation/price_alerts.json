@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6558,
+  "item_count": 6564,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52291,6 +52291,38 @@
       "latest_report": "companies/CN/920932/reports/2026-07-14-initial.md"
     },
     {
+      "symbol": "CN:920957",
+      "name": "汉维科技",
+      "type": "price_above",
+      "price": 6.0,
+      "reason": "超过合理价值上沿并进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920957/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920957",
+      "name": "汉维科技",
+      "type": "price_below",
+      "price": 3.6,
+      "reason": "进入具备一定安全边际的观察区，仍须重新验证基本面",
+      "latest_report": "companies/CN/920957/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920961",
+      "name": "创远信科",
+      "type": "price_above",
+      "price": 19,
+      "reason": "进入减仓或不应追高区间，估值再次明显透支",
+      "latest_report": "companies/CN/920961/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920961",
+      "name": "创远信科",
+      "type": "price_below",
+      "price": 12,
+      "reason": "进入有条件研究买入区，须重新验证并购、现金流和合规假设",
+      "latest_report": "companies/CN/920961/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920964",
       "name": "润农节水",
       "type": "price_above",
@@ -52321,6 +52353,22 @@
       "price": 1.8,
       "reason": "进入有条件的观察性买入区间，仍需验证现金流与基本面",
       "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920971",
+      "name": "天马新材",
+      "type": "price_above",
+      "price": 18,
+      "reason": "进入减仓或不应追高区间，价格已显著高于公允价值上沿",
+      "latest_report": "companies/CN/920971/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920971",
+      "name": "天马新材",
+      "type": "price_below",
+      "price": 8,
+      "reason": "进入基本面复核区，只有核心假设未恶化且现金流改善时才考虑试仓",
+      "latest_report": "companies/CN/920971/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920974",

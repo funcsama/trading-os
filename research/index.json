@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1956,
+  "company_count": 1959,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50573,6 +50573,58 @@
       "updated_at": "2026-07-14T03:48:34+08:00"
     },
     {
+      "symbol": "CN:920957",
+      "market": "CN",
+      "ticker": "920957",
+      "name": "汉维科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "产品标准化、议价能力与资本回报偏弱，现价隐含的利润率和自由现金流修复远高于已有证据。",
+      "fair_value_range": [
+        3.6,
+        5.0
+      ],
+      "buy_zone": [
+        2.8,
+        3.6
+      ],
+      "sell_or_reduce_zone": [
+        6.0,
+        8.5
+      ],
+      "latest_report": "companies/CN/920957/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T06:08:06+08:00"
+    },
+    {
+      "symbol": "CN:920961",
+      "market": "CN",
+      "ticker": "920961",
+      "name": "创远信科",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "存量业务资本回报与自由现金流偏弱，现价已高度计入关联并购及6G卫星业务兑现，缺乏安全边际。",
+      "fair_value_range": [
+        12,
+        16
+      ],
+      "buy_zone": [
+        9,
+        12
+      ],
+      "sell_or_reduce_zone": [
+        19,
+        27
+      ],
+      "latest_report": "companies/CN/920961/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T16:00:00+08:00"
+    },
+    {
       "symbol": "CN:920964",
       "market": "CN",
       "ticker": "920964",
@@ -50623,6 +50675,32 @@
       "next_review_date": "2026-10-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T03:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920971",
+      "market": "CN",
+      "ticker": "920971",
+      "name": "天马新材",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司拥有电子陶瓷粉体工艺与认证积累及新产能期权，但核心资本回报和自由现金流尚弱，当前价格已透支高端产品放量与利润率修复。",
+      "fair_value_range": [
+        8,
+        13
+      ],
+      "buy_zone": [
+        5.5,
+        8
+      ],
+      "sell_or_reduce_zone": [
+        18,
+        28
+      ],
+      "latest_report": "companies/CN/920971/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T06:13:49+08:00"
     },
     {
       "symbol": "CN:920974",
