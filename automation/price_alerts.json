@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6528,
+  "item_count": 6546,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920819",
+      "name": "颖泰生物",
+      "type": "price_above",
+      "price": 3.4,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920819/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920819",
+      "name": "颖泰生物",
+      "type": "price_below",
+      "price": 2.2,
+      "reason": "进入有安全边际的买入复核区间，需同时确认基本面未恶化",
+      "latest_report": "companies/CN/920819/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920832",
+      "name": "齐鲁华信",
+      "type": "price_above",
+      "price": 6.3,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920832/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920832",
+      "name": "齐鲁华信",
+      "type": "price_below",
+      "price": 4.0,
+      "reason": "进入有一定安全边际的买入观察区间，仍需复核基本面",
+      "latest_report": "companies/CN/920832/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920857",
+      "name": "泓禧科技",
+      "type": "price_above",
+      "price": 9.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920857/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920857",
+      "name": "泓禧科技",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入有安全边际的条件性买入观察区间，仍需验证现金流与毛利率",
+      "latest_report": "companies/CN/920857/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920873",
