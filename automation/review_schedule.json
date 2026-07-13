@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5421,
+  "item_count": 5426,
   "items": [
     {
       "date": "2026-06-30",
@@ -14242,10 +14242,31 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920981",
+      "name": "晶赛科技",
+      "reason": "复核2026年半年报、峰华整合、毛利率与正常化自由现金流",
+      "latest_report": "companies/CN/920981/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920982",
+      "name": "锦波生物",
+      "reason": "复核2026年半年报的医疗器械增速、凝胶放量、费用率、应收存货和自由现金流",
+      "latest_report": "companies/CN/920982/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920985",
       "name": "海泰新能",
       "reason": "复查2026年半年报的毛利率、现金流、应收存货和负债变化",
       "latest_report": "companies/CN/920985/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920992",
+      "name": "中科美菱",
+      "reason": "复核2026年半年报、海外增长、存货与自由现金流",
+      "latest_report": "companies/CN/920992/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29366,6 +29387,20 @@
       "name": "大禹生物",
       "reason": "复查2026年中报和三季报中的生猪减值、现金流、净负债及核心添加剂毛利率",
       "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920982",
+      "name": "锦波生物",
+      "reason": "复核2026年三季报利润降幅是否收窄及资本开支是否见顶",
+      "latest_report": "companies/CN/920982/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920992",
+      "name": "中科美菱",
+      "reason": "复核2026年三季报及募投执行进度",
+      "latest_report": "companies/CN/920992/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-11-01",

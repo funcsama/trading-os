@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1950,
+  "company_count": 1953,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50625,6 +50625,58 @@
       "updated_at": "2026-07-14T03:30:00+08:00"
     },
     {
+      "symbol": "CN:920981",
+      "market": "CN",
+      "ticker": "920981",
+      "name": "晶赛科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "需求与产品结构正在修复，但低资本回报、现金流非经常性和并购整合风险尚未改善，当前价格已透支高端晶振放量预期。",
+      "fair_value_range": [
+        18,
+        24
+      ],
+      "buy_zone": [
+        12,
+        16
+      ],
+      "sell_or_reduce_zone": [
+        28,
+        36
+      ],
+      "latest_report": "companies/CN/920981/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920982",
+      "market": "CN",
+      "ticker": "920982",
+      "name": "锦波生物",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "重组人源化胶原植入剂壁垒和资本回报较强，但核心业务增速、利润与自由现金流同步走弱，当前价格仍透支增长再加速预期。",
+      "fair_value_range": [
+        85,
+        110
+      ],
+      "buy_zone": [
+        68,
+        82
+      ],
+      "sell_or_reduce_zone": [
+        130,
+        150
+      ],
+      "latest_report": "companies/CN/920982/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T04:43:37+08:00"
+    },
+    {
       "symbol": "CN:920985",
       "market": "CN",
       "ticker": "920985",
@@ -50649,6 +50701,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T03:20:32+08:00"
+    },
+    {
+      "symbol": "CN:920992",
+      "market": "CN",
+      "ticker": "920992",
+      "name": "中科美菱",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金资产厚且海外增长较快，但主业资本回报低、募投转化慢，当前估值已透支较多增长预期，等待8.5元以下的安全边际。",
+      "fair_value_range": [
+        8.5,
+        10.5
+      ],
+      "buy_zone": [
+        7.0,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        14.0
+      ],
+      "latest_report": "companies/CN/920992/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T22:00:00+08:00"
     },
     {
       "symbol": "HK:9660",

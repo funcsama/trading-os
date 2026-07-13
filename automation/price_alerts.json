@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6546,
+  "item_count": 6552,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52323,6 +52323,38 @@
       "latest_report": "companies/CN/920970/reports/2026-07-14-initial.md"
     },
     {
+      "symbol": "CN:920981",
+      "name": "晶赛科技",
+      "type": "price_above",
+      "price": 28,
+      "reason": "进入减仓或不应追高区间，除非现金流与资本回报显著超预期",
+      "latest_report": "companies/CN/920981/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920981",
+      "name": "晶赛科技",
+      "type": "price_below",
+      "price": 16,
+      "reason": "进入有安全边际的观察买入区间，需先复核基本面未恶化",
+      "latest_report": "companies/CN/920981/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920982",
+      "name": "锦波生物",
+      "type": "price_above",
+      "price": 130,
+      "reason": "进入减仓或不应追高区间，除非自由现金流和核心产品增速已明显上修",
+      "latest_report": "companies/CN/920982/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920982",
+      "name": "锦波生物",
+      "type": "price_below",
+      "price": 82,
+      "reason": "进入有一定安全边际的买入复核区间，需重新验证基本面而非机械加仓",
+      "latest_report": "companies/CN/920982/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920985",
       "name": "海泰新能",
       "type": "price_above",
@@ -52337,6 +52369,22 @@
       "price": 1.6,
       "reason": "进入潜在买入区上沿，需重新验证现金流、资产质量和去杠杆条件",
       "latest_report": "companies/CN/920985/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920992",
+      "name": "中科美菱",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920992/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920992",
+      "name": "中科美菱",
+      "type": "price_below",
+      "price": 8.5,
+      "reason": "进入有安全边际的买入复核区间",
+      "latest_report": "companies/CN/920992/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "HK:9660",
