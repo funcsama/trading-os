@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5446,
+  "item_count": 5450,
   "items": [
     {
       "date": "2026-06-30",
@@ -14228,6 +14228,20 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920925",
+      "name": "锦好医疗",
+      "reason": "复核2026年中报的收入、利润、经营现金流与客户稳定性",
+      "latest_report": "companies/CN/920925/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920926",
+      "name": "鸿智科技",
+      "reason": "复核2026年半年报的毛利率、存货、自由现金流和客户订单",
+      "latest_report": "companies/CN/920926/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920931",
       "name": "无锡鼎邦",
       "reason": "复核2026年中报的毛利率、经营现金流、新厂产能利用率和关联采购",
@@ -14365,6 +14379,13 @@
       "name": "亚太药业",
       "reason": "基药目录利好需要通过采购和订单兑现",
       "latest_report": "companies/CN/002370/reports/2026-07-12-initial.md"
+    },
+    {
+      "date": "2026-09-01",
+      "symbol": "CN:920924",
+      "name": "广脉科技",
+      "reason": "2026年半年报披露窗口后复查高铁订单转化、应收账款、资本开支和自由现金流",
+      "latest_report": "companies/CN/920924/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-09-04",
@@ -29464,6 +29485,13 @@
       "name": "齐鲁华信",
       "reason": "复查新产线完工与三季报经营修复情况",
       "latest_report": "companies/CN/920832/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920925",
+      "name": "锦好医疗",
+      "reason": "复核2026年三季报并验证业绩修复是否连续",
+      "latest_report": "companies/CN/920925/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",
