@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6606,
+  "item_count": 6612,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52225,6 +52225,54 @@
       "price": 4.0,
       "reason": "进入有一定安全边际的买入观察区间，仍需复核基本面",
       "latest_report": "companies/CN/920832/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920834",
+      "name": "三维装备",
+      "type": "price_above",
+      "price": 10.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920834/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920834",
+      "name": "三维装备",
+      "type": "price_below",
+      "price": 6.8,
+      "reason": "进入有安全边际的买入研究复核区，需先确认基本面未恶化",
+      "latest_report": "companies/CN/920834/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920837",
+      "name": "华原股份",
+      "type": "price_above",
+      "price": 11.5,
+      "reason": "进入减仓或不应追高区间，需重新评估激励目标兑现概率",
+      "latest_report": "companies/CN/920837/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920837",
+      "name": "华原股份",
+      "type": "price_below",
+      "price": 8.1,
+      "reason": "进入有一定安全边际的观察仓买入区间，仍须复核基本面",
+      "latest_report": "companies/CN/920837/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920839",
+      "name": "万通液压",
+      "type": "price_above",
+      "price": 27,
+      "reason": "进入减仓或不应追高区间，需用业绩上修支持更高估值",
+      "latest_report": "companies/CN/920839/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920839",
+      "name": "万通液压",
+      "type": "price_below",
+      "price": 19,
+      "reason": "进入有安全边际的买入复核区间，需先确认基本面未恶化",
+      "latest_report": "companies/CN/920839/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920855",

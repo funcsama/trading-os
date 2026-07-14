@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1980,
+  "company_count": 1983,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50467,6 +50467,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920834",
+      "market": "CN",
+      "ticker": "920834",
+      "name": "三维装备",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "小而专、现金流和资本回报较好，但当前价格隐含的两位数自由现金流增长尚未被2026Q1验证，等待更大安全边际。",
+      "fair_value_range": [
+        7.2,
+        9.2
+      ],
+      "buy_zone": [
+        5.8,
+        6.8
+      ],
+      "sell_or_reduce_zone": [
+        10.5,
+        12.0
+      ],
+      "latest_report": "companies/CN/920834/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T16:45:51+08:00"
+    },
+    {
+      "symbol": "CN:920837",
+      "market": "CN",
+      "ticker": "920837",
+      "name": "华原股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金转化和资本回报尚可，但玉柴体系贡献约一半收入，当前价格接近公允价值，需等待更高安全边际。",
+      "fair_value_range": [
+        8.6,
+        10.5
+      ],
+      "buy_zone": [
+        7.2,
+        8.1
+      ],
+      "sell_or_reduce_zone": [
+        11.5,
+        12.5
+      ],
+      "latest_report": "companies/CN/920837/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T17:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920839",
+      "market": "CN",
+      "ticker": "920839",
+      "name": "万通液压",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "油气弹簧差异化、现金创造和资本回报较好，但当前估值隐含的增长高于2026年一季度现实，等待16-19元安全边际或基本面重新加速。",
+      "fair_value_range": [
+        20,
+        25
+      ],
+      "buy_zone": [
+        16,
+        19
+      ],
+      "sell_or_reduce_zone": [
+        27,
+        32
+      ],
+      "latest_report": "companies/CN/920839/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:30:00+08:00"
     },
     {
       "symbol": "CN:920855",
