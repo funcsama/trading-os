@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6624,
+  "item_count": 6630,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920802",
+      "name": "保丽洁",
+      "type": "price_above",
+      "price": 10.8,
+      "reason": "进入减仓或不应追高区间，除非盈利与现金流显著上修",
+      "latest_report": "companies/CN/920802/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920802",
+      "name": "保丽洁",
+      "type": "price_below",
+      "price": 7.2,
+      "reason": "进入有安全边际的试探买入区间，需先复核核心假设",
+      "latest_report": "companies/CN/920802/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920806",
+      "name": "云星宇",
+      "type": "price_above",
+      "price": 9.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920806/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920806",
+      "name": "云星宇",
+      "type": "price_below",
+      "price": 6.3,
+      "reason": "进入具备一定安全边际的观察买入区间，需先验证基本面未恶化",
+      "latest_report": "companies/CN/920806/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920807",
+      "name": "奔朗新材",
+      "type": "price_above",
+      "price": 7.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920807/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920807",
+      "name": "奔朗新材",
+      "type": "price_below",
+      "price": 4.8,
+      "reason": "进入有安全边际的买入观察区，需先复核基本面",
+      "latest_report": "companies/CN/920807/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920808",
