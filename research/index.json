@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1974,
+  "company_count": 1977,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50495,6 +50495,58 @@
       "updated_at": "2026-07-14T04:14:22+08:00"
     },
     {
+      "symbol": "CN:920870",
+      "market": "CN",
+      "ticker": "920870",
+      "name": "恒进感应",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司技术与资产负债表尚可，但规模小、客户集中、资本回报低且募投效率不足，12.34元已透支多年高增长预期。",
+      "fair_value_range": [
+        6.0,
+        8.5
+      ],
+      "buy_zone": [
+        4.8,
+        5.8
+      ],
+      "sell_or_reduce_zone": [
+        10.5,
+        12.5
+      ],
+      "latest_report": "companies/CN/920870/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T10:10:00+08:00"
+    },
+    {
+      "symbol": "CN:920871",
+      "market": "CN",
+      "ticker": "920871",
+      "name": "派特尔",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "资产负债表稳健但毛利率和资本回报偏低，当前高估值已透支毛利修复与新业务增长，缺少安全边际。",
+      "fair_value_range": [
+        5.2,
+        7.0
+      ],
+      "buy_zone": [
+        4.2,
+        5.2
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        10.5
+      ],
+      "latest_report": "companies/CN/920871/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-01",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T10:05:47+08:00"
+    },
+    {
       "symbol": "CN:920873",
       "market": "CN",
       "ticker": "920873",
@@ -50519,6 +50571,32 @@
       "next_review_date": "2026-09-15",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T03:47:45.4837111+08:00"
+    },
+    {
+      "symbol": "CN:920876",
+      "market": "CN",
+      "ticker": "920876",
+      "name": "慧为智能",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "低利润率ODM的现金流与资本回报尚未验证，当前价格已过度计入AI终端、信创和新基地放量预期。",
+      "fair_value_range": [
+        6.0,
+        8.0
+      ],
+      "buy_zone": [
+        4.5,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        12.0
+      ],
+      "latest_report": "companies/CN/920876/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T14:13:57+08:00"
     },
     {
       "symbol": "CN:920879",

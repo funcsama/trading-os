@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5460,
+  "item_count": 5464,
   "items": [
     {
       "date": "2026-06-30",
@@ -14221,6 +14221,20 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920870",
+      "name": "恒进感应",
+      "reason": "复核2026年半年报、客户结构、毛利率、现金流与募投进展",
+      "latest_report": "companies/CN/920870/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920876",
+      "name": "慧为智能",
+      "reason": "复核2026年半年报的现金流、库存、毛利率及新基地利用率",
+      "latest_report": "companies/CN/920876/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920879",
       "name": "基康技术",
       "reason": "复核2026年半年报的收入恢复、应收账款、经营现金流和分部毛利率",
@@ -14407,6 +14421,13 @@
       "name": "亚太药业",
       "reason": "基药目录利好需要通过采购和订单兑现",
       "latest_report": "companies/CN/002370/reports/2026-07-12-initial.md"
+    },
+    {
+      "date": "2026-09-01",
+      "symbol": "CN:920871",
+      "name": "派特尔",
+      "reason": "2026年半年报披露后复查收入、毛利率、现金流和客户回款",
+      "latest_report": "companies/CN/920871/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-09-01",
@@ -37171,6 +37192,13 @@
       "name": "芯海科技",
       "reason": "核验延期后的汽车MCU募投项目、ASIL-D产品认证和客户导入。",
       "latest_report": "companies/CN/688595/reports/2026-07-12-initial.md"
+    },
+    {
+      "date": "2027-06-30",
+      "symbol": "CN:920870",
+      "name": "恒进感应",
+      "reason": "复核制造项目厂房回购过户及整体项目完成情况",
+      "latest_report": "companies/CN/920870/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-06-30",

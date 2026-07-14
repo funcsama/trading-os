@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6594,
+  "item_count": 6600,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52243,6 +52243,38 @@
       "latest_report": "companies/CN/920857/reports/2026-07-14-initial.md"
     },
     {
+      "symbol": "CN:920870",
+      "name": "恒进感应",
+      "type": "price_above",
+      "price": 10.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920870/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920870",
+      "name": "恒进感应",
+      "type": "price_below",
+      "price": 5.8,
+      "reason": "进入有安全边际的观察买入区间，需先复核基本面",
+      "latest_report": "companies/CN/920870/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920871",
+      "name": "派特尔",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "进入减仓或不应追高区间，估值已高于公允价值",
+      "latest_report": "companies/CN/920871/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920871",
+      "name": "派特尔",
+      "type": "price_below",
+      "price": 5.2,
+      "reason": "进入研究或有条件建仓区间，仍需确认基本面未恶化",
+      "latest_report": "companies/CN/920871/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920873",
       "name": "中设咨询",
       "type": "price_above",
@@ -52257,6 +52289,22 @@
       "price": 1.5,
       "reason": "进入候选买入区间，但仅在毛利率、现金流和应收风险同步验证后试仓",
       "latest_report": "companies/CN/920873/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920876",
+      "name": "慧为智能",
+      "type": "price_above",
+      "price": 10.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920876/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920876",
+      "name": "慧为智能",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入有安全边际的观察性买入区间，仍需重新验证基本面",
+      "latest_report": "companies/CN/920876/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920879",
