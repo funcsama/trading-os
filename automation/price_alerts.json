@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6618,
+  "item_count": 6624,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920808",
+      "name": "曙光数创",
+      "type": "price_above",
+      "price": 40,
+      "reason": "明显高于公允价值上沿，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920808/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920808",
+      "name": "曙光数创",
+      "type": "price_below",
+      "price": 14,
+      "reason": "进入候选买入区间，但必须先验证现金流、毛利率和客户质量，禁止机械加仓",
+      "latest_report": "companies/CN/920808/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920809",
+      "name": "安达科技",
+      "type": "price_above",
+      "price": 8.8,
+      "reason": "进入减仓或不应追高区间，价格已计入较乐观盈利修复",
+      "latest_report": "companies/CN/920809/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920809",
+      "name": "安达科技",
+      "type": "price_below",
+      "price": 5.2,
+      "reason": "进入有安全边际的买入观察区间，需重新验证现金流和客户订单",
+      "latest_report": "companies/CN/920809/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920810",
+      "name": "春光智能",
+      "type": "price_above",
+      "price": 5.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920810/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920810",
+      "name": "春光智能",
+      "type": "price_below",
+      "price": 2.5,
+      "reason": "进入可研究的安全边际区，仍须验证现金流、应收存货和产能利用率",
+      "latest_report": "companies/CN/920810/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920819",

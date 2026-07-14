@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5479,
+  "item_count": 5485,
   "items": [
     {
       "date": "2026-06-30",
@@ -38354,6 +38354,48 @@
       "name": "盖世食品",
       "reason": "复核2026年三季报的扣非利润、自由现金流、库存、借款及泰国工厂亏损",
       "latest_report": "companies/CN/920826/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920808",
+      "name": "曙光数创",
+      "reason": "复查2026年半年报的毛利率、经营现金流、应收、存货和合同亏损准备",
+      "latest_report": "companies/CN/920808/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920809",
+      "name": "安达科技",
+      "reason": "复核2026年半年报的毛利率、经营现金流、营运资本和净债务",
+      "latest_report": "companies/CN/920809/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920810",
+      "name": "春光智能",
+      "reason": "复核2026年半年报的收入、订单、回款、毛利率、自由现金流和基地利用率",
+      "latest_report": "companies/CN/920810/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920809",
+      "name": "安达科技",
+      "reason": "复核三季报及30万吨前驱体项目建设、订单和融资进展",
+      "latest_report": "companies/CN/920809/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920810",
+      "name": "春光智能",
+      "reason": "复核2026年三季报及长期资本回报假设",
+      "latest_report": "companies/CN/920810/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920808",
+      "name": "曙光数创",
+      "reason": "复查2026年年报及长期现金转换、ROIC和客户集中假设",
+      "latest_report": "companies/CN/920808/reports/2026-07-14-initial.md"
     }
   ]
 }
