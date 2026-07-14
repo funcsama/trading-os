@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1983,
+  "company_count": 1986,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50443,6 +50443,58 @@
       "updated_at": "2026-07-14T22:30:00+08:00"
     },
     {
+      "symbol": "CN:920821",
+      "market": "CN",
+      "ticker": "920821",
+      "name": "则成电子",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "定制化FPC与电子模组具备局部工艺能力，但客户极度集中、资本回报和自由现金流偏弱，当前估值已过度计入AI眼镜、光模块及海外产能成功放量。",
+      "fair_value_range": [
+        7.5,
+        10.5
+      ],
+      "buy_zone": [
+        6.0,
+        7.5
+      ],
+      "sell_or_reduce_zone": [
+        13.0,
+        16.0
+      ],
+      "latest_report": "companies/CN/920821/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T20:04:26+08:00"
+    },
+    {
+      "symbol": "CN:920826",
+      "market": "CN",
+      "ticker": "920826",
+      "name": "盖世食品",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "标准化凉菜业务增长较快，但现金流、库存和海外扩产尚未验证，当前估值已计入较强成长预期，等待5.4元以下的安全边际。",
+      "fair_value_range": [
+        5.8,
+        6.8
+      ],
+      "buy_zone": [
+        4.6,
+        5.4
+      ],
+      "sell_or_reduce_zone": [
+        7.8,
+        9.0
+      ],
+      "latest_report": "companies/CN/920826/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T17:57:45+08:00"
+    },
+    {
       "symbol": "CN:920832",
       "market": "CN",
       "ticker": "920832",
@@ -50467,6 +50519,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920833",
+      "market": "CN",
+      "ticker": "920833",
+      "name": "美心翼申",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "客户认证与海外高毛利业务有价值，但客户高度集中、ROIC偏低且2026Q1盈利明显转弱，当前价格已透支复苏与并购预期。",
+      "fair_value_range": [
+        5.0,
+        6.5
+      ],
+      "buy_zone": [
+        4.2,
+        5.0
+      ],
+      "sell_or_reduce_zone": [
+        7.5,
+        9.0
+      ],
+      "latest_report": "companies/CN/920833/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T17:39:19+08:00"
     },
     {
       "symbol": "CN:920834",

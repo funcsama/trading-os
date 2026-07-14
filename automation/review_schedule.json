@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5475,
+  "item_count": 5479,
   "items": [
     {
       "date": "2026-06-30",
@@ -38326,6 +38326,34 @@
       "name": "汤臣倍健",
       "reason": "复查 2028 年报分品牌增长、现金分红可持续性和估值安全边际",
       "latest_report": "companies/CN/300146/reports/2026-07-13-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920821",
+      "name": "则成电子",
+      "reason": "复核2026年半年报、二季度扭亏情况及武汉和越南新产能订单兑现",
+      "latest_report": "companies/CN/920821/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920833",
+      "name": "美心翼申",
+      "reason": "复核2026年半年报的客户提货、毛利率、存货周转和自由现金流",
+      "latest_report": "companies/CN/920833/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-13",
+      "symbol": "CN:920833",
+      "name": "美心翼申",
+      "reason": "重大资产重组提示公告满六个月，复核预案、定价、融资及商誉风险",
+      "latest_report": "companies/CN/920833/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920826",
+      "name": "盖世食品",
+      "reason": "复核2026年三季报的扣非利润、自由现金流、库存、借款及泰国工厂亏损",
+      "latest_report": "companies/CN/920826/reports/2026-07-14-initial.md"
     }
   ]
 }
