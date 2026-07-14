@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5450,
+  "item_count": 5455,
   "items": [
     {
       "date": "2026-06-30",
@@ -14228,6 +14228,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920914",
+      "name": "远航精密",
+      "reason": "复核2026年半年报的毛利率、扣非利润、经营现金流和募投产能利用率",
+      "latest_report": "companies/CN/920914/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920925",
       "name": "锦好医疗",
       "reason": "复核2026年中报的收入、利润、经营现金流与客户稳定性",
@@ -14393,6 +14400,13 @@
       "name": "宏和科技",
       "reason": "定增2,485.89万股解禁日，观察解禁前后股价与解禁股东行为",
       "latest_report": "companies/CN/603256/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-09-05",
+      "symbol": "CN:920906",
+      "name": "舜宇精工",
+      "reason": "复核2026年半年报的扣非利润、毛利率、AGV盈亏和营运资金",
+      "latest_report": "companies/CN/920906/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-09-07",
@@ -29488,6 +29502,20 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920896",
+      "name": "XD旺成科",
+      "reason": "复核2026年三季报的增长、毛利率、客户集中度与现金流",
+      "latest_report": "companies/CN/920896/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920914",
+      "name": "远航精密",
+      "reason": "复核2026年三季报及结构件放量能否转化为利润和自由现金流",
+      "latest_report": "companies/CN/920914/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920925",
       "name": "锦好医疗",
       "reason": "复核2026年三季报并验证业绩修复是否连续",
@@ -37017,6 +37045,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920896",
+      "name": "XD旺成科",
+      "reason": "复核2026年报、募投进度和年度分红",
+      "latest_report": "companies/CN/920896/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

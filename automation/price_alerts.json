@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6582,
+  "item_count": 6588,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52273,6 +52273,54 @@
       "price": 4.0,
       "reason": "进入潜在买入区间，但必须重新验证行业企稳、现金流和存货风险",
       "latest_report": "companies/CN/920895/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920896",
+      "name": "XD旺成科",
+      "type": "price_above",
+      "price": 14.5,
+      "reason": "进入减仓或不应追高区间，需有更高可核验自由现金流才能维持",
+      "latest_report": "companies/CN/920896/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920896",
+      "name": "XD旺成科",
+      "type": "price_below",
+      "price": 9.8,
+      "reason": "进入有安全边际的买入区间，但须先确认基本面未恶化",
+      "latest_report": "companies/CN/920896/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920906",
+      "name": "舜宇精工",
+      "type": "price_above",
+      "price": 15.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920906/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920906",
+      "name": "舜宇精工",
+      "type": "price_below",
+      "price": 10.5,
+      "reason": "进入可能具备安全边际的买入区间，需先复核核心假设",
+      "latest_report": "companies/CN/920906/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920914",
+      "name": "远航精密",
+      "type": "price_above",
+      "price": 18.0,
+      "reason": "进入减仓或不应追高区间，除非可持续利润与自由现金流显著上修",
+      "latest_report": "companies/CN/920914/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920914",
+      "name": "远航精密",
+      "type": "price_below",
+      "price": 12.0,
+      "reason": "进入可重新验证基本面和安全边际的买入观察区，不能机械补仓",
+      "latest_report": "companies/CN/920914/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920924",
