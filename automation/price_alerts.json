@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6588,
+  "item_count": 6594,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52257,6 +52257,54 @@
       "price": 1.5,
       "reason": "进入候选买入区间，但仅在毛利率、现金流和应收风险同步验证后试仓",
       "latest_report": "companies/CN/920873/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920879",
+      "name": "基康技术",
+      "type": "price_above",
+      "price": 11.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920879/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920879",
+      "name": "基康技术",
+      "type": "price_below",
+      "price": 7.5,
+      "reason": "进入有安全边际的观察性买入区间，需同时复核基本面未恶化",
+      "latest_report": "companies/CN/920879/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920885",
+      "name": "XD星辰科",
+      "type": "price_above",
+      "price": 9.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920885/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920885",
+      "name": "XD星辰科",
+      "type": "price_below",
+      "price": 4.8,
+      "reason": "进入潜在买入区间上沿，须先复核基本面而非机械买入",
+      "latest_report": "companies/CN/920885/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920892",
+      "name": "广咨国际",
+      "type": "price_above",
+      "price": 13.0,
+      "reason": "进入减仓或不应追高区间，除非盈利预测已上修",
+      "latest_report": "companies/CN/920892/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920892",
+      "name": "广咨国际",
+      "type": "price_below",
+      "price": 9.2,
+      "reason": "进入有安全边际的买入区间，需先确认基本面未恶化",
+      "latest_report": "companies/CN/920892/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920895",

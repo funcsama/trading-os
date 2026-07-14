@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5455,
+  "item_count": 5460,
   "items": [
     {
       "date": "2026-06-30",
@@ -14218,6 +14218,27 @@
       "name": "泓禧科技",
       "reason": "复核2026年半年报的毛利率、经营现金流、客户集中度和境外业务盈利",
       "latest_report": "companies/CN/920857/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920879",
+      "name": "基康技术",
+      "reason": "复核2026年半年报的收入恢复、应收账款、经营现金流和分部毛利率",
+      "latest_report": "companies/CN/920879/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920885",
+      "name": "XD星辰科",
+      "reason": "复核2026年半年报的风电客户、毛利率、应收与经营现金流",
+      "latest_report": "companies/CN/920885/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920892",
+      "name": "广咨国际",
+      "reason": "复核2026年半年报的订单、分业务毛利率、应收账款和经营现金流",
+      "latest_report": "companies/CN/920892/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29502,6 +29523,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920885",
+      "name": "XD星辰科",
+      "reason": "复核2026年三季报及新风电客户量产进展",
+      "latest_report": "companies/CN/920885/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920896",
       "name": "XD旺成科",
       "reason": "复核2026年三季报的增长、毛利率、客户集中度与现金流",
@@ -37045,6 +37073,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920879",
+      "name": "基康技术",
+      "reason": "复核2026年年报、高新技术企业资格和定增项目进度",
+      "latest_report": "companies/CN/920879/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",
