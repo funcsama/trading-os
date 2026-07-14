@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6630,
+  "item_count": 6636,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920790",
+      "name": "联迪信息",
+      "type": "price_above",
+      "price": 10.0,
+      "reason": "超过合理价值上沿并进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920790/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920790",
+      "name": "联迪信息",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入有条件的买入观察区，仍须重新验证核心假设",
+      "latest_report": "companies/CN/920790/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920792",
+      "name": "东和新材",
+      "type": "price_above",
+      "price": 10.5,
+      "reason": "进入减仓或不应追高区间，除非盈利与现金流预测同步上修",
+      "latest_report": "companies/CN/920792/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920792",
+      "name": "东和新材",
+      "type": "price_below",
+      "price": 7.4,
+      "reason": "进入有安全边际的观察买入区间，需先复核核心假设",
+      "latest_report": "companies/CN/920792/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920799",
+      "name": "艾融软件",
+      "type": "price_above",
+      "price": 18,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920799/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920799",
+      "name": "艾融软件",
+      "type": "price_below",
+      "price": 9,
+      "reason": "进入有安全边际的买入观察区，需先复核基本面而非机械加仓",
+      "latest_report": "companies/CN/920799/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920802",

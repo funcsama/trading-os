@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5489,
+  "item_count": 5492,
   "items": [
     {
       "date": "2026-06-30",
@@ -38424,6 +38424,27 @@
       "name": "奔朗新材",
       "reason": "复核2026年三季报及募投项目投产和产能利用率",
       "latest_report": "companies/CN/920807/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920790",
+      "name": "联迪信息",
+      "reason": "2026年半年报后复查内外销、汇兑损益、存货验收与现金流",
+      "latest_report": "companies/CN/920790/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920792",
+      "name": "东和新材",
+      "reason": "复核2026年半年报、矿权续期进度、自由现金流与新产品订单",
+      "latest_report": "companies/CN/920792/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920799",
+      "name": "艾融软件",
+      "reason": "2026年半年报后复查收入质量、毛利率、经营现金流、应收账款和商誉假设",
+      "latest_report": "companies/CN/920799/reports/2026-07-14-initial.md"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1992,
+  "company_count": 1995,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920790",
+      "market": "CN",
+      "ticker": "920790",
+      "name": "联迪信息",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "对日软件服务与电力客户经验有一定价值，但低ROE、项目验收和汇率风险无法支撑当前约6.4倍PB，现价显著高于合理价值。",
+      "fair_value_range": [
+        5.0,
+        8.0
+      ],
+      "buy_zone": [
+        4.0,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        14.0
+      ],
+      "latest_report": "companies/CN/920790/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T01:23:17+08:00"
+    },
+    {
+      "symbol": "CN:920792",
+      "market": "CN",
+      "ticker": "920792",
+      "name": "东和新材",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "资源一体化与新产品推动增长，但ROE低于资本成本且扩张期自由现金流为负，当前价格已部分反映矿山投产和利润改善。",
+      "fair_value_range": [
+        7.8,
+        9.2
+      ],
+      "buy_zone": [
+        6.5,
+        7.4
+      ],
+      "sell_or_reduce_zone": [
+        10.5,
+        11.8
+      ],
+      "latest_report": "companies/CN/920792/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920799",
+      "market": "CN",
+      "ticker": "920799",
+      "name": "艾融软件",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "银行客户覆盖和信创交付能力真实，但核心利润与自由现金流偏弱、商誉高，当前价格已过度透支AI与信创增长预期。",
+      "fair_value_range": [
+        8,
+        13
+      ],
+      "buy_zone": [
+        6,
+        9
+      ],
+      "sell_or_reduce_zone": [
+        18,
+        35
+      ],
+      "latest_report": "companies/CN/920799/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T00:00:00+08:00"
     },
     {
       "symbol": "CN:920802",
