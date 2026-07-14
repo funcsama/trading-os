@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5464,
+  "item_count": 5470,
   "items": [
     {
       "date": "2026-06-30",
@@ -14214,10 +14214,31 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920855",
+      "name": "浙江大农",
+      "reason": "复核2026年半年报的收入、毛利率、客户订单和经营现金流",
+      "latest_report": "companies/CN/920855/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920856",
+      "name": "浩淼科技",
+      "reason": "复查2026年中报、订单、合同负债、应收账款和现金流",
+      "latest_report": "companies/CN/920856/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920857",
       "name": "泓禧科技",
       "reason": "复核2026年半年报的毛利率、经营现金流、客户集中度和境外业务盈利",
       "latest_report": "companies/CN/920857/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920866",
+      "name": "绿亨科技",
+      "reason": "复核2026年半年报的收入、扣非利润、经营现金流、存货及种植业务",
+      "latest_report": "companies/CN/920866/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29544,6 +29565,20 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920856",
+      "name": "浩淼科技",
+      "reason": "复查三季报及智能消防装备检测和订单转化进展",
+      "latest_report": "companies/CN/920856/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920866",
+      "name": "绿亨科技",
+      "reason": "复核2026年三季报及ROIC和自由现金流改善进度",
+      "latest_report": "companies/CN/920866/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920885",
       "name": "XD星辰科",
       "reason": "复核2026年三季报及新风电客户量产进展",
@@ -37192,6 +37227,13 @@
       "name": "芯海科技",
       "reason": "核验延期后的汽车MCU募投项目、ASIL-D产品认证和客户导入。",
       "latest_report": "companies/CN/688595/reports/2026-07-12-initial.md"
+    },
+    {
+      "date": "2027-06-30",
+      "symbol": "CN:920855",
+      "name": "浙江大农",
+      "reason": "复核高压柱塞泵及泵组系统扩产项目是否按延期后计划完成",
+      "latest_report": "companies/CN/920855/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-06-30",

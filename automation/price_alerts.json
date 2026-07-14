@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6600,
+  "item_count": 6606,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52227,6 +52227,38 @@
       "latest_report": "companies/CN/920832/reports/2026-07-14-initial.md"
     },
     {
+      "symbol": "CN:920855",
+      "name": "浙江大农",
+      "type": "price_above",
+      "price": 12.5,
+      "reason": "进入减仓或不应追高区间，除非盈利预测已显著上调",
+      "latest_report": "companies/CN/920855/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920855",
+      "name": "浙江大农",
+      "type": "price_below",
+      "price": 9.2,
+      "reason": "进入可复核基本面的观察买入区间，不代表机械加仓",
+      "latest_report": "companies/CN/920855/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920856",
+      "name": "浩淼科技",
+      "type": "price_above",
+      "price": 8.0,
+      "reason": "高于当前公允价值上沿，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920856/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920856",
+      "name": "浩淼科技",
+      "type": "price_below",
+      "price": 5.8,
+      "reason": "进入可研究的安全边际区间，需重新验证核心假设后再建仓",
+      "latest_report": "companies/CN/920856/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920857",
       "name": "泓禧科技",
       "type": "price_above",
@@ -52241,6 +52273,22 @@
       "price": 5.5,
       "reason": "进入有安全边际的条件性买入观察区间，仍需验证现金流与毛利率",
       "latest_report": "companies/CN/920857/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920866",
+      "name": "绿亨科技",
+      "type": "price_above",
+      "price": 5.8,
+      "reason": "进入减仓或不应追高区间，除非盈利与现金流显著上修",
+      "latest_report": "companies/CN/920866/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920866",
+      "name": "绿亨科技",
+      "type": "price_below",
+      "price": 3.9,
+      "reason": "进入有安全边际的买入复核区间，但需先确认基本面未恶化",
+      "latest_report": "companies/CN/920866/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920870",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1977,
+  "company_count": 1980,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50469,6 +50469,58 @@
       "updated_at": "2026-07-14T00:00:00+08:00"
     },
     {
+      "symbol": "CN:920855",
+      "market": "CN",
+      "ticker": "920855",
+      "name": "浙江大农",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金和负债结构稳健，但利润连续下滑、2026Q1订单与毛利承压，当前估值已反映较充分恢复预期，等待更大安全边际。",
+      "fair_value_range": [
+        9.5,
+        11.5
+      ],
+      "buy_zone": [
+        8.2,
+        9.2
+      ],
+      "sell_or_reduce_zone": [
+        12.5,
+        14.0
+      ],
+      "latest_report": "companies/CN/920855/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920856",
+      "market": "CN",
+      "ticker": "920856",
+      "name": "浩淼科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "公司资产负债表稳健但订单波动、低资本回报和资本配置风险明显，当前价格隐含的盈利修复强于可验证证据，等待更深安全边际。",
+      "fair_value_range": [
+        5.8,
+        7.2
+      ],
+      "buy_zone": [
+        4.8,
+        5.8
+      ],
+      "sell_or_reduce_zone": [
+        8.0,
+        9.5
+      ],
+      "latest_report": "companies/CN/920856/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T15:40:13+08:00"
+    },
+    {
       "symbol": "CN:920857",
       "market": "CN",
       "ticker": "920857",
@@ -50493,6 +50545,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-14T04:14:22+08:00"
+    },
+    {
+      "symbol": "CN:920866",
+      "market": "CN",
+      "ticker": "920866",
+      "name": "绿亨科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分农药登记证、种业资源和下沉渠道有一定价值，但低ROIC与近两年负自由现金流不足以支撑当前价格，等待3.40至3.90元且基本面验证后再建小仓位。",
+      "fair_value_range": [
+        4.2,
+        5.0
+      ],
+      "buy_zone": [
+        3.4,
+        3.9
+      ],
+      "sell_or_reduce_zone": [
+        5.8,
+        6.5
+      ],
+      "latest_report": "companies/CN/920866/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T15:49:50+08:00"
     },
     {
       "symbol": "CN:920870",
