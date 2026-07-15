@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2031,
+  "company_count": 2034,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920639",
+      "market": "CN",
+      "ticker": "920639",
+      "name": "晨光电缆",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司有高压电缆技术储备但尚未转化为高资本回报，当前约75倍2025年PE已提前反映显著利润率修复，缺乏安全边际。",
+      "fair_value_range": [
+        3.3,
+        4.5
+      ],
+      "buy_zone": [
+        2.6,
+        3.2
+      ],
+      "sell_or_reduce_zone": [
+        5.2,
+        6.5
+      ],
+      "latest_report": "companies/CN/920639/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T22:05:40+08:00"
+    },
+    {
+      "symbol": "CN:920640",
+      "market": "CN",
+      "ticker": "920640",
+      "name": "富士达",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "射频互连业务有技术与认证壁垒，但资本回报、回款质量和2026年一季度利润率不足以支撑约65倍2025年PE，当前应回避并等待11元以下的安全边际。",
+      "fair_value_range": [
+        11,
+        16
+      ],
+      "buy_zone": [
+        8,
+        11
+      ],
+      "sell_or_reduce_zone": [
+        20,
+        30
+      ],
+      "latest_report": "companies/CN/920640/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T22:07:48+08:00"
+    },
+    {
+      "symbol": "CN:920641",
+      "market": "CN",
+      "ticker": "920641",
+      "name": "格利尔",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "光磁双主业有客户基础但核心盈利和自由现金流尚未兑现，当前价格已过度计入国资赋能与新业务成长。",
+      "fair_value_range": [
+        6.0,
+        8.2
+      ],
+      "buy_zone": [
+        4.8,
+        5.8
+      ],
+      "sell_or_reduce_zone": [
+        9.5,
+        12.5
+      ],
+      "latest_report": "companies/CN/920641/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T00:00:00+08:00"
     },
     {
       "symbol": "CN:920642",

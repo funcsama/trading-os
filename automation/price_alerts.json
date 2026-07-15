@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6708,
+  "item_count": 6714,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920639",
+      "name": "晨光电缆",
+      "type": "price_above",
+      "price": 5.2,
+      "reason": "进入减仓或不应追高区间，估值已超出基准公允价值",
+      "latest_report": "companies/CN/920639/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920639",
+      "name": "晨光电缆",
+      "type": "price_below",
+      "price": 3.2,
+      "reason": "进入有安全边际的观察买入区间，但必须重新验证核心假设",
+      "latest_report": "companies/CN/920639/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920640",
+      "name": "富士达",
+      "type": "price_above",
+      "price": 20,
+      "reason": "进入减仓或不应追高区间，除非盈利与自由现金流显著超预期",
+      "latest_report": "companies/CN/920640/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920640",
+      "name": "富士达",
+      "type": "price_below",
+      "price": 11,
+      "reason": "进入需重新核验基本面的有安全边际观察买入区间",
+      "latest_report": "companies/CN/920640/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920641",
+      "name": "格利尔",
+      "type": "price_above",
+      "price": 9.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920641/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920641",
+      "name": "格利尔",
+      "type": "price_below",
+      "price": 5.8,
+      "reason": "进入可能有安全边际的观察买入区间，仍需重新验证基本面",
+      "latest_report": "companies/CN/920641/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920642",

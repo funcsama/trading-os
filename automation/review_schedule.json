@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5544,
+  "item_count": 5549,
   "items": [
     {
       "date": "2026-06-30",
@@ -38809,6 +38809,41 @@
       "name": "海昇药业",
       "reason": "复核2026年年报、新产品商业化及资本配置",
       "latest_report": "companies/CN/920656/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920639",
+      "name": "晨光电缆",
+      "reason": "复核2026年半年报的毛利率、经营现金流、应收账款和存货",
+      "latest_report": "companies/CN/920639/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920640",
+      "name": "富士达",
+      "reason": "复查2026年半年报的毛利率、经营现金流、应收账款和订单质量",
+      "latest_report": "companies/CN/920640/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920641",
+      "name": "格利尔",
+      "reason": "复核2026年半年报的扣非利润、现金流、库存和新业务进展",
+      "latest_report": "companies/CN/920641/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920639",
+      "name": "晨光电缆",
+      "reason": "复核三季报及在手合同向利润和现金流的转化",
+      "latest_report": "companies/CN/920639/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920640",
+      "name": "富士达",
+      "reason": "复查三季报是否证明利润增速追上收入并改善现金转化",
+      "latest_report": "companies/CN/920640/reports/2026-07-14-initial.md"
     }
   ]
 }
