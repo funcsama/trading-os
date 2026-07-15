@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2001,
+  "company_count": 2004,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920748",
+      "market": "CN",
+      "ticker": "920748",
+      "name": "路桥信息",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "在手订单尚未转化为利润和自由现金流，且会计差错、巨额应收与极高估值使当前价格缺乏安全边际。",
+      "fair_value_range": [
+        4.5,
+        8.0
+      ],
+      "buy_zone": [
+        3.0,
+        4.0
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        16.0
+      ],
+      "latest_report": "companies/CN/920748/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T14:06:30+08:00"
+    },
+    {
+      "symbol": "CN:920751",
+      "market": "CN",
+      "ticker": "920751",
+      "name": "惠同新材",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "金属纤维核心业务现金质量尚可，但大额控股并购的回报与整合未验证，18.30元已隐含长期高增长且缺少安全边际。",
+      "fair_value_range": [
+        10.5,
+        14.0
+      ],
+      "buy_zone": [
+        8.5,
+        11.0
+      ],
+      "sell_or_reduce_zone": [
+        16.0,
+        20.0
+      ],
+      "latest_report": "companies/CN/920751/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T13:59:57+08:00"
+    },
+    {
+      "symbol": "CN:920753",
+      "market": "CN",
+      "ticker": "920753",
+      "name": "天纺标",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分资质与现金流尚可，但护城河偏窄、ROE仅处资本成本附近，当前估值已透支福建扩张和长期两位数现金流增长预期。",
+      "fair_value_range": [
+        9.5,
+        12.0
+      ],
+      "buy_zone": [
+        7.8,
+        9.5
+      ],
+      "sell_or_reduce_zone": [
+        13.5,
+        16.5
+      ],
+      "latest_report": "companies/CN/920753/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T14:03:39+08:00"
     },
     {
       "symbol": "CN:920765",

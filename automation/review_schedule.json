@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5502,
+  "item_count": 5507,
   "items": [
     {
       "date": "2026-06-30",
@@ -38515,6 +38515,41 @@
       "name": "美之高",
       "reason": "复核2026年年报、客户集中度和正常化自由现金流",
       "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920748",
+      "name": "路桥信息",
+      "reason": "检查2026年半年报的毛利率、经营现金流、应收账款及订单兑现",
+      "latest_report": "companies/CN/920748/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920751",
+      "name": "惠同新材",
+      "reason": "复查2026年半年报及并购前核心业务现金流、存货和毛利率",
+      "latest_report": "companies/CN/920751/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920753",
+      "name": "天纺标",
+      "reason": "复核2026年半年报、信用减值转回、毛利率与福建项目进度",
+      "latest_report": "companies/CN/920753/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920751",
+      "name": "惠同新材",
+      "reason": "复查首个较完整并购后季度的利润增厚、利息和现金转换",
+      "latest_report": "companies/CN/920751/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920748",
+      "name": "路桥信息",
+      "reason": "复核全年扭亏进度、审计意见和治理整改有效性",
+      "latest_report": "companies/CN/920748/reports/2026-07-14-initial.md"
     }
   ]
 }
