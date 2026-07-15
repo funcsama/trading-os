@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2019,
+  "company_count": 2022,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920682",
+      "market": "CN",
+      "ticker": "920682",
+      "name": "球冠电缆",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "电网订单增长但低毛利、重营运资金和高杠杆使利润与现金流承压，当前价格已计入明显修复预期，等待更低价格及现金流验证。",
+      "fair_value_range": [
+        3.7,
+        4.6
+      ],
+      "buy_zone": [
+        3.0,
+        3.6
+      ],
+      "sell_or_reduce_zone": [
+        5.5,
+        6.5
+      ],
+      "latest_report": "companies/CN/920682/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T20:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920685",
+      "market": "CN",
+      "ticker": "920685",
+      "name": "新芝生物",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金与高毛利提供下行缓冲，但增长停滞、ROE偏低且募投项目尚未证明回报，10.54元缺少安全边际。",
+      "fair_value_range": [
+        9.0,
+        11.5
+      ],
+      "buy_zone": [
+        7.2,
+        8.4
+      ],
+      "sell_or_reduce_zone": [
+        12.5,
+        14.0
+      ],
+      "latest_report": "companies/CN/920685/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T20:20:00+08:00"
+    },
+    {
+      "symbol": "CN:920689",
+      "market": "CN",
+      "ticker": "920689",
+      "name": "克莱特",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "高端定制风机资质和客户黏性较强，但自由现金流弱且可转债扩产风险未获当前估值充分补偿，等待价格与项目验证提供安全边际。",
+      "fair_value_range": [
+        13.0,
+        17.0
+      ],
+      "buy_zone": [
+        10.5,
+        12.5
+      ],
+      "sell_or_reduce_zone": [
+        19.0,
+        22.0
+      ],
+      "latest_report": "companies/CN/920689/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T19:56:20+08:00"
     },
     {
       "symbol": "CN:920690",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6684,
+  "item_count": 6690,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920682",
+      "name": "球冠电缆",
+      "type": "price_above",
+      "price": 5.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920682/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920682",
+      "name": "球冠电缆",
+      "type": "price_below",
+      "price": 3.6,
+      "reason": "进入有安全边际的观察买入区间，但需先复核基本面",
+      "latest_report": "companies/CN/920682/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920685",
+      "name": "新芝生物",
+      "type": "price_above",
+      "price": 12.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920685/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920685",
+      "name": "新芝生物",
+      "type": "price_below",
+      "price": 8.4,
+      "reason": "进入有安全边际的候选买入区间，需先复核基本面",
+      "latest_report": "companies/CN/920685/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920689",
+      "name": "克莱特",
+      "type": "price_above",
+      "price": 19.0,
+      "reason": "进入减仓或不应追高区间，除非盈利和现金流已显著上修",
+      "latest_report": "companies/CN/920689/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920689",
+      "name": "克莱特",
+      "type": "price_below",
+      "price": 12.5,
+      "reason": "进入有初步安全边际的买入区间，仍需复核基本面后分批建仓",
+      "latest_report": "companies/CN/920689/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920690",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5527,
+  "item_count": 5531,
   "items": [
     {
       "date": "2026-06-30",
@@ -38690,6 +38690,34 @@
       "name": "中裕科技",
       "reason": "复查2026年中报、自由现金流、新产品毛利和募投产能利用率",
       "latest_report": "companies/CN/920694/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920682",
+      "name": "球冠电缆",
+      "reason": "复查2026年半年报的毛利率、现金流、库存和借款变化",
+      "latest_report": "companies/CN/920682/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920685",
+      "name": "新芝生物",
+      "reason": "复核2026年半年报的扣非利润、库存、合同负债、现金流和募投进度",
+      "latest_report": "companies/CN/920685/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920689",
+      "name": "克莱特",
+      "reason": "复查2026年中报的扣非增长、现金回款、应收存货和可转债募投进展",
+      "latest_report": "companies/CN/920689/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-06-30",
+      "symbol": "CN:920689",
+      "name": "克莱特",
+      "reason": "复查高速离心鼓风机和智能变频风机认证、投产及收入贡献",
+      "latest_report": "companies/CN/920689/reports/2026-07-14-initial.md"
     }
   ]
 }
