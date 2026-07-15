@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2034,
+  "company_count": 2037,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920608",
+      "market": "CN",
+      "ticker": "920608",
+      "name": "丰安股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "资产负债表稳健且持续分红，但单一客户占比极高、自由现金流和核心盈利质量尚未验证，现价隐含的长期增长过于乐观，应等待更低价格或新客户与回款兑现。",
+      "fair_value_range": [
+        8.5,
+        10.5
+      ],
+      "buy_zone": [
+        7.0,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        14.0
+      ],
+      "latest_report": "companies/CN/920608/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T16:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920627",
+      "market": "CN",
+      "ticker": "920627",
+      "name": "力王股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司有正自由现金流和低有息负债，但核心锌锰业务下滑、锂电盈利脆弱、ROE低于资本成本，当前估值已过度透支第二增长曲线。",
+      "fair_value_range": [
+        7.5,
+        10.0
+      ],
+      "buy_zone": [
+        6.0,
+        7.5
+      ],
+      "sell_or_reduce_zone": [
+        12.5,
+        15.0
+      ],
+      "latest_report": "companies/CN/920627/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T23:40:15.1709099+08:00"
+    },
+    {
+      "symbol": "CN:920634",
+      "market": "CN",
+      "ticker": "920634",
+      "name": "新威凌",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "锌粉头部地位尚未转化为高资本回报和稳定自由现金流，片状粉及铝粉仍待验证，而当前高估值已透支多项乐观假设。",
+      "fair_value_range": [
+        8.0,
+        11.5
+      ],
+      "buy_zone": [
+        6.5,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        13.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 3,
+      "updated_at": "2026-07-16T00:36:31+08:00"
     },
     {
       "symbol": "CN:920639",

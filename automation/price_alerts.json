@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6714,
+  "item_count": 6721,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,62 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920608",
+      "name": "丰安股份",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间，除非新客户量产与自由现金流显著超预期",
+      "latest_report": "companies/CN/920608/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920608",
+      "name": "丰安股份",
+      "type": "price_below",
+      "price": 8.5,
+      "reason": "进入有安全边际的买入区间，但必须先复核大客户、坏账和自由现金流假设",
+      "latest_report": "companies/CN/920608/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920627",
+      "name": "力王股份",
+      "type": "price_above",
+      "price": 12.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920627/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920627",
+      "name": "力王股份",
+      "type": "price_below",
+      "price": 7.5,
+      "reason": "进入有安全边际的观察性买入区间，仍须重新核验基本面",
+      "latest_report": "companies/CN/920627/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920634",
+      "name": "新威凌",
+      "type": "price_above",
+      "price": 13.0,
+      "reason": "进入减仓或不应追高区间，除非自由现金流和新业务已显著超预期",
+      "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920634",
+      "name": "新威凌",
+      "type": "price_below",
+      "price": 6.5,
+      "reason": "深度价值区也不能机械加仓，先排除基本面永久恶化和融资稀释",
+      "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920634",
+      "name": "新威凌",
+      "type": "price_below",
+      "price": 8.5,
+      "reason": "进入初步观察区，需重新验证现金流、毛利率和项目资本回报后才可试仓",
+      "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920639",

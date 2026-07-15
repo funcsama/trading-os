@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5549,
+  "item_count": 5553,
   "items": [
     {
       "date": "2026-06-30",
@@ -38844,6 +38844,34 @@
       "name": "富士达",
       "reason": "复查三季报是否证明利润增速追上收入并改善现金转化",
       "latest_report": "companies/CN/920640/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920627",
+      "name": "力王股份",
+      "reason": "复核2026年半年报的分产品毛利、经营现金流、应收账款和锂电盈利",
+      "latest_report": "companies/CN/920627/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920608",
+      "name": "丰安股份",
+      "reason": "2026年三季报后复查客户集中度、回款、毛利率及募投项目利用率",
+      "latest_report": "companies/CN/920608/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920634",
+      "name": "新威凌",
+      "reason": "复核2026年三季报、滚动四季度现金流及应收存货变化",
+      "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920634",
+      "name": "新威凌",
+      "reason": "复核2026年年报、南通基地建设和铝粉项目资金回报",
+      "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md"
     }
   ]
 }
