@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2007,
+  "company_count": 2010,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920719",
+      "market": "CN",
+      "ticker": "920719",
+      "name": "宁新新材",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "负毛利、91%资产负债率、净资产快速消耗与持续经营重大不确定性尚未缓解，8.81元已过度定价完整反转，应回避。",
+      "fair_value_range": [
+        1.2,
+        3.0
+      ],
+      "buy_zone": [
+        0.8,
+        1.2
+      ],
+      "sell_or_reduce_zone": [
+        3.5,
+        5.0
+      ],
+      "latest_report": "companies/CN/920719/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T15:32:16+08:00"
+    },
+    {
+      "symbol": "CN:920720",
+      "market": "CN",
+      "ticker": "920720",
+      "name": "吉冈精密",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "经营增长与回款改善真实，但自由现金流和资本回报尚不足以支撑约46倍滚动市盈率，等待4.80元以下并重新验证海外扩产回报。",
+      "fair_value_range": [
+        4.8,
+        6.5
+      ],
+      "buy_zone": [
+        3.8,
+        4.8
+      ],
+      "sell_or_reduce_zone": [
+        8.0,
+        10.0
+      ],
+      "latest_report": "companies/CN/920720/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T16:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920725",
+      "market": "CN",
+      "ticker": "920725",
+      "name": "惠丰钻石",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "微粉细分冠军但盈利和自由现金流尚未恢复，散热材料未形成批量收入，当前价格已透支行业复苏与新业务成功预期。",
+      "fair_value_range": [
+        16,
+        28
+      ],
+      "buy_zone": [
+        10,
+        16
+      ],
+      "sell_or_reduce_zone": [
+        35,
+        50
+      ],
+      "latest_report": "companies/CN/920725/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T15:35:38+08:00"
     },
     {
       "symbol": "CN:920726",

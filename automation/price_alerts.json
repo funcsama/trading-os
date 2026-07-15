@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6660,
+  "item_count": 6666,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920719",
+      "name": "宁新新材",
+      "type": "price_above",
+      "price": 3.5,
+      "reason": "进入减仓或不应追高区间，除非经营与偿债修复已被连续财报验证",
+      "latest_report": "companies/CN/920719/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920719",
+      "name": "宁新新材",
+      "type": "price_below",
+      "price": 1.2,
+      "reason": "进入条件式观察买入区；必须重新验证毛利率、净债务和持续经营假设，禁止机械买入",
+      "latest_report": "companies/CN/920719/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920720",
+      "name": "吉冈精密",
+      "type": "price_above",
+      "price": 8.0,
+      "reason": "进入减仓或不应追高区间，估值已反映偏乐观预期",
+      "latest_report": "companies/CN/920720/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920720",
+      "name": "吉冈精密",
+      "type": "price_below",
+      "price": 4.8,
+      "reason": "进入有安全边际的买入区间，但需先验证核心假设未受损",
+      "latest_report": "companies/CN/920720/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920725",
+      "name": "惠丰钻石",
+      "type": "price_above",
+      "price": 35,
+      "reason": "进入减仓或不应追高区间，估值明显高于可验证现金流",
+      "latest_report": "companies/CN/920725/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920725",
+      "name": "惠丰钻石",
+      "type": "price_below",
+      "price": 16,
+      "reason": "进入研究性买入观察区，仍需验证基本面且不得机械加仓",
+      "latest_report": "companies/CN/920725/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920726",
