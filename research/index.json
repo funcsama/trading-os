@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2013,
+  "company_count": 2016,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920699",
+      "market": "CN",
+      "ticker": "920699",
+      "name": "海达尔",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司具备客户认证、工程能力和现金创造基础，但服务器业务尚未定量验证且2026年一季度仍显著下滑，当前百倍以上利润估值已把成长过度确定化。",
+      "fair_value_range": [
+        25,
+        35
+      ],
+      "buy_zone": [
+        18,
+        24
+      ],
+      "sell_or_reduce_zone": [
+        45,
+        60
+      ],
+      "latest_report": "companies/CN/920699/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T18:52:11+08:00"
+    },
+    {
+      "symbol": "CN:920701",
+      "market": "CN",
+      "ticker": "920701",
+      "name": "豪声电子",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "2025年扣非利润修复但自由现金流仍为负，2026Q1毛利率与利润显著回落，当前价格缺乏安全边际。",
+      "fair_value_range": [
+        6.5,
+        8.5
+      ],
+      "buy_zone": [
+        5.5,
+        6.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        12.0
+      ],
+      "latest_report": "companies/CN/920701/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T19:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920703",
+      "market": "CN",
+      "ticker": "920703",
+      "name": "广厦环能",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金充裕和细分技术降低永久损失风险，但2025年需求下滑及2026Q1毛利率骤降尚未验证触底，9.67元缺乏足够安全边际。",
+      "fair_value_range": [
+        9.0,
+        11.5
+      ],
+      "buy_zone": [
+        7.5,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        12.5,
+        15.0
+      ],
+      "latest_report": "companies/CN/920703/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T18:53:04+08:00"
     },
     {
       "symbol": "CN:920706",
