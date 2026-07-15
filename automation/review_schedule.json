@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5531,
+  "item_count": 5537,
   "items": [
     {
       "date": "2026-06-30",
@@ -38718,6 +38718,48 @@
       "name": "克莱特",
       "reason": "复查高速离心鼓风机和智能变频风机认证、投产及收入贡献",
       "latest_report": "companies/CN/920689/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920675",
+      "name": "秉扬科技",
+      "reason": "复核2026年半年报、产品均价毛利率及中标订单履约情况",
+      "latest_report": "companies/CN/920675/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-05",
+      "symbol": "CN:920679",
+      "name": "前进科技",
+      "reason": "2026年半年报后复查需求修复、毛利率、经营现金流和商用业务进展",
+      "latest_report": "companies/CN/920679/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-15",
+      "symbol": "CN:920670",
+      "name": "数字人",
+      "reason": "复核2026年半年报、在手订单转化、扣非利润与经营现金流",
+      "latest_report": "companies/CN/920670/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920675",
+      "name": "秉扬科技",
+      "reason": "复核2026年三季报及重大资产重组审计评估和对价进展",
+      "latest_report": "companies/CN/920675/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920670",
+      "name": "数字人",
+      "reason": "复核2026年报及内控审计意见、云平台商业化和资本回报",
+      "latest_report": "companies/CN/920670/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-05-15",
+      "symbol": "CN:920679",
+      "name": "前进科技",
+      "reason": "2026年年报后复查全年自由现金流、资本回报和募集资金使用效率",
+      "latest_report": "companies/CN/920679/reports/2026-07-14-initial.md"
     }
   ]
 }

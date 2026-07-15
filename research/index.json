@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2022,
+  "company_count": 2025,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920670",
+      "market": "CN",
+      "ticker": "920670",
+      "name": "数字人",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司在数字医学细分领域有技术和现金基础，但项目制波动、历史内控问题与低资本回报无法支撑当前约153倍市盈率，等待5.5元以下并重新验证基本面。",
+      "fair_value_range": [
+        5.5,
+        7.5
+      ],
+      "buy_zone": [
+        4.2,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        9.0,
+        10.5
+      ],
+      "latest_report": "companies/CN/920670/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-15",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920675",
+      "market": "CN",
+      "ticker": "920675",
+      "name": "秉扬科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "压裂需求和大额中标支撑销量，但量增价跌、资本回报一般及未定价重大重组令7.52元缺乏安全边际。",
+      "fair_value_range": [
+        5.2,
+        6.6
+      ],
+      "buy_zone": [
+        4.4,
+        5.0
+      ],
+      "sell_or_reduce_zone": [
+        7.5,
+        9.0
+      ],
+      "latest_report": "companies/CN/920675/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T16:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920679",
+      "market": "CN",
+      "ticker": "920679",
+      "name": "前进科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分工艺和客户认证壁垒尚可、2026年一季度需求修复，但客户极度集中、ROE与自由现金流偏低，15.20元已透支乐观预期。",
+      "fair_value_range": [
+        9.0,
+        11.5
+      ],
+      "buy_zone": [
+        7.5,
+        9.0
+      ],
+      "sell_or_reduce_zone": [
+        13.0,
+        16.0
+      ],
+      "latest_report": "companies/CN/920679/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-05",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T20:00:00+08:00"
     },
     {
       "symbol": "CN:920682",
