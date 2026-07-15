@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5537,
+  "item_count": 5540,
   "items": [
     {
       "date": "2026-06-30",
@@ -38760,6 +38760,27 @@
       "name": "前进科技",
       "reason": "2026年年报后复查全年自由现金流、资本回报和募集资金使用效率",
       "latest_report": "companies/CN/920679/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920662",
+      "name": "方盛股份",
+      "reason": "复核2026年半年报的毛利率、经营现金流、应收减值和新业务批量订单",
+      "latest_report": "companies/CN/920662/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920663",
+      "name": "明阳科技",
+      "reason": "复核2026年半年报中的客户集中度、毛利率、应收账款和经营现金流",
+      "latest_report": "companies/CN/920663/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920665",
+      "name": "科强股份",
+      "reason": "复核2026年三季报的毛利率、减值、经营现金流和新募投进展",
+      "latest_report": "companies/CN/920665/reports/2026-07-14-initial.md"
     }
   ]
 }

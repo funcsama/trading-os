@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2025,
+  "company_count": 2028,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920662",
+      "market": "CN",
+      "ticker": "920662",
+      "name": "方盛股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "细分换热器能力真实但资本回报和自由现金流尚未验证，现价隐含的成长确定性远超基本面证据，应等待价格与毛利率、现金流同时改善。",
+      "fair_value_range": [
+        7.0,
+        11.0
+      ],
+      "buy_zone": [
+        5.5,
+        7.5
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        30.0
+      ],
+      "latest_report": "companies/CN/920662/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T21:10:00+08:00"
+    },
+    {
+      "symbol": "CN:920663",
+      "market": "CN",
+      "ticker": "920663",
+      "name": "明阳科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "盈利与分红质量较好，但单一大客户集中、毛利率下行和现金流波动使当前价格缺乏足够安全边际。",
+      "fair_value_range": [
+        11.0,
+        15.0
+      ],
+      "buy_zone": [
+        9.0,
+        11.0
+      ],
+      "sell_or_reduce_zone": [
+        16.0,
+        19.0
+      ],
+      "latest_report": "companies/CN/920663/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920665",
+      "market": "CN",
+      "ticker": "920665",
+      "name": "科强股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "资产负债表稳健且现金转化尚可，但利润率和资本回报承压，当前价已计入较快修复，等待6.8元以下且基本面企稳的安全边际。",
+      "fair_value_range": [
+        6.8,
+        8.5
+      ],
+      "buy_zone": [
+        5.8,
+        6.8
+      ],
+      "sell_or_reduce_zone": [
+        9.5,
+        11.0
+      ],
+      "latest_report": "companies/CN/920665/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:00:00+08:00"
     },
     {
       "symbol": "CN:920670",
