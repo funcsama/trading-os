@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2004,
+  "company_count": 2007,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920726",
+      "market": "CN",
+      "ticker": "920726",
+      "name": "朱老六",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "现金充裕和先款后货提供下行缓冲，但区域与腐乳单品高度集中、长期资本回报偏低，当前价格已过度成长化2026年一季度的成本修复。",
+      "fair_value_range": [
+        7.0,
+        10.0
+      ],
+      "buy_zone": [
+        5.5,
+        7.0
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        16.5
+      ],
+      "latest_report": "companies/CN/920726/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T14:50:51+08:00"
+    },
+    {
+      "symbol": "CN:920729",
+      "market": "CN",
+      "ticker": "920729",
+      "name": "永顺生物",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "资产负债表安全且猪瘟疫苗具细分壁垒，但收入与扣非利润持续承压、资本回报偏低，当前价格高估核心经营资产，等待显著安全边际。",
+      "fair_value_range": [
+        3.8,
+        4.7
+      ],
+      "buy_zone": [
+        3.1,
+        3.8
+      ],
+      "sell_or_reduce_zone": [
+        5.5,
+        6.8
+      ],
+      "latest_report": "companies/CN/920729/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920735",
+      "market": "CN",
+      "ticker": "920735",
+      "name": "德源药业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "代谢慢病仿制药产品群、高ROE和低负债具备吸引力，但26元附近已接近公允价值中枢，需等待集采、现金转化和创新药节点验证或更大安全边际。",
+      "fair_value_range": [
+        24,
+        31
+      ],
+      "buy_zone": [
+        20,
+        23
+      ],
+      "sell_or_reduce_zone": [
+        34,
+        39
+      ],
+      "latest_report": "companies/CN/920735/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-01",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T00:00:00+08:00"
     },
     {
       "symbol": "CN:920748",

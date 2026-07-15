@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5507,
+  "item_count": 5510,
   "items": [
     {
       "date": "2026-06-30",
@@ -38550,6 +38550,27 @@
       "name": "路桥信息",
       "reason": "复核全年扭亏进度、审计意见和治理整改有效性",
       "latest_report": "companies/CN/920748/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920726",
+      "name": "朱老六",
+      "reason": "复核2026年中报中的腐乳收入、酸菜毛利率、存货、合同负债和经营现金流",
+      "latest_report": "companies/CN/920726/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920729",
+      "name": "永顺生物",
+      "reason": "复核2026年半年报，重点验证收入、扣非利润、库存和增值税政策影响",
+      "latest_report": "companies/CN/920729/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-01",
+      "symbol": "CN:920735",
+      "name": "德源药业",
+      "reason": "复核2026年半年报、基本药物目录实施和创新药II期节点",
+      "latest_report": "companies/CN/920735/reports/2026-07-14-initial.md"
     }
   ]
 }
