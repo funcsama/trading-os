@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1995,
+  "company_count": 1998,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920779",
+      "market": "CN",
+      "ticker": "920779",
+      "name": "武汉蓝电",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "高毛利轻资产与净现金提供业务质量，但连续两年下滑、低毛利大功率放量和募投延期使当前约29倍PE缺少安全边际。",
+      "fair_value_range": [
+        16.5,
+        20.5
+      ],
+      "buy_zone": [
+        13.5,
+        16.0
+      ],
+      "sell_or_reduce_zone": [
+        23.0,
+        27.0
+      ],
+      "latest_report": "companies/CN/920779/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920781",
+      "market": "CN",
+      "ticker": "920781",
+      "name": "瑞奇智造",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "核能订单结构改善尚未抵消收入下滑、应收与存货减值及低资本回报，当前约2.3倍PB已透支反转预期。",
+      "fair_value_range": [
+        2.6,
+        3.6
+      ],
+      "buy_zone": [
+        1.8,
+        2.4
+      ],
+      "sell_or_reduce_zone": [
+        4.2,
+        5.2
+      ],
+      "latest_report": "companies/CN/920781/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T02:10:32+08:00"
+    },
+    {
+      "symbol": "CN:920786",
+      "market": "CN",
+      "ticker": "920786",
+      "name": "骑士乳业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "重资产农牧乳糖一体化业务处于周期修复早期，但自由现金流、资本回报、杠杆与治理质量不足以支撑当前估值，等待显著安全边际。",
+      "fair_value_range": [
+        4.2,
+        5.4
+      ],
+      "buy_zone": [
+        3.3,
+        4.0
+      ],
+      "sell_or_reduce_zone": [
+        6.3,
+        7.5
+      ],
+      "latest_report": "companies/CN/920786/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T02:16:03+08:00"
     },
     {
       "symbol": "CN:920790",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5492,
+  "item_count": 5496,
   "items": [
     {
       "date": "2026-06-30",
@@ -38445,6 +38445,34 @@
       "name": "艾融软件",
       "reason": "2026年半年报后复查收入质量、毛利率、经营现金流、应收账款和商誉假设",
       "latest_report": "companies/CN/920799/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920779",
+      "name": "武汉蓝电",
+      "reason": "复核2026年半年报的毛利率、订单验收、经营现金流与募投进度",
+      "latest_report": "companies/CN/920779/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920781",
+      "name": "瑞奇智造",
+      "reason": "复核2026年半年报、订单转化、应收回款和存货减值",
+      "latest_report": "companies/CN/920781/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920786",
+      "name": "骑士乳业",
+      "reason": "完成2026年半年报复查，重点核验自由现金流、净债务、原奶业务和糖业减亏",
+      "latest_report": "companies/CN/920786/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920781",
+      "name": "瑞奇智造",
+      "reason": "复核2026年年报及新基地资本回报",
+      "latest_report": "companies/CN/920781/reports/2026-07-14-initial.md"
     }
   ]
 }
