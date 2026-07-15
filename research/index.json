@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2010,
+  "company_count": 2013,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920706",
+      "market": "CN",
+      "ticker": "920706",
+      "name": "铁拓机械",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分技术和净现金尚可，但收入与2026Q1利润继续下滑、扩产吞噬自由现金流，14.14元已透支强复苏预期，等待6.50-8.00元且基本面止跌后再评估。",
+      "fair_value_range": [
+        8.0,
+        10.5
+      ],
+      "buy_zone": [
+        6.5,
+        8.0
+      ],
+      "sell_or_reduce_zone": [
+        13.0,
+        15.0
+      ],
+      "latest_report": "companies/CN/920706/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T16:55:39+08:00"
+    },
+    {
+      "symbol": "CN:920717",
+      "market": "CN",
+      "ticker": "920717",
+      "name": "瑞星股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "资质与客户基础不足以抵消低资本回报、应收老化和治理折价，6.42元已透支尚未证实的反转。",
+      "fair_value_range": [
+        3.8,
+        4.8
+      ],
+      "buy_zone": [
+        3.0,
+        3.6
+      ],
+      "sell_or_reduce_zone": [
+        5.6,
+        6.8
+      ],
+      "latest_report": "companies/CN/920717/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T17:59:52+08:00"
+    },
+    {
+      "symbol": "CN:920718",
+      "market": "CN",
+      "ticker": "920718",
+      "name": "合肥高科",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "海尔依赖和低毛利叠加新产能折旧使资本回报跌破资本成本，2026Q1扣非亏损而现价仍隐含盈利大幅修复，当前应回避。",
+      "fair_value_range": [
+        5.8,
+        7.2
+      ],
+      "buy_zone": [
+        4.8,
+        5.8
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        10.0
+      ],
+      "latest_report": "companies/CN/920718/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T17:30:00+08:00"
     },
     {
       "symbol": "CN:920719",
