@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5540,
+  "item_count": 5544,
   "items": [
     {
       "date": "2026-06-30",
@@ -38781,6 +38781,34 @@
       "name": "科强股份",
       "reason": "复核2026年三季报的毛利率、减值、经营现金流和新募投进展",
       "latest_report": "companies/CN/920665/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920642",
+      "name": "通易航天",
+      "reason": "复核2026年半年报的收入、扣非利润、分部毛利率和现金流",
+      "latest_report": "companies/CN/920642/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920651",
+      "name": "天罡股份",
+      "reason": "复核2026年半年报的毛利率、应收账款、存货、经营现金流和核心产品增速",
+      "latest_report": "companies/CN/920651/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920656",
+      "name": "海昇药业",
+      "reason": "复核2026年中报、核心品种量价、经营现金流及募投产能利用率",
+      "latest_report": "companies/CN/920656/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920656",
+      "name": "海昇药业",
+      "reason": "复核2026年年报、新产品商业化及资本配置",
+      "latest_report": "companies/CN/920656/reports/2026-07-14-initial.md"
     }
   ]
 }

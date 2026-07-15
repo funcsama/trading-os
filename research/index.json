@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2028,
+  "company_count": 2031,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920642",
+      "market": "CN",
+      "ticker": "920642",
+      "name": "通易航天",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "军用供氧面罩具备窄护城河，但功能膜结构性萎缩且核心自由现金流未成立，现价已透支军品恢复、民航渗透和低空经济多重乐观预期。",
+      "fair_value_range": [
+        3.0,
+        5.5
+      ],
+      "buy_zone": [
+        2.5,
+        3.5
+      ],
+      "sell_or_reduce_zone": [
+        7.0,
+        9.0
+      ],
+      "latest_report": "companies/CN/920642/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T17:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920651",
+      "market": "CN",
+      "ticker": "920651",
+      "name": "天罡股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "公司盈利、分红和资产负债表质量较好，但毛利率下行、2026Q1增长停滞且当前价格隐含双位数自由现金流增长，等待更充分安全边际。",
+      "fair_value_range": [
+        15.0,
+        19.0
+      ],
+      "buy_zone": [
+        12.5,
+        14.5
+      ],
+      "sell_or_reduce_zone": [
+        22.0,
+        25.0
+      ],
+      "latest_report": "companies/CN/920651/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T17:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920656",
+      "market": "CN",
+      "ticker": "920656",
+      "name": "海昇药业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "磺胺类细分优势和净现金提供基本面支撑，但产品客户集中、增长含周期因素，14.08元附近已缺少安全边际。",
+      "fair_value_range": [
+        11.5,
+        14.0
+      ],
+      "buy_zone": [
+        9.5,
+        11.0
+      ],
+      "sell_or_reduce_zone": [
+        16.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920656/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T00:00:00+08:00"
     },
     {
       "symbol": "CN:920662",
