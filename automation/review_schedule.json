@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5524,
+  "item_count": 5527,
   "items": [
     {
       "date": "2026-06-30",
@@ -38669,6 +38669,27 @@
       "name": "广厦环能",
       "reason": "复核2026年三季报并判断盈利修复是否可持续",
       "latest_report": "companies/CN/920703/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920690",
+      "name": "捷众科技",
+      "reason": "复核2026年半年报的毛利率、资本开支、客户集中与自由现金流",
+      "latest_report": "companies/CN/920690/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920693",
+      "name": "阿为特",
+      "reason": "复核2026年半年报中新业务毛利率、自由现金流、设备投入与德国子公司经营情况",
+      "latest_report": "companies/CN/920693/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920694",
+      "name": "中裕科技",
+      "reason": "复查2026年中报、自由现金流、新产品毛利和募投产能利用率",
+      "latest_report": "companies/CN/920694/reports/2026-07-14-initial.md"
     }
   ]
 }

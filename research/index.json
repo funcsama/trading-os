@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2016,
+  "company_count": 2019,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920690",
+      "market": "CN",
+      "ticker": "920690",
+      "name": "捷众科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "客户认证壁垒和稳健资产负债表真实，但客户集中、毛利率下行与自由现金流不足使14元以上缺乏安全边际。",
+      "fair_value_range": [
+        10.5,
+        12.8
+      ],
+      "buy_zone": [
+        8.5,
+        10.0
+      ],
+      "sell_or_reduce_zone": [
+        14.5,
+        16.0
+      ],
+      "latest_report": "companies/CN/920690/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T19:25:14+08:00"
+    },
+    {
+      "symbol": "CN:920693",
+      "market": "CN",
+      "ticker": "920693",
+      "name": "阿为特",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "液冷和半导体收入高增尚未转化为自由现金流与资本回报，当前估值隐含过高确定性，等待价格进入10-13元或经营杠杆被报表验证。",
+      "fair_value_range": [
+        13,
+        18
+      ],
+      "buy_zone": [
+        10,
+        13
+      ],
+      "sell_or_reduce_zone": [
+        22,
+        26
+      ],
+      "latest_report": "companies/CN/920693/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T20:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920694",
+      "market": "CN",
+      "ticker": "920694",
+      "name": "中裕科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "特种软管认证和海外渠道构成中等壁垒，但客户集中、新项目回报和自由现金流尚待验证，当前价格接近合理价值上沿。",
+      "fair_value_range": [
+        10.5,
+        13.5
+      ],
+      "buy_zone": [
+        8.5,
+        10.5
+      ],
+      "sell_or_reduce_zone": [
+        15.5,
+        18.0
+      ],
+      "latest_report": "companies/CN/920694/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T19:25:59+08:00"
     },
     {
       "symbol": "CN:920699",
