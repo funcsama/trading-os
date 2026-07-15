@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6642,
+  "item_count": 6648,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920765",
+      "name": "美之高",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920765",
+      "name": "美之高",
+      "type": "price_below",
+      "price": 5.3,
+      "reason": "进入有安全边际的复核区，需同时确认基本面未恶化",
+      "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920768",
+      "name": "拾比佰",
+      "type": "price_above",
+      "price": 8.0,
+      "reason": "进入减仓或不应追高区间，除非正常化自由现金流显著上修",
+      "latest_report": "companies/CN/920768/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920768",
+      "name": "拾比佰",
+      "type": "price_below",
+      "price": 5.3,
+      "reason": "进入有安全边际的买入观察区间，需先确认基本面未恶化",
+      "latest_report": "companies/CN/920768/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920770",
+      "name": "艾能聚",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920770/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920770",
+      "name": "艾能聚",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入可能具备安全边际的买入区间，但需先重新验证核心假设",
+      "latest_report": "companies/CN/920770/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920779",

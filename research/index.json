@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 1998,
+  "company_count": 2001,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920765",
+      "market": "CN",
+      "ticker": "920765",
+      "name": "美之高",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "跨境电商转型带来单季修复但尚未证明可持续自由现金流，当前约2.9倍市净率已反映较强乐观预期，等待价格与基本面同时提供安全边际。",
+      "fair_value_range": [
+        5.0,
+        7.2
+      ],
+      "buy_zone": [
+        4.0,
+        5.3
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        10.5
+      ],
+      "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920768",
+      "market": "CN",
+      "ticker": "920768",
+      "name": "拾比佰",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "盈利修复和出口增长真实，但当前估值已计入较快现金流改善，客户集中与营运资金风险使安全边际不足。",
+      "fair_value_range": [
+        5.7,
+        7.1
+      ],
+      "buy_zone": [
+        4.6,
+        5.3
+      ],
+      "sell_or_reduce_zone": [
+        8.0,
+        9.0
+      ],
+      "latest_report": "companies/CN/920768/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920770",
+      "market": "CN",
+      "ticker": "920770",
+      "name": "艾能聚",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "电站运营现金流具备一定价值，但重资产扩张的资本回报偏低且市场化电价已压低核心利润，当前约29倍PE没有安全边际。",
+      "fair_value_range": [
+        5.5,
+        7.5
+      ],
+      "buy_zone": [
+        4.5,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        10.5
+      ],
+      "latest_report": "companies/CN/920770/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-15T12:38:27+08:00"
     },
     {
       "symbol": "CN:920779",

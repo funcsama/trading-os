@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5496,
+  "item_count": 5502,
   "items": [
     {
       "date": "2026-06-30",
@@ -38473,6 +38473,48 @@
       "name": "瑞奇智造",
       "reason": "复核2026年年报及新基地资本回报",
       "latest_report": "companies/CN/920781/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920765",
+      "name": "美之高",
+      "reason": "复核2026年半年报的现金流、销售费用率、库存和自有品牌盈利",
+      "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920768",
+      "name": "拾比佰",
+      "reason": "复核2026年中报的产品与地区毛利、广义应收、自由现金流及芜湖产线利用率",
+      "latest_report": "companies/CN/920768/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920770",
+      "name": "艾能聚",
+      "reason": "复核2026年半年报、电力市场化影响、50MW项目贡献和自由现金流",
+      "latest_report": "companies/CN/920770/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920765",
+      "name": "美之高",
+      "reason": "复核2026年三季报并判断一季度修复是否持续",
+      "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920768",
+      "name": "拾比佰",
+      "reason": "复核2026年三季报与全年盈利、现金流假设",
+      "latest_report": "companies/CN/920768/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920765",
+      "name": "美之高",
+      "reason": "复核2026年年报、客户集中度和正常化自由现金流",
+      "latest_report": "companies/CN/920765/reports/2026-07-14-initial.md"
     }
   ]
 }
