@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6733,
+  "item_count": 6739,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920570",
+      "name": "坤博精工",
+      "type": "price_above",
+      "price": 14.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920570/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920570",
+      "name": "坤博精工",
+      "type": "price_below",
+      "price": 7.5,
+      "reason": "进入有安全边际的研究性买入区间，仍需重新核验核心假设",
+      "latest_report": "companies/CN/920570/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920571",
+      "name": "国航远洋",
+      "type": "price_above",
+      "price": 7.3,
+      "reason": "进入减仓或不应追高区间，市场对周期持续性的定价偏乐观",
+      "latest_report": "companies/CN/920571/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920571",
+      "name": "国航远洋",
+      "type": "price_below",
+      "price": 4.6,
+      "reason": "进入可研究的买入区间，但需先复核净债务与自由现金流，不能机械加仓",
+      "latest_report": "companies/CN/920571/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920576",
+      "name": "天力复合",
+      "type": "price_above",
+      "price": 24,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920576/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920576",
+      "name": "天力复合",
+      "type": "price_below",
+      "price": 12,
+      "reason": "进入有安全边际的买入区间，但需先验证核心假设未恶化",
+      "latest_report": "companies/CN/920576/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920578",

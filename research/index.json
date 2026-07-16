@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2043,
+  "company_count": 2046,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920570",
+      "market": "CN",
+      "ticker": "920570",
+      "name": "坤博精工",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "精密成型零部件有一定工艺壁垒，但客户集中、真空炉体亏损、资本回报偏低，当前估值已过度计入风电与半导体增长。",
+      "fair_value_range": [
+        6.5,
+        11.0
+      ],
+      "buy_zone": [
+        5.0,
+        7.5
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920570/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T12:13:07+08:00"
+    },
+    {
+      "symbol": "CN:920571",
+      "market": "CN",
+      "ticker": "920571",
+      "name": "国航远洋",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "2026年运价上行和新船投产推动利润高弹性，但高杠杆、弱周期资本回报和治理瑕疵尚未改善，8.19元已透支较多乐观预期。",
+      "fair_value_range": [
+        4.8,
+        6.2
+      ],
+      "buy_zone": [
+        3.8,
+        4.6
+      ],
+      "sell_or_reduce_zone": [
+        7.3,
+        9.0
+      ],
+      "latest_report": "companies/CN/920571/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T12:26:09+08:00"
+    },
+    {
+      "symbol": "CN:920576",
+      "market": "CN",
+      "ticker": "920576",
+      "name": "天力复合",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "高端层状金属复合材料具备技术与认证壁垒，但盈利、现金流和资本回报仍在下滑，当前估值已远超可验证的乐观情景。",
+      "fair_value_range": [
+        12,
+        18
+      ],
+      "buy_zone": [
+        9,
+        12
+      ],
+      "sell_or_reduce_zone": [
+        24,
+        32
+      ],
+      "latest_report": "companies/CN/920576/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T12:20:42+08:00"
     },
     {
       "symbol": "CN:920578",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5564,
+  "item_count": 5569,
   "items": [
     {
       "date": "2026-06-30",
@@ -38949,6 +38949,41 @@
       "name": "机科股份",
       "reason": "年报窗口，验证全年盈利质量、自由现金流和减值风险",
       "latest_report": "companies/CN/920579/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920570",
+      "name": "坤博精工",
+      "reason": "复核2026年半年报中的风电项目放量、真空炉体止亏、应收存货与自由现金流",
+      "latest_report": "companies/CN/920570/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920571",
+      "name": "国航远洋",
+      "reason": "复核2026年半年报的扣非利润、经营现金流、资本开支和净债务",
+      "latest_report": "companies/CN/920571/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920576",
+      "name": "天力复合",
+      "reason": "复核2026年中报的毛利率、应收账款、扣非利润与经营现金流",
+      "latest_report": "companies/CN/920576/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920571",
+      "name": "国航远洋",
+      "reason": "复核三季报及BDI、BPI、CBCFI回落后的盈利韧性",
+      "latest_report": "companies/CN/920571/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920576",
+      "name": "天力复合",
+      "reason": "复核2026年三季报及核电、海洋工程订单转化",
+      "latest_report": "companies/CN/920576/reports/2026-07-14-initial.md"
     }
   ]
 }
