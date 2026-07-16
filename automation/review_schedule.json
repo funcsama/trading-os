@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5553,
+  "item_count": 5557,
   "items": [
     {
       "date": "2026-06-30",
@@ -38872,6 +38872,34 @@
       "name": "新威凌",
       "reason": "复核2026年年报、南通基地建设和铝粉项目资金回报",
       "latest_report": "companies/CN/920634/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920593",
+      "name": "鼎智科技",
+      "reason": "复核2026年半年报的有机增长、毛利率、自由现金流与赛仑特整合",
+      "latest_report": "companies/CN/920593/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920599",
+      "name": "同力股份",
+      "reason": "复核2026年半年报的海外收入、现金流、应收账款、存货和融资销售担保",
+      "latest_report": "companies/CN/920599/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-15",
+      "symbol": "CN:920592",
+      "name": "华信永道",
+      "reason": "复核2026年半年报、重大中标项目执行、存货减值和经营现金流",
+      "latest_report": "companies/CN/920592/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920593",
+      "name": "鼎智科技",
+      "reason": "复核赛仑特2026年业绩承诺、商誉减值测试和全年资本回报",
+      "latest_report": "companies/CN/920593/reports/2026-07-14-initial.md"
     }
   ]
 }

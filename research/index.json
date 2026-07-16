@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2037,
+  "company_count": 2040,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920592",
+      "market": "CN",
+      "ticker": "920592",
+      "name": "华信永道",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公积金数字化领域地位真实，但项目制业务的毛利、资本回报和自由现金流尚不稳定，当前价格已透支强劲修复预期。",
+      "fair_value_range": [
+        8.0,
+        12.0
+      ],
+      "buy_zone": [
+        6.5,
+        8.0
+      ],
+      "sell_or_reduce_zone": [
+        15.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920592/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-15",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T10:55:50+08:00"
+    },
+    {
+      "symbol": "CN:920593",
+      "market": "CN",
+      "ticker": "920593",
+      "name": "鼎智科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "产品和海外渠道有价值，但资本回报与自由现金流尚未证明，31.30元已过度定价机器人、并购协同和利润率修复。",
+      "fair_value_range": [
+        9,
+        15
+      ],
+      "buy_zone": [
+        7,
+        10
+      ],
+      "sell_or_reduce_zone": [
+        20,
+        25
+      ],
+      "latest_report": "companies/CN/920593/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T10:50:50+08:00"
+    },
+    {
+      "symbol": "CN:920599",
+      "market": "CN",
+      "ticker": "920599",
+      "name": "同力股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分龙头具备高ROE、低PE和新能源/海外增长潜力，但现金转换、应收及融资销售担保削弱安全边际，等待13.5-15.0元更优赔率。",
+      "fair_value_range": [
+        16.0,
+        20.0
+      ],
+      "buy_zone": [
+        13.5,
+        15.0
+      ],
+      "sell_or_reduce_zone": [
+        21.5,
+        24.0
+      ],
+      "latest_report": "companies/CN/920599/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T12:00:00+08:00"
     },
     {
       "symbol": "CN:920608",
