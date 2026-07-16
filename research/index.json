@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2046,
+  "company_count": 2049,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920556",
+      "market": "CN",
+      "ticker": "920556",
+      "name": "雅达股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "资产负债表稳健但增长、ROE和自由现金流偏弱，当前高估值已透支数据中心与微电网增长预期，缺乏安全边际。",
+      "fair_value_range": [
+        3.3,
+        4.5
+      ],
+      "buy_zone": [
+        2.8,
+        3.3
+      ],
+      "sell_or_reduce_zone": [
+        5.3,
+        6.0
+      ],
+      "latest_report": "companies/CN/920556/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-15",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T12:54:08+08:00"
+    },
+    {
+      "symbol": "CN:920564",
+      "market": "CN",
+      "ticker": "920564",
+      "name": "天润科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "行业有增长但公司尚未证明项目制收入能稳定转化为高回报自由现金流，当前价格已透支利润率跃升与长期高增长。",
+      "fair_value_range": [
+        6.0,
+        8.0
+      ],
+      "buy_zone": [
+        4.5,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        12.0
+      ],
+      "latest_report": "companies/CN/920564/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T13:10:00+08:00"
+    },
+    {
+      "symbol": "CN:920566",
+      "market": "CN",
+      "ticker": "920566",
+      "name": "梓橦宫",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金流和资产负债表稳健，但核心品种集中、销售费用率高、研发资本化及股东减持要求估值折价，10.30元已接近合理价值上沿。",
+      "fair_value_range": [
+        8.5,
+        10.8
+      ],
+      "buy_zone": [
+        7.5,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        13.5
+      ],
+      "latest_report": "companies/CN/920566/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T12:59:14+08:00"
     },
     {
       "symbol": "CN:920570",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5569,
+  "item_count": 5573,
   "items": [
     {
       "date": "2026-06-30",
@@ -38984,6 +38984,34 @@
       "name": "天力复合",
       "reason": "复核2026年三季报及核电、海洋工程订单转化",
       "latest_report": "companies/CN/920576/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920564",
+      "name": "天润科技",
+      "reason": "复核2026年半年报的利润率、费用投入、应收质量和自由现金流",
+      "latest_report": "companies/CN/920564/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920566",
+      "name": "梓橦宫",
+      "reason": "复核2026年半年报、核心品种量价、销售费用率及自由现金流",
+      "latest_report": "companies/CN/920566/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-15",
+      "symbol": "CN:920556",
+      "name": "雅达股份",
+      "reason": "复核2026年半年度报告中的收入质量、应收存货、扣非利润和自由现金流",
+      "latest_report": "companies/CN/920556/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920564",
+      "name": "天润科技",
+      "reason": "复核2026年三季报及全年验收和盈利假设",
+      "latest_report": "companies/CN/920564/reports/2026-07-14-initial.md"
     }
   ]
 }
