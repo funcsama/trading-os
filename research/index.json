@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2058,
+  "company_count": 2061,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920508",
+      "market": "CN",
+      "ticker": "920508",
+      "name": "殷图网联",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "电网数智化需求向好，但公司客户集中、毛利率下滑且资本回报低，13.75元隐含过度乐观的长期增长与利润率修复预期。",
+      "fair_value_range": [
+        3.0,
+        5.0
+      ],
+      "buy_zone": [
+        2.0,
+        2.8
+      ],
+      "sell_or_reduce_zone": [
+        6.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920508/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T00:33:16+08:00"
+    },
+    {
+      "symbol": "CN:920509",
+      "market": "CN",
+      "ticker": "920509",
+      "name": "同惠电子",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "公司在精密阻抗和功率半导体测试细分领域盈利能力突出、现金充裕，但22.49元已隐含长期约20%以上自由现金流增长，当前缺乏安全边际。",
+      "fair_value_range": [
+        14,
+        18
+      ],
+      "buy_zone": [
+        10,
+        13
+      ],
+      "sell_or_reduce_zone": [
+        22,
+        28
+      ],
+      "latest_report": "companies/CN/920509/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T00:31:19+08:00"
+    },
+    {
+      "symbol": "CN:920510",
+      "market": "CN",
+      "ticker": "920510",
+      "name": "丰光精密",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "精密加工和谐波减速器具备增长期权，但利润与自由现金流尚未验证，当前价格已过度透支机器人量产和并购协同。",
+      "fair_value_range": [
+        5.0,
+        9.0
+      ],
+      "buy_zone": [
+        3.5,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        40.0
+      ],
+      "latest_report": "companies/CN/920510/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T00:33:10+08:00"
     },
     {
       "symbol": "CN:920519",

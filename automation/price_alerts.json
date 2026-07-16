@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6763,
+  "item_count": 6769,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920508",
+      "name": "殷图网联",
+      "type": "price_above",
+      "price": 6.0,
+      "reason": "高于乐观价值中枢，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920508/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920508",
+      "name": "殷图网联",
+      "type": "price_below",
+      "price": 2.8,
+      "reason": "进入有安全边际的观察区，仍须重新验证毛利率和现金流",
+      "latest_report": "companies/CN/920508/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920509",
+      "name": "同惠电子",
+      "type": "price_above",
+      "price": 22,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920509/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920509",
+      "name": "同惠电子",
+      "type": "price_below",
+      "price": 13,
+      "reason": "进入有安全边际的买入复核区间，仍须确认基本面未恶化",
+      "latest_report": "companies/CN/920509/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920510",
+      "name": "丰光精密",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "高于乐观情景中枢，应减仓或避免追高",
+      "latest_report": "companies/CN/920510/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920510",
+      "name": "丰光精密",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入有条件的买入研究区间，仍需重新验证基本面和现金流",
+      "latest_report": "companies/CN/920510/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920519",
