@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5557,
+  "item_count": 5564,
   "items": [
     {
       "date": "2026-06-30",
@@ -38900,6 +38900,55 @@
       "name": "鼎智科技",
       "reason": "复核赛仑特2026年业绩承诺、商誉减值测试和全年资本回报",
       "latest_report": "companies/CN/920593/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920578",
+      "name": "巨能股份",
+      "reason": "复查2026年半年报的收入、扣非利润、合同负债转化和经营现金流",
+      "latest_report": "companies/CN/920578/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920579",
+      "name": "机科股份",
+      "reason": "半年报窗口，复查毛利率、应收回款、存货验收和经营现金流",
+      "latest_report": "companies/CN/920579/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920580",
+      "name": "科创新材",
+      "reason": "复核2026年中报的碳化硅复合材料收入、毛利率、经营现金流和营运资本",
+      "latest_report": "companies/CN/920580/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-12-31",
+      "symbol": "CN:920579",
+      "name": "机科股份",
+      "reason": "复查怀柔募投项目是否按期达到可使用状态及实际投资回报",
+      "latest_report": "companies/CN/920579/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-12-31",
+      "symbol": "CN:920580",
+      "name": "科创新材",
+      "reason": "核查年产6000吨碳化硅复合材料募投项目是否按延期后的计划完成",
+      "latest_report": "companies/CN/920580/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920578",
+      "name": "巨能股份",
+      "reason": "复查2026年报和资本回报是否完成修复",
+      "latest_report": "companies/CN/920578/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920579",
+      "name": "机科股份",
+      "reason": "年报窗口，验证全年盈利质量、自由现金流和减值风险",
+      "latest_report": "companies/CN/920579/reports/2026-07-14-initial.md"
     }
   ]
 }
