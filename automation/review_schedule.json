@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5577,
+  "item_count": 5580,
   "items": [
     {
       "date": "2026-06-30",
@@ -39040,6 +39040,27 @@
       "name": "无锡晶海",
       "reason": "复核2026年三季报及新工厂产能利用率和自由现金流",
       "latest_report": "companies/CN/920547/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920533",
+      "name": "骏创科技",
+      "reason": "复核2026年半年报、北美盈利质量、客户集中度和自由现金流",
+      "latest_report": "companies/CN/920533/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920526",
+      "name": "凯华材料",
+      "reason": "复核三季报、募投项目投产及新增产能利用率",
+      "latest_report": "companies/CN/920526/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920527",
+      "name": "夜光明",
+      "reason": "最晚在2026年三季报后复核毛利率、存货、自由现金流与募投项目回报",
+      "latest_report": "companies/CN/920527/reports/2026-07-14-initial.md"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2052,
+  "company_count": 2055,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920526",
+      "market": "CN",
+      "ticker": "920526",
+      "name": "凯华材料",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "细分技术和低负债尚可，但扩产兑现前收入停滞、自由现金流为负，28.65元已过度定价塑封料放量与新产能成功。",
+      "fair_value_range": [
+        7.5,
+        11.5
+      ],
+      "buy_zone": [
+        5.5,
+        7.0
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        18.0
+      ],
+      "latest_report": "companies/CN/920526/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T15:02:05+08:00"
+    },
+    {
+      "symbol": "CN:920527",
+      "market": "CN",
+      "ticker": "920527",
+      "name": "夜光明",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "资产负债表稳健且一季报毛利改善，但长期资本回报偏低、现金流脆弱，13.61元已过度定价盈利改善。",
+      "fair_value_range": [
+        8.8,
+        10.8
+      ],
+      "buy_zone": [
+        7.0,
+        8.5
+      ],
+      "sell_or_reduce_zone": [
+        12.5,
+        14.5
+      ],
+      "latest_report": "companies/CN/920527/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T15:10:00+08:00"
+    },
+    {
+      "symbol": "CN:920533",
+      "market": "CN",
+      "ticker": "920533",
+      "name": "骏创科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "工艺和客户认证具备中等壁垒，但客户集中、资本开支与境外经营风险较高，18.39元已透支新业务放量和利润率修复预期，等待9元以下且基本面未恶化。",
+      "fair_value_range": [
+        9.0,
+        13.0
+      ],
+      "buy_zone": [
+        6.5,
+        9.0
+      ],
+      "sell_or_reduce_zone": [
+        15.0,
+        19.5
+      ],
+      "latest_report": "companies/CN/920533/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T15:01:41+08:00"
     },
     {
       "symbol": "CN:920541",
