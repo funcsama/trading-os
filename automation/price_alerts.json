@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6769,
+  "item_count": 6775,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920496",
+      "name": "许昌智能",
+      "type": "price_above",
+      "price": 5.5,
+      "reason": "进入减仓或不应追高区间，价格透支利润修复",
+      "latest_report": "companies/CN/920496/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920496",
+      "name": "许昌智能",
+      "type": "price_below",
+      "price": 3.5,
+      "reason": "进入可研究的买入区间，仍需验证基本面未恶化",
+      "latest_report": "companies/CN/920496/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920504",
+      "name": "博迅生物",
+      "type": "price_above",
+      "price": 14,
+      "reason": "超过合理价值上沿，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920504/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920504",
+      "name": "博迅生物",
+      "type": "price_below",
+      "price": 9.5,
+      "reason": "进入有一定安全边际的重新研究和分批买入区间",
+      "latest_report": "companies/CN/920504/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920505",
+      "name": "九菱科技",
+      "type": "price_above",
+      "price": 18.0,
+      "reason": "进入减仓或不应追高区间，除非盈利和自由现金流预测已获上修证据",
+      "latest_report": "companies/CN/920505/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920505",
+      "name": "九菱科技",
+      "type": "price_below",
+      "price": 9.0,
+      "reason": "进入有条件的估值复核区，须先确认基本面和长期商业价值未受损",
+      "latest_report": "companies/CN/920505/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920508",

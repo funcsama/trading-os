@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5589,
+  "item_count": 5594,
   "items": [
     {
       "date": "2026-06-30",
@@ -14197,6 +14197,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920496",
+      "name": "许昌智能",
+      "reason": "复核2026年半年报的毛利率、应收回款、自由现金流和募投进度",
+      "latest_report": "companies/CN/920496/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920504",
+      "name": "博迅生物",
+      "reason": "复核2026年半年报的收入、毛利率、经营现金流、应收账款和存货减值",
+      "latest_report": "companies/CN/920504/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920505",
+      "name": "九菱科技",
+      "reason": "复核2026年半年报中的稀土永磁毛利率、产能利用率、应收存货及自由现金流",
+      "latest_report": "companies/CN/920505/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29621,6 +29642,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920504",
+      "name": "博迅生物",
+      "reason": "复核2026年三季报及募投项目产能利用率",
+      "latest_report": "companies/CN/920504/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920508",
       "name": "殷图网联",
       "reason": "复核2026年三季报收入增长和自由现金流可重复性",
@@ -37220,6 +37248,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920496",
+      "name": "许昌智能",
+      "reason": "复核2026年全年资本回报和数字化配网项目回报",
+      "latest_report": "companies/CN/920496/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

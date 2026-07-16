@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2061,
+  "company_count": 2064,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920496",
+      "market": "CN",
+      "ticker": "920496",
+      "name": "许昌智能",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "配网赛道景气但公司盈利与资本回报尚未修复，当前约90倍利润估值透支复苏，等待3.5元以下且回款、毛利和募投回报同时验证。",
+      "fair_value_range": [
+        3.4,
+        4.5
+      ],
+      "buy_zone": [
+        2.8,
+        3.5
+      ],
+      "sell_or_reduce_zone": [
+        5.5,
+        6.5
+      ],
+      "latest_report": "companies/CN/920496/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T16:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920504",
+      "market": "CN",
+      "ticker": "920504",
+      "name": "博迅生物",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司现金充足且能产生经营现金流，但收入利润连续收缩、资本回报偏低，当前约48倍2025年利润已透支增长预期。",
+      "fair_value_range": [
+        9.5,
+        12.5
+      ],
+      "buy_zone": [
+        7.5,
+        9.5
+      ],
+      "sell_or_reduce_zone": [
+        14,
+        18
+      ],
+      "latest_report": "companies/CN/920504/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T01:11:08+08:00"
+    },
+    {
+      "symbol": "CN:920505",
+      "market": "CN",
+      "ticker": "920505",
+      "name": "九菱科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "传统粉末冶金具窄客户认证壁垒，但稀土永磁尚未证明盈利和自由现金流，当前百倍以上TTM PE已过度定价产能爬坡。",
+      "fair_value_range": [
+        9.0,
+        13.0
+      ],
+      "buy_zone": [
+        6.5,
+        9.0
+      ],
+      "sell_or_reduce_zone": [
+        18.0,
+        24.0
+      ],
+      "latest_report": "companies/CN/920505/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:00:00+08:00"
     },
     {
       "symbol": "CN:920508",
