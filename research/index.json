@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2055,
+  "company_count": 2058,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920519",
+      "market": "CN",
+      "ticker": "920519",
+      "name": "万德股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "微通道工艺和强资产负债表提供一定底线，但低资本回报、核心子公司停产和高估值使当前赔率不支持买入。",
+      "fair_value_range": [
+        6.0,
+        7.8
+      ],
+      "buy_zone": [
+        4.8,
+        5.8
+      ],
+      "sell_or_reduce_zone": [
+        9.0,
+        10.5
+      ],
+      "latest_report": "companies/CN/920519/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920522",
+      "market": "CN",
+      "ticker": "920522",
+      "name": "纳科诺尔",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "辊压设备细分优势和大额订单真实，但毛利率与现金转化恶化，19.98元隐含利润快速修复且缺乏安全边际。",
+      "fair_value_range": [
+        11.5,
+        15.5
+      ],
+      "buy_zone": [
+        8.5,
+        11.5
+      ],
+      "sell_or_reduce_zone": [
+        18,
+        22
+      ],
+      "latest_report": "companies/CN/920522/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920523",
+      "market": "CN",
+      "ticker": "920523",
+      "name": "德瑞锂电",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "盈利与现金质量较好但新产能回报、出口退税和客户集中仍待验证，16.25元仅处于公允价值下沿，12至14元才有较充分安全边际。",
+      "fair_value_range": [
+        16.0,
+        20.0
+      ],
+      "buy_zone": [
+        12.0,
+        14.0
+      ],
+      "sell_or_reduce_zone": [
+        22.0,
+        26.0
+      ],
+      "latest_report": "companies/CN/920523/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-16T15:42:00+08:00"
     },
     {
       "symbol": "CN:920526",
