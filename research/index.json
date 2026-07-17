@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2082,
+  "company_count": 2085,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920415",
+      "market": "CN",
+      "ticker": "920415",
+      "name": "恒拓开源",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "民航核心软件有客户黏性，但扣非回报低且当前价格已过度反映AI、低空经济与国产替代预期。",
+      "fair_value_range": [
+        4.8,
+        6.4
+      ],
+      "buy_zone": [
+        4.2,
+        4.8
+      ],
+      "sell_or_reduce_zone": [
+        7.5,
+        9.0
+      ],
+      "latest_report": "companies/CN/920415/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920418",
+      "market": "CN",
+      "ticker": "920418",
+      "name": "苏轴股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分龙头具备高现金流和高资本回报，但增长降档且19.12元已隐含中期复苏，等待14.5至16.5元并验证客户、汇率与高端项目假设后再建仓。",
+      "fair_value_range": [
+        17.0,
+        21.5
+      ],
+      "buy_zone": [
+        14.5,
+        16.5
+      ],
+      "sell_or_reduce_zone": [
+        23.0,
+        26.0
+      ],
+      "latest_report": "companies/CN/920418/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-18",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T04:09:17+08:00"
+    },
+    {
+      "symbol": "CN:920419",
+      "market": "CN",
+      "ticker": "920419",
+      "name": "路斯股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "出口OEM基本盘仍增长且柬埔寨基地出现盈利拐点，但利润率和自由现金流尚未修复，9.59元接近合理价值中枢、缺乏安全边际。",
+      "fair_value_range": [
+        8.5,
+        10.5
+      ],
+      "buy_zone": [
+        7.2,
+        8.0
+      ],
+      "sell_or_reduce_zone": [
+        11.5,
+        13.0
+      ],
+      "latest_report": "companies/CN/920419/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T12:00:00+08:00"
     },
     {
       "symbol": "CN:920422",

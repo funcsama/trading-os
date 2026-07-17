@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5622,
+  "item_count": 5626,
   "items": [
     {
       "date": "2026-06-30",
@@ -491,6 +491,13 @@
       "name": "复旦微电",
       "reason": "按预约披露日复查2026年半年报正式数据、扣非净利质量、产品线毛利率、经营现金流、存货和应收账款",
       "latest_report": "companies/CN/688385/reports/2026-07-12-followup.md"
+    },
+    {
+      "date": "2026-08-18",
+      "symbol": "CN:920418",
+      "name": "苏轴股份",
+      "reason": "复核2026年中报、汇兑损失、客户项目和自由现金流",
+      "latest_report": "companies/CN/920418/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-19",
@@ -14204,6 +14211,13 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920419",
+      "name": "路斯股份",
+      "reason": "复核2026年中报的毛利率、柬埔寨盈利、营运资金和自由现金流",
+      "latest_report": "companies/CN/920419/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29765,6 +29779,20 @@
       "name": "DR蘅东光",
       "reason": "复核2026年三季报及AI数据中心订单持续性",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920415",
+      "name": "恒拓开源",
+      "reason": "复核2026年三季报的收入、扣非利润、经营现金流和新业务订单转化",
+      "latest_report": "companies/CN/920415/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920419",
+      "name": "路斯股份",
+      "reason": "复核2026年三季报及柬埔寨二期投产进度",
+      "latest_report": "companies/CN/920419/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",
