@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6805,
+  "item_count": 6811,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920422",
+      "name": "润普食品",
+      "type": "price_above",
+      "price": 7.8,
+      "reason": "进入减仓或不应追高区间，需由盈利和现金流上修才能支撑",
+      "latest_report": "companies/CN/920422/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920422",
+      "name": "润普食品",
+      "type": "price_below",
+      "price": 5.0,
+      "reason": "进入有安全边际的研究买入区间，仍需确认基本面未恶化",
+      "latest_report": "companies/CN/920422/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920425",
+      "name": "乐创技术",
+      "type": "price_above",
+      "price": 23.0,
+      "reason": "除权前口径进入减仓或不应追高区间；除权后需重设",
+      "latest_report": "companies/CN/920425/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920425",
+      "name": "乐创技术",
+      "type": "price_below",
+      "price": 13.0,
+      "reason": "除权前口径进入初步买入区间，仍须验证基本面未恶化；除权后需重设",
+      "latest_report": "companies/CN/920425/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920427",
+      "name": "华维设计",
+      "type": "price_above",
+      "price": 5.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920427/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920427",
+      "name": "华维设计",
+      "type": "price_below",
+      "price": 2.4,
+      "reason": "进入有安全边际的观察性买入区间，但仍需先验证审计和封测假设",
+      "latest_report": "companies/CN/920427/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920429",

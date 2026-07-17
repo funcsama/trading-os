@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2079,
+  "company_count": 2082,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920422",
+      "market": "CN",
+      "ticker": "920422",
+      "name": "润普食品",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "2026年一季度钙盐结构改善尚未证明可持续，低ROE和不稳定自由现金流不足以支撑当前约33倍滚动市盈率。",
+      "fair_value_range": [
+        5.2,
+        6.8
+      ],
+      "buy_zone": [
+        4.2,
+        5.0
+      ],
+      "sell_or_reduce_zone": [
+        7.8,
+        9.5
+      ],
+      "latest_report": "companies/CN/920422/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T18:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920425",
+      "market": "CN",
+      "ticker": "920425",
+      "name": "乐创技术",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "AI眼镜拉动点胶控制系统高增，但客户集中、应收激增且自由现金流未同步，20.72元缺乏安全边际，等待现金流验证和更低价格。",
+      "fair_value_range": [
+        14.0,
+        18.0
+      ],
+      "buy_zone": [
+        10.5,
+        13.0
+      ],
+      "sell_or_reduce_zone": [
+        23.0,
+        27.0
+      ],
+      "latest_report": "companies/CN/920425/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-07-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T19:15:49.5148394+08:00"
+    },
+    {
+      "symbol": "CN:920427",
+      "market": "CN",
+      "ticker": "920427",
+      "name": "华维设计",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "传统设计主业收缩且跨界封测并购严重亏损并引发审计保留意见，当前3倍以上PB已过度反映转型成功预期。",
+      "fair_value_range": [
+        2.4,
+        3.6
+      ],
+      "buy_zone": [
+        1.8,
+        2.4
+      ],
+      "sell_or_reduce_zone": [
+        5.5,
+        12.0
+      ],
+      "latest_report": "companies/CN/920427/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T19:10:04+08:00"
     },
     {
       "symbol": "CN:920429",
