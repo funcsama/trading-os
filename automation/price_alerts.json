@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6793,
+  "item_count": 6787,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,54 +52193,6 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
-    },
-    {
-      "symbol": "CN:920455",
-      "name": "汇隆活塞",
-      "type": "price_above",
-      "price": 4.8,
-      "reason": "进入减仓或不应追高区间，估值要求乐观情景较高概率兑现",
-      "latest_report": "companies/CN/920455/reports/2026-07-14-initial.md"
-    },
-    {
-      "symbol": "CN:920455",
-      "name": "汇隆活塞",
-      "type": "price_below",
-      "price": 2.8,
-      "reason": "进入有安全边际的研究和试仓区间，但须先验证基本面未恶化",
-      "latest_report": "companies/CN/920455/reports/2026-07-14-initial.md"
-    },
-    {
-      "symbol": "CN:920469",
-      "name": "富恒新材",
-      "type": "price_above",
-      "price": 2.5,
-      "reason": "高于合理价值上沿且缺乏安全边际，应减仓或继续回避",
-      "latest_report": "companies/CN/920469/reports/2026-07-14-initial.md"
-    },
-    {
-      "symbol": "CN:920469",
-      "name": "富恒新材",
-      "type": "price_below",
-      "price": 1.1,
-      "reason": "进入条件性买入区间，仍须先验证审计、内控、存货及现金流修复",
-      "latest_report": "companies/CN/920469/reports/2026-07-14-initial.md"
-    },
-    {
-      "symbol": "CN:920471",
-      "name": "美邦科技",
-      "type": "price_above",
-      "price": 10.5,
-      "reason": "进入减仓或不应追高区间",
-      "latest_report": "companies/CN/920471/reports/2026-07-14-initial.md"
-    },
-    {
-      "symbol": "CN:920471",
-      "name": "美邦科技",
-      "type": "price_below",
-      "price": 7.0,
-      "reason": "进入有安全边际的买入区间，但仍须重新验证核心假设",
-      "latest_report": "companies/CN/920471/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920475",
