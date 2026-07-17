@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2085,
+  "company_count": 2088,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920405",
+      "market": "CN",
+      "ticker": "920405",
+      "name": "海希通讯",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "工业无线遥控业务有一定壁垒，但储能扩张依赖关联客户和外部融资，叠加审计保留意见与内控否定意见，20.15元缺乏安全边际。",
+      "fair_value_range": [
+        9.0,
+        12.0
+      ],
+      "buy_zone": [
+        6.5,
+        8.0
+      ],
+      "sell_or_reduce_zone": [
+        14.0,
+        20.0
+      ],
+      "latest_report": "companies/CN/920405/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-30",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T05:00:46+08:00"
+    },
+    {
+      "symbol": "CN:920407",
+      "market": "CN",
+      "ticker": "920407",
+      "name": "驰诚股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "气体安全监测业务具备资质与研发积累，但利润、毛利率和资本回报未跟上收入增长，当前约59倍PE已透支乐观预期。",
+      "fair_value_range": [
+        4.2,
+        5.8
+      ],
+      "buy_zone": [
+        3.8,
+        4.8
+      ],
+      "sell_or_reduce_zone": [
+        8.0,
+        10.5
+      ],
+      "latest_report": "companies/CN/920407/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T21:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920414",
+      "market": "CN",
+      "ticker": "920414",
+      "name": "欧普泰",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "传统光伏检测需求仍在收缩且新业务尚未规模化，当前价格已透支强复苏与现金流改善，应等待显著安全边际和基本面验证。",
+      "fair_value_range": [
+        3.5,
+        5.0
+      ],
+      "buy_zone": [
+        2.8,
+        3.5
+      ],
+      "sell_or_reduce_zone": [
+        6.5,
+        8.5
+      ],
+      "latest_report": "companies/CN/920414/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:30:00+08:00"
     },
     {
       "symbol": "CN:920415",
