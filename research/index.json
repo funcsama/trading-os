@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2067,
+  "company_count": 2070,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920475",
+      "market": "CN",
+      "ticker": "920475",
+      "name": "三友科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分龙头的订单正在恢复，但低毛利、负自由现金流、杠杆上升和跨界投资使当前3倍以上PB缺乏安全边际，仅在6.5元以下且现金流验证后小仓参与。",
+      "fair_value_range": [
+        6.8,
+        8.5
+      ],
+      "buy_zone": [
+        5.5,
+        6.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        11.5
+      ],
+      "latest_report": "companies/CN/920475/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T13:41:06+08:00"
+    },
+    {
+      "symbol": "CN:920476",
+      "market": "CN",
+      "ticker": "920476",
+      "name": "海能技术",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "高毛利国产科学仪器平台的经营质量正在修复，但当前约44倍市盈率已透支色谱放量和国产替代预期，应等待13.5元以下并复核自由现金流后再介入。",
+      "fair_value_range": [
+        13,
+        18
+      ],
+      "buy_zone": [
+        10.5,
+        13.5
+      ],
+      "sell_or_reduce_zone": [
+        22,
+        26
+      ],
+      "latest_report": "companies/CN/920476/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T13:34:32+08:00"
+    },
+    {
+      "symbol": "CN:920478",
+      "market": "CN",
+      "ticker": "920478",
+      "name": "峆一药业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "工艺和日韩客户积累有一定价值，但客户去库存导致盈利骤降、重资本扩产尚未验证回报，11.42元缺乏安全边际。",
+      "fair_value_range": [
+        7.5,
+        9.0
+      ],
+      "buy_zone": [
+        6.0,
+        7.0
+      ],
+      "sell_or_reduce_zone": [
+        10.5,
+        12.0
+      ],
+      "latest_report": "companies/CN/920478/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T13:32:22+08:00"
     },
     {
       "symbol": "CN:920489",

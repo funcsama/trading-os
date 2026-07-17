@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6781,
+  "item_count": 6787,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920475",
+      "name": "三友科技",
+      "type": "price_above",
+      "price": 10.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920475/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920475",
+      "name": "三友科技",
+      "type": "price_below",
+      "price": 6.5,
+      "reason": "进入有安全边际的观察性买入区间，仍须重新验证基本面",
+      "latest_report": "companies/CN/920475/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920476",
+      "name": "海能技术",
+      "type": "price_above",
+      "price": 22,
+      "reason": "进入减仓或不应追高区间，当前估值已要求较高增长兑现",
+      "latest_report": "companies/CN/920476/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920476",
+      "name": "海能技术",
+      "type": "price_below",
+      "price": 13.5,
+      "reason": "进入估值复核区，只有基本面未恶化时才考虑分批买入",
+      "latest_report": "companies/CN/920476/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920478",
+      "name": "峆一药业",
+      "type": "price_above",
+      "price": 10.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920478/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920478",
+      "name": "峆一药业",
+      "type": "price_below",
+      "price": 7.0,
+      "reason": "进入候选买入区间，但须先复核订单恢复与资本回报假设",
+      "latest_report": "companies/CN/920478/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920489",
