@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2088,
+  "company_count": 2091,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920396",
+      "market": "CN",
+      "ticker": "920396",
+      "name": "常辅股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "核电资质与客户验证形成细分壁垒，但当前估值已透支增长，且应收集中、扩产资本开支和自由现金流脆弱性尚未消化。",
+      "fair_value_range": [
+        10,
+        14
+      ],
+      "buy_zone": [
+        8.5,
+        11
+      ],
+      "sell_or_reduce_zone": [
+        16,
+        19
+      ],
+      "latest_report": "companies/CN/920396/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920402",
+      "market": "CN",
+      "ticker": "920402",
+      "name": "硅烷科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "硅烷供给过剩令主业负毛利、自由现金流转负且关联客户高度集中，当前价格已透支强劲周期修复，缺少安全边际。",
+      "fair_value_range": [
+        4.2,
+        6.2
+      ],
+      "buy_zone": [
+        3.2,
+        4.0
+      ],
+      "sell_or_reduce_zone": [
+        7.5,
+        12.0
+      ],
+      "latest_report": "companies/CN/920402/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920403",
+      "market": "CN",
+      "ticker": "920403",
+      "name": "康农种业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "核心品种和资本回报优于多数种企，但单品、库存退货及治理风险高，16.11元已计入较快增长，等待9.5-11.5元安全边际。",
+      "fair_value_range": [
+        12.0,
+        15.0
+      ],
+      "buy_zone": [
+        9.5,
+        11.5
+      ],
+      "sell_or_reduce_zone": [
+        18.0,
+        20.0
+      ],
+      "latest_report": "companies/CN/920403/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T05:49:57+08:00"
     },
     {
       "symbol": "CN:920405",
