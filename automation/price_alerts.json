@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6793,
+  "item_count": 6799,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920438",
+      "name": "戈碧迦",
+      "type": "price_above",
+      "price": 35,
+      "reason": "进入减仓或不应追高区间，估值重新依赖远期乐观预期",
+      "latest_report": "companies/CN/920438/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920438",
+      "name": "戈碧迦",
+      "type": "price_below",
+      "price": 12,
+      "reason": "进入可能有安全边际的研究区，仍须重新验证核心假设后才能建仓",
+      "latest_report": "companies/CN/920438/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920445",
+      "name": "龙竹科技",
+      "type": "price_above",
+      "price": 6.2,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920445/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920445",
+      "name": "龙竹科技",
+      "type": "price_below",
+      "price": 4.1,
+      "reason": "进入有安全边际的买入区间，但须先复核核心假设",
+      "latest_report": "companies/CN/920445/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920454",
+      "name": "同心传动",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "超过合理价值上沿并进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920454/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920454",
+      "name": "同心传动",
+      "type": "price_below",
+      "price": 5.3,
+      "reason": "进入有安全边际的观察买入区间，需先复核基本面",
+      "latest_report": "companies/CN/920454/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920455",

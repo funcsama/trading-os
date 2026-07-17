@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2073,
+  "company_count": 2076,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920438",
+      "market": "CN",
+      "ticker": "920438",
+      "name": "戈碧迦",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "配方与窑炉能力真实，但新业务尚未形成规模收入、自由现金流和资本回报偏弱，128元已把电子玻纤与玻璃基板的远期成功过度确定化。",
+      "fair_value_range": [
+        12,
+        24
+      ],
+      "buy_zone": [
+        8,
+        12
+      ],
+      "sell_or_reduce_zone": [
+        35,
+        50
+      ],
+      "latest_report": "companies/CN/920438/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920445",
+      "market": "CN",
+      "ticker": "920445",
+      "name": "龙竹科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "传统竹制家居现金流尚可，但宜家客户高度集中、扣非资本回报偏低且新材料仍为负毛利，6.38元已提前定价产业化成功，等待4.1元以下安全边际。",
+      "fair_value_range": [
+        4.3,
+        5.5
+      ],
+      "buy_zone": [
+        3.5,
+        4.1
+      ],
+      "sell_or_reduce_zone": [
+        6.2,
+        7.5
+      ],
+      "latest_report": "companies/CN/920445/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920454",
+      "market": "CN",
+      "ticker": "920454",
+      "name": "同心传动",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "资产负债表稳健但护城河窄、客户与应收集中，当前约42倍TTM PE已透支增长，需等待显著安全边际。",
+      "fair_value_range": [
+        5.8,
+        7.2
+      ],
+      "buy_zone": [
+        4.3,
+        5.3
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        30.0
+      ],
+      "latest_report": "companies/CN/920454/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T16:30:00+08:00"
     },
     {
       "symbol": "CN:920455",

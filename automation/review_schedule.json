@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5607,
+  "item_count": 5612,
   "items": [
     {
       "date": "2026-06-30",
@@ -14197,6 +14197,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920438",
+      "name": "戈碧迦",
+      "reason": "复核2026年半年报、特种功能玻璃恢复和经营现金流",
+      "latest_report": "companies/CN/920438/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920445",
+      "name": "龙竹科技",
+      "reason": "复查2026年半年报中的宜家订单、跨境电商费用率、自由现金流和新材料毛利率",
+      "latest_report": "companies/CN/920445/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920454",
+      "name": "同心传动",
+      "reason": "复核2026年半年报的收入恢复、毛利率、应收账款和经营现金流",
+      "latest_report": "companies/CN/920454/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29698,6 +29719,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920454",
+      "name": "同心传动",
+      "reason": "复核2026年三季度经营趋势与核心假设",
+      "latest_report": "companies/CN/920454/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920475",
       "name": "三友科技",
       "reason": "复核2026年三季报及新业务资本投入边界",
@@ -37339,6 +37367,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920438",
+      "name": "戈碧迦",
+      "reason": "复核2026年报、电子玻纤项目进展、ROIC与自由现金流",
+      "latest_report": "companies/CN/920438/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",
