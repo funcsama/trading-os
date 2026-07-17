@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2064,
+  "company_count": 2067,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920489",
+      "market": "CN",
+      "ticker": "920489",
+      "name": "佳先股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "传统助剂低回报、电子材料尚未验证多客户和正自由现金流，当前价格已透支转型成功预期。",
+      "fair_value_range": [
+        5.0,
+        8.0
+      ],
+      "buy_zone": [
+        4.0,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        12.0
+      ],
+      "latest_report": "companies/CN/920489/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T13:10:00+08:00"
+    },
+    {
+      "symbol": "CN:920491",
+      "market": "CN",
+      "ticker": "920491",
+      "name": "奥迪威",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司具备超声波与压电传感一体化能力且资产负债表稳健，但2026Q1业绩转弱、扩产资本需求高，29.60元已透支乐观预期。",
+      "fair_value_range": [
+        17,
+        22
+      ],
+      "buy_zone": [
+        13,
+        16
+      ],
+      "sell_or_reduce_zone": [
+        27,
+        33
+      ],
+      "latest_report": "companies/CN/920491/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920493",
+      "market": "CN",
+      "ticker": "920493",
+      "name": "并行科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "算力需求带动收入高速增长，但毛利率下行、高杠杆、负自由现金流与财务内控风险使109元附近赔率明显不足。",
+      "fair_value_range": [
+        52,
+        70
+      ],
+      "buy_zone": [
+        38,
+        50
+      ],
+      "sell_or_reduce_zone": [
+        85,
+        110
+      ],
+      "latest_report": "companies/CN/920493/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T12:54:34+08:00"
     },
     {
       "symbol": "CN:920496",
