@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2076,
+  "company_count": 2079,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920429",
+      "market": "CN",
+      "ticker": "920429",
+      "name": "康比特",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "专业运动营养品牌具备增长空间，但原料涨价、利润率下滑和扩产期负自由现金流尚未被当前价格充分补偿。",
+      "fair_value_range": [
+        7.4,
+        9.2
+      ],
+      "buy_zone": [
+        6.0,
+        7.0
+      ],
+      "sell_or_reduce_zone": [
+        10.5,
+        12.5
+      ],
+      "latest_report": "companies/CN/920429/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T18:29:13+08:00"
+    },
+    {
+      "symbol": "CN:920433",
+      "market": "CN",
+      "ticker": "920433",
+      "name": "大唐药业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "蒙药品牌与批文尚未转化为稳定现金回报，2025年核心外用品种失速且重资产低效，当前价格已透支高利润修复预期。",
+      "fair_value_range": [
+        1.2,
+        2.0
+      ],
+      "buy_zone": [
+        0.8,
+        1.2
+      ],
+      "sell_or_reduce_zone": [
+        2.8,
+        3.5
+      ],
+      "latest_report": "companies/CN/920433/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T18:37:30+08:00"
+    },
+    {
+      "symbol": "CN:920436",
+      "market": "CN",
+      "ticker": "920436",
+      "name": "大地电气",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "收入扩张和一季度微利尚未转化为自由现金流，当前价格已提前计入埃易泰克整合成功与净利率修复，需等待更低价格和现金流验证。",
+      "fair_value_range": [
+        6.5,
+        8.5
+      ],
+      "buy_zone": [
+        5.2,
+        6.2
+      ],
+      "sell_or_reduce_zone": [
+        9.5,
+        11.0
+      ],
+      "latest_report": "companies/CN/920436/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-17T18:28:08+08:00"
     },
     {
       "symbol": "CN:920438",
