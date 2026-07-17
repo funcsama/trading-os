@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5636,
+  "item_count": 5641,
   "items": [
     {
       "date": "2026-06-30",
@@ -14211,6 +14211,20 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920392",
+      "name": "佳合科技",
+      "reason": "复核2026年半年报、广德亏损、应收账款及自由现金流",
+      "latest_report": "companies/CN/920392/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920395",
+      "name": "朗鸿科技",
+      "reason": "复核2026年中报的订单恢复、毛利率、客户集中度、经营现金流和募投进度",
+      "latest_report": "companies/CN/920395/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29831,6 +29845,20 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920394",
+      "name": "民士达",
+      "reason": "复核三季报收入、毛利率、存货应收和经营现金流",
+      "latest_report": "companies/CN/920394/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920395",
+      "name": "朗鸿科技",
+      "reason": "复核2026年三季报及研发投入、股份支付和新增产能回报",
+      "latest_report": "companies/CN/920395/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920407",
       "name": "驰诚股份",
       "reason": "复核2026年三季报及储能消防新标准相关产品落地",
@@ -32593,6 +32621,13 @@
       "name": "汇成股份",
       "reason": "复查2026年报，评估扩产与新业务是否形成可持续利润",
       "latest_report": "companies/CN/688403/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2027-03-31",
+      "symbol": "CN:920394",
+      "name": "民士达",
+      "reason": "复核2026年报、中菱科技业绩承诺和扩产后自由现金流",
+      "latest_report": "companies/CN/920394/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-03-31",

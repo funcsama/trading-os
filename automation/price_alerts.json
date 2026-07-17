@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6829,
+  "item_count": 6835,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920392",
+      "name": "佳合科技",
+      "type": "price_above",
+      "price": 11.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920392/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920392",
+      "name": "佳合科技",
+      "type": "price_below",
+      "price": 6.8,
+      "reason": "进入有安全边际的研究买入区，仍须先验证核心假设",
+      "latest_report": "companies/CN/920392/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920394",
+      "name": "民士达",
+      "type": "price_above",
+      "price": 50,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920394/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920394",
+      "name": "民士达",
+      "type": "price_below",
+      "price": 30,
+      "reason": "进入有安全边际的买入前复核区，需确认基本面未恶化",
+      "latest_report": "companies/CN/920394/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920395",
+      "name": "朗鸿科技",
+      "type": "price_above",
+      "price": 6.2,
+      "reason": "进入减仓或不应追高区间，除非盈利和自由现金流显著上修",
+      "latest_report": "companies/CN/920395/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920395",
+      "name": "朗鸿科技",
+      "type": "price_below",
+      "price": 4.5,
+      "reason": "进入有安全边际的候选买入区间，需先复核客户、毛利率和募投假设",
+      "latest_report": "companies/CN/920395/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920396",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2091,
+  "company_count": 2094,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920392",
+      "market": "CN",
+      "ticker": "920392",
+      "name": "佳合科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "越南与广德扩张尚未转化为归母自由现金流，当前高估值已透支资本回报改善预期。",
+      "fair_value_range": [
+        7.0,
+        9.0
+      ],
+      "buy_zone": [
+        5.5,
+        6.8
+      ],
+      "sell_or_reduce_zone": [
+        11.0,
+        15.0
+      ],
+      "latest_report": "companies/CN/920392/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920394",
+      "market": "CN",
+      "ticker": "920394",
+      "name": "民士达",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "国产芳纶纸龙头盈利与资本回报优秀，但扩产期自由现金流偏弱，57.57元已过度定价成长和并购协同，当前缺乏安全边际。",
+      "fair_value_range": [
+        33,
+        42
+      ],
+      "buy_zone": [
+        25,
+        30
+      ],
+      "sell_or_reduce_zone": [
+        50,
+        65
+      ],
+      "latest_report": "companies/CN/920394/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T12:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920395",
+      "market": "CN",
+      "ticker": "920395",
+      "name": "朗鸿科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "高毛利和高资本回报的细分零售安防企业，但客户集中、订单下滑和扩产现金消耗尚未被当前约26倍PE充分补偿。",
+      "fair_value_range": [
+        4.4,
+        5.6
+      ],
+      "buy_zone": [
+        3.8,
+        4.5
+      ],
+      "sell_or_reduce_zone": [
+        6.2,
+        7.5
+      ],
+      "latest_report": "companies/CN/920395/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T16:00:00+08:00"
     },
     {
       "symbol": "CN:920396",
