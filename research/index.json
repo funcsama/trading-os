@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2100,
+  "company_count": 2103,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920357",
+      "market": "CN",
+      "ticker": "920357",
+      "name": "雅葆轩",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "高增长与较好账面资本回报尚不足以抵消客户极度集中、自由现金流为负和再融资稀释风险，19.07元缺乏安全边际。",
+      "fair_value_range": [
+        12,
+        16
+      ],
+      "buy_zone": [
+        9.5,
+        12
+      ],
+      "sell_or_reduce_zone": [
+        18,
+        22
+      ],
+      "latest_report": "companies/CN/920357/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T17:20:53+08:00"
+    },
+    {
+      "symbol": "CN:920363",
+      "market": "CN",
+      "ticker": "920363",
+      "name": "莱赛激光",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "收入修复尚未转化为高质量利润与自由现金流，11.78元已透支新业务产业化和利润率大幅提升，当前缺乏安全边际。",
+      "fair_value_range": [
+        3.2,
+        4.5
+      ],
+      "buy_zone": [
+        2.6,
+        3.2
+      ],
+      "sell_or_reduce_zone": [
+        6.0,
+        20.0
+      ],
+      "latest_report": "companies/CN/920363/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T17:19:29+08:00"
+    },
+    {
+      "symbol": "CN:920367",
+      "market": "CN",
+      "ticker": "920367",
+      "name": "新赣江",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "原料药壁垒下降且募投回报未验证，ROE和自由现金流不足以支撑百倍估值，当前应回避并等待5至6.5元的安全边际。",
+      "fair_value_range": [
+        6.5,
+        10.0
+      ],
+      "buy_zone": [
+        5.0,
+        6.5
+      ],
+      "sell_or_reduce_zone": [
+        10.0,
+        13.0
+      ],
+      "latest_report": "companies/CN/920367/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T17:30:00+08:00"
     },
     {
       "symbol": "CN:920368",

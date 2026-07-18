@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6847,
+  "item_count": 6853,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920357",
+      "name": "雅葆轩",
+      "type": "price_above",
+      "price": 18,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920357/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920357",
+      "name": "雅葆轩",
+      "type": "price_below",
+      "price": 12,
+      "reason": "进入有安全边际的初步买入区间，仍需复核基本面",
+      "latest_report": "companies/CN/920357/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920363",
+      "name": "莱赛激光",
+      "type": "price_above",
+      "price": 6.0,
+      "reason": "超过基准合理价值并进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920363/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920363",
+      "name": "莱赛激光",
+      "type": "price_below",
+      "price": 3.2,
+      "reason": "进入有初步安全边际的买入观察区，但必须先复核现金流和应收质量",
+      "latest_report": "companies/CN/920363/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920367",
+      "name": "新赣江",
+      "type": "price_above",
+      "price": 10.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920367/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920367",
+      "name": "新赣江",
+      "type": "price_below",
+      "price": 6.5,
+      "reason": "进入需结合基本面复核的买入区间上沿，不因价格下跌机械加仓",
+      "latest_report": "companies/CN/920367/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920368",

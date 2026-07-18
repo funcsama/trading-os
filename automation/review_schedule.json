@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5651,
+  "item_count": 5656,
   "items": [
     {
       "date": "2026-06-30",
@@ -14211,6 +14211,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920357",
+      "name": "雅葆轩",
+      "reason": "复查2026年半年报、客户集中度、现金流及定增进展",
+      "latest_report": "companies/CN/920357/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920363",
+      "name": "莱赛激光",
+      "reason": "复核2026年半年报的利润率、应收账款、经营现金流和募投进度",
+      "latest_report": "companies/CN/920363/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920367",
+      "name": "新赣江",
+      "reason": "复核2026年中报的制剂增速、扣非利润、经营现金流、研发资本化和在建工程进度",
+      "latest_report": "companies/CN/920367/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -31734,6 +31755,13 @@
       "latest_report": "companies/CN/600733/reports/2026-07-10-initial.md"
     },
     {
+      "date": "2027-01-15",
+      "symbol": "CN:920363",
+      "name": "莱赛激光",
+      "reason": "核验募投项目是否在2026年12月31日前达到预定可使用状态",
+      "latest_report": "companies/CN/920363/reports/2026-07-14-initial.md"
+    },
+    {
       "date": "2027-01-31",
       "symbol": "CN:002167",
       "name": "东方锆业",
@@ -31942,6 +31970,13 @@
       "name": "视涯科技",
       "reason": "复核全年经营趋势、XR终端新品发布和Micro-LED替代风险。",
       "latest_report": "companies/CN/688781/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2027-02-10",
+      "symbol": "CN:920367",
+      "name": "新赣江",
+      "reason": "核验中成药制剂保健品一期和新增口服固体制剂片剂车间是否按延期节点达到可使用状态",
+      "latest_report": "companies/CN/920367/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-02-28",
