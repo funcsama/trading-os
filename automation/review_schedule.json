@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5641,
+  "item_count": 5646,
   "items": [
     {
       "date": "2026-06-30",
@@ -14214,6 +14214,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920378",
+      "name": "泰德股份",
+      "reason": "复核2026年半年报的毛利率、扣非利润、经营现金流和净债务",
+      "latest_report": "companies/CN/920378/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920392",
       "name": "佳合科技",
       "reason": "复核2026年半年报、广德亏损、应收账款及自由现金流",
@@ -14718,6 +14725,13 @@
     },
     {
       "date": "2026-09-01",
+      "symbol": "CN:920375",
+      "name": "派诺科技",
+      "reason": "复核2026年中报的毛利率、应收回款、存货和自由现金流",
+      "latest_report": "companies/CN/920375/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-09-01",
       "symbol": "CN:920871",
       "name": "派特尔",
       "reason": "2026年半年报披露后复查收入、毛利率、现金流和客户回款",
@@ -15198,6 +15212,13 @@
       "name": "松发股份",
       "reason": "再融资发行公告可能出现（注册稿后 1-3 月内定期跟踪发行公告落地）",
       "latest_report": "companies/CN/603268/reports/2026-07-10-followup.md"
+    },
+    {
+      "date": "2026-09-30",
+      "symbol": "CN:920374",
+      "name": "云里物里",
+      "reason": "复查2026年中报后的利润率、现金流、库存与募投执行情况",
+      "latest_report": "companies/CN/920374/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-09-30",
@@ -37552,6 +37573,13 @@
     },
     {
       "date": "2027-04-30",
+      "symbol": "CN:920375",
+      "name": "派诺科技",
+      "reason": "复核2026年报及武汉PACK项目资本回报假设",
+      "latest_report": "companies/CN/920375/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
       "symbol": "CN:920405",
       "name": "海希通讯",
       "reason": "复核2026年年报及内部控制审计意见是否恢复标准意见",
@@ -37654,6 +37682,13 @@
       "name": "瑞联新材",
       "reason": "复核200吨PSPI项目完工、客户订单和产能利用率计划",
       "latest_report": "companies/CN/688550/reports/2026-07-12-initial.md"
+    },
+    {
+      "date": "2027-06-19",
+      "symbol": "CN:920378",
+      "name": "泰德股份",
+      "reason": "一致行动协议及表决权委托安排到期前复核控制权稳定性",
+      "latest_report": "companies/CN/920378/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-06-30",
