@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5646,
+  "item_count": 5651,
   "items": [
     {
       "date": "2026-06-30",
@@ -14214,6 +14214,20 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920370",
+      "name": "新安洁",
+      "reason": "半年报窗口，复查应收回款、自由现金流及油基岩屑投产数据",
+      "latest_report": "companies/CN/920370/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920371",
+      "name": "欧福蛋业",
+      "reason": "复查2026年半年报、四川基地产能爬坡及经营现金流",
+      "latest_report": "companies/CN/920371/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920378",
       "name": "泰德股份",
       "reason": "复核2026年半年报的毛利率、扣非利润、经营现金流和净债务",
@@ -14778,6 +14792,13 @@
       "name": "春秋航空",
       "reason": "复查2026半年报，确认Q1高利润率是否延续",
       "latest_report": "companies/CN/601021/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-09-15",
+      "symbol": "CN:920368",
+      "name": "连城数控",
+      "reason": "复查2026年半年报的扣非利润、毛利率、经营现金流、应收存货与订单验收",
+      "latest_report": "companies/CN/920368/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-09-15",
@@ -29866,6 +29887,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920370",
+      "name": "新安洁",
+      "reason": "三季报窗口，验证盈利修复和资本开支纪律",
+      "latest_report": "companies/CN/920370/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920394",
       "name": "民士达",
       "reason": "复核三季报收入、毛利率、存货应收和经营现金流",
@@ -37570,6 +37598,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920371",
+      "name": "欧福蛋业",
+      "reason": "复查2026年年报、天津扩产项目回报和正常化盈利中枢",
+      "latest_report": "companies/CN/920371/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

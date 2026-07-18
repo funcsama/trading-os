@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6841,
+  "item_count": 6847,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920368",
+      "name": "连城数控",
+      "type": "price_above",
+      "price": 30,
+      "reason": "进入减仓或不应追高区间，需重新核对市场隐含的周期修复速度",
+      "latest_report": "companies/CN/920368/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920368",
+      "name": "连城数控",
+      "type": "price_below",
+      "price": 19,
+      "reason": "进入有一定安全边际的研究和分批买入区间，但须先确认基本面未恶化",
+      "latest_report": "companies/CN/920368/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920370",
+      "name": "新安洁",
+      "type": "price_above",
+      "price": 2.4,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920370/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920370",
+      "name": "新安洁",
+      "type": "price_below",
+      "price": 1.4,
+      "reason": "进入条件式买入观察区，仍需重新验证治理、回款和自由现金流",
+      "latest_report": "companies/CN/920370/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920371",
+      "name": "欧福蛋业",
+      "type": "price_above",
+      "price": 7.2,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920371/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920371",
+      "name": "欧福蛋业",
+      "type": "price_below",
+      "price": 4.8,
+      "reason": "进入有安全边际的首仓评估区间，仍须验证基本面未恶化",
+      "latest_report": "companies/CN/920371/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920374",

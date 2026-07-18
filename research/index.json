@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2097,
+  "company_count": 2100,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920368",
+      "market": "CN",
+      "ticker": "920368",
+      "name": "连城数控",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "技术与整线能力仍有价值，但光伏设备周期、隆基系关联客户集中和应收存货占用使现金质量偏弱，27.81元已预付较强修复预期，等待19元以下及基本面确认。",
+      "fair_value_range": [
+        19,
+        25
+      ],
+      "buy_zone": [
+        15,
+        19
+      ],
+      "sell_or_reduce_zone": [
+        30,
+        36
+      ],
+      "latest_report": "companies/CN/920368/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-09-15",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T16:03:41+08:00"
+    },
+    {
+      "symbol": "CN:920370",
+      "market": "CN",
+      "ticker": "920370",
+      "name": "新安洁",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "主业持续收缩、应收回款和治理风险未解，当前市销率已接近优质同行，价格尚无安全边际。",
+      "fair_value_range": [
+        1.5,
+        2.1
+      ],
+      "buy_zone": [
+        1.1,
+        1.4
+      ],
+      "sell_or_reduce_zone": [
+        2.4,
+        2.8
+      ],
+      "latest_report": "companies/CN/920370/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T16:25:29+08:00"
+    },
+    {
+      "symbol": "CN:920371",
+      "market": "CN",
+      "ticker": "920371",
+      "name": "欧福蛋业",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "专业化蛋品加工龙头资产负债表稳健，但2025年利润主要受益于低蛋价且扩产尚未转化为稳定自由现金流，6.86元缺乏安全边际。",
+      "fair_value_range": [
+        5.0,
+        6.2
+      ],
+      "buy_zone": [
+        4.2,
+        4.8
+      ],
+      "sell_or_reduce_zone": [
+        7.2,
+        8.0
+      ],
+      "latest_report": "companies/CN/920371/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T00:00:00+08:00"
     },
     {
       "symbol": "CN:920374",
