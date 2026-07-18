@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5656,
+  "item_count": 5659,
   "items": [
     {
       "date": "2026-06-30",
@@ -14211,6 +14211,13 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920346",
+      "name": "威贸电子",
+      "reason": "复核2026年中报的客户集中、毛利率、汇兑损益、现金流和新项目量产情况",
+      "latest_report": "companies/CN/920346/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29905,6 +29912,20 @@
       "name": "DR蘅东光",
       "reason": "复核2026年三季报及AI数据中心订单持续性",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920344",
+      "name": "三元基因",
+      "reason": "三季报后复核喷雾剂动销、销售费用率、自由现金流、净债务和RSV注册进度",
+      "latest_report": "companies/CN/920344/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920351",
+      "name": "华光源海",
+      "reason": "复查2026年半年报或三季报中的收入、扣非利润、应收减值、经营现金流及新船利用率",
+      "latest_report": "companies/CN/920351/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",

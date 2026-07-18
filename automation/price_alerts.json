@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6853,
+  "item_count": 6859,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920344",
+      "name": "三元基因",
+      "type": "price_above",
+      "price": 16,
+      "reason": "进入减仓或不应追高区间，除非基本面证据支持上调公允价值",
+      "latest_report": "companies/CN/920344/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920344",
+      "name": "三元基因",
+      "type": "price_below",
+      "price": 9,
+      "reason": "进入有安全边际的买入区间，但须先重新验证核心假设",
+      "latest_report": "companies/CN/920344/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920346",
+      "name": "威贸电子",
+      "type": "price_above",
+      "price": 15.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920346/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920346",
+      "name": "威贸电子",
+      "type": "price_below",
+      "price": 11.0,
+      "reason": "进入有安全边际的买入复核区间，仍需确认基本面未恶化",
+      "latest_report": "companies/CN/920346/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920351",
+      "name": "华光源海",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "进入减仓或不应追高区间，估值开始明显高于保守公允价值",
+      "latest_report": "companies/CN/920351/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920351",
+      "name": "华光源海",
+      "type": "price_below",
+      "price": 5.0,
+      "reason": "进入研究区，只有基本面未恶化且现金流赔率改善时才考虑小仓位",
+      "latest_report": "companies/CN/920351/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920357",

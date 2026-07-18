@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2103,
+  "company_count": 2106,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920344",
+      "market": "CN",
+      "ticker": "920344",
+      "name": "三元基因",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "独家人干扰素α1b剂型与RSV管线具备期权价值，但低资本回报、重资产负债、高销售费用和当前高估值使赔率不足。",
+      "fair_value_range": [
+        9,
+        13
+      ],
+      "buy_zone": [
+        7,
+        9
+      ],
+      "sell_or_reduce_zone": [
+        16,
+        22
+      ],
+      "latest_report": "companies/CN/920344/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T20:45:00+08:00"
+    },
+    {
+      "symbol": "CN:920346",
+      "market": "CN",
+      "ticker": "920346",
+      "name": "威贸电子",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "现金流和资产负债表稳健，但客户高度集中，15.32元已隐含显著高于历史的自由现金流增长，等待9.5-11.0元且基本面验证后再买。",
+      "fair_value_range": [
+        11.5,
+        13.5
+      ],
+      "buy_zone": [
+        9.5,
+        11.0
+      ],
+      "sell_or_reduce_zone": [
+        15.0,
+        17.0
+      ],
+      "latest_report": "companies/CN/920346/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T20:47:21+08:00"
+    },
+    {
+      "symbol": "CN:920351",
+      "market": "CN",
+      "ticker": "920351",
+      "name": "华光源海",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "区域江海联运网络尚未转化为稳定高回报自由现金流，当前约54.5倍行情口径PE和2.26倍PB已透支核心利润与现金流修复预期。",
+      "fair_value_range": [
+        5.5,
+        7.0
+      ],
+      "buy_zone": [
+        4.2,
+        5.0
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        10.5
+      ],
+      "latest_report": "companies/CN/920351/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T20:40:26+08:00"
     },
     {
       "symbol": "CN:920357",
