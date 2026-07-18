@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6865,
+  "item_count": 6871,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920278",
+      "name": "鹿得医疗",
+      "type": "price_above",
+      "price": 4.8,
+      "reason": "进入减仓或不应追高区间，需盈利上修才能支撑估值",
+      "latest_report": "companies/CN/920278/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920278",
+      "name": "鹿得医疗",
+      "type": "price_below",
+      "price": 3.0,
+      "reason": "进入可重新核验基本面与安全边际的买入观察区间",
+      "latest_report": "companies/CN/920278/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920284",
+      "name": "灵鸽科技",
+      "type": "price_above",
+      "price": 15,
+      "reason": "进入乐观情景定价区，应减仓或不应追高",
+      "latest_report": "companies/CN/920284/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920284",
+      "name": "灵鸽科技",
+      "type": "price_below",
+      "price": 8,
+      "reason": "进入可复核安全边际的观察区，须同时验证基本面未恶化",
+      "latest_report": "companies/CN/920284/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920299",
+      "name": "灿能电力",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920299/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920299",
+      "name": "灿能电力",
+      "type": "price_below",
+      "price": 8.0,
+      "reason": "进入有初步安全边际的买入区间，但仍需验证基本面未恶化",
+      "latest_report": "companies/CN/920299/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920300",

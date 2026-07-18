@@ -1,0 +1,65 @@
+{
+  "retrieved_at": "2026-07-18",
+  "note": "行情与财务来自东方财富公开接口；行情为接口最新值，财务期为2025年报和2026年一季报。PE、PB与市值仅作横截面参照。",
+  "peers": [
+    {
+      "name": "宏工科技",
+      "ticker": "301662",
+      "market_cap_cny": 7435600000,
+      "pe_ttm": 24.44,
+      "pb": 4.95,
+      "revenue_2025_cny": 2032000000,
+      "revenue_growth_2025_pct": -2.82,
+      "gross_margin_2025_pct": 21.38,
+      "net_margin_2025_pct": 2.95,
+      "revenue_q1_2026_cny": 472000000,
+      "revenue_growth_q1_2026_pct": 82.05
+    },
+    {
+      "name": "赢合科技",
+      "ticker": "300457",
+      "market_cap_cny": 11464838436,
+      "pe_ttm": 46.30,
+      "pb": 1.67,
+      "revenue_2025_cny": 9445000000,
+      "revenue_growth_2025_pct": 10.81,
+      "gross_margin_2025_pct": 24.37,
+      "net_margin_2025_pct": 8.29,
+      "revenue_q1_2026_cny": 2049000000,
+      "revenue_growth_q1_2026_pct": 53.14
+    },
+    {
+      "name": "金银河",
+      "ticker": "300619",
+      "market_cap_cny": 5277235618,
+      "pe_ttm": -91.09,
+      "pb": 3.35,
+      "revenue_2025_cny": 1930000000,
+      "revenue_growth_2025_pct": 27.90,
+      "gross_margin_2025_pct": 22.15,
+      "net_margin_2025_pct": 0.57,
+      "revenue_q1_2026_cny": 237000000,
+      "revenue_growth_q1_2026_pct": 60.39
+    },
+    {
+      "name": "瀚川智能",
+      "ticker": "688022",
+      "market_cap_cny": 1320846213,
+      "pe_ttm": -244.81,
+      "pb": 2.00,
+      "revenue_2025_cny": 758100000,
+      "revenue_growth_2025_pct": 58.50,
+      "gross_margin_2025_pct": 29.42,
+      "net_margin_2025_pct": 4.26,
+      "revenue_q1_2026_cny": 149100000,
+      "revenue_growth_q1_2026_pct": -21.97,
+      "warning": "2025年扣非净利润仍为负，且公司证券简称已带ST，PE失真。"
+    }
+  ],
+  "urls": [
+    "https://emweb.securities.eastmoney.com/PC_HSF10/FinanceAnalysis/Index?type=web&code=SZ301662",
+    "https://emweb.securities.eastmoney.com/PC_HSF10/FinanceAnalysis/Index?type=web&code=SZ300457",
+    "https://emweb.securities.eastmoney.com/PC_HSF10/FinanceAnalysis/Index?type=web&code=SZ300619",
+    "https://emweb.securities.eastmoney.com/PC_HSF10/FinanceAnalysis/Index?type=web&code=SH688022"
+  ]
+}
