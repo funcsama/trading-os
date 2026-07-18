@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6859,
+  "item_count": 6865,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920300",
+      "name": "辰光医疗",
+      "type": "price_above",
+      "price": 7.0,
+      "reason": "进入减仓或不应追高区间，需显著上修长期现金流才能维持估值",
+      "latest_report": "companies/CN/920300/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920300",
+      "name": "辰光医疗",
+      "type": "price_below",
+      "price": 3.5,
+      "reason": "进入有安全边际的基本面复核区，确认逻辑未恶化后方可试仓",
+      "latest_report": "companies/CN/920300/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920304",
+      "name": "迪尔化工",
+      "type": "price_above",
+      "price": 8.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920304/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920304",
+      "name": "迪尔化工",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入有安全边际的买入观察区，但需先验证基本面未恶化",
+      "latest_report": "companies/CN/920304/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920339",
+      "name": "恒太照明",
+      "type": "price_above",
+      "price": 8.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920339/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920339",
+      "name": "恒太照明",
+      "type": "price_below",
+      "price": 4.5,
+      "reason": "进入有安全边际的买入研究区间，仍须先复核基本面",
+      "latest_report": "companies/CN/920339/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920344",

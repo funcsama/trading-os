@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2106,
+  "company_count": 2109,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920300",
+      "market": "CN",
+      "ticker": "920300",
+      "name": "辰光医疗",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "射频探测器和特种超导磁体具备局部技术价值，但整机战略冲突、连续亏损、高净债务与减值风险尚未解决，当前约9.7倍市销率严重透支反转预期。",
+      "fair_value_range": [
+        3.5,
+        5.5
+      ],
+      "buy_zone": [
+        2.5,
+        3.5
+      ],
+      "sell_or_reduce_zone": [
+        7.0,
+        9.0
+      ],
+      "latest_report": "companies/CN/920300/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920304",
+      "market": "CN",
+      "ticker": "920304",
+      "name": "迪尔化工",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "熔盐带来增长期权，但利润率、回款和资本回报尚未验证，当前估值已透支较乐观预期。",
+      "fair_value_range": [
+        5.5,
+        7.0
+      ],
+      "buy_zone": [
+        4.5,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        8.5,
+        10.0
+      ],
+      "latest_report": "companies/CN/920304/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920339",
+      "market": "CN",
+      "ticker": "920339",
+      "name": "恒太照明",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "净现金较厚但北美依赖、议价力弱且2026Q1转亏，当前估值透支越南产能与新品修复，应等待显著安全边际。",
+      "fair_value_range": [
+        4.5,
+        6.5
+      ],
+      "buy_zone": [
+        3.6,
+        4.5
+      ],
+      "sell_or_reduce_zone": [
+        8.0,
+        10.0
+      ],
+      "latest_report": "companies/CN/920339/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-18T23:18:38+08:00"
     },
     {
       "symbol": "CN:920344",
