@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6871,
+  "item_count": 6877,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920273",
+      "name": "一致魔芋",
+      "type": "price_above",
+      "price": 16.5,
+      "reason": "进入减仓或不应追高区间，价格已超过公允价值上沿",
+      "latest_report": "companies/CN/920273/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920273",
+      "name": "一致魔芋",
+      "type": "price_below",
+      "price": 10.5,
+      "reason": "进入有安全边际的买入观察区，但仍须验证毛利率和归一化现金流",
+      "latest_report": "companies/CN/920273/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920274",
+      "name": "宏裕包材",
+      "type": "price_above",
+      "price": 13.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920274/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920274",
+      "name": "宏裕包材",
+      "type": "price_below",
+      "price": 8.0,
+      "reason": "进入有安全边际的研究性买入区间，仍需先验证基本面未恶化",
+      "latest_report": "companies/CN/920274/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920275",
+      "name": "驱动力",
+      "type": "price_above",
+      "price": 3.2,
+      "reason": "进入减仓或不应追高区间，估值高于公允价值上沿",
+      "latest_report": "companies/CN/920275/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920275",
+      "name": "驱动力",
+      "type": "price_below",
+      "price": 1.7,
+      "reason": "进入条件性买入区，但必须先验证高毛利产品、主营利润和现金流未恶化",
+      "latest_report": "companies/CN/920275/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920278",

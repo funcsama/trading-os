@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5670,
+  "item_count": 5676,
   "items": [
     {
       "date": "2026-06-30",
@@ -14211,6 +14211,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920273",
+      "name": "一致魔芋",
+      "reason": "不晚于此日期复查2026年中报、单季毛利率和剔除库存变动后的经营现金流",
+      "latest_report": "companies/CN/920273/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920274",
+      "name": "宏裕包材",
+      "reason": "复核2026年半年报的毛利率、经营现金流、关联客户与新材料减亏情况",
+      "latest_report": "companies/CN/920274/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920275",
+      "name": "驱动力",
+      "reason": "复核2026年中报的产品结构、毛利率、主营利润和经营现金流",
+      "latest_report": "companies/CN/920275/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29957,6 +29978,20 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920273",
+      "name": "一致魔芋",
+      "reason": "复查2026年三季报及原料成本向售价传导情况",
+      "latest_report": "companies/CN/920273/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920275",
+      "name": "驱动力",
+      "reason": "复核2026年三季报及高毛利产品恢复情况",
+      "latest_report": "companies/CN/920275/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920284",
       "name": "灵鸽科技",
       "reason": "复核三季报及固态电解质中试线交付进度",
@@ -31823,6 +31858,13 @@
       "name": "泽璟制药",
       "reason": "复查ZG006艾伯维合作、ZG005 III期设计、吉卡昔替尼新适应症商业化和医保进展",
       "latest_report": "companies/CN/688266/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-12-31",
+      "symbol": "CN:920273",
+      "name": "一致魔芋",
+      "reason": "检查亲水胶体产业园一期是否按延期计划达到可使用状态",
+      "latest_report": "companies/CN/920273/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-01-15",
