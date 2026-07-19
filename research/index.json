@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2118,
+  "company_count": 2121,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920262",
+      "market": "CN",
+      "ticker": "920262",
+      "name": "太湖雪",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分品牌与直播、跨境增长较强，但库存和资本开支风险高，12.09元约24.9倍TTM PE已计入偏乐观增长，需等待7.50-9.00元的安全边际。",
+      "fair_value_range": [
+        9.0,
+        11.5
+      ],
+      "buy_zone": [
+        7.5,
+        9.0
+      ],
+      "sell_or_reduce_zone": [
+        13.5,
+        15.5
+      ],
+      "latest_report": "companies/CN/920262/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T18:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920263",
+      "market": "CN",
+      "ticker": "920263",
+      "name": "中航泰达",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "包钢节能股权占资产主体，但核心经营亏损、现金流和治理质量偏弱，6.88元已计入较强修复预期，当前缺乏安全边际。",
+      "fair_value_range": [
+        4.0,
+        5.3
+      ],
+      "buy_zone": [
+        3.0,
+        3.8
+      ],
+      "sell_or_reduce_zone": [
+        6.2,
+        7.5
+      ],
+      "latest_report": "companies/CN/920263/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T13:41:38+08:00"
+    },
+    {
+      "symbol": "CN:920266",
+      "market": "CN",
+      "ticker": "920266",
+      "name": "生物谷",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "产品和低杠杆资产尚未转化为正自由现金流，当前接近1倍市净率仍未补偿量增价跌、客户集中和治理历史风险。",
+      "fair_value_range": [
+        3.8,
+        5.2
+      ],
+      "buy_zone": [
+        3.0,
+        3.8
+      ],
+      "sell_or_reduce_zone": [
+        6.2,
+        7.5
+      ],
+      "latest_report": "companies/CN/920266/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T13:36:21+08:00"
     },
     {
       "symbol": "CN:920267",

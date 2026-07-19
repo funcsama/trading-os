@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5680,
+  "item_count": 5686,
   "items": [
     {
       "date": "2026-06-30",
@@ -14211,6 +14211,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920262",
+      "name": "太湖雪",
+      "reason": "复核2026年半年度报告的直播增长、存货减值、经营现金流和未来工厂投入",
+      "latest_report": "companies/CN/920262/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920263",
+      "name": "中航泰达",
+      "reason": "复核2026年半年报、包钢节能投资收益、运营毛利率和经营现金流",
+      "latest_report": "companies/CN/920263/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920266",
+      "name": "生物谷",
+      "reason": "复查2026年半年报并剔除司法返还后重算经营现金流",
+      "latest_report": "companies/CN/920266/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29996,6 +30017,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年三季报及AI数据中心订单持续性",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920262",
+      "name": "太湖雪",
+      "reason": "复核2026年三季度报告及全年盈利和自由现金流假设",
+      "latest_report": "companies/CN/920262/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920263",
+      "name": "中航泰达",
+      "reason": "复核2026年三季报及盈利修复是否连续",
+      "latest_report": "companies/CN/920263/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920266",
+      "name": "生物谷",
+      "reason": "复查三季报中的毛利率、应收回款与产业园投产进展",
+      "latest_report": "companies/CN/920266/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",

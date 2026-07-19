@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6883,
+  "item_count": 6889,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920262",
+      "name": "太湖雪",
+      "type": "price_above",
+      "price": 13.5,
+      "reason": "进入减仓或不应追高区间，估值开始透支乐观增长",
+      "latest_report": "companies/CN/920262/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920262",
+      "name": "太湖雪",
+      "type": "price_below",
+      "price": 9.0,
+      "reason": "进入有一定安全边际的分批研究买入区间，需先复核基本面",
+      "latest_report": "companies/CN/920262/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920263",
+      "name": "中航泰达",
+      "type": "price_above",
+      "price": 6.2,
+      "reason": "进入减仓或不应追高区间，当前修复预期已较充分",
+      "latest_report": "companies/CN/920263/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920263",
+      "name": "中航泰达",
+      "type": "price_below",
+      "price": 3.8,
+      "reason": "进入有条件研究的买入区间，仍须重新验证基本面与治理假设",
+      "latest_report": "companies/CN/920263/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920266",
+      "name": "生物谷",
+      "type": "price_above",
+      "price": 6.2,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920266/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920266",
+      "name": "生物谷",
+      "type": "price_below",
+      "price": 3.8,
+      "reason": "进入估值买入区间，但仍须验证现金流、应收和治理条件",
+      "latest_report": "companies/CN/920266/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920267",
