@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2139,
+  "company_count": 2142,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -47167,6 +47167,58 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:688066",
+      "market": "CN",
+      "ticker": "688066",
+      "name": "*ST航图",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "技术资产尚存但经济护城河失效，资不抵债、审计无法表示意见、主要账户冻结及高稀释风险使当前股价缺乏安全边际。",
+      "fair_value_range": [
+        1.5,
+        3.5
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        5,
+        20
+      ],
+      "latest_report": "companies/CN/688066/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T18:57:43+08:00"
+    },
+    {
+      "symbol": "CN:688076",
+      "market": "CN",
+      "ticker": "688076",
+      "name": "ST诺泰",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "多肽业务具备技术和海外客户基础，但高资本开支、无订单产能及严重治理污点使当前价格缺乏安全边际。",
+      "fair_value_range": [
+        21,
+        27
+      ],
+      "buy_zone": [
+        16,
+        19
+      ],
+      "sell_or_reduce_zone": [
+        32,
+        38
+      ],
+      "latest_report": "companies/CN/688076/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T18:42:31+08:00"
+    },
+    {
       "symbol": "CN:688099",
       "market": "CN",
       "ticker": "688099",
@@ -47633,6 +47685,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:688184",
+      "market": "CN",
+      "ticker": "688184",
+      "name": "ST帕瓦",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "技术方向尚有价值，但资金占用、立案、保留意见和负自由现金流使当前约1.6倍PB缺乏安全边际。",
+      "fair_value_range": [
+        5.0,
+        8.0
+      ],
+      "buy_zone": [
+        3.5,
+        5.0
+      ],
+      "sell_or_reduce_zone": [
+        9.5,
+        12.0
+      ],
+      "latest_report": "companies/CN/688184/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T12:00:00+08:00"
     },
     {
       "symbol": "CN:688187",

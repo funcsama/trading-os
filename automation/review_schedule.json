@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5719,
+  "item_count": 5724,
   "items": [
     {
       "date": "2026-06-30",
@@ -13458,6 +13458,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:688076",
+      "name": "ST诺泰",
+      "reason": "2026年半年报披露后复核毛利率、自由现金流、库存及产能订单",
+      "latest_report": "companies/CN/688076/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:688099",
       "name": "晶晨股份",
       "reason": "复查2026年半年报，重点验证收入增速、毛利率、库存和经营现金流",
@@ -13567,6 +13574,13 @@
       "name": "生益电子",
       "reason": "复核2026年半年报收入、毛利率、经营现金流、存货和产能爬坡",
       "latest_report": "companies/CN/688183/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:688184",
+      "name": "ST帕瓦",
+      "reason": "复核2026年中报、扣非利润、经营现金流和毛利率修复",
+      "latest_report": "companies/CN/688184/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29264,6 +29278,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:688066",
+      "name": "*ST航图",
+      "reason": "复核三季报收入、经营现金流、可用资金和归母净资产",
+      "latest_report": "companies/CN/688066/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:688099",
       "name": "晶晨股份",
       "reason": "复查2026年三季报，判断全年增长指引兑现概率",
@@ -37811,6 +37832,13 @@
     },
     {
       "date": "2027-04-30",
+      "symbol": "CN:688066",
+      "name": "*ST航图",
+      "reason": "复核2026年报净资产、审计意见和退市风险状态",
+      "latest_report": "companies/CN/688066/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
       "symbol": "CN:688111",
       "name": "金山办公",
       "reason": "2026 年报后复核长期估值与仓位计划",
@@ -37843,6 +37871,13 @@
       "name": "石头科技",
       "reason": "复核2026年年报：验证新品类和海外扩张是否转化为自由现金流。",
       "latest_report": "companies/CN/688169/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:688184",
+      "name": "ST帕瓦",
+      "reason": "复核2026年报审计意见、内控意见及资金占用追偿",
+      "latest_report": "companies/CN/688184/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

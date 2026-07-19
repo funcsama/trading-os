@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6925,
+  "item_count": 6931,
   "items": [
     {
       "symbol": "CN:000001",
@@ -48595,6 +48595,38 @@
       "latest_report": "companies/CN/688082/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:688066",
+      "name": "*ST航图",
+      "type": "price_above",
+      "price": 5,
+      "reason": "高于当前风险调整公允价值上沿，若核心风险未解除应回避或减仓",
+      "latest_report": "companies/CN/688066/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688066",
+      "name": "*ST航图",
+      "type": "price_below",
+      "price": 3.5,
+      "reason": "进入风险调整价值观察区，但仍须先满足基本面解锁条件，不能机械买入",
+      "latest_report": "companies/CN/688066/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688076",
+      "name": "ST诺泰",
+      "type": "price_above",
+      "price": 32,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/688076/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688076",
+      "name": "ST诺泰",
+      "type": "price_below",
+      "price": 19,
+      "reason": "进入有安全边际的研究性买入区间，仍须重新验证治理与基本面",
+      "latest_report": "companies/CN/688076/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:688099",
       "name": "晶晨股份",
       "type": "price_above",
@@ -49121,6 +49153,22 @@
       "price": 90,
       "reason": "进入买入区上沿，复核订单和毛利率后可建立基础仓",
       "latest_report": "companies/CN/688183/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:688184",
+      "name": "ST帕瓦",
+      "type": "price_above",
+      "price": 9.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/688184/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688184",
+      "name": "ST帕瓦",
+      "type": "price_below",
+      "price": 5.0,
+      "reason": "仅在治理与现金流前提同时满足时进入观察性买入区间",
+      "latest_report": "companies/CN/688184/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:688187",
