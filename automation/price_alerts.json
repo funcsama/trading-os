@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6895,
+  "item_count": 6901,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920245",
+      "name": "威博液压",
+      "type": "price_above",
+      "price": 10.5,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920245/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920245",
+      "name": "威博液压",
+      "type": "price_below",
+      "price": 6.5,
+      "reason": "进入有安全边际的买入区间上沿，需先复核基本面",
+      "latest_report": "companies/CN/920245/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920247",
+      "name": "华密新材",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920247/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920247",
+      "name": "华密新材",
+      "type": "price_below",
+      "price": 7.0,
+      "reason": "进入研究复核区；仅在基本面和现金流假设验证后才考虑买入",
+      "latest_report": "companies/CN/920247/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920249",
+      "name": "利尔达",
+      "type": "price_above",
+      "price": 5.0,
+      "reason": "进入减仓或不应追高区间，需重新核对公允价值",
+      "latest_report": "companies/CN/920249/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920249",
+      "name": "利尔达",
+      "type": "price_below",
+      "price": 2.4,
+      "reason": "进入有安全边际的条件式买入区间，但必须先复核立案与基本面",
+      "latest_report": "companies/CN/920249/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920252",

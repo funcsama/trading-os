@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2124,
+  "company_count": 2127,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920245",
+      "market": "CN",
+      "ticker": "920245",
+      "name": "威博液压",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "客户与新品方向真实，但低资本回报和利润波动无法支撑当前约54.5倍TTM PE，等待价格回到安全边际且现金回报改善。",
+      "fair_value_range": [
+        6.5,
+        8.5
+      ],
+      "buy_zone": [
+        5.0,
+        6.5
+      ],
+      "sell_or_reduce_zone": [
+        10.5,
+        12.5
+      ],
+      "latest_report": "companies/CN/920245/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T14:59:15+08:00"
+    },
+    {
+      "symbol": "CN:920247",
+      "market": "CN",
+      "ticker": "920247",
+      "name": "华密新材",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "特种橡塑业务具备一定技术与客户认证壁垒，但新增产能利用率和自由现金流尚未验证，当前高估值已透支中长期增长。",
+      "fair_value_range": [
+        7.5,
+        9.5
+      ],
+      "buy_zone": [
+        5.8,
+        7.0
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        15.0
+      ],
+      "latest_report": "companies/CN/920247/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T15:01:44+08:00"
+    },
+    {
+      "symbol": "CN:920249",
+      "market": "CN",
+      "ticker": "920249",
+      "name": "利尔达",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "物联网模组增长和现金流改善尚不足以覆盖低资本回报、营运资本占用及证监会立案风险，2026年7月14日9.22元已透支乐观预期。",
+      "fair_value_range": [
+        2.4,
+        4.2
+      ],
+      "buy_zone": [
+        1.6,
+        2.4
+      ],
+      "sell_or_reduce_zone": [
+        5.0,
+        6.5
+      ],
+      "latest_report": "companies/CN/920249/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T12:00:00+08:00"
     },
     {
       "symbol": "CN:920252",
