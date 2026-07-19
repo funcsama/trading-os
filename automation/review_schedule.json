@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5708,
+  "item_count": 5714,
   "items": [
     {
       "date": "2026-06-30",
@@ -13920,6 +13920,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:688496",
+      "name": "*ST清越",
+      "reason": "复核2026年半年报、募集资金冻结状态、处罚终局及资产减值",
+      "latest_report": "companies/CN/688496/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:688498",
       "name": "源杰科技",
       "reason": "预计半年报披露后复核 Q2 数据中心收入、毛利率、应收账款、产能利用率和客户认证进展。",
@@ -14071,6 +14078,13 @@
       "name": "精智达",
       "reason": "复核 2026 年半年报，重点验证半导体收入、毛利率、应收账款和经营现金流",
       "latest_report": "companies/CN/688627/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:688622",
+      "name": "*ST禾信",
+      "reason": "复核半年报扣除后收入、订单转化、现金流、存货应收与重组进度",
+      "latest_report": "companies/CN/688622/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -14232,6 +14246,13 @@
       "name": "九号公司",
       "reason": "预计2026年半年报披露后，更新收入、毛利率、净利率、服务机器人增长和经营现金流判断。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920023",
+      "name": "*ST田野",
+      "reason": "复查2026年半年度报告的毛利率、扣非利润、现金流和存货",
+      "latest_report": "companies/CN/920023/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29887,6 +29908,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:688622",
+      "name": "*ST禾信",
+      "reason": "复核三季报并判断全年是否仍可能触发退市指标",
+      "latest_report": "companies/CN/688622/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:688629",
       "name": "华丰科技",
       "reason": "复核2026年三季报及高速连接器订单进展",
@@ -37909,6 +37937,13 @@
     },
     {
       "date": "2027-04-30",
+      "symbol": "CN:688622",
+      "name": "*ST禾信",
+      "reason": "复核2026年审计年报及是否能够撤销退市风险警示",
+      "latest_report": "companies/CN/688622/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
       "symbol": "CN:688686",
       "name": "奥普特",
       "reason": "2026年报后复盘全年增长目标、自由现金流、资本配置、可转债募投和并购整合",
@@ -37969,6 +38004,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920023",
+      "name": "*ST田野",
+      "reason": "核验2026年度财务报告和内部控制审计意见是否消除退市条件",
+      "latest_report": "companies/CN/920023/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

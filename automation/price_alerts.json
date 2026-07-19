@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6913,
+  "item_count": 6919,
   "items": [
     {
       "symbol": "CN:000001",
@@ -50787,6 +50787,22 @@
       "latest_report": "companies/CN/688484/reports/2026-07-12-initial.md"
     },
     {
+      "symbol": "CN:688496",
+      "name": "*ST清越",
+      "type": "price_above",
+      "price": 0.6,
+      "reason": "高于特殊情形公允价值上沿，已有仓位应优先减仓且不应追高",
+      "latest_report": "companies/CN/688496/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688496",
+      "name": "*ST清越",
+      "type": "price_below",
+      "price": 0.45,
+      "reason": "仅触发重新核验处罚终局和资产回收率，不构成机械买入信号",
+      "latest_report": "companies/CN/688496/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:688498",
       "name": "源杰科技",
       "type": "price_above",
@@ -51393,6 +51409,22 @@
       "price": 170,
       "reason": "进入买入观察区上沿，需要结合中报和订单验证重新评估",
       "latest_report": "companies/CN/688627/reports/2026-07-10-initial.md"
+    },
+    {
+      "symbol": "CN:688622",
+      "name": "*ST禾信",
+      "type": "price_above",
+      "price": 30,
+      "reason": "显著超过交易与现金流锚，应减仓或避免追高",
+      "latest_report": "companies/CN/688622/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688622",
+      "name": "*ST禾信",
+      "type": "price_below",
+      "price": 8,
+      "reason": "进入估值观察区，但只有保壳、重组和现金流假设均验证后才可建立极小仓位",
+      "latest_report": "companies/CN/688622/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:688629",
@@ -52209,6 +52241,22 @@
       "price": 36,
       "reason": "进入买入区上沿，需复核Q2/Q3利润率和现金流。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:920023",
+      "name": "*ST田野",
+      "type": "price_above",
+      "price": 1.45,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920023/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920023",
+      "name": "*ST田野",
+      "type": "price_below",
+      "price": 0.8,
+      "reason": "进入观察性买入区间，但仅触发审计与退市假设复核，不得机械买入",
+      "latest_report": "companies/CN/920023/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920045",
