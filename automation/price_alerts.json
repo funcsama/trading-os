@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6931,
+  "item_count": 6937,
   "items": [
     {
       "symbol": "CN:000001",
@@ -48251,6 +48251,22 @@
       "latest_report": "companies/CN/688019/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:688022",
+      "name": "ST瀚川",
+      "type": "price_above",
+      "price": 4.5,
+      "reason": "超过公允价值上沿并进入减持或不应追高区间",
+      "latest_report": "companies/CN/688022/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688022",
+      "name": "ST瀚川",
+      "type": "price_below",
+      "price": 3.0,
+      "reason": "进入条件性重新研究区，只有治理、债务与现金流假设同时通过才考虑极小仓位",
+      "latest_report": "companies/CN/688022/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:688025",
       "name": "杰普特",
       "type": "price_above",
@@ -48329,6 +48345,22 @@
       "price": 60,
       "reason": "进入可研究建仓区，需要复核订单、毛利率和现金流。",
       "latest_report": "companies/CN/688028/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:688033",
+      "name": "*ST天宜",
+      "type": "price_above",
+      "price": 2.8,
+      "reason": "超过公允价值上沿，应减仓或不应追高",
+      "latest_report": "companies/CN/688033/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688033",
+      "name": "*ST天宜",
+      "type": "price_below",
+      "price": 1.2,
+      "reason": "仅在重整获批、监管和审计风险可控且现金流转正时进入特殊情形观察区",
+      "latest_report": "companies/CN/688033/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:688036",
@@ -48505,6 +48537,22 @@
       "price": 175,
       "reason": "进入观察仓候选区，需同步验证毛利率、库存与收入条件",
       "latest_report": "companies/CN/688052/reports/2026-07-12-initial.md"
+    },
+    {
+      "symbol": "CN:688053",
+      "name": "ST思科瑞",
+      "type": "price_above",
+      "price": 30,
+      "reason": "进入减仓或不应追高区间，价格已超过基准公允价值",
+      "latest_report": "companies/CN/688053/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688053",
+      "name": "ST思科瑞",
+      "type": "price_below",
+      "price": 18,
+      "reason": "进入有安全边际的观察区，但仅在基本面未恶化且验证条件满足时建小仓",
+      "latest_report": "companies/CN/688053/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:688065",

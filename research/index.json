@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2142,
+  "company_count": 2145,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -46855,6 +46855,32 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:688022",
+      "market": "CN",
+      "ticker": "688022",
+      "name": "ST瀚川",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "表面扭亏依赖非经常性收益，扣非与自由现金流仍为负，且资金占用、否定内控、募集资金未归还及债委会续期使现价缺乏安全边际。",
+      "fair_value_range": [
+        2.5,
+        4.0
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        4.5,
+        6.0
+      ],
+      "latest_report": "companies/CN/688022/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T12:00:00+08:00"
+    },
+    {
       "symbol": "CN:688025",
       "market": "CN",
       "ticker": "688025",
@@ -46931,6 +46957,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:688033",
+      "market": "CN",
+      "ticker": "688033",
+      "name": "*ST天宜",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "轨交与航空资产尚有产业价值，但无法表示意见、证监会立案、债务逾期及重整稀释使7.00元隐含预期远超可验证经营价值，当前应回避。",
+      "fair_value_range": [
+        1.2,
+        2.8
+      ],
+      "buy_zone": [
+        0,
+        1.2
+      ],
+      "sell_or_reduce_zone": [
+        2.8,
+        4.0
+      ],
+      "latest_report": "companies/CN/688033/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T19:40:45.6927327+08:00"
     },
     {
       "symbol": "CN:688036",
@@ -47087,6 +47139,32 @@
       "next_review_date": "2026-07-23",
       "active_price_triggers": 4,
       "updated_at": "2026-07-12"
+    },
+    {
+      "symbol": "CN:688053",
+      "market": "CN",
+      "ticker": "688053",
+      "name": "ST思科瑞",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "军工检测需求恢复但盈利、自由现金流和治理修复尚未兑现，现价已透支商业航天与产能爬坡的乐观预期。",
+      "fair_value_range": [
+        18,
+        25
+      ],
+      "buy_zone": [
+        14,
+        18
+      ],
+      "sell_or_reduce_zone": [
+        30,
+        36
+      ],
+      "latest_report": "companies/CN/688053/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-27",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T19:33:01+08:00"
     },
     {
       "symbol": "CN:688065",

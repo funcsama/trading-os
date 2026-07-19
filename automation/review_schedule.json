@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5724,
+  "item_count": 5731,
   "items": [
     {
       "date": "2026-06-30",
@@ -1114,6 +1114,13 @@
       "name": "四方股份",
       "reason": "预计下一次定期财报窗口，复核2026年中报收入增速、经营现金流和合同资产变化",
       "latest_report": "companies/CN/601126/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-27",
+      "symbol": "CN:688053",
+      "name": "ST思科瑞",
+      "reason": "复核2026年半年报的毛利率、应收账款、自由现金流与新产能利用率",
+      "latest_report": "companies/CN/688053/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-27",
@@ -13381,6 +13388,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:688022",
+      "name": "ST瀚川",
+      "reason": "复核半年报中的扣非利润、自由现金流、应收存货和财务费用",
+      "latest_report": "companies/CN/688022/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:688025",
       "name": "杰普特",
       "reason": "复核2026年中报，重点看光纤器件、消费电子检测设备、新能源订单、毛利率和经营现金流",
@@ -13399,6 +13413,13 @@
       "name": "沃尔德",
       "reason": "复核2026年半年报，重点看收入增速、毛利率、现金流和CVD业务进展。",
       "latest_report": "companies/CN/688028/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:688033",
+      "name": "*ST天宜",
+      "reason": "复核2026年中报、重整进展、证监会立案与审计整改",
+      "latest_report": "companies/CN/688033/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -15597,6 +15618,13 @@
       "name": "中际旭创",
       "reason": "2026年三季报后复查增长趋势和竞争格局变化",
       "latest_report": "companies/CN/300308/reports/2026-07-07-initial.md"
+    },
+    {
+      "date": "2026-10-25",
+      "symbol": "CN:688053",
+      "name": "ST思科瑞",
+      "reason": "行政处罚决定满12个月后复核撤销其他风险警示申请及治理整改进展",
+      "latest_report": "companies/CN/688053/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-28",
@@ -30537,6 +30565,13 @@
       "latest_report": "companies/CN/600436/reports/2026-07-10-initial.md"
     },
     {
+      "date": "2026-11-07",
+      "symbol": "CN:688022",
+      "name": "ST瀚川",
+      "reason": "临时债委会协议到期，复核是否形成长期债务安排",
+      "latest_report": "companies/CN/688022/reports/2026-07-14-initial.md"
+    },
+    {
       "date": "2026-11-15",
       "symbol": "CN:001236",
       "name": "弘业期货",
@@ -37804,6 +37839,13 @@
     },
     {
       "date": "2027-04-30",
+      "symbol": "CN:688022",
+      "name": "ST瀚川",
+      "reason": "复核2026年财务报告内部控制审计意见及风险警示状态",
+      "latest_report": "companies/CN/688022/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
       "symbol": "CN:688027",
       "name": "国盾量子",
       "reason": "2026年报：扣非是否仍亏，决定核心假设证伪/验证；并复查中国电信资产整合/重大关联交易/定增预案/量子计算产业化拐点/限售解禁等事件触发",
@@ -37815,6 +37857,13 @@
       "name": "沃尔德",
       "reason": "复核2026年年报和并购整合效果。",
       "latest_report": "companies/CN/688028/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:688033",
+      "name": "*ST天宜",
+      "reason": "复核2026年年报审计意见、退市风险警示撤销条件和持续经营能力",
+      "latest_report": "companies/CN/688033/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",
