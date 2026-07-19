@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5676,
+  "item_count": 5680,
   "items": [
     {
       "date": "2026-06-30",
@@ -14211,6 +14211,27 @@
       "name": "DR蘅东光",
       "reason": "复核2026年半年报收入、利润、毛利率、经营现金流、客户集中度和应收存货",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920267",
+      "name": "鑫汇科",
+      "reason": "复核2026年半年度报告中的收入、毛利率、自由现金流、新基地产能利用率和净债务",
+      "latest_report": "companies/CN/920267/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920270",
+      "name": "天铭科技",
+      "reason": "复查2026年中报的境内外收入、毛利率、现金流和新工厂产能利用率",
+      "latest_report": "companies/CN/920270/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920271",
+      "name": "邦德股份",
+      "reason": "复核2026年半年报、核心毛利率、经营现金流及819万件项目进度",
+      "latest_report": "companies/CN/920271/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29975,6 +29996,13 @@
       "name": "DR蘅东光",
       "reason": "复核2026年三季报及AI数据中心订单持续性",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920270",
+      "name": "天铭科技",
+      "reason": "复查2026年三季报及核心客户、关税和新产品进展",
+      "latest_report": "companies/CN/920270/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",

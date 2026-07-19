@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2115,
+  "company_count": 2118,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50415,6 +50415,84 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-11"
+    },
+    {
+      "symbol": "CN:920267",
+      "market": "CN",
+      "ticker": "920267",
+      "name": "鑫汇科",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "大客户协同开发和智能控制技术积累不足以抵御价格战，收入与现金流恶化、债务及资本配置风险尚未解除，17.80元已透支远高于历史水平的盈利修复。",
+      "fair_value_range": [
+        7.0,
+        9.5
+      ],
+      "buy_zone": [
+        5.5,
+        7.0
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        17.8
+      ],
+      "latest_report": "companies/CN/920267/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T12:50:55+08:00"
+    },
+    {
+      "symbol": "CN:920270",
+      "market": "CN",
+      "ticker": "920270",
+      "name": "天铭科技",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分越野改装件企业具备技术与前装认证积累，但利润率、资本回报和自由现金流仍在下行验证期，当前估值已透支较多修复预期。",
+      "fair_value_range": [
+        8.0,
+        10.0
+      ],
+      "buy_zone": [
+        6.2,
+        7.4
+      ],
+      "sell_or_reduce_zone": [
+        11.5,
+        13.5
+      ],
+      "latest_report": "companies/CN/920270/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:30:00+08:00"
+    },
+    {
+      "symbol": "CN:920271",
+      "market": "CN",
+      "ticker": "920271",
+      "name": "邦德股份",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "watch",
+      "current_thesis": "细分售后冷凝器业务有型号库和渠道壁垒，但2026Q1核心经营走弱、扩产回报与定增稀释待验证，9.89元附近缺少安全边际。",
+      "fair_value_range": [
+        8.4,
+        10.8
+      ],
+      "buy_zone": [
+        7.0,
+        8.2
+      ],
+      "sell_or_reduce_zone": [
+        12.0,
+        13.8
+      ],
+      "latest_report": "companies/CN/920271/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T12:50:37+08:00"
     },
     {
       "symbol": "CN:920273",

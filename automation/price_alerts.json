@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6877,
+  "item_count": 6883,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52193,6 +52193,54 @@
       "price": 270,
       "reason": "进入买入观察区，需要复核2026H1业绩、现金流和客户结构",
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
+    },
+    {
+      "symbol": "CN:920267",
+      "name": "鑫汇科",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间，估值超过当前可验证的盈利修复",
+      "latest_report": "companies/CN/920267/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920267",
+      "name": "鑫汇科",
+      "type": "price_below",
+      "price": 7.0,
+      "reason": "进入可研究的买入区间，但必须重新验证基本面，不能机械加仓",
+      "latest_report": "companies/CN/920267/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920270",
+      "name": "天铭科技",
+      "type": "price_above",
+      "price": 11.5,
+      "reason": "进入减仓或不应追高区间，除非订单、利润率和自由现金流显著上调",
+      "latest_report": "companies/CN/920270/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920270",
+      "name": "天铭科技",
+      "type": "price_below",
+      "price": 7.4,
+      "reason": "进入有安全边际的买入区间，需先验证基本面未恶化",
+      "latest_report": "companies/CN/920270/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920271",
+      "name": "邦德股份",
+      "type": "price_above",
+      "price": 12.0,
+      "reason": "进入减仓或不应追高区间，除非项目回报和自由现金流显著超预期",
+      "latest_report": "companies/CN/920271/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920271",
+      "name": "邦德股份",
+      "type": "price_below",
+      "price": 8.2,
+      "reason": "进入有一定安全边际的观察买入区间，需先复核基本面",
+      "latest_report": "companies/CN/920271/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920273",
