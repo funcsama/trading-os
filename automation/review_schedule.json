@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5702,
+  "item_count": 5708,
   "items": [
     {
       "date": "2026-06-30",
@@ -127,6 +127,13 @@
       "name": "格科微",
       "reason": "限售解禁99904494股流通上市，处于股价高位，关注解禁抛压与股价反应",
       "latest_report": "companies/CN/688728/reports/2026-07-08-initial.md"
+    },
+    {
+      "date": "2026-07-29",
+      "symbol": "CN:920305",
+      "name": "*ST云创",
+      "reason": "核实退市整理期预计最后交易日、摘牌及转入退市板块安排",
+      "latest_report": "companies/CN/920305/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-07-30",
@@ -14235,6 +14242,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:920090",
+      "name": "*ST同辉",
+      "reason": "复核2026年半年报的收入、现金流、债务和保壳进度",
+      "latest_report": "companies/CN/920090/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:920245",
       "name": "威博液压",
       "reason": "复核2026年半年报的毛利率、应收存货与经营现金流",
@@ -14652,6 +14666,13 @@
       "name": "德瑞锂电",
       "reason": "复查2026年半年报、新产线认证及出口退税下调后的利润率",
       "latest_report": "companies/CN/920523/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:920575",
+      "name": "*ST康乐",
+      "reason": "复核2026年半年报的现金、净资产、债务逾期和持续经营风险",
+      "latest_report": "companies/CN/920575/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -30069,6 +30090,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:920090",
+      "name": "*ST同辉",
+      "reason": "复核三季报累计收入与退市概率",
+      "latest_report": "companies/CN/920090/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:920245",
       "name": "威博液压",
       "reason": "复核2026年三季报并判断Q1利润修复是否持续",
@@ -30164,6 +30192,13 @@
       "name": "迪尔化工",
       "reason": "复核三季度回款、硝酸钾价差和新增产能利用率",
       "latest_report": "companies/CN/920304/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:920305",
+      "name": "*ST云创",
+      "reason": "复核行政处罚、募集资金冻结、控股股东占款回收和民事索赔进展",
+      "latest_report": "companies/CN/920305/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",
@@ -37934,6 +37969,13 @@
       "name": "九号公司",
       "reason": "2026年年报披露后重估长期收入增速、利润率中枢、资本配置和合理价值区间。",
       "latest_report": "companies/CN/689009/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:920090",
+      "name": "*ST同辉",
+      "reason": "复核2026年年报、审计意见及退市风险警示结果",
+      "latest_report": "companies/CN/920090/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

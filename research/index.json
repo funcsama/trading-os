@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2130,
+  "company_count": 2133,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -50495,6 +50495,32 @@
       "updated_at": "2026-07-11"
     },
     {
+      "symbol": "CN:920090",
+      "market": "CN",
+      "ticker": "920090",
+      "name": "*ST同辉",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "现有业务无法产生自由现金流，退市、债务、罚款执行与治理风险叠加，3.42元显著高于可验证经营价值。",
+      "fair_value_range": [
+        0.2,
+        0.8
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        1.2,
+        10.0
+      ],
+      "latest_report": "companies/CN/920090/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T00:00:00+08:00"
+    },
+    {
       "symbol": "CN:920245",
       "market": "CN",
       "ticker": "920245",
@@ -51013,6 +51039,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-18T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:920305",
+      "market": "CN",
+      "ticker": "920305",
+      "name": "*ST云创",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "已确定退市且财务报表不可依赖，普通股价值取决于无法核实的控股股东巨额占款回收，0.93元隐含的回收率与索赔假设过于乐观。",
+      "fair_value_range": [
+        0,
+        0.1
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        0.01,
+        100
+      ],
+      "latest_report": "companies/CN/920305/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-07-29",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:59:00+08:00"
     },
     {
       "symbol": "CN:920339",
@@ -52651,6 +52703,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-16T12:26:09+08:00"
+    },
+    {
+      "symbol": "CN:920575",
+      "market": "CN",
+      "ticker": "920575",
+      "name": "*ST康乐",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司尚无商业化疫苗收入且已资不抵债，当前股价隐含融资续命、三价获批和商业化成功的较高确定性，安全边际不足。",
+      "fair_value_range": [
+        0.5,
+        1.2
+      ],
+      "buy_zone": [
+        0.2,
+        0.4
+      ],
+      "sell_or_reduce_zone": [
+        1.5,
+        3.8
+      ],
+      "latest_report": "companies/CN/920575/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T16:52:59+08:00"
     },
     {
       "symbol": "CN:920576",

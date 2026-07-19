@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6907,
+  "item_count": 6913,
   "items": [
     {
       "symbol": "CN:000001",
@@ -52243,6 +52243,22 @@
       "latest_report": "companies/CN/920045/reports/2026-07-11-initial.md"
     },
     {
+      "symbol": "CN:920090",
+      "name": "*ST同辉",
+      "type": "price_above",
+      "price": 1.2,
+      "reason": "高于乐观情景下限，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920090/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920090",
+      "name": "*ST同辉",
+      "type": "price_below",
+      "price": 0.8,
+      "reason": "进入估值复核区，但基本面条件未改善时不得机械买入",
+      "latest_report": "companies/CN/920090/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:920245",
       "name": "威博液压",
       "type": "price_above",
@@ -52561,6 +52577,22 @@
       "price": 5.5,
       "reason": "进入有安全边际的买入观察区，但需先验证基本面未恶化",
       "latest_report": "companies/CN/920304/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920305",
+      "name": "*ST云创",
+      "type": "price_above",
+      "price": 0.1,
+      "reason": "高于剩余索取权公允价值上沿，应退出而非追逐退市博弈",
+      "latest_report": "companies/CN/920305/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920305",
+      "name": "*ST云创",
+      "type": "price_below",
+      "price": 0,
+      "reason": "不存在仅由价格触发的买点，必须先验证现金回收和索赔边界",
+      "latest_report": "companies/CN/920305/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920339",
@@ -53569,6 +53601,22 @@
       "price": 4.6,
       "reason": "进入可研究的买入区间，但需先复核净债务与自由现金流，不能机械加仓",
       "latest_report": "companies/CN/920571/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920575",
+      "name": "*ST康乐",
+      "type": "price_above",
+      "price": 1.5,
+      "reason": "高于风险调整公允价值上沿，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/920575/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:920575",
+      "name": "*ST康乐",
+      "type": "price_below",
+      "price": 0.4,
+      "reason": "仅在融资、债务与审批核心假设均改善时进入条件性买入区间",
+      "latest_report": "companies/CN/920575/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:920576",
