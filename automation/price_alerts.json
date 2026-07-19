@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6901,
+  "item_count": 6907,
   "items": [
     {
       "symbol": "CN:000001",
@@ -163,6 +163,22 @@
       "latest_report": "companies/CN/000009/reports/2026-07-10-initial.md"
     },
     {
+      "symbol": "CN:000010",
+      "name": "*ST美丽",
+      "type": "price_above",
+      "price": 1.0,
+      "reason": "高于条件概率价值区间，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/000010/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:000010",
+      "name": "*ST美丽",
+      "type": "price_below",
+      "price": 0.6,
+      "reason": "仅触发重新研究；审计和重组条件未改善前不代表进入买入区间",
+      "latest_report": "companies/CN/000010/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:000011",
       "name": "深物业A",
       "type": "price_above",
@@ -233,6 +249,22 @@
       "price": 6.5,
       "reason": "进入买入观察区，需要复核中报资产质量和项目去化",
       "latest_report": "companies/CN/000014/reports/2026-07-10-initial.md"
+    },
+    {
+      "symbol": "CN:000016",
+      "name": "*ST康佳A",
+      "type": "price_above",
+      "price": 1.5,
+      "reason": "高于保守公允价值区间且基本面未改善时进入减仓或退出复核",
+      "latest_report": "companies/CN/000016/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:000016",
+      "name": "*ST康佳A",
+      "type": "price_below",
+      "price": 1.2,
+      "reason": "低于公允价值上限仅触发基本面复核，不构成自动买入信号",
+      "latest_report": "companies/CN/000016/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:000017",
@@ -825,6 +857,22 @@
       "price": 3.2,
       "reason": "进入首笔观察仓买入区间，但需同步检查是否有新增风险公告",
       "latest_report": "companies/CN/000055/reports/2026-07-10-initial.md"
+    },
+    {
+      "symbol": "CN:000056",
+      "name": "*ST皇庭",
+      "type": "price_above",
+      "price": 0.35,
+      "reason": "高于概率加权合理价值上限，应减持或继续回避",
+      "latest_report": "companies/CN/000056/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:000056",
+      "name": "*ST皇庭",
+      "type": "price_below",
+      "price": 0.3,
+      "reason": "仅触发困境期权重估，不因价格下跌自动买入",
+      "latest_report": "companies/CN/000056/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:000058",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5697,
+  "item_count": 5702,
   "items": [
     {
       "date": "2026-06-30",
@@ -1264,6 +1264,13 @@
     },
     {
       "date": "2026-08-29",
+      "symbol": "CN:000010",
+      "name": "*ST美丽",
+      "reason": "复核2026年半年报现金流、应收回收和庭外重组进展",
+      "latest_report": "companies/CN/000010/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-29",
       "symbol": "CN:000063",
       "name": "中兴通讯",
       "reason": "2026年中报发布后复查毛利率和扣非利润趋势，判断盈利是否企稳",
@@ -1614,6 +1621,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:000016",
+      "name": "*ST康佳A",
+      "reason": "复核2026年半年度报告中的归母净资产、主营毛利、经营现金流及保壳进展",
+      "latest_report": "companies/CN/000016/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:000017",
       "name": "深中华A",
       "reason": "review after expected 2026 interim report disclosure window",
@@ -1758,6 +1772,13 @@
       "name": "方大集团",
       "reason": "复核2026年半年报的经营现金流、应收账款、合同资产、减值和订单转化",
       "latest_report": "companies/CN/000055/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:000056",
+      "name": "*ST皇庭",
+      "reason": "复核2026年半年报、净资产变化、审计风险与化债进展",
+      "latest_report": "companies/CN/000056/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -33013,6 +33034,20 @@
       "name": "平安银行",
       "reason": "复核2026年报、分红和资本充足率。",
       "latest_report": "companies/CN/000001/reports/2026-07-07-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:000010",
+      "name": "*ST美丽",
+      "reason": "复核2026年年度财务及内部控制审计意见与退市风险",
+      "latest_report": "companies/CN/000010/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:000016",
+      "name": "*ST康佳A",
+      "reason": "复核2026年年报、审计意见及终止上市风险",
+      "latest_report": "companies/CN/000016/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2127,
+  "company_count": 2130,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -159,6 +159,32 @@
       "updated_at": "2026-07-10"
     },
     {
+      "symbol": "CN:000010",
+      "market": "CN",
+      "ticker": "000010",
+      "name": "*ST美丽",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "无法表示意见、负自由现金流和庭外重组使权益价值高度脆弱，当前约6.8倍PB已过度计入成功整改与重组预期。",
+      "fair_value_range": [
+        0.2,
+        0.6
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        1.0,
+        1.8
+      ],
+      "latest_report": "companies/CN/000010/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-29",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T15:54:19+08:00"
+    },
+    {
       "symbol": "CN:000011",
       "market": "CN",
       "ticker": "000011",
@@ -235,6 +261,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 2,
       "updated_at": "2026-07-10"
+    },
+    {
+      "symbol": "CN:000016",
+      "market": "CN",
+      "ticker": "000016",
+      "name": "*ST康佳A",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "华润支持降低了短期流动性风险，但负净资产、持续经营不确定性和2026年退市风险使普通股仍是缺乏安全边际的困境期权。",
+      "fair_value_range": [
+        0.4,
+        1.2
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        1.5,
+        10
+      ],
+      "latest_report": "companies/CN/000016/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:59:00+08:00"
     },
     {
       "symbol": "CN:000017",
@@ -833,6 +885,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-10"
+    },
+    {
+      "symbol": "CN:000056",
+      "market": "CN",
+      "ticker": "000056",
+      "name": "*ST皇庭",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "普通股清偿价值为零且现有经营无法覆盖融资成本，在法院受理重整、足额化债及可接受审计意见落地前，当前市值主要是无证据的保壳期权。",
+      "fair_value_range": [
+        0,
+        0.35
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        0.35,
+        5
+      ],
+      "latest_report": "companies/CN/000056/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T15:55:00+08:00"
     },
     {
       "symbol": "CN:000058",
