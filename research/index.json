@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2136,
+  "company_count": 2139,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -47687,6 +47687,32 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:688189",
+      "market": "CN",
+      "ticker": "688189",
+      "name": "ST南新",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "财务造假前科、收入持续萎缩和研发资本化使自由现金流模型尚未成立，当前价格已透支管线与国资反转预期。",
+      "fair_value_range": [
+        3.5,
+        5.0
+      ],
+      "buy_zone": [
+        2.5,
+        3.2
+      ],
+      "sell_or_reduce_zone": [
+        6.0,
+        8.0
+      ],
+      "latest_report": "companies/CN/688189/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T18:10:06+08:00"
+    },
+    {
       "symbol": "CN:688195",
       "market": "CN",
       "ticker": "688195",
@@ -47737,6 +47763,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 4,
       "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:688201",
+      "market": "CN",
+      "ticker": "688201",
+      "name": "ST信安",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "内控否定意见与低资本回报尚未修复，6.98元已隐含自由现金流数倍增长和顺利摘帽，当前赔率不足。",
+      "fair_value_range": [
+        4.0,
+        5.2
+      ],
+      "buy_zone": [
+        3.2,
+        4.0
+      ],
+      "sell_or_reduce_zone": [
+        6.0,
+        7.0
+      ],
+      "latest_report": "companies/CN/688201/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-19T18:09:28+08:00"
     },
     {
       "symbol": "CN:688205",
@@ -48101,6 +48153,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:688270",
+      "market": "CN",
+      "ticker": "688270",
+      "name": "ST臻镭",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "特种射频与宇航电源芯片卡位真实且增长强，但治理可信度、现金转化和高估值共同导致当前赔率不合格。",
+      "fair_value_range": [
+        38,
+        52
+      ],
+      "buy_zone": [
+        28,
+        36
+      ],
+      "sell_or_reduce_zone": [
+        70,
+        90
+      ],
+      "latest_report": "companies/CN/688270/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-14T23:30:00+08:00"
     },
     {
       "symbol": "CN:688271",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6919,
+  "item_count": 6925,
   "items": [
     {
       "symbol": "CN:000001",
@@ -49187,6 +49187,22 @@
       "latest_report": "companies/CN/688188/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:688189",
+      "name": "ST南新",
+      "type": "price_above",
+      "price": 6.0,
+      "reason": "高于合理价值上沿，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/688189/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688189",
+      "name": "ST南新",
+      "type": "price_below",
+      "price": 3.2,
+      "reason": "进入可在基本面验证后考虑极小观察仓的价格区间",
+      "latest_report": "companies/CN/688189/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:688195",
       "name": "腾景科技",
       "type": "price_above",
@@ -49249,6 +49265,22 @@
       "price": 285,
       "reason": "进入买入观察区，需复核最新财报、订单和现金流后决定首笔仓位",
       "latest_report": "companies/CN/688200/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:688201",
+      "name": "ST信安",
+      "type": "price_above",
+      "price": 6.0,
+      "reason": "进入减仓或不应追高区间，股价已更多反映顺利摘帽和利润率改善",
+      "latest_report": "companies/CN/688201/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688201",
+      "name": "ST信安",
+      "type": "price_below",
+      "price": 4.0,
+      "reason": "进入有条件观察区，需重新验证内控、现金流和商誉假设后才可建仓",
+      "latest_report": "companies/CN/688201/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:688205",
@@ -49649,6 +49681,22 @@
       "price": 70,
       "reason": "进入可试仓区间，需要同步复核中报或三季报利润拐点",
       "latest_report": "companies/CN/688268/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:688270",
+      "name": "ST臻镭",
+      "type": "price_above",
+      "price": 70,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/688270/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:688270",
+      "name": "ST臻镭",
+      "type": "price_below",
+      "price": 36,
+      "reason": "进入有安全边际的基本面复核与试探买入区",
+      "latest_report": "companies/CN/688270/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:688271",

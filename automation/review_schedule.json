@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5714,
+  "item_count": 5719,
   "items": [
     {
       "date": "2026-06-30",
@@ -13577,6 +13577,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:688189",
+      "name": "ST南新",
+      "reason": "复核2026年半年报的收入、毛利率、经营现金流和研发资本化比例",
+      "latest_report": "companies/CN/688189/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:688195",
       "name": "腾景科技",
       "reason": "复核2026年半年报收入增速、毛利率、经营现金流和OCS/半导体设备订单进展。",
@@ -13588,6 +13595,13 @@
       "name": "华峰测控",
       "reason": "复查2026年半年报，重点核验收入增速、扣非利润、现金流、STS8300和STS8600进展",
       "latest_report": "companies/CN/688200/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:688201",
+      "name": "ST信安",
+      "reason": "复核2026年中报、应收账款、经营现金流与研发核算整改",
+      "latest_report": "companies/CN/688201/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -13672,6 +13686,13 @@
       "name": "华特气体",
       "reason": "复核2026年中报，重点看收入增长是否转化为归母净利润和毛利率改善",
       "latest_report": "companies/CN/688268/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:688270",
+      "name": "ST臻镭",
+      "reason": "复核2026年中报的增长、毛利率、应收与经营现金流",
+      "latest_report": "companies/CN/688270/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -37839,6 +37860,13 @@
     },
     {
       "date": "2027-04-30",
+      "symbol": "CN:688201",
+      "name": "ST信安",
+      "reason": "复核2026年年报及内部控制审计意见，确认是否具备撤销风险警示条件",
+      "latest_report": "companies/CN/688201/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
       "symbol": "CN:688213",
       "name": "思特威",
       "reason": "复查2026年报和2027年一季报，重估中期盈利和合理PE",
@@ -38123,6 +38151,13 @@
       "name": "视声智能",
       "reason": "复查2026年报、2027年一季报及产业园投产和自由现金流恢复情况",
       "latest_report": "companies/CN/920976/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-05-09",
+      "symbol": "CN:688270",
+      "name": "ST臻镭",
+      "reason": "行政处罚满12个月后复核其他风险警示撤销条件与治理整改",
+      "latest_report": "companies/CN/688270/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-05-15",
