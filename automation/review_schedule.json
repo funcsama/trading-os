@@ -13129,6 +13129,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:603595",
+      "name": "ST东尼",
+      "reason": "复核2026年半年报中投资收益、扣非大额亏损、信用减值和新能源出表影响",
+      "latest_report": "companies/CN/603595/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:603606",
       "name": "东方电缆",
       "reason": "复核2026年中报的收入、毛利率、经营现金流、应收和合同资产",
@@ -13245,6 +13252,13 @@
       "name": "福斯特",
       "reason": "复核2026年中报、胶膜毛利率、经营现金流和感光干膜增长",
       "latest_report": "companies/CN/603806/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:603822",
+      "name": "ST嘉澳",
+      "reason": "复核2026年半年报、经营现金流、应收存货及生物航煤毛利率",
+      "latest_report": "companies/CN/603822/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29005,6 +29019,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:603595",
+      "name": "ST东尼",
+      "reason": "复核三季报扣非利润、经营现金流、净债务和半导体减值",
+      "latest_report": "companies/CN/603595/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:603606",
       "name": "东方电缆",
       "reason": "复核2026年三季报和海风订单交付节奏",
@@ -29096,6 +29117,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:603718",
+      "name": "*ST海利",
+      "reason": "复核三季报年化扣除后收入、并购贡献、现金流与商誉变化",
+      "latest_report": "companies/CN/603718/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:603728",
       "name": "鸣志电器",
       "reason": "复查 2026 年三季报，确认利润率和订单兑现是否持续。",
@@ -29121,6 +29149,13 @@
       "name": "福斯特",
       "reason": "复核2026年三季报、组件排产和EVA/POE价格传导",
       "latest_report": "companies/CN/603806/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:603822",
+      "name": "ST嘉澳",
+      "reason": "复核三季报并判断二季度盈利拐点是否可持续",
+      "latest_report": "companies/CN/603822/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",
@@ -33251,6 +33286,13 @@
       "name": "航发动力",
       "reason": "复核2026年年报与年度股东会材料，检验预算兑现和资产划转影响",
       "latest_report": "companies/CN/600893/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-24",
+      "symbol": "CN:603822",
+      "name": "ST嘉澳",
+      "reason": "行政处罚决定满12个月后复核撤销其他风险警示进展",
+      "latest_report": "companies/CN/603822/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-28",
@@ -37843,6 +37885,13 @@
       "name": "航天工程",
       "reason": "复查 2026 年报和年度新签订单，重估正常化利润和合理价格区间",
       "latest_report": "companies/CN/603698/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:603718",
+      "name": "*ST海利",
+      "reason": "复核2026年年报审计意见、3亿元收入红线及撤销退市风险警示条件",
+      "latest_report": "companies/CN/603718/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

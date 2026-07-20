@@ -47035,6 +47035,22 @@
       "latest_report": "companies/CN/603588/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:603595",
+      "name": "ST东尼",
+      "type": "price_above",
+      "price": 16,
+      "reason": "超过合理价值上沿并进入减仓或不应追高区间",
+      "latest_report": "companies/CN/603595/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603595",
+      "name": "ST东尼",
+      "type": "price_below",
+      "price": 7,
+      "reason": "仅触发基本面复核；治理、现金流和扣非利润未改善时仍不买入",
+      "latest_report": "companies/CN/603595/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603606",
       "name": "东方电缆",
       "type": "price_above",
@@ -47395,6 +47411,22 @@
       "latest_report": "companies/CN/603699/reports/2026-07-10-initial.md"
     },
     {
+      "symbol": "CN:603718",
+      "name": "*ST海利",
+      "type": "price_above",
+      "price": 2.3,
+      "reason": "进入减仓或不应追高区间，价格已计入较高摘帽成功率",
+      "latest_report": "companies/CN/603718/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603718",
+      "name": "*ST海利",
+      "type": "price_below",
+      "price": 1.2,
+      "reason": "进入有条件研究的买入区间，仍须重新验证保壳、现金流与商誉假设",
+      "latest_report": "companies/CN/603718/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603728",
       "name": "鸣志电器",
       "type": "price_above",
@@ -47513,6 +47545,22 @@
       "price": 12.5,
       "reason": "进入初始买入区，需要复核中报毛利率、现金流和胶膜价格",
       "latest_report": "companies/CN/603806/reports/2026-07-10-initial.md"
+    },
+    {
+      "symbol": "CN:603822",
+      "name": "ST嘉澳",
+      "type": "price_above",
+      "price": 55,
+      "reason": "进入减仓或不应追高区间，除非盈利与自由现金流显著上修",
+      "latest_report": "companies/CN/603822/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603822",
+      "name": "ST嘉澳",
+      "type": "price_below",
+      "price": 35,
+      "reason": "进入有条件观察买入区间，需先验证现金流、杠杆和治理假设",
+      "latest_report": "companies/CN/603822/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:603823",

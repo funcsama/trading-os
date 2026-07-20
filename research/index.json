@@ -45737,6 +45737,32 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:603595",
+      "market": "CN",
+      "ticker": "603595",
+      "name": "ST东尼",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "上半年账面扭亏主要来自出售子公司，扣非亏损扩大且治理与短债风险高，28.94元远高于8至12元合理价值。",
+      "fair_value_range": [
+        8,
+        12
+      ],
+      "buy_zone": [
+        5,
+        7
+      ],
+      "sell_or_reduce_zone": [
+        16,
+        20
+      ],
+      "latest_report": "companies/CN/603595/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T18:38:14+08:00"
+    },
+    {
       "symbol": "CN:603606",
       "market": "CN",
       "ticker": "603606",
@@ -46075,6 +46101,32 @@
       "updated_at": "2026-07-10"
     },
     {
+      "symbol": "CN:603718",
+      "market": "CN",
+      "ticker": "603718",
+      "name": "*ST海利",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "2026年并购并表可能帮助收入跨过3亿元退市红线，但原业务回报低、商誉和整合风险高，2.88元已透支大部分摘帽预期。",
+      "fair_value_range": [
+        1.3,
+        1.9
+      ],
+      "buy_zone": [
+        0.9,
+        1.2
+      ],
+      "sell_or_reduce_zone": [
+        2.3,
+        2.8
+      ],
+      "latest_report": "companies/CN/603718/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T18:41:01+08:00"
+    },
+    {
       "symbol": "CN:603728",
       "market": "CN",
       "ticker": "603728",
@@ -46177,6 +46229,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-10"
+    },
+    {
+      "symbol": "CN:603822",
+      "market": "CN",
+      "ticker": "603822",
+      "name": "ST嘉澳",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "生物航煤放量带来强劲盈利拐点，但高杠杆、少数股东分利、负自由现金流及财务报告处罚使当前63.38元缺乏安全边际。",
+      "fair_value_range": [
+        35,
+        50
+      ],
+      "buy_zone": [
+        25,
+        35
+      ],
+      "sell_or_reduce_zone": [
+        55,
+        75
+      ],
+      "latest_report": "companies/CN/603822/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T18:45:00+08:00"
     },
     {
       "symbol": "CN:603823",
