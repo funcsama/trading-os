@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5731,
+  "item_count": 5736,
   "items": [
     {
       "date": "2026-06-30",
@@ -13276,6 +13276,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:603959",
+      "name": "ST百利",
+      "reason": "复核2026年中报、归母净资产、经营现金流、逾期债务及重整进展",
+      "latest_report": "companies/CN/603959/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:603979",
       "name": "金诚信",
       "reason": "复核2026年半年报，重点验证资源产量、现金流、资本开支和矿服毛利率",
@@ -13315,6 +13322,20 @@
       "name": "德业股份",
       "reason": "复查2026半年报，重点看分产品毛利率、海外收入、库存、应收和经营现金流",
       "latest_report": "companies/CN/605117/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:605199",
+      "name": "ST葫芦娃",
+      "reason": "复核2026年半年报、收入毛利率、偿债和自由现金流质量",
+      "latest_report": "companies/CN/605199/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:605336",
+      "name": "*ST帅电",
+      "reason": "复核2026年半年报的扣除后收入、扣非利润、现金流和存货",
+      "latest_report": "companies/CN/605336/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -15513,6 +15534,13 @@
       "name": "松发股份",
       "reason": "再融资发行公告可能出现（注册稿后 1-3 月内定期跟踪发行公告落地）",
       "latest_report": "companies/CN/603268/reports/2026-07-10-followup.md"
+    },
+    {
+      "date": "2026-09-30",
+      "symbol": "CN:605336",
+      "name": "*ST帅电",
+      "reason": "复核重大资产重组预案、草案或终止公告及标的审计数据",
+      "latest_report": "companies/CN/605336/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-09-30",
@@ -37801,6 +37829,13 @@
       "name": "德业股份",
       "reason": "复查2026年报和2027一季报，重新评估2027年利润中枢",
       "latest_report": "companies/CN/605117/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:605336",
+      "name": "*ST帅电",
+      "reason": "复核2026年年报、审计意见及退市风险是否解除",
+      "latest_report": "companies/CN/605336/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",

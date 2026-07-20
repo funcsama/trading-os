@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2145,
+  "company_count": 2148,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -46361,6 +46361,32 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:603959",
+      "market": "CN",
+      "ticker": "603959",
+      "name": "ST百利",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "公司已处债务危机和庭外重组阶段，旧股价值高度依赖未知的削债与稀释条款，4.40元显著高于概率加权价值，应回避。",
+      "fair_value_range": [
+        0.3,
+        1.2
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        1.5,
+        6.0
+      ],
+      "latest_report": "companies/CN/603959/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T16:08:33+08:00"
+    },
+    {
       "symbol": "CN:603979",
       "market": "CN",
       "ticker": "603979",
@@ -46541,6 +46567,58 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:605199",
+      "market": "CN",
+      "ticker": "605199",
+      "name": "ST葫芦娃",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "儿童药品牌无法抵消财务违规、高杠杆、收入毛利率骤降和现金流质量偏弱，当前价格隐含过度乐观的盈利修复。",
+      "fair_value_range": [
+        1.5,
+        2.8
+      ],
+      "buy_zone": [
+        1.2,
+        1.8
+      ],
+      "sell_or_reduce_zone": [
+        3.5,
+        6.5
+      ],
+      "latest_report": "companies/CN/605199/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T16:06:44+08:00"
+    },
+    {
+      "symbol": "CN:605336",
+      "market": "CN",
+      "ticker": "605336",
+      "name": "*ST帅电",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "净金融资产较厚，但主业快速衰退、退市风险和未经审计验证的重大现金并购使当前价格缺乏安全边际。",
+      "fair_value_range": [
+        6.5,
+        8.5
+      ],
+      "buy_zone": [
+        5.0,
+        6.5
+      ],
+      "sell_or_reduce_zone": [
+        9.0,
+        11.0
+      ],
+      "latest_report": "companies/CN/605336/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T16:07:33+08:00"
     },
     {
       "symbol": "CN:605358",

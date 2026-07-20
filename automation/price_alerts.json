@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6937,
+  "item_count": 6943,
   "items": [
     {
       "symbol": "CN:000001",
@@ -47715,6 +47715,22 @@
       "latest_report": "companies/CN/603950/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:603959",
+      "name": "ST百利",
+      "type": "price_above",
+      "price": 1.5,
+      "reason": "超过概率加权公允价值上沿，处于减持或不应追高区间",
+      "latest_report": "companies/CN/603959/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603959",
+      "name": "ST百利",
+      "type": "price_below",
+      "price": 1.0,
+      "reason": "仅触发重整条款与持续经营能力复核，不因价格下跌自动买入",
+      "latest_report": "companies/CN/603959/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603979",
       "name": "金诚信",
       "type": "price_above",
@@ -47897,6 +47913,38 @@
       "price": 72,
       "reason": "进入有安全边际的分批买入区间",
       "latest_report": "companies/CN/605117/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:605199",
+      "name": "ST葫芦娃",
+      "type": "price_above",
+      "price": 3.5,
+      "reason": "超过公允价值上沿，进入减仓或不应追高区间",
+      "latest_report": "companies/CN/605199/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:605199",
+      "name": "ST葫芦娃",
+      "type": "price_below",
+      "price": 1.8,
+      "reason": "进入条件性买入观察区，但须重新验证治理、偿债和经营假设",
+      "latest_report": "companies/CN/605199/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:605336",
+      "name": "*ST帅电",
+      "type": "price_above",
+      "price": 9.0,
+      "reason": "进入减仓或不应追高区间，价格已较多反映保壳和重组预期",
+      "latest_report": "companies/CN/605336/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:605336",
+      "name": "*ST帅电",
+      "type": "price_below",
+      "price": 6.5,
+      "reason": "进入理论买入观察区，仅触发重新核验，不自动买入",
+      "latest_report": "companies/CN/605336/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:605358",
