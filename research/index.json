@@ -46205,6 +46205,84 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:603825",
+      "market": "CN",
+      "ticker": "603825",
+      "name": "ST华扬",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "高杠杆、负现金流和历史治理问题令普通股更像困境期权，当前价格已过度计入国资支持、业务修复和解ST预期。",
+      "fair_value_range": [
+        1.5,
+        3.0
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        4.5,
+        8.0
+      ],
+      "latest_report": "companies/CN/603825/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T18:07:05+08:00"
+    },
+    {
+      "symbol": "CN:603828",
+      "market": "CN",
+      "ticker": "603828",
+      "name": "*ST利达",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "连续两年内控否定、保留意见、立案调查和退市风险尚未解除，主业负自由现金流且现价约5倍PB显著贵于盈利同业，应避免买入。",
+      "fair_value_range": [
+        0.4,
+        0.9
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        1.2,
+        10.0
+      ],
+      "latest_report": "companies/CN/603828/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T00:00:00+08:00"
+    },
+    {
+      "symbol": "CN:603838",
+      "market": "CN",
+      "ticker": "603838",
+      "name": "*ST四通",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "现有业务连续亏损且自由现金流为负，当前近3倍PB已过度计入摘星和新材料高盈利预期，缺乏安全边际。",
+      "fair_value_range": [
+        1.8,
+        2.8
+      ],
+      "buy_zone": [
+        1.3,
+        1.8
+      ],
+      "sell_or_reduce_zone": [
+        3.5,
+        8.2
+      ],
+      "latest_report": "companies/CN/603838/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-28",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T18:04:50+08:00"
+    },
+    {
       "symbol": "CN:603843",
       "market": "CN",
       "ticker": "603843",
