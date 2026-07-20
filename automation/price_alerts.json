@@ -47539,6 +47539,38 @@
       "latest_report": "companies/CN/603823/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:603843",
+      "name": "*ST正平",
+      "type": "price_above",
+      "price": 1.5,
+      "reason": "高于风险调整后价值区间，应回避或减仓",
+      "latest_report": "companies/CN/603843/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603843",
+      "name": "*ST正平",
+      "type": "price_below",
+      "price": 1.2,
+      "reason": "进入概率估值上沿以下，仅触发重整条款复核，不机械买入",
+      "latest_report": "companies/CN/603843/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603869",
+      "name": "ST智知",
+      "type": "price_above",
+      "price": 8.2,
+      "reason": "进入减仓或不应追高区间",
+      "latest_report": "companies/CN/603869/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603869",
+      "name": "ST智知",
+      "type": "price_below",
+      "price": 5.5,
+      "reason": "进入有条件研究型买入区，需重新验证治理、回款和现金流",
+      "latest_report": "companies/CN/603869/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603893",
       "name": "瑞芯微",
       "type": "price_above",
@@ -47617,6 +47649,22 @@
       "price": 33,
       "reason": "进入有安全边际的买入观察区",
       "latest_report": "companies/CN/603920/reports/2026-07-09-initial.md"
+    },
+    {
+      "symbol": "CN:603922",
+      "name": "ST金鸿顺",
+      "type": "price_above",
+      "price": 7.5,
+      "reason": "高于风险调整后公允价值，不应追高并应考虑减仓",
+      "latest_report": "companies/CN/603922/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603922",
+      "name": "ST金鸿顺",
+      "type": "price_below",
+      "price": 4.0,
+      "reason": "仅在治理和审计前置条件同时满足后进入重新研究区间",
+      "latest_report": "companies/CN/603922/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:603929",

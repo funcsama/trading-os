@@ -13248,6 +13248,20 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:603843",
+      "name": "*ST正平",
+      "reason": "复核2026年半年报净资产、减值和经营现金流，并核对重整进展",
+      "latest_report": "companies/CN/603843/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:603869",
+      "name": "ST智知",
+      "reason": "复查2026年半年报、聚安网毛利率、智算资产回报与自由现金流",
+      "latest_report": "companies/CN/603869/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:603906",
       "name": "龙蟠科技",
       "reason": "复查2026年半年报，重点看磷酸铁锂出货、吨毛利、存货减值、现金流和负债。",
@@ -29089,6 +29103,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:603843",
+      "name": "*ST正平",
+      "reason": "复核三季报、年末保壳可行性和正式重整是否受理",
+      "latest_report": "companies/CN/603843/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:603893",
       "name": "瑞芯微",
       "reason": "三季报窗口，验证2026H2是否延续高增长以及供应链涨价影响。",
@@ -29107,6 +29128,13 @@
       "name": "世运电路",
       "reason": "复查2026年三季报，确认成本压力和AI/汽车电子订单兑现情况",
       "latest_report": "companies/CN/603920/reports/2026-07-09-initial.md"
+    },
+    {
+      "date": "2026-10-31",
+      "symbol": "CN:603922",
+      "name": "ST金鸿顺",
+      "reason": "复核2026年三季报、资金占用清偿、诉讼及证监会立案进展",
+      "latest_report": "companies/CN/603922/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-10-31",

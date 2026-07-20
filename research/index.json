@@ -46205,6 +46205,58 @@
       "updated_at": "2026-07-09"
     },
     {
+      "symbol": "CN:603843",
+      "market": "CN",
+      "ticker": "603843",
+      "name": "*ST正平",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "预重整、债务削减和新业务兑现均未确定，现价对应约174倍2026Q1净资产且半年预亏将进一步侵蚀权益，普通股赔率极差。",
+      "fair_value_range": [
+        0.4,
+        1.2
+      ],
+      "buy_zone": [
+        0,
+        0
+      ],
+      "sell_or_reduce_zone": [
+        1.5,
+        100
+      ],
+      "latest_report": "companies/CN/603843/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T16:47:19+08:00"
+    },
+    {
+      "symbol": "CN:603869",
+      "market": "CN",
+      "ticker": "603869",
+      "name": "ST智知",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "当前价格已较充分计入摘帽与业务修复，但自由现金流为负、资本回报低且治理与会计脆弱性仍高，缺乏安全边际。",
+      "fair_value_range": [
+        5.8,
+        7.0
+      ],
+      "buy_zone": [
+        4.5,
+        5.5
+      ],
+      "sell_or_reduce_zone": [
+        8.2,
+        10.5
+      ],
+      "latest_report": "companies/CN/603869/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T17:30:00+08:00"
+    },
+    {
       "symbol": "CN:603893",
       "market": "CN",
       "ticker": "603893",
@@ -46281,6 +46333,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-09"
+    },
+    {
+      "symbol": "CN:603922",
+      "market": "CN",
+      "ticker": "603922",
+      "name": "ST金鸿顺",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "主业盈利初步修复，但资金占用、内控否定意见、证监会立案与控制权风险尚未解决，当前2.45倍PB缺乏安全边际。",
+      "fair_value_range": [
+        4.0,
+        6.0
+      ],
+      "buy_zone": [
+        3.0,
+        4.0
+      ],
+      "sell_or_reduce_zone": [
+        7.5,
+        20.0
+      ],
+      "latest_report": "companies/CN/603922/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-10-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T00:00:00+08:00"
     },
     {
       "symbol": "CN:603929",
