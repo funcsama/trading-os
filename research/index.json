@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "company_count": 2151,
+  "company_count": 2154,
   "companies": [
     {
       "symbol": "CN:000001",
@@ -45607,6 +45607,32 @@
       "updated_at": "2026-07-20T21:30:00+08:00"
     },
     {
+      "symbol": "CN:603378",
+      "market": "CN",
+      "ticker": "603378",
+      "name": "*ST亚士",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "现价主要交易债务重组和保壳期权，而非可持续自由现金流；在净资产转正、债务实质削减和审计风险解除前应回避。",
+      "fair_value_range": [
+        1.2,
+        2.4
+      ],
+      "buy_zone": [
+        0.8,
+        1.3
+      ],
+      "sell_or_reduce_zone": [
+        3.0,
+        99.0
+      ],
+      "latest_report": "companies/CN/603378/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T22:37:49+08:00"
+    },
+    {
       "symbol": "CN:603379",
       "market": "CN",
       "ticker": "603379",
@@ -45659,6 +45685,32 @@
       "updated_at": "2026-07-10"
     },
     {
+      "symbol": "CN:603398",
+      "market": "CN",
+      "ticker": "603398",
+      "name": "*ST沐邦",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "核心光伏业务持续负毛利、自由现金流为负、净资产接近耗尽，治理、诉讼及预重整风险极高，当前价格已透支对原股东友好的重整预期。",
+      "fair_value_range": [
+        0.0,
+        2.5
+      ],
+      "buy_zone": [
+        0.0,
+        0.0
+      ],
+      "sell_or_reduce_zone": [
+        4.0,
+        100.0
+      ],
+      "latest_report": "companies/CN/603398/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T22:45:39+08:00"
+    },
+    {
       "symbol": "CN:603407",
       "market": "CN",
       "ticker": "603407",
@@ -45683,6 +45735,32 @@
       "next_review_date": "2026-08-31",
       "active_price_triggers": 3,
       "updated_at": "2026-07-10"
+    },
+    {
+      "symbol": "CN:603429",
+      "market": "CN",
+      "ticker": "603429",
+      "name": "*ST集友",
+      "currency": "CNY",
+      "status": "active",
+      "current_rating": "avoid",
+      "current_thesis": "主营收入与毛利率坍塌且2026年亏损扩大，现价已过度计入尚无财务数据和定价的重组成功预期，退市与治理风险不值得承担。",
+      "fair_value_range": [
+        2.2,
+        3.2
+      ],
+      "buy_zone": [
+        1.8,
+        2.3
+      ],
+      "sell_or_reduce_zone": [
+        4.5,
+        8.0
+      ],
+      "latest_report": "companies/CN/603429/reports/2026-07-14-initial.md",
+      "next_review_date": "2026-08-31",
+      "active_price_triggers": 2,
+      "updated_at": "2026-07-20T20:00:00+08:00"
     },
     {
       "symbol": "CN:603459",

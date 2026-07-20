@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6949,
+  "item_count": 6955,
   "items": [
     {
       "symbol": "CN:000001",
@@ -46875,6 +46875,22 @@
       "latest_report": "companies/CN/603377/reports/2026-07-14-initial.md"
     },
     {
+      "symbol": "CN:603378",
+      "name": "*ST亚士",
+      "type": "price_above",
+      "price": 3.0,
+      "reason": "进入减仓或不应追高区间，除非可执行方案显著提高每股价值。",
+      "latest_report": "companies/CN/603378/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603378",
+      "name": "*ST亚士",
+      "type": "price_below",
+      "price": 1.3,
+      "reason": "进入研究仓评估区，但必须先重新核验重组、退市和清算风险。",
+      "latest_report": "companies/CN/603378/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603379",
       "name": "三美股份",
       "type": "price_above",
@@ -46931,6 +46947,22 @@
       "latest_report": "companies/CN/603392/reports/2026-07-10-initial.md"
     },
     {
+      "symbol": "CN:603398",
+      "name": "*ST沐邦",
+      "type": "price_above",
+      "price": 4.0,
+      "reason": "高于包含重整期权的公允价值上沿，维持回避或减持",
+      "latest_report": "companies/CN/603398/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603398",
+      "name": "*ST沐邦",
+      "type": "price_below",
+      "price": 2.5,
+      "reason": "进入重整期权重新评估区；仅触发研究，正式方案、稀释比例、持续经营和现金流未验证前不自动买入",
+      "latest_report": "companies/CN/603398/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603407",
       "name": "长裕集团",
       "type": "price_above",
@@ -46953,6 +46985,22 @@
       "price": 26,
       "reason": "进入买入观察区间，需要复核中报或三季报后决定是否建立小仓位",
       "latest_report": "companies/CN/603407/reports/2026-07-10-initial.md"
+    },
+    {
+      "symbol": "CN:603429",
+      "name": "*ST集友",
+      "type": "price_above",
+      "price": 4.5,
+      "reason": "高于不含重组的公允价值上限，应减仓或避免追高",
+      "latest_report": "companies/CN/603429/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603429",
+      "name": "*ST集友",
+      "type": "price_below",
+      "price": 2.3,
+      "reason": "进入资产价值附近，但仅在退市与交易风险均显著下降后研究试仓",
+      "latest_report": "companies/CN/603429/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:603459",

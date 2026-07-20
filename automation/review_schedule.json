@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 5743,
+  "item_count": 5748,
   "items": [
     {
       "date": "2026-06-30",
@@ -13101,6 +13101,13 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:603378",
+      "name": "*ST亚士",
+      "reason": "复查半年报、债权申报规模、归母净资产、经营现金流与重组方案。",
+      "latest_report": "companies/CN/603378/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:603392",
       "name": "万泰生物",
       "reason": "复查2026年半年报，重点核验九价HPV收入、疫苗毛利率、经营现金流和费用率",
@@ -13108,10 +13115,24 @@
     },
     {
       "date": "2026-08-31",
+      "symbol": "CN:603398",
+      "name": "*ST沐邦",
+      "reason": "复核2026年半年报、归母净资产、持续经营风险、诉讼冻结及公司和江西捷锐预重整进展",
+      "latest_report": "companies/CN/603398/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-08-31",
       "symbol": "CN:603407",
       "name": "长裕集团",
       "reason": "复核2026年中报，重点检查收入增速、毛利率、经营现金流、应收和存货",
       "latest_report": "companies/CN/603407/reports/2026-07-10-initial.md"
+    },
+    {
+      "date": "2026-08-31",
+      "symbol": "CN:603429",
+      "name": "*ST集友",
+      "reason": "复核2026年半年报、重组正式方案及退市指标进展",
+      "latest_report": "companies/CN/603429/reports/2026-07-14-initial.md"
     },
     {
       "date": "2026-08-31",
@@ -29019,6 +29040,13 @@
     },
     {
       "date": "2026-10-31",
+      "symbol": "CN:603398",
+      "name": "*ST沐邦",
+      "reason": "复核2026年三季报毛利率、经营现金流、到期债务和风险警示状态",
+      "latest_report": "companies/CN/603398/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2026-10-31",
       "symbol": "CN:603407",
       "name": "长裕集团",
       "reason": "复核2026年三季报，确认上市后业绩兑现是否具备连续性",
@@ -37878,6 +37906,13 @@
       "name": "*ST东珠",
       "reason": "复核2026年年报退市指标、审计意见和内控意见",
       "latest_report": "companies/CN/603359/reports/2026-07-14-initial.md"
+    },
+    {
+      "date": "2027-04-30",
+      "symbol": "CN:603378",
+      "name": "*ST亚士",
+      "reason": "复查2026年报审计意见、内控整改、净资产是否转正及终止上市风险。",
+      "latest_report": "companies/CN/603378/reports/2026-07-14-initial.md"
     },
     {
       "date": "2027-04-30",
