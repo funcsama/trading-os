@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "item_count": 6943,
+  "item_count": 6949,
   "items": [
     {
       "symbol": "CN:000001",
@@ -42339,6 +42339,22 @@
       "latest_report": "companies/CN/600741/reports/2026-07-10-initial.md"
     },
     {
+      "symbol": "CN:600753",
+      "name": "ST海钦",
+      "type": "price_above",
+      "price": 6.8,
+      "reason": "进入减仓或不应追高区间，盈利和现金流难以支撑该估值",
+      "latest_report": "companies/CN/600753/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:600753",
+      "name": "ST海钦",
+      "type": "price_below",
+      "price": 3.2,
+      "reason": "进入具备初步安全边际的观察区，复核基本面后决定是否建立不超过1%的研究仓",
+      "latest_report": "companies/CN/600753/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:600760",
       "name": "中航沈飞",
       "type": "price_above",
@@ -46803,6 +46819,22 @@
       "latest_report": "companies/CN/603308/reports/2026-07-09-initial.md"
     },
     {
+      "symbol": "CN:603359",
+      "name": "*ST东珠",
+      "type": "price_above",
+      "price": 1.8,
+      "reason": "进入减仓或不应追高区间，保壳期权溢价偏高",
+      "latest_report": "companies/CN/603359/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603359",
+      "name": "*ST东珠",
+      "type": "price_below",
+      "price": 0.9,
+      "reason": "进入困境资产观察区，但必须先验证退市概率、回款和审计整改，禁止机械补仓",
+      "latest_report": "companies/CN/603359/reports/2026-07-14-initial.md"
+    },
+    {
       "symbol": "CN:603369",
       "name": "今世缘",
       "type": "price_above",
@@ -46825,6 +46857,22 @@
       "price": 22,
       "reason": "进入买入观察区，复核国缘价盘、合同负债和省内大区动销后可开首笔仓位。",
       "latest_report": "companies/CN/603369/reports/2026-07-10-initial.md"
+    },
+    {
+      "symbol": "CN:603377",
+      "name": "ST东时",
+      "type": "price_above",
+      "price": 1.8,
+      "reason": "进入减仓或不应追高区间，当前基本面不足以支撑乐观重整定价",
+      "latest_report": "companies/CN/603377/reports/2026-07-14-initial.md"
+    },
+    {
+      "symbol": "CN:603377",
+      "name": "ST东时",
+      "type": "price_below",
+      "price": 0.8,
+      "reason": "进入事件仓复核区，只有重整条款和核心经营同时通过验证才考虑极小仓位",
+      "latest_report": "companies/CN/603377/reports/2026-07-14-initial.md"
     },
     {
       "symbol": "CN:603379",
