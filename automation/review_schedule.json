@@ -1,5 +1,5 @@
 {
-  "item_count": 5530,
+  "item_count": 5568,
   "items": [
     {
       "condition": {
@@ -747,15 +747,91 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "event": "material_buyback_conversion_or_acquisition"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
       "name": "美的集团",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
+      "reason": "回购注销、H股可转债转股或重大并购改变完全摊薄股本和净现金时重算每股价值。",
+      "source": "company_trigger",
       "symbol": "CN:000333",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "capital-allocation-change",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "event": "material_overseas_tariff_or_trade_restriction"
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "主要海外市场新增实质关税或贸易限制时，重做海外收入、利润与产能迁移桥。",
+      "source": "company_trigger",
+      "symbol": "CN:000333",
+      "trigger_id": "overseas-trade-shock",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "filing_type": "2026_interim_report"
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "半年报披露后核对扣非利润、国内外收入、ToB利润、营运资金与自由现金流。",
+      "source": "company_trigger",
+      "symbol": "CN:000333",
+      "trigger_id": "2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 110.0
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "价格要求更强的海外、ToB利润与现金流兑现，只触发估值复核。",
+      "source": "company_trigger",
+      "symbol": "CN:000333",
+      "trigger_id": "valuation-review-high",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 72.0
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "价格进入估值敏感区下沿，只触发一手证据和估值复核，不构成自动操作。",
+      "source": "company_trigger",
+      "symbol": "CN:000333",
+      "trigger_id": "valuation-review-low",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "conclusion_status": "insufficient_evidence"
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "当前研究结论不可作为组合买入依据，必须重新建立或复核。",
+      "source": "conclusion_invalidation",
+      "symbol": "CN:000333",
+      "trigger_id": "conclusion-invalid",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "metric": "h1_deducted_net_profit_yoy",
+        "operator": "lte",
+        "threshold": -10.0
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "若半年累计扣非净利润仍下降10%以上，重估正常化盈利和利润质量。",
+      "source": "company_trigger",
+      "symbol": "CN:000333",
+      "trigger_id": "deducted-profit-deterioration",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -35091,15 +35167,121 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "event_name": "president_or_ceo_appointment"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
       "name": "招商银行",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
+      "reason": "新任行长或首席执行官正式任命后复核治理和战略连续性。",
+      "source": "company_trigger",
       "symbol": "CN:600036",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cmb-management-succession",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "filing_type": "2026_interim_report"
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "半年报披露后重算净息差、关注率、信用卡不良生成、房地产不良和资本充足率。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-2026-interim",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "filing_type": "2026_third_quarter_report"
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "三季报披露后复核财富管理手续费、银行卡手续费和客户存款成本。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-2026-q3",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 65.0
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "接近乐观估值区，仅触发估值复核，不自动形成组合动作。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-price-review-high",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 40.0
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "进入初研悲观至基准估值交界，仅触发估值和基本面复核，不自动形成组合动作。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-price-review-low",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "metric": "core_tier1_capital_ratio",
+        "operator": "lt",
+        "threshold": 13.5
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "核心一级资本充足率跌破13.50%触发资本与分红约束重估。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-core-tier1",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "metric": "credit_card_npl_ratio",
+        "operator": "gte",
+        "threshold": 2.2
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "信用卡不良率达到2.20%触发零售风险与信用成本重估。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-credit-card-risk",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "metric": "net_interest_margin",
+        "operator": "lt",
+        "threshold": 1.75
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "净息差低于1.75%触发可持续ROE下修。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-nim-floor",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "metric": "provision_coverage_ratio",
+        "operator": "lt",
+        "threshold": 350.0
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "拨备覆盖率跌破350%触发资本损失情景。",
+      "source": "company_trigger",
+      "symbol": "CN:600036",
+      "trigger_id": "cmb-provision-buffer",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -39267,15 +39449,96 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-10-31"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
       "name": "贵州茅台",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
+      "reason": "最迟复核三季报、提价传导、渠道库存和估值。",
+      "source": "company_trigger",
       "symbol": "CN:600519",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "moutai-2026-q3-deadline",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "event_types": [
+          "flying_fairy_price_change",
+          "channel_policy_change",
+          "related_party_transaction",
+          "governance_investigation_update"
+        ]
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "调价、渠道、关联交易或治理出现新信息时重评动销与治理折价。",
+      "source": "company_trigger",
+      "symbol": "CN:600519",
+      "trigger_id": "moutai-material-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "filing_type": "2026_interim_report"
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "半年报披露后核对两轮提价后的量、毛利率、销售收现、合同负债、库存和经销商变化。",
+      "source": "company_trigger",
+      "symbol": "CN:600519",
+      "trigger_id": "moutai-2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 1650.0
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "价格进入高增长隐含预期区，仅触发重估和证据复核，不自动产生交易动作。",
+      "source": "company_trigger",
+      "symbol": "CN:600519",
+      "trigger_id": "moutai-price-high-review",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1050.0
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "价格进入较高估值缓冲区，仅触发重估和证据复核，不自动产生交易动作。",
+      "source": "company_trigger",
+      "symbol": "CN:600519",
+      "trigger_id": "moutai-price-low-review",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "conclusion_status": "failed"
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "当前研究结论不可作为组合买入依据，必须重新建立或复核。",
+      "source": "conclusion_invalidation",
+      "symbol": "CN:600519",
+      "trigger_id": "conclusion-invalid",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "gross_margin_yoy_change_lte_pct_points": -2,
+        "or_net_profit_yoy_lte_pct": 0,
+        "or_sales_cash_to_revenue_lte": 0.9
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "利润、毛利率或销售收现触及证伪阈值时重做核心盈利质量判断。",
+      "source": "company_trigger",
+      "symbol": "CN:600519",
+      "trigger_id": "moutai-profit-quality-falsifier",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -40623,15 +40886,91 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "event": "fuyao_america_investigation_escalation"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
       "name": "福耀玻璃",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
+      "reason": "美国执法或法院文件将福耀美国列为目标、被告或责任主体时，重做尾部损失与治理评估。",
+      "source": "company_trigger",
       "symbol": "CN:600660",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "us-investigation-escalation",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "event": "automotive_glass_or_key_input_new_us_tariff"
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "汽车玻璃或关键进口材料被纳入新增美国高额关税时，重做美国利润桥。",
+      "source": "company_trigger",
+      "symbol": "CN:600660",
+      "trigger_id": "us-tariff-expansion",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "filing_type": "2026_interim_report"
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "半年报披露后核对票据时点、经营现金流、资本开支、汇兑前利润和海外利润率。",
+      "source": "company_trigger",
+      "symbol": "CN:600660",
+      "trigger_id": "2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 70.0
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "价格要求更强的现金流、ASP和海外回报兑现，只触发估值复核。",
+      "source": "company_trigger",
+      "symbol": "CN:600660",
+      "trigger_id": "valuation-review-high",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 44.0
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "价格进入估值敏感区下沿，只触发一手证据和估值复核，不构成自动操作。",
+      "source": "company_trigger",
+      "symbol": "CN:600660",
+      "trigger_id": "valuation-review-low",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "metric": "h1_cfo_to_net_profit",
+        "operator": "lt",
+        "threshold": 0.7
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "若半年累计现金转换仍低于0.7倍，重估票据时点解释和正常化自由现金流。",
+      "source": "company_trigger",
+      "symbol": "CN:600660",
+      "trigger_id": "cash-conversion-deterioration",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "conclusion_status": "failed"
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "当前研究结论不可作为组合买入依据，必须重新建立或复核。",
+      "source": "conclusion_invalidation",
+      "symbol": "CN:600660",
+      "trigger_id": "conclusion-invalid",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -42987,15 +43326,96 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-10-31"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
       "name": "长江电力",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
+      "reason": "最迟在三季报后更新全年水文、发电量、量价桥和融资成本。",
+      "source": "company_trigger",
       "symbol": "CN:600900",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cypc-2026-q3-deadline",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "event_types": [
+          "major_hydrology_update",
+          "tariff_or_market_rule_change",
+          "major_pumped_storage_investment",
+          "material_financing"
+        ]
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "来水、电价机制、重大抽蓄投资或融资变化会改变现金流与估值。",
+      "source": "company_trigger",
+      "symbol": "CN:600900",
+      "trigger_id": "cypc-hydrology-price-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "filing_type": "2026_interim_report"
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "半年报披露后核对电量与收入桥、单位电量收入、折旧、资本开支、利息及债务期限。",
+      "source": "company_trigger",
+      "symbol": "CN:600900",
+      "trigger_id": "cypc-2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 34.0
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "价格进入高长期增长隐含预期区，仅触发证据复核与重估，不自动形成交易动作。",
+      "source": "company_trigger",
+      "symbol": "CN:600900",
+      "trigger_id": "cypc-price-high-review",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 24.0
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "价格进入较高估值缓冲区，仅触发证据复核与重估，不自动形成交易动作。",
+      "source": "company_trigger",
+      "symbol": "CN:600900",
+      "trigger_id": "cypc-price-low-review",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "conclusion_status": "failed"
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "当前研究结论不可作为组合买入依据，必须重新建立或复核。",
+      "source": "conclusion_invalidation",
+      "symbol": "CN:600900",
+      "trigger_id": "conclusion-invalid",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "or_domestic_hydro_volume_yoy_gt_revenue_yoy_pct_points": 3.0,
+        "or_interest_expense_yoy_gte_pct": 10.0,
+        "or_operating_cashflow_less_capex_below_dividend": true
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "量价错位、利息反弹或自由现金流不能覆盖分红将触发核心论点复核。",
+      "source": "company_trigger",
+      "symbol": "CN:600900",
+      "trigger_id": "cypc-cashflow-thesis-falsifier",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -44103,15 +44523,91 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "event": "new_parent_asset_injection_or_major_capex"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
       "name": "中国神华",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
+      "reason": "新的母集团资产注入或重大投资需重新评估关联定价和ROIC",
+      "source": "company_trigger",
       "symbol": "CN:601088",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "capital-allocation-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "date": "2026-08-31"
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "2026年半年度报告披露后核对并购后完整报表、分部利润和现金流",
+      "source": "company_trigger",
+      "symbol": "CN:601088",
+      "trigger_id": "h1-2026-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "date": "2026-10-31"
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "2026年三季报后核对短期借款、利息费用和每股收益稀释",
+      "source": "company_trigger",
+      "symbol": "CN:601088",
+      "trigger_id": "q3-2026-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 48.0
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "进入乐观情景估值区，需复核市场隐含利润和分红假设",
+      "source": "company_trigger",
+      "symbol": "CN:601088",
+      "trigger_id": "valuation-review-high",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 34.0
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "进入初研价值安全边际观察区，需更新煤价、现金流和并购整合证据",
+      "source": "company_trigger",
+      "symbol": "CN:601088",
+      "trigger_id": "valuation-review-low",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "conclusion_status": "failed"
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "当前研究结论不可作为组合买入依据，必须重新建立或复核。",
+      "source": "conclusion_invalidation",
+      "symbol": "CN:601088",
+      "trigger_id": "conclusion-invalid",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "metric": "annual_cash_payout_ratio",
+        "operator": "lt",
+        "threshold": 0.65
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "现金分红低于股东回报规划底线时重估股东回报逻辑",
+      "source": "company_trigger",
+      "symbol": "CN:601088",
+      "trigger_id": "payout-policy-breach",
+      "type": "thesis"
     },
     {
       "condition": {

@@ -1,5 +1,129 @@
 {
-  "item_count": 0,
-  "items": [],
+  "item_count": 9,
+  "items": [
+    {
+      "alert_id": "CN:000333:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
+      "name": "美的集团",
+      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:000333",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600036:cmb-price-review-high",
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 65.0
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "接近乐观估值区，仅触发估值复核，不自动形成组合动作。",
+      "source_ref": "cmb-price-review-high",
+      "symbol": "CN:600036",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:600036:cmb-price-review-low",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 40.0
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "进入初研悲观至基准估值交界，仅触发估值和基本面复核，不自动形成组合动作。",
+      "source_ref": "cmb-price-review-low",
+      "symbol": "CN:600036",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:600036:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:600036",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600036:underwriting-buy-zone",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 34.5
+      },
+      "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
+      "name": "招商银行",
+      "reason": "价格进入承保买入区；执行前必须重查证据有效性和核心逻辑。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:600036",
+      "type": "underwriting_buy_zone_entry"
+    },
+    {
+      "alert_id": "CN:600519:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
+      "name": "贵州茅台",
+      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:600519",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600660:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
+      "name": "福耀玻璃",
+      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:600660",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600900:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
+      "name": "长江电力",
+      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:600900",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:601088:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
+      "name": "中国神华",
+      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "source_ref": "2026-07-22-value-rebaseline-001",
+      "symbol": "CN:601088",
+      "type": "conclusion_price_move_stale"
+    }
+  ],
   "schema_version": 2
 }
