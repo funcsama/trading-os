@@ -1,0 +1,1429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <title>
+            中兴商业(000715) - 股票行情中心  - 搜狐证券
+        </title>
+        <meta name="Keywords" content="中兴商业,000715,行情,技术分析,资讯,评论,股吧">
+        <meta name="Description" content="中兴商业(000715)的实时行情，及时准确的提供中兴商业(000715)的flash分时走势、K线图、均价线系统、MACD、KDJ、交易量等全面技术分析，帮你做出及时判断，同时提供中兴商业(000715)的股票交易提示，公司概况，最新资讯，分析师评论，股吧等重要信息">
+        
+        <link href="//static.k.sohu.com/static/finance/pc/qstock/v0.0.12/css/qindex.min.css?202707061738" rel="stylesheet" />
+
+        <script type="text/javascript">
+            /* 添加相关股票推荐页面，用于多股比较 */
+                            var tjstock = "[{name:'深证成指',code:'zs_399001',memo:'大盘指数'},{name:'中百集团',code:'cn_000759',memo:'行业权重股'},{name:'金开新能',code:'cn_600821',memo:'阶段涨幅居前'}]";
+                    </script>
+        <style>
+            .commtext div, .huifu_list div {display: none}
+        </style>
+    </head>
+    
+    <body class="page1024">
+        <script type="text/javascript">
+(function() {
+	var w = window.screen.width;
+	if(w >= 1280){
+		document.body.className = 'page1280';
+	}
+	document.body.style.cssText = '_width:' + (w - 20) + 'px;'
+})()
+</script>
+
+        <a name="top" title="股票，行情，证券，搜狐证券"></a> 
+<div class="header">
+	<div class="stocklogo"><a title="搜狐证券" target="_blank" href="http://stock.sohu.com/"></a></div>
+	<div class="headersea" id="FEP_searchbar">
+		<form class="autoTmp" method="get" target="" action="javascript:void(0);" id="searchForm">
+			<ul id="FEP_searchList" class="searchList clearfix">
+				<li class="e1"><input type="text" id="searchInput" class="kw" value="代码/名称/缩写" autocomplete="off" disableautocomplete=""></li>
+				<li class="e2"><input type="submit" id="searchButton" class="seabtn" value="行情查询"></li>
+			</ul>
+		</form>
+		<div id="suggestDiv" class="suggestLists" style="display: none;"></div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a href="/" title="行情"><span>行情</span></a></li>
+			<li class="current"><a href="/cn/000002/index.shtml" title="个股"><span>个股</span></a></li>
+			<li><a href="/cn/zs.shtml" title="指数"><span>指数</span></a></li>
+			<li><a href="/cn/ph.shtml" title="排行"><span>排行</span></a></li>
+			<li><a href="/cn/bk.shtml" title="板块"><span>板块</span></a></li>
+			<li><a href="/cn/mystock.shtml" title="自选股"><span>自选股</span></a></li>
+	               <!--	<li><a title="股友会" href="http://t.stock.sohu.com/"><span>股友会</span></a></li>-->
+			<li><a title="基金" href="//q.fund.sohu.com" target="_blank"><span>基金</span></a></li>
+			<li><a title="港股" href="//q.stock.sohu.com/hk/hk_ph.html" target="_blank"><span>港股</span></a></li>
+                        <li><a title="美股" href="//q.stock.sohu.com/us/zgg.html" target="_blank"><span>美股</span></a></li>
+                        <!--<li><a title="美股" href="//q.stock.sohu.com/us/DJI_zhishu.html" target="_blank"><span>美股</span></a></li>-->
+                       <!-- <li><a title="炒股大赛" href="//q.stock.sohu.com/cgds/index.do" target="_blank"><span>炒股大赛</span></a></li>-->
+		</ul>
+	</div>
+
+	<div class="topuserbox" id="FT_user"></div>
+
+</div>
+
+        <!-- header end -->
+        <div class="topbar">
+      <div class="topbarcon">
+        <div class="c1" id="FT_index"></div>
+        <div class="line"></div>
+        <div class="hqlist duanxian" id="FT_duanxian">
+          <div class="hqlist_hd">
+            <table cellspacing="0" cellpadding="0" border="0"></table>
+          </div>
+          <div class="hqlist_bd">
+            <table cellspacing="0" cellpadding="0" border="0"></table>
+			<p class="hqlist_3ft"><a href="//q.stock.sohu.com/fundflow/" target="_blank">资金流向》</a>&nbsp;<a href="//q.stock.sohu.com/app2/bigdeal2.jsp" target="_blank">大宗交易》</a></p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="hqlist zhangfu" id="FT_change">
+          <div class="hqlist_hd">
+            <table cellspacing="0" cellpadding="0" border="0"></table>
+          </div>
+          <div class="hqlist_bd">
+            <table cellspacing="0" cellpadding="0" border="0"></table>
+			<p class="hqlist_3ft"><a href="http://q.stock.sohu.com/cn/ph.shtml" target="_blank">即时排行》</a>&nbsp;<a href="http://q.stock.sohu.com/cn/jdph/jdph_hushi_5d_00.shtml" target="_blank">阶段排行》</a></p>
+          </div>
+        </div>
+		<div class="line hidden"></div>
+		<div class="hqlist hqlist_3 hidden" id="FT_bk">
+		  <div class="hqlist_hd">
+            <table cellspacing="0" cellpadding="0" border="0"></table>
+          </div>
+		  <div class="hqlist_bd">
+            <table cellspacing="0" cellpadding="0" border="0"></table>
+			<p class="hqlist_3ft"><a href="http://q.stock.sohu.com/cn/bk.shtml" target="_blank">领涨板块》</a></p>
+          </div>
+		</div>
+		<div class="topbar_r"><span class="feedback"><a id="mystock_feedback" href="http://q.stock.sohu.com/feedback.html" target="_blank">建议反馈</a></span></div>
+      </div>
+</div>
+
+
+        <div id="contentA" class="clearfix">
+            <div class="left">
+		<!--
+                <div class="ad1024" style="display:block">
+                    <a target="_blank" href="//q.stock.sohu.com/us/zgg.html">
+                        <img src="//i3.itc.cn/20151023/2bb1_e2fa13d5_0eb4_d05e_b1df_5e3ce2104692_1.jpg">
+                    </a>
+                </div>
+		-->
+                <ul class="tabtag tabtag1" id="FT_rv_mystock">
+  	<li class="current">最近浏览</li>
+    <li><a href="/cn/mystock.shtml">我的自选</a></li>
+</ul>
+
+<div class="tabconbox" id="FT_rv_mystock_con">  
+	<div class="tabcon">
+		<table class="tableA" width="100%" border="0" cellspacing="0" cellpadding="0" id="FT_rv"></table>
+	</div>
+	<div class="tabcon hidden">
+		<table class="tableA" width="100%" border="0" cellspacing="0" cellpadding="0" id="FT_mystock"></table>
+	</div>
+	<div id="FT_hotstocks" class="leftHotstock hidden">
+		<h4>以下是热门股票</h4>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tableA"></table>
+	</div>	
+</div> 
+
+                <a name="leftnav"></a>
+                                    <ul class="tabtag tabtag1" id="FT_left_nav">
+                        <li class="current">操盘必读</li>
+                        <li>分类导航</li>
+                    </ul>
+                    <div class="lefttabbox">
+                        <div class="lefttab">
+                            <div class="lefttext">
+<b>经营范围：</b>
+	许可项目：餐饮服务，食品生产，食品经营，保健食品销售，第三类医疗器械生产，第三类医疗器械经营，药品零售，烟草制品零售，特殊医学用途配方食品销售，出版物零售，第二类增值电信业务，互联网信息服务，诊所服务，医疗服务，药品互联...
+<a href="//q.stock.sohu.com/cn/000715/gsjj.shtml" target="_blank">[详细]</a>
+</div>
+
+
+                            <div class="dashi">
+	<h4>大事提醒</h4>
+	<ol class="dslist">
+	 			<li><strong>1)</strong><b>2026-06-10:</b><a href="/cn/000715/bw.shtml" target='_blank' style='color:#4A4F53;'>红利发放日</a></li>
+		 			<li><strong>2)</strong><b>2026-06-10:</b><a href="/cn/000715/bw.shtml" target='_blank' style='color:#4A4F53;'>除权除息日,10派0.65</a></li>
+		 		</ol>
+	<div class="ds_type clearfix">
+	    <ul>
+	    	<li class="e1"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=100" target=_blank>公司公告</a></li>    
+	    	<li class="e2"><a href="//q.stock.sohu.com/cn/000715/bw.shtml" target=_blank>重大事项备忘</a></li>
+	    	<li class="e3"><a href="//q.stock.sohu.com/cn/000715/xsjj.shtml" target=_blank>限售解禁</a></li>
+	    </ul>
+	    <ul>
+	 		<li class="e1"><a href="//q.stock.sohu.com/cn/000715/lhb.shtml" target=_blank>龙虎榜</a></li>
+	    	<li class="e2"><a href="//q.stock.sohu.com/cn/000715/fhsp.shtml" target=_blank>分红送配</a></li>
+	    	<li class="e3"><a href="//q.stock.sohu.com/cn/000715/yjyg.shtml" target=_blank>业绩预告</a></li>
+	    </ul>
+	    <ul>
+	 		<li class="e1"><a href="//q.stock.sohu.com/cn/000715/lshq.shtml" target=_blank>历史行情</a></li>
+	    </ul>
+  	</div> 
+</div>
+
+    
+
+
+
+
+
+
+
+    
+
+
+                            <div class="mod_left02">
+	<div class="titleA"><span class="tmore"><a href="//q.stock.sohu.com/cn/000715/cwzb.shtml" target="_blank">更多>></a></span><h4 class="tit">个股概况</h4></div>
+			<div class="tablebox_l">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table02">
+				<thead>
+					<tr>
+						<td class="td1">2026-03-31</td>
+						<td class="td2"><span>数值</span></td>
+					    <td class="td3">同比%</td>
+					    <td class="td4">当季环比%</td>
+					</tr>
+				</thead>	
+				<tbody>
+					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_sy.shtml" target=_blank>每股收益</a></td>
+						<td class="td2">0.04</td> 
+						<td class="td3 green">-20.00</td>
+						<td class="td4 ">-</td>
+					</tr>
+					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_jzc.shtml" target=_blank>每股净资产</a></td>
+					    <td class="td2">3.77</td>
+					    <td class="td3 green">-19.81</td>
+					    <td class="td4 ">-</td>
+					</tr>
+  					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_zysr.shtml" target=_blank>主营收入</a></td>
+					    <td class="td2">1.96亿</td>
+					    <td class="td3 green">-8.10</td>
+					    <td class="td4 red">6.42</td>
+  					</tr>
+					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_jlr.shtml" target=_blank>净利润</a></td>
+					    <td class="td2">2064.17万</td>
+					    <td class="td3 red">1.10</td>
+					    <td class="td4 green">-54.94</td>
+					</tr>
+					<tr class="last">
+					    <td class="td1">销售毛利率</td>
+					    <td class="td2">0.00</td>
+					    <td class="td3 ">-</td>
+					    <td class="td4 green">-14.11</td>
+					</tr>
+				</tbody>
+			</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table03">
+  				<tbody>
+  					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_gb.shtml"  target=_blank>总股本(万股)</a></td>
+					    <td class="td2">54043.46</td>
+  					</tr>
+  					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_lt.shtml"  target=_blank>流通股本(万股)</a></td>
+					    <td class="td2">48603.13</td>
+  					</tr>
+					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_gjj.shtml"  target=_blank>每股资本公积金 </a></td>
+					    <td class="td2">0.1132</td>
+					</tr>
+					<tr>
+					    <td class="td1"><a href="//q.stock.sohu.com/cn/dxph_wfp.shtml"  target=_blank>每股未分配利润</a></td>
+					    <td class="td2">2.2248</td>
+  					</tr>
+  						  					<tr class="last">
+	  						<td class="td1"><a href="//q.stock.sohu.com/cn/dxph_zcsy.shtml"  target=_blank>净资产收益率</a></td>
+	    					<td class="td2">1.01%</td>
+	  					</tr>
+  									</tbody>
+			</table>
+			<p class="mod_left02_ft">
+				<a href="//q.stock.sohu.com/cn/000715/zcfz.shtml"  target=_blank>资产负债</a>
+				<a href="//q.stock.sohu.com/cn/000715/xjll.shtml"  target=_blank>现金流量</a>
+				<a href="//q.stock.sohu.com/cn/000715/lr.shtml"  target=_blank>利润表</a>
+				<a href="//q.stock.sohu.com/cn/000715/information.shtml?type=130"  target=_blank>财务报告</a>
+			</p>
+		</div><!--tablebox_l end-->
+	</div>
+                            <div class="mod_left03">
+	<div class="titleA">
+		<span class="tmore">
+			<a href="//q.stock.sohu.com/cn/000715/srgc.shtml" target=_blank>更多>></a>
+		</span>
+		<h4 class="tit">主营收入</h4>
+	</div>
+	<div class="tablebox_l">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table04">
+			<thead>
+				<tr>
+				    <td class="td1">名称</td>
+				    <td class="td2">收入</td>
+				    <td class="td3">占比</td>
+				    <td class="td4">同比</td>
+				</tr>
+			</thead>	
+			<tbody>
+																		<tr>
+												<td class="td1">零售</td>
+							<td class="td2 ">650.90</td>
+							<td class="td3">87.24%</td>
+							<td class="td4 ">-2.92%</td>
+						</tr>
+																				<tr class="last">
+												<td class="td1">服务费</td>
+							<td class="td2 ">95.20</td>
+							<td class="td3">12.76%</td>
+							<td class="td4 ">2.55%</td>
+						</tr>
+															</tbody>
+		</table>
+	</div><!--tablebox_l end-->
+</div>
+
+    
+                            <div class="mod_left04">
+                                <div  class="titleA">
+                                    <span class="tmore">
+                                        <a href="//q.stock.sohu.com/app2/rpsholder.up?code=000715&sd=&ed=&type=date&dir=1" target=_blank>更多>></a>
+                                    </span>
+                                    <h4 class="tit">内部</h4>
+                                </div>
+                                <div class="tabconbox" id="FT_ndr_con">
+                                    <div class="tabcon">
+                                        <div class="tablebox_l">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table05_a">
+        <thead>
+		  <tr>
+		    <td class="td1">日期</td>
+		    <td class="td2">变动人</td>
+		    <td class="td4">均价</td>
+		    <td class="td5">变动股数</td>
+		  </tr>
+  		</thead>	
+  		<tbody>
+  		   			  					 				      	<tr>
+			  						    <td class="td1">20191231</td>
+					    <td class="td2" style="text-align:center">刘艳军</td>
+					    <td class="td4">-</td>
+					    <td class="td5 red">
+					    					    	+4321
+					    					    </td>
+		  			</tr>       
+										 				      	<tr>
+			  						    <td class="td1">20191231</td>
+					    <td class="td2" style="text-align:center">李四文</td>
+					    <td class="td4">-</td>
+					    <td class="td5 red">
+					    					    	+735
+					    					    </td>
+		  			</tr>       
+										 				      	<tr>
+			  						    <td class="td1">20181231</td>
+					    <td class="td2" style="text-align:center">李四文</td>
+					    <td class="td4">-</td>
+					    <td class="td5 red">
+					    					    	+1500
+					    					    </td>
+		  			</tr>       
+										 				      	<tr>
+			  						    <td class="td1">20180711</td>
+					    <td class="td2" style="text-align:center">李四文</td>
+					    <td class="td4">6.31</td>
+					    <td class="td5 red">
+					    					    	+1500
+					    					    </td>
+		  			</tr>       
+										 				      	<tr class="last">
+			  						    <td class="td1">20170117</td>
+					    <td class="td2" style="text-align:center">曹勃</td>
+					    <td class="td4">14.01</td>
+					    <td class="td5 green">
+					    					    	-200
+					    					    </td>
+		  			</tr>       
+											</tbody>
+</table>
+                                        </div>
+                                        <!--tablebox_l end-->
+                                    </div>
+                                    <!--tabcon end--> 
+                                </div>
+                                <!--tabconbox end-->
+                            </div>
+                            <div class="leftabout">
+    <div class="titleA"><span class="tmore"><a href="//q.stock.sohu.com/cn/000715/gsjj.shtml" target=_blank>更多>></a></span><h4 class="tit">公司简介</h4></div>
+    <ul>
+        <li>公司名称：中兴-沈阳商业大厦(集团)股份有限公司</li>
+        <li>注册资本：54043万元</li>
+                <li>上市日期：1997-05-08</li>
+        <li>发行价：7.50元</li>
+                <li>更名历史：中兴商业,G沈中兴</li>
+        <li>注册地：辽宁省沈阳市和平区太原北街86号</li>
+        <li>法人代表：屈大勇</li>
+        <li>总经理：李树飞</li>
+        <li>董秘：杨军</li>
+        <li>公司网址：www.zxbusiness.com</li>
+        <li>电子信箱：zqb715@zhongxingsy.com</li>
+        <li>联系电话：024-23838888-3715</li>
+    </ul>
+    <p>
+        <a href="//q.stock.sohu.com/cn/000715/gbjg.shtml" target=_blank>股本结构</a>
+        <a href="//q.stock.sohu.com/cn/000715/glc.shtml" target=_blank>管理层</a>
+        <a href="//q.stock.sohu.com/cn/000715/jyqk.shtml" target=_blank>经营情况</a>
+    </p>
+</div>
+
+
+
+
+
+
+                            <div class="alltype">
+                            <a href="#leftnav" data-item-type="1">查看所有分类&gt;&gt;</a>
+                            </div>
+                        </div>
+                        <div class="lefttab hidden">
+                            <div class="stockhome">
+                                <a href="//q.stock.sohu.com/cn/000715/index.shtml">中兴商业首页&gt;&gt;</a>
+                            </div>
+                            <div class="leftmod leftmod01 clearfix">
+                                <div class="titleA">
+                                    <h4 class="tit">行情图片 </h4>
+                                </div>
+                                <ul>
+                                    <!--
+                                    <li><a href="//q.stock.sohu.com/cn/000715/index_kp.shtml" target=_blank>实时行情 </a></li>
+                                    -->
+                                    <li><a href="//q.stock.sohu.com/cn/000715/cjmx.shtml" target=_blank>成交明细 </a></li>
+                                    <li><a href="//q.stock.sohu.com/cn/000715/fjb.shtml" target=_blank>分价表 </a></li>
+                                    <li><a href="//q.stock.sohu.com/cn/000715/lshq.shtml" target=_blank> 历史行情 </a>
+                                    <li><a href="//q.stock.sohu.com/cn/000715/lhb.shtml" target=_blank>龙虎榜数据</a></li>
+                                                                            <li><a href="//q.stock.sohu.com/cn/000715/dzjy.shtml" target=_blank>大宗交易</a></li>
+                                                                        </li>
+                                </ul>
+                            </div>
+                            <div class="leftmod leftmod02 clearfix">
+                                <div class="titleA">
+                                    <h4 class="tit">新闻资讯</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=100" target=_blank>公司公告 </a></li>
+                                </ul>
+                            </div>
+                            <div class="leftmod leftmod03 clearfix">
+                                <div class="titleA"><h4 class="tit">公司概况</h4></div>
+                                <ul>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/gsjj.shtml" target=_blank>公司简介</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/gbjg.shtml" target=_blank>股本结构</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/glc.shtml" target=_blank> 管理层</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/jyqk.shtml" target=_blank>经营情况简介</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/bw.shtml" target=_blank>重大事件备忘</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/fhsp.shtml" target=_blank>分红送配记录</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftmod leftmod03 clearfix">
+                                <div class="titleA">
+                                    <h4 class="tit">持仓明细</h4>
+                                </div>
+                                <ul>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/zygd.shtml" target=_blank>主要股东 </a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/ltgd.shtml" target=_blank>流通股本</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/jjcc.shtml" target=_blank>基金持仓</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/xsjj.shtml" target=_blank>限售解禁表</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftmod leftmod04 clearfix">
+                                <div class="titleA">
+                                    <h4 class="tit">财务数据</h4>
+                                </div>
+                                <ul>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/cwzb.shtml"  target=_blank>重要财务指标 </a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/srgc.shtml"  target=_blank>主要收入构成</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/zcfz.shtml" target=_blank>资产负债表</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/xjll.shtml" target=_blank>现金流量表</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/lr.shtml" target=_blank>利润表</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/yjyg.shtml" target=_blank>业绩预告</a></li>
+                                    <li class="colA"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=130" target=_blank>财务报告</a></li>
+                                </ul>
+                            </div>
+                            <div class="alltype">
+                            <a href="#leftnav" data-item-type="0">返回操盘必读&gt;&gt;</a>
+                            </div>
+                        </div>
+                        <!--tabcon end-->
+                    </div>
+                    <!--tabconbox end-->
+                            </div>
+            <!-- left end -->
+            <div class="right">
+                <div class="rightcon">
+                    <div class="righthdbox">
+                        <script type="text/javascript">
+var biz_code = 'cn_000715',biz_name = '中兴商业';
+
+var biz_status = 0;
+
+var is_gznhg = 0;
+var is_sh_unlisted = 0;
+
+var is_fund = 0;
+var fundType = 0;
+
+var show_after = 1;
+</script>
+<div class="righthd">
+    <ul id="FT_priceA1">
+        		<li class="name"><a href="//q.stock.sohu.com/cn/000715/index.shtml">中兴商业</a></li>
+		        <li class="code">(000715)</li>
+                		        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        
+	        	        <li class="e1"></li>
+	        <li class="e2"></li>
+	        <li class="e3"></li>
+	        <li class="date"></li>
+	        <li class="stop"></li>
+	        <li class="addbtn">
+	            <a href="javascript:void(0)" id="FT_showGroup" title="加自选"></a>
+	            <div class="tipsbox hidden" id="FT_stocks_group">
+	                <input id="FT_addStockTo" class="btn" type="button" value="加 入" />
+	                <input id="FT_addClose" class="btn" type="button" value="关 闭" />
+	            </div>
+	        </li>
+            </ul>
+</div>
+<!-- righthd end -->
+
+                        <div class="stock_baojia">
+	<table id="FT_priceA2" class="FT_priceA2">
+	  <tbody><tr>
+		<td class="e1"><strong>均价:</strong> <span data-field="0"></span></td>
+		<td class="e2">现手: <span data-field="2"></span></td>
+		<td class="e3">换手率: <span data-field="6"></span></td>
+		<td class="e4">量比: <span data-field="4"></span></td>
+		<td class="e5">最高: <span data-field="5"></span></td>
+		<td class="e6">涨停: <span data-field="9"></span></td>
+		<td class="e7">昨收: <span id="FT_lastClose" data-field="1"></span></td>
+		<td class="e8" rowspan="2">
+			<div id="FT_priceB" class="stockB"></div>
+			<div id="FT_priceH" class="stockH"></div>
+		</td>
+	  </tr>
+	  <tr>
+		<td class="e1"><a class="blue" target="_blank" href="//q.stock.sohu.com/cn/dxph_syl.shtml">市盈:</a> <span data-field="10"></span> </td>
+		<td class="e2"><a class="blue" target="_blank" href="//q.stock.sohu.com/cn/ph_m.shtml?type=sh_as&field=volume&sort=up">总手:</a> <span data-field="8"></span></td>
+		<td class="e3"><a class="blue" target="_blank" href="//q.stock.sohu.com/cn/ph_m.shtml?type=sh_as&field=turnover&sort=up">总金额:</a> <span data-field="12"></span></td>
+		<td class="e4"><a class="blue" target="_blank" href="//q.stock.sohu.com/cn/ph_m.shtml?type=sh_as&field=shake&sort=up">振幅:</a> <span data-field="14"></span></td>
+		<td class="e5">最低: <span data-field="7"></span></td>
+		<td class="e6">跌停: <span data-field="11"></span></td>
+		<td class="e7">今开: <span data-field="3"></span></td>
+	  </tr>
+	</tbody></table>
+</div>
+
+                    </div>
+                    <div class="rightTop clearfix">
+                        <div class="right_left">
+                            <div class="content">
+                                <div id="zdbp" class="baopan">
+                                    <div class="l"><span class="name"><a target="_blank" href="//q.stock.sohu.com/baopan">智能报盘</a></span><span class="time"></span></div>
+                                    <div class="con" style="overflow: hidden;position: relative;height:35px;"><div id="conInner" class="conInner" style="position: absolute;top:0;"></div></div>
+                                </div>
+                                
+                                <div class="canvas"></div>
+                                
+                                <div class="flashtext">
+                                    <div class="text1" id="FT_sector">
+                                    </div>
+                                                                        <div class="text1" id="FT_sector">
+	<div class="zsInfo_2 clearfix">
+		<h4>阶段表现：</h4>
+		<ul>
+			<li><a title="五日表现" href="/cn/jdph/jdph_hushi_5d_00.shtml" target=_blank>五日表现</a>&nbsp;<span class="green">-4.68%</span></li>
+			<li><a title="十日表现" href="/cn/jdph/jdph_hushi_10d_00.shtml" target=_blank>十日表现</a>&nbsp;<span class="green">-4.86%</span></li>
+			<li><a title="一年低/高" href="/cn/000715/lshq.shtml" target=_blank>一年低/高</a>&nbsp;4.81/7.09</li>
+			<li><a title="五日换手率" href="/cn/jdph/jdph_hushi_5d_11.shtml" target=_blank>五日换手率</a>&nbsp;10.57%</li>
+			<li><a title="十日换手率" href="/cn/jdph/jdph_hushi_10d_11.shtml" target=_blank>十日换手率</a>&nbsp;20.21%</li>
+			<li><a title="历史行情" href="/cn/000715/lshq.shtml" target=_blank>历史行情>></a>&nbsp;</li>
+		</ul>
+	</div>
+</div>
+                                    <!--
+<div class="BIZ_IS_adA">
+   <ul>
+     <li>·<a target="_blank" href="http://t.stock.sohu.com/diaoyan">搜狐全国招募上市公司特约调研员</a></li>
+  </ul>
+</div>
+-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right_left end -->
+                        <div class="right_right">
+                            <div class="content">
+                                <ul class="tabtag2" id="FT_pk_zj">
+                                    <li class="e1 current"><span>盘口</span></li>
+                                    <li class="e2 current"><span><a href="//q.stock.sohu.com/fundflow/" target="_blank">资金</a></span></li>
+                                </ul>
+                                <div class="tabconbox clearfix" id="FT_pk_zj_con">
+                                    <div class="tableB_box tabcon tabcon1" id="FT_perform">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="hd">
+                                            <tbody>
+                                                <tr class="lineA">
+                                                    <th>委比：<span></span>
+                                                    </th>
+                                                    <td>委差：<span></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tableB">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="td1">卖⑤</td>
+                                                    <td data-field="2" class="td2"></td>
+                                                    <td data-field="3" class="td3"></td>
+                                                </tr>
+                                                <tr class="trbg">
+                                                    <td class="td1">卖④</td>
+                                                    <td data-field="4" class="td2"></td>
+                                                    <td data-field="5" class="td3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td1">卖③ </td>
+                                                    <td data-field="6" class="td2"></td>
+                                                    <td data-field="7" class="td3"></td>
+                                                </tr>
+                                                <tr class="trbg">
+                                                    <td class="td1">卖②</td>
+                                                    <td data-field="8" class="td2"></td>
+                                                    <td data-field="9" class="td3"></td>
+                                                </tr>
+                                                <tr class="lineB">
+                                                    <td class="td1">卖①</td>
+                                                    <td data-field="10" class="td2"></td>
+                                                    <td data-field="11" class="td3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td1">买①</td>
+                                                    <td data-field="12" class="td2"></td>
+                                                    <td data-field="13" class="td3"></td>
+                                                </tr>
+                                                <tr class="trbg">
+                                                    <td class="td1">买②</td>
+                                                    <td data-field="14" class="td2"></td>
+                                                    <td data-field="15" class="td3"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td1">买③</td>
+                                                    <td data-field="16" class="td2"></td>
+                                                    <td data-field="17" class="td3"></td>
+                                                </tr>
+                                                <tr class="trbg">
+                                                    <td class="td1">买④</td>
+                                                    <td data-field="18" class="td2">
+                                                    </td><td data-field="19" class="td3"></td>
+                                                </tr>
+                                                <tr class="lineA">
+                                                    <td class="td1">买⑤</td>
+                                                    <td data-field="20" class="td2"></td>
+                                                    <td data-field="21" class="td3"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" class="ft">
+                                            <tbody>
+                                                <tr>
+                                                    <th>外盘：<span class="e3 red"> </span></th>
+                                                    <td>内盘：<span class="e3 green"></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--tabcon end-->
+                                    <div class="tableinfo tabcon tabcon2">
+                                        <div class="con">
+                                            <div class="flash2">
+                                                <div class="flashbox" id="FT_fund">暂无数据</div>
+                                                <div class="tableinfo">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" id="FT_fund_con">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="td1"><div class="bg04"></div></td>
+                                                                <td class="td2">超大买单买入</td>
+                                                                <td class="td3" class="td3" data-type="HBuy">--</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg03"></div></td>
+                                                                <td>大买单买入</td>
+                                                                <td class="td3" data-type="BBuy">-- </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg02"></div></td>
+                                                                <td>中买单买入</td>
+                                                                <td class="td3" data-type="MBuy">--</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg01"></div></td>
+                                                                <td>小买单买入</td>
+                                                                <td class="td3" data-type="SBuy">--</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg08"></div></td>
+                                                                <td>超大卖单卖出</td>
+                                                                <td class="td3" data-type="HSell">--</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg07"></div></td>
+                                                                <td>大卖单卖出</td>
+                                                                <td class="td3" data-type="BSell">--</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg06"></div></td>
+                                                                <td>中卖单卖出</td>
+                                                                <td class="td3" data-type="MSell">--</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><div class="bg05"></div></td>
+                                                                <td>小卖单卖出</td>
+                                                                <td class="td3" data-type="SSell">--</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---tabcon end-->
+                                </div>
+                                <!---tabconbox end-->
+                                <ul class="tabtag2" id="FT_bj_mx_fj">
+                                                                        <li class="e1 current"><span><a href="//q.stock.sohu.com/cn/000715/cjmx.shtml" target=_blank>明细</a></span></li>
+                                    <li class="current"><span><a href="//q.stock.sohu.com/cn/000715/fjb.shtml" target=_blank>分价</a></span></li>
+                                                                    </ul>
+                                <div class="tabconbox" id="FT_bj_mx_fj_con">
+                                    <div class="tabcon tabcon1">
+                                        <div class="con">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableD">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="td1">时间</td>
+                                                        <td class="td2">成交价</td>
+                                                        <td class="td3">成交量</td>
+                                                        <td class="td4">金额(万)</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="FT_dealdetail">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--tabcon end-->
+                                    <div class="tabcon tabcon2">
+                                        <div class="con">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableD">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="td1">价格</td>
+                                                        <td class="td2">成交量</td>
+                                                        <td class="td3">金额(万)</td>
+                                                        <td class="td4">竞买率</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="FT_pricedetail">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- tabcon end-->
+                                </div>
+                                <!--tabconbox end-->
+                            </div>
+                            <!-- content end -->
+                        </div>
+                        <!-- right_1024 end -->
+                    </div>
+                    <!--righttop end-->
+                    <div class="rightBot">
+                        <div class="rightBot_left">
+                            <div class="content">
+                                                                	<div class="titleB"></span>
+										<h4 class="tit tit-tztj">投资体检</h4>
+									</div>
+									<div class="tztj-info" id="tztjbox"></div>
+									<!--大宗交易  开始-->
+	                                   <div class="dzjyBox">
+    <div class="titleB"><span class="tmore"><a href="//q.stock.sohu.com/cn/000715/dzjy.shtml" target="_blank" >更多&gt;&gt;</a></span>
+        <h4 class="tit">大宗交易</h4>
+    </div>
+    <div class="dzjyTable">
+        <table width="100%" border="0">
+        <thead>
+          <tr>
+            <td class="td1">成交价</td>
+            <td class="td2">平均溢价</td>
+                        <td class="td3">成交量(万股)</td>
+                        <td class="td4">日期</td>
+          </tr>
+        </thead>
+        <tbody>
+                                <tr>
+                <td class="td1">8.23</td>
+                <td class="td2 ">0.00%</td>
+                <td class="td3">355.65</td>
+                <td class="td4 gray">2022-04-21</td>
+            </tr>
+                        <tr>
+                <td class="td1">7.48</td>
+                <td class="td2 ">0.00%</td>
+                <td class="td3">415.60</td>
+                <td class="td4 gray">2022-04-20</td>
+            </tr>
+                        <tr>
+                <td class="td1">4.17</td>
+                <td class="td2 green">-2.57%</td>
+                <td class="td3">60.00</td>
+                <td class="td4 gray">2021-03-11</td>
+            </tr>
+                        <tr>
+                <td class="td1">4.23</td>
+                <td class="td2 green">-2.53%</td>
+                <td class="td3">60.00</td>
+                <td class="td4 gray">2021-03-10</td>
+            </tr>
+                        <tr>
+                <td class="td1">4.28</td>
+                <td class="td2 green">-2.51%</td>
+                <td class="td3">66.58</td>
+                <td class="td4 gray">2021-03-09</td>
+            </tr>
+                            </tbody>
+        </table>
+    </div>
+</div>
+<!-- 大宗交易 end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	                                <!--大宗交易  结束-->
+	                                <!--融资融券  开始-->
+	                                   <div class="rzrjBox">
+     <ul class="tabtag tabtag3">
+                <li class="current"><a href="" target="_blank">融资融券数据</a></li>
+                <li class="tmore"><a href="//q.stock.sohu.com/app2/mpssTrade.up?code=000715&sd=&ed=" target="_blank">更多&gt;&gt;</a></li>
+     </ul>
+  <div class="tabconbox">
+         <div class="rzrjTable tabcon">
+                <div class="hd">
+                  <table width="100%" border="0">
+                      <tbody>
+	                      <tr>
+	                        <td class="td1">融买(万)</td>
+	                        <td class="td2">融卖(手)</td>
+	                        <td class="td3">总余额(万)</td>
+	                        <td class="td4">收盘价</td>
+	                        <td class="td5">日期</td>
+	                      </tr>
+                       </tbody>
+                   </table>
+                </div>
+                						<table width="100%" border="0">
+	                      <tbody>			 
+	                             <tr>
+				                      <td class="textnull"  colspan="4">暂无数据</td>
+				                 </tr>
+				              </tbody>
+	                   </table>
+		                </div>
+  </div> 			
+</div>
+<!-- 融资融券 end -->
+<script type="text/javascript">
+    var rongData = "";
+</script>
+
+
+	                                <!--融资融券  结束-->
+                                                                  
+                            </div>
+                        </div>
+                        <!-- rightBot_left end -->
+                        
+                        <div class="rightBot_right">
+                            <div id="popbox" class="popbox hidden" style="position:absolute;"></div>
+                            <div class="content">
+                                								<ul id="FT_news" class="tabtag tabtag3 news-tag">
+									<li type="200" class="tag current"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=200" target="_blank">资讯</a></li>
+									<li type="120" class="tag"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=120" target="_blank">公司新闻</a></li>
+									<li type="100" class="tag"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=100" target="_blank">公告</a></li>
+									<li type="130" class="tag"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=130" target="_blank">财报</a></li>
+									<li class="tmore"><a href="//q.stock.sohu.com/cn/000715/information.shtml?type=200" target="_blank">更多>></a></li>
+								</ul>
+								
+																
+								<div class="stocknews-new" id="stockNews_new">
+									<ul>
+									</ul>
+								</div>
+                                <!-----国债、公司债----->
+                                                                                                <div class="mod_rb01">
+                                    <ul class="tabtag tabtag3" id="FT_rmb_io">
+                                        <li class="current"><a href="//q.stock.sohu.com/fundflow/stock_inflow.html?name=NetVal&io=In" target=_blank> 个股净流入</a></li>
+                                        <li><a href="//q.stock.sohu.com/fundflow/stock_inflow.html?name=CorpVal&io=In"  target=_blank>机构增仓</a></li>
+                                        <li><a href="//q.stock.sohu.com/fundflow/stock_inflow.html?name=Rate&io=In"  target=_blank>加速流入</a></li>
+                                        <li class="tmore"><a target="_blank" href="//q.stock.sohu.com/fundflow/"  target=_blank> 更多>></a></li>
+                                    </ul>
+                                    <div class="tabconbox" id="FT_rmb_io_con">
+                                        <div class="tabcon type1">
+                                            <ul class="subtabtag">
+                                                <li class="current">一日</li>
+                                                <li>二日</li>
+                                                <li>  三日</li>
+                                            </ul>
+                                            <div class="subtabcon"></div>
+                                            <div class="subtabcon hidden"></div>
+                                            <div class="subtabcon hidden"></div>
+                                        </div>
+                                        <!-- tabcon end -->
+                                        <div class="tabcon type2 hidden">
+                                            <ul class="subtabtag">
+                                                <li class="current">一日</li>
+                                                <li>二日</li>
+                                                <li>三日</li>
+                                            </ul>
+                                            <div class="subtabcon"></div>
+                                            <div class="subtabcon hidden"></div>
+                                            <div class="subtabcon hidden"></div>
+                                        </div>
+                                        <!-- tabcon end -->
+                                        <div class="tabcon type3 hidden">
+                                            <ul class="subtabtag">
+                                                <li class="current">一日</li>
+                                                <li>二日</li>
+                                                <li>三日</li>
+                                            </ul>
+                                            <div class="subtabcon"></div>
+                                            <div class="subtabcon hidden"></div>
+                                            <div class="subtabcon hidden"></div>
+                                        </div>
+                                        <!-- tabcon end -->
+                                    </div>
+                                    <!-- tabconbox end -->
+                                </div>
+                                <script type="text/javascript">
+    var plate="商贸零售"
+</script>
+                                <!-- mod_rb01 end -->
+                                								
+                                                                	<div class="mod_rb02">
+		<ul class="tabtag tabtag3" id="FT_diwei">
+			<li class="current">同行业个股</li><span class="tright">商贸零售</span>
+		</ul>      
+		<div class="tabconbox" id="FT_diwei_con">
+			<div class="tabcon">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableE">
+	  				<thead>
+						<tr>	
+						    <td class="td1">排名</td>
+						    <td class="td2">股票名称</td>
+						    <td class="td3">当前价</td>
+						    <td class="td4">涨跌幅</td>
+						    <td class="td5">流通市值<span class="arrow"></span></td>
+						    <td class="td6">市盈率</td> 
+	  					</tr>
+	  				</thead>
+	  				<tbody>
+	   											  	  								  	   						   		<tr  code="cn_601888">
+						   														    <td class="td1">1</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/601888/index.shtml">中国中免</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">1029.54亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  					  	        								    	<tr  class="trbg" code="cn_600415" >
+						    														    <td class="td1">2</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/600415/index.shtml">小商品城</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">557.68亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  								  	   						   		<tr  code="cn_601061">
+						   														    <td class="td1">3</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/601061/index.shtml">中信金属</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">522.34亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  					  	        								    	<tr  class="trbg" code="cn_300972" >
+						    														    <td class="td1">4</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/300972/index.shtml">万辰集团</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">352.07亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  								  	   						   		<tr  code="cn_601933">
+						   														    <td class="td1">5</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/601933/index.shtml">永辉超市</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">285.60亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  					  	        								    	<tr  class="trbg" code="cn_000564" >
+						    														    <td class="td1">6</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/000564/index.shtml">供销大集</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">205.29亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  								  	   						   		<tr  code="cn_600655">
+						   														    <td class="td1">7</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/600655/index.shtml">豫园股份</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">169.21亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+													  	  					  	        								    	<tr  class="current" code="cn_000715" >
+						    														    <td class="td1">98</td>
+								    <td class="td2"><a href="//q.stock.sohu.com/cn/000715/index.shtml">中兴商业</a></td>
+								    <td class="td3">--</td>
+								    <td class="td4">--</td>
+								    <td class="td5">23.18亿</td>
+								    <td class="td6">--</td>
+		  						</tr>
+																</tbody>
+				</table>
+			<script>
+				var industrydata=[{'date':'2026-03-31','revenue':"{'config':{'title':'\u4E3B\u8425\u6536\u5165','linecolor':'#46a1e2','linetype':'bar','unit':'\u4EBF','showtitle':'0'},'data':['\u4E2D\u56FD\n\u4E2D\u514D,169.06','\u5C0F\u5546\n\u54C1\u57CE,45.93','\u4E2D\u4FE1\n\u91D1\u5C5E,431.96','\u4E07\u8FB0\n\u96C6\u56E2,166.34','\u6C38\u8F89\n\u8D85\u5E02,133.67','\u4F9B\u9500\n\u5927\u96C6,3.61','\u8C6B\u56ED\n\u80A1\u4EFD,96.49','<font color=\\'#ff0000\\'>\u4E2D\u5174\n\u5546\u4E1A</font>,1.96']}",'netprofit':"{'config':{'title':'\u51C0\u5229\u6DA6','linecolor':'#6d4edf','linetype':'bar','unit':'\u4EBF','showtitle':'0'},'data':['\u4E2D\u56FD\n\u4E2D\u514D,23.48','\u5C0F\u5546\n\u54C1\u57CE,9.90','\u4E2D\u4FE1\n\u91D1\u5C5E,13.77','\u4E07\u8FB0\n\u96C6\u56E2,6.30','\u6C38\u8F89\n\u8D85\u5E02,2.87','\u4F9B\u9500\n\u5927\u96C6,-1.36','\u8C6B\u56ED\n\u80A1\u4EFD,1.57','<font color=\\'#ff0000\\'>\u4E2D\u5174\n\u5546\u4E1A</font>,0.21']}"}, {'date':'2025-12-31','revenue':"{'config':{'title':'\u4E3B\u8425\u6536\u5165','linecolor':'#46a1e2','linetype':'bar','unit':'\u4EBF','showtitle':'0'},'data':['\u4E2D\u56FD\n\u4E2D\u514D,536.94','\u5C0F\u5546\n\u54C1\u57CE,199.27','\u4E2D\u4FE1\n\u91D1\u5C5E,1418.19','\u4E07\u8FB0\n\u96C6\u56E2,514.59','\u6C38\u8F89\n\u8D85\u5E02,535.08','\u4F9B\u9500\n\u5927\u96C6,18.86','\u8C6B\u56ED\n\u80A1\u4EFD,363.73','<font color=\\'#ff0000\\'>\u4E2D\u5174\n\u5546\u4E1A</font>,7.46']}",'netprofit':"{'config':{'title':'\u51C0\u5229\u6DA6','linecolor':'#6d4edf','linetype':'bar','unit':'\u4EBF','showtitle':'0'},'data':['\u4E2D\u56FD\n\u4E2D\u514D,35.86','\u5C0F\u5546\n\u54C1\u57CE,42.04','\u4E2D\u4FE1\n\u91D1\u5C5E,26.89','\u4E07\u8FB0\n\u96C6\u56E2,13.45','\u6C38\u8F89\n\u8D85\u5E02,-25.52','\u4F9B\u9500\n\u5927\u96C6,-16.71','\u8C6B\u56ED\n\u80A1\u4EFD,-48.97','<font color=\\'#ff0000\\'>\u4E2D\u5174\n\u5546\u4E1A</font>,1.14']}"}, {'date':'2025-09-30','revenue':"{'config':{'title':'\u4E3B\u8425\u6536\u5165','linecolor':'#46a1e2','linetype':'bar','unit':'\u4EBF','showtitle':'0'},'data':['\u4E2D\u56FD\n\u4E2D\u514D,398.62','\u5C0F\u5546\n\u54C1\u57CE,130.61','\u4E2D\u4FE1\n\u91D1\u5C5E,1034.64','\u4E07\u8FB0\n\u96C6\u56E2,365.62','\u6C38\u8F89\n\u8D85\u5E02,424.34','\u4F9B\u9500\n\u5927\u96C6,12.09','\u8C6B\u56ED\n\u80A1\u4EFD,284.00','<font color=\\'#ff0000\\'>\u4E2D\u5174\n\u5546\u4E1A</font>,5.62']}",'netprofit':"{'config':{'title':'\u51C0\u5229\u6DA6','linecolor':'#6d4edf','linetype':'bar','unit':'\u4EBF','showtitle':'0'},'data':['\u4E2D\u56FD\n\u4E2D\u514D,30.52','\u5C0F\u5546\n\u54C1\u57CE,34.57','\u4E2D\u4FE1\n\u91D1\u5C5E,23.26','\u4E07\u8FB0\n\u96C6\u56E2,8.55','\u6C38\u8F89\n\u8D85\u5E02,-7.10','\u4F9B\u9500\n\u5927\u96C6,0.72','\u8C6B\u56ED\n\u80A1\u4EFD,-4.88','<font color=\\'#ff0000\\'>\u4E2D\u5174\n\u5546\u4E1A</font>,0.68']}"}];
+			</script>
+			</div>
+			<!-- tabcon end -->         
+	 	</div>
+	<!-- tabconbox end -->
+	</div>
+	<!--mod_rb02 end-->
+
+                                <!-- mod_rb03 end -->
+                                								
+								                                <!--金罗盘  开始-->
+                                <div class="jlpBox">
+    <div class="titleB"><span class="tmore"><a href="//q.stock.sohu.com/jlp/res/listresv2.up?query.secCode=000715" target="_blank" >更多&gt;&gt;</a></span>
+        <h4 class="tit">金罗盘买入研报</h4>
+    </div>
+        <div class="jlpTable">
+    		<table width="100%" border="0">
+            <thead>
+              <tr>
+                <td class="td1">评级</td>
+                <td class="td2">目标价</td>
+                <td class="td3">分析师</td>
+                <td class="td4">所属机构</td>
+                <td class="td5">研报日期</td>
+              </tr>
+            </thead>
+            <tbody>
+														              <tr>
+					                <td class="td1 red"><span class="" title="">增持</span></td>
+					                <td class="td2">
+							             							              ——
+							             					                </td>
+				                								    <td class="td3">
+									    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303002388" target="_blank">
+											    	姜浩
+											    	</a>
+										    										    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303055650" target="_blank">
+											    	梁丹辉
+											    	</a>
+										    										    									    </td>
+							    					                <td class="td4">
+					                     							                <a href="//q.stock.sohu.com/jlp/org/info.up?orgcode=200002182" title="光大证券股份有限公司"  target="_blank">
+							                  光大证券
+							                </a>
+							             					                </td>
+					                <td class="td5 gray">2025-04-22</td>
+				              </tr>
+										              <tr>
+					                <td class="td1 red"><span class="" title="">增持</span></td>
+					                <td class="td2">
+							             							              ——
+							             					                </td>
+				                								    <td class="td3">
+									    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303002388" target="_blank">
+											    	姜浩
+											    	</a>
+										    										    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303053503" target="_blank">
+											    	田然
+											    	</a>
+										    										    									    </td>
+							    					                <td class="td4">
+					                     							                <a href="//q.stock.sohu.com/jlp/org/info.up?orgcode=200002182" title="光大证券股份有限公司"  target="_blank">
+							                  光大证券
+							                </a>
+							             					                </td>
+					                <td class="td5 gray">2024-10-22</td>
+				              </tr>
+										              <tr>
+					                <td class="td1 red"><span class="" title="">增持</span></td>
+					                <td class="td2">
+							             							              ——
+							             					                </td>
+				                								    <td class="td3">
+									    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303004455" target="_blank">
+											    	唐佳睿
+											    	</a>
+										    										    									    </td>
+							    					                <td class="td4">
+					                     							                <a href="//q.stock.sohu.com/jlp/org/info.up?orgcode=200002182" title="光大证券股份有限公司"  target="_blank">
+							                  光大证券
+							                </a>
+							             					                </td>
+					                <td class="td5 gray">2022-10-24</td>
+				              </tr>
+										              <tr>
+					                <td class="td1 red"><span class="" title="">增持</span></td>
+					                <td class="td2">
+							             							              ——
+							             					                </td>
+				                								    <td class="td3">
+									    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303004455" target="_blank">
+											    	唐佳睿
+											    	</a>
+										    										    									    </td>
+							    					                <td class="td4">
+					                     							                <a href="//q.stock.sohu.com/jlp/org/info.up?orgcode=200002182" title="光大证券股份有限公司"  target="_blank">
+							                  光大证券
+							                </a>
+							             					                </td>
+					                <td class="td5 gray">2022-04-23</td>
+				              </tr>
+										              <tr>
+					                <td class="td1 red"><span class="" title="">增持</span></td>
+					                <td class="td2">
+							             							              ——
+							             					                </td>
+				                								    <td class="td3">
+									    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303004455" target="_blank">
+											    	唐佳睿
+											    	</a>
+										    										    									    </td>
+							    					                <td class="td4">
+					                     							                <a href="//q.stock.sohu.com/jlp/org/info.up?orgcode=200002182" title="光大证券股份有限公司"  target="_blank">
+							                  光大证券
+							                </a>
+							             					                </td>
+					                <td class="td5 gray">2022-04-01</td>
+				              </tr>
+										              <tr>
+					                <td class="td1 red"><span class="" title="">增持</span></td>
+					                <td class="td2">
+							             							              ——
+							             					                </td>
+				                								    <td class="td3">
+									    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303004455" target="_blank">
+											    	唐佳睿
+											    	</a>
+										    										    											    												    	<a href="//q.stock.sohu.com/jlp/analyst/info.up?analystCode=303040527" target="_blank">
+											    	孙路
+											    	</a>
+										    										    									    </td>
+							    					                <td class="td4">
+					                     							                <a href="//q.stock.sohu.com/jlp/org/info.up?orgcode=200002182" title="光大证券股份有限公司"  target="_blank">
+							                  光大证券
+							                </a>
+							             					                </td>
+					                <td class="td5 gray">2021-03-29</td>
+				              </tr>
+									                </tbody>
+       </table>
+   </div>
+</div>
+<!-- 金罗盘 end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!--金罗盘  结束-->
+                                <!--龙虎榜  开始-->
+                                
+<div class="lhbBox">
+     <div class="titleB">
+     <span class="tmore">
+	          </span>
+        <h4 class="tit">龙虎榜</h4>
+     </div>
+	<div class="textnull">近一年中暂无数据</div>
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+
+                                <!--龙虎榜  结束-->
+								                            </div>
+                        </div>
+                        <!-- rightBot_right end -->
+                        </div>
+                    <!-- rightBot end -->
+                </div>
+            </div>
+            <!-- right end -->
+        </div>
+        <!-- contentA end-->
+        <div class="Area area" id="foot">
+<a href="javascript:void(0)" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('//www.sohu.com/');return(false);">设置首页</a>
+- <a target="_blank" href="//pinyin.sogou.com/">搜狗输入法</a>
+- <a target="_blank" href="//up.sohu.com/">支付中心</a>
+- <a target="_blank" href="//hr.sohu.com">搜狐招聘</a>
+- <a target="_blank" href="//ad.sohu.com/">广告服务</a>
+- <a target="_blank" href="//sohucallcenter.blog.sohu.com/">客服中心</a>
+- <a target="_blank" href="//corp.sohu.com/s2006/contactus/">联系方式</a>
+- <a target="_blank" href="//www.sohu.com/about/privacy.html">保护隐私权</a>
+- <a target="_blank" href="//corp.sohu.com/">About SOHU</a>
+- <a target="_blank" href="//corp.sohu.com/indexcn.shtml">公司介绍</a>
+- <a target="_blank" href="//q.stock.sohu.com/sitemap.shtml">网站地图</a>
+<br>Copyright <span class="fontArial">&copy;</span> <span class="setCopyRight"></span> Sohu.com Inc. All Rights Reserved. 搜狐公司 <span class="unline"><a target="_blank" href="//corp.sohu.com/s2007/copyright/">版权所有</a></span>
+<br>搜狐不良信息举报电话：010－62728061 举报邮箱：<a href="mailto:jubao@contact.sohu.com">jubao@contact.sohu.com</a>
+</div>
+<script type="text/javascript" src="//static.k.sohu.com/static/finance/lib/setCopyRight.js"></script>
+
+    <div class="backtop">
+        <a href="#top"></a>
+    </div>
+    
+    </body>
+    <script type="text/javascript" src="//www.sohu.com/sohuflash_1.js"></script>
+<script type="text/javascript" src="//static.k.sohu.com/static/finance/pc/qstock/v0.0.12/js/biz/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="//static.k.sohu.com/static/finance/pc/qstock/v0.0.12/js/biz/autocomplete-2.0.min.js"></script>
+<script type="text/javascript" src="//static.k.sohu.com/static/finance/pc/qstock/v0.0.12/js/mystock/passport-login-gbk.js"></script>
+
+    <script type="text/javascript" src="//static.k.sohu.com/static/finance/pc/qstock/v0.0.12/js/biz/hq-1.8.min.js?202607061402"></script>
+<script type="text/javascript">
+var flashCmt = new jaw.commet();
+var getStockType = function(){
+    if(biz_code.indexOf('cn') > 0){
+        return '0'
+    }else if(biz_code.indexOf('zs') > 0){
+    	return '1'
+    }
+}
+var getYP = function(){
+    return $('#FT_lastClose').html();
+}
+var requestOnce = function(){
+    flashCmt.request(PEAK.getHqURL(1));
+}
+var reqHeartBeat = function(){
+    var url = PEAK.BIZ.threeIndex;
+    flashCmt.request(url);
+}
+var reqQuoteM = function(code){
+  var url = PEAK.getHqURL(4, undefined, code);
+  flashCmt.request(url);
+}
+var getStockCode = function(){
+   var str = "['stock','" +　biz_code + "," + biz_name + "']";
+   setTimeout(function(){js2fla(str);},500);
+}
+var getTjStocks = function(){
+    if(typeof tjstock != 'undefined') setTimeout(function(){js2fla('["tjstock","'+tjstock+'"]');},500);
+}
+var reqMStockCommet;
+var reqMStock = function(c, s){
+     if(c){
+         reqQuoteM(c);
+     }
+    if(s && s.length){
+	 var url = PEAK.BIZ.hqServer + "/fmq?" + s
+        if(!reqMStockCommet){
+            reqMStockCommet = new jaw.commet();
+            reqMStockCommet.append("fm", 50, url);
+            reqMStockCommet.handler();
+        }else{
+            reqMStockCommet.modify("fm", url);
+              reqMStockCommet.start();
+        }
+    }else{
+        if(reqMStockCommet){
+            reqMStockCommet.pause();
+        }
+    }
+}
+var reqQuoteK = function(){
+    var url = PEAK.getHqURL("6_1");
+    flashCmt.request(url);
+}
+var reqQuoteKAll = function(){
+    var url = PEAK.getHqURL("6_2");
+    flashCmt.request(url);
+}
+var reqQuote5KAll = function(){
+  var url = PEAK.getHqURL('9_5m');
+  flashCmt.request(url);
+}
+var reqQuote15KAll = function(){
+  var url = PEAK.getHqURL('9_15m');
+  flashCmt.request(url);
+}
+var reqQuote30KAll = function(){
+  var url = PEAK.getHqURL('9_30m');
+  flashCmt.request(url);
+}
+var reqQuote60KAll = function(){
+  var url = PEAK.getHqURL('9_60m');
+  flashCmt.request(url);
+}
+var reqQuoteWKAll = function(){
+    var url = PEAK.getHqURL(7);
+    flashCmt.request(url);
+}
+var reqQuoteMKAll = function(){
+    var url = PEAK.getHqURL(8);
+    flashCmt.request(url);
+};
+var jsready = function(){
+    return '1';
+};
+var cfquan = (function(){
+    var i = 2,pretype;
+    return function(period){
+        var para;
+        if(pretype != period) i = 2;
+        if(i === 1){//复权前
+            if(period == 'd'){
+                para = '6_5';
+            }else if(period == 'w'){
+                para = '7';
+            }else if(period == 'm'){
+                para = '8';
+            }
+            i = 2;
+        }else{//复权后
+            if(period == 'd'){
+                para = '6_6';
+            }else if(period == 'w'){
+                para = '7_1';
+            }else if(period == 'm'){
+                para = '8_1';
+            }
+            i = 1;
+        }
+
+        pretype = period;
+        flashCmt.request(PEAK.getHqURL(para));
+    }
+})()
+</script>
+
+<script type="text/javascript" src="//js.sohu.com/mail/pv/pv_v203_ajax.js"></script>
+<script type="text/javascript">
+$(function(){
+	if(biz_code == 'cn_000002') $.getScript('//a1.itc.cn/pv/js/pvclick.1206141014.js')
+})
+</script>
+<script type="text/javascript" src="//js.sohu.com/wrating20120726.js"></script>
+
+    <script type="text/javascript" src="//static.k.sohu.com/static/finance/pc/tongji/tongji.js?20260523"></script>
+
