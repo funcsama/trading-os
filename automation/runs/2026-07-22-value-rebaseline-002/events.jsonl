@@ -1,3 +1,10 @@
 {"actor":"system","at":"2026-07-22T18:00:00+08:00","event":"run_created","from_status":null,"reason":null,"sequence":1,"to_status":"created"}
 {"actor":"cli","at":"2026-07-22T18:00:00+08:00","event":"candidates_frozen","from_status":"created","reason":null,"sequence":2,"to_status":"candidates_frozen"}
 {"actor":"cli","at":"2026-07-22T22:00:00+08:00","event":"state_transition","from_status":"candidates_frozen","reason":null,"sequence":3,"to_status":"packets_ready"}
+{"actor":"codex-orchestrator","at":"2026-07-22T22:10:00+08:00","event":"state_transition","from_status":"packets_ready","reason":null,"sequence":4,"to_status":"blind_reviewing"}
+{"actor":"codex-orchestrator","at":"2026-07-22T22:50:00+08:00","event":"state_transition","from_status":"blind_reviewing","reason":null,"sequence":5,"to_status":"blind_sealed"}
+{"actor":"codex-orchestrator","at":"2026-07-22T23:00:00+08:00","event":"state_transition","from_status":"blind_sealed","reason":null,"sequence":6,"to_status":"revealing"}
+{"actor":"codex-orchestrator","at":"2026-07-22T23:40:00+08:00","event":"state_transition","from_status":"revealing","reason":null,"sequence":7,"to_status":"challenging"}
+{"actor":"codex-orchestrator","at":"2026-07-23T00:40:00+08:00","event":"state_transition","from_status":"challenging","reason":null,"sequence":8,"to_status":"company_reviews_complete"}
+{"actor":"cli","at":"2026-07-23T00:50:00+08:00","event":"state_transition","from_status":"company_reviews_complete","reason":null,"sequence":9,"to_status":"synthesizing"}
+{"actor":"cli","at":"2026-07-23T01:00:00+08:00","event":"state_transition","from_status":"synthesizing","reason":null,"sequence":10,"to_status":"completed"}
