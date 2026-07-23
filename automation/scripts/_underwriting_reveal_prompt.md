@@ -1,6 +1,6 @@
 # 单公司揭示与差异审计
 
-独立评估已经封存。现在核对它与此前研究的差异，对每条既有主张给出 `confirmed`、`weakened`、`disproven` 或 `untested`，并形成结构化承保结果。不得修改封存的独立评估。
+独立评估已经封存。现在核对它与此前研究的差异，对每条既有主张给出 `confirmed`、`weakened`、`disproven` 或 `untested`，并形成结构化承保结果。不得修改封存的独立评估。复核风险在正常化盈利、情景、折现率和 `safety_margin_tier` 中是否重复计入；证据缺失不能因价格更低而改判通过。
 
 - 公司：{{COMPANY_NAME}}（{{SYMBOL}}）
 - 输出：{{OUTPUT_PATH}}
