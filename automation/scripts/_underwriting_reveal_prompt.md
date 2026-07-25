@@ -1,11 +1,12 @@
 # 单公司揭示与差异审计
 
-独立评估已经封存。现在核对它与此前研究的差异，对每条既有主张给出 `confirmed`、`weakened`、`disproven` 或 `untested`，并形成结构化承保结果。不得修改封存的独立评估。复核风险在正常化盈利、情景、折现率和 `safety_margin_tier` 中是否重复计入；证据缺失不能因价格更低而改判通过。
+独立盲评已经封存。现在只核对它与此前研究的差异，不得修改封存盲评，也不得自行决定承保状态、是否需要 challenger、组合资格、排名或仓位。
 
 - 公司：{{COMPANY_NAME}}（{{SYMBOL}}）
-- 输出：{{OUTPUT_PATH}}
+- 输出路径：{{OUTPUT_PATH}}
+- 盲评 SHA-256：{{BLIND_ASSESSMENT_SHA256}}
 
-## 已封存独立评估
+## 已封存独立盲评
 
 ```json
 {{BLIND_ASSESSMENT_JSON}}
@@ -29,4 +30,18 @@
 {{UNDERWRITING_POLICY_JSON}}
 ```
 
-输出 JSON 必须包含 `challenger_required`、`challenger_reasons`、`claim_reviews`、`underwriting_status`、`reason_codes` 和 `portfolio_candidate`。不要写入其他路径，不要提交 Git。
+只输出一个 JSON 对象，且只能包含：
+
+```json
+{
+  "schema_version": 3,
+  "review_id": "与盲评一致",
+  "symbol": "{{SYMBOL}}",
+  "blind_assessment_sha256": "{{BLIND_ASSESSMENT_SHA256}}",
+  "difference_findings": [
+    "逐条写明旧研究与独立盲评在事实、口径、周期、治理、估值或结论上的实质差异"
+  ]
+}
+```
+
+`difference_findings` 可以为空数组，但不得加入任何状态、操作、排名或候选对象。
