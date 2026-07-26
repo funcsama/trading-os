@@ -1026,6 +1026,7 @@ class ReviewDispatcher:
         material_disagreements = _material_assessment_disagreements(
             primary_envelope,
             challenger_envelope,
+            arbitration_envelope,
             prior_claims=primary.prior_claims,
         )
         consensus_adverse_findings = _consensus_adverse_findings(
@@ -1356,11 +1357,13 @@ def _arbitration_adverse_findings(
 def _material_assessment_disagreements(
     primary: Mapping[str, Any],
     challenger: Mapping[str, Any],
+    arbitration: Mapping[str, Any],
     *,
     prior_claims: Mapping[str, str],
 ) -> set[str]:
     primary_assessment = primary["assessment"]
     challenger_assessment = challenger["assessment"]
+    arbitration_assessment = arbitration["assessment"]
     disagreements: set[str] = set()
     primary_risks = primary_assessment["risk_flags"]
     challenger_risks = challenger_assessment["risk_flags"]
@@ -1375,13 +1378,46 @@ def _material_assessment_disagreements(
         item["claim_id"]: item["result"]
         for item in challenger_assessment["claim_reviews"]
     }
+    arbitration_claims = {
+        item["claim_id"]: item["result"]
+        for item in arbitration_assessment["claim_reviews"]
+    }
     for claim_id, category in prior_claims.items():
         if (
             category == "investment"
-            and primary_claims[claim_id] != challenger_claims[claim_id]
+            and not _claim_result_is_conservatively_resolved(
+                primary_claims[claim_id],
+                challenger_claims[claim_id],
+                arbitration_claims[claim_id],
+            )
         ):
             disagreements.add(f"unresolved_investment_claim:{claim_id}")
     return disagreements
+
+
+def _claim_result_is_conservatively_resolved(
+    primary_result: str,
+    challenger_result: str,
+    arbitration_result: str,
+) -> bool:
+    """Return whether arbitration preserves the least favorable supported result.
+
+    ``untested`` is epistemic uncertainty rather than a directional finding, so
+    it is deliberately incomparable with confirmed/weakened/disproven. An
+    arbitrator cannot turn an untested independent result into consensus.
+    """
+
+    if "untested" in {primary_result, challenger_result, arbitration_result}:
+        return primary_result == challenger_result == arbitration_result
+    conservatism = {
+        "confirmed": 0,
+        "weakened": 1,
+        "disproven": 2,
+    }
+    return conservatism[arbitration_result] >= max(
+        conservatism[primary_result],
+        conservatism[challenger_result],
+    )
 
 
 def _validate_stage_payload(

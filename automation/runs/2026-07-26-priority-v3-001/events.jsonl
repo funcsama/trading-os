@@ -1,0 +1,10 @@
+{"actor":"system","at":"2026-07-26T16:15:50.447494+08:00","event":"run_created","from_status":null,"reason":null,"sequence":1,"to_status":"created"}
+{"actor":"cli","at":"2026-07-26T16:15:50.447494+08:00","event":"candidates_frozen","from_status":"created","reason":null,"sequence":2,"to_status":"candidates_frozen"}
+{"actor":"cli","at":"2026-07-26T16:15:50.592370+08:00","event":"state_transition","from_status":"candidates_frozen","reason":null,"sequence":3,"to_status":"packets_ready"}
+{"actor":"codex-priority-v3","at":"2026-07-26T17:32:19.083646+08:00","event":"state_transition","from_status":"packets_ready","reason":null,"sequence":4,"to_status":"blind_reviewing"}
+{"actor":"codex-priority-v3","at":"2026-07-26T19:39:19.078132+08:00","event":"state_transition","from_status":"blind_reviewing","reason":null,"sequence":5,"to_status":"blind_sealed"}
+{"actor":"codex-priority-v3","at":"2026-07-26T19:40:09.690964+08:00","event":"state_transition","from_status":"blind_sealed","reason":null,"sequence":6,"to_status":"revealing"}
+{"actor":"codex-priority-v3","at":"2026-07-26T19:45:56.549777+08:00","event":"state_transition","from_status":"revealing","reason":null,"sequence":7,"to_status":"challenging"}
+{"actor":"codex-priority-v3","at":"2026-07-26T20:08:14.786614+08:00","event":"state_transition","from_status":"challenging","reason":null,"sequence":8,"to_status":"company_reviews_complete"}
+{"actor":"cli","at":"2026-07-26T20:08:40.977339+08:00","event":"state_transition","from_status":"company_reviews_complete","reason":null,"sequence":9,"to_status":"synthesizing"}
+{"actor":"cli","at":"2026-07-26T20:10:27.233178+08:00","event":"state_transition","from_status":"synthesizing","reason":null,"sequence":10,"to_status":"completed"}
