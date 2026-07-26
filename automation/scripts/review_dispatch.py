@@ -987,6 +987,10 @@ class ReviewDispatcher:
             challenger_envelope["portfolio_inputs"]["return_model"],
             minimum_expected_annual_return=minimum_return,
         )
+        arbitration_activation_price = activation_price(
+            arbitration_envelope["portfolio_inputs"]["return_model"],
+            minimum_expected_annual_return=minimum_return,
+        )
         candidate_source_stage, candidate_envelope = (
             _select_conservative_candidate_envelope(
                 primary_envelope,
@@ -1038,6 +1042,16 @@ class ReviewDispatcher:
             arbitration_envelope,
             prior_claims=primary.prior_claims,
         )
+        arbitration_economic_boundary_findings = (
+            _arbitration_economic_boundary_findings(
+                primary_envelope,
+                challenger_envelope,
+                arbitration_envelope,
+                primary_activation_price=primary_activation_price,
+                challenger_activation_price=challenger_activation_price,
+                arbitration_activation_price=arbitration_activation_price,
+            )
+        )
         status = _least_favorable_status(
             primary_completed.evaluation.status,
             challenger_completed.evaluation.status,
@@ -1080,6 +1094,9 @@ class ReviewDispatcher:
         if arbitration_adverse_findings:
             status = "failed"
             blocker_set.update(arbitration_adverse_findings)
+        if arbitration_economic_boundary_findings:
+            status = "failed"
+            blocker_set.update(arbitration_economic_boundary_findings)
         if disagreement > threshold:
             status = "failed"
             blocker_set.add("challenger_no_valuation_consensus")
@@ -1292,6 +1309,62 @@ def _least_favorable_status(*statuses: str) -> str:
             f"unsupported underwriting status in consensus: {unknown}"
         )
     return max(statuses, key=precedence.__getitem__)
+
+
+def _arbitration_economic_boundary_findings(
+    primary: Mapping[str, Any],
+    challenger: Mapping[str, Any],
+    arbitration: Mapping[str, Any],
+    *,
+    primary_activation_price: float,
+    challenger_activation_price: float,
+    arbitration_activation_price: float,
+) -> set[str]:
+    """Reject economic values invented outside both independent envelopes."""
+
+    def economic_values(
+        envelope: Mapping[str, Any],
+        return_activation_price: float,
+    ) -> dict[str, float]:
+        valuation = envelope["assessment"]["valuation"]
+        scenarios = valuation["scenarios"]
+        fair_value_range = valuation["fair_value_range"]
+        buy_zone = valuation["buy_zone"]
+        reduce_zone = envelope["portfolio_inputs"]["reduce_zone"]
+        return {
+            "return_activation_price": float(return_activation_price),
+            "bear_value": float(scenarios["bear"]),
+            "base_value": float(scenarios["base"]),
+            "bull_value": float(scenarios["bull"]),
+            "fair_value_low": float(fair_value_range[0]),
+            "fair_value_high": float(fair_value_range[1]),
+            "buy_zone_low": float(buy_zone[0]),
+            "buy_zone_high": float(buy_zone[1]),
+            "reduce_zone_low": float(reduce_zone[0]),
+            "reduce_zone_high": float(reduce_zone[1]),
+        }
+
+    primary_values = economic_values(primary, primary_activation_price)
+    challenger_values = economic_values(
+        challenger,
+        challenger_activation_price,
+    )
+    arbitration_values = economic_values(
+        arbitration,
+        arbitration_activation_price,
+    )
+    details = {
+        f"arbitration_economic_outside_independent_bounds:{field}"
+        for field, arbitration_value in arbitration_values.items()
+        if not (
+            min(primary_values[field], challenger_values[field]) - 1e-9
+            <= arbitration_value
+            <= max(primary_values[field], challenger_values[field]) + 1e-9
+        )
+    }
+    if details:
+        details.add("arbitration_economics_outside_independent_bounds")
+    return details
 
 
 def _consensus_adverse_findings(
