@@ -1046,17 +1046,24 @@ class ReviewDispatcher:
                 | set(primary.evidence.blockers)
                 | set(challenger.evidence.blockers)
             )
-        if primary.evaluation.blockers or challenger.evaluation.blockers:
+        primary_machine_blockers = (
+            set(primary.evaluation.blockers) - set(primary.evidence.blockers)
+        )
+        challenger_machine_blockers = (
+            set(challenger.evaluation.blockers)
+            - set(challenger.evidence.blockers)
+        )
+        if primary_machine_blockers or challenger_machine_blockers:
             status = "failed"
             blocker_set.update(
                 {"independent_machine_validation_failed"}
                 | {
                     f"primary_blocker:{code}"
-                    for code in primary.evaluation.blockers
+                    for code in primary_machine_blockers
                 }
                 | {
                     f"challenger_blocker:{code}"
-                    for code in challenger.evaluation.blockers
+                    for code in challenger_machine_blockers
                 }
             )
         if material_disagreements:
