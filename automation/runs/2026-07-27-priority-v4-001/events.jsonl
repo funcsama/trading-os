@@ -1,0 +1,3 @@
+{"actor":"system","at":"2026-07-27T01:20:16.795492+08:00","event":"run_created","from_status":null,"reason":null,"sequence":1,"to_status":"created"}
+{"actor":"cli","at":"2026-07-27T01:20:16.795492+08:00","event":"candidates_frozen","from_status":"created","reason":null,"sequence":2,"to_status":"candidates_frozen"}
+{"actor":"cli","at":"2026-07-27T01:20:16.965110+08:00","event":"state_transition","from_status":"candidates_frozen","reason":null,"sequence":3,"to_status":"packets_ready"}
