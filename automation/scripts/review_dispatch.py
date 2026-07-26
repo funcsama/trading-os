@@ -67,6 +67,10 @@ ARBITRATION_INPUT_KEYS = {
     "policy_snapshot",
 }
 ARBITRATION_ENVELOPE_KEYS = ENVELOPE_KEYS | {"input_artifact_sha256s"}
+HARD_ADVERSE_RISK_FLAGS = {
+    "governance_material_doubt",
+    "permanent_loss_risk",
+}
 
 
 @dataclass(frozen=True, slots=True)
@@ -1300,7 +1304,11 @@ def _consensus_adverse_findings(
     findings = {
         f"consensus_risk_flag:{flag}"
         for flag, active in primary_assessment["risk_flags"].items()
-        if active and challenger_assessment["risk_flags"][flag]
+        if (
+            flag in HARD_ADVERSE_RISK_FLAGS
+            and active
+            and challenger_assessment["risk_flags"][flag]
+        )
     }
     primary_claims = {
         item["claim_id"]: item["result"]
@@ -1331,7 +1339,7 @@ def _arbitration_adverse_findings(
     findings = {
         f"arbitration_risk_flag:{flag}"
         for flag, active in assessment["risk_flags"].items()
-        if active
+        if flag in HARD_ADVERSE_RISK_FLAGS and active
     }
     claims = {
         item["claim_id"]: item["result"]
