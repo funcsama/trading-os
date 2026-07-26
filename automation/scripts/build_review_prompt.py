@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -190,7 +191,10 @@ def build_run_prompt(
         return render_prompt(stage, context)
     if stage == "reveal":
         blind_path = review_dir / "blind-assessment.json"
+        packet_path = review_dir / "claim-packet.json"
         blind_seal = verify_sealed(blind_path)
+        packet = _read_json_object(packet_path)
+        _assert_frozen_prior_report(company_dir, packet)
         prior_claims, prior_report_text = load_prior_research(company_dir)
         return render_prompt(
             stage,
@@ -216,6 +220,8 @@ def build_run_prompt(
         packet_seal = verify_sealed(packet_path)
         primary_evaluation_seal = verify_sealed(primary_evaluation_path)
         challenger_evaluation_seal = verify_sealed(challenger_evaluation_path)
+        packet = _read_json_object(packet_path)
+        _assert_frozen_prior_report(company_dir, packet)
         prior_claims, _ = load_prior_research(company_dir)
         return render_prompt(
             stage,
@@ -310,6 +316,22 @@ def load_prior_research(company_dir: Path) -> tuple[dict[str, Any], str]:
     if len(claims_paths) != 1:
         raise PromptBuildError("latest report must reference one research_claims artifact")
     return _read_json_object(claims_paths[0]), report_text
+
+
+def _assert_frozen_prior_report(
+    company_dir: Path,
+    claim_packet: Mapping[str, Any],
+) -> None:
+    meta = _read_json_object(company_dir / "meta.json")
+    latest = meta.get("reports", {}).get("latest")
+    if not isinstance(latest, str):
+        raise PromptBuildError("company has no latest report")
+    expected = claim_packet.get("source_report_sha256")
+    actual = hashlib.sha256((company_dir / latest).read_bytes()).hexdigest()
+    if expected != actual:
+        raise PromptBuildError(
+            "latest prior report drifted from the frozen claim packet"
+        )
 
 
 def _read_json_object(path: Path) -> dict[str, Any]:
