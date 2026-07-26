@@ -22,7 +22,11 @@ from automation.scripts.build_review_prompt import (  # noqa: E402
     build_run_prompt,
     load_prior_research,
 )
-from trading_os.research_assets.models import PolicyKind, ReviewRunStatus  # noqa: E402
+from trading_os.research_assets.models import (  # noqa: E402
+    PolicyKind,
+    ReviewRunStatus,
+    UnderwritingStatus,
+)
 from trading_os.research_assets.policy_snapshot import (  # noqa: E402
     PolicySnapshotError,
     ReviewPolicySnapshot,
@@ -136,6 +140,23 @@ class SubprocessRunner:
             payload = _parse_runner_payload(process.stdout)
         except DispatchError as exc:
             return AgentResult(ok=False, error=str(exc))
+        return AgentResult(ok=True, payload=payload)
+
+
+class DraftDirectoryRunner:
+    """Consume explicitly reviewed, unsealed stage drafts from one directory."""
+
+    def __init__(self, root: str | Path):
+        self.root = Path(root)
+
+    def run(self, task: AgentTask) -> AgentResult:
+        path = self.root / (
+            f"{task.stage}-{task.symbol.replace(':', '-')}.draft.json"
+        )
+        try:
+            payload = _read_unsealed_json_object(path)
+        except (OSError, DispatchError) as exc:
+            return AgentResult(ok=False, error=f"draft unavailable: {path}: {exc}")
         return AgentResult(ok=True, payload=payload)
 
 
@@ -338,7 +359,10 @@ class ReviewDispatcher:
                         now=now,
                         final=False,
                     )
-                    if result.evaluation.challenger_triggers:
+                    if (
+                        result.evaluation.status
+                        == UnderwritingStatus.NEEDS_CHALLENGER.value
+                    ):
                         needs_challenger.append(item)
                 next_status = (
                     ReviewRunStatus.CHALLENGING.value
@@ -818,8 +842,10 @@ class ReviewDispatcher:
             "challenger_triggers": list(evaluation.challenger_triggers),
             "resolved_challenger_triggers": resolved_triggers,
             "unresolved_challenger_triggers": unresolved_triggers,
-            "challenger_required": bool(evaluation.challenger_triggers)
-            and not challenger_completed,
+            "challenger_required": (
+                evaluation.status == UnderwritingStatus.NEEDS_CHALLENGER.value
+                and not challenger_completed
+            ),
             "proposed_top_five": proposed_top_five,
             "challenger_completed": challenger_completed,
             "evidence": {
@@ -1596,7 +1622,15 @@ def _require_aware(value: dt.datetime) -> None:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_id")
-    parser.add_argument("--runner", required=True, help="JSON-producing runner executable")
+    runner_group = parser.add_mutually_exclusive_group(required=True)
+    runner_group.add_argument(
+        "--runner",
+        help="JSON-producing runner executable",
+    )
+    runner_group.add_argument(
+        "--draft-root",
+        help="directory containing {stage}-{market}-{ticker}.draft.json files",
+    )
     parser.add_argument("--runner-arg", action="append", default=[])
     parser.add_argument("--runs-root", default="automation/runs")
     parser.add_argument("--policy-root", default="policies")
@@ -1605,10 +1639,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--lease", type=int, default=3900)
     parser.add_argument("--owner", default="review-dispatch")
     args = parser.parse_args(argv)
+    if args.draft_root and args.runner_arg:
+        parser.error("--runner-arg cannot be used with --draft-root")
+    runner: Runner = (
+        DraftDirectoryRunner(args.draft_root)
+        if args.draft_root
+        else SubprocessRunner([args.runner, *args.runner_arg])
+    )
     dispatcher = ReviewDispatcher(
         runs_root=args.runs_root,
         policy_root=args.policy_root,
-        runner=SubprocessRunner([args.runner, *args.runner_arg]),
+        runner=runner,
         owner=args.owner,
         concurrency=args.concurrency,
         timeout_seconds=args.timeout,
