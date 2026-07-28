@@ -7,9 +7,33 @@
     "underwriting": 3
   },
   "confidence_counts": {
-    "low": 5477
+    "low": 5520
   },
   "deferred": [
+    {
+      "name": "中国铝业",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601600"
+    },
+    {
+      "name": "宏桥控股",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002379"
+    },
     {
       "name": "天赐材料",
       "reactivation_trigger_types": [
@@ -443,6 +467,18 @@
       "symbol": "CN:000999"
     },
     {
+      "name": "电投能源",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002128"
+    },
+    {
       "name": "报 喜 鸟",
       "reactivation_trigger_types": [
         "filing",
@@ -549,18 +585,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600535"
-    },
-    {
-      "name": "苏美达",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:600710"
     },
     {
       "name": "盛屯矿业",
@@ -1271,18 +1295,6 @@
       "symbol": "CN:920239"
     },
     {
-      "name": "同力股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:920599"
-    },
-    {
       "name": "徐工机械",
       "reactivation_trigger_types": [
         "filing",
@@ -1329,6 +1341,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000708"
+    },
+    {
+      "name": "中色股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000758"
     },
     {
       "name": "甘肃能源",
@@ -1511,6 +1535,18 @@
       "symbol": "CN:002419"
     },
     {
+      "name": "天齐锂业",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002466"
+    },
+    {
       "name": "申通快递",
       "reactivation_trigger_types": [
         "filing",
@@ -1629,6 +1665,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:002752"
+    },
+    {
+      "name": "永兴材料",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002756"
     },
     {
       "name": "华夏航空",
@@ -1797,6 +1845,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:301260"
+    },
+    {
+      "name": "中远海能",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600026"
     },
     {
       "name": "华润双鹤",
@@ -2615,6 +2675,30 @@
       "symbol": "CN:920694"
     },
     {
+      "name": "金 融 街",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000402"
+    },
+    {
+      "name": "章源钨业",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002378"
+    },
+    {
       "name": "兴齐眼药",
       "reactivation_trigger_types": [
         "filing",
@@ -2687,6 +2771,102 @@
       "symbol": "CN:600778"
     },
     {
+      "name": "创业环保",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600874"
+    },
+    {
+      "name": "北京银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601169"
+    },
+    {
+      "name": "中国铁建",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601186"
+    },
+    {
+      "name": "上海银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601229"
+    },
+    {
+      "name": "交通银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601328"
+    },
+    {
+      "name": "中国中铁",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601390"
+    },
+    {
+      "name": "瑞丰银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601528"
+    },
+    {
+      "name": "邮储银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601658"
+    },
+    {
       "name": "中国建筑",
       "reactivation_trigger_types": [
         "filing",
@@ -2723,6 +2903,30 @@
       "symbol": "CN:601801"
     },
     {
+      "name": "光大银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601818"
+    },
+    {
+      "name": "紫金银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601860"
+    },
+    {
       "name": "永辉超市",
       "reactivation_trigger_types": [
         "filing",
@@ -2735,6 +2939,30 @@
       "symbol": "CN:601933"
     },
     {
+      "name": "贵阳银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601997"
+    },
+    {
+      "name": "中信银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601998"
+    },
+    {
       "name": "超讯科技",
       "reactivation_trigger_types": [
         "filing",
@@ -2745,6 +2973,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:603322"
+    },
+    {
+      "name": "苏农银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:603323"
     },
     {
       "name": "柳药集团",
@@ -2939,18 +3179,6 @@
       "symbol": "CN:000301"
     },
     {
-      "name": "丽珠集团",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:000513"
-    },
-    {
       "name": "云南白药",
       "reactivation_trigger_types": [
         "filing",
@@ -2973,18 +3201,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000878"
-    },
-    {
-      "name": "华特达因",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:000915"
     },
     {
       "name": "华东医药",
@@ -3095,18 +3311,6 @@
       "symbol": "CN:002867"
     },
     {
-      "name": "凌霄泵业",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:002884"
-    },
-    {
       "name": "甘源食品",
       "reactivation_trigger_types": [
         "filing",
@@ -3141,18 +3345,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:300452"
-    },
-    {
-      "name": "新媒股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:300770"
     },
     {
       "name": "南大环境",
@@ -3491,18 +3683,6 @@
       "symbol": "CN:920188"
     },
     {
-      "name": "德瑞锂电",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:920523"
-    },
-    {
       "name": "德源药业",
       "reactivation_trigger_types": [
         "filing",
@@ -3513,6 +3693,30 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:920735"
+    },
+    {
+      "name": "一品红",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:300723"
+    },
+    {
+      "name": "山西汾酒",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600809"
     },
     {
       "name": "渤海租赁",
@@ -3573,6 +3777,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:001237"
+    },
+    {
+      "name": "宁波银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002142"
     },
     {
       "name": "湖南黄金",
@@ -3863,6 +4079,18 @@
       "symbol": "CN:600549"
     },
     {
+      "name": "杭州银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600926"
+    },
+    {
       "name": "赤峰黄金",
       "reactivation_trigger_types": [
         "filing",
@@ -3873,6 +4101,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600988"
+    },
+    {
+      "name": "成都银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601838"
     },
     {
       "name": "中国中免",
@@ -4173,6 +4413,42 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:920663"
+    },
+    {
+      "name": "洋河股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002304"
+    },
+    {
+      "name": "富森美",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002818"
+    },
+    {
+      "name": "华能国际",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600011"
     },
     {
       "name": "武商集团",
@@ -4691,6 +4967,18 @@
       "symbol": "CN:600713"
     },
     {
+      "name": "天津港",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600717"
+    },
+    {
       "name": "苏州高新",
       "reactivation_trigger_types": [
         "filing",
@@ -4787,6 +5075,18 @@
       "symbol": "CN:601006"
     },
     {
+      "name": "宁波港",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601018"
+    },
+    {
       "name": "山东出版",
       "reactivation_trigger_types": [
         "filing",
@@ -4809,6 +5109,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:601163"
+    },
+    {
+      "name": "厦门银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601187"
     },
     {
       "name": "上海环境",
@@ -4835,6 +5147,18 @@
       "symbol": "CN:601311"
     },
     {
+      "name": "XD秦港股",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601326"
+    },
+    {
       "name": "广深铁路",
       "reactivation_trigger_types": [
         "filing",
@@ -4845,6 +5169,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:601333"
+    },
+    {
+      "name": "工商银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601398"
     },
     {
       "name": "通用股份",
@@ -4895,6 +5231,18 @@
       "symbol": "CN:601618"
     },
     {
+      "name": "齐鲁银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601665"
+    },
+    {
       "name": "中国电建",
       "reactivation_trigger_types": [
         "filing",
@@ -4943,6 +5291,42 @@
       "symbol": "CN:601811"
     },
     {
+      "name": "沪农商行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601825"
+    },
+    {
+      "name": "建设银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601939"
+    },
+    {
+      "name": "中国银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601988"
+    },
+    {
       "name": "常熟汽饰",
       "reactivation_trigger_types": [
         "filing",
@@ -4977,18 +5361,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:603817"
-    },
-    {
-      "name": "莱绅通灵",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:603900"
     },
     {
       "name": "江天科技",
@@ -5087,6 +5459,30 @@
       "symbol": "CN:920191"
     },
     {
+      "name": "五矿资本",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600390"
+    },
+    {
+      "name": "中金岭南",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000060"
+    },
+    {
       "name": "深圳机场",
       "reactivation_trigger_types": [
         "filing",
@@ -5097,18 +5493,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000089"
-    },
-    {
-      "name": "长虹华意",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:000404"
     },
     {
       "name": "南京公用",
@@ -5241,6 +5625,30 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000951"
+    },
+    {
+      "name": "蓝焰控股",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000968"
+    },
+    {
+      "name": "盛航股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:001205"
     },
     {
       "name": "盾安环境",
@@ -5457,18 +5865,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:002637"
-    },
-    {
-      "name": "红旗连锁",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:002697"
     },
     {
       "name": "世龙实业",
@@ -5711,6 +6107,18 @@
       "symbol": "CN:600216"
     },
     {
+      "name": "南山铝业",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600219"
+    },
+    {
       "name": "南钢股份",
       "reactivation_trigger_types": [
         "filing",
@@ -5757,6 +6165,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600320"
+    },
+    {
+      "name": "创新新材",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600361"
     },
     {
       "name": "健康元",
@@ -5999,18 +6419,6 @@
       "symbol": "CN:601107"
     },
     {
-      "name": "东航物流",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:601156"
-    },
-    {
       "name": "君正集团",
       "reactivation_trigger_types": [
         "filing",
@@ -6215,18 +6623,6 @@
       "symbol": "CN:603230"
     },
     {
-      "name": "景津装备",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:603279"
-    },
-    {
       "name": "辰欣药业",
       "reactivation_trigger_types": [
         "filing",
@@ -6309,18 +6705,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:603611"
-    },
-    {
-      "name": "国联股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:603613"
     },
     {
       "name": "海利尔",
@@ -6441,6 +6825,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:920566"
+    },
+    {
+      "name": "江波龙",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:301308"
     },
     {
       "name": "潍柴动力",
@@ -6671,6 +7067,18 @@
       "symbol": "CN:002085"
     },
     {
+      "name": "沃华医药",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002107"
+    },
+    {
       "name": "东港股份",
       "reactivation_trigger_types": [
         "filing",
@@ -6791,6 +7199,18 @@
       "symbol": "CN:002437"
     },
     {
+      "name": "日发精机",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002520"
+    },
+    {
       "name": "百润股份",
       "reactivation_trigger_types": [
         "filing",
@@ -6827,6 +7247,18 @@
       "symbol": "CN:002606"
     },
     {
+      "name": "海思科",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002653"
+    },
+    {
       "name": "华东重机",
       "reactivation_trigger_types": [
         "filing",
@@ -6849,18 +7281,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:002738"
-    },
-    {
-      "name": "国光股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:002749"
     },
     {
       "name": "国恩股份",
@@ -8483,6 +8903,18 @@
       "symbol": "CN:920978"
     },
     {
+      "name": "美的集团",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000333"
+    },
+    {
       "name": "英特集团",
       "reactivation_trigger_types": [
         "filing",
@@ -8903,6 +9335,18 @@
       "symbol": "CN:600266"
     },
     {
+      "name": "嘉化能源",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600273"
+    },
+    {
       "name": "天润乳业",
       "reactivation_trigger_types": [
         "filing",
@@ -8961,18 +9405,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600507"
-    },
-    {
-      "name": "菲达环保",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:600526"
     },
     {
       "name": "新华医疗",
@@ -9105,6 +9537,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:601188"
+    },
+    {
+      "name": "农业银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601288"
     },
     {
       "name": "兴业证券",
@@ -9311,6 +9755,18 @@
       "symbol": "CN:920982"
     },
     {
+      "name": "好想你",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002582"
+    },
+    {
       "name": "广发证券",
       "reactivation_trigger_types": [
         "filing",
@@ -9345,6 +9801,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000987"
+    },
+    {
+      "name": "仁东控股",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002647"
     },
     {
       "name": "拉卡拉",
@@ -9393,6 +9861,42 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:920132"
+    },
+    {
+      "name": "格力电器",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000651"
+    },
+    {
+      "name": "海尔智家",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600690"
+    },
+    {
+      "name": "中国海油",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600938"
     },
     {
       "name": "农 产 品",
@@ -10271,18 +10775,6 @@
       "symbol": "CN:002541"
     },
     {
-      "name": "新联电子",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:002546"
-    },
-    {
       "name": "辉隆股份",
       "reactivation_trigger_types": [
         "filing",
@@ -10713,18 +11205,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:300320"
-    },
-    {
-      "name": "炬华科技",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:300360"
     },
     {
       "name": "三联虹普",
@@ -11567,18 +12047,6 @@
       "symbol": "CN:600884"
     },
     {
-      "name": "中国黄金",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:600916"
-    },
-    {
       "name": "华电新能",
       "reactivation_trigger_types": [
         "filing",
@@ -11733,18 +12201,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:601228"
-    },
-    {
-      "name": "陕鼓动力",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:601369"
     },
     {
       "name": "九牧王",
@@ -12033,18 +12489,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:603201"
-    },
-    {
-      "name": "天有为",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:603202"
     },
     {
       "name": "恒通股份",
@@ -12479,18 +12923,6 @@
       "symbol": "CN:605009"
     },
     {
-      "name": "聚合顺",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:605166"
-    },
-    {
       "name": "确成股份",
       "reactivation_trigger_types": [
         "filing",
@@ -12875,6 +13307,54 @@
       "symbol": "CN:920914"
     },
     {
+      "name": "兴业银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601166"
+    },
+    {
+      "name": "威尔泰",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002058"
+    },
+    {
+      "name": "宇顺电子",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002289"
+    },
+    {
+      "name": "日海智能",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002313"
+    },
+    {
       "name": "绿康生化",
       "reactivation_trigger_types": [
         "filing",
@@ -13161,18 +13641,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:001221"
-    },
-    {
-      "name": "炜冈科技",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:001256"
     },
     {
       "name": "好上好",
@@ -14049,18 +14517,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:301376"
-    },
-    {
-      "name": "尚水智能",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:301513"
     },
     {
       "name": "科力装备",
@@ -15143,6 +15599,18 @@
       "symbol": "CN:920792"
     },
     {
+      "name": "招商银行",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600036"
+    },
+    {
       "name": "北方国际",
       "reactivation_trigger_types": [
         "filing",
@@ -15177,6 +15645,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000514"
+    },
+    {
+      "name": "太阳能",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000591"
     },
     {
       "name": "渤海股份",
@@ -16077,6 +16557,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:002051"
+    },
+    {
+      "name": "ST达华",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002512"
     },
     {
       "name": "朗鸿科技",
@@ -17039,18 +17531,6 @@
       "symbol": "CN:002597"
     },
     {
-      "name": "朗姿股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:002612"
-    },
-    {
       "name": "露笑科技",
       "reactivation_trigger_types": [
         "filing",
@@ -17493,6 +17973,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:300980"
+    },
+    {
+      "name": "玉马科技",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:300993"
     },
     {
       "name": "新柴股份",
@@ -18611,18 +19103,6 @@
       "symbol": "CN:688571"
     },
     {
-      "name": "开发科技",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:920029"
-    },
-    {
       "name": "爱得科技",
       "reactivation_trigger_types": [
         "filing",
@@ -18705,6 +19185,30 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:920974"
+    },
+    {
+      "name": "万华化学",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600309"
+    },
+    {
+      "name": "福耀玻璃",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600660"
     },
     {
       "name": "南华生物",
@@ -21083,18 +21587,6 @@
       "symbol": "CN:300617"
     },
     {
-      "name": "正丹股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:300641"
-    },
-    {
       "name": "雷迪克",
       "reactivation_trigger_types": [
         "filing",
@@ -21443,6 +21935,18 @@
       "symbol": "CN:301116"
     },
     {
+      "name": "正强股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:301119"
+    },
+    {
       "name": "美农生物",
       "reactivation_trigger_types": [
         "filing",
@@ -21777,6 +22281,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600025"
+    },
+    {
+      "name": "太极集团",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600129"
     },
     {
       "name": "生物股份",
@@ -22245,18 +22761,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:603400"
-    },
-    {
-      "name": "陕西旅游",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:603402"
     },
     {
       "name": "信捷电气",
@@ -23111,6 +23615,18 @@
       "symbol": "CN:920879"
     },
     {
+      "name": "中国平安",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601318"
+    },
+    {
       "name": "方大集团",
       "reactivation_trigger_types": [
         "filing",
@@ -23771,7 +24287,7 @@
       "symbol": "CN:920108"
     },
     {
-      "name": "中原传媒",
+      "name": "中国移动",
       "reactivation_trigger_types": [
         "filing",
         "price",
@@ -23780,7 +24296,7 @@
       ],
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
-      "symbol": "CN:000719"
+      "symbol": "CN:600941"
     },
     {
       "name": "航发控制",
@@ -24359,6 +24875,18 @@
       "symbol": "CN:600596"
     },
     {
+      "name": "锦江酒店",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600754"
+    },
+    {
       "name": "保税科技",
       "reactivation_trigger_types": [
         "filing",
@@ -24909,6 +25437,30 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:920855"
+    },
+    {
+      "name": "长江电力",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600900"
+    },
+    {
+      "name": "中国神华",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:601088"
     },
     {
       "name": "深 赛 格",
@@ -32663,6 +33215,30 @@
       "symbol": "CN:000923"
     },
     {
+      "name": "福星股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000926"
+    },
+    {
+      "name": "中粮科技",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000930"
+    },
+    {
       "name": "华西股份",
       "reactivation_trigger_types": [
         "filing",
@@ -33741,18 +34317,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600716"
-    },
-    {
-      "name": "中交设计",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:600720"
     },
     {
       "name": "山西焦化",
@@ -35099,18 +35663,6 @@
       "symbol": "CN:000886"
     },
     {
-      "name": "钱江摩托",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:000913"
-    },
-    {
       "name": "众合科技",
       "reactivation_trigger_types": [
         "filing",
@@ -36237,6 +36789,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:002669"
+    },
+    {
+      "name": "龙泉股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:002671"
     },
     {
       "name": "东江环保",
@@ -37631,18 +38195,6 @@
       "symbol": "CN:300510"
     },
     {
-      "name": "友讯达",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:300514"
-    },
-    {
       "name": "海波重科",
       "reactivation_trigger_types": [
         "filing",
@@ -38735,6 +39287,18 @@
       "symbol": "CN:301166"
     },
     {
+      "name": "迪阿股份",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:301177"
+    },
+    {
       "name": "家联科技",
       "reactivation_trigger_types": [
         "filing",
@@ -39033,18 +39597,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:301330"
-    },
-    {
-      "name": "德尔玛",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:301332"
     },
     {
       "name": "天元宠物",
@@ -39969,6 +40521,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600556"
+    },
+    {
+      "name": "江西长运",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600561"
     },
     {
       "name": "惠泉啤酒",
@@ -41603,18 +42167,6 @@
       "symbol": "CN:603882"
     },
     {
-      "name": "元祖股份",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:603886"
-    },
-    {
       "name": "城地香江",
       "reactivation_trigger_types": [
         "filing",
@@ -41745,18 +42297,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:605136"
-    },
-    {
-      "name": "华达新材",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:605158"
     },
     {
       "name": "洪通燃气",
@@ -42275,18 +42815,6 @@
       "symbol": "CN:688276"
     },
     {
-      "name": "高铁电气",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:688285"
-    },
-    {
       "name": "圣湘生物",
       "reactivation_trigger_types": [
         "filing",
@@ -42695,18 +43223,6 @@
       "symbol": "CN:688658"
     },
     {
-      "name": "金迪克",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:688670"
-    },
-    {
       "name": "碧兴物联",
       "reactivation_trigger_types": [
         "filing",
@@ -42899,18 +43415,6 @@
       "symbol": "CN:920682"
     },
     {
-      "name": "广厦环能",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:920703"
-    },
-    {
       "name": "奔朗新材",
       "reactivation_trigger_types": [
         "filing",
@@ -43091,6 +43595,18 @@
       "symbol": "CN:920871"
     },
     {
+      "name": "深南电A",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000037"
+    },
+    {
       "name": "中洲控股",
       "reactivation_trigger_types": [
         "filing",
@@ -43149,6 +43665,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000070"
+    },
+    {
+      "name": "常山北明",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:000158"
     },
     {
       "name": "沈阳机床",
@@ -44049,18 +44577,6 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:000978"
-    },
-    {
-      "name": "众泰汽车",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:000980"
     },
     {
       "name": "大庆华科",
@@ -53795,18 +54311,6 @@
       "symbol": "CN:600518"
     },
     {
-      "name": "三佳科技",
-      "reactivation_trigger_types": [
-        "filing",
-        "price",
-        "event",
-        "thesis"
-      ],
-      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
-      "stage": "catalog",
-      "symbol": "CN:600520"
-    },
-    {
       "name": "交大昂立",
       "reactivation_trigger_types": [
         "filing",
@@ -53877,6 +54381,18 @@
       "reason_code": "research_capacity_allocated_to_higher_value_of_information",
       "stage": "catalog",
       "symbol": "CN:600552"
+    },
+    {
+      "name": "金自天正",
+      "reactivation_trigger_types": [
+        "filing",
+        "price",
+        "event",
+        "thesis"
+      ],
+      "reason_code": "research_capacity_allocated_to_higher_value_of_information",
+      "stage": "catalog",
+      "symbol": "CN:600560"
     },
     {
       "name": "安阳钢铁",
@@ -63335,7 +63851,7 @@
       "symbol": "CN:920090"
     }
   ],
-  "deferred_count": 5277,
+  "deferred_count": 5320,
   "effort_budget_hours": {
     "deep_research": 24.0,
     "quick_profile": 1.0,
@@ -63346,24 +63862,41 @@
   },
   "excluded": [],
   "lens_counts": {
-    "balanced": 40,
+    "balanced": 30,
     "crisis_mispricing": 30,
-    "cyclical_specialist": 20,
+    "cyclical_specialist": 10,
     "false_negative_audit": 10,
     "financial_specialist": 20,
     "information_change": 20,
-    "quality_compounder": 30,
-    "value_income": 30
+    "magic_formula_nonfinancial": 30,
+    "quality_compounder": 20,
+    "value_income": 20
   },
-  "policy_payload_sha256": "9701ba01da0602bfa11829f36072760fa3c0caeb1d15137d0ddb271ff9f77f02",
-  "policy_version": "research-allocation.default@2.0.0",
+  "policy_payload_sha256": "ab3520c6ecd70d89518db6cf569e7093ab00eb9e6bcd43527ca77009d807c1da",
+  "policy_version": "research-allocation.default@3.0.0",
   "principle": "public screening scores are a cheap map for selecting a dynamic rapid-triage candidate pool and must never directly promote a company to a formal profile, deep research, underwriting or buy_now",
-  "ranking_content_sha256": "87a3612b74f30fc98c3523ee85a797680090d36e75b2c0aa2482974ae89eaf64",
-  "ranking_generated_at": "2026-07-27T03:00:00+08:00",
+  "ranking_content_sha256": "b85385821a97ad374c4d2f9dce6ad746d245aceaf089e29e495380577b8177c3",
+  "ranking_generated_at": "2026-07-28T18:45:55.918991+08:00",
+  "retriage_completed": true,
+  "risk_cluster_counts": {
+    "commodity_cycle": 25,
+    "consumer_demand": 16,
+    "credit_cycle": 20,
+    "diversified": 98,
+    "healthcare_policy": 6,
+    "industrial_export": 8,
+    "infrastructure": 6,
+    "property_credit_cycle": 14,
+    "technology_capex": 7
+  },
   "schema_version": 2,
   "selected": [
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "诺 普 信",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63377,7 +63910,11 @@
       "symbol": "CN:002215"
     },
     {
+      "economic_risk_cluster": "infrastructure",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "京能热力",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63391,7 +63928,11 @@
       "symbol": "CN:002893"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "雪榕生物",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63405,7 +63946,11 @@
       "symbol": "CN:300511"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "音飞储存",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63419,7 +63964,11 @@
       "symbol": "CN:603066"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "轻纺城",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63433,7 +63982,13 @@
       "symbol": "CN:600790"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "quality_compounder",
+        "cyclical_specialist"
+      ],
       "name": "云铝股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63447,7 +64002,32 @@
       "symbol": "CN:000807"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "quality_compounder",
+        "cyclical_specialist"
+      ],
+      "name": "神火股份",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "balanced"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000933"
+    },
+    {
+      "economic_risk_cluster": "infrastructure",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "quality_compounder"
+      ],
       "name": "金房能源",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63461,7 +64041,11 @@
       "symbol": "CN:001210"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "跨境通",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63475,7 +64059,11 @@
       "symbol": "CN:002640"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "双杰电气",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63489,7 +64077,11 @@
       "symbol": "CN:300444"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "三只松鼠",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63503,7 +64095,11 @@
       "symbol": "CN:300783"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "飞南资源",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63517,7 +64113,11 @@
       "symbol": "CN:301500"
     },
     {
+      "economic_risk_cluster": "infrastructure",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "大连热电",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63531,7 +64131,12 @@
       "symbol": "CN:600719"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "cyclical_specialist"
+      ],
       "name": "株冶集团",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63545,7 +64150,29 @@
       "symbol": "CN:600961"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
+      "name": "今世缘",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "balanced"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:603369"
+    },
+    {
+      "economic_risk_cluster": "technology_capex",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "科森科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63559,7 +64186,11 @@
       "symbol": "CN:603626"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "菜百股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63573,7 +64204,12 @@
       "symbol": "CN:605599"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "cyclical_specialist"
+      ],
       "name": "焦作万方",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63587,7 +64223,11 @@
       "symbol": "CN:000612"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "陕天然气",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63601,7 +64241,11 @@
       "symbol": "CN:002267"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "遥望科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63615,7 +64259,11 @@
       "symbol": "CN:002291"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "中原内配",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63629,7 +64277,12 @@
       "symbol": "CN:002448"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "cyclical_specialist"
+      ],
       "name": "天山铝业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63643,7 +64296,11 @@
       "symbol": "CN:002532"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "奥瑞金",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63657,7 +64314,11 @@
       "symbol": "CN:002701"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "华绿生物",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63671,7 +64332,11 @@
       "symbol": "CN:300970"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "万凯新材",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63685,7 +64350,12 @@
       "symbol": "CN:301216"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "cyclical_specialist"
+      ],
       "name": "腾远钴业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63699,7 +64369,11 @@
       "symbol": "CN:301219"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "冠农股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63713,7 +64387,12 @@
       "symbol": "CN:600251"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "cyclical_specialist"
+      ],
       "name": "恒力石化",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63727,7 +64406,12 @@
       "symbol": "CN:600346"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced",
+        "magic_formula_nonfinancial"
+      ],
       "name": "海澜之家",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63741,7 +64425,11 @@
       "symbol": "CN:600398"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "balanced"
+      ],
       "name": "一拖股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63755,7 +64443,9 @@
       "symbol": "CN:601038"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "高能环境",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63763,13 +64453,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "balanced"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:603588"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "华友钴业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63777,13 +64471,15 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "balanced"
+        "cyclical_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:603799"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "盛泰集团",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63791,13 +64487,15 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "balanced"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:605138"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "万润新能",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63805,126 +64503,19 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "balanced"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:688275"
     },
     {
+      "economic_risk_cluster": "infrastructure",
       "effort_budget_hours": 0.25,
-      "name": "安道麦A",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "value_income",
+        "information_change"
       ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:000553"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "中山公用",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:000685"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "恒逸石化",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:000703"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "城发环境",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:000885"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "浙商中拓",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:000906"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "众兴菌业",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002772"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "比音勒芬",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002832"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "张家港行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "balanced"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002839"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "青农商行",
+      "name": "深圳能源",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -63934,10 +64525,209 @@
         "value_income"
       ],
       "stage": "rapid_triage",
+      "symbol": "CN:000027"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "中原环保",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000544"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "安道麦A",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000553"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "中山公用",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000685"
+    },
+    {
+      "economic_risk_cluster": "commodity_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
+      "name": "恒逸石化",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "cyclical_specialist"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000703"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "城发环境",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000885"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "浙商中拓",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000906"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "众兴菌业",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:002772"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
+      "name": "比音勒芬",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "capacity_fill"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:002832"
+    },
+    {
+      "economic_risk_cluster": "credit_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
+      "name": "张家港行",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "financial_specialist"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:002839"
+    },
+    {
+      "economic_risk_cluster": "credit_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist",
+        "false_negative_audit"
+      ],
+      "name": "青农商行",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "financial_specialist"
+      ],
+      "stage": "rapid_triage",
       "symbol": "CN:002958"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
+      "name": "南京高科",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "capacity_fill"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600064"
+    },
+    {
+      "economic_risk_cluster": "healthcare_policy",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "白云山",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63951,7 +64741,9 @@
       "symbol": "CN:600332"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "新黄浦",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63959,13 +64751,49 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600638"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "大商股份",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600694"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
+      "name": "长江传媒",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "capacity_fill"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600757"
+    },
+    {
+      "economic_risk_cluster": "consumer_demand",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "百联股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -63973,27 +64801,35 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600827"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
-      "name": "中国铝业",
+      "matched_lenses": [
+        "financial_specialist"
+      ],
+      "name": "长沙银行",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:601600"
+      "symbol": "CN:601577"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "浙商银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64007,7 +64843,11 @@
       "symbol": "CN:601916"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "兴业银锡",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64021,7 +64861,11 @@
       "symbol": "CN:000426"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "学大教育",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64035,7 +64879,11 @@
       "symbol": "CN:000526"
     },
     {
+      "economic_risk_cluster": "infrastructure",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "惠天热电",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64049,7 +64897,11 @@
       "symbol": "CN:000692"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "北方铜业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64063,7 +64915,11 @@
       "symbol": "CN:000737"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "佛塑科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64077,7 +64933,11 @@
       "symbol": "CN:000973"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "山金国际",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64091,7 +64951,11 @@
       "symbol": "CN:000975"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "四川黄金",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64105,7 +64969,11 @@
       "symbol": "CN:001337"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "亚联机械",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64119,7 +64987,9 @@
       "symbol": "CN:001395"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "升达林业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64127,27 +64997,15 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "quality_compounder"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:002259"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
-      "name": "宏桥控股",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002379"
-    },
-    {
-      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "TCL智家",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64155,27 +65013,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "quality_compounder"
+        "capacity_fill"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:002668"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
-      "name": "电投能源",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
+      "matched_lenses": [
         "cyclical_specialist"
       ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002128"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "顺博合金",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64189,7 +65037,11 @@
       "symbol": "CN:002996"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "中孚实业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64203,7 +65055,29 @@
       "symbol": "CN:600595"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "苏美达",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600710"
+    },
+    {
+      "economic_risk_cluster": "commodity_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "桐昆股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64217,7 +65091,11 @@
       "symbol": "CN:601233"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "明泰铝业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64231,7 +65109,11 @@
       "symbol": "CN:601677"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "青岛银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64245,7 +65127,11 @@
       "symbol": "CN:002948"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "苏州银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64259,7 +65145,29 @@
       "symbol": "CN:002966"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
+      "name": "南京银行",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "financial_specialist"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:601009"
+    },
+    {
+      "economic_risk_cluster": "credit_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "常熟银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64273,49 +65181,47 @@
       "symbol": "CN:601128"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
-      "name": "中色股份",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "同力股份",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:000758"
+      "symbol": "CN:920599"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "天齐锂业",
+      "matched_lenses": [
+        "quality_compounder"
+      ],
+      "name": "藏格矿业",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "quality_compounder"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:002466"
+      "symbol": "CN:000408"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
-      "name": "永兴材料",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "quality_compounder"
       ],
-      "selected_by": [
-        "cyclical_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002756"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "招金黄金",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64329,7 +65235,29 @@
       "symbol": "CN:000506"
     },
     {
+      "economic_risk_cluster": "infrastructure",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
+      "name": "穗恒运Ａ",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "value_income"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000531"
+    },
+    {
+      "economic_risk_cluster": "healthcare_policy",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "吉林敖东",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64343,7 +65271,11 @@
       "symbol": "CN:000623"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "国城矿业",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64357,7 +65289,11 @@
       "symbol": "CN:000688"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "山子高科",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64371,7 +65307,11 @@
       "symbol": "CN:000981"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "兰州银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64379,13 +65319,15 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:001227"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "苏 泊 尔",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64399,21 +65341,11 @@
       "symbol": "CN:002032"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
-      "name": "章源钨业",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "financial_specialist"
       ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002378"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "江阴银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64421,13 +65353,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:002807"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "郑州银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64435,13 +65371,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:002936"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "浦发银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64449,13 +65389,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600000"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "华夏银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64463,13 +65407,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600015"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "民生银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64477,13 +65425,18 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600016"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income",
+        "cyclical_specialist"
+      ],
       "name": "上港集团",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64497,7 +65450,11 @@
       "symbol": "CN:600018"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "中原高速",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64511,7 +65468,11 @@
       "symbol": "CN:600020"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "楚天高速",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64525,7 +65486,11 @@
       "symbol": "CN:600035"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "五洲交通",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64539,7 +65504,11 @@
       "symbol": "CN:600368"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "安徽建工",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64553,7 +65522,11 @@
       "symbol": "CN:600502"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "物产中大",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64567,7 +65540,11 @@
       "symbol": "CN:600704"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "value_income"
+      ],
       "name": "辽宁成大",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64581,21 +65558,11 @@
       "symbol": "CN:600739"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
-      "name": "创业环保",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "financial_specialist"
       ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:600874"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "无锡银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64603,13 +65570,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600908"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
       "name": "西安银行",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64617,13 +65588,17 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "financial_specialist"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:600928"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
       "name": "中国化学",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64631,98 +65606,18 @@
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "value_income"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
       "symbol": "CN:601117"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
-      "name": "北京银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "financial_specialist"
       ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601169"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "中国铁建",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601186"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "上海银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601229"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "交通银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601328"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "中国中铁",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601390"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "瑞丰银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "value_income"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601528"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "邮储银行",
+      "name": "重庆银行",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -64732,11 +65627,15 @@
         "financial_specialist"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:601658"
+      "symbol": "CN:601963"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
-      "name": "光大银行",
+      "matched_lenses": [
+        "financial_specialist"
+      ],
+      "name": "渝农商行",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -64746,66 +65645,104 @@
         "financial_specialist"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:601818"
+      "symbol": "CN:601077"
     },
     {
+      "economic_risk_cluster": "healthcare_policy",
       "effort_budget_hours": 0.25,
-      "name": "紫金银行",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "丽珠集团",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "financial_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:601860"
+      "symbol": "CN:000513"
     },
     {
+      "economic_risk_cluster": "healthcare_policy",
       "effort_budget_hours": 0.25,
-      "name": "贵阳银行",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "华特达因",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "financial_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:601997"
+      "symbol": "CN:000915"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "中信银行",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "凌霄泵业",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "financial_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:601998"
+      "symbol": "CN:002884"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "苏农银行",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "新媒股份",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "financial_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:603323"
+      "symbol": "CN:300770"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "德瑞锂电",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:920523"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "张家界",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64819,49 +65756,11 @@
       "symbol": "CN:000430"
     },
     {
+      "economic_risk_cluster": "healthcare_policy",
       "effort_budget_hours": 0.25,
-      "name": "宁波银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "information_change"
       ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002142"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "杭州银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:600926"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "成都银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601838"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "国药一致",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64875,7 +65774,11 @@
       "symbol": "CN:000028"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "富奥股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64889,7 +65792,11 @@
       "symbol": "CN:000030"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "山西焦煤",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64903,7 +65810,11 @@
       "symbol": "CN:000983"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "招商港口",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64917,7 +65828,11 @@
       "symbol": "CN:001872"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "东华能源",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64931,7 +65846,11 @@
       "symbol": "CN:002221"
     },
     {
+      "economic_risk_cluster": "commodity_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "cyclical_specialist"
+      ],
       "name": "中国石化",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -64945,134 +65864,30 @@
       "symbol": "CN:600028"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "天津港",
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "莱绅通灵",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600717"
+      "symbol": "CN:603900"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
-      "name": "宁波港",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "value_income"
       ],
-      "selected_by": [
-        "cyclical_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601018"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "厦门银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601187"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "XD秦港股",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "cyclical_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601326"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "工商银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601398"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "齐鲁银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601665"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "沪农商行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601825"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "建设银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601939"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "中国银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601988"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "五矿资本",
+      "name": "柳    工",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -65082,66 +65897,118 @@
         "value_income"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600390"
+      "symbol": "CN:000528"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
-      "name": "蓝焰控股",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "长虹华意",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:000968"
+      "symbol": "CN:000404"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
-      "name": "盛航股份",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "红旗连锁",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:001205"
+      "symbol": "CN:002697"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "南山铝业",
+      "matched_lenses": [],
+      "name": "东航物流",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600219"
+      "symbol": "CN:601156"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "创新新材",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "景津装备",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "cyclical_specialist"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600361"
+      "symbol": "CN:603279"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "国联股份",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:603613"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
+      "name": "分众传媒",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "quality_compounder"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:002027"
+    },
+    {
+      "economic_risk_cluster": "commodity_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "中钨高新",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65155,7 +66022,11 @@
       "symbol": "CN:000657"
     },
     {
+      "economic_risk_cluster": "technology_capex",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "智微智能",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65169,49 +66040,11 @@
       "symbol": "CN:001339"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "沃华医药",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "value_income"
       ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002107"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "日发精机",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002520"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "海思科",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002653"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "*ST萃华",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65225,7 +66058,29 @@
       "symbol": "CN:002731"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "国光股份",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:002749"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "华图山鼎",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65239,7 +66094,27 @@
       "symbol": "CN:300492"
     },
     {
+      "economic_risk_cluster": "credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
+      "name": "江苏银行",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "financial_specialist"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600919"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "中国天楹",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65253,49 +66128,29 @@
       "symbol": "CN:000035"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "嘉化能源",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "菲达环保",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "false_negative_audit"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600273"
+      "symbol": "CN:600526"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "农业银行",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "information_change"
       ],
-      "selected_by": [
-        "financial_specialist"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:601288"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "仁东控股",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002647"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "飞亚达",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65309,7 +66164,137 @@
       "symbol": "CN:000026"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "新联电子",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "false_negative_audit"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:002546"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "炬华科技",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:300360"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "中国黄金",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600916"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "陕鼓动力",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:601369"
+    },
+    {
+      "economic_risk_cluster": "industrial_export",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "天有为",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:603202"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "聚合顺",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:605166"
+    },
+    {
+      "economic_risk_cluster": "credit_cycle",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "financial_specialist"
+      ],
+      "name": "平安银行",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "financial_specialist"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000001"
+    },
+    {
+      "economic_risk_cluster": "healthcare_policy",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "石药景峰",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65323,7 +66308,11 @@
       "symbol": "CN:000908"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder"
+      ],
       "name": "广合科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65337,7 +66326,9 @@
       "symbol": "CN:001389"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "思源电气",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65351,50 +66342,12 @@
       "symbol": "CN:002028"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "威尔泰",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "false_negative_audit"
       ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002058"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "宇顺电子",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002289"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "日海智能",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
-      ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002313"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "太阳能",
+      "name": "炜冈科技",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -65404,10 +66357,49 @@
         "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:000591"
+      "symbol": "CN:001256"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
+      "name": "尚水智能",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "false_negative_audit"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:301513"
+    },
+    {
+      "economic_risk_cluster": "technology_capex",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
+      "name": "德明利",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "crisis_mispricing"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:001309"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "quality_compounder",
+        "information_change"
+      ],
       "name": "*ST美丽",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65421,21 +66413,11 @@
       "symbol": "CN:000010"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "ST达华",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "information_change"
       ],
-      "selected_by": [
-        "quality_compounder"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:002512"
-    },
-    {
-      "effort_budget_hours": 0.25,
       "name": "深粮控股",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65449,8 +66431,12 @@
       "symbol": "CN:000019"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "玉马科技",
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "朗姿股份",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -65460,10 +66446,30 @@
         "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:300993"
+      "symbol": "CN:002612"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "开发科技",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:920029"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "神州数码",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65477,35 +66483,47 @@
       "symbol": "CN:000034"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "正强股份",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "正丹股份",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "false_negative_audit"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:301119"
+      "symbol": "CN:300641"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "太极集团",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "陕西旅游",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "false_negative_audit"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600129"
+      "symbol": "CN:603402"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "雄塑科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65519,21 +66537,29 @@
       "symbol": "CN:300599"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "锦江酒店",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "中原传媒",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "false_negative_audit"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600754"
+      "symbol": "CN:000719"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "深中华A",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65547,7 +66573,11 @@
       "symbol": "CN:000017"
     },
     {
+      "economic_risk_cluster": "technology_capex",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "深华发Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65561,7 +66591,11 @@
       "symbol": "CN:000020"
     },
     {
+      "economic_risk_cluster": "technology_capex",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "深科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65575,7 +66609,11 @@
       "symbol": "CN:000021"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "特  力Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65589,7 +66627,31 @@
       "symbol": "CN:000025"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing",
+        "information_change"
+      ],
+      "name": "万  科Ａ",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "crisis_mispricing"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000002"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing",
+        "information_change"
+      ],
       "name": "南  玻Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65603,7 +66665,11 @@
       "symbol": "CN:000012"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "大悦城",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65617,7 +66683,11 @@
       "symbol": "CN:000031"
     },
     {
+      "economic_risk_cluster": "technology_capex",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "深天马Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65631,7 +66701,11 @@
       "symbol": "CN:000050"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "华侨城Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65645,7 +66719,11 @@
       "symbol": "CN:000069"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "天健集团",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65659,7 +66737,11 @@
       "symbol": "CN:000090"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "金隅冀东",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65673,7 +66755,11 @@
       "symbol": "CN:000401"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "广弘控股",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65687,7 +66773,11 @@
       "symbol": "CN:000529"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "金圆股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65701,7 +66791,11 @@
       "symbol": "CN:000546"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "海螺新材",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65715,7 +66809,11 @@
       "symbol": "CN:000619"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "双环科技",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65729,7 +66827,11 @@
       "symbol": "CN:000707"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "中南股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65743,7 +66845,11 @@
       "symbol": "CN:000717"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "四川美丰",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65757,7 +66863,11 @@
       "symbol": "CN:000731"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "万年青",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65771,7 +66881,11 @@
       "symbol": "CN:000789"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "中国武夷",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65785,7 +66899,11 @@
       "symbol": "CN:000797"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "山东海化",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65799,7 +66917,11 @@
       "symbol": "CN:000822"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "华茂股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65813,7 +66935,11 @@
       "symbol": "CN:000850"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "三湘印象",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65827,7 +66953,11 @@
       "symbol": "CN:000863"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "天山股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65841,7 +66971,11 @@
       "symbol": "CN:000877"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "华联股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65855,7 +66989,11 @@
       "symbol": "CN:000882"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "津滨发展",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65869,7 +67007,11 @@
       "symbol": "CN:000897"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "鞍钢股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65883,7 +67025,11 @@
       "symbol": "CN:000898"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "大亚圣象",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65897,7 +67043,11 @@
       "symbol": "CN:000910"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "泸天化",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65911,7 +67061,11 @@
       "symbol": "CN:000912"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "电广传媒",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65925,35 +67079,47 @@
       "symbol": "CN:000917"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "福星股份",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "中交设计",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "crisis_mispricing"
+        "magic_formula_nonfinancial"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:000926"
+      "symbol": "CN:600720"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
-      "name": "中粮科技",
+      "matched_lenses": [
+        "information_change"
+      ],
+      "name": "深振业Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
         "no_direct_formal_profile_from_public_score"
       ],
       "selected_by": [
-        "crisis_mispricing"
+        "information_change"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:000930"
+      "symbol": "CN:000006"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "中国宝安",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65967,7 +67133,11 @@
       "symbol": "CN:000009"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "深物业A",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65981,7 +67151,11 @@
       "symbol": "CN:000011"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "沙河股份",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -65995,7 +67169,9 @@
       "symbol": "CN:000014"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "华联控股",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -66009,8 +67185,48 @@
       "symbol": "CN:000036"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "龙泉股份",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "钱江摩托",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:000913"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "友讯达",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:300514"
+    },
+    {
+      "economic_risk_cluster": "consumer_demand",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "德尔玛",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -66020,11 +67236,51 @@
         "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:002671"
+      "symbol": "CN:301332"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
-      "name": "迪阿股份",
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "元祖股份",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:603886"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "华达新材",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:605158"
+    },
+    {
+      "economic_risk_cluster": "diversified",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "高铁电气",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -66034,11 +67290,15 @@
         "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:301177"
+      "symbol": "CN:688285"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
-      "name": "江西长运",
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "金迪克",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -66048,10 +67308,32 @@
         "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600561"
+      "symbol": "CN:688670"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "magic_formula_nonfinancial"
+      ],
+      "name": "广厦环能",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "magic_formula_nonfinancial"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:920703"
+    },
+    {
+      "economic_risk_cluster": "consumer_demand",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "全新好",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -66065,7 +67347,11 @@
       "symbol": "CN:000007"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "神州高铁",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -66079,7 +67365,11 @@
       "symbol": "CN:000008"
     },
     {
+      "economic_risk_cluster": "property_credit_cycle",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "深深房Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -66093,7 +67383,9 @@
       "symbol": "CN:000029"
     },
     {
+      "economic_risk_cluster": "diversified",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [],
       "name": "深桑达Ａ",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -66107,22 +67399,12 @@
       "symbol": "CN:000032"
     },
     {
+      "economic_risk_cluster": "industrial_export",
       "effort_budget_hours": 0.25,
-      "name": "深南电A",
-      "ranking_confidence": "low",
-      "reason_codes": [
-        "cheap_map_selected_for_rapid_triage",
-        "no_direct_formal_profile_from_public_score"
+      "matched_lenses": [
+        "false_negative_audit"
       ],
-      "selected_by": [
-        "information_change"
-      ],
-      "stage": "rapid_triage",
-      "symbol": "CN:000037"
-    },
-    {
-      "effort_budget_hours": 0.25,
-      "name": "金自天正",
+      "name": "众泰汽车",
       "ranking_confidence": "low",
       "reason_codes": [
         "cheap_map_selected_for_rapid_triage",
@@ -66132,10 +67414,32 @@
         "false_negative_audit"
       ],
       "stage": "rapid_triage",
-      "symbol": "CN:600560"
+      "symbol": "CN:000980"
     },
     {
+      "economic_risk_cluster": "technology_capex",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "false_negative_audit"
+      ],
+      "name": "三佳科技",
+      "ranking_confidence": "low",
+      "reason_codes": [
+        "cheap_map_selected_for_rapid_triage",
+        "no_direct_formal_profile_from_public_score"
+      ],
+      "selected_by": [
+        "false_negative_audit"
+      ],
+      "stage": "rapid_triage",
+      "symbol": "CN:600520"
+    },
+    {
+      "economic_risk_cluster": "consumer_demand",
+      "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "information_change"
+      ],
       "name": "*ST康佳A",
       "ranking_confidence": "low",
       "reason_codes": [
@@ -66149,7 +67453,11 @@
       "symbol": "CN:000016"
     },
     {
+      "economic_risk_cluster": "consumer_demand",
       "effort_budget_hours": 0.25,
+      "matched_lenses": [
+        "crisis_mispricing"
+      ],
       "name": "ST西王",
       "ranking_confidence": "low",
       "reason_codes": [
