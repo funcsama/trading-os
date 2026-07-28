@@ -109,7 +109,7 @@ def main() -> int:
     companies_path = Path(args.companies)
     companies = read_jsonl(companies_path)
     secucodes = {_secucode(item) for item in companies}
-    raw_root = Path(args.raw_dir) / generated_at.date().isoformat()
+    raw_root = Path(args.raw_dir) / generated_at.strftime("%Y%m%dT%H%M%S%z")
     raw_root.mkdir(parents=True, exist_ok=True)
 
     records: dict[str, dict[int, list[dict[str, Any]]]] = {
@@ -278,7 +278,7 @@ def _request_page(
             "columns": ",".join(columns),
             "filter": (
                 f"(REPORT_DATE='{report_date}')"
-                "(SECURITY_TYPE_CODE='058001001')"
+                '(SECURITY_TYPE_CODE="058001001")'
             ),
             "pageNumber": page_number,
             "pageSize": page_size,
@@ -317,10 +317,16 @@ def _secucode(company: dict[str, Any]) -> str:
     ticker = str(company.get("ticker") or str(company["symbol"]).split(":", 1)[-1])
     suffix_by_exchange = {"SSE": "SH", "SZSE": "SZ", "BSE": "BJ"}
     exchange = str(company.get("exchange") or "")
-    try:
-        suffix = suffix_by_exchange[exchange]
-    except KeyError as exc:
-        raise ValueError(f"unsupported exchange for {ticker}: {exchange}") from exc
+    suffix = suffix_by_exchange.get(exchange)
+    if suffix is None:
+        if ticker[0] in {"0", "1", "2", "3"}:
+            suffix = "SZ"
+        elif ticker[0] in {"4", "8", "9"}:
+            suffix = "BJ"
+        elif ticker[0] in {"5", "6", "7"}:
+            suffix = "SH"
+        else:
+            raise ValueError(f"unsupported exchange for {ticker}: {exchange}")
     return f"{ticker}.{suffix}"
 
 
