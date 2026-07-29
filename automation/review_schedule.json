@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-30T23:59:59.999999+08:00",
-  "item_count": 5796,
+  "item_count": 5802,
   "items": [
     {
       "condition": {
@@ -1485,16 +1485,96 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-08-31"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
       "name": "大悦城",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "复核2026年半年报实际亏损、分部毛利、经营现金流、存货跌价、合同负债、债务到期和少数股东损益。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000031",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000031-h1-report-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "date": "2026-10-31"
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "用三季报检验销售回款、合同负债、住宅减值及REITs进展是否改善普通股所有者收益。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000031",
+      "trigger_id": "000031-q3-review-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "若REITs、财报或信用事件未先命中，90天后重新核验资产处置、融资和销售回款。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000031",
+      "trigger_id": "000031-routine-90d-refresh",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "主体信用评级下调、债券或借款展期、重大担保代偿、单项重大诉讼败诉，或货币资金低于一年内有息债务且无明确再融资安排"
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "高杠杆下任何融资或或有负债恶化都可能把当前生存判断从pass降级。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000031",
+      "trigger_id": "000031-balance-sheet-deterioration",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露天津大悦城商业不动产REITs申报受理、监管反馈、底层资产评估备案、基金募集规模、出售对价、净回款、留存份额、税费或最终发行结果"
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "量化REITs能否为普通股带来真实资产价格发现、降杠杆和可分配收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000031",
+      "trigger_id": "000031-reit-filing-progress",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1.7
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "1.70元对应约73亿元市值，可扩大相对经H1预亏调整后账面价值的缓冲；触发后仍须先扣除项目净债务、少数股东权益和新增减值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000031",
+      "trigger_id": "000031-price-margin-of-safety",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期归母扣非盈利，商业物业NOI稳定增长，住宅存货跌价显著收窄，且经营现金流覆盖利息、必要资本开支和土地投入"
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "该组合证据可推翻当前正常化所有者收益不可辨认的判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000031",
+      "trigger_id": "000031-owner-earnings-recovery",
+      "type": "thesis"
     },
     {
       "condition": {

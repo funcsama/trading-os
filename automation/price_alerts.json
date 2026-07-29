@@ -1,5 +1,5 @@
 {
-  "item_count": 48,
+  "item_count": 49,
   "items": [
     {
       "alert_id": "CN:000002:000002-distress-price",
@@ -220,6 +220,19 @@
       "reason": "A股价格降至12元或以下时，估值溢价显著收窄，重新核算资产价值与正常化收益。",
       "source_ref": "price-reset-12",
       "symbol": "CN:000029",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000031:000031-price-margin-of-safety",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1.7
+      },
+      "latest_report": "companies/CN/000031/reports/2026-07-30-rapid-triage-8fcdb3d79871.md",
+      "name": "大悦城",
+      "reason": "1.70元对应约73亿元市值，可扩大相对经H1预亏调整后账面价值的缓冲；触发后仍须先扣除项目净债务、少数股东权益和新增减值。",
+      "source_ref": "000031-price-margin-of-safety",
+      "symbol": "CN:000031",
       "type": "research_price_trigger"
     },
     {
