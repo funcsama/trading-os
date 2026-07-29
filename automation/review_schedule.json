@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-30T23:59:59.999999+08:00",
-  "item_count": 5787,
+  "item_count": 5792,
   "items": [
     {
       "condition": {
@@ -1312,16 +1312,83 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000027/reports/2026-07-30-rapid-triage-bfbc84ed9501.md",
       "name": "深圳能源",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "若财报、价格和重大事件均未先触发，九十天后刷新行情、公告、资本结构与证据有效性。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000027",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000027-routine-refresh-90d",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "阿斯塔纳或加纳项目获批、开工、融资条件或回款协议发生重大变化，类REITs获批发行或披露最终估值、利率和回表安排，或境外电费出现重大拖欠。"
+      },
+      "latest_report": "companies/CN/000027/reports/2026-07-30-rapid-triage-bfbc84ed9501.md",
+      "name": "深圳能源",
+      "reason": "这些事件直接改变新增资本风险、资产回收速度、普通股现金流和潜在减值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000027",
+      "trigger_id": "000027-overseas-or-reit-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "可再生能源补贴、垃圾处理费或境外电费出现大额回收或逾期，固定资产、商誉或项目资产发生重大减值，审计或内控意见变化。"
+      },
+      "latest_report": "companies/CN/000027/reports/2026-07-30-rapid-triage-bfbc84ed9501.md",
+      "name": "深圳能源",
+      "reason": "回款和资产减值是正常化所有者收益及账面价值可靠性的关键反证。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000027",
+      "trigger_id": "000027-receivable-or-impairment-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "披露2026年半年度报告，包含分业务收入利润、燃料与电价、利用小时、应收补贴、经营现金流、资本开支、永续债利息和少数股东损益。"
+      },
+      "latest_report": "companies/CN/000027/reports/2026-07-30-rapid-triage-bfbc84ed9501.md",
+      "name": "深圳能源",
+      "reason": "半年报是检验Q1利润及现金流回落是否持续、重算普通股所有者收益的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000027",
+      "trigger_id": "000027-2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.0
+      },
+      "latest_report": "companies/CN/000027/reports/2026-07-30-rapid-triage-bfbc84ed9501.md",
+      "name": "深圳能源",
+      "reason": "股价降至5元或以下会把普通股市值压缩至约238亿元，足以在基本面未同步恶化时重新核验所有者收益与资产回报。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000027",
+      "trigger_id": "000027-price-lte-5",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期普通股可得年化收益达到25亿元以上，经营现金流覆盖维护资本开支、利息及永续债分配，且应收账款、净债务和少数股东分流不恶化。"
+      },
+      "latest_report": "companies/CN/000027/reports/2026-07-30-rapid-triage-bfbc84ed9501.md",
+      "name": "深圳能源",
+      "reason": "该组合证据才能证明当前低市净率对应的是普通股回报改善，而非资本密集与优先权分流的价值陷阱。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000027",
+      "trigger_id": "000027-common-owner-earnings-thesis",
+      "type": "thesis"
     },
     {
       "condition": {
