@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-30T23:59:59.999999+08:00",
-  "item_count": 5792,
+  "item_count": 5796,
   "items": [
     {
       "condition": {
@@ -1405,16 +1405,70 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-08-31"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000029/reports/2026-07-30-rapid-triage-424407533a3c.md",
       "name": "深深房Ａ",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "最迟在2026年8月底复核正式半年报中的存货、其他应收款、投资性房地产、合同负债与现金流。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000029",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "2026-interim-report",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000029/reports/2026-07-30-rapid-triage-424407533a3c.md",
+      "name": "深深房Ａ",
+      "reason": "即使未触发其他条件，90天后重新检查项目销售、出租、控股股东减持与公告变化。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000029",
+      "trigger_id": "routine-90d-refresh",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "公司或控股股东正式披露资产注入、重大资产重组、城市更新权益获批或新增重大土地项目"
+      },
+      "latest_report": "companies/CN/000029/reports/2026-07-30-rapid-triage-424407533a3c.md",
+      "name": "深深房Ａ",
+      "reason": "可量化的新资产或项目可能改变当前薄项目管线和估值判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000029",
+      "trigger_id": "formal-asset-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 12.0
+      },
+      "latest_report": "companies/CN/000029/reports/2026-07-30-rapid-triage-424407533a3c.md",
+      "name": "深深房Ａ",
+      "reason": "A股价格降至12元或以下时，估值溢价显著收窄，重新核算资产价值与正常化收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000029",
+      "trigger_id": "price-reset-12",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "建邦破产清算或其他公告给出大额其他应收款的明确清偿方案、回款或重大减值"
+      },
+      "latest_report": "companies/CN/000029/reports/2026-07-30-rapid-triage-424407533a3c.md",
+      "name": "深深房Ａ",
+      "reason": "约7.54亿元其他应收款的可收回金额是资产价值的重要不确定项。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000029",
+      "trigger_id": "receivable-recovery-evidence",
+      "type": "thesis"
     },
     {
       "condition": {
