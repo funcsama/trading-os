@@ -1,18 +1,75 @@
 {
-  "item_count": 9,
+  "item_count": 31,
   "items": [
+    {
+      "alert_id": "CN:000042:000042-price-recheck-5p50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.5
+      },
+      "latest_report": "companies/CN/000042/reports/2026-07-29-rapid-triage-63f758602e6a.md",
+      "name": "中洲控股",
+      "reason": "价格较 7.78 元下降约三成会明显改变赔率，届时应在基本面未同步恶化的前提下重算经调整净资产与正常化收益。",
+      "source_ref": "000042-price-recheck-5p50",
+      "symbol": "CN:000042",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000045:cn-000045-price-lte-7-40",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 7.4
+      },
+      "latest_report": "companies/CN/000045/reports/2026-07-29-rapid-triage-96fbd8f853c3.md",
+      "name": "深纺织Ａ",
+      "reason": "约 7.40 元对应约 37.48 亿元市值和约 1.25 倍最新归母净资产，可重新检查资产折价是否开始补偿项目建设与低 ROE 风险；触发只表示复核，不代表自动晋级。",
+      "source_ref": "cn-000045-price-lte-7-40",
+      "symbol": "CN:000045",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000048:price-recheck-15",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 15.0
+      },
+      "latest_report": "companies/CN/000048/reports/2026-07-29-rapid-triage-a3f90ac402f6.md",
+      "name": "京基智农",
+      "reason": "15 元对应市值约 79.5 亿元，虽然仍不是自动买点，但相对当前价格已形成足以重新核验周期中枢、资产价值和安全边际的差异。",
+      "source_ref": "price-recheck-15",
+      "symbol": "CN:000048",
+      "type": "research_price_trigger"
+    },
     {
       "alert_id": "CN:000333:conclusion-price-stale",
       "condition": {
         "operator": "absolute_change_fraction_gte",
+        "reference_price": 84.8,
         "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "reference_source_sha256": "150e80cb57983304a629425d7e52db271c48d6db49aaa90d8ec59fbb7f8bb315",
         "threshold": 0.1
       },
       "latest_report": "companies/CN/000333/reports/2026-07-22-initial-research-v2.md",
       "name": "美的集团",
-      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:000333",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:000651:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 40.46,
+        "reference_price_as_of": "2026-07-24T16:14:15+08:00",
+        "reference_source_sha256": "1c790ea26db24bf61bd8749a902399f9d1b8868b57a6d7b8164e9b5827e6d305",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/000651/reports/2026-07-22-initial-research-v2.md",
+      "name": "格力电器",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:000651",
       "type": "conclusion_price_move_stale"
     },
     {
@@ -45,12 +102,14 @@
       "alert_id": "CN:600036:conclusion-price-stale",
       "condition": {
         "operator": "absolute_change_fraction_gte",
+        "reference_price": 38.71,
         "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "reference_source_sha256": "df6bf7db0e94c7a30735a46cdb8aeb04f70f5a97fdfedd5eb2a4b92b29e08d5a",
         "threshold": 0.1
       },
       "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
       "name": "招商银行",
-      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:600036",
       "type": "conclusion_price_move_stale"
@@ -63,21 +122,39 @@
       },
       "latest_report": "companies/CN/600036/reports/2026-07-22-initial-research-successor.md",
       "name": "招商银行",
-      "reason": "价格进入承保买入区；执行前必须重查证据有效性和核心逻辑。",
+      "reason": "价格进入承保买入区；执行前必须重查证据有效性、最新预期回报和核心逻辑。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:600036",
       "type": "underwriting_buy_zone_entry"
     },
     {
+      "alert_id": "CN:600309:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 73.75,
+        "reference_price_as_of": "2026-07-24T16:12:02+08:00",
+        "reference_source_sha256": "f9898a423c34c190478fcddf4c7fd2b366423ee5003ec195b46213ad147e9f87",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600309/reports/2026-07-26-monitoring-claims-repair-r3.md",
+      "name": "万华化学",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:600309",
+      "type": "conclusion_price_move_stale"
+    },
+    {
       "alert_id": "CN:600519:conclusion-price-stale",
       "condition": {
         "operator": "absolute_change_fraction_gte",
+        "reference_price": 1305.0,
         "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "reference_source_sha256": "a19137e18fb916050e5118973814f49b479f88070f7f872e738336d0a92d5cbf",
         "threshold": 0.1
       },
       "latest_report": "companies/CN/600519/reports/2026-07-22-initial-research-v2.md",
       "name": "贵州茅台",
-      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:600519",
       "type": "conclusion_price_move_stale"
@@ -86,43 +163,288 @@
       "alert_id": "CN:600660:conclusion-price-stale",
       "condition": {
         "operator": "absolute_change_fraction_gte",
+        "reference_price": 55.69,
         "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "reference_source_sha256": "076741464d0c5a1fcc5c4d155aee7359709a851b8341de904431aa72a19b5d4d",
         "threshold": 0.1
       },
       "latest_report": "companies/CN/600660/reports/2026-07-22-initial-research-v2.md",
       "name": "福耀玻璃",
-      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:600660",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600690:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 21.76,
+        "reference_price_as_of": "2026-07-24T16:11:56+08:00",
+        "reference_source_sha256": "14c06a145e2c44062c5f10dfda718ac86c49be13453d102840c7b5ca04c683f1",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600690/reports/2026-07-22-initial-research-v2.md",
+      "name": "海尔智家",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:600690",
       "type": "conclusion_price_move_stale"
     },
     {
       "alert_id": "CN:600900:conclusion-price-stale",
       "condition": {
         "operator": "absolute_change_fraction_gte",
+        "reference_price": 29.09,
         "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "reference_source_sha256": "0237f6df61e56e5d1c8c691d2006b76e04b7e7bbb7ccc9d6b9f27d4523bd5345",
         "threshold": 0.1
       },
       "latest_report": "companies/CN/600900/reports/2026-07-22-initial-research-v2.md",
       "name": "长江电力",
-      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:600900",
       "type": "conclusion_price_move_stale"
     },
     {
+      "alert_id": "CN:600919:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 11.57,
+        "reference_price_as_of": "2026-07-24T16:14:58+08:00",
+        "reference_source_sha256": "dd633287664dad51b08b3cfec526b980e1dcd1bede0a6bbb75f3d53593d4c4e5",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600919/reports/2026-07-22-initial-research-v2.md",
+      "name": "江苏银行",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:600919",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600938:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 31.91,
+        "reference_price_as_of": "2026-07-24T15:00:00+08:00",
+        "reference_source_sha256": "84e4ed2ef69af38f4c74e015cc6196a033d6580428fc610437a9bcde49ef53a5",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600938/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国海油",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:600938",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600941:valuation-review-high",
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 112.0
+      },
+      "latest_report": "companies/CN/600941/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国移动",
+      "reason": "价格进入过热复核区，需要云利润、自由现金流和股息增长显著兑现。",
+      "source_ref": "valuation-review-high",
+      "symbol": "CN:600941",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:600941:valuation-review-low",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 82.0
+      },
+      "latest_report": "companies/CN/600941/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国移动",
+      "reason": "价格进入初研估值敏感观察区，只触发一手证据和独立估值复核，不构成自动操作。",
+      "source_ref": "valuation-review-low",
+      "symbol": "CN:600941",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:600941:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 94.69,
+        "reference_price_as_of": "2026-07-24T16:11:44+08:00",
+        "reference_source_sha256": "34b6806d01c93b7817457bb39420020ba77c41ccca93d5e5616786b3ea5c9c0b",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/600941/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国移动",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:600941",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:600941:portfolio-buy-threshold",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 70.0
+      },
+      "latest_report": null,
+      "name": "中国移动",
+      "reason": "价格进入同时满足安全边际与组合最低回报的区间；执行前必须按最新证据重新运行组合决策。",
+      "source_ref": "batches/2026-07-26-priority-v3-001/portfolio.json",
+      "symbol": "CN:600941",
+      "type": "portfolio_buy_threshold_entry"
+    },
+    {
+      "alert_id": "CN:600941:underwriting-buy-zone",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 70.0
+      },
+      "latest_report": "companies/CN/600941/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国移动",
+      "reason": "价格进入承保买入区；执行前必须重查证据有效性、最新预期回报和核心逻辑。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:600941",
+      "type": "underwriting_buy_zone_entry"
+    },
+    {
       "alert_id": "CN:601088:conclusion-price-stale",
       "condition": {
         "operator": "absolute_change_fraction_gte",
+        "reference_price": 45.44,
         "reference_price_as_of": "2026-07-22T15:00:00+08:00",
+        "reference_source_sha256": "511d132a974cc156ef2cc783fa97f71883d057a089af6a1be7eb45f8ce92b89f",
         "threshold": 0.1
       },
       "latest_report": "companies/CN/601088/reports/2026-07-22-initial-research-v3.md",
       "name": "中国神华",
-      "reason": "相对承保复核价变动达到 10%，原价格结论自动过期。",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
       "source_ref": "2026-07-22-value-rebaseline-001",
       "symbol": "CN:601088",
       "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:601166:cib-price-review-high",
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 34.0
+      },
+      "latest_report": "companies/CN/601166/reports/2026-07-22-initial-research-v2.md",
+      "name": "兴业银行",
+      "reason": "进入初研乐观估值区，仅触发估值复核，不自动形成组合动作。",
+      "source_ref": "cib-price-review-high",
+      "symbol": "CN:601166",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:601166:cib-price-review-low",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 18.0
+      },
+      "latest_report": "companies/CN/601166/reports/2026-07-22-initial-research-v2.md",
+      "name": "兴业银行",
+      "reason": "进入初研观察区下沿，仅触发估值与信用证据复核，不自动形成组合动作。",
+      "source_ref": "cib-price-review-low",
+      "symbol": "CN:601166",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:601166:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 18.33,
+        "reference_price_as_of": "2026-07-24T16:14:50+08:00",
+        "reference_source_sha256": "1ed738dab597cdd09b0ba525ba27c67b97867b9cee8e4a67e48cc896f9db9a3a",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/601166/reports/2026-07-22-initial-research-v2.md",
+      "name": "兴业银行",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:601166",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:601166:underwriting-buy-zone",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 21.2
+      },
+      "latest_report": "companies/CN/601166/reports/2026-07-22-initial-research-v2.md",
+      "name": "兴业银行",
+      "reason": "价格进入承保买入区；执行前必须重查证据有效性、最新预期回报和核心逻辑。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:601166",
+      "type": "underwriting_buy_zone_entry"
+    },
+    {
+      "alert_id": "CN:601318:pingan-price-high-review",
+      "condition": {
+        "operator": "price_gte",
+        "threshold": 79.0
+      },
+      "latest_report": "companies/CN/601318/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国平安",
+      "reason": "进入乐观隐含预期区，仅触发复核，不自动交易。",
+      "source_ref": "pingan-price-high-review",
+      "symbol": "CN:601318",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:601318:pingan-price-low-review",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 48.0
+      },
+      "latest_report": "companies/CN/601318/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国平安",
+      "reason": "进入较深估值缓冲区，仅触发复核，不自动交易。",
+      "source_ref": "pingan-price-low-review",
+      "symbol": "CN:601318",
+      "type": "company_price_trigger"
+    },
+    {
+      "alert_id": "CN:601318:conclusion-price-stale",
+      "condition": {
+        "operator": "absolute_change_fraction_gte",
+        "reference_price": 54.02,
+        "reference_price_as_of": "2026-07-24T15:00:00+08:00",
+        "reference_source_sha256": "98869888fa5fd5e64add964c3c8791059aa4948fbc8bffcc9f48678e5c126658",
+        "threshold": 0.1
+      },
+      "latest_report": "companies/CN/601318/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国平安",
+      "reason": "相对承保复核价变动达到10%，原价格结论自动过期。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:601318",
+      "type": "conclusion_price_move_stale"
+    },
+    {
+      "alert_id": "CN:601318:portfolio-buy-threshold",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 51.8
+      },
+      "latest_report": null,
+      "name": "中国平安",
+      "reason": "价格进入同时满足安全边际与组合最低回报的区间；执行前必须按最新证据重新运行组合决策。",
+      "source_ref": "batches/2026-07-26-priority-v3-001/portfolio.json",
+      "symbol": "CN:601318",
+      "type": "portfolio_buy_threshold_entry"
+    },
+    {
+      "alert_id": "CN:601318:underwriting-buy-zone",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 51.8
+      },
+      "latest_report": "companies/CN/601318/reports/2026-07-22-initial-research-v2.md",
+      "name": "中国平安",
+      "reason": "价格进入承保买入区；执行前必须重查证据有效性、最新预期回报和核心逻辑。",
+      "source_ref": "2026-07-26-priority-v3-001",
+      "symbol": "CN:601318",
+      "type": "underwriting_buy_zone_entry"
     }
   ],
   "schema_version": 2
