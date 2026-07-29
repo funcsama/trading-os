@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-30T23:59:59.999999+08:00",
-  "item_count": 5802,
+  "item_count": 5821,
   "items": [
     {
       "condition": {
@@ -1578,42 +1578,295 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-08-31"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
       "name": "深桑达Ａ",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "复核正式半年报中的分部毛利、合同资产、应收账款、经营现金流、补税会计处理、工程亏损合同和少数股东损益。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000032",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000032-2026-interim-report",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-10-31"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
+      "name": "深桑达Ａ",
+      "reason": "用三季报复核工程结算旺季、现金回收、毛利率、云业务亏损和债务变化。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000032",
+      "trigger_id": "000032-q3-review-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
+      "name": "深桑达Ａ",
+      "reason": "若财报、云融资、价格或项目风险均未先命中，90天后刷新公告、行情和证据有效性。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000032",
+      "trigger_id": "000032-routine-refresh-90d",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "单项重大项目出现客户违约、停工、重大亏损合同、应收或合同资产大额减值，累计诉讼回款显著恶化，或审计与内控意见变化"
+      },
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
+      "name": "深桑达Ａ",
+      "reason": "工程回款和减值是当前账面权益及生存判断的核心风险。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000032",
+      "trigger_id": "000032-project-collection-or-impairment-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "中国电子云外部战略投资人摘牌、最终增资价格和金额、投后股权结构或工商交割正式披露"
+      },
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
+      "name": "深桑达Ａ",
+      "reason": "外部资金与成交价格可验证62.50亿元收益法估值，并决定上市公司持股、现金投入和云业务资金runway。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000032",
+      "trigger_id": "000032-cloud-fundraising-progress",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 10.5
+      },
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
+      "name": "深桑达Ａ",
+      "reason": "10.50元对应约127.59亿元市值，可显著降低相对账面价值和未验证云估值的溢价；触发后仍须先扣除项目减值及少数股东分流。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000032",
+      "trigger_id": "000032-price-margin-of-safety",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期高科技产业服务毛利率企稳回升、归母扣非转正，且经营现金流覆盖利息与必要资本开支、应收及合同资产占收入比例下降"
+      },
+      "latest_report": "companies/CN/000032/reports/2026-07-30-rapid-triage-eabe46fadf14.md",
+      "name": "深桑达Ａ",
+      "reason": "该组合证据才能证明工程主业已恢复可归属普通股的正常化所有者收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000032",
+      "trigger_id": "000032-engineering-owner-earnings-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "date": "2026-08-31"
+      },
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
       "name": "神州数码",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "复核2026年半年报的分业务收入与毛利、存货和应收账款、短期借款、经营现金流、资产减值及中国移动和银行项目执行进度。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000034",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000034-h1-report-2026",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
+      "name": "神州数码",
+      "reason": "若财报、订单、信用或控制权事件未先命中，90天后重新核验服务器订单兑现、营运资本、融资与担保变化。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000034",
+      "trigger_id": "000034-routine-90d-refresh",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "实际控制人婚姻财产分割案件作出后续裁判、和解或执行安排，并明确郭为持股、表决权或上市公司实际控制权是否变化"
+      },
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
+      "name": "神州数码",
+      "reason": "消除或确认当前控制权与治理不确定性。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000034",
+      "trigger_id": "000034-control-litigation-resolution",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "出现债务融资工具注册或发行失败、授信收缩、债务展期、担保代偿或逾期、供应商信用收紧，或货币资金低于一年内有息债务且无明确再融资安排"
+      },
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
+      "name": "神州数码",
+      "reason": "高营运资本占用和高集团担保下，信用事件会把24至36个月生存判断由concern进一步下调。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000034",
+      "trigger_id": "000034-credit-risk-escalation",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露中国移动框架协议或国有大型商业银行智算服务器项目的具体采购订单、正式合同、执行收入、项目毛利、交付验收或回款情况"
+      },
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
+      "name": "神州数码",
+      "reason": "实际订单与项目现金毛利是判断AI基础设施增长能否转化为普通股所有者收益的决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000034",
+      "trigger_id": "000034-server-order-conversion",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 18.0
+      },
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
+      "name": "神州数码",
+      "reason": "18元对应市值约183亿元，若现金流和订单质量未恶化，估值对7亿至10亿元粗略正常化收益的要求明显下降，值得重算赔率。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000034",
+      "trigger_id": "000034-price-recheck-18",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期经营现金流覆盖归母净利润、利息及必要资本开支，同时存货和应收账款周转未继续恶化，且自有品牌与数云服务毛利贡献上升"
+      },
+      "latest_report": "companies/CN/000034/reports/2026-07-30-rapid-triage-f5add65d8e2f.md",
+      "name": "神州数码",
+      "reason": "该组合证据可推翻当前正常化所有者收益uncertain和增长依赖融资的判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000034",
+      "trigger_id": "000034-cash-conversion-proof",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "date": "2026-08-31"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
       "name": "中国天楹",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "复核2026年半年报实际利润、经营现金流、资本开支、在建工程、长期应付款、应收与债务变化。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000035",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000035-h1-report-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "date": "2026-10-31"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "用三季报检查项目投产、回款、资本开支及融资安排是否开始改善普通股自由现金流。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-q3-review-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "若财报、价格或项目事件未先命中，90天后重新核验债务、质押、担保和绿色能源项目进度。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-routine-90d-refresh",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "出现债务展期、逾期担保、信用评级下调、重大融资租赁追加、控股股东质押比例重新超过80%、项目停工或实际控制人财务支持余额接近上限"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "重资本扩张下融资恶化可能把生存和治理判断降级。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-financing-stress",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "河内二期、越南富寿或新加坡大士项目取得正式投运、收费结算、重大延期、成本超支、监管变化或资金回流受限证据"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "海外项目进度和回款可显著改变增长与偿债判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-hanoi-overseas-project-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露辽源或安达项目调试投产、实际产量、客户验收、销售定价、总投资、项目融资或首笔回款"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "用可核验经营数据检验绿色甲醇能否从资本开支转化为普通股自由现金流。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-green-methanol-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.8
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "3.80元对应约90.7亿元市值和约0.84倍Q1归母净资产；触发后仍须扣除项目债务、维护资本开支和资产减值风险。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-price-margin-of-safety",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期经营现金流扣除维护性资本开支、现金利息和必要税费后为正，且增长项目资本开支、项目债务与补贴回款可单独核对"
+      },
+      "latest_report": "companies/CN/000035/reports/2026-07-30-rapid-triage-f715a33aa689.md",
+      "name": "中国天楹",
+      "reason": "该组合证据可使当前不可辨认的正常化所有者收益转为可估算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000035",
+      "trigger_id": "000035-owner-earnings-proof",
+      "type": "thesis"
     },
     {
       "condition": {
