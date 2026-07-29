@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-30T23:59:59.999999+08:00",
-  "item_count": 5747,
+  "item_count": 5760,
   "items": [
     {
       "condition": {
@@ -557,29 +557,122 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2026-08-29"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
       "name": "深物业A",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "公司公告预计在2026年8月29日披露半年报；届时核验业绩预告、分部毛利、存货减值、项目去化、经营现金流和一年内到期债务。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000011",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "2026-h1-report-review",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "控股股东或公司披露城建集团、深深房同业竞争解决的资产注入、出售、托管、股权划转方案，或再次变更承诺期限。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
+      "name": "深物业A",
+      "reason": "同业竞争解决方式会直接改变少数股东可归属资产、治理判断和潜在NAV。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000011",
+      "trigger_id": "controller-competition-resolution",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.7
+      },
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
+      "name": "深物业A",
+      "reason": "A股价格回落至接近2026年一季末每股归母净资产约5.65元时，资产折价赔率可能重新成立，但仍需同步复核存货可变现净值和融资。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000011",
+      "trigger_id": "price-at-or-below-q1-book",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "date": "2026-08-31"
+      },
+      "latest_report": "companies/CN/000012/reports/2026-07-30-rapid-triage-29c146d33742.md",
       "name": "南 玻Ａ",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "复核2026年半年报，重点验证业绩预告区间、分部收入与毛利、经营现金流、存货跌价及新增资本开支。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000012",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000012-h1-report-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "date": "2026-10-31"
+      },
+      "latest_report": "companies/CN/000012/reports/2026-07-30-rapid-triage-29c146d33742.md",
+      "name": "南 玻Ａ",
+      "reason": "用三季报检验半年度亏损是否见底、现金流能否覆盖利息和资本开支。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000012",
+      "trigger_id": "000012-q3-review-2026",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "公司完成董事会整体换届并披露稳定管理层、资本纪律和绩效约束，或股东会决议诉讼出现上诉或终审变化"
+      },
+      "latest_report": "companies/CN/000012/reports/2026-07-30-rapid-triage-29c146d33742.md",
+      "name": "南 玻Ａ",
+      "reason": "延期换届和股东纠纷是当前治理折价的主要来源。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000012",
+      "trigger_id": "000012-governance-reset",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露浮法、工程、光伏、电子玻璃及硅料的销量、售价、单位成本、产能利用率、存货和分部现金流"
+      },
+      "latest_report": "companies/CN/000012/reports/2026-07-30-rapid-triage-29c146d33742.md",
+      "name": "南 玻Ａ",
+      "reason": "决定亏损是局部周期冲击还是集团正常化所有者收益已永久受损。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000012",
+      "trigger_id": "000012-segment-economics-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.5
+      },
+      "latest_report": "companies/CN/000012/reports/2026-07-30-rapid-triage-29c146d33742.md",
+      "name": "南 玻Ａ",
+      "reason": "更深账面折价可能提高研究赔率，但仍须同时核验扣非亏损收窄和存货下降。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000012",
+      "trigger_id": "000012-price-margin-of-safety",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个披露期存货余额下降、跌价准备不再增加，且光伏玻璃及硅料售价与现金成本价差持续改善"
+      },
+      "latest_report": "companies/CN/000012/reports/2026-07-30-rapid-triage-29c146d33742.md",
+      "name": "南 玻Ａ",
+      "reason": "验证资产减值接近尾声并开始释放营运资金。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000012",
+      "trigger_id": "000012-inventory-reversal-thesis",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -689,16 +782,94 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "date": "2027-04-30"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
       "name": "*ST康佳A",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "复核2026年经审计归母净资产、审计意见、内控意见及是否触发终止上市。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000016",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000016-2026-audit-deadline",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "date": "2026-08-31"
+      },
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "name": "*ST康佳A",
+      "reason": "若此前未触发，届时复核法定半年度报告及保壳进度。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000016",
+      "trigger_id": "000016-h1-deadline",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "控股股东或其他主体披露增资、债转股、债务展期、资产注入或重大资产处置的完整定价、优先顺序和稀释条款"
+      },
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "name": "*ST康佳A",
+      "reason": "只有可量化条款才能判断支持是否真正修复普通股价值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000016",
+      "trigger_id": "000016-capital-repair-terms",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "新增重大债务逾期、会计差错、监管处罚、非标审计意见或交易所终止上市风险升级"
+      },
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "name": "*ST康佳A",
+      "reason": "任一事件都可能进一步降低普通股残余价值并缩短可处置时间。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000016",
+      "trigger_id": "000016-risk-escalation",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "易平方11家投资方的受偿权诉讼、和解或执行出现终局条款，并披露总现金义务、付款顺序和会计影响"
+      },
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "name": "*ST康佳A",
+      "reason": "终局现金义务可能显著改变母公司流动性和普通股残余价值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000016",
+      "trigger_id": "000016-yifang-resolution",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，列明归母净资产、受限货币资金、债务期限、经营现金流、财务费用及分部毛利"
+      },
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "name": "*ST康佳A",
+      "reason": "半年度数据可检验净资产缺口和自我造血能力是否开始实质改善。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000016",
+      "trigger_id": "000016-2026-h1-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "description": "连续两个季度经营现金流为正且主营毛利足以覆盖销售、管理、研发和财务费用，不依赖新增股东融资或大额资产出售"
+      },
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "name": "*ST康佳A",
+      "reason": "这将把判断从外部救助期权转向可持续经营价值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000016",
+      "trigger_id": "000016-cashflow-thesis",
+      "type": "thesis"
     },
     {
       "condition": {
