@@ -1,5 +1,5 @@
 {
-  "item_count": 52,
+  "item_count": 55,
   "items": [
     {
       "alert_id": "CN:000002:000002-distress-price",
@@ -272,6 +272,45 @@
       "reason": "3.80元对应约90.7亿元市值和约0.84倍Q1归母净资产；触发后仍须扣除项目债务、维护资本开支和资产减值风险。",
       "source_ref": "000035-price-margin-of-safety",
       "symbol": "CN:000035",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000036:000036-price-below-book",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.6
+      },
+      "latest_report": "companies/CN/000036/reports/2026-07-30-rapid-triage-7225d6db5eeb.md",
+      "name": "华联控股",
+      "reason": "股价跌至约2026Q1每股归母净资产以下时，应以最新负债和资本承诺重新核验资产折价是否形成。",
+      "source_ref": "000036-price-below-book",
+      "symbol": "CN:000036",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000037:cn000037_price_5_50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.5
+      },
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "name": "深南电A",
+      "reason": "价格降至5.50元或以下时，市值与净资产及初步正常化收益的错配明显收窄，值得重算储能和燃机的赔率。",
+      "source_ref": "cn000037_price_5_50",
+      "symbol": "CN:000037",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000039:cimc-a-price-7",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 7.0
+      },
+      "latest_report": "companies/CN/000039/reports/2026-07-30-rapid-triage-e2cf0f87408c.md",
+      "name": "中集集团",
+      "reason": "若基本面未恶化而A股价格降至7元或以下，账面资产与潜在周期修复的赔率可能显著改善。",
+      "source_ref": "cimc-a-price-7",
+      "symbol": "CN:000039",
       "type": "research_price_trigger"
     },
     {
