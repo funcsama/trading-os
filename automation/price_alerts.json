@@ -1,5 +1,5 @@
 {
-  "item_count": 43,
+  "item_count": 46,
   "items": [
     {
       "alert_id": "CN:000002:000002-distress-price",
@@ -155,6 +155,45 @@
       "reason": "价格下降约37%后静态盈利与净资产隐含要求明显降低，值得在司法风险不恶化前提下重新测算赔率。",
       "source_ref": "000020-price-6-50",
       "symbol": "CN:000020",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000021:000021-price-lte-25",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 25.0
+      },
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "name": "深科技",
+      "reason": "25元对应市值约394亿元；仅触发重新核验正常化收益和扩产回报，不代表自动晋级。",
+      "source_ref": "000021-price-lte-25",
+      "symbol": "CN:000021",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000025:000025-price-10",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 10.0
+      },
+      "latest_report": "companies/CN/000025/reports/2026-07-30-rapid-triage-f79bbfde9f50.md",
+      "name": "特 力Ａ",
+      "reason": "价格降至10元或以下时，即使按目前每年1.2亿至1.5亿元粗略正常化收益，估值压缩也足以重新核验物业价值与回报率。",
+      "source_ref": "000025-price-10",
+      "symbol": "CN:000025",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000026:research-price-12-50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 12.5
+      },
+      "latest_report": "companies/CN/000026/reports/2026-07-30-rapid-triage-ad5e2630ee1e.md",
+      "name": "飞亚达",
+      "reason": "价格回落至12.50元或以下会明显降低当前对消费复苏和收购增厚的隐含要求，值得在基本面未同步恶化时重新购买研究信息。",
+      "source_ref": "research-price-12-50",
+      "symbol": "CN:000026",
       "type": "research_price_trigger"
     },
     {
