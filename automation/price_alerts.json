@@ -1,5 +1,5 @@
 {
-  "item_count": 55,
+  "item_count": 80,
   "items": [
     {
       "alert_id": "CN:000002:000002-distress-price",
@@ -67,28 +67,28 @@
       "type": "research_price_trigger"
     },
     {
-      "alert_id": "CN:000010:distress-price-recheck",
+      "alert_id": "CN:000010:distress-valuation-recheck",
       "condition": {
         "operator": "price_lte",
         "threshold": 0.6
       },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
       "name": "*ST美丽",
-      "reason": "价格跌至明显更低水平时重新评估概率价值；价格本身不解除审计、重组或退市阻断，也不构成买入结论。",
-      "source_ref": "distress-price-recheck",
+      "reason": "显著更低价格可重开概率价值评估，但价格本身不能解除审计、债务或退市阻断。",
+      "source_ref": "distress-valuation-recheck",
       "symbol": "CN:000010",
       "type": "research_price_trigger"
     },
     {
-      "alert_id": "CN:000011:price-at-or-below-q1-book",
+      "alert_id": "CN:000011:000011-price-at-q1-book",
       "condition": {
         "operator": "price_lte",
-        "threshold": 5.7
+        "threshold": 5.65
       },
-      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2bb44f718281.md",
       "name": "深物业A",
-      "reason": "A股价格回落至接近2026年一季末每股归母净资产约5.65元时，资产折价赔率可能重新成立，但仍需同步复核存货可变现净值和融资。",
-      "source_ref": "price-at-or-below-q1-book",
+      "reason": "A股价格回落至不高于2026年一季度末每股归母净资产时，资产折价赔率可能重新出现，但仍须同步复核存货可变现净值和融资覆盖。",
+      "source_ref": "000011-price-at-q1-book",
       "symbol": "CN:000011",
       "type": "research_price_trigger"
     },
@@ -106,15 +106,15 @@
       "type": "research_price_trigger"
     },
     {
-      "alert_id": "CN:000014:price-nav-margin",
+      "alert_id": "CN:000014:price-nav-reset",
       "condition": {
         "operator": "price_lte",
         "threshold": 7.0
       },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
+      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-fb15ce6c5645.md",
       "name": "沙河股份",
-      "reason": "价格降至约1.23倍2026Q1归母账面净资产后，若资产质量未恶化，地产与国资整合期权的安全边际可能重新成立。",
-      "source_ref": "price-nav-margin",
+      "reason": "若资产质量未进一步恶化，价格降至接近1.23倍2026Q1归母净资产会显著改善研究赔率。",
+      "source_ref": "price-nav-reset",
       "symbol": "CN:000014",
       "type": "research_price_trigger"
     },
@@ -158,15 +158,15 @@
       "type": "research_price_trigger"
     },
     {
-      "alert_id": "CN:000021:000021-price-lte-25",
+      "alert_id": "CN:000021:000021-correction-price-lte-25",
       "condition": {
         "operator": "price_lte",
         "threshold": 25.0
       },
-      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
       "name": "深科技",
-      "reason": "25元对应市值约394亿元；仅触发重新核验正常化收益和扩产回报，不代表自动晋级。",
-      "source_ref": "000021-price-lte-25",
+      "reason": "25元对应约394亿元市值；仅触发重新核验正常化收益和扩产回报，不代表自动晋级或任何组合操作。",
+      "source_ref": "000021-correction-price-lte-25",
       "symbol": "CN:000021",
       "type": "research_price_trigger"
     },
@@ -288,15 +288,15 @@
       "type": "research_price_trigger"
     },
     {
-      "alert_id": "CN:000037:cn000037_price_5_50",
+      "alert_id": "CN:000037:cn000037_price_reset_5_50",
       "condition": {
         "operator": "price_lte",
         "threshold": 5.5
       },
-      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
       "name": "深南电A",
-      "reason": "价格降至5.50元或以下时，市值与净资产及初步正常化收益的错配明显收窄，值得重算储能和燃机的赔率。",
-      "source_ref": "cn000037_price_5_50",
+      "reason": "若基本面未恶化，价格降至5.50元或以下会显著收窄市值相对净资产和初步正常化收益的溢价，应重算价值区间。",
+      "source_ref": "cn000037_price_reset_5_50",
       "symbol": "CN:000037",
       "type": "research_price_trigger"
     },
@@ -350,6 +350,331 @@
       "reason": "15 元对应市值约 79.5 亿元，虽然仍不是自动买点，但相对当前价格已形成足以重新核验周期中枢、资产价值和安全边际的差异。",
       "source_ref": "price-recheck-15",
       "symbol": "CN:000048",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000049:cn000049_price_20",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 20.0
+      },
+      "latest_report": "companies/CN/000049/reports/2026-07-30-rapid-triage-61f8d446f2f6.md",
+      "name": "德赛电池",
+      "reason": "价格降至20元或以下时，权益市值约77亿元；相对3亿至4.5亿元粗略正常化收益的预期负担明显下降，值得重新核算赔率。",
+      "source_ref": "cn000049_price_20",
+      "symbol": "CN:000049",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000050:000050-price-lte-5-50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.5
+      },
+      "latest_report": "companies/CN/000050/reports/2026-07-30-rapid-triage-845eb00ae9e8.md",
+      "name": "深天马Ａ",
+      "reason": "5.50元对应约134亿元市值和约0.51倍粗略H1账面价值；仅触发以最新现金、债务和经济折旧重新核验资产折价，不代表自动晋级。",
+      "source_ref": "000050-price-lte-5-50",
+      "symbol": "CN:000050",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000055:cn000055_price_2_80",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 2.8
+      },
+      "latest_report": "companies/CN/000055/reports/2026-07-30-rapid-triage-65dd1d4793fe.md",
+      "name": "方大集团",
+      "reason": "A股价格降至2.80元或以下时，以A股价格映射的市值降至约30亿元，资产折价与正常化收益赔率明显改善，值得重算。",
+      "source_ref": "cn000055_price_2_80",
+      "symbol": "CN:000055",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000056:000056-price-lte-1",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1.0
+      },
+      "latest_report": "companies/CN/000056/reports/2026-07-30-rapid-triage-674dc6b2fb41.md",
+      "name": "*ST皇庭",
+      "reason": "股价触及或跌破1元会引入面值类交易退市的独立紧迫风险，应立即复核连续收盘情况；该阈值不是估值吸引或自动恢复研究的信号。",
+      "source_ref": "000056-price-lte-1",
+      "symbol": "CN:000056",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000058:cn000058_price_4_20",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.2
+      },
+      "latest_report": "companies/CN/000058/reports/2026-07-30-rapid-triage-63a496ff2dcc.md",
+      "name": "深 赛 格",
+      "reason": "A股价格降至4.20元或以下时，市净率和正常化收益倍数明显收缩，可结合最新法拍回收和分部现金流重估研究价值；阈值仅触发复核，不构成操作建议。",
+      "source_ref": "cn000058_price_4_20",
+      "symbol": "CN:000058",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000059:cn000059_price_3_70",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.7
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
+      "name": "华锦股份",
+      "reason": "价格降至3.70元或以下时，按当前净资产粗算市净率约0.61倍，足以显著改变周期和资产负债风险的赔率，需要重算正常化所有者收益。",
+      "source_ref": "cn000059_price_3_70",
+      "symbol": "CN:000059",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000061:price-below-4-50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.5
+      },
+      "latest_report": "companies/CN/000061/reports/2026-07-30-rapid-triage-2b6f94e1c339.md",
+      "name": "农 产 品",
+      "reason": "在核心盈利、现金流和融资条件未恶化时，4.50元对应约89.32亿元市值，才开始为2.5亿至3.5亿元正常化收益和重资产不确定性提供更实质的价格缓冲。",
+      "source_ref": "price-below-4-50",
+      "symbol": "CN:000061",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000062:cn000062_price_18",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 18.0
+      },
+      "latest_report": "companies/CN/000062/reports/2026-07-30-rapid-triage-a9cbdf81aef6.md",
+      "name": "深圳华强",
+      "reason": "股价降至18元或以下时权益市值约188亿元，预期负担较当前明显降低，值得结合最新现金转化重新核算估值，但该触发器本身不代表操作建议。",
+      "source_ref": "cn000062_price_18",
+      "symbol": "CN:000062",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000063:cn000063_price_28",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 28.0
+      },
+      "latest_report": "companies/CN/000063/reports/2026-07-30-rapid-triage-9390a195b770.md",
+      "name": "中兴通讯",
+      "reason": "价格降至28元或以下时，映射权益市值降至约1,340亿元，正常化所有者收益的预期负担明显下降，值得结合最新报表重新核算估值。",
+      "source_ref": "cn000063_price_28",
+      "symbol": "CN:000063",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000065:price-reunderwrite-800",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 8.0
+      },
+      "latest_report": "companies/CN/000065/reports/2026-07-29-rapid-triage-3ddcfeda2e7c.md",
+      "name": "北方国际",
+      "reason": "跌至8元或以下时，按当前保守正常化所有者收益计算的现金收益率明显改善，值得在基本面未恶化前提下重新承保，但该触发本身不构成操作建议。",
+      "source_ref": "price-reunderwrite-800",
+      "symbol": "CN:000065",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000066:cn000066_price_reset_10",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 10.0
+      },
+      "latest_report": "companies/CN/000066/reports/2026-07-30-rapid-triage-56586b1957eb.md",
+      "name": "中国长城",
+      "reason": "10元对应约323亿元市值和约2.95倍Q1末归母净资产，虽仍需盈利验证，但相较当前明显降低预期负担，足以触发一次赔率重算。",
+      "source_ref": "cn000066_price_reset_10",
+      "symbol": "CN:000066",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000068:000068-price-reset",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 2.0
+      },
+      "latest_report": "companies/CN/000068/reports/2026-07-30-rapid-triage-314df8a77dc2.md",
+      "name": "华控赛格",
+      "reason": "较2.76元下跌约27.5%会降低土地与重组可选性的隐含定价，应按届时净资产、净债务和土地进度重新核验，但价格触发不能替代当前正式甄别。",
+      "source_ref": "000068-price-reset",
+      "symbol": "CN:000068",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000069:cn000069_price_1_30",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1.3
+      },
+      "latest_report": "companies/CN/000069/reports/2026-07-30-rapid-triage-5a159e72e0e0.md",
+      "name": "华侨城Ａ",
+      "reason": "股价降至1.30元或以下时普通股市值约104.5亿元，若债务和减值未恶化，资产级残余价值赔率会发生足够大的变化，值得重算。",
+      "source_ref": "cn000069_price_1_30",
+      "symbol": "CN:000069",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000070:price-below-7-50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 7.5
+      },
+      "latest_report": "companies/CN/000070/reports/2026-07-30-rapid-triage-d5e252fe7e86.md",
+      "name": "特发信息",
+      "reason": "在基本面未恶化时，7.50元对应约65.13亿元市值，才值得结合已验证的2.5亿元以上正常化所有者收益重新评估风险补偿。",
+      "source_ref": "price-below-7-50",
+      "symbol": "CN:000070",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000078:cn000078_price_0_45",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 0.45
+      },
+      "latest_report": "companies/CN/000078/reports/2026-07-30-rapid-triage-53a76169e35b.md",
+      "name": "ST海王",
+      "reason": "价格降至0.45元或以下时市值约11.84亿元、接近2026Q1账面归母权益，值得在不把价格下跌等同买点的前提下重算困境期权；治理阻断仍须另行解除。",
+      "source_ref": "cn000078_price_0_45",
+      "symbol": "CN:000078",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000088:cn000088_price_lte_3_80",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.8
+      },
+      "latest_report": "companies/CN/000088/reports/2026-07-30-rapid-triage-3682a10e8d18.md",
+      "name": "盐 田 港",
+      "reason": "在2025年每股分红不变的机械假设下，3.80元对应股息率约5.13%、2025年PE约13.6倍和Q1净资产约1.07倍PB，值得重新核验现金分配与资本开支；价格本身不构成组合操作结论。",
+      "source_ref": "cn000088_price_lte_3_80",
+      "symbol": "CN:000088",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000089:cn000089_price_5_60",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.6
+      },
+      "latest_report": "companies/CN/000089/reports/2026-07-30-rapid-triage-a937053eacf9.md",
+      "name": "深圳机场",
+      "reason": "价格降至5.60元或以下时市值约115亿元、接近Q1账面归母权益，核心利润收益率和困境保护改善，值得在不把下跌等同买点的前提下重算。",
+      "source_ref": "cn000089_price_5_60",
+      "symbol": "CN:000089",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000090:price-below-2-80",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 2.8
+      },
+      "latest_report": "companies/CN/000090/reports/2026-07-30-rapid-triage-88c4e5462c2b.md",
+      "name": "天健集团",
+      "reason": "在基本面未进一步恶化时，该价对应市值约52.32亿元，值得重新核验资产折价是否已覆盖项目减值和收益不确定性。",
+      "source_ref": "price-below-2-80",
+      "symbol": "CN:000090",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000096:cn000096_price_6_20",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 6.2
+      },
+      "latest_report": "companies/CN/000096/reports/2026-07-30-rapid-triage-b7e027738efe.md",
+      "name": "广聚能源",
+      "reason": "在基本面未进一步恶化时，6.20元对应市值约32.74亿元和约1.19倍Q1归母净资产，值得重新检验价格折让是否开始覆盖低ROE、信用损失及资本配置风险。",
+      "source_ref": "cn000096_price_6_20",
+      "symbol": "CN:000096",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000099:cn000099_price_lte_11_50",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 11.5
+      },
+      "latest_report": "companies/CN/000099/reports/2026-07-30-rapid-triage-d40846addcc4.md",
+      "name": "中信海直",
+      "reason": "在基本面未恶化时，11.50元对应市值约89.2亿元和2025年归母约28.9倍PE，值得重新核验正常化所有者收益；价格本身不构成组合操作结论。",
+      "source_ref": "cn000099_price_lte_11_50",
+      "symbol": "CN:000099",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000100:cn000100_price_4_20",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.2
+      },
+      "latest_report": "companies/CN/000100/reports/2026-07-30-rapid-triage-2ac6561bbdac.md",
+      "name": "TCL科技",
+      "reason": "在基本面未进一步恶化时，4.20元对应现有市值约874亿元，滚动扣非与粗估所有者现金收益率明显改善，值得重算周期中枢和资本结构补偿。",
+      "source_ref": "cn000100_price_4_20",
+      "symbol": "CN:000100",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000151:cn000151_price_6_00",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 6.0
+      },
+      "latest_report": "companies/CN/000151/reports/2026-07-30-rapid-triage-7002934b05a5.md",
+      "name": "中成股份",
+      "reason": "价格降至6.00元或以下时，市值降至约21.1亿元，虽仍需现金流验证，但相对当前高倍数估值已出现足以重算的风险补偿。",
+      "source_ref": "cn000151_price_6_00",
+      "symbol": "CN:000151",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000153:cn000153_price_4_20",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.2
+      },
+      "latest_report": "companies/CN/000153/reports/2026-07-30-rapid-triage-f0a035cb15c5.md",
+      "name": "丰原药业",
+      "reason": "价格降至4.20元或以下时权益市值约19.5亿元，估值负担明显下降，值得重算制造资产和控制权事件的赔率；价格触发本身不覆盖资金占用与违规担保的治理停止条件。",
+      "source_ref": "cn000153_price_4_20",
+      "symbol": "CN:000153",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000155:cn000155_price_10_00",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 10.0
+      },
+      "latest_report": "companies/CN/000155/reports/2026-07-30-rapid-triage-470dabe1e673.md",
+      "name": "川能动力",
+      "reason": "在基本面未同步恶化时，10.00元对应市值约184.62亿元，可明显改善相对4亿至9亿元粗略正常化所有者收益和高资本开支风险的赔率，值得重算。",
+      "source_ref": "cn000155_price_10_00",
+      "symbol": "CN:000155",
+      "type": "research_price_trigger"
+    },
+    {
+      "alert_id": "CN:000156:cn000156_price_5_80",
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.8
+      },
+      "latest_report": "companies/CN/000156/reports/2026-07-30-rapid-triage-b589a1900a86.md",
+      "name": "华数传媒",
+      "reason": "在基本面未同步恶化时，5.80元对应权益市值约107.47亿元，可显著改善相对每年5至9亿元粗略所有者收益、低ROE及项目回款风险的赔率，值得重算。",
+      "source_ref": "cn000156_price_5_80",
+      "symbol": "CN:000156",
       "type": "research_price_trigger"
     },
     {

@@ -1,6 +1,6 @@
 {
   "as_of": "2026-07-30T23:59:59.999999+08:00",
-  "item_count": 5835,
+  "item_count": 5937,
   "items": [
     {
       "condition": {
@@ -477,25 +477,12 @@
     },
     {
       "condition": {
-        "date": "2026-08-31"
-      },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
-      "name": "*ST美丽",
-      "reason": "复核正式半年报的现金、经营现金流、应收回收、减值转回和庭外重组进展。",
-      "source": "company_trigger",
-      "state": "scheduled",
-      "symbol": "CN:000010",
-      "trigger_id": "2026-interim-report",
-      "type": "date"
-    },
-    {
-      "condition": {
         "due_at": "2026-10-28T03:03:20+08:00",
         "origin": "ttl"
       },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
       "name": "*ST美丽",
-      "reason": "即使没有已观察事件，九十天后也应复核重组、审计整改、诉讼和现金消耗。",
+      "reason": "即使没有已观察到的新事件，也应定期复核重组、审计整改、诉讼和现金消耗。",
       "source": "company_trigger",
       "state": "scheduled",
       "symbol": "CN:000010",
@@ -504,28 +491,41 @@
     },
     {
       "condition": {
-        "description": "法院正式受理预重整或重整，或公司披露可核验的债权总额、清偿比例、投资人、债转股及资本公积转增稀释条款。"
+        "date": "2026-08-31"
       },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
       "name": "*ST美丽",
-      "reason": "只有明确重组路径和普通股稀释后，才能评估剩余权益价值与生存概率。",
+      "reason": "核验正式半年报的现金、经营现金流、应收与其他应收款变动、减值转回和重组进展。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000010",
+      "trigger_id": "interim-report-check",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "法院受理预重整或重整，或公司披露具约束力的债权确认、清偿比例、重组投资人及债转股或资本公积转增稀释条款。"
+      },
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
+      "name": "*ST美丽",
+      "reason": "普通股剩余价值取决于债务实际削减及稀释幅度，庭外重组受理本身不足以判断。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000010",
-      "trigger_id": "restructuring-terms-event",
+      "trigger_id": "binding-restructuring-terms",
       "type": "event"
     },
     {
       "condition": {
-        "description": "公司披露2.75亿元第三方代客户付款专项核查、追溯重述或监管结论，并明确该事项对财务报表的影响。"
+        "description": "公司披露独立专项核查、监管结论或追溯重述，完整解释2.75亿元第三方代客户付款的资金来源、商业实质及报表影响。"
       },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
       "name": "*ST美丽",
-      "reason": "该事项是财务及内控无法表示意见的直接根源，可靠结论可能解除或加重治理阻断。",
+      "reason": "该事项是财务报表无法表示意见的核心基础，只有可核验整改才能恢复最低财务可信度。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000010",
-      "trigger_id": "audit-remediation-filing",
+      "trigger_id": "third-party-payment-remediation",
       "type": "filing"
     },
     {
@@ -533,67 +533,80 @@
         "operator": "price_lte",
         "threshold": 0.6
       },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
       "name": "*ST美丽",
-      "reason": "价格跌至明显更低水平时重新评估概率价值；价格本身不解除审计、重组或退市阻断，也不构成买入结论。",
+      "reason": "显著更低价格可重开概率价值评估，但价格本身不能解除审计、债务或退市阻断。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000010",
-      "trigger_id": "distress-price-recheck",
+      "trigger_id": "distress-valuation-recheck",
       "type": "price"
     },
     {
       "condition": {
-        "description": "2026年度财务和内控审计均不再为保留、无法表示或否定意见，且连续两个报告期经营现金流转正。"
+        "description": "2026年度财务和内部控制审计均恢复可接受意见，退市风险警示撤销，且连续两个报告期经营现金流为正。"
       },
-      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-3e34480fb55a.md",
+      "latest_report": "companies/CN/000010/reports/2026-07-30-rapid-triage-4819ca5cd351.md",
       "name": "*ST美丽",
-      "reason": "同时满足财务可信度与现金生存条件后，当前条件停止逻辑才可能失效。",
+      "reason": "同时验证财务可信度、上市资格与现金生存后，当前条件停止逻辑才可能失效。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000010",
-      "trigger_id": "2026-audit-and-cashflow-thesis",
+      "trigger_id": "audit-cashflow-recovery",
       "type": "thesis"
-    },
-    {
-      "condition": {
-        "date": "2026-08-29"
-      },
-      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
-      "name": "深物业A",
-      "reason": "公司公告预计在2026年8月29日披露半年报；届时核验业绩预告、分部毛利、存货减值、项目去化、经营现金流和一年内到期债务。",
-      "source": "company_trigger",
-      "state": "scheduled",
-      "symbol": "CN:000011",
-      "trigger_id": "2026-h1-report-review",
-      "type": "date"
     },
     {
       "condition": {
         "description": "控股股东或公司披露城建集团、深深房同业竞争解决的资产注入、出售、托管、股权划转方案，或再次变更承诺期限。"
       },
-      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2bb44f718281.md",
       "name": "深物业A",
-      "reason": "同业竞争解决方式会直接改变少数股东可归属资产、治理判断和潜在NAV。",
+      "reason": "方案的资产范围、定价与少数股东条款会直接改变治理评价和可归属净资产。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000011",
-      "trigger_id": "controller-competition-resolution",
+      "trigger_id": "000011-controller-competition-resolution",
       "type": "event"
     },
     {
       "condition": {
-        "operator": "price_lte",
-        "threshold": 5.7
+        "description": "公司披露2026年半年度报告，列明分部收入及毛利、存货和减值、项目销售回款、经营现金流、货币资金、财务费用与债务期限。"
       },
-      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2eb2b7b150b7.md",
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2bb44f718281.md",
       "name": "深物业A",
-      "reason": "A股价格回落至接近2026年一季末每股归母净资产约5.65元时，资产折价赔率可能重新成立，但仍需同步复核存货可变现净值和融资。",
+      "reason": "正式半年报可验证亏损预告、现金消耗和房地产结转毛利下降程度，并判断物业业务能否形成独立现金底盘。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000011",
-      "trigger_id": "price-at-or-below-q1-book",
+      "trigger_id": "000011-2026-h1-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.65
+      },
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2bb44f718281.md",
+      "name": "深物业A",
+      "reason": "A股价格回落至不高于2026年一季度末每股归母净资产时，资产折价赔率可能重新出现，但仍须同步复核存货可变现净值和融资覆盖。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000011",
+      "trigger_id": "000011-price-at-q1-book",
       "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个完整报告期经营现金流为正，且货币资金、经营回款与已签署融资安排能够覆盖未来十二个月到期有息债务及利息。"
+      },
+      "latest_report": "companies/CN/000011/reports/2026-07-30-rapid-triage-2bb44f718281.md",
+      "name": "深物业A",
+      "reason": "该条件可把判断从依赖国资融资支持和项目时点，转向可验证的持续经营现金能力。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000011",
+      "trigger_id": "000011-cashflow-and-refinancing-repair",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -676,25 +689,12 @@
     },
     {
       "condition": {
-        "date": "2026-08-31"
-      },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
-      "name": "沙河股份",
-      "reason": "若半年报未被更早的filing观察器捕获，最迟在法定披露窗口结束时复核。",
-      "source": "company_trigger",
-      "state": "scheduled",
-      "symbol": "CN:000014",
-      "trigger_id": "h1-review-date",
-      "type": "date"
-    },
-    {
-      "condition": {
         "due_at": "2026-10-28T03:03:20+08:00",
         "origin": "ttl"
       },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
+      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-fb15ce6c5645.md",
       "name": "沙河股份",
-      "reason": "即使没有重大事件，也应重新核对价格、项目去化、晶华电子经营与资产减值。",
+      "reason": "即使无重大公告，也应复核价格、地产去化、晶华经营与资产减值。",
       "source": "company_trigger",
       "state": "scheduled",
       "symbol": "CN:000014",
@@ -703,50 +703,37 @@
     },
     {
       "condition": {
-        "description": "发生新的关联收购、资产注入、资产出售、担保、资金占用或同业整合安排。"
+        "description": "会计师专项审核确认晶华电子2026年扣非归母净利润及3720.22万元承诺完成情况，并披露补偿和经营现金流。"
       },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
+      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-fb15ce6c5645.md",
       "name": "沙河股份",
-      "reason": "国资整合可能释放价值，也可能因交易定价、资产质量和利益排序改变中小股东风险。",
+      "reason": "承诺利润兑现且转化为现金将增强收购价值，未兑现或高营运资金占用则削弱价值。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000014",
-      "trigger_id": "governance-capital-event",
+      "trigger_id": "jinghua-commitment-audit",
       "type": "event"
     },
     {
       "condition": {
-        "description": "审计或专项审核确认晶华电子年度实际扣非归母净利润与2026年3720.22万元承诺的完成情况，并披露是否触发现金补偿。"
+        "description": "披露2026年半年度报告并分别列示房地产与晶华电子的收入、毛利、扣非利润、经营现金流、应收、存货及减值。"
       },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
+      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-fb15ce6c5645.md",
       "name": "沙河股份",
-      "reason": "兑现利润承诺且现金回收良好可增强收购价值；未兑现或依赖营运资金扩张则削弱估值。",
+      "reason": "首份较完整并表定期报告可检验业绩预告亏损来源与晶华盈利的现金含量。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000014",
-      "trigger_id": "jinghua-commitment-test",
-      "type": "event"
-    },
-    {
-      "condition": {
-        "description": "披露2026年半年度报告，并分别列示房地产项目与晶华电子的收入、毛利、扣非利润、经营现金流、应收账款、存货和减值。"
-      },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
-      "name": "沙河股份",
-      "reason": "首份较完整并表报告可检验半年度亏损来源、晶华电子承诺利润质量及地产项目净回收能力。",
-      "source": "company_trigger",
-      "state": "watching",
-      "symbol": "CN:000014",
-      "trigger_id": "h1-report-2026",
+      "trigger_id": "h1-full-report-2026",
       "type": "filing"
     },
     {
       "condition": {
-        "description": "披露深圳、长沙及新乡各项目的权益比例、账面成本、已售未结、可售货值、实际售价、回款率、剩余投入、税费和项目级跌价准备。"
+        "description": "披露深圳、长沙、新乡项目的权益比例、账面成本、可售货值、实际售价、回款、剩余投入、税费及项目级跌价准备。"
       },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
+      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-fb15ce6c5645.md",
       "name": "沙河股份",
-      "reason": "地产存货占总资产约63%，项目级可变现净值而非存货总额决定普通股资产安全边际。",
+      "reason": "13.55亿元存货的项目级净可实现价值决定地产资产安全边际。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000014",
@@ -758,117 +745,104 @@
         "operator": "price_lte",
         "threshold": 7.0
       },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
+      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-fb15ce6c5645.md",
       "name": "沙河股份",
-      "reason": "价格降至约1.23倍2026Q1归母账面净资产后，若资产质量未恶化，地产与国资整合期权的安全边际可能重新成立。",
+      "reason": "若资产质量未进一步恶化，价格降至接近1.23倍2026Q1归母净资产会显著改善研究赔率。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000014",
-      "trigger_id": "price-nav-margin",
+      "trigger_id": "price-nav-reset",
       "type": "price"
-    },
-    {
-      "condition": {
-        "description": "连续四个季度扣非归母盈利且累计经营现金流为正，同时地产存货与晶华电子未新增重大减值。"
-      },
-      "latest_report": "companies/CN/000014/reports/2026-07-30-rapid-triage-7e3ade998c45.md",
-      "name": "沙河股份",
-      "reason": "该事实组合可证明公司已从项目结转和重组期权平台转为具有可读正常化盈利的经营资产。",
-      "source": "company_trigger",
-      "state": "watching",
-      "symbol": "CN:000014",
-      "trigger_id": "earnings-thesis-reset",
-      "type": "thesis"
     },
     {
       "condition": {
         "date": "2027-04-30"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
       "reason": "复核2026年经审计归母净资产、审计意见、内控意见及是否触发终止上市。",
       "source": "company_trigger",
       "state": "scheduled",
       "symbol": "CN:000016",
-      "trigger_id": "000016-2026-audit-deadline",
+      "trigger_id": "000016-correction-2026-audit-deadline",
       "type": "date"
     },
     {
       "condition": {
         "date": "2026-08-31"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
-      "reason": "若此前未触发，届时复核法定半年度报告及保壳进度。",
+      "reason": "若此前未触发，届时复核法定半年度报告、净资产修复进度和退市风险。",
       "source": "company_trigger",
       "state": "scheduled",
       "symbol": "CN:000016",
-      "trigger_id": "000016-h1-deadline",
+      "trigger_id": "000016-correction-h1-deadline",
       "type": "date"
     },
     {
       "condition": {
-        "description": "控股股东或其他主体披露增资、债转股、债务展期、资产注入或重大资产处置的完整定价、优先顺序和稀释条款"
+        "description": "控股股东或其他主体披露增资、债转股、债务展期、资产注入或重大资产处置的完整金额、定价、优先顺序和普通股稀释条款"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
-      "reason": "只有可量化条款才能判断支持是否真正修复普通股价值。",
+      "reason": "只有可量化且可执行的条款才能判断支持是否足以填补净资产缺口并保留普通股残余价值。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000016",
-      "trigger_id": "000016-capital-repair-terms",
+      "trigger_id": "000016-correction-capital-repair-terms",
       "type": "event"
     },
     {
       "condition": {
-        "description": "新增重大债务逾期、会计差错、监管处罚、非标审计意见或交易所终止上市风险升级"
+        "description": "出现新增重大债务逾期、会计差错、监管处罚、非标审计意见或交易所终止上市风险升级"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
       "reason": "任一事件都可能进一步降低普通股残余价值并缩短可处置时间。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000016",
-      "trigger_id": "000016-risk-escalation",
+      "trigger_id": "000016-correction-risk-escalation",
       "type": "event"
     },
     {
       "condition": {
-        "description": "易平方11家投资方的受偿权诉讼、和解或执行出现终局条款，并披露总现金义务、付款顺序和会计影响"
+        "description": "易平方11家投资方的受偿权诉讼、和解或执行形成终局条款，并披露总现金义务、付款顺序和会计影响"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
       "reason": "终局现金义务可能显著改变母公司流动性和普通股残余价值。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000016",
-      "trigger_id": "000016-yifang-resolution",
+      "trigger_id": "000016-correction-yifang-resolution",
       "type": "event"
     },
     {
       "condition": {
-        "description": "公司披露2026年半年度报告，列明归母净资产、受限货币资金、债务期限、经营现金流、财务费用及分部毛利"
+        "description": "公司披露2026年半年度报告，列明归母净资产、受限货币资金、债务期限、经营现金流、财务费用、投资收益和分部毛利"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
-      "reason": "半年度数据可检验净资产缺口和自我造血能力是否开始实质改善。",
+      "reason": "正式半年报可检验预告减亏是否来自可持续主营改善，并量化净资产缺口和流动性变化。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000016",
-      "trigger_id": "000016-2026-h1-filing",
+      "trigger_id": "000016-correction-2026-h1-filing",
       "type": "filing"
     },
     {
       "condition": {
-        "description": "连续两个季度经营现金流为正且主营毛利足以覆盖销售、管理、研发和财务费用，不依赖新增股东融资或大额资产出售"
+        "description": "连续两个季度主营经营现金流为正且主营毛利覆盖销售、管理、研发和财务费用，不依赖新增股东融资、参股投资收益或大额资产出售"
       },
-      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-285ac4029e1f.md",
+      "latest_report": "companies/CN/000016/reports/2026-07-30-rapid-triage-fe51d60fff18.md",
       "name": "*ST康佳A",
       "reason": "这将把判断从外部救助期权转向可持续经营价值。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000016",
-      "trigger_id": "000016-cashflow-thesis",
+      "trigger_id": "000016-correction-cashflow-thesis",
       "type": "thesis"
     },
     {
@@ -1101,39 +1075,66 @@
       "condition": {
         "date": "2026-08-31"
       },
-      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
       "name": "深科技",
-      "reason": "若公告观察器未提前命中，最迟在法定半年报窗口结束时主动复核。",
+      "reason": "若公告观察器未提前命中，最迟在法定半年报窗口结束时复核完整定期报告。",
       "source": "company_trigger",
       "state": "scheduled",
       "symbol": "CN:000021",
-      "trigger_id": "000021-2026-h1-review-date",
+      "trigger_id": "000021-correction-h1-review-date",
       "type": "date"
     },
     {
       "condition": {
-        "description": "公司披露HBM或先进封装形成可量化销售收入、主要客户订单，或新增封测项目实际投产、稼动率与收益显著偏离可研。"
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
       },
-      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
       "name": "深科技",
-      "reason": "商业化收入和达产证据可直接改变当前由题材预期主导的盈利判断。",
+      "reason": "即使没有重大公告，也应重新检查价格、客户订单、扩产进度和存储行业景气。",
+      "source": "company_trigger",
+      "state": "scheduled",
+      "symbol": "CN:000021",
+      "trigger_id": "000021-correction-routine-90d-refresh",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "公司披露HBM或其他先进封装形成可量化销售收入和客户订单，或明确终止、延期相关研发及产能计划。"
+      },
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
+      "name": "深科技",
+      "reason": "真实商业化或项目失败会改变当前将先进封装仅视为未验证期权的判断。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000021",
-      "trigger_id": "000021-storage-commercialization",
+      "trigger_id": "000021-correction-advanced-packaging-commercialization",
       "type": "event"
     },
     {
       "condition": {
-        "description": "公司披露2026年半年度报告，包含三大产品收入毛利、扣非利润、经营现金流、客户集中、衍生品损益、资本开支和债务变化。"
+        "description": "公司披露战略客户最低采购量、份额或价格承诺，或披露新增封测项目投产、稼动率、单位折旧和实际收益。"
       },
-      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
       "name": "深科技",
-      "reason": "半年报可检验Q1主营增长是否持续，并重算现金收益及扩产前资本负担。",
+      "reason": "客户锁定和项目单位经济性是判断14.70亿元扩产资本回报的决定性证据。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000021",
-      "trigger_id": "000021-2026-h1-filing",
+      "trigger_id": "000021-correction-capacity-economics",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，包含三类产品收入和毛利、扣非利润、经营现金流、衍生品损益、资本开支、债务及少数股东权益变化。"
+      },
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
+      "name": "深科技",
+      "reason": "半年报可检验Q1主营增长和现金转化是否持续，并建立扩产前的分部收益基线。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000021",
+      "trigger_id": "000021-correction-2026-h1-filing",
       "type": "filing"
     },
     {
@@ -1141,26 +1142,26 @@
         "operator": "price_lte",
         "threshold": 25.0
       },
-      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
       "name": "深科技",
-      "reason": "25元对应市值约394亿元；仅触发重新核验正常化收益和扩产回报，不代表自动晋级。",
+      "reason": "25元对应约394亿元市值；仅触发重新核验正常化收益和扩产回报，不代表自动晋级或任何组合操作。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000021",
-      "trigger_id": "000021-price-lte-25",
+      "trigger_id": "000021-correction-price-lte-25",
       "type": "price"
     },
     {
       "condition": {
-        "description": "连续两个报告期扣非归母利润年化达到15亿元以上，经营现金流覆盖维持性资本开支和利息，且客户集中度、净债务和少数股东分流不恶化。"
+        "description": "连续两个报告期扣非归母利润显著增长，经营现金流覆盖维持性资本开支和利息，且新增产能回报在扣除少数股东权益后仍达到可接受水平。"
       },
-      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-e763510342bb.md",
+      "latest_report": "companies/CN/000021/reports/2026-07-30-rapid-triage-edff7f534845.md",
       "name": "深科技",
-      "reason": "该组合证据可验证扩产正在转化为少数股东可得的持续所有者收益。",
+      "reason": "该组合证据可验证扩产正在转化为上市公司股东可得的持续所有者收益。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000021",
-      "trigger_id": "000021-owner-earnings-thesis",
+      "trigger_id": "000021-correction-owner-earnings-thesis",
       "type": "thesis"
     },
     {
@@ -1950,42 +1951,42 @@
     },
     {
       "condition": {
-        "due_at": "2027-01-26T03:03:20+08:00",
+        "due_at": "2026-10-28T03:03:20+08:00",
         "origin": "ttl"
       },
-      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
       "name": "深南电A",
-      "reason": "即使价格与事件未触发，也应在半年内复核燃机调度、储能辅助服务收益和新平台资本投入。",
+      "reason": "即使没有专项公告，也应在90天内复核燃机调度、储能收益、新平台投入和价格预期。",
       "source": "company_trigger",
       "state": "scheduled",
       "symbol": "CN:000037",
-      "trigger_id": "cn000037_review_ttl_180d",
+      "trigger_id": "cn000037_ttl_90d",
       "type": "date"
     },
     {
       "condition": {
-        "description": "广东燃气机组容量电价、变动成本补偿、天然气供应价格或电力现货及辅助服务规则发生足以显著改变燃机或储能单位经济性的调整。"
+        "description": "广东燃机容量电价、变动成本补偿、天然气价格、电力现货或辅助服务规则发生足以显著改变燃机或储能单位经济性的调整。"
       },
-      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
       "name": "深南电A",
-      "reason": "燃机与储能盈利对容量补偿、气价、节点电价和辅助服务价格高度敏感。",
+      "reason": "燃机和储能盈利对政策、燃料及市场结算规则高度敏感。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000037",
-      "trigger_id": "cn000037_capacity_gas_policy",
+      "trigger_id": "cn000037_energy_market_policy",
       "type": "event"
     },
     {
       "condition": {
-        "description": "公司披露2026年半年度报告，能够核验电力生产销售、独立储能、EPC及运维的分部收入、毛利、折旧、融资费用和经营现金流。"
+        "description": "公司披露2026年半年度报告，可拆分电力生产销售、独立储能、EPC及运维的收入、毛利、折旧、融资费用、经营现金流与资本开支。"
       },
-      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
       "name": "深南电A",
-      "reason": "正式半年报是验证扣非盈利质量和储能一期完整经营贡献的最近关键证据。",
+      "reason": "正式半年报是核验H1预告、储能完整经营贡献及现金含量的最近关键证据。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000037",
-      "trigger_id": "cn000037_2026_h1_filing",
+      "trigger_id": "cn000037_2026_h1_full_report",
       "type": "filing"
     },
     {
@@ -1993,26 +1994,39 @@
         "operator": "price_lte",
         "threshold": 5.5
       },
-      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
       "name": "深南电A",
-      "reason": "价格降至5.50元或以下时，市值与净资产及初步正常化收益的错配明显收窄，值得重算储能和燃机的赔率。",
+      "reason": "若基本面未恶化，价格降至5.50元或以下会显著收窄市值相对净资产和初步正常化收益的溢价，应重算价值区间。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000037",
-      "trigger_id": "cn000037_price_5_50",
+      "trigger_id": "cn000037_price_reset_5_50",
       "type": "price"
     },
     {
       "condition": {
-        "description": "连续两个报告期扣非归母利润及经营现金流同步改善，按年度口径显示可持续扣非归母收益达到1亿元以上，且并非主要依赖资产处置或公允价值变动。"
+        "description": "连续两个报告期扣非归母利润与经营现金流同步为正，且盈利不主要依赖资产处置、公允价值变动或新增高杠杆投入。"
       },
-      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-7c5c918a4a43.md",
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
       "name": "深南电A",
-      "reason": "达到该条件将实质改变当前关于盈利规模不足以支撑估值的判断。",
+      "reason": "该条件可验证当前低基数扭亏已转化为持续现金盈利。",
       "source": "company_trigger",
       "state": "watching",
       "symbol": "CN:000037",
-      "trigger_id": "cn000037_normalized_profit_scale",
+      "trigger_id": "cn000037_normalized_cash_profit",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "description": "公司披露中山独立储能一期的容量、利用率、电能量及辅助服务收入、毛利、折旧、融资费用、电池衰减和维护资本开支，足以复算项目自由现金流与资本回报。"
+      },
+      "latest_report": "companies/CN/000037/reports/2026-07-30-rapid-triage-a9a49e48f05d.md",
+      "name": "深南电A",
+      "reason": "储能单位经济性决定当前扣非扭亏能否形成可持续所有者收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000037",
+      "trigger_id": "cn000037_storage_unit_economics",
       "type": "thesis"
     },
     {
@@ -2243,81 +2257,418 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "due_at": "2026-11-27T03:03:20+08:00",
+        "origin": "ttl"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000049/reports/2026-07-30-rapid-triage-61f8d446f2f6.md",
       "name": "德赛电池",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未命中，也应在120天内结合半年报或三季报复核储能、SIP、存货减值和消费电芯资本开支。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000049",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000049_review_ttl_120d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "消费电芯一期实际投资、建设节奏、核心客户验证或融资方案发生重大变化，尤其是披露新增股权融资、显著增加有息债务、项目延期或扩产规模调整。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000049/reports/2026-07-30-rapid-triage-61f8d446f2f6.md",
+      "name": "德赛电池",
+      "reason": "一期10亿元及总规划25亿元是未来24至36个月自由现金流、杠杆和潜在稀释的主要变量。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000049",
+      "trigger_id": "cn000049_consumer_cell_financing_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可核验储能电芯与SIP的收入、毛利、净利润、折旧、存货减值、经营现金流及消费电芯项目实际投入。"
+      },
+      "latest_report": "companies/CN/000049/reports/2026-07-30-rapid-triage-61f8d446f2f6.md",
+      "name": "德赛电池",
+      "reason": "正式半年报是验证业绩预告中的储能扭亏和SIP毛利改善是否转化为所有者现金流的最高价值证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000049",
+      "trigger_id": "cn000049_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 20.0
+      },
+      "latest_report": "companies/CN/000049/reports/2026-07-30-rapid-triage-61f8d446f2f6.md",
+      "name": "德赛电池",
+      "reason": "价格降至20元或以下时，权益市值约77亿元；相对3亿至4.5亿元粗略正常化收益的预期负担明显下降，值得重新核算赔率。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000049",
+      "trigger_id": "cn000049_price_20",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期显示储能业务保持正毛利且SIP盈利继续改善，公司年度化扣非归母达到4亿至5亿元以上，同时经营现金流扣除长期资产购建支出后持续为正；或上述任一条件显著反转。"
+      },
+      "latest_report": "companies/CN/000049/reports/2026-07-30-rapid-triage-61f8d446f2f6.md",
+      "name": "德赛电池",
+      "reason": "该条件直接验证或否定现价所要求的正常化所有者收益修复。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000049",
+      "trigger_id": "cn000049_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000050/reports/2026-07-30-rapid-triage-845eb00ae9e8.md",
       "name": "深天马Ａ",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "若上述财报、价格、事件和论点触发器均未命中，90天后复核三季报窗口、AMOLED亏损、债务滚续和资本开支。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000050",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000050-routine-90d-refresh",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "公司披露增发、可转债、重大新增资本开支、债务展期或违约、评级下调、重大关联交易，或新的大额回购注销与现金分红安排。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000050/reports/2026-07-30-rapid-triage-845eb00ae9e8.md",
+      "name": "深天马Ａ",
+      "reason": "这些事项会直接改变股权稀释、24至36个月生存和普通股东资本回报判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000050",
+      "trigger_id": "000050-financing-capex-governance-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告及减值、投资收益或债务附注。"
+      },
+      "latest_report": "companies/CN/000050/reports/2026-07-30-rapid-triage-845eb00ae9e8.md",
+      "name": "深天马Ａ",
+      "reason": "用正式收入、分业务毛利、经营现金流、资本开支、联营AMOLED损失、减值和债务数据替代预告，重算正常化所有者收益与24至36个月偿债缓冲。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000050",
+      "trigger_id": "000050-2026h1-formal-report",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.5
+      },
+      "latest_report": "companies/CN/000050/reports/2026-07-30-rapid-triage-845eb00ae9e8.md",
+      "name": "深天马Ａ",
+      "reason": "5.50元对应约134亿元市值和约0.51倍粗略H1账面价值；仅触发以最新现金、债务和经济折旧重新核验资产折价，不代表自动晋级。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000050",
+      "trigger_id": "000050-price-lte-5-50",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母利润转正，经营现金流覆盖接近经济折旧的维持性资本开支及利息，联营AMOLED投资损失环比收窄，且车载专业显示毛利和净债务不恶化。"
+      },
+      "latest_report": "companies/CN/000050/reports/2026-07-30-rapid-triage-845eb00ae9e8.md",
+      "name": "深天马Ａ",
+      "reason": "该组合证据可证明当前低PB开始转化为可持续普通股所有者收益，而非仅由低资本开支和营运资金释放形成现金流。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000050",
+      "trigger_id": "000050-owner-earnings-recovery-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-11-27T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000055/reports/2026-07-30-rapid-triage-65dd1d4793fe.md",
       "name": "方大集团",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使价格和事件未触发，也应在四个月内复核半年报、三季报、订单转化、回款及股权激励安排。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000055",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000055_review_ttl_120d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "公司披露单项重大回款、债务重组、客户违约、重大诉讼、工程停工、追加减值，或投资性房地产估值及处置发生足以影响净资产或年度利润0.5亿元以上的事件。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000055/reports/2026-07-30-rapid-triage-65dd1d4793fe.md",
+      "name": "方大集团",
+      "reason": "应收及合同资产回收和投资物业估值是当前账面价值与所有者收益的主要不确定来源。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000055",
+      "trigger_id": "cn000055_material_collection_or_impairment_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可核验幕墙和轨道交通分部毛利、应收账款及合同资产减值、期后回款、经营现金流、债务变化和投资性房地产租金收益。"
+      },
+      "latest_report": "companies/CN/000055/reports/2026-07-30-rapid-triage-65dd1d4793fe.md",
+      "name": "方大集团",
+      "reason": "正式半年报是判断上半年利润改善是否来自真实经营现金流及风险下降的最近关键证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000055",
+      "trigger_id": "cn000055_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 2.8
+      },
+      "latest_report": "companies/CN/000055/reports/2026-07-30-rapid-triage-65dd1d4793fe.md",
+      "name": "方大集团",
+      "reason": "A股价格降至2.80元或以下时，以A股价格映射的市值降至约30亿元，资产折价与正常化收益赔率明显改善，值得重算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000055",
+      "trigger_id": "cn000055_price_2_80",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母利润和经营现金流同步为正，幕墙毛利率恢复至8%以上，应收账款与合同资产合计继续下降，按年度口径可支持至少1.5亿元所有者收益且无大额公允价值收益依赖。"
+      },
+      "latest_report": "companies/CN/000055/reports/2026-07-30-rapid-triage-65dd1d4793fe.md",
+      "name": "方大集团",
+      "reason": "该组合条件将实质验证订单能够转化为高于当前粗略中枢的可持续现金收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000055",
+      "trigger_id": "cn000055_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-09-13T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000056/reports/2026-07-30-rapid-triage-674dc6b2fb41.md",
       "name": "*ST皇庭",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "公司处于2026年度上市资格修复窗口，若财报、价格和重整事件均未先触发，45天后仍应刷新半年报、债务执行、诉讼和化债进度。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000056",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000056-conditional-stop-ttl-45d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "法院正式受理预重整或重整，或公司披露债权人和投资人签署的债务豁免、债转股、资本公积转增、资产注入或其他净资产修复协议，并完整列明债权确认、清偿比例、资金来源、执行先决条件及旧股东稀释比例。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000056/reports/2026-07-30-rapid-triage-674dc6b2fb41.md",
+      "name": "*ST皇庭",
+      "reason": "只有具有法律约束力且可以量化普通股剩余价值的方案，才能改变当前生存失败和治理不可投资判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000056",
+      "trigger_id": "000056-binding-restructuring-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告或2026年度审计报告，能够核验归母净资产、扣除后收入、经营现金流、融资租赁回收、逾期债务、土地增值税、持续经营措施以及财务和内控审计意见。"
+      },
+      "latest_report": "companies/CN/000056/reports/2026-07-30-rapid-triage-674dc6b2fb41.md",
+      "name": "*ST皇庭",
+      "reason": "正式半年报决定净资产缺口是否继续扩大，2026年度审计则直接决定财务类退市风险是否兑现。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000056",
+      "trigger_id": "000056-2026-interim-or-annual-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1.0
+      },
+      "latest_report": "companies/CN/000056/reports/2026-07-30-rapid-triage-674dc6b2fb41.md",
+      "name": "*ST皇庭",
+      "reason": "股价触及或跌破1元会引入面值类交易退市的独立紧迫风险，应立即复核连续收盘情况；该阈值不是估值吸引或自动恢复研究的信号。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000056",
+      "trigger_id": "000056-price-lte-1",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "经审计归母净资产转正，财务审计不再为保留、无法表示或否定意见，且连续两个报告期扣除一次性租赁回收、债务豁免和资产处置后经营现金流为正、核心业务达到正的普通股所有者收益。"
+      },
+      "latest_report": "companies/CN/000056/reports/2026-07-30-rapid-triage-674dc6b2fb41.md",
+      "name": "*ST皇庭",
+      "reason": "该组合证据将同时反驳退市、财务可信度和正常化盈利三项核心阻断，单一账面收益或现金回收不足以触发。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000056",
+      "trigger_id": "000056-survival-and-owner-earnings-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000058/reports/2026-07-30-rapid-triage-63a496ff2dcc.md",
       "name": "深 赛 格",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使价格、公告和盈利条件均未触发，也应在90天内复核商业物业租金、法拍回收、担保代偿和新能源资本开支。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000058",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000058_conditional_stop_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "公司披露赛格新城市52套房产司法拍卖成交、流拍或其他处置结果，或惠州群星完成清偿/再融资、累计担保代偿超过5,000万元。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000058/reports/2026-07-30-rapid-triage-63a496ff2dcc.md",
+      "name": "深 赛 格",
+      "reason": "司法处置回收率和担保代偿终值直接决定地产存货、应收追偿权及净资产是否继续受损。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000058",
+      "trigger_id": "cn000058_property_and_guarantee_resolution",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可核验电子市场、物业服务、检验检测、新能源和地产开发的分部收入与毛利、扣非利润、资产减值、经营现金流及资本开支。"
+      },
+      "latest_report": "companies/CN/000058/reports/2026-07-30-rapid-triage-63a496ff2dcc.md",
+      "name": "深 赛 格",
+      "reason": "正式半年报是判断Q1利润韧性是否可持续、以及地产风险是否继续吞噬核心经营成果的最近关键S1证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000058",
+      "trigger_id": "cn000058_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.2
+      },
+      "latest_report": "companies/CN/000058/reports/2026-07-30-rapid-triage-63a496ff2dcc.md",
+      "name": "深 赛 格",
+      "reason": "A股价格降至4.20元或以下时，市净率和正常化收益倍数明显收缩，可结合最新法拍回收和分部现金流重估研究价值；阈值仅触发复核，不构成操作建议。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000058",
+      "trigger_id": "cn000058_price_4_20",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母利润和经营现金流同步改善，年度化均达到2亿元以上，且地产存货、商誉及司法处置相关新增损失年度化低于5,000万元，改善不依赖出售金融资产。"
+      },
+      "latest_report": "companies/CN/000058/reports/2026-07-30-rapid-triage-63a496ff2dcc.md",
+      "name": "深 赛 格",
+      "reason": "只有核心盈利、现金转换和地产损失三项同时得到验证，当前条件停止继续研究的依据才会实质失效。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000058",
+      "trigger_id": "cn000058_conditional_stop_reversal",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-11-27T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
       "name": "华锦股份",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使半年报、价格和项目事件未触发，也应在120天内复核原油成本重置、炼化价差、债务滚续和留置调查进展。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000059",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000059_review_ttl_120d",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "监察机关调查结论、公司内部核查或后续公告显示副总经理被留置事项涉及公司采购、资金、关联交易、财务报告或其他核心经营环节。"
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
+      "name": "华锦股份",
+      "reason": "若调查外溢至上市公司层面，治理判断和财务可信度需立即重评。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000059",
+      "trigger_id": "cn000059_detention_followup",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露参与精细化工及原料工程项目的资产范围、交易对价、评估基础、资本开支、债务承担、关联方安排或股权融资方案。"
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
+      "name": "华锦股份",
+      "reason": "该项目目前属于控股股东，任何上市公司参与方案都可能重塑资产质量、债务、关联交易和稀释风险。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000059",
+      "trigger_id": "cn000059_parent_project_terms",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，能够核验分产品销量与毛利、原油库存成本重置、经营现金流、存货、短期借款和一年内到期债务。"
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
+      "name": "华锦股份",
+      "reason": "半年报是区分低价库存一次性收益与可持续炼化价差、验证利润现金化的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000059",
+      "trigger_id": "cn000059_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.7
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
+      "name": "华锦股份",
+      "reason": "价格降至3.70元或以下时，按当前净资产粗算市净率约0.61倍，足以显著改变周期和资产负债风险的赔率，需要重算正常化所有者收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000059",
+      "trigger_id": "cn000059_price_3_70",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个正式报告期在剔除存货跌价转回、低价原油库存释放和重大非经常项目后，扣非归母利润按年化达到5亿元以上，同时经营现金流减维持性资本开支为正。"
+      },
+      "latest_report": "companies/CN/000059/reports/2026-07-30-rapid-triage-7c57f35d0850.md",
+      "name": "华锦股份",
+      "reason": "该条件将验证当前价格所需的中周期盈利与现金转化，而不是库存时点收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000059",
+      "trigger_id": "cn000059_normalized_owner_earnings",
+      "type": "thesis"
     },
     {
       "condition": {
@@ -2334,250 +2685,1276 @@
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000061/reports/2026-07-30-rapid-triage-2b6f94e1c339.md",
       "name": "农 产 品",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使无单独重大事件，也应在90天后用新财报、债务、项目占资和价格执行一次低成本复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000061",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "routine-90-day-refresh",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "武汉海吉星清偿到期借款、公司停止或新增对亏损项目资金支持、出现重大减值，或核心债券与银行借款续作条件显著变化。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000061/reports/2026-07-30-rapid-triage-2b6f94e1c339.md",
+      "name": "农 产 品",
+      "reason": "该类事件会直接改变资本配置纪律、尾部损失和24至36个月现金安全边界。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000061",
+      "trigger_id": "wuhan-or-refinancing-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "披露2026年半年度报告或更晚定期报告，可核验剔除土地处置后的扣非利润、经营现金流、长期资产投入、短期债务和亏损项目占资。"
+      },
+      "latest_report": "companies/CN/000061/reports/2026-07-30-rapid-triage-2b6f94e1c339.md",
+      "name": "农 产 品",
+      "reason": "只有完整财报能判断一季度扣非改善是否持续，并检验经营现金能否覆盖维持性投入。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000061",
+      "trigger_id": "2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.5
+      },
+      "latest_report": "companies/CN/000061/reports/2026-07-30-rapid-triage-2b6f94e1c339.md",
+      "name": "农 产 品",
+      "reason": "在核心盈利、现金流和融资条件未恶化时，4.50元对应约89.32亿元市值，才开始为2.5亿至3.5亿元正常化收益和重资产不确定性提供更实质的价格缓冲。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000061",
+      "trigger_id": "price-below-4-50",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个季度扣非归母同比增长，经营现金流覆盖成熟市场维持性资本开支与利息，净有息债务不再上升，且亏损参股项目不再新增资金占用。"
+      },
+      "latest_report": "companies/CN/000061/reports/2026-07-30-rapid-triage-2b6f94e1c339.md",
+      "name": "农 产 品",
+      "reason": "这些条件同时成立，才能证明改善来自可持续经营而非资产处置、营运资金波动或继续加杠杆。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000061",
+      "trigger_id": "cash-coverage-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000062/reports/2026-07-30-rapid-triage-a9cbdf81aef6.md",
       "name": "深圳华强",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未命中，也应在90天内结合半年报或三季报复核存储景气、毛利率、现金流、信用减值和杠杆。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000062",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000062_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "控股股东可交换债发生新一轮大额换股、换股价调整、追加担保股份、提前兑付或控股股东持股接近控制权敏感区间；或关联财务公司存款、贷款额度及风险评估出现重大变化。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000062/reports/2026-07-30-rapid-triage-a9cbdf81aef6.md",
+      "name": "深圳华强",
+      "reason": "这些事件会改变股份供给、控制权缓冲、关联资金安全和治理风险判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000062",
+      "trigger_id": "cn000062_exchangeable_bond_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可核验收入及毛利拆分、经营现金流、应收账款、预付款项、存货及跌价准备、净债务、融资成本和商誉情况。"
+      },
+      "latest_report": "companies/CN/000062/reports/2026-07-30-rapid-triage-a9cbdf81aef6.md",
+      "name": "深圳华强",
+      "reason": "半年度业绩预告只验证利润区间，正式报表是判断增长能否转化为所有者现金收益的最高价值证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000062",
+      "trigger_id": "cn000062_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 18.0
+      },
+      "latest_report": "companies/CN/000062/reports/2026-07-30-rapid-triage-a9cbdf81aef6.md",
+      "name": "深圳华强",
+      "reason": "股价降至18元或以下时权益市值约188亿元，预期负担较当前明显降低，值得结合最新现金转化重新核算估值，但该触发器本身不代表操作建议。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000062",
+      "trigger_id": "cn000062_price_18",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期经营现金流扣除购建长期资产支出后为正，且应收账款、预付款和存货增速不高于收入增速，同时年度化扣非归母维持6亿至8亿元以上；或上述条件明显反转。"
+      },
+      "latest_report": "companies/CN/000062/reports/2026-07-30-rapid-triage-a9cbdf81aef6.md",
+      "name": "深圳华强",
+      "reason": "该条件直接验证或否定当前最关键的利润质量与正常化所有者收益假设。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000062",
+      "trigger_id": "cn000062_owner_cash_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000063/reports/2026-07-30-rapid-triage-9390a195b770.md",
       "name": "中兴通讯",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未命中，也应在90天内结合半年报或三季报复核毛利率、现金流、债务到期、减值和稀释情况。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000063",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000063_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "发生新的出口管制、制裁、合规调查、核心器件供应限制，或新增重大股权融资、可转债转股、债务融资及回购股份用途变化。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000063/reports/2026-07-30-rapid-triage-9390a195b770.md",
+      "name": "中兴通讯",
+      "reason": "此类事件可直接改变供应链连续性、融资能力、治理折价和普通股稀释。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000063",
+      "trigger_id": "cn000063_export_control_or_large_financing_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告或业绩快报，可核验运营商网络、政企业务和消费者业务的收入、毛利率、扣非利润、经营现金流、应收、存货、预付款及资本开支。"
+      },
+      "latest_report": "companies/CN/000063/reports/2026-07-30-rapid-triage-9390a195b770.md",
+      "name": "中兴通讯",
+      "reason": "正式半年报是判断低毛利算力硬件放量是否开始转化为可持续所有者收益的最高价值证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000063",
+      "trigger_id": "cn000063_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 28.0
+      },
+      "latest_report": "companies/CN/000063/reports/2026-07-30-rapid-triage-9390a195b770.md",
+      "name": "中兴通讯",
+      "reason": "价格降至28元或以下时，映射权益市值降至约1,340亿元，正常化所有者收益的预期负担明显下降，值得结合最新报表重新核算估值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000063",
+      "trigger_id": "cn000063_price_28",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期满足或显著背离以下组合：运营商网络收入止跌、综合毛利率回到33%以上、政企业务毛利率升至15%以上、年度化扣非归母达到60亿元以上，且经营现金流扣除长期资产购建支出后持续为正。"
+      },
+      "latest_report": "companies/CN/000063/reports/2026-07-30-rapid-triage-9390a195b770.md",
+      "name": "中兴通讯",
+      "reason": "该组合直接验证或否定现价所要求的利润结构和所有者现金收益修复。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000063",
+      "trigger_id": "cn000063_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000065/reports/2026-07-29-rapid-triage-3ddcfeda2e7c.md",
       "name": "北方国际",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "海外项目、汇率、煤价和应收回款变化较快，即使无单一重大事件也应在九十天内刷新。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000065",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "routine-refresh-90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "RNPL取得BPDB正式商业运营确认并首次向股东实际分配现金，或公司披露重大担保代偿、主权客户逾期、项目索赔、债务重组、制裁或外汇管制事件。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000065/reports/2026-07-29-rapid-triage-3ddcfeda2e7c.md",
+      "name": "北方国际",
+      "reason": "这些事件会直接改变RNPL价值兑现概率或大额表外风险的损失分布。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000065",
+      "trigger_id": "rnpl-or-guarantee-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告或业绩预告，能够核验工程建设与服务收入、归母利润、经营现金流、应收账款、合同资产、长期应收款、净债务及RNPL投资收益。"
+      },
+      "latest_report": "companies/CN/000065/reports/2026-07-29-rapid-triage-3ddcfeda2e7c.md",
+      "name": "北方国际",
+      "reason": "半年报是判断工程下滑是否见底、回款是否真实改善以及RNPL收益能否抵消EPC收缩的最近硬证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000065",
+      "trigger_id": "h1-2026-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 8.0
+      },
+      "latest_report": "companies/CN/000065/reports/2026-07-29-rapid-triage-3ddcfeda2e7c.md",
+      "name": "北方国际",
+      "reason": "跌至8元或以下时，按当前保守正常化所有者收益计算的现金收益率明显改善，值得在基本面未恶化前提下重新承保，但该触发本身不构成操作建议。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000065",
+      "trigger_id": "price-reunderwrite-800",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "公司披露蒙古重载公路实现实质性累计回款且孟加拉EPC应收明显下降，或相反对上述项目及其他重大应收、长期应收确认单项减值或展期。"
+      },
+      "latest_report": "companies/CN/000065/reports/2026-07-29-rapid-triage-3ddcfeda2e7c.md",
+      "name": "北方国际",
+      "reason": "重大项目回款能否由账面应收转化为现金，是7亿元以上正常化所有者收益假设的决定性条件。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000065",
+      "trigger_id": "major-receivable-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-11-27T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000066/reports/2026-07-30-rapid-triage-56586b1957eb.md",
       "name": "中国长城",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未命中，也在120天内结合半年报或三季报复核扣非利润、库存、应收、现金流、净债务与募投资金投向。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000066",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000066_review_ttl_120d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "约13.74亿元尚未明确用途的募集资金出现正式投向，或公司披露重大资产注入或剥离、财务公司资金风险、显著新增有息债务、股权融资、重大担保，或募投项目再次终止、延期。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000066/reports/2026-07-30-rapid-triage-56586b1957eb.md",
+      "name": "中国长城",
+      "reason": "资本投向、关联资金独立性和融资结构可能显著改变资产质量、现金流、稀释与生存韧性。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000066",
+      "trigger_id": "cn000066_capital_financing_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可拆分回迁房产收益、政府补助、计算产业和系统装备收入毛利、扣非利润、存货及跌价、应收回款、经营现金流、资本开支和净债务。"
+      },
+      "latest_report": "companies/CN/000066/reports/2026-07-30-rapid-triage-56586b1957eb.md",
+      "name": "中国长城",
+      "reason": "正式半年报是判断归母转正是否伴随主营盈利和现金转换改善的最高价值证据；披露后重新评估 conditional_stop。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000066",
+      "trigger_id": "cn000066_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 10.0
+      },
+      "latest_report": "companies/CN/000066/reports/2026-07-30-rapid-triage-56586b1957eb.md",
+      "name": "中国长城",
+      "reason": "10元对应约323亿元市值和约2.95倍Q1末归母净资产，虽仍需盈利验证，但相较当前明显降低预期负担，足以触发一次赔率重算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000066",
+      "trigger_id": "cn000066_price_reset_10",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母为正且经营现金流扣除长期资产购建支出后为正，同时存货和应收账款增速低于收入增速；或任一指标显著恶化并出现大额新增减值。"
+      },
+      "latest_report": "companies/CN/000066/reports/2026-07-30-rapid-triage-56586b1957eb.md",
+      "name": "中国长城",
+      "reason": "该组合直接验证或否定主营扭亏、库存与应收转化及所有者现金收益，而不是依赖一次性收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000066",
+      "trigger_id": "cn000066_core_profit_cash_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000068/reports/2026-07-30-rapid-triage-314df8a77dc2.md",
       "name": "华控赛格",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使无单一重大事件，也应在90天后复核三季报、坪山审批、关联交易、债务和回款进展。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000068",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "000068-correction-refresh",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "坪山区实际支付184082093元剩余补偿款，或留用地选址、权益容积、用途、开发义务及审批结果获得正式文件确认。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000068/reports/2026-07-30-rapid-triage-314df8a77dc2.md",
+      "name": "华控赛格",
+      "reason": "坪山现金与土地权利是当前价值判断的最大变量，任何正式落地均可能实质改变风险调整后资产净值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000068",
+      "trigger_id": "000068-pingshan-settlement-or-approval",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "2026年半年度报告正式披露，能够核验业绩预告、扣非归母利润、经营现金流、货币资金、有息负债、应收账款、合同资产和长期应收款。"
+      },
+      "latest_report": "companies/CN/000068/reports/2026-07-30-rapid-triage-314df8a77dc2.md",
+      "name": "华控赛格",
+      "reason": "正式中报是判断核心亏损、现金缓冲和工程回款是否继续恶化的最近一手证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000068",
+      "trigger_id": "000068-2026-h1-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 2.0
+      },
+      "latest_report": "companies/CN/000068/reports/2026-07-30-rapid-triage-314df8a77dc2.md",
+      "name": "华控赛格",
+      "reason": "较2.76元下跌约27.5%会降低土地与重组可选性的隐含定价，应按届时净资产、净债务和土地进度重新核验，但价格触发不能替代当前正式甄别。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000068",
+      "trigger_id": "000068-price-reset",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期在剔除政府补偿、资产处置、资金归集及重大营运资金摆动后，普通股所有者收益转正，且应收账款、合同资产和长期应收款合计不再恶化。"
+      },
+      "latest_report": "companies/CN/000068/reports/2026-07-30-rapid-triage-314df8a77dc2.md",
+      "name": "华控赛格",
+      "reason": "该条件可证伪持续经营业务尚不能产生稳定普通股所有者收益的核心判断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000068",
+      "trigger_id": "000068-owner-earnings-proof",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000069/reports/2026-07-30-rapid-triage-5a159e72e0e0.md",
       "name": "华侨城Ａ",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使价格和事件未触发，也应在90天内用半年报、三季报和月度销售复核生存、减值及现金瀑布。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000069",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000069_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "公司披露上市主体或重要子公司债务逾期、再融资条件显著恶化、担保被执行、重大资产处置或注入、控股股东提供有约束力增信，或武汉首茂城10.61亿元财务资助收回/重组。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000069/reports/2026-07-30-rapid-triage-5a159e72e0e0.md",
+      "name": "华侨城Ａ",
+      "reason": "这些事件会直接改变24至36个月生存概率和普通股现金瀑布。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000069",
+      "trigger_id": "cn000069_material_debt_or_asset_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可核验减值构成、地产回款、文旅分部利润与维护资本开支、经营现金流、货币资金、债务期限及武汉首茂城财务资助期后进展。"
+      },
+      "latest_report": "companies/CN/000069/reports/2026-07-30-rapid-triage-5a159e72e0e0.md",
+      "name": "华侨城Ａ",
+      "reason": "正式半年报是区分资产一次性出清、持续经营亏损和现金流缩表效应的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000069",
+      "trigger_id": "cn000069_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 1.3
+      },
+      "latest_report": "companies/CN/000069/reports/2026-07-30-rapid-triage-5a159e72e0e0.md",
+      "name": "华侨城Ａ",
+      "reason": "股价降至1.30元或以下时普通股市值约104.5亿元，若债务和减值未恶化，资产级残余价值赔率会发生足够大的变化，值得重算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000069",
+      "trigger_id": "cn000069_price_1_30",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母亏损显著收窄且经营现金流在扣除存货及合同负债异常收缩、必要文旅维护资本开支后仍为正，同时净有息负债下降、无新增重大减值或财务资助逾期。"
+      },
+      "latest_report": "companies/CN/000069/reports/2026-07-30-rapid-triage-5a159e72e0e0.md",
+      "name": "华侨城Ａ",
+      "reason": "该组合条件才会实质支持普通股正常化所有者收益由负转向可持续正值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000069",
+      "trigger_id": "cn000069_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000070/reports/2026-07-30-rapid-triage-d5e252fe7e86.md",
       "name": "特发信息",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使无显性事件，也应在90天后用三季报、债务、担保、诉讼执行和新价格重新快速复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000070",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "routine-90-day-refresh",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "刑事案件终审或追缴执行、投资者索赔显著变化、重大资产注入或重组、股权融资、成都傅立叶担保实际代偿，或新增重大处罚和内控缺陷。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000070/reports/2026-07-30-rapid-triage-d5e252fe7e86.md",
+      "name": "特发信息",
+      "reason": "这些事件会直接改变治理可信度、普通股资产归属、稀释边界和尾部损失。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000070",
+      "trigger_id": "fraud-recovery-or-capital-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "披露2026年半年度正式报告，能够核验新型计算机项目收入、毛利、应收与回款，线缆分部利润、经营现金流、净债务、减值和少数股东损益。"
+      },
+      "latest_report": "companies/CN/000070/reports/2026-07-30-rapid-triage-d5e252fe7e86.md",
+      "name": "特发信息",
+      "reason": "正式半年报是区分项目验收利润与可持续普通股所有者收益的最低证据集。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000070",
+      "trigger_id": "2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 7.5
+      },
+      "latest_report": "companies/CN/000070/reports/2026-07-30-rapid-triage-d5e252fe7e86.md",
+      "name": "特发信息",
+      "reason": "在基本面未恶化时，7.50元对应约65.13亿元市值，才值得结合已验证的2.5亿元以上正常化所有者收益重新评估风险补偿。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000070",
+      "trigger_id": "price-below-7-50",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个季度在剔除项目验收、减值转回、营运资金释放和少数股东份额后，归母利润与经营现金流同步为正，并支持年化普通股所有者现金收益至少2.5亿元。"
+      },
+      "latest_report": "companies/CN/000070/reports/2026-07-30-rapid-triage-d5e252fe7e86.md",
+      "name": "特发信息",
+      "reason": "达到该门槛才说明盈利跃迁不是一次性项目或合并口径错觉，估值可以重新讨论。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000070",
+      "trigger_id": "owner-earnings-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000078/reports/2026-07-30-rapid-triage-53a76169e35b.md",
       "name": "ST海王",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未发生，也应在90天内复核半年报、内控专项核查、银行授信、剥离子公司遗留资助与担保。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000078",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000078_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "独立专项核查或监管机构明确排除或确认资金占用；异常财务资助利息全部收回；发生新的未授权资助、担保或资金占用；主要银行收缩授信、债务展期、外部注资、控制权变更或有约束力的重组方案。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000078/reports/2026-07-30-rapid-triage-53a76169e35b.md",
+      "name": "ST海王",
+      "reason": "这些事件会直接改变少数股东权利可信度、24至36个月生存概率或资本结构。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000078",
+      "trigger_id": "cn000078_audit_regulatory_or_financing_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告或2026年年度报告及审计报告，可核验应收减值、受限资金、短债滚续、经营现金流、异常财务资助商业实质和内控审计意见。"
+      },
+      "latest_report": "companies/CN/000078/reports/2026-07-30-rapid-triage-53a76169e35b.md",
+      "name": "ST海王",
+      "reason": "正式财报和年审是判断所有者收益、持续经营与撤销风险警示的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000078",
+      "trigger_id": "cn000078_2026_h1_or_annual_audit_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 0.45
+      },
+      "latest_report": "companies/CN/000078/reports/2026-07-30-rapid-triage-53a76169e35b.md",
+      "name": "ST海王",
+      "reason": "价格降至0.45元或以下时市值约11.84亿元、接近2026Q1账面归母权益，值得在不把价格下跌等同买点的前提下重算困境期权；治理阻断仍须另行解除。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000078",
+      "trigger_id": "cn000078_price_0_45",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母利润与经营现金流均为正，扣除正常信用损失、维持性资本开支和融资成本后年化普通股所有者现金收益至少3亿元；同时专项核查和审计均确认不存在资金占用、财务资助及担保审批内控有效。"
+      },
+      "latest_report": "companies/CN/000078/reports/2026-07-30-rapid-triage-53a76169e35b.md",
+      "name": "ST海王",
+      "reason": "只有盈利、现金和治理同时验证，当前结构性停止条件才真正失效。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000078",
+      "trigger_id": "cn000078_owner_earnings_and_governance_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000088/reports/2026-07-30-rapid-triage-3682a10e8d18.md",
       "name": "盐 田 港",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未先发生，也应在90天内复核半年报或三季报、参股码头分红、惠盐高速提价兑现和关联资产整合。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000088",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000088_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "盐田国际、盐田三期或其他主要参股公司显著调整分红；深圳港集团提出新的资产注入、发行股份、现金收购或关联融资方案；惠盐高速披露提价后的实际车流和收入；核心港口发生重大航线迁移、费率调整、事故或资本开支上修。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000088/reports/2026-07-30-rapid-triage-3682a10e8d18.md",
+      "name": "盐 田 港",
+      "reason": "这些事件会直接改变普通股可支配现金、每股稀释、关联交易定价或核心资产盈利能力。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000088",
+      "trigger_id": "cn000088_distribution_or_related_transaction_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告或第三季度报告，可核验权益法投资收益、参股公司现金分红、控股港口及惠盐高速收入、资本开支、净债务和中期利润分配。"
+      },
+      "latest_report": "companies/CN/000088/reports/2026-07-30-rapid-triage-3682a10e8d18.md",
+      "name": "盐 田 港",
+      "reason": "下一份定期报告能够检验Q1利润增长和惠盐高速提价是否转化为每股收益及可支配现金。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000088",
+      "trigger_id": "cn000088_2026_h1_or_q3_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 3.8
+      },
+      "latest_report": "companies/CN/000088/reports/2026-07-30-rapid-triage-3682a10e8d18.md",
+      "name": "盐 田 港",
+      "reason": "在2025年每股分红不变的机械假设下，3.80元对应股息率约5.13%、2025年PE约13.6倍和Q1净资产约1.07倍PB，值得重新核验现金分配与资本开支；价格本身不构成组合操作结论。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000088",
+      "trigger_id": "cn000088_price_lte_3_80",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期权益法收益和参股公司现金分配保持稳定，年度化经营现金流加现金投资收益扣除维持性资本开支后的普通股所有者现金收益至少13亿元，现金分红覆盖不低于1.1倍，且没有高估值关联注入或新增重大稀释。"
+      },
+      "latest_report": "companies/CN/000088/reports/2026-07-30-rapid-triage-3682a10e8d18.md",
+      "name": "盐 田 港",
+      "reason": "只有现金化、分红覆盖和每股资本配置同时成立，才能确认当前可能信号具有可承保基础。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000088",
+      "trigger_id": "cn000088_owner_cash_and_per_share_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000089/reports/2026-07-30-rapid-triage-a937053eacf9.md",
       "name": "深圳机场",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其余触发器未命中，也应在90天内结合H1正式报告、三季报和月度客货数据复核恢复斜率及资本负担。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000089",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000089_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "机场集团与上市公司签署或调整T2、三跑道、航站楼、停机坪、土地或货站的资产注入、代建、租赁、收费、财务资助或补偿协议，或公司宣布土地补偿现金用途和特别分红。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000089/reports/2026-07-30-rapid-triage-a937053eacf9.md",
+      "name": "深圳机场",
+      "reason": "资产归属、租金和补偿现金去向会直接改变治理风险、净债务和每股所有者收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000089",
+      "trigger_id": "cn000089_group_asset_or_lease_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，能够核验土地补偿与股权重估的精确金额、经营现金流、折旧、购建支出、租赁现金流、关联交易和分部利润。"
+      },
+      "latest_report": "companies/CN/000089/reports/2026-07-30-rapid-triage-a937053eacf9.md",
+      "name": "深圳机场",
+      "reason": "H1正式报表是区分一次性利润与可持续所有者现金收益的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000089",
+      "trigger_id": "cn000089_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.6
+      },
+      "latest_report": "companies/CN/000089/reports/2026-07-30-rapid-triage-a937053eacf9.md",
+      "name": "深圳机场",
+      "reason": "价格降至5.60元或以下时市值约115亿元、接近Q1账面归母权益，核心利润收益率和困境保护改善，值得在不把下跌等同买点的前提下重算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000089",
+      "trigger_id": "cn000089_price_5_60",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非利润与经营现金流均增长，且披露证据支持扣除维持性capex、租赁本金利息和少数股东权益后年化普通股所有者现金收益至少8亿元；或相反跌破5亿元。"
+      },
+      "latest_report": "companies/CN/000089/reports/2026-07-30-rapid-triage-a937053eacf9.md",
+      "name": "深圳机场",
+      "reason": "该区间将把当前约136亿元市值从低回报定价转为可承保现金收益，或证伪恢复逻辑。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000089",
+      "trigger_id": "cn000089_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000090/reports/2026-07-30-rapid-triage-88c4e5462c2b.md",
       "name": "天健集团",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使没有显性事件，也应在90天后用三季报、施工订单、地产销售、债务与新价格重做快速复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000090",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "routine-90-day-refresh",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "同业竞争资产托管或注入取得实质进展、控股股东再次变更承诺、重大关联交易或担保、股权融资、龙华新地块预售、重大诉讼或新增大额减值。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000090/reports/2026-07-30-rapid-triage-88c4e5462c2b.md",
+      "name": "天健集团",
+      "reason": "这些事件会直接改变普通股资产归属、资本配置回报、稀释与尾部损失边界。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000090",
+      "trigger_id": "governance-or-capital-event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "披露2026年半年度正式报告，核验分部毛利、亏损构成、经营现金流、合同资产和应收账款账龄、存货与减值、净债务及永续债利息。"
+      },
+      "latest_report": "companies/CN/000090/reports/2026-07-30-rapid-triage-88c4e5462c2b.md",
+      "name": "天健集团",
+      "reason": "正式半年报是区分周期性结转亏损、结构性利润下滑与进一步资产减值的最低证据集。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000090",
+      "trigger_id": "2026-interim-filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 2.8
+      },
+      "latest_report": "companies/CN/000090/reports/2026-07-30-rapid-triage-88c4e5462c2b.md",
+      "name": "天健集团",
+      "reason": "在基本面未进一步恶化时，该价对应市值约52.32亿元，值得重新核验资产折价是否已覆盖项目减值和收益不确定性。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000090",
+      "trigger_id": "price-below-2-80",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续四个季度在扣除地产结转和减值波动、营运资金释放、维持性资本开支、少数股东与永续债利息后，普通股所有者现金收益年化达到5亿元，且合同资产与存货合计持续下降。"
+      },
+      "latest_report": "companies/CN/000090/reports/2026-07-30-rapid-triage-88c4e5462c2b.md",
+      "name": "天健集团",
+      "reason": "达到该门槛才说明账面折价开始由可持续普通股收益与资产回收共同支撑。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000090",
+      "trigger_id": "owner-earnings-thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000096/reports/2026-07-30-rapid-triage-b7e027738efe.md",
       "name": "广聚能源",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使没有单项重大事件，也应在90天后结合三季报、调查进展、新站经营、油品价差、电力分红、债务和最新价格重做快速复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000096",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000096_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "航天欧华专项调查、公安或司法程序、上游退款或交货、下游回款、银行承兑追索、补充减值或重大授信担保发生可量化变化；或者妈湾电力分红、横岭新站经营、风电项目核准增资及新增重大资本投入出现实质进展。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000096/reports/2026-07-30-rapid-triage-b7e027738efe.md",
+      "name": "广聚能源",
+      "reason": "这些事件会直接改变风险款项回收率、净债务、治理判断和新增资本的预期回报。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000096",
+      "trigger_id": "cn000096_trade_fraud_or_capital_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "披露2026年半年度正式报告，核验航天欧华风险款项减值、预付款和其他应收款、银行承兑汇票责任、分部毛利、经营现金流、短期借款、妈湾电力股利及新站初始贡献。"
+      },
+      "latest_report": "companies/CN/000096/reports/2026-07-30-rapid-triage-b7e027738efe.md",
+      "name": "广聚能源",
+      "reason": "正式中报将决定H1预告利润是否需要回撤，并提供重建普通股所有者现金收益所需的完整报表。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000096",
+      "trigger_id": "cn000096_2026_interim_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 6.2
+      },
+      "latest_report": "companies/CN/000096/reports/2026-07-30-rapid-triage-b7e027738efe.md",
+      "name": "广聚能源",
+      "reason": "在基本面未进一步恶化时，6.20元对应市值约32.74亿元和约1.19倍Q1归母净资产，值得重新检验价格折让是否开始覆盖低ROE、信用损失及资本配置风险。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000096",
+      "trigger_id": "cn000096_price_6_20",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续四个季度剔除低价库存释放、证券交易、公允价值变动和异常信用损失，并扣除维持性资本开支、净利息及少数股东损益后，普通股所有者现金收益达到至少1亿元；同时航天欧华风险款项回收或可靠覆盖比例达到90%，妈湾电力现金分红未下降。"
+      },
+      "latest_report": "companies/CN/000096/reports/2026-07-30-rapid-triage-b7e027738efe.md",
+      "name": "广聚能源",
+      "reason": "达到该组合门槛才说明账面资产开始稳定转化为普通股所有者现金收益，并足以重新评估当前估值和资本配置。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000096",
+      "trigger_id": "cn000096_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000099/reports/2026-07-30-rapid-triage-d40846addcc4.md",
       "name": "中信海直",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使显性事件未先发生，也应在90天内用半年度报告或三季报、新合同、租赁执行、机队利用率和新价格重做快速复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000099",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000099_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "披露中国海油五年期协议的金额、最低飞行小时或费率，签署重大海上油服、应急救援、低空商业合同，实际执行华融金租飞机租赁或融资租赁，确定樟坑径机场租赁条款，发生重大航空安全事故、供应链停飞或大额关联交易。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000099/reports/2026-07-30-rapid-triage-d40846addcc4.md",
+      "name": "中信海直",
+      "reason": "这些事件会直接改变机队利用率、租赁固定负担、普通股现金归属和经营许可风险。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000099",
+      "trigger_id": "cn000099_contract_lease_airport_or_safety_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "披露2026年半年度报告或第三季度报告，核验海上油服收入与毛利、低空及应急业务收入、政府补助、经营现金流、资本开支、使用权资产和租赁负债、维修与陆上通航子公司损益及中国海油应收账款。"
+      },
+      "latest_report": "companies/CN/000099/reports/2026-07-30-rapid-triage-d40846addcc4.md",
+      "name": "中信海直",
+      "reason": "下一份定期报告是区分稳定核心现金流、补贴贡献和机队扩张前置成本的最低证据集。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000099",
+      "trigger_id": "cn000099_2026_h1_or_q3_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 11.5
+      },
+      "latest_report": "companies/CN/000099/reports/2026-07-30-rapid-triage-d40846addcc4.md",
+      "name": "中信海直",
+      "reason": "在基本面未恶化时，11.50元对应市值约89.2亿元和2025年归母约28.9倍PE，值得重新核验正常化所有者收益；价格本身不构成组合操作结论。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000099",
+      "trigger_id": "cn000099_price_lte_11_50",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期剔除补贴、养老金变更、资产处置和营运资金释放后，年化普通股所有者现金收益达到至少5亿元，新增飞机租金与维持性资本开支被对应合同现金覆盖，且低空、应急或维修业务在不依赖补贴下合计贡献至少1亿元年化税后收益。"
+      },
+      "latest_report": "companies/CN/000099/reports/2026-07-30-rapid-triage-d40846addcc4.md",
+      "name": "中信海直",
+      "reason": "只有核心现金收益、扩张回报和第二利润支柱同时成立，当前约36倍静态PE中的成长预期才开始具备可承保基础。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000099",
+      "trigger_id": "cn000099_owner_earnings_and_low_altitude_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000100/reports/2026-07-30-rapid-triage-2ac6561bbdac.md",
       "name": "TCL科技",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未命中，也应在90天内结合半年报、三季报、面板价格、光伏经营和t9进展重做快速复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000100",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000100_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "中国证监会对t9少数股权交易作出注册决定、交易完成或终止，或公司披露现金对价的债务融资条款、实际发行数量、资产交割、重大新产线资本开支、股权融资、关联交易、担保或回购股份处置。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000100/reports/2026-07-30-rapid-triage-2ac6561bbdac.md",
+      "name": "TCL科技",
+      "reason": "这些事件会直接改变股本、净债务、少数股东归属、融资成本和普通股每股收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000100",
+      "trigger_id": "cn000100_t9_or_capital_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度正式报告，能够核验分部利润、投资收益和补贴、经营现金流、资本开支、折旧、净债务、少数股东损益、TCL中环亏损及TCL华星盈利质量。"
+      },
+      "latest_report": "companies/CN/000100/reports/2026-07-30-rapid-triage-2ac6561bbdac.md",
+      "name": "TCL科技",
+      "reason": "正式半年报是把H1业绩预告转换为普通股所有者现金收益的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000100",
+      "trigger_id": "cn000100_2026_interim_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.2
+      },
+      "latest_report": "companies/CN/000100/reports/2026-07-30-rapid-triage-2ac6561bbdac.md",
+      "name": "TCL科技",
+      "reason": "在基本面未进一步恶化时，4.20元对应现有市值约874亿元，滚动扣非与粗估所有者现金收益率明显改善，值得重算周期中枢和资本结构补偿。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000100",
+      "trigger_id": "cn000100_price_4_20",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期的公开证据支持在扣除非经常损益、光伏亏损、少数股东、净利息和正常化维持性capex后，年化普通股所有者现金收益达到55亿元以上；或相反跌破35亿元。"
+      },
+      "latest_report": "companies/CN/000100/reports/2026-07-30-rapid-triage-2ac6561bbdac.md",
+      "name": "TCL科技",
+      "reason": "该区间能使当前市值分别转向可承保的中等收益或明显昂贵，并直接改变继续研究的价值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000100",
+      "trigger_id": "cn000100_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-11-27T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000151/reports/2026-07-30-rapid-triage-7002934b05a5.md",
       "name": "中成股份",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使价格和重大事件未触发，也应在四个月内复核半年报、三季报、海外工程回款、储能并表表现和配套融资进展。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000151",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000151_review_ttl_120d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "公司披露单项1.5亿元以上工程款或合同资产结算回收、5,000万元以上新增减值或保函兑付、重大项目停工或业主违约、制裁或出口管制导致的账户冻结或结算受阻、配套融资完成，或储能项目发生足以改变年度利润0.3亿元以上的投资及处置。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000151/reports/2026-07-30-rapid-triage-7002934b05a5.md",
+      "name": "中成股份",
+      "reason": "项目回款、担保、制裁合规和融资稀释均可能快速改变生存缓冲、资产质量和普通股价值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000151",
+      "trigger_id": "cn000151_material_project_or_sanctions_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可按工程、环境科技、复合材料和储能分部核验扣非利润、经营现金流、合同资产及长期应收款、期后回款、资本开支、受限资金、债务和关联交易。"
+      },
+      "latest_report": "companies/CN/000151/reports/2026-07-30-rapid-triage-7002934b05a5.md",
+      "name": "中成股份",
+      "reason": "正式半年报是判断预告扭亏能否转化为普通股现金收益的最近关键证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000151",
+      "trigger_id": "cn000151_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 6.0
+      },
+      "latest_report": "companies/CN/000151/reports/2026-07-30-rapid-triage-7002934b05a5.md",
+      "name": "中成股份",
+      "reason": "价格降至6.00元或以下时，市值降至约21.1亿元，虽仍需现金流验证，但相对当前高倍数估值已出现足以重算的风险补偿。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000151",
+      "trigger_id": "cn000151_price_6_00",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个报告期扣非归母利润和经营现金流均为正，扣除购建长期资产现金支出后仍为正，合同资产与长期应收款合计不再增长，且年度化扣非归母利润达到0.8亿元以上并能拆分证明储能和工程均有正贡献。"
+      },
+      "latest_report": "companies/CN/000151/reports/2026-07-30-rapid-triage-7002934b05a5.md",
+      "name": "中成股份",
+      "reason": "该组合条件将首次证明扭亏并非少计减值或收入领先回款，而是形成可持续且可归属普通股的现金收益中枢。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000151",
+      "trigger_id": "cn000151_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-11-27T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000153/reports/2026-07-30-rapid-triage-f0a035cb15c5.md",
       "name": "丰原药业",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "即使其他触发器未命中，也应在120天内结合半年报、三季报及控制权交易进展复核治理停止条件、生存流动性和所有者现金收益。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000153",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000153_review_ttl_120d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "公司披露控制权转让正式协议、股份解押、国资审批、过户、董事会改组或交易终止；或者再次发生关联方资金占用、违规担保、监管处分及审计意见变化。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000153/reports/2026-07-30-rapid-triage-f0a035cb15c5.md",
+      "name": "丰原药业",
+      "reason": "控制权交割与后续治理安排决定当前uninvestable状态能否解除；交易失败或治理问题复发则进一步强化停止条件。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000153",
+      "trigger_id": "cn000153_control_transfer_or_governance_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度报告，可核验制造与流通收入和毛利、核心品种集采影响、应收及存货、研发资本化、经营现金流、资本开支、受限资金和有息债务。"
+      },
+      "latest_report": "companies/CN/000153/reports/2026-07-30-rapid-triage-f0a035cb15c5.md",
+      "name": "丰原药业",
+      "reason": "正式半年报是验证Q1利润韧性是否伴随制造恢复和现金收益改善的最近证据，但不会单独解除治理阻断。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000153",
+      "trigger_id": "cn000153_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 4.2
+      },
+      "latest_report": "companies/CN/000153/reports/2026-07-30-rapid-triage-f0a035cb15c5.md",
+      "name": "丰原药业",
+      "reason": "价格降至4.20元或以下时权益市值约19.5亿元，估值负担明显下降，值得重算制造资产和控制权事件的赔率；价格触发本身不覆盖资金占用与违规担保的治理停止条件。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000153",
+      "trigger_id": "cn000153_price_4_20",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "控制权转让完成后，至少连续两个报告期不存在新增非经营性资金占用或违规担保，审计或监管未再指出相关重要缺陷；同时制造业务扣非利润稳定、经营现金流扣除可辨识维持性资本开支后持续为正。"
+      },
+      "latest_report": "companies/CN/000153/reports/2026-07-30-rapid-triage-f0a035cb15c5.md",
+      "name": "丰原药业",
+      "reason": "只有治理清洁期和所有者现金收益同时得到验证，才足以重新开放正式研究预算，而不是把地方国资入主或会计利润改善单独视为论点成立。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000153",
+      "trigger_id": "cn000153_clean_governance_and_owner_cash_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000155/reports/2026-07-30-rapid-triage-470dabe1e673.md",
       "name": "川能动力",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "锂价、库存、风电送出、控股股东整合和资本开支变化较快，即使其他触发器未命中，也应在90天内结合半年报或三季报复核。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000155",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000155_review_ttl_90d",
+      "type": "date"
     },
     {
       "condition": {
-        "rebaseline_required": true
+        "description": "四川能源发展集团披露同业竞争解决方案、资产注入或出售条款，或公司披露单项10亿元以上关联采购、风光投资、融资、担保、股权融资、锂矿扩产或锂盐重大停产安排。"
       },
-      "latest_report": null,
+      "latest_report": "companies/CN/000155/reports/2026-07-30-rapid-triage-470dabe1e673.md",
+      "name": "川能动力",
+      "reason": "这些事项会直接改变项目回报、关联定价、净债务、少数股东归属和每股稀释边界。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000155",
+      "trigger_id": "cn000155_parent_or_project_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度正式报告，可核验风光、锂矿、锂盐、垃圾发电分部利润，李家沟及锂盐产能利用率、锂产品售价与库存、经营现金流、资本开支、净债务和少数股东损益。"
+      },
+      "latest_report": "companies/CN/000155/reports/2026-07-30-rapid-triage-470dabe1e673.md",
+      "name": "川能动力",
+      "reason": "正式半年报是把利润预告转换为普通股所有者现金收益、区分锂价周期和可持续运营改善的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000155",
+      "trigger_id": "cn000155_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 10.0
+      },
+      "latest_report": "companies/CN/000155/reports/2026-07-30-rapid-triage-470dabe1e673.md",
+      "name": "川能动力",
+      "reason": "在基本面未同步恶化时，10.00元对应市值约184.62亿元，可明显改善相对4亿至9亿元粗略正常化所有者收益和高资本开支风险的赔率，值得重算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000155",
+      "trigger_id": "cn000155_price_10_00",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个正式报告期证明李家沟及锂盐产能利用率稳定、锂产品利润未依赖短期价格尖峰，风光结算电量和电价企稳，且扣除少数股东后经营现金流减维持性资本开支按年化达到12亿元以上；或相反跌破6亿元。"
+      },
+      "latest_report": "companies/CN/000155/reports/2026-07-30-rapid-triage-470dabe1e673.md",
+      "name": "川能动力",
+      "reason": "该区间的上、下穿越将分别验证或否定当前价格隐含的中周期普通股所有者收益。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000155",
+      "trigger_id": "cn000155_owner_earnings_thesis",
+      "type": "thesis"
+    },
+    {
+      "condition": {
+        "due_at": "2026-10-28T03:03:20+08:00",
+        "origin": "ttl"
+      },
+      "latest_report": "companies/CN/000156/reports/2026-07-30-rapid-triage-b589a1900a86.md",
       "name": "华数传媒",
-      "reason": "历史证据可作线索，但旧评级和估值不可执行；须按 v2 协议重建并重新承保。",
-      "source": "research_rebaseline",
-      "state": "due",
+      "reason": "视听用户、政企回款和现金流季节性变化较快，即使其他触发器未先命中，也应在90天内结合半年报或三季报刷新证据。",
+      "source": "company_trigger",
+      "state": "scheduled",
       "symbol": "CN:000156",
-      "trigger_id": "research-rebaseline",
-      "type": "rebaseline"
+      "trigger_id": "cn000156_review_ttl_90d",
+      "type": "date"
+    },
+    {
+      "condition": {
+        "description": "公司披露有线电视、宽带或广电5G用户数及ARPU重大变化，单项5亿元以上政企项目中标、终止、逾期或减值，重大关联交易、募集资金用途变更、资产收购出售、股权融资，或审计及内控意见变化。"
+      },
+      "latest_report": "companies/CN/000156/reports/2026-07-30-rapid-triage-b589a1900a86.md",
+      "name": "华数传媒",
+      "reason": "这些事件会直接改变传统业务衰退速度、政企项目利润与回款、资本配置效率、治理可靠性和每股价值。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000156",
+      "trigger_id": "cn000156_user_project_or_capital_event",
+      "type": "event"
+    },
+    {
+      "condition": {
+        "description": "公司披露2026年半年度正式报告，可核验视听、宽带及数据通信、集团客户集成、互联网电视和广电5G的收入毛利，经营现金流、应收账款、合同资产、资本开支、长期待摊投入、现金及募集资金可用性。"
+      },
+      "latest_report": "companies/CN/000156/reports/2026-07-30-rapid-triage-b589a1900a86.md",
+      "name": "华数传媒",
+      "reason": "正式半年报是把未经审计利润快报转化为普通股所有者现金收益，并判断传统用户流失与政企回款质量的最近决定性证据。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000156",
+      "trigger_id": "cn000156_2026_h1_filing",
+      "type": "filing"
+    },
+    {
+      "condition": {
+        "operator": "price_lte",
+        "threshold": 5.8
+      },
+      "latest_report": "companies/CN/000156/reports/2026-07-30-rapid-triage-b589a1900a86.md",
+      "name": "华数传媒",
+      "reason": "在基本面未同步恶化时，5.80元对应权益市值约107.47亿元，可显著改善相对每年5至9亿元粗略所有者收益、低ROE及项目回款风险的赔率，值得重算。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000156",
+      "trigger_id": "cn000156_price_5_80",
+      "type": "price"
+    },
+    {
+      "condition": {
+        "description": "连续两个正式报告期证明扣除营运资金波动后经营现金流减维护性网络、终端、内容及长期待摊投入的年化普通股所有者收益达到8亿元以上，且应收账款与合同资产增速不高于收入；或相反跌破4亿元。"
+      },
+      "latest_report": "companies/CN/000156/reports/2026-07-30-rapid-triage-b589a1900a86.md",
+      "name": "华数传媒",
+      "reason": "上穿将验证净现金和低PB具有可兑现价值，下穿则否定当前现金流安全垫并确认价值陷阱风险。",
+      "source": "company_trigger",
+      "state": "watching",
+      "symbol": "CN:000156",
+      "trigger_id": "cn000156_owner_earnings_thesis",
+      "type": "thesis"
     },
     {
       "condition": {
