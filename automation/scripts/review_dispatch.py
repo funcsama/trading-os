@@ -42,6 +42,12 @@ from trading_os.research_assets.review_store import (  # noqa: E402
     ReviewRunStore,
     ReviewStoreError,
 )
+from trading_os.research_assets.review_workflow import (  # noqa: E402
+    ReviewWorkflowError,
+    request_challenger_budget,
+    require_review_budget_approval,
+    verify_review_intake,
+)
 from trading_os.research_assets.sealing import seal_json, verify_sealed  # noqa: E402
 from trading_os.research_assets.underwriting import (  # noqa: E402
     UnderwritingEvaluation,
@@ -193,6 +199,10 @@ class ReviewDispatcher:
 
     def dispatch(self, run_id: str, *, now: dt.datetime) -> DispatchResult:
         _require_aware(now)
+        try:
+            verify_review_intake(runs_root=self.runs_root, run_id=run_id)
+        except ReviewWorkflowError as exc:
+            raise DispatchError(str(exc)) from exc
         status = self.store.load_run(run_id)["status"]
         if status in {
             ReviewRunStatus.PACKETS_READY.value,
@@ -373,6 +383,23 @@ class ReviewDispatcher:
                     if needs_challenger
                     else ReviewRunStatus.COMPANY_REVIEWS_COMPLETE.value
                 )
+                if (
+                    needs_challenger
+                    and state["intake"]["mode"] == "underwriting_approval"
+                ):
+                    try:
+                        request_challenger_budget(
+                            runs_root=self.runs_root,
+                            run_id=run_id,
+                            symbols=[
+                                str(item["symbol"]) for item in needs_challenger
+                            ],
+                            trigger="company_underwriting_trigger",
+                            requested_by=self.owner,
+                            requested_at=now,
+                        )
+                    except ReviewWorkflowError as exc:
+                        raise DispatchError(str(exc)) from exc
                 state = self.store.transition(
                     run_id,
                     next_status,
@@ -398,9 +425,27 @@ class ReviewDispatcher:
         portfolio_round = (
             state["status"] == ReviewRunStatus.PORTFOLIO_CHALLENGING.value
         )
+        manager_bound = state["intake"]["mode"] == "underwriting_approval"
+        budget_approval = None
+        if manager_bound:
+            trigger = (
+                "portfolio_top_five"
+                if portfolio_round
+                else "company_underwriting_trigger"
+            )
+            try:
+                budget_approval = require_review_budget_approval(
+                    runs_root=self.runs_root,
+                    run_id=run_id,
+                    budget_stage="challenger",
+                    trigger=trigger,
+                    executor=self.owner,
+                )
+            except ReviewWorkflowError as exc:
+                raise DispatchError(str(exc)) from exc
         portfolio_request = (
             _load_portfolio_challenger_request(self.runs_root, run_id)
-            if portfolio_round
+            if portfolio_round and not manager_bound
             else None
         )
         if (
@@ -411,13 +456,28 @@ class ReviewDispatcher:
             raise DispatchError(
                 "portfolio challenger request policy snapshot mismatch"
             )
+        requested_items = (
+            {
+                str(item["symbol"]): item
+                for item in budget_approval["approval"]["items"]
+            }
+            if budget_approval is not None
+            else None
+        )
         requested_records = (
             {
                 str(item["symbol"]): str(item["primary_candidate_sha256"])
                 for item in portfolio_request["candidates"]
             }
             if portfolio_request is not None
-            else None
+            else (
+                {
+                    symbol: str(item["candidate"]["sha256"])
+                    for symbol, item in requested_items.items()
+                }
+                if requested_items is not None
+                else None
+            )
         )
         candidates = [
             item
@@ -439,9 +499,15 @@ class ReviewDispatcher:
         if requested_records is not None:
             for item in candidates:
                 symbol = str(item["symbol"])
-                sealed = verify_sealed(
-                    _portfolio_candidate_path(item, run_id, final=False)
+                candidate_path = (
+                    (
+                        self.runs_root.parent.parent
+                        / str(requested_items[symbol]["candidate"]["path"])
+                    ).resolve()
+                    if requested_items is not None
+                    else _portfolio_candidate_path(item, run_id, final=False)
                 )
+                sealed = verify_sealed(candidate_path)
                 if (
                     sealed.artifact_type != "portfolio_candidate"
                     or sealed.sha256 != requested_records[symbol]
